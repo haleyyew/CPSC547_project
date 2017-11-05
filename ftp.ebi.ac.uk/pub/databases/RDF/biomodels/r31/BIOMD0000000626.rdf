@@ -1,0 +1,546 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:bqmodel="http://biomodels.net/model-qualifiers#"
+    xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#"
+    xmlns:bqbiol="http://biomodels.net/biology-qualifiers#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:sbmlRdf="http://identifiers.org/biomodels.vocabulary#"
+    xmlns:biodb="http://identifiers.org/biomodels.db/BIOMD0000000626#" > 
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI10">
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_4ffafbd8-694b-44f3-8cdc-002e62aca1c3"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_47343a43-d495-4e20-aab4-fcf869f418f9"/>
+    <sbmlRdf:name>Production of Phosphorylated Sok2</sbmlRdf:name>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_866f8356-7ebf-49b5-bb6c-f7f9f4b9ef04"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:notes>Production of phosphorylated Sok2</sbmlRdf:notes>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#f9542153-125b-4ae0-93ba-266b799243b1"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000216"/>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:reversible>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#f34659a8-45ad-4b8b-bfbe-1dcc0ecf302f">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/23631506"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</sbmlRdf:value>
+    <sbmlRdf:name>pime_1</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_129f3b1a-fb43-472f-ae39-6f1fef63cc3d">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI2"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#bb9156e4-b720-4b4b-8ccc-4342ceea66a7">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/7969131"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/23631506"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1</sbmlRdf:value>
+    <sbmlRdf:name>urim_11</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_9d14ffba-f3d8-467e-81ec-1d4fe6267d37">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/23631506"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</sbmlRdf:value>
+    <sbmlRdf:name>sprimeime_2</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <vCard:ORG rdf:nodeID="A1"/>
+    <vCard:EMAIL>hkarakurt@gtu.edu.tr</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI4">
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:name>pSok2</sbmlRdf:name>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI1"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:notes>phosphorylated  Protein SOK2</sbmlRdf:notes>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.999999999999971</sbmlRdf:initialConcentration>
+    <bqbiol:isVersionOf rdf:resource="http://purl.uniprot.org/uniprot/P53438"/>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_731a8191-11d5-43ab-bc13-a36fa56a1c3c">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/23631506"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</sbmlRdf:value>
+    <sbmlRdf:name>c_3</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_7aab00ba-d44e-49e6-b405-3262e2393e82">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/11884593"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:value>
+    <sbmlRdf:name>dpime_1</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_720e77fd-ee1d-4dff-81ec-d6a729303ec5">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/11238897"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/23631506"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7</sbmlRdf:value>
+    <sbmlRdf:name>psok_2</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_22d2ece9-de58-4150-9e6b-f936a1c7d651">
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_541e9908-b2c7-47f2-ad6c-1e535605f196"/>
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#f34659a8-45ad-4b8b-bfbe-1dcc0ecf302f"/>
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#cd40c10c-b1f9-497e-b45e-7eb45e31ecb9"/>
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_97c73824-0b11-42be-8fcf-a01f1335f18f"/>
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#bcfa9597-fd8c-47a0-946c-8a340c715226"/>
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_0b0e531d-02b9-482b-8864-4689b9087305"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#bcfa9597-fd8c-47a0-946c-8a340c715226">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/23631506"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</sbmlRdf:value>
+    <sbmlRdf:name>cime_1</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_989dc9d3-4fa0-4f95-85bc-e1dc6238cea5">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/22194413"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</sbmlRdf:value>
+    <sbmlRdf:name>sime_2</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#ef062929-1aa9-4d5a-8204-f7d52ce5c04f">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI4"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <vCard:Orgname>Washington State University</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_51a3c440-524f-4e3c-9fc7-ec7caa94e841">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI2"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.uniprot.org/uniprot/P39001">
+    <owl:sameAs rdf:resource="http://identifiers.org/uniprot/P39001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_865bbfb5-4c17-43cd-a199-64e08e8e4f48">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI2"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI8">
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000330"/>
+    <sbmlRdf:notes>Rim11 Dephosphorylation</sbmlRdf:notes>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:reversible>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#f27ce4e3-17ef-454f-9f04-e9fbfdc23e2d"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:name>Rim11 Dephosphorylation</sbmlRdf:name>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_1bde6531-485d-4610-8569-1b1b69828cfd"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0006470"/>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_51a3c440-524f-4e3c-9fc7-ec7caa94e841"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_081fece0-5f47-4d17-8e86-a336f4e9d186">
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#b99ef3ad-d5f2-4dca-92e2-60263522ce94"/>
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_4087f9e6-3ec9-4165-ad84-a3ebc5cdab2a"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_2e925582-2939-4f8d-9818-fb1bbfcfa9f9">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#FunctionDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.uniprot.org/uniprot/P38615">
+    <owl:sameAs rdf:resource="http://identifiers.org/uniprot/P38615"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#f27ce4e3-17ef-454f-9f04-e9fbfdc23e2d">
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#bb9156e4-b720-4b4b-8ccc-4342ceea66a7"/>
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#da8f762f-9a08-4003-9494-a31bb310ddd5"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_7e2fe70d-d915-4426-8a7e-113865cc9c99">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#FunctionDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI11">
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_17aaea68-860c-42a6-819b-76b7f8f6dda8"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000393"/>
+    <sbmlRdf:notes>Ime1 Protein Production</sbmlRdf:notes>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_22d2ece9-de58-4150-9e6b-f936a1c7d651"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#ba6ddc13-07f3-4427-8ce0-3fa43fb6234c"/>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_865bbfb5-4c17-43cd-a199-64e08e8e4f48"/>
+    <sbmlRdf:name>Ime1 Protein Production</sbmlRdf:name>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#ef062929-1aa9-4d5a-8204-f7d52ce5c04f"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#de7805ec-2371-4e64-b186-8cac53408c7d">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI6"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#ba6ddc13-07f3-4427-8ce0-3fa43fb6234c">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI5"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.uniprot.org/uniprot/P21190">
+    <owl:sameAs rdf:resource="http://identifiers.org/uniprot/P21190"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI3">
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <sbmlRdf:name>pUme6</sbmlRdf:name>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI1"/>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:notes>Phosphorylated Transcriptional regulatory protein UME6</sbmlRdf:notes>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <bqbiol:isVersionOf rdf:resource="http://purl.uniprot.org/uniprot/P39001"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <vCard:Given>Hamza Umut</vCard:Given>
+    <vCard:Family>Karakurt</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_47343a43-d495-4e20-aab4-fcf869f418f9">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI5"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.uniprot.org/uniprot/P53438">
+    <owl:sameAs rdf:resource="http://identifiers.org/uniprot/P53438"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <vCard:Given>Ray</vCard:Given>
+    <vCard:Family>Debjit</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <vCard:ORG rdf:nodeID="A6"/>
+    <vCard:EMAIL>kothamav@babraham.ac.uk</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_541e9908-b2c7-47f2-ad6c-1e535605f196">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/2005827"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/12660367"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/9528770"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/8462841"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</sbmlRdf:value>
+    <sbmlRdf:name>sime_1</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626">
+    <sbmlRdf:functionDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#f5cf31d0-180a-4669-89b3-f10ad139ba76"/>
+    <dcterms:creator rdf:nodeID="A0"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0051321"/>
+    <sbmlRdf:unitsDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_1e6636c1-aadf-429d-af88-357f415a0bc4"/>
+    <dcterms:created rdf:nodeID="A8"/>
+    <sbmlRdf:name>ODE pSok2_1_1 [1]</sbmlRdf:name>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI8"/>
+    <sbmlRdf:name>ODE pUme6_1_1 [1]</sbmlRdf:name>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI3"/>
+    <sbmlRdf:functionDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#c19f0d64-13f3-4e38-b3aa-c130ba01272b"/>
+    <sbmlRdf:volumeUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000625#a5aad1db-60db-490c-9545-4eaa540ba651"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI5"/>
+    <sbmlRdf:functionDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#e4201389-88a3-47be-8546-263935c39b0c"/>
+    <sbmlRdf:notes>Ray2013 - Meiotic initiation in S. cerevisiae A mathematical representation of early meiotic events, particularly feedback mechanisms at the system level and phosphorylation of signalling molecules for regulating protein activities, is described here This model is described in the article: Dynamic modeling of yeast meiotic initiation. Ray D, Su Y, Ye P. BMC Syst Biol. 2013 May 1;7:37 Abstract: BACKGROUND: Meiosis is the sexual reproduction process common to eukaryotes. The diploid yeast Saccharomyces cerevisiae undergoes meiosis in sporulation medium to form four haploid spores. Initiation of the process is tightly controlled by intricate networks of positive and negative feedback loops. Intriguingly, expression of early meiotic proteins occurs within a narrow time window. Further, sporulation efficiency is strikingly different for yeast strains with distinct mutations or genetic backgrounds. To investigate signal transduction pathways that regulate transient protein expression and sporulation efficiency, we develop a mathematical model using ordinary differential equations. The model describes early meiotic events, particularly feedback mechanisms at the system level and phosphorylation of signaling molecules for regulating protein activities. RESULTS: The mathematical model is capable of simulating the orderly and transient dynamics of meiotic proteins including Ime1, the master regulator of meiotic initiation, and Ime2, a kinase encoded by an early gene. The model is validated by quantitative sporulation phenotypes of single-gene knockouts. Thus, we can use the model to make novel predictions on the cooperation between proteins in the signaling pathway. Virtual perturbations on feedback loops suggest that both positive and negative feedback loops are required to terminate expression of early meiotic proteins. Bifurcation analyses on feedback loops indicate that multiple feedback loops are coordinated to modulate sporulation efficiency. In particular, positive auto-regulation of Ime2 produces a bistable system with a normal meiotic state and a more efficient meiotic state. CONCLUSIONS: By systematically scanning through feedback loops in the mathematical model, we demonstrate that, in yeast, the decisions to terminate protein expression and to sporulate at different efficiencies stem from feedback signals toward the master regulator Ime1 and the early meiotic protein Ime2. We argue that the architecture of meiotic initiation pathway generates a robust mechanism that assures a rapid and complete transition into meiosis. This type of systems-level regulation is a commonly used mechanism controlling developmental programs in yeast and other organisms. Our mathematical model uncovers key regulations that can be manipulated to enhance sporulation efficiency, an important first step in the development of new strategies for producing gametes with high quality and quantity. This model is hosted on BioModels Database and identified by: MODEL1303060000 . To cite BioModels Database, please use: BioModels Database: An enhanced, curated and annotated resource for published quantitative kinetic models . To the extent possible under law, all copyright and related or neighbouring rights to this encoded model have been dedicated to the public domain worldwide. Please refer to CC0 Public Domain Dedication for more information.</sbmlRdf:notes>
+    <dcterms:creator rdf:nodeID="A5"/>
+    <bqmodel:is rdf:resource="http://identifiers.org/mamo/MAMO_0000046"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI9"/>
+    <bqmodel:curated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</bqmodel:curated>
+    <sbmlRdf:name>Ray2013 - Meiotic initiation in S. cerevisiae</sbmlRdf:name>
+    <bqmodel:is rdf:resource="http://identifiers.org/biomodels.db/MODEL1303060000"/>
+    <dcterms:modified rdf:nodeID="A9"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/23631506"/>
+    <sbmlRdf:compartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI1"/>
+    <sbmlRdf:lengthUnit rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000507#e29e6a88-1b11-4c5c-9a43-3e3fcdb5bc59"/>
+    <sbmlRdf:name>ODE Ime1_1_1 [1]</sbmlRdf:name>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI11"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI7"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI2"/>
+    <sbmlRdf:functionDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#d616818e-12f7-47e1-8092-cc15c4e9d95b"/>
+    <bqmodel:isDescribedBy rdf:resource="http://identifiers.org/pubmed/23631506"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLModel"/>
+    <sbmlRdf:functionDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_7e2fe70d-d915-4426-8a7e-113865cc9c99"/>
+    <bqmodel:is rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626"/>
+    <sbmlRdf:name>ODE Rim11_1_1</sbmlRdf:name>
+    <sbmlRdf:functionDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_2e925582-2939-4f8d-9818-fb1bbfcfa9f9"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0040020"/>
+    <sbmlRdf:substanceUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000625#_7e947627-1674-430f-bc0c-034d59c8f45b"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI10"/>
+    <sbmlRdf:areaUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000507#_06853e1f-f7fb-44cb-961a-6d28cf93f31d"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI13"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI4"/>
+    <bqmodel:is rdf:resource="http://identifiers.org/eco/ECO:0000362"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI12"/>
+    <sbmlRdf:name>ODE pIme1_1_1 [1]</sbmlRdf:name>
+    <sbmlRdf:timeUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_1e6636c1-aadf-429d-af88-357f415a0bc4"/>
+    <sbmlRdf:name>ODE Ime2_1_1_1 [1]</sbmlRdf:name>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI6"/>
+    <dcterms:creator rdf:nodeID="A10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_70514836-774b-45f7-a0b4-d89405cb6f5d">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI6"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI7">
+    <bqbiol:isVersionOf rdf:resource="http://purl.uniprot.org/uniprot/P32581"/>
+    <sbmlRdf:notes>Meiosis induction protein kinase IME2/SME1</sbmlRdf:notes>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI1"/>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:name>Ime2</sbmlRdf:name>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_4087f9e6-3ec9-4165-ad84-a3ebc5cdab2a">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/23631506"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/8628320"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3</sbmlRdf:value>
+    <sbmlRdf:name>pume_6</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI12">
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_7e2fddff-92e9-45ea-b3ad-097b49840823"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#b60ac3f7-21ff-4221-b153-47148deb92ef"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_129f3b1a-fb43-472f-ae39-6f1fef63cc3d"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000216"/>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:notes>Phosphorylation of Ime1</sbmlRdf:notes>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#e8357ef8-026b-410b-80a8-4367449f6956"/>
+    <sbmlRdf:name>Phosphorylation of Ime1</sbmlRdf:name>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#de7805ec-2371-4e64-b186-8cac53408c7d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_48d5f050-30a9-4d41-b9cc-2c4ac9be5d46">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/23631506"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05</sbmlRdf:value>
+    <sbmlRdf:name>csok_2</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#da8f762f-9a08-4003-9494-a31bb310ddd5">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/23631506"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</sbmlRdf:value>
+    <sbmlRdf:name>prim_11</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI2">
+    <bqbiol:isVersionOf rdf:resource="http://purl.uniprot.org/uniprot/P38615"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI1"/>
+    <sbmlRdf:name>Rim11</sbmlRdf:name>
+    <sbmlRdf:notes>Serine/threonine-protein kinase RIM11</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#e4201389-88a3-47be-8546-263935c39b0c">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#FunctionDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_7e2fddff-92e9-45ea-b3ad-097b49840823">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI6"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#f9542153-125b-4ae0-93ba-266b799243b1">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI4"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <vCard:Orgname>Gebze Technical University</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_866f8356-7ebf-49b5-bb6c-f7f9f4b9ef04">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI4"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_4ffafbd8-694b-44f3-8cdc-002e62aca1c3">
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#c64bb71d-5b28-4a24-953f-c4e0ec30f927"/>
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_720e77fd-ee1d-4dff-81ec-d6a729303ec5"/>
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_48d5f050-30a9-4d41-b9cc-2c4ac9be5d46"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_919ab655-aed8-4119-b3e3-ab18336a0707">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/23631506"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.4</sbmlRdf:value>
+    <sbmlRdf:name>c_2</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_17aaea68-860c-42a6-819b-76b7f8f6dda8">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI7"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#bf478b9d-93fb-4e0e-8191-4c708d43d510">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/23631506"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</sbmlRdf:value>
+    <sbmlRdf:name>pime_1</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI13">
+    <sbmlRdf:notes>Ime2 Protein Production</sbmlRdf:notes>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:reversible>
+    <sbmlRdf:name>Ime2 Protein Production</sbmlRdf:name>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_70514836-774b-45f7-a0b4-d89405cb6f5d"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_78c52426-eeb3-402b-a813-75221eaec425"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_8ef2285b-86b1-4891-8f96-1d945be99858"/>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_677c44b4-3a5d-4257-bce1-c7fcd3931f65"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000393"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <dcterms:W3CDTF>Tue Feb 28 14:19:53 GMT 2017</dcterms:W3CDTF>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_49f81618-cb8a-40e9-87ca-fd7c591fe6c9">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI3"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <vCard:ORG rdf:nodeID="A3"/>
+    <vCard:EMAIL>debjit.ray@email.wsu.edu</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <vCard:Given>Varun</vCard:Given>
+    <vCard:Family>Kothamachu</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#d616818e-12f7-47e1-8092-cc15c4e9d95b">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#FunctionDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_8ef2285b-86b1-4891-8f96-1d945be99858">
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_9d14ffba-f3d8-467e-81ec-1d4fe6267d37"/>
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_989dc9d3-4fa0-4f95-85bc-e1dc6238cea5"/>
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#a53ac595-9628-4e99-922b-cb2a68d363b7"/>
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_731a8191-11d5-43ab-bc13-a36fa56a1c3c"/>
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_919ab655-aed8-4119-b3e3-ab18336a0707"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_54042dce-1e66-4ca7-9291-9b1f46cfa347">
+    <sbmlRdf:exponent rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:exponent>
+    <sbmlRdf:scale rdf:datatype="http://www.w3.org/2001/XMLSchema#long">0</sbmlRdf:scale>
+    <sbmlRdf:multipler rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3600.0</sbmlRdf:multipler>
+    <sbmlRdf:kind rdf:datatype="java:org.sbml.jsbml.Unit$Kind">SECOND</sbmlRdf:kind>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI6">
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:notes>phosphorylated Meiosis-inducing protein 1</sbmlRdf:notes>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI1"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:name>pIme1</sbmlRdf:name>
+    <bqbiol:isVersionOf rdf:resource="http://purl.uniprot.org/uniprot/P21190"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_1bde6531-485d-4610-8569-1b1b69828cfd">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI2"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_97c73824-0b11-42be-8fcf-a01f1335f18f">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/11884593"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:value>
+    <sbmlRdf:name>dime_1</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_78c52426-eeb3-402b-a813-75221eaec425">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI7"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_677c44b4-3a5d-4257-bce1-c7fcd3931f65">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI3"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#f5cf31d0-180a-4669-89b3-f10ad139ba76">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#FunctionDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#c19f0d64-13f3-4e38-b3aa-c130ba01272b">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#FunctionDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_0b0e531d-02b9-482b-8864-4689b9087305">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/23631506"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</sbmlRdf:value>
+    <sbmlRdf:name>c_1</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_4c807518-2cab-44dd-8203-75c29ddc52a1">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI2"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#b99ef3ad-d5f2-4dca-92e2-60263522ce94">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/8628320"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/23631506"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</sbmlRdf:value>
+    <sbmlRdf:name>uume_6</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#cd40c10c-b1f9-497e-b45e-7eb45e31ecb9">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/11884593"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:value>
+    <sbmlRdf:name>dprimeime_1</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#c64bb71d-5b28-4a24-953f-c4e0ec30f927">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/23631506"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/11238897"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:value>
+    <sbmlRdf:name>usok_2</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI9">
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_081fece0-5f47-4d17-8e86-a336f4e9d186"/>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_4c807518-2cab-44dd-8203-75c29ddc52a1"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_49f81618-cb8a-40e9-87ca-fd7c591fe6c9"/>
+    <sbmlRdf:notes>Ume6 Phosphorylation</sbmlRdf:notes>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000216"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:reversible>
+    <sbmlRdf:name>Ume6 Phosphorylation</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#a53ac595-9628-4e99-922b-cb2a68d363b7">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/11884593"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.0</sbmlRdf:value>
+    <sbmlRdf:name>dime_2</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.uniprot.org/uniprot/P32581">
+    <owl:sameAs rdf:resource="http://identifiers.org/uniprot/P32581"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#_1e6636c1-aadf-429d-af88-357f415a0bc4">
+    <sbmlRdf:unit rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_54042dce-1e66-4ca7-9291-9b1f46cfa347"/>
+    <sbmlRdf:name>time</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnitsDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <vCard:Orgname>Babraham Institute</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI5">
+    <bqbiol:isVersionOf rdf:resource="http://purl.uniprot.org/uniprot/P21190"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:notes>Meiosis-inducing protein 1</sbmlRdf:notes>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI1"/>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:name>Ime1</sbmlRdf:name>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI1">
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0005623"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/fma/FMA:68646"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000290"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:size rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:size>
+    <sbmlRdf:spatialDimensions rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</sbmlRdf:spatialDimensions>
+    <sbmlRdf:name>Cell</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Compartment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#e8357ef8-026b-410b-80a8-4367449f6956">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#COPASI5"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <dcterms:W3CDTF>Fri Feb 03 14:41:35 GMT 2017</dcterms:W3CDTF>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000626#b60ac3f7-21ff-4221-b153-47148deb92ef">
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#bf478b9d-93fb-4e0e-8191-4c708d43d510"/>
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000626#_7aab00ba-d44e-49e6-b405-3262e2393e82"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+</rdf:RDF>

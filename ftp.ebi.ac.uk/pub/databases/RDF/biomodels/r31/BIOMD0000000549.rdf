@@ -1,0 +1,192 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:bqmodel="http://biomodels.net/model-qualifiers#"
+    xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#"
+    xmlns:biodb="http://identifiers.org/biomodels.db/BIOMD0000000549#"
+    xmlns:bqbiol="http://biomodels.net/biology-qualifiers#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:sbmlRdf="http://identifiers.org/biomodels.vocabulary#" > 
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI3">
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/chebi/CHEBI:67079"/>
+    <sbmlRdf:name>a</sbmlRdf:name>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:boundaryCondition>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.00577667577789773</sbmlRdf:initialConcentration>
+    <sbmlRdf:notes>Anti-inflammatory cytokine concentration (dimensionless)</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI4">
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/fma/FMA:84050"/>
+    <bqbiol:hasProperty rdf:resource="http://identifiers.org/pato/PATO:0002104"/>
+    <sbmlRdf:name>p</sbmlRdf:name>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:boundaryCondition>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0203298264712407</sbmlRdf:initialConcentration>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:notes>Pro-inflammatory cytokine concentration (dimensionless)</sbmlRdf:notes>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <vCard:ORG rdf:nodeID="A1"/>
+    <vCard:EMAIL>vknight@ebi.ac.uk</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI12">
+    <sbmlRdf:notes>maximum value of alpha2</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.0</sbmlRdf:value>
+    <sbmlRdf:name>alpha2_max</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI11">
+    <sbmlRdf:notes>minimum value of alpha2</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:value>
+    <sbmlRdf:name>alpha2_min</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI2">
+    <sbmlRdf:notes>Compartment notes: "The synovium is modelled as a spatially uniform collection of homogeneous, generic cells."</sbmlRdf:notes>
+    <bqbiol:is rdf:resource="http://identifiers.org/bto/BTO:0001823"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:size rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:size>
+    <sbmlRdf:spatialDimensions rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</sbmlRdf:spatialDimensions>
+    <sbmlRdf:name>Synovium</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Compartment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI6">
+    <sbmlRdf:notes>In this model, alpha2 (the additional pro-inflammatory production parameter) is a function of time as described in the original article.</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:value>
+    <sbmlRdf:name>alpha2</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI8">
+    <sbmlRdf:notes>Magnitude of anti-inflammatory cytokine production.</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.0</sbmlRdf:value>
+    <sbmlRdf:name>alpha4</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI7">
+    <sbmlRdf:notes>Pro-inflammatory cytokine concentration at which the anti-inflammatoryproduction is half maximal</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</sbmlRdf:value>
+    <sbmlRdf:name>alpha3</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549#e07882ac-afbf-40d0-aebc-9e86d942f493">
+    <sbmlRdf:unit rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#_250e6bea-c254-406e-ad6f-e7663a3287fc"/>
+    <sbmlRdf:name>time</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnitsDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI5">
+    <sbmlRdf:notes>Background pro-inflammatory production rate</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.025</sbmlRdf:value>
+    <sbmlRdf:name>alpha1</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <dcterms:W3CDTF>Fri Mar 24 15:26:48 GMT 2017</dcterms:W3CDTF>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI9">
+    <sbmlRdf:notes>Relative rate of clearance of pro-inflammatory cytokine to anti-inflammatory cytokine.</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.25</sbmlRdf:value>
+    <sbmlRdf:name>gamma</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549#_3ded355b-a956-42ef-ad67-726e90079950">
+    <sbmlRdf:unit rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#dfa8db5d-9eb0-4b4d-b6bc-968f04d771b5"/>
+    <sbmlRdf:name>volume</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnitsDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI3"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI8"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0050727"/>
+    <sbmlRdf:volumeUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#_3ded355b-a956-42ef-ad67-726e90079950"/>
+    <sbmlRdf:unitsDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#e07882ac-afbf-40d0-aebc-9e86d942f493"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI9"/>
+    <sbmlRdf:areaUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000428#_844749"/>
+    <sbmlRdf:rule rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#ebfcc2cd-db99-4881-ae90-b34d6c15a564"/>
+    <sbmlRdf:name>Baker2013 - Cytokine Mediated Inflammation in Rheumatoid Arthritis - Age Dependent</sbmlRdf:name>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI11"/>
+    <bqmodel:isDescribedBy rdf:resource="http://identifiers.org/pubmed/23002057"/>
+    <sbmlRdf:lengthUnit rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000428#_844677"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI12"/>
+    <dcterms:modified rdf:nodeID="A3"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI10"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI5"/>
+    <sbmlRdf:substanceUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#b61d4e9a-9b37-4bb4-b54a-b83d198baf95"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLModel"/>
+    <sbmlRdf:notes>Baker2013 - Cytokine Mediated Inflammation in Rheumatoid Arthritis - Age Dependant This model by Baker M. 2013, describes the interaction between pro and anti-inflammatory cytokine signalling in rheumatoid arthritis. Using two ordinary differential equations, the first model [BIOMD0000000550] analyses bifurcation and describes different pathological states by altering inflammatory regulation parameters. The second model [BIOMD0000000549] includes the effect that ageing has on pro-inflammatory signalling, allowing for time-dependant properties and disease progression to be observed. The author also describes potential dosing for reversal of the disease state. This model is described in the article: Mathematical modelling of cytokine-mediated inflammation in rheumatoid arthritis. Baker M, Denman-Johnson S, Brook BS, Gaywood I, Owen MR. Math Med Biol 2013 Dec; 30(4): 311-337 Abstract: Rheumatoid arthritis (RA) is a chronic inflammatory disease preferentially affecting the joints and leading, if untreated, to progressive joint damage and disability. Cytokines, a group of small inducible proteins, which act as intercellular messengers, are key regulators of the inflammation that characterizes RA. They can be classified into pro-inflammatory and anti-inflammatory groups. Numerous cytokines have been implicated in the regulation of RA with complex up and down regulatory interactions. This paper considers a two-variable model for the interactions between pro-inflammatory and anti-inflammatory cytokines, and demonstrates that mathematical modelling may be used to investigate the involvement of cytokines in the disease process. The model displays a range of possible behaviours, such as bistability and oscillations, which are strongly reminiscent of the behaviour of RA e.g. genetic susceptibility and remitting-relapsing disease. We also show that the dose regimen as well as the dose level are important factors in RA treatments. This model is hosted on BioModels Database and identified by: BIOMD0000000549. To cite BioModels Database, please use: BioModels Database: An enhanced, curated and annotated resource for published quantitative kinetic models. To the extent possible under law, all copyright and related or neighbouring rights to this encoded model have been dedicated to the public domain worldwide. Please refer to CC0 Public Domain Dedication for more information.</sbmlRdf:notes>
+    <sbmlRdf:timeUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#e07882ac-afbf-40d0-aebc-9e86d942f493"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI4"/>
+    <bqbiol:isPartOf rdf:resource="http://identifiers.org/reactome/REACT_75790"/>
+    <sbmlRdf:compartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI2"/>
+    <bqmodel:curated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</bqmodel:curated>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI6"/>
+    <bqbiol:hasVersion rdf:resource="http://identifiers.org/icd/M06.9"/>
+    <bqbiol:hasTaxon rdf:resource="http://identifiers.org/taxonomy/9606"/>
+    <bqmodel:is rdf:resource="http://identifiers.org/biomodels.db/MODEL1409250001"/>
+    <sbmlRdf:rule rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#_315ffa65-e03b-4896-bd96-ef395c09a6da"/>
+    <sbmlRdf:unitsDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#b61d4e9a-9b37-4bb4-b54a-b83d198baf95"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI7"/>
+    <sbmlRdf:unitsDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#_3ded355b-a956-42ef-ad67-726e90079950"/>
+    <bqmodel:is rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549"/>
+    <sbmlRdf:rule rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#_09661aea-4285-40a9-8549-aeb67bd48ef3"/>
+    <dcterms:created rdf:nodeID="A4"/>
+    <dcterms:creator rdf:nodeID="A0"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0019221"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <dcterms:W3CDTF>Thu Sep 25 14:46:13 BST 2014</dcterms:W3CDTF>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <vCard:Given>Vincent</vCard:Given>
+    <vCard:Family>Knight-Schrijver</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549#cfdadd7f-1e44-4e68-a683-d737ea066744">
+    <sbmlRdf:exponent rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:exponent>
+    <sbmlRdf:scale rdf:datatype="http://www.w3.org/2001/XMLSchema#long">0</sbmlRdf:scale>
+    <sbmlRdf:multipler rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:multipler>
+    <sbmlRdf:kind rdf:datatype="java:org.sbml.jsbml.Unit$Kind">DIMENSIONLESS</sbmlRdf:kind>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <vCard:Orgname>EMBL-EBI</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549#b61d4e9a-9b37-4bb4-b54a-b83d198baf95">
+    <sbmlRdf:unit rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000549#cfdadd7f-1e44-4e68-a683-d737ea066744"/>
+    <sbmlRdf:name>substance</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnitsDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549#COPASI10">
+    <sbmlRdf:notes>Value of alpha2 where t = 1/2 of maximal alpha2</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15.0</sbmlRdf:value>
+    <sbmlRdf:name>alpha2T</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549#dfa8db5d-9eb0-4b4d-b6bc-968f04d771b5">
+    <sbmlRdf:exponent rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:exponent>
+    <sbmlRdf:scale rdf:datatype="http://www.w3.org/2001/XMLSchema#long">0</sbmlRdf:scale>
+    <sbmlRdf:multipler rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:multipler>
+    <sbmlRdf:kind rdf:datatype="java:org.sbml.jsbml.Unit$Kind">DIMENSIONLESS</sbmlRdf:kind>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000549#_250e6bea-c254-406e-ad6f-e7663a3287fc">
+    <sbmlRdf:exponent rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:exponent>
+    <sbmlRdf:scale rdf:datatype="http://www.w3.org/2001/XMLSchema#long">0</sbmlRdf:scale>
+    <sbmlRdf:multipler rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:multipler>
+    <sbmlRdf:kind rdf:datatype="java:org.sbml.jsbml.Unit$Kind">DIMENSIONLESS</sbmlRdf:kind>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnit"/>
+  </rdf:Description>
+</rdf:RDF>

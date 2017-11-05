@@ -1,0 +1,196 @@
+<rdf:RDF
+    xmlns:biodb="http://identifiers.org/biomodels.db/BIOMD0000000521#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:bqmodel="http://biomodels.net/model-qualifiers#"
+    xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#"
+    xmlns:bqbiol="http://biomodels.net/biology-qualifiers#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:sbmlRdf="http://identifiers.org/biomodels.vocabulary#" > 
+  <rdf:Description rdf:nodeID="A0">
+    <dcterms:W3CDTF>Sat Mar 01 16:41:17 GMT 2014</dcterms:W3CDTF>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <vCard:Orgname>EMBL-EBI</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000521#_6a19f916-cfbf-4494-8365-04d7739d1a9a">
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/fma/FMA:9637"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:size rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:size>
+    <sbmlRdf:spatialDimensions rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</sbmlRdf:spatialDimensions>
+    <sbmlRdf:name>tissue</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Compartment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000521#_6a46dca7-162c-4efe-8273-751fe24af5ee">
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.13</sbmlRdf:value>
+    <sbmlRdf:name>P0</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000521#_2b5850ee-43ec-4180-894f-95ba41d53d11">
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.24</sbmlRdf:value>
+    <sbmlRdf:name>KDE</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000521#_95fcfe17-c74b-4bd3-8906-d4f1f0ad0c25">
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_6a19f916-cfbf-4494-8365-04d7739d1a9a"/>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/fma/FMA:9637"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <bqbiol:hasProperty rdf:resource="http://identifiers.org/pato/PATO:0002102"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:name>Proliferative tissue</sbmlRdf:name>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.13</sbmlRdf:initialConcentration>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000521">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_039581c1-d8b7-4a55-bc0c-b7b307fd7c40"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_6a46dca7-162c-4efe-8273-751fe24af5ee"/>
+    <bqmodel:is rdf:resource="http://identifiers.org/biomodels.db/MODEL1402250000"/>
+    <sbmlRdf:timeUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000520#_85405cfa-9bc0-444c-8cba-87d85a1f52c2"/>
+    <sbmlRdf:rule rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_126cb7e0-1ac3-427b-9bc8-5262407be331"/>
+    <sbmlRdf:rule rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_4e3b656e-48a8-44d1-a66c-dadef18665a9"/>
+    <sbmlRdf:volumeUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000520#f4b1b09d-c172-43ba-a511-23cb4fd3377d"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#bd38ace0-b75d-4bb8-b598-7033e1aa43ab"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#f495aae0-37c3-4f57-be0e-0c7747d4f975"/>
+    <dcterms:modified rdf:nodeID="A2"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0002357"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_5cc05fc3-7989-4294-83f3-2fd82d74d326"/>
+    <sbmlRdf:compartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_5948e901-512e-4403-ad31-2d18e9c72d8f"/>
+    <bqbiol:hasProperty rdf:resource="http://identifiers.org/mamo/MAMO_0000046"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_09e6aa4e-c6cc-474c-b2b7-c436bc5b8e9e"/>
+    <sbmlRdf:notes>Ribba2012 - Low-grade gliomas, tumour growth inhibition model Using longitudinal mean tumour diameter (MTD) data, this model describe the size evolution of low-grade glioma (LGG) in patients treated with chemotherapy or radiotherapy. This model is described in the article: A tumour growth inhibition model for low-grade glioma treated with chemotherapy or radiotherapy Ribba B, Kaloshi G, Peyre M, Ricard D, Calvez V, Tod M, Cajavec-Bernard B, Idbaih A, Psimaras D, Dainese L, Pallud J, Cartalat-Carel S, Delattre JY, Honnorat J, Grenier E, Ducray F. Clin. Cancer Res. 2012 Sep; 18(18): 5071-5080 Abstract: PURPOSE: To develop a tumor growth inhibition model for adult diffuse low-grade gliomas (LGG) able to describe tumor size evolution in patients treated with chemotherapy or radiotherapy. EXPERIMENTAL DESIGN: Using longitudinal mean tumor diameter (MTD) data from 21 patients treated with first-line procarbazine, 1-(2-chloroethyl)-3-cyclohexyl-l-nitrosourea, and vincristine (PCV) chemotherapy, we formulated a model consisting of a system of differential equations, incorporating tumor-specific and treatment-related parameters that reflect the response of proliferative and quiescent tumor tissue to treatment. The model was then applied to the analysis of longitudinal tumor size data in 24 patients treated with first-line temozolomide (TMZ) chemotherapy and in 25 patients treated with first-line radiotherapy. RESULTS: The model successfully described the MTD dynamics of LGG before, during, and after PCV chemotherapy. Using the same model structure, we were also able to successfully describe the MTD dynamics in LGG patients treated with TMZ chemotherapy or radiotherapy. Tumor-specific parameters were found to be consistent across the three treatment modalities. The model is robust to sensitivity analysis, and preliminary results suggest that it can predict treatment response on the basis of pretreatment tumor size data. CONCLUSIONS: Using MTD data, we propose a tumor growth inhibition model able to describe LGG tumor size evolution in patients treated with chemotherapy or radiotherapy. In the future, this model might be used to predict treatment efficacy in LGG patients and could constitute a rational tool to conceive more effective chemotherapy schedules. This model is hosted on BioModels Database and identified by: BIOMD0000000521 . To cite BioModels Database, please use: BioModels Database: An enhanced, curated and annotated resource for published quantitative kinetic models . To the extent possible under law, all copyright and related or neighbouring rights to this encoded model have been dedicated to the public domain worldwide. Please refer to CC0 Public Domain Dedication for more information.</sbmlRdf:notes>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#ac7ebf72-0757-4898-ba9d-08f68afe04df"/>
+    <sbmlRdf:name>Ribba2012 - Low-grade gliomas, tumour growth inhibition model</sbmlRdf:name>
+    <bqbiol:hasTaxon rdf:resource="http://identifiers.org/taxonomy/9606"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#c2f24a1b-be67-42fa-888a-8a09339ce4e0"/>
+    <bqmodel:curated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</bqmodel:curated>
+    <bqmodel:isDescribedBy rdf:resource="http://identifiers.org/pubmed/22761472"/>
+    <dcterms:creator rdf:nodeID="A3"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_2b5850ee-43ec-4180-894f-95ba41d53d11"/>
+    <sbmlRdf:lengthUnit rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000406#length"/>
+    <sbmlRdf:rule rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_926da843-14e9-4cd6-8774-a0e28508d11c"/>
+    <dcterms:created rdf:nodeID="A0"/>
+    <sbmlRdf:compartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_6a19f916-cfbf-4494-8365-04d7739d1a9a"/>
+    <bqmodel:is rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#a3dcb02d-60a4-4a7b-9a73-a862f5f0c05a"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLModel"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/doid/DOID:0060101"/>
+    <sbmlRdf:rule rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_4fdbba62-146a-4deb-adea-b1baf71c3bee"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_6945fb04-2814-436d-8637-2c3d5c6680f3"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_324e5429-a199-4cd2-9439-79bc74c79273"/>
+    <sbmlRdf:substanceUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000520#_01954cf4-e738-4452-a491-bd9c5e280e5f"/>
+    <sbmlRdf:rule rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_2eec0bc8-909a-4b72-9b00-0b955568f929"/>
+    <sbmlRdf:areaUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000406#area"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_29264cec-891d-4615-9818-c0b7bf030006"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_95fcfe17-c74b-4bd3-8906-d4f1f0ad0c25"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000521#_29264cec-891d-4615-9818-c0b7bf030006">
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_6a19f916-cfbf-4494-8365-04d7739d1a9a"/>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <bqbiol:hasProperty rdf:resource="http://identifiers.org/pato/PATO:0002355"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/fma/FMA:9637"/>
+    <sbmlRdf:name>damaged quiescent cells</sbmlRdf:name>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <bqbiol:hasProperty rdf:resource="http://identifiers.org/pato/PATO:0001020"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <dcterms:W3CDTF>Thu Oct 09 18:37:21 BST 2014</dcterms:W3CDTF>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000521#a3dcb02d-60a4-4a7b-9a73-a862f5f0c05a">
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:value>
+    <sbmlRdf:name>Pstar</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000521#_5cc05fc3-7989-4294-83f3-2fd82d74d326">
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0031</sbmlRdf:value>
+    <sbmlRdf:name>k_Qp_P</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000521#_039581c1-d8b7-4a55-bc0c-b7b307fd7c40">
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/chebi/CHEBI:71417"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/chebi/CHEBI:28445"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/chembl.compound/CHEMBL514"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_5948e901-512e-4403-ad31-2d18e9c72d8f"/>
+    <bqbiol:occursIn rdf:resource="http://identifiers.org/bto/BTO:0000131"/>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:name>PCV_plasma</sbmlRdf:name>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:initialConcentration>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <vCard:Given>Vijayalakshmi</vCard:Given>
+    <vCard:Family>Chelliah</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <vCard:ORG rdf:nodeID="A1"/>
+    <vCard:EMAIL>viji@ebi.ac.uk</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000521#_324e5429-a199-4cd2-9439-79bc74c79273">
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0087</sbmlRdf:value>
+    <sbmlRdf:name>delta_QP</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000521#bd38ace0-b75d-4bb8-b598-7033e1aa43ab">
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">41.2</sbmlRdf:value>
+    <sbmlRdf:name>Q0</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000521#f495aae0-37c3-4f57-be0e-0c7747d4f975">
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.729</sbmlRdf:value>
+    <sbmlRdf:name>gamma</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000521#_09e6aa4e-c6cc-474c-b2b7-c436bc5b8e9e">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/fma/FMA:9637"/>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:name>nonproliferative quiescent tissue</sbmlRdf:name>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">41.2</sbmlRdf:initialConcentration>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000521#_6a19f916-cfbf-4494-8365-04d7739d1a9a"/>
+    <bqbiol:hasProperty rdf:resource="http://identifiers.org/pato/PATO:0002355"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000521#ac7ebf72-0757-4898-ba9d-08f68afe04df">
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.0</sbmlRdf:value>
+    <sbmlRdf:name>K</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000521#_6945fb04-2814-436d-8637-2c3d5c6680f3">
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.00295</sbmlRdf:value>
+    <sbmlRdf:name>k_PQ</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000521#_5948e901-512e-4403-ad31-2d18e9c72d8f">
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/bto/BTO:0000131"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:size rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:size>
+    <sbmlRdf:spatialDimensions rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</sbmlRdf:spatialDimensions>
+    <sbmlRdf:name>plasma</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Compartment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000521#c2f24a1b-be67-42fa-888a-8a09339ce4e0">
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.121</sbmlRdf:value>
+    <sbmlRdf:name>lambda_P</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+</rdf:RDF>

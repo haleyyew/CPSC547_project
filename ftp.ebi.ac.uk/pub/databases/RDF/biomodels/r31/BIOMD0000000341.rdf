@@ -1,0 +1,175 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:biodb="http://identifiers.org/biomodels.db/BIOMD0000000341#"
+    xmlns:bqmodel="http://biomodels.net/model-qualifiers#"
+    xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#"
+    xmlns:bqbiol="http://biomodels.net/biology-qualifiers#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:sbmlRdf="http://identifiers.org/biomodels.vocabulary#" > 
+  <rdf:Description rdf:nodeID="A0">
+    <vCard:Orgname>EMBL-EBI</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000341#_274473">
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:size rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:size>
+    <sbmlRdf:spatialDimensions rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</sbmlRdf:spatialDimensions>
+    <sbmlRdf:name>cell</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Compartment"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <dcterms:W3CDTF>Thu Jul 07 16:51:17 BST 2011</dcterms:W3CDTF>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000341#_274474">
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/chebi/CHEBI:17234"/>
+    <sbmlRdf:name>glucose</sbmlRdf:name>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274473"/>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000247"/>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:boundaryCondition>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/kegg.compound/C00293"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">250.0</sbmlRdf:initialConcentration>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <vCard:ORG rdf:nodeID="A0"/>
+    <vCard:EMAIL>ajmera@ebi.ac.uk</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000341#_274475">
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274473"/>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:boundaryCondition>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000252"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:name>insulin</sbmlRdf:name>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <bqbiol:isVersionOf rdf:resource="http://purl.uniprot.org/uniprot/P01308"/>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.8</sbmlRdf:initialConcentration>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000341#_274477">
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274473"/>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:name>Mass</sbmlRdf:name>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">37.0</sbmlRdf:initialConcentration>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:boundaryCondition>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/bto/BTO:0000783"/>
+    <bqbiol:occursIn rdf:resource="http://identifiers.org/bto/BTO:0000991"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000240"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.uniprot.org/uniprot/P01308">
+    <owl:sameAs rdf:resource="http://identifiers.org/uniprot/P01308"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <vCard:Given>Ishan</vCard:Given>
+    <vCard:Family>Ajmera</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000341#_274490">
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000009"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">43.2</sbmlRdf:value>
+    <sbmlRdf:name>sigma</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000341#_274500">
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000009"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.4E-6</sbmlRdf:value>
+    <sbmlRdf:name>r2</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000341">
+    <sbmlRdf:compartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274473"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274488"/>
+    <dcterms:created rdf:nodeID="A1"/>
+    <sbmlRdf:rule rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274480"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274498"/>
+    <bqbiol:hasProperty rdf:resource="http://identifiers.org/doid/DOID:9351"/>
+    <dcterms:modified rdf:nodeID="A4"/>
+    <sbmlRdf:substanceUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000583#_8d7d42ce-376b-48bd-ba16-c8c41d5da470"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274475"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274490"/>
+    <sbmlRdf:areaUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000579#area"/>
+    <bqbiol:occursIn rdf:resource="http://identifiers.org/taxonomy/9606"/>
+    <sbmlRdf:name>Topp2000_BetaCellMass_Diabetes</sbmlRdf:name>
+    <sbmlRdf:rule rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274479"/>
+    <bqmodel:isDescribedBy rdf:resource="http://identifiers.org/pubmed/11013117"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274477"/>
+    <sbmlRdf:rule rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274482"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274492"/>
+    <bqmodel:curated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</bqmodel:curated>
+    <sbmlRdf:notes>This model is from the article: A model of beta-cell mass, insulin, and glucose kinetics: pathways to diabetes. Topp B, Promislow K, deVries G, Miura RM, Finegood DT. J Theor Biol.2000 Oct 21;206(4):605-19. 11013117, Abstract: Diabetes is a disease of the glucose regulatory system that is associated with increased morbidity and early mortality. The primary variables of this system are beta-cell mass, plasma insulin concentrations, and plasma glucose concentrations. Existing mathematical models of glucose regulation incorporate only glucose and/or insulin dynamics. Here we develop a novel model of beta -cell mass, insulin, and glucose dynamics, which consists of a system of three nonlinear ordinary differential equations, where glucose and insulin dynamics are fast relative to beta-cell mass dynamics. For normal parameter values, the model has two stable fixed points (representing physiological and pathological steady states), separated on a slow manifold by a saddle point. Mild hyperglycemia leads to the growth of the beta -cell mass (negative feedback) while extreme hyperglycemia leads to the reduction of the beta-cell mass (positive feedback). The model predicts that there are three pathways in prolonged hyperglycemia: (1) the physiological fixed point can be shifted to a hyperglycemic level (regulated hyperglycemia), (2) the physiological and saddle points can be eliminated (bifurcation), and (3) progressive defects in glucose and/or insulin dynamics can drive glucose levels up at a rate faster than the adaptation of the beta -cell mass which can drive glucose levels down (dynamical hyperglycemia).</sbmlRdf:notes>
+    <bqmodel:is rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLModel"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274484"/>
+    <sbmlRdf:volumeUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000583#_353e551c-d3cf-4c43-a110-3fd67cbce5fc"/>
+    <dcterms:creator rdf:nodeID="A2"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274494"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274486"/>
+    <sbmlRdf:lengthUnit rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000579#length"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0061178"/>
+    <sbmlRdf:timeUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000583#_02393ccd-3ac7-40a2-a500-e2c086f67b24"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274474"/>
+    <bqmodel:is rdf:resource="http://identifiers.org/biomodels.db/MODEL1106270000"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274500"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000341#_274496"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000341#_274492">
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000009"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20000.0</sbmlRdf:value>
+    <sbmlRdf:name>alpha</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000341#_274498">
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000009"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.4E-4</sbmlRdf:value>
+    <sbmlRdf:name>r1</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000341#_274494">
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000009"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">432.0</sbmlRdf:value>
+    <sbmlRdf:name>k</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000341#_274486">
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000009"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.44</sbmlRdf:value>
+    <sbmlRdf:name>Eg0</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <dcterms:W3CDTF>Fri Oct 10 11:28:51 BST 2014</dcterms:W3CDTF>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000341#_274484">
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000009"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.72</sbmlRdf:value>
+    <sbmlRdf:name>si</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000341#_274496">
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000179"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.06</sbmlRdf:value>
+    <sbmlRdf:name>d0</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000341#_274488">
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000393"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">864.0</sbmlRdf:value>
+    <sbmlRdf:name>R0</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+</rdf:RDF>

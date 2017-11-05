@@ -1,0 +1,1654 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:bqmodel="http://biomodels.net/model-qualifiers#"
+    xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#"
+    xmlns:biodb="http://identifiers.org/biomodels.db/BIOMD0000000600#"
+    xmlns:bqbiol="http://biomodels.net/biology-qualifiers#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:sbmlRdf="http://identifiers.org/biomodels.vocabulary#" > 
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_82ea7738-e543-407b-9cab-e36c818ebf67">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI17"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI31">
+    <sbmlRdf:notes>Assigned the range 10e-4 to 1 by the authors.
+
+Data obtained from provided literature.</sbmlRdf:notes>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/18443295"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/17186703"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/19254534"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.00923</sbmlRdf:value>
+    <sbmlRdf:name>k11</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI13">
+    <sbmlRdf:name>I_Smad_mRNA2</sbmlRdf:name>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:notes>Annotation provides information on the general Smad family.
+
+mRNA coding for I_Smad localized to the cytoplasm.</sbmlRdf:notes>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI1"/>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_6bb0134f-ef22-4463-89e9-4b60ad31d397">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI8"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_502bf320-c0e0-4c08-b37c-4045aa48b341">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI15"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI50">
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0051168"/>
+    <sbmlRdf:notes>Unphosphorylated Smad 2 or Smad 3 export from the nucleus.</sbmlRdf:notes>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#f4788bc7-875d-41cc-9048-5ed6849331ef"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_6bb0134f-ef22-4463-89e9-4b60ad31d397"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:name>r9</sbmlRdf:name>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_502bf320-c0e0-4c08-b37c-4045aa48b341"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI45">
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_535443b7-941b-4ea5-b93c-3a3f7fb8fd06"/>
+    <sbmlRdf:name>r4</sbmlRdf:name>
+    <bqbiol:hasVersion rdf:resource="http://identifiers.org/interpro/IPR000333"/>
+    <sbmlRdf:notes>Dephosphorylation of TGF-Beta type 1 receptor bound to TGF-Beta.</sbmlRdf:notes>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <bqbiol:hasVersion rdf:resource="http://identifiers.org/interpro/IPR016319"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#b0eea790-777e-4585-90b4-fed445c9ab02"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#ce393b51-1bae-48fb-b2bd-e7abd29f9cf5"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0016311"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_29c52792-642e-4105-9640-a555c1e3df33">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI13"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_1f25855a-44de-4dbd-97cb-e2f7fa9ee5a8">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI20"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#fce578dd-ea18-4a1b-bd42-7418014fc072">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <vCard:ORG rdf:nodeID="A1"/>
+    <vCard:EMAIL>tjstruck@email.arizona.edu</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI65">
+    <bqbiol:hasVersion rdf:resource="http://identifiers.org/uniprot.isoform/Q13485"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_71bc27a2-d570-4554-9898-42ddf1be2e29"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_6d8f9370-7688-4599-982e-174b3147b856"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#f15c774d-bbe0-40ce-87a1-a736c86ef41d"/>
+    <sbmlRdf:name>r24</sbmlRdf:name>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0043241"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:notes>Nuclear phosphorylated Smad and Co-Smad disocciate into phosphorylated Smad and Co-Smad monomers.
+
+InterPro annotation gives details on and source information for general Smads (including R-Smad and Co-Smad, as utilized in this reaction). 
+
+Gene Ontology GO:0043241 reference outlines terms associated with protein complex disassembly.
+
+Gene Ontology GO:0010862 reference outlines terms associated with SMAD protein phosphorylation, a critical element of setting up SMAD_P elements.
+
+Gene Ontology GO:0070410 references outlines terms associated with Co-Smad binding, a major element in this reaction (though unbinding is focus of reaction).
+
+Uniprot Q13485 is a Homo sapien version of Smad4, the Smad indicated as a Co-Smad by the model authors.
+
+This reaction occurs in nucleus.
+
+All annotations are generalized as the model details general TGFb pathway dynamics across relevant species (i.e. Homo sapiens, Drosophila, etc.).</sbmlRdf:notes>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <bqbiol:hasVersion rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_3ba3ba38-211e-4f9b-ac41-276e636b8424"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0070410"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0010862"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI51">
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_902ef1b7-33b5-4469-a800-0b639183011e"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_67e92ac8-00ce-4332-b8a5-d5fcf2760acb"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:notes>Smad_P represents phosphorylated Smad.
+
+Smad_P_Smad_P represents a homodimer of phosporylated Smads.
+
+This reaction represents homodimerization of phosphorylated Smads.</sbmlRdf:notes>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:name>r10</sbmlRdf:name>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0042803"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_2ac6b852-6fa5-4ab9-affe-e70e8b6722bb"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI32">
+    <sbmlRdf:notes>Assigned the range 10e-2 to 10 by the authors.
+
+Data obtained from provided literature.</sbmlRdf:notes>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/18443295"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0513</sbmlRdf:value>
+    <sbmlRdf:name>k12</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_990bcf69-f291-4f6a-8ba2-a0cfc11c6ce7">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI10"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_8fd8a679-3074-4cbf-af12-285cfea95bd0">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI17"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#a88ff479-9c6e-4c74-83e1-f22148766555">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI14">
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI1"/>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:notes>Annotation provides information on the general Smad family.</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:name>I_Smad</sbmlRdf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI46">
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <bqbiol:hasVersion rdf:resource="http://identifiers.org/go/GO:0070411"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <bqbiol:hasVersion rdf:resource="http://identifiers.org/go/GO:0030617"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_60017ac1-a711-4d8b-902f-a0c83547bf61"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR000333"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#bc232ed7-21a1-49fa-ad55-568b92d4d273"/>
+    <sbmlRdf:name>r5</sbmlRdf:name>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#f50dbf7c-4394-4153-817d-2f37d9826098"/>
+    <sbmlRdf:notes>I-Smad sequestering and dephosphorylating TGF-Beta type 1 receptor.</sbmlRdf:notes>
+    <bqbiol:hasVersion rdf:resource="http://identifiers.org/go/GO:0016311"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#ab1197bd-57e5-4fca-a981-e4b32e5162cd"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR016319"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#e5e8e957-e881-422b-9d05-d55870549aac">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI8"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_0fb5f82c-61d8-4e48-9f0f-d37774e965c4">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI15"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#e22fab35-94b0-40af-a30e-1daaf08e6140">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI66">
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_09eb15ed-85c9-4665-93fd-81f8b7c32d2b"/>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#f17ef9d7-7c86-4145-b8e8-632f1315a473"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#b139be4c-a8bb-4b20-95b1-068547a0d0e5"/>
+    <sbmlRdf:notes>I-Smad mRNA is created in the nucleus, a process which is inhibited by the nuclear phosphorylated Smad and Co-Smad heterodimer.
+
+
+InterPro annotation gives details on and source information for general Smads (including I-Smads, as encoded for by the product of this reaction). 
+
+This reaction occurs in the nucleus.
+
+All annotations are generalized as the model details general TGFb pathway dynamics across relevant species (i.e. Homo sapiens, Drosophila, etc.)</sbmlRdf:notes>
+    <bqbiol:encodes rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:name>r25</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_6864e964-0839-4dd2-b687-f46519aacfd2">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <vCard:Orgname>University of Arizona</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI52">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_7da93f00-8307-4835-9564-6101548a9048"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:name>r11</sbmlRdf:name>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_97ea8b1a-08d3-4557-8b42-43a8d89a3253"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_013942f5-cee9-4312-929c-b465f3c04f3e"/>
+    <bqbiol:isPartOf rdf:resource="http://identifiers.org/go/GO:0043241"/>
+    <sbmlRdf:notes>Smad_P represents phosphorylated Smad.
+
+Smad_P_Smad_P represents a homodimer of phosporylated Smads.
+
+This reaction represents dissociation of the homodimer Smad_P_Smad_P into two phosphorylated Smads.</sbmlRdf:notes>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_77ea7d92-7814-4170-b231-51c98fd2795a">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI16"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI33">
+    <sbmlRdf:notes>Assigned the range 10e-3 to 10e-1 by the authors.
+
+Data obtained from provided literature.</sbmlRdf:notes>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/19254534"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.00164</sbmlRdf:value>
+    <sbmlRdf:name>k13</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#dfe7fdd9-31c9-4224-b3fd-376e7e5c9bfa">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI11">
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:name>Smad_P_Smad_P</sbmlRdf:name>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:notes>Phosphorylated version of Smad 2 or 3 complex (either homomer or heteromer).
+
+Localized to the cytoplasm.
+
+The authors were interested in Smad 2 and 3, since they are involved in the TGF-Beta pathway. So this any combination of the Smads binding to form a homodimer (ex. Smad 2 dimerizing with anouther Smad 2 molecule) or a heterodimer of Smad 2 and Smad 3.</sbmlRdf:notes>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI1"/>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <vCard:Given>Travis</vCard:Given>
+    <vCard:Family>Struck</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI43">
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_08a60b65-d3d6-4241-8851-17c46c7faa05"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0005160"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:name>r2</sbmlRdf:name>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/PMID:12729750"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_05d9fab6-518d-43b2-9e5a-819a6527c727"/>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_3177efa2-0ddd-42fc-ab72-44216001fc06"/>
+    <sbmlRdf:notes>TGF-beta binds to the TGF-beta receptor. Annotations are for TGF-beta receptor binding, the TGF-beta family and the TGF-beta receptor family.</sbmlRdf:notes>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_8eb00ee2-9026-463c-aef1-2b5eedcc6365"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR016319"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR000333"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#d905ae7d-45f8-4e77-ad25-31244d9e9d87">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI12"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI63">
+    <bqbiol:hasVersion rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_77ea7d92-7814-4170-b231-51c98fd2795a"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_2bd4b11d-84a1-441a-89f1-a02ff6450b94"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/go/GO:0010862"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <bqbiol:isPartOf rdf:resource="http://identifiers.org/go/GO:0043241"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#a4979c24-ac78-42f0-a849-a2545a1260c3"/>
+    <sbmlRdf:name>r22</sbmlRdf:name>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:notes>Nuclear phosphorylated Smad homodimer dissociated into nuclear phosphorylated Smad monomers.
+
+InterPro annotation gives details on and source information for general Smads (including R-Smad and Co-Smad, as utilized in this reaction). 
+
+Gene Ontology GO:0043241 reference outlines terms associated with protein complex disassembly.
+
+Gene Ontology GO:0010862 reference outlines terms associated with SMAD protein phosphorylation, a critical element of setting up SMAD_P elements.
+
+This reaction occurs in the nucleus.
+
+All annotations are generalized as the model details general TGFb pathway dynamics across relevant species (i.e. Homo sapiens, Drosophila, etc.)</sbmlRdf:notes>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#d6c0e8b2-8835-4ee0-89b7-2ed9192747ab">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI53">
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_990bcf69-f291-4f6a-8ba2-a0cfc11c6ce7"/>
+    <sbmlRdf:notes>Smad_P represents phosphorylated Smad.
+
+Smad_P_CoSmad represents the heterodimer containing Smad_P and CoSmad.
+
+This reaction represents the binding of Smad_P and CoSmad to form the heterodimer Smad_P_CoSmad.</sbmlRdf:notes>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#d905ae7d-45f8-4e77-ad25-31244d9e9d87"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_01ed2115-8315-4b66-94c3-ebdb74d31276"/>
+    <sbmlRdf:name>r12</sbmlRdf:name>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0070412"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0070410"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_90eb755f-eca2-44e7-b677-33a804cf6330"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0042803"/>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI12">
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI1"/>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:notes>InterPro annotation gives details on and source information for general Smads (including R-Smad and Co-Smad, as utilized in this reaction). 
+
+GeneOntology GO:0070412 reference outlines terms associated with R-Smad binding, which is the major element associated with this reaction.
+
+Gene Ontology GO:0010862 reference outlines terms associated with SMAD protein phosphorylation, a critical element of setting up SMAD_P elements.
+
+Gene Ontology GO:0070410 references outlines terms associated with Co-Smad binding, a major element in this reaction.
+
+Uniprot Q13485 is a Homo sapien version of Smad4, the Smad indicated as a Co-Smad used by the model authors.
+
+Most annotations are generalized as the model details general TGFb pathway dynamics across relevant species (i.e. Homo sapiens, Drosophila, etc.)</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <bqbiol:isVersionOf rdf:resource="http://purl.uniprot.org/uniprot/Q13485"/>
+    <sbmlRdf:name>Smad_P_CoSmad</sbmlRdf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#e1ae8424-1ed6-43e5-b4e5-ab679114f92c">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI14"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI34">
+    <sbmlRdf:notes>k5 describes the rate at which TGFb:TGFbR_P associates into a TGFb:TGFbR:I-Smad complex.
+
+Assigned the range of 10E-4 to 1 by the model authors as there were no previously reported parameter values.</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.49E-4</sbmlRdf:value>
+    <sbmlRdf:name>k5</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <vCard:Orgname>University of Arizona</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#e6c113aa-7710-4266-a6ce-361a3e3ce0f8">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI15"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI70">
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#bcf2a885-5327-4b17-92fb-e4e7f675eb25"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#e1ae8424-1ed6-43e5-b4e5-ab679114f92c"/>
+    <sbmlRdf:notes>Degradation of I-Smad.</sbmlRdf:notes>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0030163"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:name>r29</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI44">
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0004674"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:notes>Phosphorylation of TGF-Beta type 1 receptor bound to TGF-Beta by protein serine/threonine kinase activity.</sbmlRdf:notes>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR000333"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_4e02f9a4-1486-4a05-9003-71b6cd82d948"/>
+    <sbmlRdf:name>r3</sbmlRdf:name>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#a88ff479-9c6e-4c74-83e1-f22148766555"/>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR016319"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_9808a7a4-c347-4e21-9249-c4b1b70294c2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_902ef1b7-33b5-4469-a800-0b639183011e">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI64">
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0070412"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#f2688c18-6402-478c-b393-f7c6a544965c"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0070410"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0010862"/>
+    <sbmlRdf:name>r23</sbmlRdf:name>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#a528652e-d370-4d26-9b54-95d837f0bf45"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:notes>Nuclear phosphorylated Smad and Co-Smad heterodimerize.
+
+InterPro annotation gives details on and source information for general Smads (including R-Smad and Co-Smad, as utilized in this reaction). 
+
+GeneOntology GO:0070412 reference outlines terms associated with R-Smad binding, which is the major element associated with this reaction.
+
+Gene Ontology GO:0010862 reference outlines terms associated with SMAD protein phosphorylation, a critical element of setting up SMAD_P elements.
+
+Gene Ontology GO:0070410 references outlines terms associated with Co-Smad binding, a major element in this reaction.
+
+Uniprot Q13485 is a Homo sapien version of Smad4, the Smad indicated as a Co-Smad by the model authors.
+
+This reaction occurs in the nucleus.
+
+Most annotations are generalized as the model details general TGFb pathway dynamics across relevant species (i.e. Homo sapiens, Drosophila, etc.)</sbmlRdf:notes>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_20e05df0-defb-4fed-8ac7-f8de4ae544ee"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#d296cf83-5199-45f0-bae9-9f808bce40d1"/>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <bqbiol:hasVersion rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <bqbiol:hasVersion rdf:resource="http://identifiers.org/uniprot.isoform/Q13485"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_7a9e3df7-f3c7-4c4f-9140-f70b3308c103">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI14"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_2ac6b852-6fa5-4ab9-affe-e70e8b6722bb">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI11"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI54">
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_2974debe-1d20-4c92-be3a-24583951bd6d"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:notes>Smad_P represents phosphorylated Smad.
+
+Smad_P_CoSmad represents the heterodimer containing Smad_P and CoSmad.
+
+This reaction represents the dissociation of the Smad_P_CoSmad heterodimer into Smad_P and CoSmad.</sbmlRdf:notes>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:name>r13</sbmlRdf:name>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#ba866649-bfc6-4827-8f63-0aafe6fef7b6"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#f10af091-f4dd-45f3-891d-f5ad2384eada"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_5ce37057-31e4-4553-ae57-b1a472098e24"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0043241"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#f50dbf7c-4394-4153-817d-2f37d9826098">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI14"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI17">
+    <sbmlRdf:name>Smad_P_N</sbmlRdf:name>
+    <bqbiol:isVersionOf rdf:resource="http://purl.uniprot.org/uniprot/Q13485"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:notes>InterPro annotation gives details on and source information for general Smads (including R-Smad and Co-Smad, as utilized in this reaction). 
+
+GeneOntology GO:0070412 reference outlines terms associated with R-Smad binding, which is the major element associated with this reaction.
+
+Gene Ontology GO:0010862 reference outlines terms associated with SMAD protein phosphorylation, a critical element of setting up SMAD_P elements.
+
+Most annotations are generalized as the model details general TGFb pathway dynamics across relevant species (i.e. Homo sapiens, Drosophila, etc.)</sbmlRdf:notes>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI2"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <dcterms:W3CDTF>Mon Apr 18 15:56:39 BST 2016</dcterms:W3CDTF>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <vCard:Orgname>EMBL-EBI</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#ba866649-bfc6-4827-8f63-0aafe6fef7b6">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI9"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI9">
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI1"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:notes>InterPro annotation gives details on and source information for general Smads (including R-Smad and Co-Smad, as utilized in this reaction). 
+
+GeneOntology GO:0070412 reference outlines terms associated with R-Smad binding, which is the major element associated with this reaction.
+
+Gene Ontology GO:0010862 reference outlines terms associated with SMAD protein phosphorylation, a critical element of setting up SMAD_P elements.
+
+Most annotations are generalized as the model details general TGFb pathway dynamics across relevant species (i.e. Homo sapiens, Drosophila, etc.)</sbmlRdf:notes>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <sbmlRdf:name>Smad_P</sbmlRdf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI41">
+    <sbmlRdf:notes>k19 describes the rate of degradation of I-Smad in the cytoplasm.
+
+Assigned the range of 10E-5 to 10E-1 by the model authors as there were no previously reported parameter values.</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.12E-4</sbmlRdf:value>
+    <sbmlRdf:name>k19</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_1abf6b44-52f0-4101-9a1d-a85bfb754dab">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI10"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <vCard:ORG rdf:nodeID="A7"/>
+    <vCard:EMAIL>georgios.fengos@bsse.ethz.ch</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_70f7e9e7-3b10-4578-b923-dd955ff8b60d">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI55">
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_1abf6b44-52f0-4101-9a1d-a85bfb754dab"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:name>r14</sbmlRdf:name>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_2aa5b8d2-9bb8-4950-a31c-417c73d427d1"/>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0007184"/>
+    <sbmlRdf:notes>CoSmad_N represents CoSmad located in the nucleus.
+
+This reaction represents the transport of CoSmad to the nucleus from the cytoplasm.</sbmlRdf:notes>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_76e793cd-31c4-4c1c-8f18-af710b129fb0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_7da93f00-8307-4835-9564-6101548a9048">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI9"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_7c7f34d1-8e3b-4387-907e-335e352f0136">
+    <sbmlRdf:exponent rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:exponent>
+    <sbmlRdf:scale rdf:datatype="http://www.w3.org/2001/XMLSchema#long">-12</sbmlRdf:scale>
+    <sbmlRdf:multipler rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:multipler>
+    <sbmlRdf:kind rdf:datatype="java:org.sbml.jsbml.Unit$Kind">MOLE</sbmlRdf:kind>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_3ba3ba38-211e-4f9b-ac41-276e636b8424">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI18"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#a4979c24-ac78-42f0-a849-a2545a1260c3">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI17"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#baabc2a7-06c0-49e6-acb3-7293c1e1a40a">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#c1bde61f-3c1e-427e-8ae0-619fa84b22bc">
+    <sbmlRdf:unit rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_7c7f34d1-8e3b-4387-907e-335e352f0136"/>
+    <sbmlRdf:name>substance</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnitsDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI69">
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#baabc2a7-06c0-49e6-acb3-7293c1e1a40a"/>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#ae092f06-1c12-45e3-82d0-62502c4a17ad"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_7a9e3df7-f3c7-4c4f-9140-f70b3308c103"/>
+    <sbmlRdf:notes>I-Smad is generated, a process which is limited by cytoplasmi I-Smad mRNA.
+
+InterPro annotation gives details on and source information for general Smads (including I-Smads, which are given rise to in this reaction). 
+
+This reaction occurs in the cytoplasm. 
+
+All annotations are generalized as the model details general TGFb pathway dynamics across relevant species (i.e. Homo sapiens, Drosophila, etc.)</sbmlRdf:notes>
+    <bqbiol:hasVersion rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:name>r28</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_6d8f9370-7688-4599-982e-174b3147b856">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#e5b1089c-e97a-4b93-9f06-b6ff38ec8b0a">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI4"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI18">
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI2"/>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <bqbiol:isVersionOf rdf:resource="http://purl.uniprot.org/uniprot/Q13485"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:name>Smad_P_CoSmad_N</sbmlRdf:name>
+    <sbmlRdf:notes>InterPro annotation gives details on and source information for general Smads (including R-Smad and Co-Smad, as utilized in this reaction). 
+
+GeneOntology GO:0070412 reference outlines terms associated with R-Smad binding, which is the major element associated with this reaction.
+
+Gene Ontology GO:0010862 reference outlines terms associated with SMAD protein phosphorylation, a critical element of setting up SMAD_P elements.
+
+Gene Ontology GO:0070410 references outlines terms associated with Co-Smad binding, a major element in this reaction.
+
+Uniprot Q13485 is a Homo sapien version of Smad4, the Smad indicated as the Co-Smad used by the model authors.
+
+Most annotations are generalized as the model details general TGFb pathway dynamics across relevant species (i.e. Homo sapiens, Drosophila, etc.)</sbmlRdf:notes>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <vCard:ORG rdf:nodeID="A10"/>
+    <vCard:EMAIL>rgutenk@email.arizona.edu</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A11"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI42">
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR000333"/>
+    <sbmlRdf:notes>This reaction represents dissociation of the ligand TGF-beta from the TGF-beta receptor.</sbmlRdf:notes>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR016319"/>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#e22fab35-94b0-40af-a30e-1daaf08e6140"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_28b8dc4b-2abb-49f8-9fcd-4b67b9b0a21d"/>
+    <sbmlRdf:name>r1</sbmlRdf:name>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#e5b1089c-e97a-4b93-9f06-b6ff38ec8b0a"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0043241"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <vCard:Given>Georgios</vCard:Given>
+    <vCard:Family>Fengos</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_03c48233-0f4d-46e1-bee7-eb4ba416cd34">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI13"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#d701a40e-6d0f-49f2-811c-a83c1ab5b01d">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI17"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_7b268f46-babf-4b3c-a6dc-fdc44bec0ee0">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI56">
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0051168"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#df4c6054-9ef6-4c85-a4d0-792443b0409b"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_7b268f46-babf-4b3c-a6dc-fdc44bec0ee0"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#f965785d-d9ba-4c1f-87cc-5ce46e664f49"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:notes>CoSmad_N represents CoSmad located in the nucleus.
+
+This reaction represents the transport of CoSmad from the nucleus to the cytoplasm.</sbmlRdf:notes>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:name>r15</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_4e02f9a4-1486-4a05-9003-71b6cd82d948">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI6"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <vCard:ORG rdf:nodeID="A5"/>
+    <vCard:EMAIL>viji@ebi.ac.uk</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A13"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_60017ac1-a711-4d8b-902f-a0c83547bf61">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#d296cf83-5199-45f0-bae9-9f808bce40d1">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI18"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_28b8dc4b-2abb-49f8-9fcd-4b67b9b0a21d">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI5"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI7">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR000333"/>
+    <sbmlRdf:notes>This complex consists of an inhibitory Smad with a SMAD domain, a TGF-beta ligand and a phosphorylated TGF-beta receptor.</sbmlRdf:notes>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR016319"/>
+    <sbmlRdf:name>I_Smad_TGFb_TGFbR_P</sbmlRdf:name>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000216"/>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR017855"/>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI15">
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:notes>InterPro annotation gives details on and source information for general Smads (including R-Smad). 
+
+GeneOntology GO:0070412 reference outlines terms associated with R-Smad binding, which is the major element associated with this reaction.
+
+Gene Ontology GO:0010862 reference outlines terms associated with SMAD protein phosphorylation, a critical element of setting up SMAD_P elements.
+
+Most annotations are generalized as the model details general TGFb pathway dynamics across relevant species (i.e. Homo sapiens, Drosophila, etc.)</sbmlRdf:notes>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI2"/>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">82000.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:name>Smad_N</sbmlRdf:name>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_3978d642-5f4c-4ec8-9524-eb9628536fd4">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI9"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <vCard:Orgname>Eidgenössische Technische Hochschule Zurich (ETHZ)</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_9588d3c3-8569-4fe0-9228-bbd12c352212">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI57">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:name>r16</sbmlRdf:name>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0007184"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#d6c0e8b2-8835-4ee0-89b7-2ed9192747ab"/>
+    <sbmlRdf:notes>The phosphorylated Smad complex is shuttled into the nucleus. GO annotation corresponds to Smad protein import into nucleus.</sbmlRdf:notes>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/12809600"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#e58ef7d6-e147-42aa-abdc-11d91d3603e5"/>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/doi/10.1038/cr.2008.325"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#a399ff70-bbae-44c0-a2e8-5ca1880fce81"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_8df268d2-0ffc-4a92-bc5f-d80a0680d6a9">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI8"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI67">
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0051168"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_03c48233-0f4d-46e1-bee7-eb4ba416cd34"/>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:notes>Nuclear I-Smad mRNA is shuttled to the cytoplasm.
+
+InterPro annotation gives details on and source information for general Smads (including I-Smads, as encoded for by the product of this reaction). 
+
+Gene Ontology GO:0006913 gives terms associated with nuclear export; this reaction involves, specifically, nucleus to cytoplasm transport.
+
+All annotations are generalized as the model details general TGFb pathway dynamics across relevant species (i.e. Homo sapiens, Drosophila, etc.)</sbmlRdf:notes>
+    <sbmlRdf:name>r26</sbmlRdf:name>
+    <bqbiol:encodes rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#fce578dd-ea18-4a1b-bd42-7418014fc072"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_1f25855a-44de-4dbd-97cb-e2f7fa9ee5a8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI40">
+    <sbmlRdf:notes>k18 describes the translation of inhibitory Smad mRNA, a component of the TGF-beta signaling pathway. This is annotated with the SMAD domain.</sbmlRdf:notes>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/doi/10.1101/gad.1350705"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0006412"/>
+    <bqbiol:encodes rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0434</sbmlRdf:value>
+    <sbmlRdf:name>k18</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI16">
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:name>Smad_P_Smad_P_N</sbmlRdf:name>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:notes>Phosphorylated version of Smad 2 or 3 complex (either homomer or heteromer).
+
+Localized to the nucleus.
+
+The authors were interested in Smad 2 and 3, since they are involved in the TGF-Beta pathway. So this any combination of the Smads binding to form a homodimer (ex. Smad 2 dimerizing with anouther Smad 2 molecule) or a heterodimer of Smad 2 and Smad 3.</sbmlRdf:notes>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <vCard:Given>Vijayalakshmi</vCard:Given>
+    <vCard:Family>Chelliah</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI8">
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7000.0</sbmlRdf:initialConcentration>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:name>Smad</sbmlRdf:name>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:notes>InterPro annotation gives details on and source information for general Smads (including R-Smad). 
+
+GeneOntology GO:0070412 reference outlines terms associated with R-Smad binding, which is the major element associated with this reaction.
+
+Gene Ontology GO:0010862 reference outlines terms associated with SMAD protein phosphorylation, a critical element of setting up SMAD_P elements.
+
+Most annotations are generalized as the model details general TGFb pathway dynamics across relevant species (i.e. Homo sapiens, Drosophila, etc.)</sbmlRdf:notes>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <dcterms:W3CDTF>Mon Apr 18 13:54:50 BST 2016</dcterms:W3CDTF>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI30">
+    <sbmlRdf:notes>Assigned the range 10e-8 to 10e-4 by the authors.
+
+Data obtained from provided literature.</sbmlRdf:notes>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/19254534"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/18443295"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/17186703"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.12E-8</sbmlRdf:value>
+    <sbmlRdf:name>k10</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_2974debe-1d20-4c92-be3a-24583951bd6d">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI12"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI58">
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_8fd8a679-3074-4cbf-af12-285cfea95bd0"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0007184"/>
+    <sbmlRdf:notes>Phosphorylated Smad is shuttled into the nucleus. Annotations correspond to the SMAD domain (contained within the phosphorylated Smad) and the activity of nuclear shuttling.</sbmlRdf:notes>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/doi/10.1038/cr.2008.325"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_8f04143d-c004-4785-9ad9-2413485f6089"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:name>r17</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_0d246c64-ede0-4f55-8bb9-2793f71a7e62"/>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#cbd42867-214c-4cf9-996e-b5cf7470ea91">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI9"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_05d9fab6-518d-43b2-9e5a-819a6527c727">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI5"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI68">
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_70f7e9e7-3b10-4578-b923-dd955ff8b60d"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_29c52792-642e-4105-9640-a555c1e3df33"/>
+    <sbmlRdf:notes>Cytoplasmic I-Smad mRNA is degraded.
+
+InterPro annotation gives details on and source information for general Smads (including I-Smads, as encoded for by the reactant of this reaction if not degraded as shown). 
+
+Gene Ontology GO:0006401 gives the terms associated with RNA catabolic processes; this reaction specifically utilizes RNA breakdown/decay/degradation in the cytoplasm.
+
+This reaction occurs in the cytoplasm.
+
+All annotations are generalized as the model details general TGFb pathway dynamics across relevant species (i.e. Homo sapiens, Drosophila, etc.)</sbmlRdf:notes>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0006401"/>
+    <bqbiol:encodes rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:name>r27</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.uniprot.org/uniprot/Q13485">
+    <owl:sameAs rdf:resource="http://identifiers.org/uniprot/Q13485"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_97a9bda1-7302-4552-822a-7327b472e080">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#e58ef7d6-e147-42aa-abdc-11d91d3603e5">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI16"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#f17ef9d7-7c86-4145-b8e8-632f1315a473">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI18"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI5">
+    <sbmlRdf:notes>A complex of a ligand withing the TGF-Beta family and TGF-Beta type 1 receptor.
+
+The authors did not specify the exact ligand that they wanted in their model and only refered to it as TGF-Beta. They do specify that the receptor is type 1.</sbmlRdf:notes>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI1"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR016319"/>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR000333"/>
+    <sbmlRdf:name>TGFb_TGFbR</sbmlRdf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI48">
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR016319"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR000333"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0060389"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_3978d642-5f4c-4ec8-9524-eb9628536fd4"/>
+    <sbmlRdf:name>r7</sbmlRdf:name>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_304df1f4-037e-44e4-a5d7-9e74891eba73"/>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_8df268d2-0ffc-4a92-bc5f-d80a0680d6a9"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#b517fac8-9097-4d0b-8e8c-1ccf676ba234"/>
+    <sbmlRdf:notes>Phosphorylation of Smad 2 or Smad 3.</sbmlRdf:notes>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#ab7f0025-fb65-4bd5-a0b5-4abd3181c250"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <vCard:ORG rdf:nodeID="A16"/>
+    <vCard:EMAIL>rwellington@email.arizona.edu</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A17"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_90eb755f-eca2-44e7-b677-33a804cf6330">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI9"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#ab7f0025-fb65-4bd5-a0b5-4abd3181c250">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI6"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI28">
+    <sbmlRdf:notes>Rate of nuclear import.
+
+Pulled from the paper Mathematical modeling identifies Smad nucleocytoplasmic shuttling as a dynamic signal-interpreting system.
+
+Pulled from the paper Quantitative modeling and analysis of the transforming growth factor beta signaling pathway.
+
+Pulled from the paper Systems theory of Smad signalling.</sbmlRdf:notes>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/19254534"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/17186703"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/18443295"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0104</sbmlRdf:value>
+    <sbmlRdf:name>k8</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <vCard:Orgname>University of Arizona</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_9808a7a4-c347-4e21-9249-c4b1b70294c2">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI5"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_09eb15ed-85c9-4665-93fd-81f8b7c32d2b">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#ab1197bd-57e5-4fca-a981-e4b32e5162cd">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI6"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_01ed2115-8315-4b66-94c3-ebdb74d31276">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI47">
+    <sbmlRdf:notes>I-Smad and TGF-Beta type 1 receptor dissociate from each other.</sbmlRdf:notes>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_6864e964-0839-4dd2-b687-f46519aacfd2"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR016319"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0043241"/>
+    <sbmlRdf:name>r6</sbmlRdf:name>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_8948200d-b7bd-4a19-908d-5c359a0a0cbc"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR000333"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_5f8db0a5-899b-45b8-9591-a4cf41295232"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#d7cbbb96-3a18-4eb3-bda0-178c84b1b183"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_2aa5b8d2-9bb8-4950-a31c-417c73d427d1">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI19"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <vCard:ORG rdf:nodeID="A19"/>
+    <vCard:EMAIL>juty@ebi.ac.uk</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A20"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <vCard:Given>Rachel</vCard:Given>
+    <vCard:Family>Wellington</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#b517fac8-9097-4d0b-8e8c-1ccf676ba234">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <vCard:Given>Ryan</vCard:Given>
+    <vCard:Family>Gutenkunst</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_71bc27a2-d570-4554-9898-42ddf1be2e29">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI17"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI6">
+    <sbmlRdf:name>TGFb_TGFbR_P</sbmlRdf:name>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:notes>A complex of a ligand withing the TGF-Beta family and TGF-Beta type 1 receptor.
+
+Receptor is phosphorylated.
+
+The authors did not specify the exact ligand that they wanted in their model and only refered to it as TGF-Beta. They do specify that the receptor is type 1.</sbmlRdf:notes>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR000333"/>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI1"/>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000216"/>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR016319"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#b0eea790-777e-4585-90b4-fed445c9ab02">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI6"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_08a60b65-d3d6-4241-8851-17c46c7faa05">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI21"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI27">
+    <sbmlRdf:notes>Assigned the range 10e-7 to 10e-5 by the authors.
+
+Data obtained from provided literature.</sbmlRdf:notes>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/19254534"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/18443295"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.35E-6</sbmlRdf:value>
+    <sbmlRdf:name>k7</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#f2688c18-6402-478c-b393-f7c6a544965c">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI19"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#a528652e-d370-4d26-9b54-95d837f0bf45">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI17"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_535443b7-941b-4ea5-b93c-3a3f7fb8fd06">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI5"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#d7cbbb96-3a18-4eb3-bda0-178c84b1b183">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI7"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI3">
+    <sbmlRdf:notes>Defined by provided Gene Ontology annotation.</sbmlRdf:notes>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0005576"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:size rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:size>
+    <sbmlRdf:spatialDimensions rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</sbmlRdf:spatialDimensions>
+    <sbmlRdf:name>extracellular</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Compartment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_5f8db0a5-899b-45b8-9591-a4cf41295232">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI14"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_0d246c64-ede0-4f55-8bb9-2793f71a7e62">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <vCard:Given>Nick</vCard:Given>
+    <vCard:Family>Juty</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <vCard:Orgname>University of Arizona</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI19">
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">135000.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:notes>Annotation provides information on the general Smad family.
+
+CoSmad localized to the nucleus.</sbmlRdf:notes>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <sbmlRdf:name>CoSmad_N</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI2"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI49">
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:name>r8</sbmlRdf:name>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0007184"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#e6c113aa-7710-4266-a6ce-361a3e3ce0f8"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#dfe7fdd9-31c9-4224-b3fd-376e7e5c9bfa"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:notes>Unphosphorylated Smad 2 or Smad 3 import into the nucleus.</sbmlRdf:notes>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#e5e8e957-e881-422b-9d05-d55870549aac"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_8948200d-b7bd-4a19-908d-5c359a0a0cbc">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI5"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI4">
+    <sbmlRdf:notes>Authors specified the receptor in the model is TGF-Beta type 1 receptor.</sbmlRdf:notes>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:name>TGFbR</sbmlRdf:name>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1010.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/interpro/IPR000333"/>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI1"/>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#f10af091-f4dd-45f3-891d-f5ad2384eada">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI10"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_8eb00ee2-9026-463c-aef1-2b5eedcc6365">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_76e793cd-31c4-4c1c-8f18-af710b129fb0">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <vCard:Orgname>EMBL-EBI</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <vCard:ORG rdf:nodeID="A22"/>
+    <vCard:EMAIL>benzaepfel@email.arizona.edu</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A23"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI59">
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#cbd42867-214c-4cf9-996e-b5cf7470ea91"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_9588d3c3-8569-4fe0-9228-bbd12c352212"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_441a5bd2-4532-4731-856a-c5fc430c7d00"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/doi/10.1038/cr.2008.325"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0051168"/>
+    <sbmlRdf:notes>Phosphorylated Smad is shuttled from the nucleus and the cytoplasm. Annotations are for the SMAD domain present within the phosphorylated Smad and nuclear export.</sbmlRdf:notes>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:name>r18</sbmlRdf:name>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI39">
+    <sbmlRdf:notes>k17 describes the degradation of inhibitory Smad mRNA. Annotations are for the SMAD domain, which is encoded by the I-Smad mRNA, and for an mRNA catabolic process.</sbmlRdf:notes>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/doi/10.1101/gad.1350705"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0006402"/>
+    <bqbiol:encodes rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.05E-5</sbmlRdf:value>
+    <sbmlRdf:name>k17</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI29">
+    <sbmlRdf:notes>Rate of nuclear export.
+
+Pulled from the paper Mathematical modeling identifies Smad nucleocytoplasmic shuttling as a dynamic signal-interpreting system.
+
+Pulled from the paper Quantitative modeling and analysis of the transforming growth factor beta signaling pathway.
+
+Pulled from the paper Systems theory of Smad signalling.</sbmlRdf:notes>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/17186703"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/19254534"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/18443295"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.5E-4</sbmlRdf:value>
+    <sbmlRdf:name>k9</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_5ce37057-31e4-4553-ae57-b1a472098e24">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_2bd4b11d-84a1-441a-89f1-a02ff6450b94">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#a399ff70-bbae-44c0-a2e8-5ca1880fce81">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI11"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A23">
+    <vCard:Given>Benjamin</vCard:Given>
+    <vCard:Family>Zaepfel</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI78">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#FunctionDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI1">
+    <sbmlRdf:notes>Defined by provided Gene Ontology annotation.</sbmlRdf:notes>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0005737"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:size rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.3</sbmlRdf:size>
+    <sbmlRdf:spatialDimensions rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</sbmlRdf:spatialDimensions>
+    <sbmlRdf:name>cytoplasm</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Compartment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#b139be4c-a8bb-4b20-95b1-068547a0d0e5">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI20"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI60">
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/doi/10.1038/cr.2008.325"/>
+    <sbmlRdf:name>r19</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:notes>The phosphorylated Smad/Co-Smad complex is shuttled into the nucleus. Annotations are for the SMAD domain and for Smad protein import into the nucleus.</sbmlRdf:notes>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_25625db6-2a3b-4024-bbd8-a96550a33ae3"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_9710e394-f143-4fad-b481-0016b0e54d6f"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_70c149f8-7d24-4842-b3b1-44d3e45d8b90"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0007184"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_97ea8b1a-08d3-4557-8b42-43a8d89a3253">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI11"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_3177efa2-0ddd-42fc-ab72-44216001fc06">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI4"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI38">
+    <sbmlRdf:notes>k16 describes the shuttling of inhibitory Smad mRNA from the nucleus to the cytoplasm. Annotations are for nuclear export and for the SMAD domain, which is encoded by the I-Smad mRNA.</sbmlRdf:notes>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/doi/10.1101/1350705"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0051168"/>
+    <bqbiol:encodes rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0214</sbmlRdf:value>
+    <sbmlRdf:name>k16</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI22">
+    <sbmlRdf:notes>Assigned the range 1 to 4 by the authors.
+
+No data from previous literature, values were estimated.</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.06</sbmlRdf:value>
+    <sbmlRdf:name>h</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_70c149f8-7d24-4842-b3b1-44d3e45d8b90">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI24">
+    <sbmlRdf:notes>k2 describes the rate of TGFb binding with TGFbR.
+
+Assigned the range of 10E-7 to 10E-3 by the model authors. This range encompasses the reported values from the annotated references.</sbmlRdf:notes>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/19254534"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/18706811"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.39E-6</sbmlRdf:value>
+    <sbmlRdf:name>k2</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_67e92ac8-00ce-4332-b8a5-d5fcf2760acb">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI9"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#bc232ed7-21a1-49fa-ad55-568b92d4d273">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI7"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <vCard:Orgname>University of Arizona</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_304df1f4-037e-44e4-a5d7-9e74891eba73">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI8"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_013942f5-cee9-4312-929c-b465f3c04f3e">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI77">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#FunctionDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI62">
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/doi/10.1016/j.bbrc.2008.08.143"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_97a9bda1-7302-4552-822a-7327b472e080"/>
+    <sbmlRdf:name>r21</sbmlRdf:name>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:notes>Phosphorylated nuclear Smads form a dimer. Annotations are for Smad protein complex assembly and for the SMAD domain contained in both Smad proteins.</sbmlRdf:notes>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#d701a40e-6d0f-49f2-811c-a83c1ab5b01d"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#eae876ff-a04b-41eb-adef-7fa365ab79ed"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0007183"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI2">
+    <sbmlRdf:notes>Gene Ontology GO:0005634 encompasses the term information for the nucleus compartment of the cell.</sbmlRdf:notes>
+    <bqbiol:is rdf:resource="http://identifiers.org/go/GO:0005634"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:size rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:size>
+    <sbmlRdf:spatialDimensions rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</sbmlRdf:spatialDimensions>
+    <sbmlRdf:name>nucleus</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Compartment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI61">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0006470"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_0fb5f82c-61d8-4e48-9f0f-d37774e965c4"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_470d5ed9-11cd-4b6f-88ac-e13c533a54ae"/>
+    <sbmlRdf:notes>Nuclear Smad is dephosphorylated. Annotations are for the SMAD domain and for protein dephosphorylation.</sbmlRdf:notes>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/doi/10.1007/978-1-60761-738-9_7"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#_82ea7738-e543-407b-9cab-e36c818ebf67"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:name>r20</sbmlRdf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#f15c774d-bbe0-40ce-87a1-a736c86ef41d">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI19"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#f4788bc7-875d-41cc-9048-5ed6849331ef">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_25625db6-2a3b-4024-bbd8-a96550a33ae3">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI12"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_20e05df0-defb-4fed-8ac7-f8de4ae544ee">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#eae876ff-a04b-41eb-adef-7fa365ab79ed">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI16"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI23">
+    <sbmlRdf:notes>Assigned the range 10e-5 to 10e-2 by the authors.
+
+Data obtained from provided literature.</sbmlRdf:notes>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/19254534"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/18706811"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.00446</sbmlRdf:value>
+    <sbmlRdf:name>k1</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI37">
+    <sbmlRdf:notes>k15 describes the phosphorylated Smad/Co-Smad complex binding to chromatin and facilitating gene transcription, particularly the transcription of I-Smad. The I-Smad expression rate was varied over 5 orders of magnitude by the authors to determine the appropriate value for the model. Annotations are for the regulation of gene expression, the Smad complex which binds to chromatin and the SMAD domain, which the I-Smad mRNA codes for.</sbmlRdf:notes>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/18061509"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0010468"/>
+    <bqbiol:isPartOf rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/go/GO:0071141"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">28.52</sbmlRdf:value>
+    <sbmlRdf:name>k15</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#f965785d-d9ba-4c1f-87cc-5ce46e664f49">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI10"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI21">
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/interpro/P36897"/>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI3"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:name>TGFb</sbmlRdf:name>
+    <sbmlRdf:notes>TGF-Beta ligand.
+
+Pulled from the paper Constraint-based modeling and kinetic analysis of the Smad dependent TGF-beta signaling pathway.
+
+Deviated from published value.</sbmlRdf:notes>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:boundaryCondition>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">460.0</sbmlRdf:initialConcentration>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A24">
+    <vCard:ORG rdf:nodeID="A3"/>
+    <vCard:EMAIL>dinahdavison@email.arizona.edu</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A25"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI76">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#FunctionDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI26">
+    <sbmlRdf:notes>k4 describes the rate of dephosphorylation of TGFb:TGFbR.
+
+Assigned the range of 10E-3 to 1 by the model authors as there were no previously reported parameter values.</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.00192</sbmlRdf:value>
+    <sbmlRdf:name>k4</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI36">
+    <sbmlRdf:notes>Nuclear Smad/Co-Smad complexes trigger transcription of I-Smad mRNA. The I-Smad expression rate was varied over 5 orders of magnitude by the authors to determine the appropriate value for the model. Annotations are for the regulation of gene expression, the Smad complex which binds to chromatin and the SMAD domain, which the I-Smad mRNA codes for.</sbmlRdf:notes>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/18061509"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0010468"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/go/GO:0071141"/>
+    <bqbiol:encodes rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.038</sbmlRdf:value>
+    <sbmlRdf:name>k14</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI10">
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:name>CoSmad</sbmlRdf:name>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12000.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI1"/>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:notes>Annotation provides information on the general Smad family.</sbmlRdf:notes>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#ce393b51-1bae-48fb-b2bd-e7abd29f9cf5">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI20">
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/interpro/IPR008984"/>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <sbmlRdf:name>I_Smad_mRNA1</sbmlRdf:name>
+    <sbmlRdf:notes>Annotation provides information on the general Smad family.
+
+mRNA coding for I_Smad localized to the nucleus.</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI2"/>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#bcf2a885-5327-4b17-92fb-e4e7f675eb25">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A25">
+    <vCard:Given>Dinah</vCard:Given>
+    <vCard:Family>Davison</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_9710e394-f143-4fad-b481-0016b0e54d6f">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI18"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_470d5ed9-11cd-4b6f-88ac-e13c533a54ae">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_8f04143d-c004-4785-9ad9-2413485f6089">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI9"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI75">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#FunctionDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#df4c6054-9ef6-4c85-a4d0-792443b0409b">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI19"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI14"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI41"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI60"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI25"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI10"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI20"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLModel"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI46"/>
+    <sbmlRdf:name>Function for r28 [1]</sbmlRdf:name>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI43"/>
+    <sbmlRdf:compartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI1"/>
+    <dcterms:creator rdf:nodeID="A0"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI35"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI69"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI15"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI56"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI53"/>
+    <sbmlRdf:functionDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI78"/>
+    <dcterms:creator rdf:nodeID="A15"/>
+    <sbmlRdf:functionDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI76"/>
+    <dcterms:creator rdf:nodeID="A12"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI49"/>
+    <dcterms:creator rdf:nodeID="A24"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI5"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI33"/>
+    <bqmodel:curated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</bqmodel:curated>
+    <sbmlRdf:name>Function for r25 [1]</sbmlRdf:name>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI66"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI6"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI63"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI28"/>
+    <sbmlRdf:timeUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000380#_949038"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI59"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI21"/>
+    <dcterms:modified rdf:nodeID="A4"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI7"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI30"/>
+    <bqmodel:isDescribedBy rdf:resource="http://identifiers.org/pubmed/22051045"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI8"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI11"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI38"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI45"/>
+    <dcterms:created rdf:nodeID="A14"/>
+    <sbmlRdf:compartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI2"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI40"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI24"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI17"/>
+    <sbmlRdf:unitsDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#c1bde61f-3c1e-427e-8ae0-619fa84b22bc"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI58"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI55"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI42"/>
+    <dcterms:creator rdf:nodeID="A21"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI16"/>
+    <sbmlRdf:functionDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI77"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI22"/>
+    <sbmlRdf:functionDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI75"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI19"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI68"/>
+    <sbmlRdf:lengthUnit rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000491#length"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI65"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI52"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI27"/>
+    <dcterms:creator rdf:nodeID="A18"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI48"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI9"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI32"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0007179"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI13"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI62"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI47"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI37"/>
+    <bqbiol:isDescribedBy rdf:resource="http://identifiers.org/pubmed/22051045"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI12"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI61"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI23"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI57"/>
+    <sbmlRdf:name>Cellière2011 - Plasticity of TGF-β Signalling</sbmlRdf:name>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI44"/>
+    <sbmlRdf:name>Function for r16 [1]</sbmlRdf:name>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI18"/>
+    <dcterms:creator rdf:nodeID="A9"/>
+    <bqmodel:is rdf:resource="http://identifiers.org/biomodels.db/MODEL1208280000"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI36"/>
+    <sbmlRdf:name>Function for r7 [1]</sbmlRdf:name>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI67"/>
+    <sbmlRdf:areaUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000491#area"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI70"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI54"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI51"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI29"/>
+    <sbmlRdf:substanceUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#c1bde61f-3c1e-427e-8ae0-619fa84b22bc"/>
+    <bqmodel:is rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600"/>
+    <sbmlRdf:notes>Cellière2011 - Plasticity of TGF-β Signalling Transforming growth factor beta (TGF-β) signalling has been implicated as an important regulator of almost all major cell behaviours, including proliferation, differentiation, cell death, and motility. It remains unclear that how the TGF-β signalling pathway accomplishes the flexibility in its responses. What and how many parameters have to be altered for cells to respond differently to perform complex tasks? This canonical response has been explored in this model, by considering the core signalling architecture of TGF-β pathway. This model is described in the article: Plasticity of TGF-β signaling Cellière G, Fengos G, Hervé M, Iber D. BMC Syst Biol. 2011 Nov 3;5:184. Abstract: The family of TGF-β ligands is large and its members are involved in many different signaling processes. These signaling processes strongly differ in type with TGF-β ligands eliciting both sustained or transient responses. Members of the TGF-β family can also act as morphogen and cellular responses would then be expected to provide a direct read-out of the extracellular ligand concentration. A number of different models have been proposed to reconcile these different behaviours. We were interested to define the set of minimal modifications that are required to change the type of signal processing in the TGF-β signaling network. RESULTS: To define the key aspects for signaling plasticity we focused on the core of the TGF-β signaling network. With the help of a parameter screen we identified ranges of kinetic parameters and protein concentrations that give rise to transient, sustained, or oscillatory responses to constant stimuli, as well as those parameter ranges that enable a proportional response to time-varying ligand concentrations (as expected in the read-out of morphogens). A combination of a strong negative feedback and fast shuttling to the nucleus biases signaling to a transient rather than a sustained response, while oscillations were obtained if ligand binding to the receptor is weak and the turn-over of the I-Smad is fast. A proportional read-out required inefficient receptor activation in addition to a low affinity of receptor-ligand binding. We find that targeted modification of single parameters suffices to alter the response type. The intensity of a constant signal (i.e. the ligand concentration), on the other hand, affected only the strength but not the type of the response. CONCLUSIONS: The architecture of the TGF-β pathway enables the observed signaling plasticity. The observed range of signaling outputs to TGF-β ligand in different cell types and under different conditions can be explained with differences in cellular protein concentrations and with changes in effective rate constants due to cross-talk with other signaling pathways. It will be interesting to uncover the exact cellular differences as well as the details of the cross-talks in future work. This model is hosted on BioModels Database and identified by: MODEL1208280000 . To cite BioModels Database, please use: BioModels Database: An enhanced, curated and annotated resource for published quantitative kinetic models. PMID: 20587024 . To the extent possible under law, all copyright and related or neighbouring rights to this encoded model have been dedicated to the public domain worldwide. Please refer to [CC0 Public Domain Dedication&gt;http://creativecommons.org/publicdomain/zero/1.0/] for more information.</sbmlRdf:notes>
+    <dcterms:creator rdf:nodeID="A6"/>
+    <sbmlRdf:volumeUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000607#_821e4744-6110-443b-9a10-3a74c5b25953"/>
+    <sbmlRdf:compartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI3"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI34"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI31"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI50"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI64"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI4"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI39"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI26"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#_441a5bd2-4532-4731-856a-c5fc430c7d00">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI17"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#ae092f06-1c12-45e3-82d0-62502c4a17ad">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI13"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI35">
+    <sbmlRdf:notes>k6 describes the rate of TGFb:TGFbR dissociation from its complex with I-Smad.
+
+Assigned the range of 10E-6 to 1 by the model authors as there were no previously reported parameter values.</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.29E-5</sbmlRdf:value>
+    <sbmlRdf:name>k6</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000600#COPASI25">
+    <sbmlRdf:notes>k3 describes the rate of phosphorylation of TGFb:TGFbR.
+
+Assigned the range of 10E-3 to 1 by the model authors as there were no previously reported parameter values.</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.324</sbmlRdf:value>
+    <sbmlRdf:name>k3</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+</rdf:RDF>

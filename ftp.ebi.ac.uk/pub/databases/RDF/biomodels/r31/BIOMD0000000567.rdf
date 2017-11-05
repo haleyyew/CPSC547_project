@@ -1,0 +1,236 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:biodb="http://identifiers.org/biomodels.db/BIOMD0000000567#"
+    xmlns:bqmodel="http://biomodels.net/model-qualifiers#"
+    xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#"
+    xmlns:bqbiol="http://biomodels.net/biology-qualifiers#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:sbmlRdf="http://identifiers.org/biomodels.vocabulary#" > 
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI2">
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:name>A</sbmlRdf:name>
+    <sbmlRdf:notes>Monomeric form of the α-Synuclein (μM)</sbmlRdf:notes>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/pr/PR:P04156"/>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#_3dc20fc0-7af7-4695-89ef-4e0a4551c49a"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:boundaryCondition>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#e2caa7b7-7172-458b-8334-c3d7ef50c89c">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI1"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI4">
+    <sbmlRdf:notes>Average rate constant for growth (μM-1 h-1)</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.57E-6</sbmlRdf:value>
+    <sbmlRdf:name>k2</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <vCard:Given>Audald</vCard:Given>
+    <vCard:Family>Lloret i Villas</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <dcterms:W3CDTF>Fri Jan 16 16:30:06 GMT 2015</dcterms:W3CDTF>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#_381136d1-1954-4fb4-a5d4-928ff48b6398">
+    <sbmlRdf:exponent rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:exponent>
+    <sbmlRdf:scale rdf:datatype="http://www.w3.org/2001/XMLSchema#long">-3</sbmlRdf:scale>
+    <sbmlRdf:multipler rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:multipler>
+    <sbmlRdf:kind rdf:datatype="java:org.sbml.jsbml.Unit$Kind">MOLE</sbmlRdf:kind>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#_80cb45f6-2649-4804-82d4-2a94fb37c819">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI6">
+    <sbmlRdf:notes>Constant (h-1)</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.29</sbmlRdf:value>
+    <sbmlRdf:name>k2A0</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI7">
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#_17050c1f-7293-4f31-9c1d-f0d75c1090ab"/>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#_8de0125b-24a1-4ce4-804d-99cea5e8aff1"/>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#_0341b081-4dc6-4120-af86-17db74dac4c0"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#_600cc281-ab91-43fa-a7f7-a5e7b59b67c6"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <sbmlRdf:name>Nucleation</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#_600cc281-ab91-43fa-a7f7-a5e7b59b67c6">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI2"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <dcterms:W3CDTF>Fri Jan 23 16:57:13 GMT 2015</dcterms:W3CDTF>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#fe646aea-d1ae-46d8-9b47-32aaba8307ea">
+    <sbmlRdf:unit rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#_735a5739-90a2-4658-a107-eb623c462991"/>
+    <sbmlRdf:name>volume</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnitsDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#f9ef15c2-755f-4897-acd7-d3b93bf6bd60">
+    <sbmlRdf:exponent rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:exponent>
+    <sbmlRdf:scale rdf:datatype="http://www.w3.org/2001/XMLSchema#long">0</sbmlRdf:scale>
+    <sbmlRdf:multipler rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3600.0</sbmlRdf:multipler>
+    <sbmlRdf:kind rdf:datatype="java:org.sbml.jsbml.Unit$Kind">SECOND</sbmlRdf:kind>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567">
+    <sbmlRdf:volumeUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#fe646aea-d1ae-46d8-9b47-32aaba8307ea"/>
+    <dcterms:modified rdf:nodeID="A2"/>
+    <bqmodel:isDerivedFrom rdf:resource="http://identifiers.org/pubmed/12785778"/>
+    <bqmodel:isDerivedFrom rdf:resource="http://identifiers.org/pubmed/16117499"/>
+    <bqmodel:isDerivedFrom rdf:resource="http://identifiers.org/pubmed/16981683"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLModel"/>
+    <sbmlRdf:areaUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000437#area"/>
+    <bqmodel:isDerivedFrom rdf:resource="http://identifiers.org/pubmed/15794636"/>
+    <sbmlRdf:name>Morris2009 - α-Synuclein aggregation variable temperature and pH</sbmlRdf:name>
+    <sbmlRdf:rule rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#b299f029-967e-4f7c-bc4f-3da4b18c420a"/>
+    <dcterms:created rdf:nodeID="A1"/>
+    <sbmlRdf:unitsDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#fe646aea-d1ae-46d8-9b47-32aaba8307ea"/>
+    <sbmlRdf:compartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#_3dc20fc0-7af7-4695-89ef-4e0a4551c49a"/>
+    <bqmodel:isDerivedFrom rdf:resource="http://identifiers.org/pubmed/16981676"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI4"/>
+    <sbmlRdf:rule rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#d80ed9f3-9d8a-45a4-ac55-33ece21a3c37"/>
+    <bqmodel:isDerivedFrom rdf:resource="http://identifiers.org/pubmed/16981679"/>
+    <bqmodel:isDerivedFrom rdf:resource="http://identifiers.org/pubmed/12186976"/>
+    <bqmodel:isDerivedFrom rdf:resource="http://identifiers.org/pubmed/16301322"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI8"/>
+    <bqmodel:isDescribedBy rdf:resource="http://identifiers.org/pubmed/18247636"/>
+    <bqmodel:isDerivedFrom rdf:resource="http://identifiers.org/pubmed/16981684"/>
+    <sbmlRdf:lengthUnit rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000437#length"/>
+    <bqbiol:hasProperty rdf:resource="http://identifiers.org/doid/DOID:10652"/>
+    <bqmodel:isDerivedFrom rdf:resource="http://identifiers.org/doi/10.1021/ja9705102"/>
+    <bqbiol:hasProperty rdf:resource="http://identifiers.org/doid/DOID:14330"/>
+    <bqmodel:is rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567"/>
+    <bqbiol:hasTaxon rdf:resource="http://identifiers.org/taxonomy/9606"/>
+    <bqmodel:curated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</bqmodel:curated>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI3"/>
+    <sbmlRdf:unitsDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#d82bb74e-93bf-43fc-a55d-f7ae16c6bc3a"/>
+    <bqmodel:is rdf:resource="http://identifiers.org/biomodels.db/MODEL1501160000"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI7"/>
+    <bqbiol:hasProperty rdf:resource="http://identifiers.org/doid/DOID:12858"/>
+    <sbmlRdf:timeUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#d82bb74e-93bf-43fc-a55d-f7ae16c6bc3a"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:1990000"/>
+    <sbmlRdf:substanceUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#_434de564-1b5a-4228-b2fc-a86bad8fc6d6"/>
+    <sbmlRdf:notes>Morris2008 - Fitting protein aggregation data via F-W 2-step mechanism This model is described in the article: Fitting neurological protein aggregation kinetic data via a 2-step, minimal/"Ockham's razor" model: the Finke-Watzky mechanism of nucleation followed by autocatalytic surface growth. Morris AM, Watzky MA, Agar JN, Finke RG. Biochemistry 2008 Feb; 47(8): 2413-2427 Abstract: The aggregation of proteins has been hypothesized to be an underlying cause of many neurological disorders including Alzheimer's, Parkinson's, and Huntington's diseases; protein aggregation is also important to normal life function in cases such as G to F-actin, glutamate dehydrogenase, and tubulin and flagella formation. For this reason, the underlying mechanism of protein aggregation, and accompanying kinetic models for protein nucleation and growth (growth also being called elongation, polymerization, or fibrillation in the literature), have been investigated for more than 50 years. As a way to concisely present the key prior literature in the protein aggregation area, Table 1 in the main text summarizes 23 papers by 10 groups of authors that provide 5 basic classes of mechanisms for protein aggregation over the period from 1959 to 2007. However, and despite this major prior effort, still lacking are both (i) anything approaching a consensus mechanism (or mechanisms), and (ii) a generally useful, and thus widely used, simplest/"Ockham's razor" kinetic model and associated equations that can be routinely employed to analyze a broader range of protein aggregation kinetic data. Herein we demonstrate that the 1997 Finke-Watzky (F-W) 2-step mechanism of slow continuous nucleation, A --&gt; B (rate constant k1), followed by typically fast, autocatalytic surface growth, A + B --&gt; 2B (rate constant k2), is able to quantitatively account for the kinetic curves from all 14 representative data sets of neurological protein aggregation found by a literature search (the prion literature was largely excluded for the purposes of this study in order provide some limit to the resultant literature that was covered). The F-W model is able to deconvolute the desired nucleation, k1, and growth, k2, rate constants from those 14 data sets obtained by four different physical methods, for three different proteins, and in nine different labs. The fits are generally good, and in many cases excellent, with R2 values &gt;or=0.98 in all cases. As such, this contribution is the current record of the widest set of protein aggregation data best fit by what is also the simplest model offered to date. Also provided is the mathematical connection between the 1997 F-W 2-step mechanism and the 2000 3-step mechanism proposed by Saitô and co-workers. In particular, the kinetic equation for Saitô's 3-step mechanism is shown to be mathematically identical to the earlier, 1997 2-step F-W mechanism under the 3 simplifying assumptions Saitô and co-workers used to derive their kinetic equation. A list of the 3 main caveats/limitations of the F-W kinetic model is provided, followed by the main conclusions from this study as well as some needed future experiments. This model is hosted on BioModels Database and identified by: BIOMD0000000567. To cite BioModels Database, please use: BioModels Database: An enhanced, curated and annotated resource for published quantitative kinetic models. To the extent possible under law, all copyright and related or neighbouring rights to this encoded model have been dedicated to the public domain worldwide. Please refer to CC0 Public Domain Dedication for more information.</sbmlRdf:notes>
+    <bqmodel:isDerivedFrom rdf:resource="http://identifiers.org/pubmed/16081040"/>
+    <dcterms:creator rdf:nodeID="A3"/>
+    <sbmlRdf:unitsDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#_434de564-1b5a-4228-b2fc-a86bad8fc6d6"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI6"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI1"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI2"/>
+    <sbmlRdf:parameter rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI5"/>
+    <bqmodel:isDerivedFrom rdf:resource="http://identifiers.org/pubmed/16536526"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#_225354e9-9822-4558-ac8b-8566d6702825">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI1"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#_1445a9b3-d762-4a67-b5ae-25047f6b9188">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI2"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#d82bb74e-93bf-43fc-a55d-f7ae16c6bc3a">
+    <sbmlRdf:unit rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#f9ef15c2-755f-4897-acd7-d3b93bf6bd60"/>
+    <sbmlRdf:name>time</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnitsDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#_8de0125b-24a1-4ce4-804d-99cea5e8aff1">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI2"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI1">
+    <sbmlRdf:name>B</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:boundaryCondition>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#_3dc20fc0-7af7-4695-89ef-4e0a4551c49a"/>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <bqbiol:is rdf:resource="http://identifiers.org/pr/PR:P04156"/>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:notes>Polymeric form of the α-Synuclein (Tht Fluorescence)</sbmlRdf:notes>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <vCard:Orgname>EMBL-EBI</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI5">
+    <sbmlRdf:notes>Initial monomeric concentration of protein (μM)</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">184713.375796178</sbmlRdf:value>
+    <sbmlRdf:name>A0</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#_3dc20fc0-7af7-4695-89ef-4e0a4551c49a">
+    <bqbiol:is rdf:resource="http://identifiers.org/bto/BTO:0000142"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:size rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:size>
+    <sbmlRdf:spatialDimensions rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</sbmlRdf:spatialDimensions>
+    <sbmlRdf:name>Brain</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Compartment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#_0341b081-4dc6-4120-af86-17db74dac4c0">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI1"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#_434de564-1b5a-4228-b2fc-a86bad8fc6d6">
+    <sbmlRdf:unit rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#_381136d1-1954-4fb4-a5d4-928ff48b6398"/>
+    <sbmlRdf:name>substance</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnitsDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <vCard:ORG rdf:nodeID="A4"/>
+    <vCard:EMAIL>lloret@ebi.ac.uk</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI3">
+    <sbmlRdf:notes>Average rate constant for aggregation (h-1)</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.0E-5</sbmlRdf:value>
+    <sbmlRdf:name>k1</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Parameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI8">
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#_77323360-646d-4581-a232-90e34b3747bc"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#_1445a9b3-d762-4a67-b5ae-25047f6b9188"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#_225354e9-9822-4558-ac8b-8566d6702825"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#_80cb45f6-2649-4804-82d4-2a94fb37c819"/>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#e2caa7b7-7172-458b-8334-c3d7ef50c89c"/>
+    <sbmlRdf:modifier rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#_2f440931-9fa0-486e-b6a7-480a5a1c7187"/>
+    <sbmlRdf:name>Growth</sbmlRdf:name>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:reversible>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#_77323360-646d-4581-a232-90e34b3747bc">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI1"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#_735a5739-90a2-4658-a107-eb623c462991">
+    <sbmlRdf:exponent rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:exponent>
+    <sbmlRdf:scale rdf:datatype="http://www.w3.org/2001/XMLSchema#long">-3</sbmlRdf:scale>
+    <sbmlRdf:multipler rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:multipler>
+    <sbmlRdf:kind rdf:datatype="java:org.sbml.jsbml.Unit$Kind">LITRE</sbmlRdf:kind>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#_17050c1f-7293-4f31-9c1d-f0d75c1090ab">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000567#_2f440931-9fa0-486e-b6a7-480a5a1c7187">
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000567#COPASI2"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#ModifierSpeciesReference"/>
+  </rdf:Description>
+</rdf:RDF>

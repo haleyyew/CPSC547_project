@@ -1,0 +1,332 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:bqmodel="http://biomodels.net/model-qualifiers#"
+    xmlns:biodb="http://identifiers.org/biomodels.db/BIOMD0000000629#"
+    xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#"
+    xmlns:bqbiol="http://biomodels.net/biology-qualifiers#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:sbmlRdf="http://identifiers.org/biomodels.vocabulary#" > 
+  <rdf:Description rdf:nodeID="A0">
+    <vCard:ORG rdf:nodeID="A1"/>
+    <vCard:EMAIL>kothamav@babraham.ac.uk</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#ca664820-500d-46c4-aa67-ecdd2d15b41d">
+    <sbmlRdf:unit rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#_8665b59d-8a68-4dfe-8e0e-b3704ddd6ab2"/>
+    <sbmlRdf:name>substance</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnitsDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#e993a796-e8b2-4d85-a9ce-557cc45d3f22">
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000338"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.2</sbmlRdf:value>
+    <sbmlRdf:name>k2</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#cb502f14-84d4-4ddf-ae15-1becaf2ccf66">
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#e993a796-e8b2-4d85-a9ce-557cc45d3f22"/>
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#_326c1aa5-7b62-4e5d-b125-ca708c1da74e"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <dcterms:W3CDTF>Thu Jan 31 10:18:30 GMT 2013</dcterms:W3CDTF>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629">
+    <sbmlRdf:timeUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#_7a0ecde6-116f-47a1-a1e4-c92ead2a09c7"/>
+    <sbmlRdf:notes>Haffez2017 - RAR interaction with synthetic analogues This model is described in the article: The molecular basis of the interactions between synthetic retinoic acid analogues and the retinoic acid receptors Hesham Haffez, David R. Chisholm, Roy Valentine, Ehmke Pohl, Christopher Redfern and Andrew Whiting MedChemComm Abstract: All-trans-retinoic acid (ATRA) and its synthetic analogues EC23 and EC19 direct cellular differentiation by interacting as ligands for the retinoic acid receptor (RARÎ±, Î² and Î³) family of nuclear receptor proteins. To date, a number of crystal structures of natural and synthetic ligands complexed to their target proteins have been solved, providing molecular level snap-shots of ligand binding. However, a deeper understanding of receptor and ligand flexibility and conformational freedom is required to develop stable and effective ATRA analogues for clinical use. Therefore, we have used molecular modelling techniques to define RAR interactions with ATRA and two synthetic analogues, EC19 and EC23, and compared their predicted biochemical activities to experimental measurements of relative ligand affinity and recruitment of coactivator proteins. A comprehensive molecular docking approach that explored the conformational space of the ligands indicated that ATRA is able to bind the three RAR proteins in a number of conformations with one extended structure being favoured. In contrast the biologically-distinct isomer, 9-cis-retinoic acid (9CRA), showed significantly less conformational flexibility in the RAR binding pockets. These findings were used to inform docking studies of the synthetic retinoids EC23 and EC19, and their respective methyl esters. EC23 was found to be an excellent mimic for ATRA, and occupied similar binding modes to ATRA in all three target RAR proteins. In comparison, EC19 exhibited an alternative binding mode which reduces the strength of key polar interactions in RARÎ±/Î³ but is well-suited to the larger RARÎ² binding pocket. In contrast, docking of the corresponding esters revealed the loss of key polar interactions which may explain the much reduced biological activity. Our computational results were complemented using an in vitro binding assay based on FRET measurements, which showed that EC23 was a strongly binding, pan-agonist of the RARs, while EC19 exhibited specificity for RARÎ², as predicted by the docking studies. These findings can account for the distinct behaviour of EC23 and EC19 in cellular differentiation assays, and additionally, the methods described herein can be further applied to the understanding of the molecular basis for the selectivity of different retinoids to RARÎ±, Î² and Î³. This model is hosted on BioModels Database and identified by: BIOMD0000000629. To cite BioModels Database, please use: BioModels Database: An enhanced, curated and annotated resource for published quantitative kinetic models. To the extent possible under law, all copyright and related or neighbouring rights to this encoded model have been dedicated to the public domain worldwide. Please refer to CC0 Public Domain Dedication for more information.</sbmlRdf:notes>
+    <bqmodel:is rdf:resource="http://identifiers.org/biomodels.db/MODEL1702240000"/>
+    <sbmlRdf:unitsDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#ca664820-500d-46c4-aa67-ecdd2d15b41d"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI8"/>
+    <dcterms:creator rdf:nodeID="A4"/>
+    <dcterms:creator rdf:nodeID="A5"/>
+    <dcterms:modified rdf:nodeID="A6"/>
+    <sbmlRdf:substanceUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#ca664820-500d-46c4-aa67-ecdd2d15b41d"/>
+    <dcterms:creator rdf:nodeID="A7"/>
+    <sbmlRdf:areaUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000615#_41fb00bc-b3f0-48e7-adbf-f8e59052882f"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI5"/>
+    <dcterms:creator rdf:nodeID="A0"/>
+    <bqbiol:hasTaxon rdf:resource="http://identifiers.org/taxonomy/131567"/>
+    <bqbiol:isPartOf rdf:resource="http://identifiers.org/go/GO:0048384"/>
+    <bqmodel:curated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</bqmodel:curated>
+    <dcterms:creator rdf:nodeID="A8"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI6"/>
+    <dcterms:creator rdf:nodeID="A9"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLModel"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI3"/>
+    <bqmodel:is rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629"/>
+    <sbmlRdf:name>Haffez2017 - RAR interaction with synthetic analogues</sbmlRdf:name>
+    <sbmlRdf:unitsDef rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#_7a0ecde6-116f-47a1-a1e4-c92ead2a09c7"/>
+    <sbmlRdf:compartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI1"/>
+    <sbmlRdf:reaction rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI7"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI4"/>
+    <sbmlRdf:lengthUnit rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000615#_65de05aa-5f57-4948-b460-2970a44172af"/>
+    <dcterms:created rdf:nodeID="A3"/>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI2"/>
+    <dcterms:creator rdf:nodeID="A10"/>
+    <sbmlRdf:volumeUnits rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000610#_0f96f927-352b-418f-8464-75ccddee8ac4"/>
+    <bqmodel:isDescribedBy rdf:resource="http://identifiers.org/doi/10.1039/C6MD00680A"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#_1906fc8a-132c-4064-a64e-8b733971996e">
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000338"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1</sbmlRdf:value>
+    <sbmlRdf:name>k2</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI1">
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000290"/>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:constant>
+    <sbmlRdf:size rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:size>
+    <sbmlRdf:spatialDimensions rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.0</sbmlRdf:spatialDimensions>
+    <sbmlRdf:name>Cell</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Compartment"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <vCard:Given>Hesham</vCard:Given>
+    <vCard:Family>Haffez</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#_8ddc6507-980c-4c16-b97f-fde91f371c12">
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#_1906fc8a-132c-4064-a64e-8b733971996e"/>
+    <sbmlRdf:localParameters rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#_7619a8b1-7d79-4f36-8c8a-721677393d2d"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#KineticLaw"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#a0149aa1-e1ef-49e8-b192-8e1f50dc8697">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI5"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <vCard:Orgname>Chemistry Department, Durham University</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#_326c1aa5-7b62-4e5d-b125-ca708c1da74e">
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000341"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.014</sbmlRdf:value>
+    <sbmlRdf:name>k1</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <vCard:ORG rdf:nodeID="A12"/>
+    <vCard:EMAIL>ehmke.pohl@durham.ac.uk</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A13"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <vCard:Orgname>Babraham Institute</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI6">
+    <sbmlRdf:notes>Ligand-Receptor-CoActivator represents the final complex formation between ligand, retinoic acid receptor and co-activator in μmol
+The formation of this complex is controlled by k3/k4 ratio which represents the ligand- receptor complex binding to co-activator and measured practically as EC50.
+The higher k3/k4 ratio, the better binding interaction of the intermediate complex to its co-activator.</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <bqbiol:hasPart rdf:resource="http://purl.uniprot.org/uniprot/P10276"/>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI1"/>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:name>Ligand-Receptor-CoActivator</sbmlRdf:name>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000296"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/chebi/CHEBI:15367"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <vCard:Given>David</vCard:Given>
+    <vCard:Family>Chisholm</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI2">
+    <bqbiol:is rdf:resource="http://identifiers.org/chebi/CHEBI:15367"/>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0E-4</sbmlRdf:initialConcentration>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000280"/>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:name>Ligand</sbmlRdf:name>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI1"/>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:notes>Ligand is either natural retinoid (ATRA), or synthetic retinoid as EC19, EC23,...</sbmlRdf:notes>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <vCard:ORG rdf:nodeID="A15"/>
+    <vCard:EMAIL>royvalentine@highforceresearch.com</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A16"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <vCard:Given>Andy</vCard:Given>
+    <vCard:Family>Whiting</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI4">
+    <sbmlRdf:notes>Examples of receptors; Retinoic acid receptor (RAR)-alpha,-beta and -gamma.
+The principle is the same and the concentrations used here are for RAR-alpha</sbmlRdf:notes>
+    <bqbiol:isVersionOf rdf:resource="http://purl.uniprot.org/uniprot/P10276"/>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0035</sbmlRdf:initialConcentration>
+    <sbmlRdf:name>Receptor</sbmlRdf:name>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI1"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000244"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#_4c261be4-4b20-47ee-94a0-e5b3cf4a8dc0">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI3"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI8">
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:reversible>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#_5092d589-4005-4188-a606-c7f14aabd1bc"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/go/GO:0016922"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000296"/>
+    <sbmlRdf:name>Ligand-Receptor-CoActivator complex formation</sbmlRdf:name>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#edea5fce-1588-41fe-9a38-8a5bca581559"/>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#cb502f14-84d4-4ddf-ae15-1becaf2ccf66"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#a0149aa1-e1ef-49e8-b192-8e1f50dc8697"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <vCard:ORG rdf:nodeID="A18"/>
+    <vCard:EMAIL>chris.redfern@newcastle.ac.uk</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A19"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#_7a0ecde6-116f-47a1-a1e4-c92ead2a09c7">
+    <sbmlRdf:unit rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#_340b1406-e61e-4903-b83e-c81ddbaced58"/>
+    <sbmlRdf:name>time</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnitsDef"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <dcterms:W3CDTF>Tue Apr 04 13:07:09 BST 2017</dcterms:W3CDTF>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <vCard:Given>Varun</vCard:Given>
+    <vCard:Family>Kothamachu</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A20">
+    <vCard:Orgname>Department of Chemistry, Durham University</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#_7b9688f8-6a99-4fed-8c91-3e66409e7dc3">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI4"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <vCard:Orgname>High Force Research Ltd., Bowburn North Industrial Estate</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#_8665b59d-8a68-4dfe-8e0e-b3704ddd6ab2">
+    <sbmlRdf:exponent rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:exponent>
+    <sbmlRdf:scale rdf:datatype="http://www.w3.org/2001/XMLSchema#long">-6</sbmlRdf:scale>
+    <sbmlRdf:multipler rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:multipler>
+    <sbmlRdf:kind rdf:datatype="java:org.sbml.jsbml.Unit$Kind">MOLE</sbmlRdf:kind>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <vCard:Orgname>NICR, Newcastle University</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#_340b1406-e61e-4903-b83e-c81ddbaced58">
+    <sbmlRdf:exponent rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:exponent>
+    <sbmlRdf:scale rdf:datatype="http://www.w3.org/2001/XMLSchema#long">0</sbmlRdf:scale>
+    <sbmlRdf:multipler rdf:datatype="http://www.w3.org/2001/XMLSchema#double">60.0</sbmlRdf:multipler>
+    <sbmlRdf:kind rdf:datatype="java:org.sbml.jsbml.Unit$Kind">SECOND</sbmlRdf:kind>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SBMLUnit"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <vCard:ORG rdf:nodeID="A20"/>
+    <vCard:EMAIL>h.r.haffez@durham.ac.uk</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A11"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#_5ab2fb22-a74f-4ad6-8d03-ebb5c7395d83">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI2"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <vCard:ORG rdf:nodeID="A21"/>
+    <vCard:EMAIL>d.r.chisholm@durham.ac.uk</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A14"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#_7619a8b1-7d79-4f36-8c8a-721677393d2d">
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000341"/>
+    <sbmlRdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6</sbmlRdf:value>
+    <sbmlRdf:name>k1</sbmlRdf:name>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#LocalParameter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A19">
+    <vCard:Given>Chris</vCard:Given>
+    <vCard:Family>Redfern</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <vCard:Given>Roy</vCard:Given>
+    <vCard:Family>Valentine</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <vCard:Given>Ehmke</vCard:Given>
+    <vCard:Family>Pohl</vCard:Family>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A21">
+    <vCard:Orgname>Chemistry Department, Durham University</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <vCard:ORG rdf:nodeID="A22"/>
+    <vCard:EMAIL>andy.whiting@durham.ac.uk</vCard:EMAIL>
+    <vCard:N rdf:nodeID="A17"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI7">
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Reaction"/>
+    <sbmlRdf:reversible rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</sbmlRdf:reversible>
+    <sbmlRdf:fast rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:fast>
+    <sbmlRdf:name>Ligand-Receptor complex formation</sbmlRdf:name>
+    <sbmlRdf:product rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#_4c261be4-4b20-47ee-94a0-e5b3cf4a8dc0"/>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000526"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#_5ab2fb22-a74f-4ad6-8d03-ebb5c7395d83"/>
+    <sbmlRdf:reactant rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#_7b9688f8-6a99-4fed-8c91-3e66409e7dc3"/>
+    <bqbiol:isVersionOf rdf:resource="http://identifiers.org/go/GO:0016922"/>
+    <sbmlRdf:kineticLaw rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#_8ddc6507-980c-4c16-b97f-fde91f371c12"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A22">
+    <vCard:Orgname>Chemistry Department, Durham University</vCard:Orgname>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.uniprot.org/uniprot/P10276">
+    <owl:sameAs rdf:resource="http://identifiers.org/uniprot/P10276"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI5">
+    <sbmlRdf:name>CoActivator</sbmlRdf:name>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <sbmlRdf:notes>Examples for co-activators:
+steroid receptor co-activator-1 (SRC-1), co-activator-X (COACT-X) and CREB binding protein (CBP) (also known as P-300)</sbmlRdf:notes>
+    <bqbiol:hasVersion rdf:resource="http://identifiers.org/chebi/CHEBI:16670"/>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.0</sbmlRdf:initialConcentration>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000459"/>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <bqbiol:hasVersion rdf:resource="http://identifiers.org/chebi/CHEBI:42492"/>
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#edea5fce-1588-41fe-9a38-8a5bca581559">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI6"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI3">
+    <sbmlRdf:initialAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#double">NaN</sbmlRdf:initialAmount>
+    <sbmlRdf:name>Ligand-Receptor</sbmlRdf:name>
+    <sbmlRdf:boundaryCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:boundaryCondition>
+    <sbmlRdf:initialConcentration rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</sbmlRdf:initialConcentration>
+    <bqbiol:is rdf:resource="http://identifiers.org/biomodels.sbo/SBO:0000296"/>
+    <bqbiol:hasPart rdf:resource="http://purl.uniprot.org/uniprot/P10276"/>
+    <sbmlRdf:hasOnlySubstanceUnits rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:hasOnlySubstanceUnits>
+    <sbmlRdf:notes>Ligand-Receptor represents the intermediate complex formation between ligand and retinoic acid receptor in μmol
+The formation of this complex is controlled by k1/k2 ratio which represents the ligand binding affinity.
+The higher k1/k2 ratio, the better binding interaction of ligand to its cognate receptor</sbmlRdf:notes>
+    <sbmlRdf:constant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</sbmlRdf:constant>
+    <sbmlRdf:inCompartment rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI1"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#Species"/>
+    <bqbiol:hasPart rdf:resource="http://identifiers.org/chebi/CHEBI:15367"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identifiers.org/biomodels.db/BIOMD0000000629#_5092d589-4005-4188-a606-c7f14aabd1bc">
+    <sbmlRdf:stoichiometry rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</sbmlRdf:stoichiometry>
+    <sbmlRdf:species rdf:resource="http://identifiers.org/biomodels.db/BIOMD0000000629#COPASI3"/>
+    <rdf:type rdf:resource="http://identifiers.org/biomodels.vocabulary#SpeciesReference"/>
+  </rdf:Description>
+</rdf:RDF>
