@@ -1,1 +1,151 @@
-{"nodes": [{"compartment": "metaid_cell", "species_name": "enzyme-substrate complex ES (catalase - hydrogen peroxide)", "id": "_071744"}, {"compartment": "metaid_cell", "species_name": "enzyme E (catalase)", "id": "_071741"}, {"compartment": "metaid_cell", "species_name": "product 2", "id": "_071748"}, {"reaction_name": "r2", "reactants": ["_60a516b2-da85-42d7-8e3d-a5f9713a8dda", "_460667d6-8579-4ad8-b718-2e28d4e440e4"], "modifiers": [], "products": ["_65ae46df-9e70-495f-b42f-959b07f57c7e", "_795965eb-827d-43da-a922-1621952553a1"], "id": "_071751"}, {"compartment": "metaid_cell", "species_name": "product 1", "id": "_071745"}, {"compartment": "metaid_cell", "species_name": "substrate S (hydrogen peroxide)", "id": "_071742"}, {"reaction_name": "r3", "reactants": ["c2d9bfad-c4b3-4857-aecd-6836202a7d05", "_0b7c52f5-d47a-4911-aa8e-4050cb357cab"], "modifiers": [], "products": ["_434fdd41-d8a7-4a7c-bd4a-22bc9875ec98", "_6a5ba11c-ad4f-4c56-84ed-420ddf6cb0e6"], "id": "_071752"}, {"reaction_name": "r1", "reactants": ["_1089e95c-46dc-4b74-a801-f239c625dad5", "d9a94d2b-fd1c-412a-ac9c-7c4b92f0f91e"], "modifiers": [], "products": ["_3c81b160-924b-4856-8731-2226a7558e11"], "id": "_071749"}, {"compartment": "metaid_cell", "species_name": "donor AH2", "id": "_071747"}], "links": [{"source": "_071751", "role": "product", "id": "_65ae46df-9e70-495f-b42f-959b07f57c7e", "value": "1.0", "target": "_071745"}, {"source": "_071751", "role": "product", "id": "_795965eb-827d-43da-a922-1621952553a1", "value": "1.0", "target": "_071741"}, {"source": "_071742", "role": "reactant", "id": "_60a516b2-da85-42d7-8e3d-a5f9713a8dda", "value": "1.0", "target": "_071751"}, {"source": "_071744", "role": "reactant", "id": "_460667d6-8579-4ad8-b718-2e28d4e440e4", "value": "1.0", "target": "_071751"}, {"source": "_071752", "role": "product", "id": "_434fdd41-d8a7-4a7c-bd4a-22bc9875ec98", "value": "1.0", "target": "_071741"}, {"source": "_071752", "role": "product", "id": "_6a5ba11c-ad4f-4c56-84ed-420ddf6cb0e6", "value": "1.0", "target": "_071748"}, {"source": "_071747", "role": "reactant", "id": "c2d9bfad-c4b3-4857-aecd-6836202a7d05", "value": "1.0", "target": "_071752"}, {"source": "_071744", "role": "reactant", "id": "_0b7c52f5-d47a-4911-aa8e-4050cb357cab", "value": "1.0", "target": "_071752"}, {"source": "_071749", "role": "product", "id": "_3c81b160-924b-4856-8731-2226a7558e11", "value": "1.0", "target": "_071744"}, {"source": "_071742", "role": "reactant", "id": "_1089e95c-46dc-4b74-a801-f239c625dad5", "value": "1.0", "target": "_071749"}, {"source": "_071741", "role": "reactant", "id": "d9a94d2b-fd1c-412a-ac9c-7c4b92f0f91e", "value": "1.0", "target": "_071749"}]}
+{
+    "links": [
+        {
+            "id": "_65ae46df-9e70-495f-b42f-959b07f57c7e", 
+            "role": "product", 
+            "source": "_071751", 
+            "target": "_071745", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_795965eb-827d-43da-a922-1621952553a1", 
+            "role": "product", 
+            "source": "_071751", 
+            "target": "_071741", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_60a516b2-da85-42d7-8e3d-a5f9713a8dda", 
+            "role": "reactant", 
+            "source": "_071742", 
+            "target": "_071751", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_460667d6-8579-4ad8-b718-2e28d4e440e4", 
+            "role": "reactant", 
+            "source": "_071744", 
+            "target": "_071751", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_434fdd41-d8a7-4a7c-bd4a-22bc9875ec98", 
+            "role": "product", 
+            "source": "_071752", 
+            "target": "_071741", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_6a5ba11c-ad4f-4c56-84ed-420ddf6cb0e6", 
+            "role": "product", 
+            "source": "_071752", 
+            "target": "_071748", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "c2d9bfad-c4b3-4857-aecd-6836202a7d05", 
+            "role": "reactant", 
+            "source": "_071747", 
+            "target": "_071752", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_0b7c52f5-d47a-4911-aa8e-4050cb357cab", 
+            "role": "reactant", 
+            "source": "_071744", 
+            "target": "_071752", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_3c81b160-924b-4856-8731-2226a7558e11", 
+            "role": "product", 
+            "source": "_071749", 
+            "target": "_071744", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_1089e95c-46dc-4b74-a801-f239c625dad5", 
+            "role": "reactant", 
+            "source": "_071742", 
+            "target": "_071749", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "d9a94d2b-fd1c-412a-ac9c-7c4b92f0f91e", 
+            "role": "reactant", 
+            "source": "_071741", 
+            "target": "_071749", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "metaid_cell", 
+            "id": "_071744", 
+            "species_name": "enzyme-substrate complex ES (catalase - hydrogen peroxide)"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "_071741", 
+            "species_name": "enzyme E (catalase)"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "_071748", 
+            "species_name": "product 2"
+        }, 
+        {
+            "id": "_071751", 
+            "modifiers": [], 
+            "products": [
+                "_65ae46df-9e70-495f-b42f-959b07f57c7e", 
+                "_795965eb-827d-43da-a922-1621952553a1"
+            ], 
+            "reactants": [
+                "_60a516b2-da85-42d7-8e3d-a5f9713a8dda", 
+                "_460667d6-8579-4ad8-b718-2e28d4e440e4"
+            ], 
+            "reaction_name": "r2"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "_071745", 
+            "species_name": "product 1"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "_071742", 
+            "species_name": "substrate S (hydrogen peroxide)"
+        }, 
+        {
+            "id": "_071752", 
+            "modifiers": [], 
+            "products": [
+                "_434fdd41-d8a7-4a7c-bd4a-22bc9875ec98", 
+                "_6a5ba11c-ad4f-4c56-84ed-420ddf6cb0e6"
+            ], 
+            "reactants": [
+                "c2d9bfad-c4b3-4857-aecd-6836202a7d05", 
+                "_0b7c52f5-d47a-4911-aa8e-4050cb357cab"
+            ], 
+            "reaction_name": "r3"
+        }, 
+        {
+            "id": "_071749", 
+            "modifiers": [], 
+            "products": [
+                "_3c81b160-924b-4856-8731-2226a7558e11"
+            ], 
+            "reactants": [
+                "_1089e95c-46dc-4b74-a801-f239c625dad5", 
+                "d9a94d2b-fd1c-412a-ac9c-7c4b92f0f91e"
+            ], 
+            "reaction_name": "r1"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "_071747", 
+            "species_name": "donor AH2"
+        }
+    ]
+}

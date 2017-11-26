@@ -1,1 +1,114 @@
-{"nodes": [{"reaction_name": "Mdm2 degradation", "reactants": ["_389322"], "modifiers": [], "products": [], "id": "metaid_0000018"}, {"reaction_name": "p53 dependent Mdm2 production", "reactants": [], "modifiers": [], "products": ["_389286"], "id": "metaid_0000016"}, {"compartment": "metaid_0000009", "species_name": "Mdm2", "id": "metaid_0000012"}, {"reaction_name": "Mdm2 independent p53 degradation", "reactants": ["_389226"], "modifiers": [], "products": [], "id": "metaid_0000014"}, {"reaction_name": "Mdm2 dependent p53 degradation", "reactants": ["_389250"], "modifiers": [], "products": [], "id": "metaid_0000015"}, {"compartment": "metaid_0000009", "species_name": "p53", "id": "metaid_0000011"}, {"reaction_name": "p53 production", "reactants": [], "modifiers": [], "products": ["_389202"], "id": "metaid_0000013"}], "links": [{"source": "metaid_0000012", "role": "reactant", "id": "_389322", "value": "1.0", "target": "metaid_0000018"}, {"source": "metaid_0000016", "role": "product", "id": "_389286", "value": "1.0", "target": "metaid_0000012"}, {"source": "metaid_0000011", "role": "reactant", "id": "_389226", "value": "1.0", "target": "metaid_0000014"}, {"source": "metaid_0000011", "role": "reactant", "id": "_389250", "value": "1.0", "target": "metaid_0000015"}, {"source": "metaid_0000013", "role": "product", "id": "_389202", "value": "1.0", "target": "metaid_0000011"}]}
+{
+    "links": [
+        {
+            "id": "_389322", 
+            "role": "reactant", 
+            "source": "metaid_0000012", 
+            "target": "metaid_0000018", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_389286", 
+            "role": "product", 
+            "source": "metaid_0000016", 
+            "target": "metaid_0000012", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_389298", 
+            "role": "modifier", 
+            "source": "metaid_0000011", 
+            "target": "metaid_0000016", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_389226", 
+            "role": "reactant", 
+            "source": "metaid_0000011", 
+            "target": "metaid_0000014", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_389250", 
+            "role": "reactant", 
+            "source": "metaid_0000011", 
+            "target": "metaid_0000015", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_389262", 
+            "role": "modifier", 
+            "source": "metaid_0000012", 
+            "target": "metaid_0000015", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_389202", 
+            "role": "product", 
+            "source": "metaid_0000013", 
+            "target": "metaid_0000011", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000018", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_389322"
+            ], 
+            "reaction_name": "Mdm2 degradation"
+        }, 
+        {
+            "id": "metaid_0000016", 
+            "modifiers": [
+                "_389298"
+            ], 
+            "products": [
+                "_389286"
+            ], 
+            "reactants": [], 
+            "reaction_name": "p53 dependent Mdm2 production"
+        }, 
+        {
+            "compartment": "metaid_0000009", 
+            "id": "metaid_0000012", 
+            "species_name": "Mdm2"
+        }, 
+        {
+            "id": "metaid_0000014", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_389226"
+            ], 
+            "reaction_name": "Mdm2 independent p53 degradation"
+        }, 
+        {
+            "id": "metaid_0000015", 
+            "modifiers": [
+                "_389262"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_389250"
+            ], 
+            "reaction_name": "Mdm2 dependent p53 degradation"
+        }, 
+        {
+            "compartment": "metaid_0000009", 
+            "id": "metaid_0000011", 
+            "species_name": "p53"
+        }, 
+        {
+            "id": "metaid_0000013", 
+            "modifiers": [], 
+            "products": [
+                "_389202"
+            ], 
+            "reactants": [], 
+            "reaction_name": "p53 production"
+        }
+    ]
+}

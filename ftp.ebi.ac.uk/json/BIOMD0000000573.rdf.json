@@ -1,1 +1,232 @@
-{"nodes": [{"compartment": "e8c19965-7d34-423e-b3c7-77b898adbd0e", "species_name": "C", "id": "COPASI2"}, {"reaction_name": "Kdc", "reactants": ["_9a86e4e1-377e-4446-8bdd-60f4ec74d765"], "modifiers": [], "products": [], "id": "COPASI9"}, {"reaction_name": "Kvc", "reactants": ["e994625a-2985-41b7-8a08-0059f8e841aa", "f3b27c71-0c0d-4eed-b9a8-5b76a7041f77"], "modifiers": [], "products": ["d85d7584-cae3-42fd-919d-c167730b3f96"], "id": "COPASI5"}, {"compartment": "e8c19965-7d34-423e-b3c7-77b898adbd0e", "species_name": "V", "id": "COPASI1"}, {"reaction_name": "Kdv", "reactants": ["_50002f57-18f9-4b48-b61b-50fb13b015e3"], "modifiers": [], "products": [], "id": "COPASI6"}, {"reaction_name": "Kv", "reactants": ["_1932dce6-a529-4520-9e04-5e553ea6d079"], "modifiers": [], "products": ["d4c35309-e80d-4fe2-b106-d824ed182770"], "id": "COPASI4"}, {"reaction_name": "Kc", "reactants": [], "modifiers": [], "products": ["_568396f1-2b18-44ee-9011-20582953b030"], "id": "COPASI7"}, {"reaction_name": "Kb", "reactants": [], "modifiers": [], "products": ["e38b8e07-6185-41db-a681-92c21295d056"], "id": "COPASI3"}, {"reaction_name": "Kcv", "reactants": ["_5571d7ba-d247-4f1b-851f-37a7c9f6e125", "_4cbca6d5-b7ad-4e0a-87c3-3b7a6ac26084"], "modifiers": [], "products": ["_118bbcec-390e-4a53-b28d-fe4074f239af"], "id": "COPASI8"}], "links": [{"source": "COPASI2", "role": "reactant", "id": "_9a86e4e1-377e-4446-8bdd-60f4ec74d765", "value": "1.0", "target": "COPASI9"}, {"source": "COPASI5", "role": "product", "id": "d85d7584-cae3-42fd-919d-c167730b3f96", "value": "1.0", "target": "COPASI2"}, {"source": "COPASI2", "role": "reactant", "id": "e994625a-2985-41b7-8a08-0059f8e841aa", "value": "1.0", "target": "COPASI5"}, {"source": "COPASI1", "role": "reactant", "id": "f3b27c71-0c0d-4eed-b9a8-5b76a7041f77", "value": "1.0", "target": "COPASI5"}, {"source": "COPASI1", "role": "reactant", "id": "_50002f57-18f9-4b48-b61b-50fb13b015e3", "value": "1.0", "target": "COPASI6"}, {"source": "COPASI4", "role": "product", "id": "d4c35309-e80d-4fe2-b106-d824ed182770", "value": "2.0", "target": "COPASI1"}, {"source": "COPASI1", "role": "reactant", "id": "_1932dce6-a529-4520-9e04-5e553ea6d079", "value": "1.0", "target": "COPASI4"}, {"source": "COPASI7", "role": "product", "id": "_568396f1-2b18-44ee-9011-20582953b030", "value": "1.0", "target": "COPASI2"}, {"source": "COPASI3", "role": "product", "id": "e38b8e07-6185-41db-a681-92c21295d056", "value": "1.0", "target": "COPASI1"}, {"source": "COPASI8", "role": "product", "id": "_118bbcec-390e-4a53-b28d-fe4074f239af", "value": "1.0", "target": "COPASI1"}, {"source": "COPASI2", "role": "reactant", "id": "_5571d7ba-d247-4f1b-851f-37a7c9f6e125", "value": "1.0", "target": "COPASI8"}, {"source": "COPASI1", "role": "reactant", "id": "_4cbca6d5-b7ad-4e0a-87c3-3b7a6ac26084", "value": "1.0", "target": "COPASI8"}]}
+{
+    "links": [
+        {
+            "id": "_9a86e4e1-377e-4446-8bdd-60f4ec74d765", 
+            "role": "reactant", 
+            "source": "COPASI2", 
+            "target": "COPASI9", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_01785d47-dd63-4588-bf71-7febeb116502", 
+            "role": "modifier", 
+            "source": "COPASI2", 
+            "target": "COPASI9", 
+            "value": 0.0
+        }, 
+        {
+            "id": "d85d7584-cae3-42fd-919d-c167730b3f96", 
+            "role": "product", 
+            "source": "COPASI5", 
+            "target": "COPASI2", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "e994625a-2985-41b7-8a08-0059f8e841aa", 
+            "role": "reactant", 
+            "source": "COPASI2", 
+            "target": "COPASI5", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "f3b27c71-0c0d-4eed-b9a8-5b76a7041f77", 
+            "role": "reactant", 
+            "source": "COPASI1", 
+            "target": "COPASI5", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_3d600fe8-03ab-446a-a55e-35e9e6adc838", 
+            "role": "modifier", 
+            "source": "COPASI2", 
+            "target": "COPASI5", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_29c2d8aa-e2dc-4b06-9735-a560040bebb4", 
+            "role": "modifier", 
+            "source": "COPASI1", 
+            "target": "COPASI5", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_50002f57-18f9-4b48-b61b-50fb13b015e3", 
+            "role": "reactant", 
+            "source": "COPASI1", 
+            "target": "COPASI6", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "cf0a1ff4-8cb3-4e7f-84fa-72220fee8efb", 
+            "role": "modifier", 
+            "source": "COPASI1", 
+            "target": "COPASI6", 
+            "value": 0.0
+        }, 
+        {
+            "id": "d4c35309-e80d-4fe2-b106-d824ed182770", 
+            "role": "product", 
+            "source": "COPASI4", 
+            "target": "COPASI1", 
+            "value": "2.0"
+        }, 
+        {
+            "id": "_1932dce6-a529-4520-9e04-5e553ea6d079", 
+            "role": "reactant", 
+            "source": "COPASI1", 
+            "target": "COPASI4", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "ca19f0ff-adcb-44a3-a54f-49caf396634d", 
+            "role": "modifier", 
+            "source": "COPASI1", 
+            "target": "COPASI4", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_568396f1-2b18-44ee-9011-20582953b030", 
+            "role": "product", 
+            "source": "COPASI7", 
+            "target": "COPASI2", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "e38b8e07-6185-41db-a681-92c21295d056", 
+            "role": "product", 
+            "source": "COPASI3", 
+            "target": "COPASI1", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_118bbcec-390e-4a53-b28d-fe4074f239af", 
+            "role": "product", 
+            "source": "COPASI8", 
+            "target": "COPASI1", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_5571d7ba-d247-4f1b-851f-37a7c9f6e125", 
+            "role": "reactant", 
+            "source": "COPASI2", 
+            "target": "COPASI8", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_4cbca6d5-b7ad-4e0a-87c3-3b7a6ac26084", 
+            "role": "reactant", 
+            "source": "COPASI1", 
+            "target": "COPASI8", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_68a1dbbf-4b3a-42f1-a661-95222fd5585a", 
+            "role": "modifier", 
+            "source": "COPASI2", 
+            "target": "COPASI8", 
+            "value": 0.0
+        }, 
+        {
+            "id": "cc1828b1-bf61-4190-bb40-e7dfbc8c4e7b", 
+            "role": "modifier", 
+            "source": "COPASI1", 
+            "target": "COPASI8", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "e8c19965-7d34-423e-b3c7-77b898adbd0e", 
+            "id": "COPASI2", 
+            "species_name": "C"
+        }, 
+        {
+            "id": "COPASI9", 
+            "modifiers": [
+                "_01785d47-dd63-4588-bf71-7febeb116502"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_9a86e4e1-377e-4446-8bdd-60f4ec74d765"
+            ], 
+            "reaction_name": "Kdc"
+        }, 
+        {
+            "id": "COPASI5", 
+            "modifiers": [
+                "_3d600fe8-03ab-446a-a55e-35e9e6adc838", 
+                "_29c2d8aa-e2dc-4b06-9735-a560040bebb4"
+            ], 
+            "products": [
+                "d85d7584-cae3-42fd-919d-c167730b3f96"
+            ], 
+            "reactants": [
+                "e994625a-2985-41b7-8a08-0059f8e841aa", 
+                "f3b27c71-0c0d-4eed-b9a8-5b76a7041f77"
+            ], 
+            "reaction_name": "Kvc"
+        }, 
+        {
+            "compartment": "e8c19965-7d34-423e-b3c7-77b898adbd0e", 
+            "id": "COPASI1", 
+            "species_name": "V"
+        }, 
+        {
+            "id": "COPASI6", 
+            "modifiers": [
+                "cf0a1ff4-8cb3-4e7f-84fa-72220fee8efb"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_50002f57-18f9-4b48-b61b-50fb13b015e3"
+            ], 
+            "reaction_name": "Kdv"
+        }, 
+        {
+            "id": "COPASI4", 
+            "modifiers": [
+                "ca19f0ff-adcb-44a3-a54f-49caf396634d"
+            ], 
+            "products": [
+                "d4c35309-e80d-4fe2-b106-d824ed182770"
+            ], 
+            "reactants": [
+                "_1932dce6-a529-4520-9e04-5e553ea6d079"
+            ], 
+            "reaction_name": "Kv"
+        }, 
+        {
+            "id": "COPASI7", 
+            "modifiers": [], 
+            "products": [
+                "_568396f1-2b18-44ee-9011-20582953b030"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Kc"
+        }, 
+        {
+            "id": "COPASI3", 
+            "modifiers": [], 
+            "products": [
+                "e38b8e07-6185-41db-a681-92c21295d056"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Kb"
+        }, 
+        {
+            "id": "COPASI8", 
+            "modifiers": [
+                "_68a1dbbf-4b3a-42f1-a661-95222fd5585a", 
+                "cc1828b1-bf61-4190-bb40-e7dfbc8c4e7b"
+            ], 
+            "products": [
+                "_118bbcec-390e-4a53-b28d-fe4074f239af"
+            ], 
+            "reactants": [
+                "_5571d7ba-d247-4f1b-851f-37a7c9f6e125", 
+                "_4cbca6d5-b7ad-4e0a-87c3-3b7a6ac26084"
+            ], 
+            "reaction_name": "Kcv"
+        }
+    ]
+}

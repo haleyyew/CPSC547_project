@@ -1,1 +1,104 @@
-{"nodes": [{"compartment": "metaid_0000007", "species_name": "E2", "id": "metaid_0000011"}, {"reaction_name": "X1->P", "reactants": ["_893451"], "modifiers": [], "products": ["_893463"], "id": "metaid_0000015"}, {"compartment": "metaid_0000007", "species_name": "S", "id": "metaid_0000008"}, {"compartment": "metaid_0000007", "species_name": "Etot", "id": "metaid_0000018"}, {"compartment": "metaid_0000007", "species_name": "E1", "id": "metaid_0000010"}, {"compartment": "metaid_0000007", "species_name": "P", "id": "metaid_0000012"}, {"reaction_name": "S->X1", "reactants": ["_893391"], "modifiers": [], "products": ["_893403"], "id": "metaid_0000014"}, {"compartment": "metaid_0000007", "species_name": "X1", "id": "metaid_0000009"}], "links": [{"source": "metaid_0000015", "role": "product", "id": "_893463", "value": "1.0", "target": "metaid_0000012"}, {"source": "metaid_0000009", "role": "reactant", "id": "_893451", "value": "1.0", "target": "metaid_0000015"}, {"source": "metaid_0000014", "role": "product", "id": "_893403", "value": "1.0", "target": "metaid_0000009"}, {"source": "metaid_0000008", "role": "reactant", "id": "_893391", "value": "1.0", "target": "metaid_0000014"}]}
+{
+    "links": [
+        {
+            "id": "_893463", 
+            "role": "product", 
+            "source": "metaid_0000015", 
+            "target": "metaid_0000012", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_893451", 
+            "role": "reactant", 
+            "source": "metaid_0000009", 
+            "target": "metaid_0000015", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_893475", 
+            "role": "modifier", 
+            "source": "metaid_0000011", 
+            "target": "metaid_0000015", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_893403", 
+            "role": "product", 
+            "source": "metaid_0000014", 
+            "target": "metaid_0000009", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_893391", 
+            "role": "reactant", 
+            "source": "metaid_0000008", 
+            "target": "metaid_0000014", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_893415", 
+            "role": "modifier", 
+            "source": "metaid_0000010", 
+            "target": "metaid_0000014", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "metaid_0000007", 
+            "id": "metaid_0000011", 
+            "species_name": "E2"
+        }, 
+        {
+            "id": "metaid_0000015", 
+            "modifiers": [
+                "_893475"
+            ], 
+            "products": [
+                "_893463"
+            ], 
+            "reactants": [
+                "_893451"
+            ], 
+            "reaction_name": "X1->P"
+        }, 
+        {
+            "compartment": "metaid_0000007", 
+            "id": "metaid_0000008", 
+            "species_name": "S"
+        }, 
+        {
+            "compartment": "metaid_0000007", 
+            "id": "metaid_0000018", 
+            "species_name": "Etot"
+        }, 
+        {
+            "compartment": "metaid_0000007", 
+            "id": "metaid_0000010", 
+            "species_name": "E1"
+        }, 
+        {
+            "compartment": "metaid_0000007", 
+            "id": "metaid_0000012", 
+            "species_name": "P"
+        }, 
+        {
+            "id": "metaid_0000014", 
+            "modifiers": [
+                "_893415"
+            ], 
+            "products": [
+                "_893403"
+            ], 
+            "reactants": [
+                "_893391"
+            ], 
+            "reaction_name": "S->X1"
+        }, 
+        {
+            "compartment": "metaid_0000007", 
+            "id": "metaid_0000009", 
+            "species_name": "X1"
+        }
+    ]
+}

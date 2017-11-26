@@ -1,1 +1,188 @@
-{"nodes": [{"reaction_name": "deactivation of cyclin protease", "reactants": ["_361440"], "modifiers": [], "products": ["_361452"], "id": "_060823"}, {"compartment": "_060591", "species_name": "Inactive Cyclin Protease", "id": "_060683"}, {"reaction_name": "activation of cyclin protease", "reactants": ["_361404"], "modifiers": [], "products": ["_361416"], "id": "_060803"}, {"compartment": "_060591", "species_name": "Cyclin", "id": "_060603"}, {"reaction_name": "deactivation of cdc2 kinase", "reactants": ["_361368"], "modifiers": [], "products": ["_361380"], "id": "_060783"}, {"reaction_name": "activation of cdc2 kinase", "reactants": ["_361332"], "modifiers": [], "products": ["_361344"], "id": "_060763"}, {"compartment": "_060591", "species_name": "Active CDC-2 Kinase", "id": "_060623"}, {"compartment": "_060591", "species_name": "Active Cyclin Protease", "id": "_060643"}, {"reaction_name": "default degradation of cyclin", "reactants": ["_361270"], "modifiers": [], "products": [], "id": "_060723"}, {"compartment": "_060591", "species_name": "Inactive CDC-2 Kinase", "id": "_060663"}, {"reaction_name": "creation of cyclin", "reactants": [], "modifiers": [], "products": ["_361246"], "id": "_060703"}, {"reaction_name": "cdc2 kinase triggered degration of cyclin", "reactants": ["_361294"], "modifiers": [], "products": [], "id": "_060743"}], "links": [{"source": "_060823", "role": "product", "id": "_361452", "value": "1.0", "target": "_060683"}, {"source": "_060643", "role": "reactant", "id": "_361440", "value": "1.0", "target": "_060823"}, {"source": "_060803", "role": "product", "id": "_361416", "value": "1.0", "target": "_060643"}, {"source": "_060683", "role": "reactant", "id": "_361404", "value": "1.0", "target": "_060803"}, {"source": "_060783", "role": "product", "id": "_361380", "value": "1.0", "target": "_060663"}, {"source": "_060623", "role": "reactant", "id": "_361368", "value": "1.0", "target": "_060783"}, {"source": "_060763", "role": "product", "id": "_361344", "value": "1.0", "target": "_060623"}, {"source": "_060663", "role": "reactant", "id": "_361332", "value": "1.0", "target": "_060763"}, {"source": "_060603", "role": "reactant", "id": "_361270", "value": "1.0", "target": "_060723"}, {"source": "_060703", "role": "product", "id": "_361246", "value": "1.0", "target": "_060603"}, {"source": "_060603", "role": "reactant", "id": "_361294", "value": "1.0", "target": "_060743"}]}
+{
+    "links": [
+        {
+            "id": "_361452", 
+            "role": "product", 
+            "source": "_060823", 
+            "target": "_060683", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_361440", 
+            "role": "reactant", 
+            "source": "_060643", 
+            "target": "_060823", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_361416", 
+            "role": "product", 
+            "source": "_060803", 
+            "target": "_060643", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_361404", 
+            "role": "reactant", 
+            "source": "_060683", 
+            "target": "_060803", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_361380", 
+            "role": "product", 
+            "source": "_060783", 
+            "target": "_060663", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_361368", 
+            "role": "reactant", 
+            "source": "_060623", 
+            "target": "_060783", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_361344", 
+            "role": "product", 
+            "source": "_060763", 
+            "target": "_060623", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_361332", 
+            "role": "reactant", 
+            "source": "_060663", 
+            "target": "_060763", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_361270", 
+            "role": "reactant", 
+            "source": "_060603", 
+            "target": "_060723", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_361246", 
+            "role": "product", 
+            "source": "_060703", 
+            "target": "_060603", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_361294", 
+            "role": "reactant", 
+            "source": "_060603", 
+            "target": "_060743", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_361307", 
+            "role": "modifier", 
+            "source": "_060643", 
+            "target": "_060743", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "_060823", 
+            "modifiers": [], 
+            "products": [
+                "_361452"
+            ], 
+            "reactants": [
+                "_361440"
+            ], 
+            "reaction_name": "deactivation of cyclin protease"
+        }, 
+        {
+            "compartment": "_060591", 
+            "id": "_060683", 
+            "species_name": "Inactive Cyclin Protease"
+        }, 
+        {
+            "id": "_060803", 
+            "modifiers": [], 
+            "products": [
+                "_361416"
+            ], 
+            "reactants": [
+                "_361404"
+            ], 
+            "reaction_name": "activation of cyclin protease"
+        }, 
+        {
+            "compartment": "_060591", 
+            "id": "_060603", 
+            "species_name": "Cyclin"
+        }, 
+        {
+            "id": "_060783", 
+            "modifiers": [], 
+            "products": [
+                "_361380"
+            ], 
+            "reactants": [
+                "_361368"
+            ], 
+            "reaction_name": "deactivation of cdc2 kinase"
+        }, 
+        {
+            "id": "_060763", 
+            "modifiers": [], 
+            "products": [
+                "_361344"
+            ], 
+            "reactants": [
+                "_361332"
+            ], 
+            "reaction_name": "activation of cdc2 kinase"
+        }, 
+        {
+            "compartment": "_060591", 
+            "id": "_060623", 
+            "species_name": "Active CDC-2 Kinase"
+        }, 
+        {
+            "compartment": "_060591", 
+            "id": "_060643", 
+            "species_name": "Active Cyclin Protease"
+        }, 
+        {
+            "id": "_060723", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_361270"
+            ], 
+            "reaction_name": "default degradation of cyclin"
+        }, 
+        {
+            "compartment": "_060591", 
+            "id": "_060663", 
+            "species_name": "Inactive CDC-2 Kinase"
+        }, 
+        {
+            "id": "_060703", 
+            "modifiers": [], 
+            "products": [
+                "_361246"
+            ], 
+            "reactants": [], 
+            "reaction_name": "creation of cyclin"
+        }, 
+        {
+            "id": "_060743", 
+            "modifiers": [
+                "_361307"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_361294"
+            ], 
+            "reaction_name": "cdc2 kinase triggered degration of cyclin"
+        }
+    ]
+}

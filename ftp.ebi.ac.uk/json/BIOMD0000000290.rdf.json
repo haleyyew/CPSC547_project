@@ -1,1 +1,294 @@
-{"nodes": [{"compartment": "_334188", "species_name": "", "id": "_334192"}, {"reaction_name": "r7: R death", "reactants": ["_7126a00c-4d8e-443e-a2c0-a8fbd3d91878"], "modifiers": [], "products": [], "id": "_334204"}, {"reaction_name": "r8: E death", "reactants": ["b32b8ce5-01de-4dd4-b3c5-c8c14c9b850d"], "modifiers": [], "products": [], "id": "_334205"}, {"reaction_name": "r1a: self-antigen uptake", "reactants": ["_588cbc95-83ec-476e-a589-48c455341fe1"], "modifiers": [], "products": [], "id": "_334197"}, {"reaction_name": "r3: R activation by A", "reactants": [], "modifiers": [], "products": ["_833dcb29-f053-42f3-a1b0-d103814f0095"], "id": "_334200"}, {"reaction_name": "r9: G clearance", "reactants": ["b4184b24-ee4d-4ac2-a8ae-63b38c89ad73"], "modifiers": [], "products": [], "id": "_334206"}, {"reaction_name": "r1b: pAPC maturation", "reactants": ["_139e3f3c-d27c-4892-8422-930ad61e9635"], "modifiers": [], "products": ["efbc166d-5ca2-46ea-aaa0-7ae329529c07"], "id": "_334198"}, {"compartment": "_334188", "species_name": "", "id": "_334194"}, {"reaction_name": "r4: R activation by A and E", "reactants": [], "modifiers": [], "products": ["efd99172-7156-4dfa-8a35-3be3a9f9e7cb"], "id": "_334201"}, {"compartment": "_334188", "species_name": "", "id": "_334189"}, {"reaction_name": "r6: A death", "reactants": ["_9ea8f732-794d-40eb-baaf-e2457cb4dd81"], "modifiers": [], "products": [], "id": "_334203"}, {"compartment": "_334188", "species_name": "", "id": "_334191"}, {"reaction_name": "r10: A suppression by Tregs of other specificity", "reactants": ["_9610240a-dd60-4604-adf2-a51433e6724f"], "modifiers": [], "products": [], "id": "_334207"}, {"compartment": "_334188", "species_name": "", "id": "_334195"}, {"reaction_name": "r5: E generation by A", "reactants": [], "modifiers": [], "products": ["ce489d1a-3807-4882-b466-82a3a14dcf86"], "id": "_334202"}, {"reaction_name": "r2: self-antigen release triggered by E", "reactants": [], "modifiers": [], "products": ["_00fb759d-f75f-43ba-8620-5ed136dc556b"], "id": "_334199"}, {"reaction_name": "r11: A suppression by R", "reactants": ["da2a6f4b-8aa2-40cd-a082-b3531dae518e"], "modifiers": [], "products": [], "id": "_334208"}], "links": [{"source": "_334191", "role": "reactant", "id": "_7126a00c-4d8e-443e-a2c0-a8fbd3d91878", "value": "1.0", "target": "_334204"}, {"source": "_334192", "role": "reactant", "id": "b32b8ce5-01de-4dd4-b3c5-c8c14c9b850d", "value": "1.0", "target": "_334205"}, {"source": "_334194", "role": "reactant", "id": "_588cbc95-83ec-476e-a589-48c455341fe1", "value": "1.0", "target": "_334197"}, {"source": "_334200", "role": "product", "id": "_833dcb29-f053-42f3-a1b0-d103814f0095", "value": "1.0", "target": "_334191"}, {"source": "_334194", "role": "reactant", "id": "b4184b24-ee4d-4ac2-a8ae-63b38c89ad73", "value": "1.0", "target": "_334206"}, {"source": "_334198", "role": "product", "id": "efbc166d-5ca2-46ea-aaa0-7ae329529c07", "value": "1.0", "target": "_334189"}, {"source": "_334195", "role": "reactant", "id": "_139e3f3c-d27c-4892-8422-930ad61e9635", "value": "1.0", "target": "_334198"}, {"source": "_334201", "role": "product", "id": "efd99172-7156-4dfa-8a35-3be3a9f9e7cb", "value": "1.0", "target": "_334191"}, {"source": "_334189", "role": "reactant", "id": "_9ea8f732-794d-40eb-baaf-e2457cb4dd81", "value": "1.0", "target": "_334203"}, {"source": "_334189", "role": "reactant", "id": "_9610240a-dd60-4604-adf2-a51433e6724f", "value": "1.0", "target": "_334207"}, {"source": "_334202", "role": "product", "id": "ce489d1a-3807-4882-b466-82a3a14dcf86", "value": "1.0", "target": "_334192"}, {"source": "_334199", "role": "product", "id": "_00fb759d-f75f-43ba-8620-5ed136dc556b", "value": "1.0", "target": "_334194"}, {"source": "_334189", "role": "reactant", "id": "da2a6f4b-8aa2-40cd-a082-b3531dae518e", "value": "1.0", "target": "_334208"}]}
+{
+    "links": [
+        {
+            "id": "_7126a00c-4d8e-443e-a2c0-a8fbd3d91878", 
+            "role": "reactant", 
+            "source": "_334191", 
+            "target": "_334204", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "b32b8ce5-01de-4dd4-b3c5-c8c14c9b850d", 
+            "role": "reactant", 
+            "source": "_334192", 
+            "target": "_334205", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_588cbc95-83ec-476e-a589-48c455341fe1", 
+            "role": "reactant", 
+            "source": "_334194", 
+            "target": "_334197", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_833dcb29-f053-42f3-a1b0-d103814f0095", 
+            "role": "product", 
+            "source": "_334200", 
+            "target": "_334191", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_3350153f-3b82-4d39-80f3-043f7690588c", 
+            "role": "modifier", 
+            "source": "_334189", 
+            "target": "_334200", 
+            "value": 0.0
+        }, 
+        {
+            "id": "b4184b24-ee4d-4ac2-a8ae-63b38c89ad73", 
+            "role": "reactant", 
+            "source": "_334194", 
+            "target": "_334206", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "efbc166d-5ca2-46ea-aaa0-7ae329529c07", 
+            "role": "product", 
+            "source": "_334198", 
+            "target": "_334189", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_139e3f3c-d27c-4892-8422-930ad61e9635", 
+            "role": "reactant", 
+            "source": "_334195", 
+            "target": "_334198", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "d39887e6-3cde-49c0-865a-60c55c90e3be", 
+            "role": "modifier", 
+            "source": "_334194", 
+            "target": "_334198", 
+            "value": 0.0
+        }, 
+        {
+            "id": "efd99172-7156-4dfa-8a35-3be3a9f9e7cb", 
+            "role": "product", 
+            "source": "_334201", 
+            "target": "_334191", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_15762094-9436-4ce9-ba9b-a102af76e363", 
+            "role": "modifier", 
+            "source": "_334192", 
+            "target": "_334201", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_6cd8015f-e4fa-4bbf-a627-5c14f825e535", 
+            "role": "modifier", 
+            "source": "_334189", 
+            "target": "_334201", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_9ea8f732-794d-40eb-baaf-e2457cb4dd81", 
+            "role": "reactant", 
+            "source": "_334189", 
+            "target": "_334203", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_9610240a-dd60-4604-adf2-a51433e6724f", 
+            "role": "reactant", 
+            "source": "_334189", 
+            "target": "_334207", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "ce489d1a-3807-4882-b466-82a3a14dcf86", 
+            "role": "product", 
+            "source": "_334202", 
+            "target": "_334192", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_44f0af65-59d4-46a4-961e-1d01fe4217ca", 
+            "role": "modifier", 
+            "source": "_334189", 
+            "target": "_334202", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_00fb759d-f75f-43ba-8620-5ed136dc556b", 
+            "role": "product", 
+            "source": "_334199", 
+            "target": "_334194", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_1bc07e7c-9555-4b07-b15a-a9d6e8a8db71", 
+            "role": "modifier", 
+            "source": "_334192", 
+            "target": "_334199", 
+            "value": 0.0
+        }, 
+        {
+            "id": "da2a6f4b-8aa2-40cd-a082-b3531dae518e", 
+            "role": "reactant", 
+            "source": "_334189", 
+            "target": "_334208", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_2556c082-ecd3-4380-98a8-216f230b8d18", 
+            "role": "modifier", 
+            "source": "_334191", 
+            "target": "_334208", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "_334188", 
+            "id": "_334192", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_334204", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_7126a00c-4d8e-443e-a2c0-a8fbd3d91878"
+            ], 
+            "reaction_name": "r7: R death"
+        }, 
+        {
+            "id": "_334205", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "b32b8ce5-01de-4dd4-b3c5-c8c14c9b850d"
+            ], 
+            "reaction_name": "r8: E death"
+        }, 
+        {
+            "id": "_334197", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_588cbc95-83ec-476e-a589-48c455341fe1"
+            ], 
+            "reaction_name": "r1a: self-antigen uptake"
+        }, 
+        {
+            "id": "_334200", 
+            "modifiers": [
+                "_3350153f-3b82-4d39-80f3-043f7690588c"
+            ], 
+            "products": [
+                "_833dcb29-f053-42f3-a1b0-d103814f0095"
+            ], 
+            "reactants": [], 
+            "reaction_name": "r3: R activation by A"
+        }, 
+        {
+            "id": "_334206", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "b4184b24-ee4d-4ac2-a8ae-63b38c89ad73"
+            ], 
+            "reaction_name": "r9: G clearance"
+        }, 
+        {
+            "id": "_334198", 
+            "modifiers": [
+                "d39887e6-3cde-49c0-865a-60c55c90e3be"
+            ], 
+            "products": [
+                "efbc166d-5ca2-46ea-aaa0-7ae329529c07"
+            ], 
+            "reactants": [
+                "_139e3f3c-d27c-4892-8422-930ad61e9635"
+            ], 
+            "reaction_name": "r1b: pAPC maturation"
+        }, 
+        {
+            "compartment": "_334188", 
+            "id": "_334194", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_334201", 
+            "modifiers": [
+                "_15762094-9436-4ce9-ba9b-a102af76e363", 
+                "_6cd8015f-e4fa-4bbf-a627-5c14f825e535"
+            ], 
+            "products": [
+                "efd99172-7156-4dfa-8a35-3be3a9f9e7cb"
+            ], 
+            "reactants": [], 
+            "reaction_name": "r4: R activation by A and E"
+        }, 
+        {
+            "compartment": "_334188", 
+            "id": "_334189", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_334203", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_9ea8f732-794d-40eb-baaf-e2457cb4dd81"
+            ], 
+            "reaction_name": "r6: A death"
+        }, 
+        {
+            "compartment": "_334188", 
+            "id": "_334191", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_334207", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_9610240a-dd60-4604-adf2-a51433e6724f"
+            ], 
+            "reaction_name": "r10: A suppression by Tregs of other specificity"
+        }, 
+        {
+            "compartment": "_334188", 
+            "id": "_334195", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_334202", 
+            "modifiers": [
+                "_44f0af65-59d4-46a4-961e-1d01fe4217ca"
+            ], 
+            "products": [
+                "ce489d1a-3807-4882-b466-82a3a14dcf86"
+            ], 
+            "reactants": [], 
+            "reaction_name": "r5: E generation by A"
+        }, 
+        {
+            "id": "_334199", 
+            "modifiers": [
+                "_1bc07e7c-9555-4b07-b15a-a9d6e8a8db71"
+            ], 
+            "products": [
+                "_00fb759d-f75f-43ba-8620-5ed136dc556b"
+            ], 
+            "reactants": [], 
+            "reaction_name": "r2: self-antigen release triggered by E"
+        }, 
+        {
+            "id": "_334208", 
+            "modifiers": [
+                "_2556c082-ecd3-4380-98a8-216f230b8d18"
+            ], 
+            "products": [], 
+            "reactants": [
+                "da2a6f4b-8aa2-40cd-a082-b3531dae518e"
+            ], 
+            "reaction_name": "r11: A suppression by R"
+        }
+    ]
+}

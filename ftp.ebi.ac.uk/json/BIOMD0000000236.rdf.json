@@ -1,1 +1,167 @@
-{"nodes": [{"reaction_name": "vgk", "reactants": ["_2786cb87-a143-44d4-bdf5-6e52a25e1d79"], "modifiers": [], "products": ["_1e1e2adb-6ff9-4537-9283-48a25671fcb3"], "id": "metaid_0000024"}, {"compartment": "metaid_0000018", "species_name": "G6P_F6P", "id": "metaid_0000020"}, {"reaction_name": "vgapdh", "reactants": ["_2ba1d62e-823d-40ff-9c9f-de95fe53fb2c"], "modifiers": [], "products": [], "id": "metaid_0000052"}, {"compartment": "metaid_0000018", "species_name": "glyceraldehyde--phosphate", "id": "metaid_0000023"}, {"compartment": "metaid_0000018", "species_name": "intracellular glucose", "id": "metaid_0000019"}, {"compartment": "metaid_0000018", "species_name": "dihydroxyacetone-phosphate", "id": "metaid_0000047"}, {"reaction_name": "vfba", "reactants": ["a8d0efd0-d8b2-4e1a-b87f-7c272502ef4f"], "modifiers": [], "products": ["ff54eada-5079-4a24-8bc6-fbfa909e53c7"], "id": "metaid_0000026"}, {"compartment": "metaid_0000018", "species_name": "fructose-1,6-biphosphate", "id": "metaid_0000022"}, {"compartment": "metaid_0000018", "species_name": "DHAP-G3P pool", "id": "metaid_0000048"}, {"reaction_name": "vpfk", "reactants": ["a817b055-6ec0-481b-af60-24f29fcc2545"], "modifiers": [], "products": ["_539fe6b6-e320-465c-a774-4df9bd5da31f"], "id": "metaid_0000025"}, {"compartment": "metaid_0000018", "species_name": "fructose-6-phosphate", "id": "metaid_0000021"}], "links": [{"source": "metaid_0000024", "role": "product", "id": "_1e1e2adb-6ff9-4537-9283-48a25671fcb3", "value": "1.0", "target": "metaid_0000020"}, {"source": "metaid_0000019", "role": "reactant", "id": "_2786cb87-a143-44d4-bdf5-6e52a25e1d79", "value": "1.0", "target": "metaid_0000024"}, {"source": "metaid_0000048", "role": "reactant", "id": "_2ba1d62e-823d-40ff-9c9f-de95fe53fb2c", "value": "1.0", "target": "metaid_0000052"}, {"source": "metaid_0000026", "role": "product", "id": "ff54eada-5079-4a24-8bc6-fbfa909e53c7", "value": "2.0", "target": "metaid_0000048"}, {"source": "metaid_0000022", "role": "reactant", "id": "a8d0efd0-d8b2-4e1a-b87f-7c272502ef4f", "value": "1.0", "target": "metaid_0000026"}, {"source": "metaid_0000025", "role": "product", "id": "_539fe6b6-e320-465c-a774-4df9bd5da31f", "value": "1.0", "target": "metaid_0000022"}, {"source": "metaid_0000020", "role": "reactant", "id": "a817b055-6ec0-481b-af60-24f29fcc2545", "value": "1.0", "target": "metaid_0000025"}]}
+{
+    "links": [
+        {
+            "id": "_1e1e2adb-6ff9-4537-9283-48a25671fcb3", 
+            "role": "product", 
+            "source": "metaid_0000024", 
+            "target": "metaid_0000020", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_2786cb87-a143-44d4-bdf5-6e52a25e1d79", 
+            "role": "reactant", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000024", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_2ba1d62e-823d-40ff-9c9f-de95fe53fb2c", 
+            "role": "reactant", 
+            "source": "metaid_0000048", 
+            "target": "metaid_0000052", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_963eedeb-aec7-4338-8a34-b914f2fed0d5", 
+            "role": "modifier", 
+            "source": "metaid_0000023", 
+            "target": "metaid_0000052", 
+            "value": 0.0
+        }, 
+        {
+            "id": "ff54eada-5079-4a24-8bc6-fbfa909e53c7", 
+            "role": "product", 
+            "source": "metaid_0000026", 
+            "target": "metaid_0000048", 
+            "value": "2.0"
+        }, 
+        {
+            "id": "a8d0efd0-d8b2-4e1a-b87f-7c272502ef4f", 
+            "role": "reactant", 
+            "source": "metaid_0000022", 
+            "target": "metaid_0000026", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_49918563-129c-4f64-9317-41e5fb195922", 
+            "role": "modifier", 
+            "source": "metaid_0000047", 
+            "target": "metaid_0000026", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_79a046e0-8604-4a6b-8e8f-2a6401cf346b", 
+            "role": "modifier", 
+            "source": "metaid_0000023", 
+            "target": "metaid_0000026", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_539fe6b6-e320-465c-a774-4df9bd5da31f", 
+            "role": "product", 
+            "source": "metaid_0000025", 
+            "target": "metaid_0000022", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "a817b055-6ec0-481b-af60-24f29fcc2545", 
+            "role": "reactant", 
+            "source": "metaid_0000020", 
+            "target": "metaid_0000025", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_9f136096-19ba-4d67-b479-750e2a4d2639", 
+            "role": "modifier", 
+            "source": "metaid_0000021", 
+            "target": "metaid_0000025", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000024", 
+            "modifiers": [], 
+            "products": [
+                "_1e1e2adb-6ff9-4537-9283-48a25671fcb3"
+            ], 
+            "reactants": [
+                "_2786cb87-a143-44d4-bdf5-6e52a25e1d79"
+            ], 
+            "reaction_name": "vgk"
+        }, 
+        {
+            "compartment": "metaid_0000018", 
+            "id": "metaid_0000020", 
+            "species_name": "G6P_F6P"
+        }, 
+        {
+            "id": "metaid_0000052", 
+            "modifiers": [
+                "_963eedeb-aec7-4338-8a34-b914f2fed0d5"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_2ba1d62e-823d-40ff-9c9f-de95fe53fb2c"
+            ], 
+            "reaction_name": "vgapdh"
+        }, 
+        {
+            "compartment": "metaid_0000018", 
+            "id": "metaid_0000023", 
+            "species_name": "glyceraldehyde--phosphate"
+        }, 
+        {
+            "compartment": "metaid_0000018", 
+            "id": "metaid_0000019", 
+            "species_name": "intracellular glucose"
+        }, 
+        {
+            "compartment": "metaid_0000018", 
+            "id": "metaid_0000047", 
+            "species_name": "dihydroxyacetone-phosphate"
+        }, 
+        {
+            "id": "metaid_0000026", 
+            "modifiers": [
+                "_49918563-129c-4f64-9317-41e5fb195922", 
+                "_79a046e0-8604-4a6b-8e8f-2a6401cf346b"
+            ], 
+            "products": [
+                "ff54eada-5079-4a24-8bc6-fbfa909e53c7"
+            ], 
+            "reactants": [
+                "a8d0efd0-d8b2-4e1a-b87f-7c272502ef4f"
+            ], 
+            "reaction_name": "vfba"
+        }, 
+        {
+            "compartment": "metaid_0000018", 
+            "id": "metaid_0000022", 
+            "species_name": "fructose-1,6-biphosphate"
+        }, 
+        {
+            "compartment": "metaid_0000018", 
+            "id": "metaid_0000048", 
+            "species_name": "DHAP-G3P pool"
+        }, 
+        {
+            "id": "metaid_0000025", 
+            "modifiers": [
+                "_9f136096-19ba-4d67-b479-750e2a4d2639"
+            ], 
+            "products": [
+                "_539fe6b6-e320-465c-a774-4df9bd5da31f"
+            ], 
+            "reactants": [
+                "a817b055-6ec0-481b-af60-24f29fcc2545"
+            ], 
+            "reaction_name": "vpfk"
+        }, 
+        {
+            "compartment": "metaid_0000018", 
+            "id": "metaid_0000021", 
+            "species_name": "fructose-6-phosphate"
+        }
+    ]
+}

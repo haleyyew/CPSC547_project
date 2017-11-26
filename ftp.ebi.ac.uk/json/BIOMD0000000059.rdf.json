@@ -1,1 +1,369 @@
-{"nodes": [{"reaction_name": "", "reactants": ["_326590"], "modifiers": [], "products": [], "id": "metaid_0000135"}, {"reaction_name": "", "reactants": ["_326927"], "modifiers": [], "products": [], "id": "metaid_0000149"}, {"reaction_name": "", "reactants": [], "modifiers": [], "products": ["_326566"], "id": "metaid_0000134"}, {"reaction_name": "", "reactants": ["_326903"], "modifiers": [], "products": [], "id": "metaid_0000148"}, {"reaction_name": "", "reactants": [], "modifiers": [], "products": ["_326867"], "id": "metaid_0000147"}, {"reaction_name": "", "reactants": ["_326650"], "modifiers": [], "products": ["_326662"], "id": "metaid_0000137"}, {"reaction_name": "", "reactants": [], "modifiers": [], "products": ["_326843"], "id": "metaid_0000146"}, {"reaction_name": "", "reactants": ["_326614"], "modifiers": [], "products": ["_326626"], "id": "metaid_0000136"}, {"reaction_name": "", "reactants": [], "modifiers": [], "products": ["_326819"], "id": "metaid_0000145"}, {"compartment": "metaid_0000088", "species_name": "Cytosolic ADP", "id": "metaid_0000158"}, {"reaction_name": "", "reactants": ["_326795"], "modifiers": [], "products": [], "id": "metaid_0000144"}, {"reaction_name": "", "reactants": ["_326771"], "modifiers": [], "products": [], "id": "metaid_0000143"}, {"reaction_name": "", "reactants": [], "modifiers": [], "products": ["_326542"], "id": "metaid_0000133"}, {"reaction_name": "", "reactants": ["_326747"], "modifiers": [], "products": [], "id": "metaid_0000142"}, {"compartment": "metaid_0000088", "species_name": "Cytosolic Sodium", "id": "metaid_0000094"}, {"reaction_name": "", "reactants": ["_327011"], "modifiers": [], "products": [], "id": "metaid_0000152"}, {"compartment": "metaid_0000088", "species_name": "Cytosolic ATP", "id": "metaid_0000095"}, {"compartment": "metaid_0000175", "species_name": "ER Calcium", "id": "metaid_0000092"}, {"reaction_name": "", "reactants": ["_326951"], "modifiers": [], "products": [], "id": "metaid_0000150"}, {"compartment": "metaid_0000088", "species_name": "Cytosolic IP3", "id": "metaid_0000093"}, {"reaction_name": "", "reactants": [], "modifiers": [], "products": ["_326710"], "id": "metaid_0000141"}, {"reaction_name": "", "reactants": ["_326975"], "modifiers": [], "products": [], "id": "metaid_0000151"}, {"reaction_name": "", "reactants": ["_326686"], "modifiers": [], "products": [], "id": "metaid_0000138"}, {"compartment": "metaid_0000088", "species_name": "Cytosolic Calcium", "id": "metaid_0000091"}], "links": [{"source": "metaid_0000091", "role": "reactant", "id": "_326590", "value": "1.0", "target": "metaid_0000135"}, {"source": "metaid_0000095", "role": "reactant", "id": "_326927", "value": "1.0", "target": "metaid_0000149"}, {"source": "metaid_0000134", "role": "product", "id": "_326566", "value": "1.0", "target": "metaid_0000091"}, {"source": "metaid_0000095", "role": "reactant", "id": "_326903", "value": "1.0", "target": "metaid_0000148"}, {"source": "metaid_0000147", "role": "product", "id": "_326867", "value": "1.0", "target": "metaid_0000095"}, {"source": "metaid_0000137", "role": "product", "id": "_326662", "value": "0.01", "target": "metaid_0000091"}, {"source": "metaid_0000092", "role": "reactant", "id": "_326650", "value": "0.03", "target": "metaid_0000137"}, {"source": "metaid_0000146", "role": "product", "id": "_326843", "value": "1.0", "target": "metaid_0000094"}, {"source": "metaid_0000136", "role": "product", "id": "_326626", "value": "0.03", "target": "metaid_0000092"}, {"source": "metaid_0000091", "role": "reactant", "id": "_326614", "value": "0.01", "target": "metaid_0000136"}, {"source": "metaid_0000145", "role": "product", "id": "_326819", "value": "1.0", "target": "metaid_0000094"}, {"source": "metaid_0000094", "role": "reactant", "id": "_326795", "value": "1.0", "target": "metaid_0000144"}, {"source": "metaid_0000094", "role": "reactant", "id": "_326771", "value": "1.0", "target": "metaid_0000143"}, {"source": "metaid_0000133", "role": "product", "id": "_326542", "value": "1.0", "target": "metaid_0000091"}, {"source": "metaid_0000093", "role": "reactant", "id": "_326747", "value": "1.0", "target": "metaid_0000142"}, {"source": "metaid_0000095", "role": "reactant", "id": "_327011", "value": "1.0", "target": "metaid_0000152"}, {"source": "metaid_0000095", "role": "reactant", "id": "_326951", "value": "1.0", "target": "metaid_0000150"}, {"source": "metaid_0000141", "role": "product", "id": "_326710", "value": "1.0", "target": "metaid_0000093"}, {"source": "metaid_0000095", "role": "reactant", "id": "_326975", "value": "1.0", "target": "metaid_0000151"}, {"source": "metaid_0000091", "role": "reactant", "id": "_326686", "value": "1.0", "target": "metaid_0000138"}]}
+{
+    "links": [
+        {
+            "id": "_326590", 
+            "role": "reactant", 
+            "source": "metaid_0000091", 
+            "target": "metaid_0000135", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_326927", 
+            "role": "reactant", 
+            "source": "metaid_0000095", 
+            "target": "metaid_0000149", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_326566", 
+            "role": "product", 
+            "source": "metaid_0000134", 
+            "target": "metaid_0000091", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_326903", 
+            "role": "reactant", 
+            "source": "metaid_0000095", 
+            "target": "metaid_0000148", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_326867", 
+            "role": "product", 
+            "source": "metaid_0000147", 
+            "target": "metaid_0000095", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_326879", 
+            "role": "modifier", 
+            "source": "metaid_0000158", 
+            "target": "metaid_0000147", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_326662", 
+            "role": "product", 
+            "source": "metaid_0000137", 
+            "target": "metaid_0000091", 
+            "value": "0.01"
+        }, 
+        {
+            "id": "_326650", 
+            "role": "reactant", 
+            "source": "metaid_0000092", 
+            "target": "metaid_0000137", 
+            "value": "0.03"
+        }, 
+        {
+            "id": "_326843", 
+            "role": "product", 
+            "source": "metaid_0000146", 
+            "target": "metaid_0000094", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_326626", 
+            "role": "product", 
+            "source": "metaid_0000136", 
+            "target": "metaid_0000092", 
+            "value": "0.03"
+        }, 
+        {
+            "id": "_326614", 
+            "role": "reactant", 
+            "source": "metaid_0000091", 
+            "target": "metaid_0000136", 
+            "value": "0.01"
+        }, 
+        {
+            "id": "_326819", 
+            "role": "product", 
+            "source": "metaid_0000145", 
+            "target": "metaid_0000094", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_326795", 
+            "role": "reactant", 
+            "source": "metaid_0000094", 
+            "target": "metaid_0000144", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_326771", 
+            "role": "reactant", 
+            "source": "metaid_0000094", 
+            "target": "metaid_0000143", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_326542", 
+            "role": "product", 
+            "source": "metaid_0000133", 
+            "target": "metaid_0000091", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_326747", 
+            "role": "reactant", 
+            "source": "metaid_0000093", 
+            "target": "metaid_0000142", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_327011", 
+            "role": "reactant", 
+            "source": "metaid_0000095", 
+            "target": "metaid_0000152", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_326951", 
+            "role": "reactant", 
+            "source": "metaid_0000095", 
+            "target": "metaid_0000150", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_326710", 
+            "role": "product", 
+            "source": "metaid_0000141", 
+            "target": "metaid_0000093", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_326723", 
+            "role": "modifier", 
+            "source": "metaid_0000091", 
+            "target": "metaid_0000141", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_326975", 
+            "role": "reactant", 
+            "source": "metaid_0000095", 
+            "target": "metaid_0000151", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_326987", 
+            "role": "modifier", 
+            "source": "metaid_0000091", 
+            "target": "metaid_0000151", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_326686", 
+            "role": "reactant", 
+            "source": "metaid_0000091", 
+            "target": "metaid_0000138", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000135", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_326590"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "metaid_0000149", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_326927"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "metaid_0000134", 
+            "modifiers": [], 
+            "products": [
+                "_326566"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "metaid_0000148", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_326903"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "metaid_0000147", 
+            "modifiers": [
+                "_326879"
+            ], 
+            "products": [
+                "_326867"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "metaid_0000137", 
+            "modifiers": [], 
+            "products": [
+                "_326662"
+            ], 
+            "reactants": [
+                "_326650"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "metaid_0000146", 
+            "modifiers": [], 
+            "products": [
+                "_326843"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "metaid_0000136", 
+            "modifiers": [], 
+            "products": [
+                "_326626"
+            ], 
+            "reactants": [
+                "_326614"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "metaid_0000145", 
+            "modifiers": [], 
+            "products": [
+                "_326819"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "metaid_0000088", 
+            "id": "metaid_0000158", 
+            "species_name": "Cytosolic ADP"
+        }, 
+        {
+            "id": "metaid_0000144", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_326795"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "metaid_0000143", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_326771"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "metaid_0000133", 
+            "modifiers": [], 
+            "products": [
+                "_326542"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "metaid_0000142", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_326747"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "metaid_0000088", 
+            "id": "metaid_0000094", 
+            "species_name": "Cytosolic Sodium"
+        }, 
+        {
+            "id": "metaid_0000152", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_327011"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "metaid_0000088", 
+            "id": "metaid_0000095", 
+            "species_name": "Cytosolic ATP"
+        }, 
+        {
+            "compartment": "metaid_0000175", 
+            "id": "metaid_0000092", 
+            "species_name": "ER Calcium"
+        }, 
+        {
+            "id": "metaid_0000150", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_326951"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "metaid_0000088", 
+            "id": "metaid_0000093", 
+            "species_name": "Cytosolic IP3"
+        }, 
+        {
+            "id": "metaid_0000141", 
+            "modifiers": [
+                "_326723"
+            ], 
+            "products": [
+                "_326710"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "metaid_0000151", 
+            "modifiers": [
+                "_326987"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_326975"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "metaid_0000138", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_326686"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "metaid_0000088", 
+            "id": "metaid_0000091", 
+            "species_name": "Cytosolic Calcium"
+        }
+    ]
+}

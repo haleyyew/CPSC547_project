@@ -1,1 +1,425 @@
-{"nodes": [{"reaction_name": "pRB/E2F complex dissociation via cyclin E", "reactants": ["_510813"], "modifiers": [], "products": ["_510825"], "id": "metaid_0000043"}, {"compartment": "metaid_0000029", "species_name": "RS", "id": "metaid_0000033"}, {"reaction_name": "cyclinE synthesis", "reactants": [], "modifiers": [], "products": ["_510558"], "id": "metaid_0000038"}, {"reaction_name": "pRB/E2F complex dissociation via cyclin D", "reactants": ["_510753"], "modifiers": [], "products": ["_510765"], "id": "metaid_0000042"}, {"compartment": "metaid_0000029", "species_name": "R", "id": "metaid_0000032"}, {"reaction_name": "cyclinE degradation", "reactants": ["_510594"], "modifiers": [], "products": [], "id": "metaid_0000039"}, {"compartment": "metaid_0000029", "species_name": "E", "id": "metaid_0000031"}, {"reaction_name": "E2F degradation via cell cycle progression", "reactants": ["_510909"], "modifiers": [], "products": [], "id": "metaid_0000045"}, {"compartment": "metaid_0000029", "species_name": "D", "id": "metaid_0000030"}, {"reaction_name": "E2F synthesis", "reactants": [], "modifiers": [], "products": ["_510873"], "id": "metaid_0000044"}, {"reaction_name": "cell cycle progression slow", "reactants": ["_511017"], "modifiers": [], "products": [], "id": "metaid_0000047"}, {"reaction_name": "cyclinD degradation", "reactants": ["_510509"], "modifiers": [], "products": [], "id": "metaid_0000037"}, {"reaction_name": "cell cycle progression go", "reactants": [], "modifiers": [], "products": ["_510957"], "id": "metaid_0000046"}, {"reaction_name": "cyclinD synthesis", "reactants": [], "modifiers": [], "products": ["_510485"], "id": "metaid_0000036"}, {"compartment": "metaid_0000029", "species_name": "X", "id": "metaid_0000035"}, {"reaction_name": "pRB/E2F complex association", "reactants": ["_510717", "_510705"], "modifiers": [], "products": ["_510729"], "id": "metaid_0000041"}, {"compartment": "metaid_0000029", "species_name": "theta", "id": "metaid_0000034"}, {"reaction_name": "pRB synthesis", "reactants": [], "modifiers": [], "products": ["_510643"], "id": "metaid_0000040"}], "links": [{"source": "metaid_0000043", "role": "product", "id": "_510825", "value": "1.0", "target": "metaid_0000034"}, {"source": "metaid_0000033", "role": "reactant", "id": "_510813", "value": "1.0", "target": "metaid_0000043"}, {"source": "metaid_0000038", "role": "product", "id": "_510558", "value": "1.0", "target": "metaid_0000031"}, {"source": "metaid_0000042", "role": "product", "id": "_510765", "value": "1.0", "target": "metaid_0000034"}, {"source": "metaid_0000033", "role": "reactant", "id": "_510753", "value": "1.0", "target": "metaid_0000042"}, {"source": "metaid_0000031", "role": "reactant", "id": "_510594", "value": "1.0", "target": "metaid_0000039"}, {"source": "metaid_0000034", "role": "reactant", "id": "_510909", "value": "1.0", "target": "metaid_0000045"}, {"source": "metaid_0000044", "role": "product", "id": "_510873", "value": "1.0", "target": "metaid_0000034"}, {"source": "metaid_0000035", "role": "reactant", "id": "_511017", "value": "1.0", "target": "metaid_0000047"}, {"source": "metaid_0000030", "role": "reactant", "id": "_510509", "value": "1.0", "target": "metaid_0000037"}, {"source": "metaid_0000046", "role": "product", "id": "_510957", "value": "1.0", "target": "metaid_0000035"}, {"source": "metaid_0000036", "role": "product", "id": "_510485", "value": "1.0", "target": "metaid_0000030"}, {"source": "metaid_0000041", "role": "product", "id": "_510729", "value": "1.0", "target": "metaid_0000033"}, {"source": "metaid_0000034", "role": "reactant", "id": "_510717", "value": "1.0", "target": "metaid_0000041"}, {"source": "metaid_0000032", "role": "reactant", "id": "_510705", "value": "1.0", "target": "metaid_0000041"}, {"source": "metaid_0000040", "role": "product", "id": "_510643", "value": "1.0", "target": "metaid_0000032"}]}
+{
+    "links": [
+        {
+            "id": "_510825", 
+            "role": "product", 
+            "source": "metaid_0000043", 
+            "target": "metaid_0000034", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_510813", 
+            "role": "reactant", 
+            "source": "metaid_0000033", 
+            "target": "metaid_0000043", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_510849", 
+            "role": "modifier", 
+            "source": "metaid_0000031", 
+            "target": "metaid_0000043", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_510837", 
+            "role": "modifier", 
+            "source": "metaid_0000033", 
+            "target": "metaid_0000043", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_510558", 
+            "role": "product", 
+            "source": "metaid_0000038", 
+            "target": "metaid_0000031", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_510570", 
+            "role": "modifier", 
+            "source": "metaid_0000034", 
+            "target": "metaid_0000038", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_510765", 
+            "role": "product", 
+            "source": "metaid_0000042", 
+            "target": "metaid_0000034", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_510753", 
+            "role": "reactant", 
+            "source": "metaid_0000033", 
+            "target": "metaid_0000042", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_510789", 
+            "role": "modifier", 
+            "source": "metaid_0000030", 
+            "target": "metaid_0000042", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_510777", 
+            "role": "modifier", 
+            "source": "metaid_0000033", 
+            "target": "metaid_0000042", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_510594", 
+            "role": "reactant", 
+            "source": "metaid_0000031", 
+            "target": "metaid_0000039", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_510619", 
+            "role": "modifier", 
+            "source": "metaid_0000031", 
+            "target": "metaid_0000039", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_510607", 
+            "role": "modifier", 
+            "source": "metaid_0000035", 
+            "target": "metaid_0000039", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_510909", 
+            "role": "reactant", 
+            "source": "metaid_0000034", 
+            "target": "metaid_0000045", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_510933", 
+            "role": "modifier", 
+            "source": "metaid_0000035", 
+            "target": "metaid_0000045", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_510921", 
+            "role": "modifier", 
+            "source": "metaid_0000034", 
+            "target": "metaid_0000045", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_510873", 
+            "role": "product", 
+            "source": "metaid_0000044", 
+            "target": "metaid_0000034", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_510885", 
+            "role": "modifier", 
+            "source": "metaid_0000034", 
+            "target": "metaid_0000044", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_511017", 
+            "role": "reactant", 
+            "source": "metaid_0000035", 
+            "target": "metaid_0000047", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_511029", 
+            "role": "modifier", 
+            "source": "metaid_0000035", 
+            "target": "metaid_0000047", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_510509", 
+            "role": "reactant", 
+            "source": "metaid_0000030", 
+            "target": "metaid_0000037", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_510533", 
+            "role": "modifier", 
+            "source": "metaid_0000031", 
+            "target": "metaid_0000037", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_510521", 
+            "role": "modifier", 
+            "source": "metaid_0000030", 
+            "target": "metaid_0000037", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_510957", 
+            "role": "product", 
+            "source": "metaid_0000046", 
+            "target": "metaid_0000035", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_510993", 
+            "role": "modifier", 
+            "source": "metaid_0000035", 
+            "target": "metaid_0000046", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_510981", 
+            "role": "modifier", 
+            "source": "metaid_0000034", 
+            "target": "metaid_0000046", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_510969", 
+            "role": "modifier", 
+            "source": "metaid_0000031", 
+            "target": "metaid_0000046", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_510485", 
+            "role": "product", 
+            "source": "metaid_0000036", 
+            "target": "metaid_0000030", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_510729", 
+            "role": "product", 
+            "source": "metaid_0000041", 
+            "target": "metaid_0000033", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_510717", 
+            "role": "reactant", 
+            "source": "metaid_0000034", 
+            "target": "metaid_0000041", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_510705", 
+            "role": "reactant", 
+            "source": "metaid_0000032", 
+            "target": "metaid_0000041", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_510643", 
+            "role": "product", 
+            "source": "metaid_0000040", 
+            "target": "metaid_0000032", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_510681", 
+            "role": "modifier", 
+            "source": "metaid_0000035", 
+            "target": "metaid_0000040", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_510669", 
+            "role": "modifier", 
+            "source": "metaid_0000032", 
+            "target": "metaid_0000040", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_510656", 
+            "role": "modifier", 
+            "source": "metaid_0000033", 
+            "target": "metaid_0000040", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000043", 
+            "modifiers": [
+                "_510849", 
+                "_510837"
+            ], 
+            "products": [
+                "_510825"
+            ], 
+            "reactants": [
+                "_510813"
+            ], 
+            "reaction_name": "pRB/E2F complex dissociation via cyclin E"
+        }, 
+        {
+            "compartment": "metaid_0000029", 
+            "id": "metaid_0000033", 
+            "species_name": "RS"
+        }, 
+        {
+            "id": "metaid_0000038", 
+            "modifiers": [
+                "_510570"
+            ], 
+            "products": [
+                "_510558"
+            ], 
+            "reactants": [], 
+            "reaction_name": "cyclinE synthesis"
+        }, 
+        {
+            "id": "metaid_0000042", 
+            "modifiers": [
+                "_510789", 
+                "_510777"
+            ], 
+            "products": [
+                "_510765"
+            ], 
+            "reactants": [
+                "_510753"
+            ], 
+            "reaction_name": "pRB/E2F complex dissociation via cyclin D"
+        }, 
+        {
+            "compartment": "metaid_0000029", 
+            "id": "metaid_0000032", 
+            "species_name": "R"
+        }, 
+        {
+            "id": "metaid_0000039", 
+            "modifiers": [
+                "_510619", 
+                "_510607"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_510594"
+            ], 
+            "reaction_name": "cyclinE degradation"
+        }, 
+        {
+            "compartment": "metaid_0000029", 
+            "id": "metaid_0000031", 
+            "species_name": "E"
+        }, 
+        {
+            "id": "metaid_0000045", 
+            "modifiers": [
+                "_510933", 
+                "_510921"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_510909"
+            ], 
+            "reaction_name": "E2F degradation via cell cycle progression"
+        }, 
+        {
+            "compartment": "metaid_0000029", 
+            "id": "metaid_0000030", 
+            "species_name": "D"
+        }, 
+        {
+            "id": "metaid_0000044", 
+            "modifiers": [
+                "_510885"
+            ], 
+            "products": [
+                "_510873"
+            ], 
+            "reactants": [], 
+            "reaction_name": "E2F synthesis"
+        }, 
+        {
+            "id": "metaid_0000047", 
+            "modifiers": [
+                "_511029"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_511017"
+            ], 
+            "reaction_name": "cell cycle progression slow"
+        }, 
+        {
+            "id": "metaid_0000037", 
+            "modifiers": [
+                "_510533", 
+                "_510521"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_510509"
+            ], 
+            "reaction_name": "cyclinD degradation"
+        }, 
+        {
+            "id": "metaid_0000046", 
+            "modifiers": [
+                "_510993", 
+                "_510981", 
+                "_510969"
+            ], 
+            "products": [
+                "_510957"
+            ], 
+            "reactants": [], 
+            "reaction_name": "cell cycle progression go"
+        }, 
+        {
+            "id": "metaid_0000036", 
+            "modifiers": [], 
+            "products": [
+                "_510485"
+            ], 
+            "reactants": [], 
+            "reaction_name": "cyclinD synthesis"
+        }, 
+        {
+            "compartment": "metaid_0000029", 
+            "id": "metaid_0000035", 
+            "species_name": "X"
+        }, 
+        {
+            "id": "metaid_0000041", 
+            "modifiers": [], 
+            "products": [
+                "_510729"
+            ], 
+            "reactants": [
+                "_510717", 
+                "_510705"
+            ], 
+            "reaction_name": "pRB/E2F complex association"
+        }, 
+        {
+            "compartment": "metaid_0000029", 
+            "id": "metaid_0000034", 
+            "species_name": "theta"
+        }, 
+        {
+            "id": "metaid_0000040", 
+            "modifiers": [
+                "_510681", 
+                "_510669", 
+                "_510656"
+            ], 
+            "products": [
+                "_510643"
+            ], 
+            "reactants": [], 
+            "reaction_name": "pRB synthesis"
+        }
+    ]
+}

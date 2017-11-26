@@ -1,1 +1,196 @@
-{"nodes": [{"reaction_name": "dephosphorylation of PP-MAPK", "reactants": ["_079509"], "modifiers": [], "products": ["_079521"], "id": "metaid_0000045"}, {"compartment": "metaid_0000028", "species_name": "", "id": "metaid_0000031"}, {"reaction_name": "dephosphorylation of P-MAPK", "reactants": ["_079570"], "modifiers": [], "products": ["_079582"], "id": "metaid_0000046"}, {"compartment": "metaid_0000028", "species_name": "MAPKK1", "id": "metaid_0000032"}, {"reaction_name": "phosphorylation of MAPK", "reactants": ["_079401"], "modifiers": [], "products": ["_079413"], "id": "metaid_0000043"}, {"compartment": "metaid_0000028", "species_name": "MAPKK2", "id": "metaid_0000132"}, {"compartment": "metaid_0000028", "species_name": "", "id": "metaid_0000033"}, {"reaction_name": "phosphorylation of P-MAPK", "reactants": ["_079449"], "modifiers": [], "products": ["_079461"], "id": "metaid_0000044"}, {"compartment": "metaid_0000028", "species_name": "", "id": "metaid_0000030"}, {"compartment": "metaid_0000028", "species_name": "", "id": "metaid_0000029"}], "links": [{"source": "metaid_0000045", "role": "product", "id": "_079521", "value": "1.0", "target": "metaid_0000030"}, {"source": "metaid_0000031", "role": "reactant", "id": "_079509", "value": "1.0", "target": "metaid_0000045"}, {"source": "metaid_0000046", "role": "product", "id": "_079582", "value": "1.0", "target": "metaid_0000029"}, {"source": "metaid_0000030", "role": "reactant", "id": "_079570", "value": "1.0", "target": "metaid_0000046"}, {"source": "metaid_0000043", "role": "product", "id": "_079413", "value": "1.0", "target": "metaid_0000030"}, {"source": "metaid_0000029", "role": "reactant", "id": "_079401", "value": "1.0", "target": "metaid_0000043"}, {"source": "metaid_0000044", "role": "product", "id": "_079461", "value": "1.0", "target": "metaid_0000031"}, {"source": "metaid_0000030", "role": "reactant", "id": "_079449", "value": "1.0", "target": "metaid_0000044"}]}
+{
+    "links": [
+        {
+            "id": "_079521", 
+            "role": "product", 
+            "source": "metaid_0000045", 
+            "target": "metaid_0000030", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_079509", 
+            "role": "reactant", 
+            "source": "metaid_0000031", 
+            "target": "metaid_0000045", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_079546", 
+            "role": "modifier", 
+            "source": "metaid_0000029", 
+            "target": "metaid_0000045", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_079533", 
+            "role": "modifier", 
+            "source": "metaid_0000033", 
+            "target": "metaid_0000045", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_079582", 
+            "role": "product", 
+            "source": "metaid_0000046", 
+            "target": "metaid_0000029", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_079570", 
+            "role": "reactant", 
+            "source": "metaid_0000030", 
+            "target": "metaid_0000046", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_079606", 
+            "role": "modifier", 
+            "source": "metaid_0000031", 
+            "target": "metaid_0000046", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_079594", 
+            "role": "modifier", 
+            "source": "metaid_0000033", 
+            "target": "metaid_0000046", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_079413", 
+            "role": "product", 
+            "source": "metaid_0000043", 
+            "target": "metaid_0000030", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_079401", 
+            "role": "reactant", 
+            "source": "metaid_0000029", 
+            "target": "metaid_0000043", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_079425", 
+            "role": "modifier", 
+            "source": "metaid_0000032", 
+            "target": "metaid_0000043", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_079461", 
+            "role": "product", 
+            "source": "metaid_0000044", 
+            "target": "metaid_0000031", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_079449", 
+            "role": "reactant", 
+            "source": "metaid_0000030", 
+            "target": "metaid_0000044", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_079473", 
+            "role": "modifier", 
+            "source": "metaid_0000132", 
+            "target": "metaid_0000044", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_079485", 
+            "role": "modifier", 
+            "source": "metaid_0000029", 
+            "target": "metaid_0000044", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000045", 
+            "modifiers": [
+                "_079546", 
+                "_079533"
+            ], 
+            "products": [
+                "_079521"
+            ], 
+            "reactants": [
+                "_079509"
+            ], 
+            "reaction_name": "dephosphorylation of PP-MAPK"
+        }, 
+        {
+            "compartment": "metaid_0000028", 
+            "id": "metaid_0000031", 
+            "species_name": ""
+        }, 
+        {
+            "id": "metaid_0000046", 
+            "modifiers": [
+                "_079606", 
+                "_079594"
+            ], 
+            "products": [
+                "_079582"
+            ], 
+            "reactants": [
+                "_079570"
+            ], 
+            "reaction_name": "dephosphorylation of P-MAPK"
+        }, 
+        {
+            "compartment": "metaid_0000028", 
+            "id": "metaid_0000032", 
+            "species_name": "MAPKK1"
+        }, 
+        {
+            "id": "metaid_0000043", 
+            "modifiers": [
+                "_079425"
+            ], 
+            "products": [
+                "_079413"
+            ], 
+            "reactants": [
+                "_079401"
+            ], 
+            "reaction_name": "phosphorylation of MAPK"
+        }, 
+        {
+            "compartment": "metaid_0000028", 
+            "id": "metaid_0000132", 
+            "species_name": "MAPKK2"
+        }, 
+        {
+            "compartment": "metaid_0000028", 
+            "id": "metaid_0000033", 
+            "species_name": ""
+        }, 
+        {
+            "id": "metaid_0000044", 
+            "modifiers": [
+                "_079473", 
+                "_079485"
+            ], 
+            "products": [
+                "_079461"
+            ], 
+            "reactants": [
+                "_079449"
+            ], 
+            "reaction_name": "phosphorylation of P-MAPK"
+        }, 
+        {
+            "compartment": "metaid_0000028", 
+            "id": "metaid_0000030", 
+            "species_name": ""
+        }, 
+        {
+            "compartment": "metaid_0000028", 
+            "id": "metaid_0000029", 
+            "species_name": ""
+        }
+    ]
+}

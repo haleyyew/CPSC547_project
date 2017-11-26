@@ -1,1 +1,178 @@
-{"nodes": [{"compartment": "metaid_0000006", "species_name": "GQ", "id": "metaid_0000012"}, {"reaction_name": "G protein react with dimer producing E", "reactants": ["_9ec50b41-f28e-4db7-8a2f-df4074a9aef1", "_061f14d5-136b-405c-806e-38c3c3f23cca"], "modifiers": [], "products": ["_908eedb1-6b22-4b51-98c5-f654d1ccb381"], "id": "metaid_0000016"}, {"compartment": "metaid_0000006", "species_name": "R", "id": "metaid_0000009"}, {"compartment": "metaid_0000006", "species_name": "E", "id": "metaid_0000011"}, {"reaction_name": "HR forming HRRH", "reactants": ["_7856427a-66de-4078-8f01-6c455a9f315b"], "modifiers": [], "products": ["_96aa5c42-091b-43a8-a660-f772ba7adc21"], "id": "metaid_0000015"}, {"compartment": "metaid_0000006", "species_name": "CHO", "id": "metaid_0000020"}, {"reaction_name": "H binding to  R", "reactants": ["d2a89493-3c6a-47ff-bc45-cdfc651d39c7", "_3aad2a23-b45a-4599-b3e4-a5c8411e915c"], "modifiers": [], "products": ["daa893da-ac9e-4dec-adc4-76d73c9c9ae5"], "id": "metaid_0000014"}, {"compartment": "metaid_0000006", "species_name": "HR", "id": "metaid_0000008"}, {"compartment": "metaid_0000006", "species_name": "HRRH", "id": "metaid_0000010"}, {"reaction_name": "Production of IP3", "reactants": [], "modifiers": [], "products": ["_75d262de-caf4-438c-8059-4dac233699b5"], "id": "metaid_0000018"}, {"compartment": "metaid_0000006", "species_name": "IP3", "id": "metaid_0000013"}, {"compartment": "metaid_0000006", "species_name": "H", "id": "metaid_0000007"}, {"reaction_name": "IP3 converted into inactive metabolites", "reactants": ["_3639deb0-2d5b-493a-b085-7a70c6e0d000"], "modifiers": [], "products": [], "id": "metaid_0000017"}], "links": [{"source": "metaid_0000016", "role": "product", "id": "_908eedb1-6b22-4b51-98c5-f654d1ccb381", "value": "1.0", "target": "metaid_0000011"}, {"source": "metaid_0000012", "role": "reactant", "id": "_9ec50b41-f28e-4db7-8a2f-df4074a9aef1", "value": "1.0", "target": "metaid_0000016"}, {"source": "metaid_0000010", "role": "reactant", "id": "_061f14d5-136b-405c-806e-38c3c3f23cca", "value": "1.0", "target": "metaid_0000016"}, {"source": "metaid_0000015", "role": "product", "id": "_96aa5c42-091b-43a8-a660-f772ba7adc21", "value": "1.0", "target": "metaid_0000010"}, {"source": "metaid_0000008", "role": "reactant", "id": "_7856427a-66de-4078-8f01-6c455a9f315b", "value": "2.0", "target": "metaid_0000015"}, {"source": "metaid_0000014", "role": "product", "id": "daa893da-ac9e-4dec-adc4-76d73c9c9ae5", "value": "1.0", "target": "metaid_0000008"}, {"source": "metaid_0000009", "role": "reactant", "id": "d2a89493-3c6a-47ff-bc45-cdfc651d39c7", "value": "1.0", "target": "metaid_0000014"}, {"source": "metaid_0000007", "role": "reactant", "id": "_3aad2a23-b45a-4599-b3e4-a5c8411e915c", "value": "1.0", "target": "metaid_0000014"}, {"source": "metaid_0000018", "role": "product", "id": "_75d262de-caf4-438c-8059-4dac233699b5", "value": "1.0", "target": "metaid_0000013"}, {"source": "metaid_0000013", "role": "reactant", "id": "_3639deb0-2d5b-493a-b085-7a70c6e0d000", "value": "1.0", "target": "metaid_0000017"}]}
+{
+    "links": [
+        {
+            "id": "_908eedb1-6b22-4b51-98c5-f654d1ccb381", 
+            "role": "product", 
+            "source": "metaid_0000016", 
+            "target": "metaid_0000011", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_9ec50b41-f28e-4db7-8a2f-df4074a9aef1", 
+            "role": "reactant", 
+            "source": "metaid_0000012", 
+            "target": "metaid_0000016", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_061f14d5-136b-405c-806e-38c3c3f23cca", 
+            "role": "reactant", 
+            "source": "metaid_0000010", 
+            "target": "metaid_0000016", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_96aa5c42-091b-43a8-a660-f772ba7adc21", 
+            "role": "product", 
+            "source": "metaid_0000015", 
+            "target": "metaid_0000010", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_7856427a-66de-4078-8f01-6c455a9f315b", 
+            "role": "reactant", 
+            "source": "metaid_0000008", 
+            "target": "metaid_0000015", 
+            "value": "2.0"
+        }, 
+        {
+            "id": "daa893da-ac9e-4dec-adc4-76d73c9c9ae5", 
+            "role": "product", 
+            "source": "metaid_0000014", 
+            "target": "metaid_0000008", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "d2a89493-3c6a-47ff-bc45-cdfc651d39c7", 
+            "role": "reactant", 
+            "source": "metaid_0000009", 
+            "target": "metaid_0000014", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_3aad2a23-b45a-4599-b3e4-a5c8411e915c", 
+            "role": "reactant", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000014", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_75d262de-caf4-438c-8059-4dac233699b5", 
+            "role": "product", 
+            "source": "metaid_0000018", 
+            "target": "metaid_0000013", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "a96a204d-cfd2-4c96-ae6e-e548b9719ad0", 
+            "role": "modifier", 
+            "source": "metaid_0000011", 
+            "target": "metaid_0000018", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_3639deb0-2d5b-493a-b085-7a70c6e0d000", 
+            "role": "reactant", 
+            "source": "metaid_0000013", 
+            "target": "metaid_0000017", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "metaid_0000006", 
+            "id": "metaid_0000012", 
+            "species_name": "GQ"
+        }, 
+        {
+            "id": "metaid_0000016", 
+            "modifiers": [], 
+            "products": [
+                "_908eedb1-6b22-4b51-98c5-f654d1ccb381"
+            ], 
+            "reactants": [
+                "_9ec50b41-f28e-4db7-8a2f-df4074a9aef1", 
+                "_061f14d5-136b-405c-806e-38c3c3f23cca"
+            ], 
+            "reaction_name": "G protein react with dimer producing E"
+        }, 
+        {
+            "compartment": "metaid_0000006", 
+            "id": "metaid_0000009", 
+            "species_name": "R"
+        }, 
+        {
+            "compartment": "metaid_0000006", 
+            "id": "metaid_0000011", 
+            "species_name": "E"
+        }, 
+        {
+            "id": "metaid_0000015", 
+            "modifiers": [], 
+            "products": [
+                "_96aa5c42-091b-43a8-a660-f772ba7adc21"
+            ], 
+            "reactants": [
+                "_7856427a-66de-4078-8f01-6c455a9f315b"
+            ], 
+            "reaction_name": "HR forming HRRH"
+        }, 
+        {
+            "compartment": "metaid_0000006", 
+            "id": "metaid_0000020", 
+            "species_name": "CHO"
+        }, 
+        {
+            "id": "metaid_0000014", 
+            "modifiers": [], 
+            "products": [
+                "daa893da-ac9e-4dec-adc4-76d73c9c9ae5"
+            ], 
+            "reactants": [
+                "d2a89493-3c6a-47ff-bc45-cdfc651d39c7", 
+                "_3aad2a23-b45a-4599-b3e4-a5c8411e915c"
+            ], 
+            "reaction_name": "H binding to  R"
+        }, 
+        {
+            "compartment": "metaid_0000006", 
+            "id": "metaid_0000008", 
+            "species_name": "HR"
+        }, 
+        {
+            "compartment": "metaid_0000006", 
+            "id": "metaid_0000010", 
+            "species_name": "HRRH"
+        }, 
+        {
+            "id": "metaid_0000018", 
+            "modifiers": [
+                "a96a204d-cfd2-4c96-ae6e-e548b9719ad0"
+            ], 
+            "products": [
+                "_75d262de-caf4-438c-8059-4dac233699b5"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Production of IP3"
+        }, 
+        {
+            "compartment": "metaid_0000006", 
+            "id": "metaid_0000013", 
+            "species_name": "IP3"
+        }, 
+        {
+            "compartment": "metaid_0000006", 
+            "id": "metaid_0000007", 
+            "species_name": "H"
+        }, 
+        {
+            "id": "metaid_0000017", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_3639deb0-2d5b-493a-b085-7a70c6e0d000"
+            ], 
+            "reaction_name": "IP3 converted into inactive metabolites"
+        }
+    ]
+}

@@ -1,1 +1,323 @@
-{"nodes": [{"reaction_name": "RI constitutive degradation", "reactants": ["_943769"], "modifiers": [], "products": [], "id": "metaid_0000026"}, {"reaction_name": "Ligand receptor complex constitutive degradation", "reactants": ["_943657"], "modifiers": [], "products": [], "id": "metaid_0000022"}, {"reaction_name": "RII constitutive degradation", "reactants": ["_943939"], "modifiers": [], "products": [], "id": "metaid_0000031"}, {"compartment": "metaid_0000034", "species_name": "Receptor 1-endosome", "id": "metaid_0000019"}, {"reaction_name": "RII synthesis", "reactants": [], "modifiers": [], "products": ["_943915"], "id": "metaid_0000030"}, {"reaction_name": "RI internalization", "reactants": ["_943793"], "modifiers": [], "products": ["_943805"], "id": "metaid_0000027"}, {"reaction_name": "Ligand independent complex degradation", "reactants": ["_943681"], "modifiers": [], "products": [], "id": "metaid_0000023"}, {"compartment": "metaid_0000012", "species_name": "Receptor 1", "id": "metaid_0000013"}, {"compartment": "metaid_0000034", "species_name": "Receptor 2 endosome", "id": "metaid_0000020"}, {"reaction_name": "RI recycling", "reactants": ["_943829"], "modifiers": [], "products": ["_943842"], "id": "metaid_0000028"}, {"reaction_name": "Ligand receptor complex internalization", "reactants": ["_943705"], "modifiers": [], "products": ["_943717"], "id": "metaid_0000024"}, {"compartment": "metaid_0000012", "species_name": "Receptor 2", "id": "metaid_0000014"}, {"reaction_name": "RII recycling", "reactants": ["_944004"], "modifiers": [], "products": ["_944016"], "id": "metaid_0000033"}, {"compartment": "metaid_0000034", "species_name": "ligand receptor complex-endosome", "id": "metaid_0000017"}, {"reaction_name": "Ligand receptor complex formation", "reactants": ["_943621", "_943609"], "modifiers": [], "products": ["_943633"], "id": "metaid_0000021"}, {"reaction_name": "Ligand Receptor complex recycling", "reactants": ["_943866"], "modifiers": [], "products": ["_943891", "_943878"], "id": "metaid_0000029"}, {"reaction_name": "RI synthesis", "reactants": [], "modifiers": [], "products": ["_943741"], "id": "metaid_0000025"}, {"compartment": "metaid_0000012", "species_name": "ligand receptor complex-plasma membrane", "id": "metaid_0000015"}, {"reaction_name": "RII internalization", "reactants": ["_943965"], "modifiers": [], "products": ["_943977"], "id": "metaid_0000032"}], "links": [{"source": "metaid_0000013", "role": "reactant", "id": "_943769", "value": "1.0", "target": "metaid_0000026"}, {"source": "metaid_0000015", "role": "reactant", "id": "_943657", "value": "1.0", "target": "metaid_0000022"}, {"source": "metaid_0000014", "role": "reactant", "id": "_943939", "value": "1.0", "target": "metaid_0000031"}, {"source": "metaid_0000030", "role": "product", "id": "_943915", "value": "1.0", "target": "metaid_0000014"}, {"source": "metaid_0000027", "role": "product", "id": "_943805", "value": "1.0", "target": "metaid_0000019"}, {"source": "metaid_0000013", "role": "reactant", "id": "_943793", "value": "1.0", "target": "metaid_0000027"}, {"source": "metaid_0000015", "role": "reactant", "id": "_943681", "value": "1.0", "target": "metaid_0000023"}, {"source": "metaid_0000028", "role": "product", "id": "_943842", "value": "1.0", "target": "metaid_0000013"}, {"source": "metaid_0000019", "role": "reactant", "id": "_943829", "value": "1.0", "target": "metaid_0000028"}, {"source": "metaid_0000024", "role": "product", "id": "_943717", "value": "1.0", "target": "metaid_0000017"}, {"source": "metaid_0000015", "role": "reactant", "id": "_943705", "value": "1.0", "target": "metaid_0000024"}, {"source": "metaid_0000033", "role": "product", "id": "_944016", "value": "1.0", "target": "metaid_0000014"}, {"source": "metaid_0000020", "role": "reactant", "id": "_944004", "value": "1.0", "target": "metaid_0000033"}, {"source": "metaid_0000021", "role": "product", "id": "_943633", "value": "1.0", "target": "metaid_0000015"}, {"source": "metaid_0000013", "role": "reactant", "id": "_943621", "value": "1.0", "target": "metaid_0000021"}, {"source": "metaid_0000014", "role": "reactant", "id": "_943609", "value": "1.0", "target": "metaid_0000021"}, {"source": "metaid_0000029", "role": "product", "id": "_943891", "value": "1.0", "target": "metaid_0000014"}, {"source": "metaid_0000029", "role": "product", "id": "_943878", "value": "1.0", "target": "metaid_0000013"}, {"source": "metaid_0000017", "role": "reactant", "id": "_943866", "value": "1.0", "target": "metaid_0000029"}, {"source": "metaid_0000025", "role": "product", "id": "_943741", "value": "1.0", "target": "metaid_0000013"}, {"source": "metaid_0000032", "role": "product", "id": "_943977", "value": "1.0", "target": "metaid_0000020"}, {"source": "metaid_0000014", "role": "reactant", "id": "_943965", "value": "1.0", "target": "metaid_0000032"}]}
+{
+    "links": [
+        {
+            "id": "_943769", 
+            "role": "reactant", 
+            "source": "metaid_0000013", 
+            "target": "metaid_0000026", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943657", 
+            "role": "reactant", 
+            "source": "metaid_0000015", 
+            "target": "metaid_0000022", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943939", 
+            "role": "reactant", 
+            "source": "metaid_0000014", 
+            "target": "metaid_0000031", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943915", 
+            "role": "product", 
+            "source": "metaid_0000030", 
+            "target": "metaid_0000014", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943805", 
+            "role": "product", 
+            "source": "metaid_0000027", 
+            "target": "metaid_0000019", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943793", 
+            "role": "reactant", 
+            "source": "metaid_0000013", 
+            "target": "metaid_0000027", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943681", 
+            "role": "reactant", 
+            "source": "metaid_0000015", 
+            "target": "metaid_0000023", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943842", 
+            "role": "product", 
+            "source": "metaid_0000028", 
+            "target": "metaid_0000013", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943829", 
+            "role": "reactant", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000028", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943717", 
+            "role": "product", 
+            "source": "metaid_0000024", 
+            "target": "metaid_0000017", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943705", 
+            "role": "reactant", 
+            "source": "metaid_0000015", 
+            "target": "metaid_0000024", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_944016", 
+            "role": "product", 
+            "source": "metaid_0000033", 
+            "target": "metaid_0000014", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_944004", 
+            "role": "reactant", 
+            "source": "metaid_0000020", 
+            "target": "metaid_0000033", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943633", 
+            "role": "product", 
+            "source": "metaid_0000021", 
+            "target": "metaid_0000015", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943621", 
+            "role": "reactant", 
+            "source": "metaid_0000013", 
+            "target": "metaid_0000021", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943609", 
+            "role": "reactant", 
+            "source": "metaid_0000014", 
+            "target": "metaid_0000021", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943891", 
+            "role": "product", 
+            "source": "metaid_0000029", 
+            "target": "metaid_0000014", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943878", 
+            "role": "product", 
+            "source": "metaid_0000029", 
+            "target": "metaid_0000013", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943866", 
+            "role": "reactant", 
+            "source": "metaid_0000017", 
+            "target": "metaid_0000029", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943741", 
+            "role": "product", 
+            "source": "metaid_0000025", 
+            "target": "metaid_0000013", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943977", 
+            "role": "product", 
+            "source": "metaid_0000032", 
+            "target": "metaid_0000020", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_943965", 
+            "role": "reactant", 
+            "source": "metaid_0000014", 
+            "target": "metaid_0000032", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000026", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_943769"
+            ], 
+            "reaction_name": "RI constitutive degradation"
+        }, 
+        {
+            "id": "metaid_0000022", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_943657"
+            ], 
+            "reaction_name": "Ligand receptor complex constitutive degradation"
+        }, 
+        {
+            "id": "metaid_0000031", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_943939"
+            ], 
+            "reaction_name": "RII constitutive degradation"
+        }, 
+        {
+            "compartment": "metaid_0000034", 
+            "id": "metaid_0000019", 
+            "species_name": "Receptor 1-endosome"
+        }, 
+        {
+            "id": "metaid_0000030", 
+            "modifiers": [], 
+            "products": [
+                "_943915"
+            ], 
+            "reactants": [], 
+            "reaction_name": "RII synthesis"
+        }, 
+        {
+            "id": "metaid_0000027", 
+            "modifiers": [], 
+            "products": [
+                "_943805"
+            ], 
+            "reactants": [
+                "_943793"
+            ], 
+            "reaction_name": "RI internalization"
+        }, 
+        {
+            "id": "metaid_0000023", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_943681"
+            ], 
+            "reaction_name": "Ligand independent complex degradation"
+        }, 
+        {
+            "compartment": "metaid_0000012", 
+            "id": "metaid_0000013", 
+            "species_name": "Receptor 1"
+        }, 
+        {
+            "compartment": "metaid_0000034", 
+            "id": "metaid_0000020", 
+            "species_name": "Receptor 2 endosome"
+        }, 
+        {
+            "id": "metaid_0000028", 
+            "modifiers": [], 
+            "products": [
+                "_943842"
+            ], 
+            "reactants": [
+                "_943829"
+            ], 
+            "reaction_name": "RI recycling"
+        }, 
+        {
+            "id": "metaid_0000024", 
+            "modifiers": [], 
+            "products": [
+                "_943717"
+            ], 
+            "reactants": [
+                "_943705"
+            ], 
+            "reaction_name": "Ligand receptor complex internalization"
+        }, 
+        {
+            "compartment": "metaid_0000012", 
+            "id": "metaid_0000014", 
+            "species_name": "Receptor 2"
+        }, 
+        {
+            "id": "metaid_0000033", 
+            "modifiers": [], 
+            "products": [
+                "_944016"
+            ], 
+            "reactants": [
+                "_944004"
+            ], 
+            "reaction_name": "RII recycling"
+        }, 
+        {
+            "compartment": "metaid_0000034", 
+            "id": "metaid_0000017", 
+            "species_name": "ligand receptor complex-endosome"
+        }, 
+        {
+            "id": "metaid_0000021", 
+            "modifiers": [], 
+            "products": [
+                "_943633"
+            ], 
+            "reactants": [
+                "_943621", 
+                "_943609"
+            ], 
+            "reaction_name": "Ligand receptor complex formation"
+        }, 
+        {
+            "id": "metaid_0000029", 
+            "modifiers": [], 
+            "products": [
+                "_943891", 
+                "_943878"
+            ], 
+            "reactants": [
+                "_943866"
+            ], 
+            "reaction_name": "Ligand Receptor complex recycling"
+        }, 
+        {
+            "id": "metaid_0000025", 
+            "modifiers": [], 
+            "products": [
+                "_943741"
+            ], 
+            "reactants": [], 
+            "reaction_name": "RI synthesis"
+        }, 
+        {
+            "compartment": "metaid_0000012", 
+            "id": "metaid_0000015", 
+            "species_name": "ligand receptor complex-plasma membrane"
+        }, 
+        {
+            "id": "metaid_0000032", 
+            "modifiers": [], 
+            "products": [
+                "_943977"
+            ], 
+            "reactants": [
+                "_943965"
+            ], 
+            "reaction_name": "RII internalization"
+        }
+    ]
+}

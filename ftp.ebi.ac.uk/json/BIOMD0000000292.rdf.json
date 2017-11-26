@@ -1,1 +1,193 @@
-{"nodes": [{"reaction_name": "v3", "reactants": ["CDMT00005"], "modifiers": [], "products": ["CDMT00006"], "id": "v3"}, {"compartment": "c", "species_name": "Y", "id": "Y"}, {"reaction_name": "v4", "reactants": ["CDMT00002"], "modifiers": [], "products": ["CDMT00003"], "id": "v4"}, {"compartment": "c", "species_name": "ATP", "id": "ATP"}, {"compartment": "c", "species_name": "X", "id": "X"}, {"reaction_name": "v1", "reactants": ["CDMT00017", "CDMT00016"], "modifiers": [], "products": ["CDMT00019", "CDMT00018"], "id": "v1"}, {"compartment": "c", "species_name": "NADPH", "id": "NADPH"}, {"compartment": "c", "species_name": "NADP_super_+", "id": "NADP"}, {"compartment": "c", "species_name": "ADP", "id": "ADP"}, {"reaction_name": "v2", "reactants": ["CDMT00011", "CDMT00009", "CDMT00010"], "modifiers": [], "products": ["CDMT00012", "CDMT00013", "CDMT00014"], "id": "v2"}], "links": [{"source": "v3", "role": "product", "id": "CDMT00006", "value": "2.0", "target": "ATP"}, {"source": "ADP", "role": "reactant", "id": "CDMT00005", "value": "2.0", "target": "v3"}, {"source": "v4", "role": "product", "id": "CDMT00003", "value": "1.0", "target": "NADPH"}, {"source": "NADP", "role": "reactant", "id": "CDMT00002", "value": "1.0", "target": "v4"}, {"source": "v1", "role": "product", "id": "CDMT00019", "value": "1.0", "target": "ADP"}, {"source": "v1", "role": "product", "id": "CDMT00018", "value": "1.0", "target": "Y"}, {"source": "ATP", "role": "reactant", "id": "CDMT00017", "value": "1.0", "target": "v1"}, {"source": "X", "role": "reactant", "id": "CDMT00016", "value": "1.0", "target": "v1"}, {"source": "v2", "role": "product", "id": "CDMT00012", "value": "1.0", "target": "X"}, {"source": "v2", "role": "product", "id": "CDMT00013", "value": "1.0", "target": "ADP"}, {"source": "v2", "role": "product", "id": "CDMT00014", "value": "1.0", "target": "NADP"}, {"source": "ATP", "role": "reactant", "id": "CDMT00011", "value": "1.0", "target": "v2"}, {"source": "Y", "role": "reactant", "id": "CDMT00009", "value": "1.0", "target": "v2"}, {"source": "NADPH", "role": "reactant", "id": "CDMT00010", "value": "1.0", "target": "v2"}]}
+{
+    "links": [
+        {
+            "id": "CDMT00006", 
+            "role": "product", 
+            "source": "v3", 
+            "target": "ATP", 
+            "value": "2.0"
+        }, 
+        {
+            "id": "CDMT00005", 
+            "role": "reactant", 
+            "source": "ADP", 
+            "target": "v3", 
+            "value": "2.0"
+        }, 
+        {
+            "id": "CDMT00007", 
+            "role": "modifier", 
+            "source": "NADP", 
+            "target": "v3", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00003", 
+            "role": "product", 
+            "source": "v4", 
+            "target": "NADPH", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00002", 
+            "role": "reactant", 
+            "source": "NADP", 
+            "target": "v4", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00019", 
+            "role": "product", 
+            "source": "v1", 
+            "target": "ADP", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00018", 
+            "role": "product", 
+            "source": "v1", 
+            "target": "Y", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00017", 
+            "role": "reactant", 
+            "source": "ATP", 
+            "target": "v1", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00016", 
+            "role": "reactant", 
+            "source": "X", 
+            "target": "v1", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00012", 
+            "role": "product", 
+            "source": "v2", 
+            "target": "X", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00013", 
+            "role": "product", 
+            "source": "v2", 
+            "target": "ADP", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00014", 
+            "role": "product", 
+            "source": "v2", 
+            "target": "NADP", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00011", 
+            "role": "reactant", 
+            "source": "ATP", 
+            "target": "v2", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00009", 
+            "role": "reactant", 
+            "source": "Y", 
+            "target": "v2", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00010", 
+            "role": "reactant", 
+            "source": "NADPH", 
+            "target": "v2", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "v3", 
+            "modifiers": [
+                "CDMT00007"
+            ], 
+            "products": [
+                "CDMT00006"
+            ], 
+            "reactants": [
+                "CDMT00005"
+            ], 
+            "reaction_name": "v3"
+        }, 
+        {
+            "compartment": "c", 
+            "id": "Y", 
+            "species_name": "Y"
+        }, 
+        {
+            "id": "v4", 
+            "modifiers": [], 
+            "products": [
+                "CDMT00003"
+            ], 
+            "reactants": [
+                "CDMT00002"
+            ], 
+            "reaction_name": "v4"
+        }, 
+        {
+            "compartment": "c", 
+            "id": "ATP", 
+            "species_name": "ATP"
+        }, 
+        {
+            "compartment": "c", 
+            "id": "X", 
+            "species_name": "X"
+        }, 
+        {
+            "id": "v1", 
+            "modifiers": [], 
+            "products": [
+                "CDMT00019", 
+                "CDMT00018"
+            ], 
+            "reactants": [
+                "CDMT00017", 
+                "CDMT00016"
+            ], 
+            "reaction_name": "v1"
+        }, 
+        {
+            "compartment": "c", 
+            "id": "NADPH", 
+            "species_name": "NADPH"
+        }, 
+        {
+            "compartment": "c", 
+            "id": "NADP", 
+            "species_name": "NADP_super_+"
+        }, 
+        {
+            "compartment": "c", 
+            "id": "ADP", 
+            "species_name": "ADP"
+        }, 
+        {
+            "id": "v2", 
+            "modifiers": [], 
+            "products": [
+                "CDMT00012", 
+                "CDMT00013", 
+                "CDMT00014"
+            ], 
+            "reactants": [
+                "CDMT00011", 
+                "CDMT00009", 
+                "CDMT00010"
+            ], 
+            "reaction_name": "v2"
+        }
+    ]
+}

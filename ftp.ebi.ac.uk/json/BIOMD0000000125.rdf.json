@@ -1,1 +1,179 @@
-{"nodes": [{"reaction_name": "x1 deactivation", "reactants": ["_273990"], "modifiers": [], "products": [], "id": "metaid_0000023"}, {"compartment": "metaid_0000003", "species_name": "", "id": "metaid_0000004"}, {"reaction_name": "x1 activates x2", "reactants": [], "modifiers": [], "products": ["_273918"], "id": "metaid_0000018"}, {"reaction_name": "x1 activates y2", "reactants": [], "modifiers": [], "products": ["_273954"], "id": "metaid_0000022"}, {"compartment": "metaid_0000003", "species_name": "", "id": "metaid_0000005"}, {"reaction_name": "y2 deactivation", "reactants": ["_274038"], "modifiers": [], "products": [], "id": "metaid_0000025"}, {"compartment": "metaid_0000003", "species_name": "", "id": "metaid_0000006"}, {"compartment": "metaid_0000003", "species_name": "", "id": "metaid_0000021"}, {"reaction_name": "x0 activates x1", "reactants": [], "modifiers": [], "products": ["_273846"], "id": "metaid_0000016"}, {"reaction_name": "x2 deactivation", "reactants": ["_274014"], "modifiers": [], "products": [], "id": "metaid_0000024"}, {"compartment": "metaid_0000003", "species_name": "", "id": "metaid_0000020"}, {"reaction_name": "y0 activates x1", "reactants": [], "modifiers": [], "products": ["_273882"], "id": "metaid_0000017"}], "links": [{"source": "metaid_0000004", "role": "reactant", "id": "_273990", "value": "1.0", "target": "metaid_0000023"}, {"source": "metaid_0000018", "role": "product", "id": "_273918", "value": "1.0", "target": "metaid_0000005"}, {"source": "metaid_0000022", "role": "product", "id": "_273954", "value": "1.0", "target": "metaid_0000006"}, {"source": "metaid_0000006", "role": "reactant", "id": "_274038", "value": "1.0", "target": "metaid_0000025"}, {"source": "metaid_0000016", "role": "product", "id": "_273846", "value": "1.0", "target": "metaid_0000004"}, {"source": "metaid_0000005", "role": "reactant", "id": "_274014", "value": "1.0", "target": "metaid_0000024"}, {"source": "metaid_0000017", "role": "product", "id": "_273882", "value": "1.0", "target": "metaid_0000004"}]}
+{
+    "links": [
+        {
+            "id": "_273990", 
+            "role": "reactant", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000023", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_273918", 
+            "role": "product", 
+            "source": "metaid_0000018", 
+            "target": "metaid_0000005", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_273930", 
+            "role": "modifier", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000018", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_273954", 
+            "role": "product", 
+            "source": "metaid_0000022", 
+            "target": "metaid_0000006", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_273966", 
+            "role": "modifier", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000022", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_274038", 
+            "role": "reactant", 
+            "source": "metaid_0000006", 
+            "target": "metaid_0000025", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_273846", 
+            "role": "product", 
+            "source": "metaid_0000016", 
+            "target": "metaid_0000004", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_273858", 
+            "role": "modifier", 
+            "source": "metaid_0000020", 
+            "target": "metaid_0000016", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_274014", 
+            "role": "reactant", 
+            "source": "metaid_0000005", 
+            "target": "metaid_0000024", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_273882", 
+            "role": "product", 
+            "source": "metaid_0000017", 
+            "target": "metaid_0000004", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_273894", 
+            "role": "modifier", 
+            "source": "metaid_0000021", 
+            "target": "metaid_0000017", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000023", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_273990"
+            ], 
+            "reaction_name": "x1 deactivation"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000004", 
+            "species_name": ""
+        }, 
+        {
+            "id": "metaid_0000018", 
+            "modifiers": [
+                "_273930"
+            ], 
+            "products": [
+                "_273918"
+            ], 
+            "reactants": [], 
+            "reaction_name": "x1 activates x2"
+        }, 
+        {
+            "id": "metaid_0000022", 
+            "modifiers": [
+                "_273966"
+            ], 
+            "products": [
+                "_273954"
+            ], 
+            "reactants": [], 
+            "reaction_name": "x1 activates y2"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000005", 
+            "species_name": ""
+        }, 
+        {
+            "id": "metaid_0000025", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_274038"
+            ], 
+            "reaction_name": "y2 deactivation"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000006", 
+            "species_name": ""
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000021", 
+            "species_name": ""
+        }, 
+        {
+            "id": "metaid_0000016", 
+            "modifiers": [
+                "_273858"
+            ], 
+            "products": [
+                "_273846"
+            ], 
+            "reactants": [], 
+            "reaction_name": "x0 activates x1"
+        }, 
+        {
+            "id": "metaid_0000024", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_274014"
+            ], 
+            "reaction_name": "x2 deactivation"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000020", 
+            "species_name": ""
+        }, 
+        {
+            "id": "metaid_0000017", 
+            "modifiers": [
+                "_273894"
+            ], 
+            "products": [
+                "_273882"
+            ], 
+            "reactants": [], 
+            "reaction_name": "y0 activates x1"
+        }
+    ]
+}

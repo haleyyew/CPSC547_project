@@ -1,1 +1,586 @@
-{"nodes": [{"reaction_name": "", "reactants": ["CDMT00054"], "modifiers": [], "products": ["CDMT00055"], "id": "re9"}, {"compartment": "default", "species_name": "ALDO", "id": "s12"}, {"reaction_name": "", "reactants": ["CDMT00039"], "modifiers": [], "products": ["CDMT00040"], "id": "re8"}, {"compartment": "default", "species_name": "pPFKL", "id": "s13"}, {"compartment": "default", "species_name": "PFKL", "id": "s1"}, {"compartment": "default", "species_name": "sa8_degraded", "id": "s14"}, {"compartment": "default", "species_name": "sa7_degraded", "id": "s15"}, {"compartment": "default", "species_name": "sa5_degraded", "id": "s16"}, {"compartment": "default", "species_name": "Citrate", "id": "s10"}, {"compartment": "default", "species_name": "sa4_degraded", "id": "s11"}, {"compartment": "default", "species_name": "Malate", "id": "s8"}, {"reaction_name": "", "reactants": ["CDMT00018"], "modifiers": [], "products": ["CDMT00019"], "id": "re11"}, {"compartment": "default", "species_name": "F2,6BP", "id": "s9"}, {"compartment": "default", "species_name": "F6P_proxy", "id": "s22"}, {"reaction_name": "", "reactants": ["CDMT00001"], "modifiers": [], "products": ["CDMT00002"], "id": "re1"}, {"compartment": "default", "species_name": "Isocitrate", "id": "s6"}, {"compartment": "default", "species_name": "sa3_degraded", "id": "s21"}, {"reaction_name": "", "reactants": ["CDMT00010"], "modifiers": [], "products": ["CDMT00011"], "id": "re2"}, {"compartment": "default", "species_name": "2-oxoglutarate", "id": "s7"}, {"compartment": "default", "species_name": "sa13_degraded", "id": "s20"}, {"reaction_name": "", "reactants": ["CDMT00015"], "modifiers": [], "products": ["CDMT00016"], "id": "re3"}, {"reaction_name": "", "reactants": ["CDMT00045"], "modifiers": [], "products": ["CDMT00046"], "id": "re10"}, {"compartment": "default", "species_name": "sa6_degraded", "id": "s17"}, {"compartment": "default", "species_name": "F1,6BP", "id": "s4"}, {"reaction_name": "", "reactants": ["CDMT00027"], "modifiers": [], "products": ["CDMT00028"], "id": "re4"}, {"compartment": "default", "species_name": "sa9_degraded", "id": "s18"}, {"compartment": "default", "species_name": "PEP", "id": "s5"}, {"reaction_name": "", "reactants": ["CDMT00030"], "modifiers": [], "products": ["CDMT00031"], "id": "re5"}, {"compartment": "default", "species_name": "FBPase", "id": "s2"}, {"compartment": "default", "species_name": "sa10_degraded", "id": "s19"}, {"reaction_name": "", "reactants": ["CDMT00033"], "modifiers": [], "products": ["CDMT00034"], "id": "re6"}, {"compartment": "default", "species_name": "F6P", "id": "s3"}, {"reaction_name": "", "reactants": ["CDMT00036"], "modifiers": [], "products": ["CDMT00037"], "id": "re7"}], "links": [{"source": "re9", "role": "product", "id": "CDMT00055", "value": "1.0", "target": "s19"}, {"source": "s10", "role": "reactant", "id": "CDMT00054", "value": "1.0", "target": "re9"}, {"source": "re8", "role": "product", "id": "CDMT00040", "value": "1.0", "target": "s18"}, {"source": "s9", "role": "reactant", "id": "CDMT00039", "value": "1.0", "target": "re8"}, {"source": "re11", "role": "product", "id": "CDMT00019", "value": "1.0", "target": "s21"}, {"source": "s3", "role": "reactant", "id": "CDMT00018", "value": "1.0", "target": "re11"}, {"source": "re1", "role": "product", "id": "CDMT00002", "value": "1.0", "target": "s4"}, {"source": "s22", "role": "reactant", "id": "CDMT00001", "value": "1.0", "target": "re1"}, {"source": "re2", "role": "product", "id": "CDMT00011", "value": "1.0", "target": "s22"}, {"source": "s4", "role": "reactant", "id": "CDMT00010", "value": "1.0", "target": "re2"}, {"source": "re3", "role": "product", "id": "CDMT00016", "value": "1.0", "target": "s11"}, {"source": "s4", "role": "reactant", "id": "CDMT00015", "value": "1.0", "target": "re3"}, {"source": "re10", "role": "product", "id": "CDMT00046", "value": "1.0", "target": "s20"}, {"source": "s13", "role": "reactant", "id": "CDMT00045", "value": "1.0", "target": "re10"}, {"source": "re4", "role": "product", "id": "CDMT00028", "value": "1.0", "target": "s14"}, {"source": "s8", "role": "reactant", "id": "CDMT00027", "value": "1.0", "target": "re4"}, {"source": "re5", "role": "product", "id": "CDMT00031", "value": "1.0", "target": "s15"}, {"source": "s7", "role": "reactant", "id": "CDMT00030", "value": "1.0", "target": "re5"}, {"source": "re6", "role": "product", "id": "CDMT00034", "value": "1.0", "target": "s16"}, {"source": "s5", "role": "reactant", "id": "CDMT00033", "value": "1.0", "target": "re6"}, {"source": "re7", "role": "product", "id": "CDMT00037", "value": "1.0", "target": "s17"}, {"source": "s6", "role": "reactant", "id": "CDMT00036", "value": "1.0", "target": "re7"}]}
+{
+    "links": [
+        {
+            "id": "CDMT00055", 
+            "role": "product", 
+            "source": "re9", 
+            "target": "s19", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00054", 
+            "role": "reactant", 
+            "source": "s10", 
+            "target": "re9", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00040", 
+            "role": "product", 
+            "source": "re8", 
+            "target": "s18", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00039", 
+            "role": "reactant", 
+            "source": "s9", 
+            "target": "re8", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00019", 
+            "role": "product", 
+            "source": "re11", 
+            "target": "s21", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00018", 
+            "role": "reactant", 
+            "source": "s3", 
+            "target": "re11", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00002", 
+            "role": "product", 
+            "source": "re1", 
+            "target": "s4", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00001", 
+            "role": "reactant", 
+            "source": "s22", 
+            "target": "re1", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_3e0b6d51-fc2a-476e-874e-4ed4a3c3bb1d", 
+            "role": "modifier", 
+            "source": "s9", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_166adf3e-d971-4251-bcf1-5badee652425", 
+            "role": "modifier", 
+            "source": "s7", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00007", 
+            "role": "modifier", 
+            "source": "s8", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00006", 
+            "role": "modifier", 
+            "source": "s7", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00023", 
+            "role": "modifier", 
+            "source": "s13", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_2badea3f-b4cc-4204-bffc-3564c4ed5901", 
+            "role": "modifier", 
+            "source": "s10", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_35bd66ba-d82a-4bc4-a25a-8b2f2d876a1c", 
+            "role": "modifier", 
+            "source": "s22", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00005", 
+            "role": "modifier", 
+            "source": "s6", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_4eaf1530-3de1-4ab0-8357-d8ad7a5134e8", 
+            "role": "modifier", 
+            "source": "s13", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00003", 
+            "role": "modifier", 
+            "source": "s1", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00004", 
+            "role": "modifier", 
+            "source": "s5", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00009", 
+            "role": "modifier", 
+            "source": "s10", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_2ca67338-9642-471c-b0b6-1190deacb89e", 
+            "role": "modifier", 
+            "source": "s6", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00008", 
+            "role": "modifier", 
+            "source": "s9", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_6fd8c61b-44b3-45be-a261-546dc9d872f7", 
+            "role": "modifier", 
+            "source": "s5", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "abf42de5-0a0e-47c4-af7f-1e13880f9416", 
+            "role": "modifier", 
+            "source": "s8", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00011", 
+            "role": "product", 
+            "source": "re2", 
+            "target": "s22", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00010", 
+            "role": "reactant", 
+            "source": "s4", 
+            "target": "re2", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_92c3c8af-5360-4f0a-a32a-d070c26bb75d", 
+            "role": "modifier", 
+            "source": "s9", 
+            "target": "re2", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_7063aea0-5599-4396-adbc-c4458195beb0", 
+            "role": "modifier", 
+            "source": "s10", 
+            "target": "re2", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00014", 
+            "role": "modifier", 
+            "source": "s10", 
+            "target": "re2", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00013", 
+            "role": "modifier", 
+            "source": "s9", 
+            "target": "re2", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_9f734f9f-683a-48e3-89e5-304b141d96fb", 
+            "role": "modifier", 
+            "source": "s4", 
+            "target": "re2", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00012", 
+            "role": "modifier", 
+            "source": "s2", 
+            "target": "re2", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00016", 
+            "role": "product", 
+            "source": "re3", 
+            "target": "s11", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00015", 
+            "role": "reactant", 
+            "source": "s4", 
+            "target": "re3", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_87282a0b-7771-4169-908f-2e446735d347", 
+            "role": "modifier", 
+            "source": "s4", 
+            "target": "re3", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00017", 
+            "role": "modifier", 
+            "source": "s12", 
+            "target": "re3", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00046", 
+            "role": "product", 
+            "source": "re10", 
+            "target": "s20", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00045", 
+            "role": "reactant", 
+            "source": "s13", 
+            "target": "re10", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00028", 
+            "role": "product", 
+            "source": "re4", 
+            "target": "s14", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00027", 
+            "role": "reactant", 
+            "source": "s8", 
+            "target": "re4", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00031", 
+            "role": "product", 
+            "source": "re5", 
+            "target": "s15", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00030", 
+            "role": "reactant", 
+            "source": "s7", 
+            "target": "re5", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00034", 
+            "role": "product", 
+            "source": "re6", 
+            "target": "s16", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00033", 
+            "role": "reactant", 
+            "source": "s5", 
+            "target": "re6", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00037", 
+            "role": "product", 
+            "source": "re7", 
+            "target": "s17", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00036", 
+            "role": "reactant", 
+            "source": "s6", 
+            "target": "re7", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "re9", 
+            "modifiers": [], 
+            "products": [
+                "CDMT00055"
+            ], 
+            "reactants": [
+                "CDMT00054"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s12", 
+            "species_name": "ALDO"
+        }, 
+        {
+            "id": "re8", 
+            "modifiers": [], 
+            "products": [
+                "CDMT00040"
+            ], 
+            "reactants": [
+                "CDMT00039"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s13", 
+            "species_name": "pPFKL"
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s1", 
+            "species_name": "PFKL"
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s14", 
+            "species_name": "sa8_degraded"
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s15", 
+            "species_name": "sa7_degraded"
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s16", 
+            "species_name": "sa5_degraded"
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s10", 
+            "species_name": "Citrate"
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s11", 
+            "species_name": "sa4_degraded"
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s8", 
+            "species_name": "Malate"
+        }, 
+        {
+            "id": "re11", 
+            "modifiers": [], 
+            "products": [
+                "CDMT00019"
+            ], 
+            "reactants": [
+                "CDMT00018"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s9", 
+            "species_name": "F2,6BP"
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s22", 
+            "species_name": "F6P_proxy"
+        }, 
+        {
+            "id": "re1", 
+            "modifiers": [
+                "_3e0b6d51-fc2a-476e-874e-4ed4a3c3bb1d", 
+                "_166adf3e-d971-4251-bcf1-5badee652425", 
+                "CDMT00007", 
+                "CDMT00006", 
+                "CDMT00023", 
+                "_2badea3f-b4cc-4204-bffc-3564c4ed5901", 
+                "_35bd66ba-d82a-4bc4-a25a-8b2f2d876a1c", 
+                "CDMT00005", 
+                "_4eaf1530-3de1-4ab0-8357-d8ad7a5134e8", 
+                "CDMT00003", 
+                "CDMT00004", 
+                "CDMT00009", 
+                "_2ca67338-9642-471c-b0b6-1190deacb89e", 
+                "CDMT00008", 
+                "_6fd8c61b-44b3-45be-a261-546dc9d872f7", 
+                "abf42de5-0a0e-47c4-af7f-1e13880f9416"
+            ], 
+            "products": [
+                "CDMT00002"
+            ], 
+            "reactants": [
+                "CDMT00001"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s6", 
+            "species_name": "Isocitrate"
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s21", 
+            "species_name": "sa3_degraded"
+        }, 
+        {
+            "id": "re2", 
+            "modifiers": [
+                "_92c3c8af-5360-4f0a-a32a-d070c26bb75d", 
+                "_7063aea0-5599-4396-adbc-c4458195beb0", 
+                "CDMT00014", 
+                "CDMT00013", 
+                "_9f734f9f-683a-48e3-89e5-304b141d96fb", 
+                "CDMT00012"
+            ], 
+            "products": [
+                "CDMT00011"
+            ], 
+            "reactants": [
+                "CDMT00010"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s7", 
+            "species_name": "2-oxoglutarate"
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s20", 
+            "species_name": "sa13_degraded"
+        }, 
+        {
+            "id": "re3", 
+            "modifiers": [
+                "_87282a0b-7771-4169-908f-2e446735d347", 
+                "CDMT00017"
+            ], 
+            "products": [
+                "CDMT00016"
+            ], 
+            "reactants": [
+                "CDMT00015"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "re10", 
+            "modifiers": [], 
+            "products": [
+                "CDMT00046"
+            ], 
+            "reactants": [
+                "CDMT00045"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s17", 
+            "species_name": "sa6_degraded"
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s4", 
+            "species_name": "F1,6BP"
+        }, 
+        {
+            "id": "re4", 
+            "modifiers": [], 
+            "products": [
+                "CDMT00028"
+            ], 
+            "reactants": [
+                "CDMT00027"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s18", 
+            "species_name": "sa9_degraded"
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s5", 
+            "species_name": "PEP"
+        }, 
+        {
+            "id": "re5", 
+            "modifiers": [], 
+            "products": [
+                "CDMT00031"
+            ], 
+            "reactants": [
+                "CDMT00030"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s2", 
+            "species_name": "FBPase"
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s19", 
+            "species_name": "sa10_degraded"
+        }, 
+        {
+            "id": "re6", 
+            "modifiers": [], 
+            "products": [
+                "CDMT00034"
+            ], 
+            "reactants": [
+                "CDMT00033"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s3", 
+            "species_name": "F6P"
+        }, 
+        {
+            "id": "re7", 
+            "modifiers": [], 
+            "products": [
+                "CDMT00037"
+            ], 
+            "reactants": [
+                "CDMT00036"
+            ], 
+            "reaction_name": ""
+        }
+    ]
+}

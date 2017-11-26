@@ -1,1 +1,176 @@
-{"nodes": [{"compartment": "metaid_0000003", "species_name": "Inorganic phosphate", "id": "metaid_0000008"}, {"reaction_name": "Phosphohomoserine synthesis", "reactants": ["_824701"], "modifiers": [], "products": ["_824713"], "id": "metaid_0000010"}, {"compartment": "metaid_0000003", "species_name": "Phosphohomoserine", "id": "metaid_0000004"}, {"compartment": "metaid_0000003", "species_name": "Cystathionine gamma-synthase", "id": "metaid_0000018"}, {"compartment": "metaid_0000003", "species_name": "Cysteine", "id": "metaid_0000009"}, {"compartment": "metaid_0000003", "species_name": "Threonine", "id": "metaid_0000005"}, {"reaction_name": "Cystathionine gamma-synthase", "reactants": ["_824737", "_824750"], "modifiers": [], "products": ["_824774", "_824762"], "id": "metaid_0000011"}, {"compartment": "metaid_0000003", "species_name": "Threonine synthase", "id": "metaid_0000019"}, {"reaction_name": "Threonine Synthase", "reactants": ["_824811"], "modifiers": [], "products": ["_824835", "_824823"], "id": "metaid_0000012"}, {"compartment": "metaid_0000003", "species_name": "Cystathionine", "id": "metaid_0000006"}, {"compartment": "metaid_0000003", "species_name": "Homoserine", "id": "metaid_0000007"}, {"compartment": "metaid_0000003", "species_name": "S-adenosylmethionine", "id": "metaid_0000017"}], "links": [{"source": "metaid_0000010", "role": "product", "id": "_824713", "value": "1.0", "target": "metaid_0000004"}, {"source": "metaid_0000007", "role": "reactant", "id": "_824701", "value": "1.0", "target": "metaid_0000010"}, {"source": "metaid_0000011", "role": "product", "id": "_824774", "value": "1.0", "target": "metaid_0000008"}, {"source": "metaid_0000011", "role": "product", "id": "_824762", "value": "1.0", "target": "metaid_0000006"}, {"source": "metaid_0000004", "role": "reactant", "id": "_824737", "value": "1.0", "target": "metaid_0000011"}, {"source": "metaid_0000009", "role": "reactant", "id": "_824750", "value": "1.0", "target": "metaid_0000011"}, {"source": "metaid_0000012", "role": "product", "id": "_824835", "value": "1.0", "target": "metaid_0000008"}, {"source": "metaid_0000012", "role": "product", "id": "_824823", "value": "1.0", "target": "metaid_0000005"}, {"source": "metaid_0000004", "role": "reactant", "id": "_824811", "value": "1.0", "target": "metaid_0000012"}]}
+{
+    "links": [
+        {
+            "id": "_824713", 
+            "role": "product", 
+            "source": "metaid_0000010", 
+            "target": "metaid_0000004", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_824701", 
+            "role": "reactant", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000010", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_824774", 
+            "role": "product", 
+            "source": "metaid_0000011", 
+            "target": "metaid_0000008", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_824762", 
+            "role": "product", 
+            "source": "metaid_0000011", 
+            "target": "metaid_0000006", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_824737", 
+            "role": "reactant", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000011", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_824750", 
+            "role": "reactant", 
+            "source": "metaid_0000009", 
+            "target": "metaid_0000011", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_824786", 
+            "role": "modifier", 
+            "source": "metaid_0000018", 
+            "target": "metaid_0000011", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_824835", 
+            "role": "product", 
+            "source": "metaid_0000012", 
+            "target": "metaid_0000008", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_824823", 
+            "role": "product", 
+            "source": "metaid_0000012", 
+            "target": "metaid_0000005", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_824811", 
+            "role": "reactant", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000012", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_824847", 
+            "role": "modifier", 
+            "source": "metaid_0000017", 
+            "target": "metaid_0000012", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_824859", 
+            "role": "modifier", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000012", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000008", 
+            "species_name": "Inorganic phosphate"
+        }, 
+        {
+            "id": "metaid_0000010", 
+            "modifiers": [], 
+            "products": [
+                "_824713"
+            ], 
+            "reactants": [
+                "_824701"
+            ], 
+            "reaction_name": "Phosphohomoserine synthesis"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000004", 
+            "species_name": "Phosphohomoserine"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000018", 
+            "species_name": "Cystathionine gamma-synthase"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000009", 
+            "species_name": "Cysteine"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000005", 
+            "species_name": "Threonine"
+        }, 
+        {
+            "id": "metaid_0000011", 
+            "modifiers": [
+                "_824786"
+            ], 
+            "products": [
+                "_824774", 
+                "_824762"
+            ], 
+            "reactants": [
+                "_824737", 
+                "_824750"
+            ], 
+            "reaction_name": "Cystathionine gamma-synthase"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000019", 
+            "species_name": "Threonine synthase"
+        }, 
+        {
+            "id": "metaid_0000012", 
+            "modifiers": [
+                "_824847", 
+                "_824859"
+            ], 
+            "products": [
+                "_824835", 
+                "_824823"
+            ], 
+            "reactants": [
+                "_824811"
+            ], 
+            "reaction_name": "Threonine Synthase"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000006", 
+            "species_name": "Cystathionine"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000007", 
+            "species_name": "Homoserine"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000017", 
+            "species_name": "S-adenosylmethionine"
+        }
+    ]
+}

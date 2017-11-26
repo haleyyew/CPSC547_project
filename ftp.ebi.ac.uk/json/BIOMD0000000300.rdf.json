@@ -1,1 +1,346 @@
-{"nodes": [{"reaction_name": "Htot induced degradation", "reactants": ["_359b434f-2c38-425f-adc4-5a15ad22e5a8"], "modifiers": [], "products": [], "id": "metaid_0000060"}, {"compartment": "metaid_0000027", "species_name": "HP", "id": "metaid_0000037"}, {"reaction_name": "H synthesis", "reactants": [], "modifiers": [], "products": ["c23f337b-cd36-4e43-81b8-15509c482fde"], "id": "metaid_0000061"}, {"compartment": "metaid_0000027", "species_name": "A for plotting", "id": "metaid_0000043"}, {"compartment": "metaid_0000027", "species_name": "HF", "id": "metaid_0000036"}, {"compartment": "metaid_0000027", "species_name": "CADOH", "id": "metaid_0000042"}, {"reaction_name": "Htot synthesis", "reactants": [], "modifiers": [], "products": ["e73ef6a4-9586-4dc3-a67d-d4338ae18f15"], "id": "metaid_0000058"}, {"compartment": "metaid_0000027", "species_name": "FIHfree", "id": "metaid_0000039"}, {"compartment": "metaid_0000027", "species_name": "HOH", "id": "metaid_0000031"}, {"compartment": "metaid_0000027", "species_name": "H", "id": "metaid_0000029"}, {"reaction_name": "H induced degradation", "reactants": ["_6be69a13-f903-4616-bb3e-0b4f39745d74"], "modifiers": [], "products": [], "id": "metaid_0000063"}, {"compartment": "metaid_0000027", "species_name": "NAD", "id": "metaid_0000041"}, {"reaction_name": "Htot basal degradation", "reactants": ["_58f0af4c-991b-44d7-9f41-5bf3cf4b2a0e"], "modifiers": [], "products": [], "id": "metaid_0000059"}, {"compartment": "metaid_0000027", "species_name": "O2", "id": "metaid_0000038"}, {"compartment": "metaid_0000027", "species_name": "A", "id": "metaid_0000030"}, {"reaction_name": "H basal degardation", "reactants": ["_27419ee0-9f66-422c-8932-a4e56fee95d1"], "modifiers": [], "products": [], "id": "metaid_0000062"}, {"compartment": "metaid_0000027", "species_name": "Htot", "id": "metaid_0000028"}, {"compartment": "metaid_0000027", "species_name": "CAD", "id": "metaid_0000040"}, {"reaction_name": "A degradation", "reactants": ["_9c778f36-90d9-4a56-903b-1d4f846f2b93"], "modifiers": [], "products": [], "id": "metaid_0000066"}, {"compartment": "metaid_0000027", "species_name": "AOH", "id": "metaid_0000033"}, {"reaction_name": "A hydroxylation", "reactants": ["_354b32bc-04fa-499a-8510-9d8b993474e2"], "modifiers": [], "products": [], "id": "metaid_0000067"}, {"compartment": "metaid_0000027", "species_name": "Atot", "id": "metaid_0000032"}, {"reaction_name": "H hydroxylation", "reactants": ["_2392b0a5-2b01-4f7f-9624-344aaaa54d74"], "modifiers": [], "products": [], "id": "metaid_0000064"}, {"compartment": "metaid_0000027", "species_name": "Ptot", "id": "metaid_0000035"}, {"reaction_name": "A synthesis", "reactants": [], "modifiers": [], "products": ["cafad5da-8239-4034-a795-d2e94866e7e9"], "id": "metaid_0000065"}, {"compartment": "metaid_0000027", "species_name": "Ftot", "id": "metaid_0000034"}], "links": [{"source": "metaid_0000028", "role": "reactant", "id": "_359b434f-2c38-425f-adc4-5a15ad22e5a8", "value": "1.0", "target": "metaid_0000060"}, {"source": "metaid_0000061", "role": "product", "id": "c23f337b-cd36-4e43-81b8-15509c482fde", "value": "1.0", "target": "metaid_0000029"}, {"source": "metaid_0000058", "role": "product", "id": "e73ef6a4-9586-4dc3-a67d-d4338ae18f15", "value": "1.0", "target": "metaid_0000028"}, {"source": "metaid_0000029", "role": "reactant", "id": "_6be69a13-f903-4616-bb3e-0b4f39745d74", "value": "1.0", "target": "metaid_0000063"}, {"source": "metaid_0000028", "role": "reactant", "id": "_58f0af4c-991b-44d7-9f41-5bf3cf4b2a0e", "value": "1.0", "target": "metaid_0000059"}, {"source": "metaid_0000029", "role": "reactant", "id": "_27419ee0-9f66-422c-8932-a4e56fee95d1", "value": "1.0", "target": "metaid_0000062"}, {"source": "metaid_0000030", "role": "reactant", "id": "_9c778f36-90d9-4a56-903b-1d4f846f2b93", "value": "1.0", "target": "metaid_0000066"}, {"source": "metaid_0000030", "role": "reactant", "id": "_354b32bc-04fa-499a-8510-9d8b993474e2", "value": "1.0", "target": "metaid_0000067"}, {"source": "metaid_0000029", "role": "reactant", "id": "_2392b0a5-2b01-4f7f-9624-344aaaa54d74", "value": "1.0", "target": "metaid_0000064"}, {"source": "metaid_0000065", "role": "product", "id": "cafad5da-8239-4034-a795-d2e94866e7e9", "value": "1.0", "target": "metaid_0000030"}]}
+{
+    "links": [
+        {
+            "id": "_359b434f-2c38-425f-adc4-5a15ad22e5a8", 
+            "role": "reactant", 
+            "source": "metaid_0000028", 
+            "target": "metaid_0000060", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_44467a0c-cf25-4503-bb21-989efcd60ccb", 
+            "role": "modifier", 
+            "source": "metaid_0000037", 
+            "target": "metaid_0000060", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_38d1576b-f458-4d0c-828e-bd59322d77b0", 
+            "role": "modifier", 
+            "source": "metaid_0000038", 
+            "target": "metaid_0000060", 
+            "value": 0.0
+        }, 
+        {
+            "id": "c31e56f0-d128-4448-bdbf-8a0305a950fd", 
+            "role": "modifier", 
+            "source": "metaid_0000035", 
+            "target": "metaid_0000060", 
+            "value": 0.0
+        }, 
+        {
+            "id": "c23f337b-cd36-4e43-81b8-15509c482fde", 
+            "role": "product", 
+            "source": "metaid_0000061", 
+            "target": "metaid_0000029", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "e73ef6a4-9586-4dc3-a67d-d4338ae18f15", 
+            "role": "product", 
+            "source": "metaid_0000058", 
+            "target": "metaid_0000028", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_6be69a13-f903-4616-bb3e-0b4f39745d74", 
+            "role": "reactant", 
+            "source": "metaid_0000029", 
+            "target": "metaid_0000063", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "c2c853aa-97b0-46f6-a0e9-fec3899d1bfd", 
+            "role": "modifier", 
+            "source": "metaid_0000037", 
+            "target": "metaid_0000063", 
+            "value": 0.0
+        }, 
+        {
+            "id": "fb357124-5b88-4ab5-b510-271dcb0718bf", 
+            "role": "modifier", 
+            "source": "metaid_0000035", 
+            "target": "metaid_0000063", 
+            "value": 0.0
+        }, 
+        {
+            "id": "ca526450-5dff-45e5-bd78-74b57539375c", 
+            "role": "modifier", 
+            "source": "metaid_0000038", 
+            "target": "metaid_0000063", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_58f0af4c-991b-44d7-9f41-5bf3cf4b2a0e", 
+            "role": "reactant", 
+            "source": "metaid_0000028", 
+            "target": "metaid_0000059", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_27419ee0-9f66-422c-8932-a4e56fee95d1", 
+            "role": "reactant", 
+            "source": "metaid_0000029", 
+            "target": "metaid_0000062", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_9c778f36-90d9-4a56-903b-1d4f846f2b93", 
+            "role": "reactant", 
+            "source": "metaid_0000030", 
+            "target": "metaid_0000066", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_354b32bc-04fa-499a-8510-9d8b993474e2", 
+            "role": "reactant", 
+            "source": "metaid_0000030", 
+            "target": "metaid_0000067", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_2984f406-2828-4972-b507-d2460d90c8be", 
+            "role": "modifier", 
+            "source": "metaid_0000032", 
+            "target": "metaid_0000067", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_5e28b1eb-a8b1-442c-a097-113cb96b20ec", 
+            "role": "modifier", 
+            "source": "metaid_0000038", 
+            "target": "metaid_0000067", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_428863ef-6ed2-4ab5-84da-1ba4c1ee2489", 
+            "role": "modifier", 
+            "source": "metaid_0000034", 
+            "target": "metaid_0000067", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_2392b0a5-2b01-4f7f-9624-344aaaa54d74", 
+            "role": "reactant", 
+            "source": "metaid_0000029", 
+            "target": "metaid_0000064", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_06df9cf6-19b4-4d30-ab81-33d6d16a4fba", 
+            "role": "modifier", 
+            "source": "metaid_0000034", 
+            "target": "metaid_0000064", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_05017e33-5364-486c-8157-3787aa3df810", 
+            "role": "modifier", 
+            "source": "metaid_0000036", 
+            "target": "metaid_0000064", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_5cd98848-33e9-480b-bef3-bb2fd0685c68", 
+            "role": "modifier", 
+            "source": "metaid_0000038", 
+            "target": "metaid_0000064", 
+            "value": 0.0
+        }, 
+        {
+            "id": "cafad5da-8239-4034-a795-d2e94866e7e9", 
+            "role": "product", 
+            "source": "metaid_0000065", 
+            "target": "metaid_0000030", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000060", 
+            "modifiers": [
+                "_44467a0c-cf25-4503-bb21-989efcd60ccb", 
+                "_38d1576b-f458-4d0c-828e-bd59322d77b0", 
+                "c31e56f0-d128-4448-bdbf-8a0305a950fd"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_359b434f-2c38-425f-adc4-5a15ad22e5a8"
+            ], 
+            "reaction_name": "Htot induced degradation"
+        }, 
+        {
+            "compartment": "metaid_0000027", 
+            "id": "metaid_0000037", 
+            "species_name": "HP"
+        }, 
+        {
+            "id": "metaid_0000061", 
+            "modifiers": [], 
+            "products": [
+                "c23f337b-cd36-4e43-81b8-15509c482fde"
+            ], 
+            "reactants": [], 
+            "reaction_name": "H synthesis"
+        }, 
+        {
+            "compartment": "metaid_0000027", 
+            "id": "metaid_0000043", 
+            "species_name": "A for plotting"
+        }, 
+        {
+            "compartment": "metaid_0000027", 
+            "id": "metaid_0000036", 
+            "species_name": "HF"
+        }, 
+        {
+            "compartment": "metaid_0000027", 
+            "id": "metaid_0000042", 
+            "species_name": "CADOH"
+        }, 
+        {
+            "id": "metaid_0000058", 
+            "modifiers": [], 
+            "products": [
+                "e73ef6a4-9586-4dc3-a67d-d4338ae18f15"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Htot synthesis"
+        }, 
+        {
+            "compartment": "metaid_0000027", 
+            "id": "metaid_0000039", 
+            "species_name": "FIHfree"
+        }, 
+        {
+            "compartment": "metaid_0000027", 
+            "id": "metaid_0000031", 
+            "species_name": "HOH"
+        }, 
+        {
+            "compartment": "metaid_0000027", 
+            "id": "metaid_0000029", 
+            "species_name": "H"
+        }, 
+        {
+            "id": "metaid_0000063", 
+            "modifiers": [
+                "c2c853aa-97b0-46f6-a0e9-fec3899d1bfd", 
+                "fb357124-5b88-4ab5-b510-271dcb0718bf", 
+                "ca526450-5dff-45e5-bd78-74b57539375c"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_6be69a13-f903-4616-bb3e-0b4f39745d74"
+            ], 
+            "reaction_name": "H induced degradation"
+        }, 
+        {
+            "compartment": "metaid_0000027", 
+            "id": "metaid_0000041", 
+            "species_name": "NAD"
+        }, 
+        {
+            "id": "metaid_0000059", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_58f0af4c-991b-44d7-9f41-5bf3cf4b2a0e"
+            ], 
+            "reaction_name": "Htot basal degradation"
+        }, 
+        {
+            "compartment": "metaid_0000027", 
+            "id": "metaid_0000038", 
+            "species_name": "O2"
+        }, 
+        {
+            "compartment": "metaid_0000027", 
+            "id": "metaid_0000030", 
+            "species_name": "A"
+        }, 
+        {
+            "id": "metaid_0000062", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_27419ee0-9f66-422c-8932-a4e56fee95d1"
+            ], 
+            "reaction_name": "H basal degardation"
+        }, 
+        {
+            "compartment": "metaid_0000027", 
+            "id": "metaid_0000028", 
+            "species_name": "Htot"
+        }, 
+        {
+            "compartment": "metaid_0000027", 
+            "id": "metaid_0000040", 
+            "species_name": "CAD"
+        }, 
+        {
+            "id": "metaid_0000066", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_9c778f36-90d9-4a56-903b-1d4f846f2b93"
+            ], 
+            "reaction_name": "A degradation"
+        }, 
+        {
+            "compartment": "metaid_0000027", 
+            "id": "metaid_0000033", 
+            "species_name": "AOH"
+        }, 
+        {
+            "id": "metaid_0000067", 
+            "modifiers": [
+                "_2984f406-2828-4972-b507-d2460d90c8be", 
+                "_5e28b1eb-a8b1-442c-a097-113cb96b20ec", 
+                "_428863ef-6ed2-4ab5-84da-1ba4c1ee2489"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_354b32bc-04fa-499a-8510-9d8b993474e2"
+            ], 
+            "reaction_name": "A hydroxylation"
+        }, 
+        {
+            "compartment": "metaid_0000027", 
+            "id": "metaid_0000032", 
+            "species_name": "Atot"
+        }, 
+        {
+            "id": "metaid_0000064", 
+            "modifiers": [
+                "_06df9cf6-19b4-4d30-ab81-33d6d16a4fba", 
+                "_05017e33-5364-486c-8157-3787aa3df810", 
+                "_5cd98848-33e9-480b-bef3-bb2fd0685c68"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_2392b0a5-2b01-4f7f-9624-344aaaa54d74"
+            ], 
+            "reaction_name": "H hydroxylation"
+        }, 
+        {
+            "compartment": "metaid_0000027", 
+            "id": "metaid_0000035", 
+            "species_name": "Ptot"
+        }, 
+        {
+            "id": "metaid_0000065", 
+            "modifiers": [], 
+            "products": [
+                "cafad5da-8239-4034-a795-d2e94866e7e9"
+            ], 
+            "reactants": [], 
+            "reaction_name": "A synthesis"
+        }, 
+        {
+            "compartment": "metaid_0000027", 
+            "id": "metaid_0000034", 
+            "species_name": "Ftot"
+        }
+    ]
+}

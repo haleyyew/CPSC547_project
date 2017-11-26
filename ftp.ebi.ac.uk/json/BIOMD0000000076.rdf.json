@@ -1,1 +1,71 @@
-{"nodes": [{"compartment": "metaid_0000003", "species_name": "Glycerol 3-phosphate", "id": "metaid_0000004"}, {"reaction_name": "Glycerol 3-phosphatase", "reactants": ["_974741"], "modifiers": [], "products": ["_974753"], "id": "metaid_0000008"}, {"reaction_name": "Glycerol 3-phosphate dehydrogenase", "reactants": ["_974536"], "modifiers": [], "products": ["_974548"], "id": "metaid_0000007"}, {"compartment": "metaid_0000003", "species_name": "DHAP", "id": "metaid_0000006"}, {"compartment": "metaid_0000003", "species_name": "Glycerol", "id": "metaid_0000005"}], "links": [{"source": "metaid_0000008", "role": "product", "id": "_974753", "value": "1.0", "target": "metaid_0000005"}, {"source": "metaid_0000004", "role": "reactant", "id": "_974741", "value": "1.0", "target": "metaid_0000008"}, {"source": "metaid_0000007", "role": "product", "id": "_974548", "value": "1.0", "target": "metaid_0000004"}, {"source": "metaid_0000006", "role": "reactant", "id": "_974536", "value": "1.0", "target": "metaid_0000007"}]}
+{
+    "links": [
+        {
+            "id": "_974753", 
+            "role": "product", 
+            "source": "metaid_0000008", 
+            "target": "metaid_0000005", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_974741", 
+            "role": "reactant", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000008", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_974548", 
+            "role": "product", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000004", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_974536", 
+            "role": "reactant", 
+            "source": "metaid_0000006", 
+            "target": "metaid_0000007", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000004", 
+            "species_name": "Glycerol 3-phosphate"
+        }, 
+        {
+            "id": "metaid_0000008", 
+            "modifiers": [], 
+            "products": [
+                "_974753"
+            ], 
+            "reactants": [
+                "_974741"
+            ], 
+            "reaction_name": "Glycerol 3-phosphatase"
+        }, 
+        {
+            "id": "metaid_0000007", 
+            "modifiers": [], 
+            "products": [
+                "_974548"
+            ], 
+            "reactants": [
+                "_974536"
+            ], 
+            "reaction_name": "Glycerol 3-phosphate dehydrogenase"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000006", 
+            "species_name": "DHAP"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000005", 
+            "species_name": "Glycerol"
+        }
+    ]
+}

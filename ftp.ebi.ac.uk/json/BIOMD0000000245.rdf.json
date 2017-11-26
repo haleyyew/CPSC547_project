@@ -1,1 +1,722 @@
-{"nodes": [{"reaction_name": "Glucose inflow", "reactants": ["_846151"], "modifiers": [], "products": ["_846163"], "id": "_106452"}, {"compartment": "_106421", "species_name": "BM(active)", "id": "_106432"}, {"reaction_name": "Glucose outflow", "reactants": ["_846187"], "modifiers": [], "products": [], "id": "_106453"}, {"compartment": "_106421", "species_name": "BM(AcDH)", "id": "_106433"}, {"reaction_name": "BM outflow", "reactants": ["_846332"], "modifiers": [], "products": [], "id": "_106461"}, {"reaction_name": "Pyruvate Dehydrogenase", "reactants": ["_845561"], "modifiers": [], "products": ["_845585", "_845573"], "id": "_106441"}, {"reaction_name": "Acdh degradation", "reactants": ["_846115"], "modifiers": [], "products": [], "id": "_106451"}, {"compartment": "_106421", "species_name": "BM", "id": "_106431"}, {"reaction_name": "Acetate outflow", "reactants": ["_846236"], "modifiers": [], "products": [], "id": "_106456"}, {"reaction_name": "Acetald. dehydrogenase", "reactants": ["_845621"], "modifiers": [], "products": ["_845645", "_845633"], "id": "_106442"}, {"reaction_name": "TCA (acetate)", "reactants": ["_845693"], "modifiers": [], "products": ["_845705", "_845717"], "id": "_106443"}, {"reaction_name": "Acetaldehyde outflow", "reactants": ["_846260"], "modifiers": [], "products": [], "id": "_106457"}, {"reaction_name": "Pyruvate outflow", "reactants": ["_846212"], "modifiers": [], "products": [], "id": "_106454"}, {"reaction_name": "ADH", "reactants": ["_845767", "_845779"], "modifiers": [], "products": ["_845791"], "id": "_106444"}, {"compartment": "_106421", "species_name": "Glucose(feed)", "id": "_106541"}, {"compartment": "_106421", "species_name": "Acetate", "id": "_106427"}, {"reaction_name": "BM growth (acetate)", "reactants": ["_845899"], "modifiers": [], "products": ["_845923", "_845911", "_845935"], "id": "_106447"}, {"compartment": "_106421", "species_name": "Pyruvate", "id": "_106426"}, {"reaction_name": "BM growth (gluc)", "reactants": ["_845827"], "modifiers": [], "products": ["_845863", "_845851", "_845839"], "id": "_106446"}, {"compartment": "_106421", "species_name": "EtOH", "id": "_106429"}, {"reaction_name": "TCA (pyruvate)", "reactants": ["_845489"], "modifiers": [], "products": ["_845513", "_845501"], "id": "_106439"}, {"reaction_name": "active BM outflow", "reactants": ["_846308"], "modifiers": [], "products": [], "id": "_106459"}, {"reaction_name": "active BM degradation", "reactants": ["_846055"], "modifiers": [], "products": [], "id": "_106449"}, {"compartment": "_106421", "species_name": "Acetaldehyde", "id": "_106428"}, {"reaction_name": "glycolysis", "reactants": ["_845416"], "modifiers": [], "products": ["_845428", "_845440"], "id": "_106438"}, {"reaction_name": "EtOH outflow", "reactants": ["_846284"], "modifiers": [], "products": [], "id": "_106458"}, {"reaction_name": "Acdh production", "reactants": ["_845983"], "modifiers": [], "products": ["_845995"], "id": "_106448"}, {"compartment": "_106421", "species_name": "Red. Equ. (NADH)", "id": "_106436"}, {"reaction_name": "AcDH BM outflow", "reactants": ["_846356"], "modifiers": [], "products": [], "id": "_106462"}, {"compartment": "_106421", "species_name": "CO2", "id": "_106434"}, {"compartment": "_106421", "species_name": "Glucose", "id": "_106424"}], "links": [{"source": "_106452", "role": "product", "id": "_846163", "value": "1.0", "target": "_106424"}, {"source": "_106541", "role": "reactant", "id": "_846151", "value": "1.0", "target": "_106452"}, {"source": "_106424", "role": "reactant", "id": "_846187", "value": "1.0", "target": "_106453"}, {"source": "_106431", "role": "reactant", "id": "_846332", "value": "1.0", "target": "_106461"}, {"source": "_106441", "role": "product", "id": "_845585", "value": "0.33", "target": "_106434"}, {"source": "_106441", "role": "product", "id": "_845573", "value": "0.5", "target": "_106428"}, {"source": "_106426", "role": "reactant", "id": "_845561", "value": "1.0", "target": "_106441"}, {"source": "_106433", "role": "reactant", "id": "_846115", "value": "1.0", "target": "_106451"}, {"source": "_106427", "role": "reactant", "id": "_846236", "value": "1.0", "target": "_106456"}, {"source": "_106442", "role": "product", "id": "_845645", "value": "0.363", "target": "_106436"}, {"source": "_106442", "role": "product", "id": "_845633", "value": "1.363", "target": "_106427"}, {"source": "_106428", "role": "reactant", "id": "_845621", "value": "1.0", "target": "_106442"}, {"source": "_106443", "role": "product", "id": "_845705", "value": "1.446", "target": "_106434"}, {"source": "_106443", "role": "product", "id": "_845717", "value": "1.066", "target": "_106436"}, {"source": "_106427", "role": "reactant", "id": "_845693", "value": "1.0", "target": "_106443"}, {"source": "_106428", "role": "reactant", "id": "_846260", "value": "1.0", "target": "_106457"}, {"source": "_106426", "role": "reactant", "id": "_846212", "value": "1.0", "target": "_106454"}, {"source": "_106444", "role": "product", "id": "_845791", "value": "1.045", "target": "_106429"}, {"source": "_106428", "role": "reactant", "id": "_845767", "value": "1.0", "target": "_106444"}, {"source": "_106436", "role": "reactant", "id": "_845779", "value": "0.363", "target": "_106444"}, {"source": "_106447", "role": "product", "id": "_845923", "value": "0.325", "target": "_106434"}, {"source": "_106447", "role": "product", "id": "_845911", "value": "0.619", "target": "_106431"}, {"source": "_106447", "role": "product", "id": "_845935", "value": "0.214", "target": "_106436"}, {"source": "_106427", "role": "reactant", "id": "_845899", "value": "1.0", "target": "_106447"}, {"source": "_106446", "role": "product", "id": "_845863", "value": "0.063", "target": "_106436"}, {"source": "_106446", "role": "product", "id": "_845851", "value": "0.127", "target": "_106434"}, {"source": "_106446", "role": "product", "id": "_845839", "value": "0.732", "target": "_106431"}, {"source": "_106424", "role": "reactant", "id": "_845827", "value": "1.0", "target": "_106446"}, {"source": "_106439", "role": "product", "id": "_845513", "value": "0.908", "target": "_106436"}, {"source": "_106439", "role": "product", "id": "_845501", "value": "1.499", "target": "_106434"}, {"source": "_106426", "role": "reactant", "id": "_845489", "value": "1.0", "target": "_106439"}, {"source": "_106432", "role": "reactant", "id": "_846308", "value": "1.0", "target": "_106459"}, {"source": "_106432", "role": "reactant", "id": "_846055", "value": "1.0", "target": "_106449"}, {"source": "_106438", "role": "product", "id": "_845428", "value": "0.978", "target": "_106426"}, {"source": "_106438", "role": "product", "id": "_845440", "value": "0.178", "target": "_106436"}, {"source": "_106424", "role": "reactant", "id": "_845416", "value": "1.0", "target": "_106438"}, {"source": "_106429", "role": "reactant", "id": "_846284", "value": "1.0", "target": "_106458"}, {"source": "_106448", "role": "product", "id": "_845995", "value": "1.0", "target": "_106433"}, {"source": "_106432", "role": "reactant", "id": "_845983", "value": "1.0", "target": "_106448"}, {"source": "_106433", "role": "reactant", "id": "_846356", "value": "1.0", "target": "_106462"}]}
+{
+    "links": [
+        {
+            "id": "_846163", 
+            "role": "product", 
+            "source": "_106452", 
+            "target": "_106424", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_846151", 
+            "role": "reactant", 
+            "source": "_106541", 
+            "target": "_106452", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_846187", 
+            "role": "reactant", 
+            "source": "_106424", 
+            "target": "_106453", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_846332", 
+            "role": "reactant", 
+            "source": "_106431", 
+            "target": "_106461", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_845585", 
+            "role": "product", 
+            "source": "_106441", 
+            "target": "_106434", 
+            "value": "0.33"
+        }, 
+        {
+            "id": "_845573", 
+            "role": "product", 
+            "source": "_106441", 
+            "target": "_106428", 
+            "value": "0.5"
+        }, 
+        {
+            "id": "_845561", 
+            "role": "reactant", 
+            "source": "_106426", 
+            "target": "_106441", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_845597", 
+            "role": "modifier", 
+            "source": "_106431", 
+            "target": "_106441", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_846115", 
+            "role": "reactant", 
+            "source": "_106433", 
+            "target": "_106451", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_846127", 
+            "role": "modifier", 
+            "source": "_106431", 
+            "target": "_106451", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_846236", 
+            "role": "reactant", 
+            "source": "_106427", 
+            "target": "_106456", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_845645", 
+            "role": "product", 
+            "source": "_106442", 
+            "target": "_106436", 
+            "value": "0.363"
+        }, 
+        {
+            "id": "_845633", 
+            "role": "product", 
+            "source": "_106442", 
+            "target": "_106427", 
+            "value": "1.363"
+        }, 
+        {
+            "id": "_845621", 
+            "role": "reactant", 
+            "source": "_106428", 
+            "target": "_106442", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_845657", 
+            "role": "modifier", 
+            "source": "_106431", 
+            "target": "_106442", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_845669", 
+            "role": "modifier", 
+            "source": "_106429", 
+            "target": "_106442", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_845705", 
+            "role": "product", 
+            "source": "_106443", 
+            "target": "_106434", 
+            "value": "1.446"
+        }, 
+        {
+            "id": "_845717", 
+            "role": "product", 
+            "source": "_106443", 
+            "target": "_106436", 
+            "value": "1.066"
+        }, 
+        {
+            "id": "_845693", 
+            "role": "reactant", 
+            "source": "_106427", 
+            "target": "_106443", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_845730", 
+            "role": "modifier", 
+            "source": "_106431", 
+            "target": "_106443", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_845743", 
+            "role": "modifier", 
+            "source": "_106424", 
+            "target": "_106443", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_846260", 
+            "role": "reactant", 
+            "source": "_106428", 
+            "target": "_106457", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_846212", 
+            "role": "reactant", 
+            "source": "_106426", 
+            "target": "_106454", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_845791", 
+            "role": "product", 
+            "source": "_106444", 
+            "target": "_106429", 
+            "value": "1.045"
+        }, 
+        {
+            "id": "_845767", 
+            "role": "reactant", 
+            "source": "_106428", 
+            "target": "_106444", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_845779", 
+            "role": "reactant", 
+            "source": "_106436", 
+            "target": "_106444", 
+            "value": "0.363"
+        }, 
+        {
+            "id": "_845803", 
+            "role": "modifier", 
+            "source": "_106431", 
+            "target": "_106444", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_845923", 
+            "role": "product", 
+            "source": "_106447", 
+            "target": "_106434", 
+            "value": "0.325"
+        }, 
+        {
+            "id": "_845911", 
+            "role": "product", 
+            "source": "_106447", 
+            "target": "_106431", 
+            "value": "0.619"
+        }, 
+        {
+            "id": "_845935", 
+            "role": "product", 
+            "source": "_106447", 
+            "target": "_106436", 
+            "value": "0.214"
+        }, 
+        {
+            "id": "_845899", 
+            "role": "reactant", 
+            "source": "_106427", 
+            "target": "_106447", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_845959", 
+            "role": "modifier", 
+            "source": "_106424", 
+            "target": "_106447", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_845947", 
+            "role": "modifier", 
+            "source": "_106431", 
+            "target": "_106447", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_845863", 
+            "role": "product", 
+            "source": "_106446", 
+            "target": "_106436", 
+            "value": "0.063"
+        }, 
+        {
+            "id": "_845851", 
+            "role": "product", 
+            "source": "_106446", 
+            "target": "_106434", 
+            "value": "0.127"
+        }, 
+        {
+            "id": "_845839", 
+            "role": "product", 
+            "source": "_106446", 
+            "target": "_106431", 
+            "value": "0.732"
+        }, 
+        {
+            "id": "_845827", 
+            "role": "reactant", 
+            "source": "_106424", 
+            "target": "_106446", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_845875", 
+            "role": "modifier", 
+            "source": "_106431", 
+            "target": "_106446", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_845513", 
+            "role": "product", 
+            "source": "_106439", 
+            "target": "_106436", 
+            "value": "0.908"
+        }, 
+        {
+            "id": "_845501", 
+            "role": "product", 
+            "source": "_106439", 
+            "target": "_106434", 
+            "value": "1.499"
+        }, 
+        {
+            "id": "_845489", 
+            "role": "reactant", 
+            "source": "_106426", 
+            "target": "_106439", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_845537", 
+            "role": "modifier", 
+            "source": "_106424", 
+            "target": "_106439", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_845525", 
+            "role": "modifier", 
+            "source": "_106431", 
+            "target": "_106439", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_846308", 
+            "role": "reactant", 
+            "source": "_106432", 
+            "target": "_106459", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_846055", 
+            "role": "reactant", 
+            "source": "_106432", 
+            "target": "_106449", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_846067", 
+            "role": "modifier", 
+            "source": "_106431", 
+            "target": "_106449", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_846079", 
+            "role": "modifier", 
+            "source": "_106424", 
+            "target": "_106449", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_846091", 
+            "role": "modifier", 
+            "source": "_106429", 
+            "target": "_106449", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_845428", 
+            "role": "product", 
+            "source": "_106438", 
+            "target": "_106426", 
+            "value": "0.978"
+        }, 
+        {
+            "id": "_845440", 
+            "role": "product", 
+            "source": "_106438", 
+            "target": "_106436", 
+            "value": "0.178"
+        }, 
+        {
+            "id": "_845416", 
+            "role": "reactant", 
+            "source": "_106424", 
+            "target": "_106438", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_845465", 
+            "role": "modifier", 
+            "source": "_106431", 
+            "target": "_106438", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_845453", 
+            "role": "modifier", 
+            "source": "_106428", 
+            "target": "_106438", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_846284", 
+            "role": "reactant", 
+            "source": "_106429", 
+            "target": "_106458", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_845995", 
+            "role": "product", 
+            "source": "_106448", 
+            "target": "_106433", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_845983", 
+            "role": "reactant", 
+            "source": "_106432", 
+            "target": "_106448", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_846007", 
+            "role": "modifier", 
+            "source": "_106431", 
+            "target": "_106448", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_846031", 
+            "role": "modifier", 
+            "source": "_106429", 
+            "target": "_106448", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_846019", 
+            "role": "modifier", 
+            "source": "_106424", 
+            "target": "_106448", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_846356", 
+            "role": "reactant", 
+            "source": "_106433", 
+            "target": "_106462", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "_106452", 
+            "modifiers": [], 
+            "products": [
+                "_846163"
+            ], 
+            "reactants": [
+                "_846151"
+            ], 
+            "reaction_name": "Glucose inflow"
+        }, 
+        {
+            "compartment": "_106421", 
+            "id": "_106432", 
+            "species_name": "BM(active)"
+        }, 
+        {
+            "id": "_106453", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_846187"
+            ], 
+            "reaction_name": "Glucose outflow"
+        }, 
+        {
+            "compartment": "_106421", 
+            "id": "_106433", 
+            "species_name": "BM(AcDH)"
+        }, 
+        {
+            "id": "_106461", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_846332"
+            ], 
+            "reaction_name": "BM outflow"
+        }, 
+        {
+            "id": "_106441", 
+            "modifiers": [
+                "_845597"
+            ], 
+            "products": [
+                "_845585", 
+                "_845573"
+            ], 
+            "reactants": [
+                "_845561"
+            ], 
+            "reaction_name": "Pyruvate Dehydrogenase"
+        }, 
+        {
+            "id": "_106451", 
+            "modifiers": [
+                "_846127"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_846115"
+            ], 
+            "reaction_name": "Acdh degradation"
+        }, 
+        {
+            "compartment": "_106421", 
+            "id": "_106431", 
+            "species_name": "BM"
+        }, 
+        {
+            "id": "_106456", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_846236"
+            ], 
+            "reaction_name": "Acetate outflow"
+        }, 
+        {
+            "id": "_106442", 
+            "modifiers": [
+                "_845657", 
+                "_845669"
+            ], 
+            "products": [
+                "_845645", 
+                "_845633"
+            ], 
+            "reactants": [
+                "_845621"
+            ], 
+            "reaction_name": "Acetald. dehydrogenase"
+        }, 
+        {
+            "id": "_106443", 
+            "modifiers": [
+                "_845730", 
+                "_845743"
+            ], 
+            "products": [
+                "_845705", 
+                "_845717"
+            ], 
+            "reactants": [
+                "_845693"
+            ], 
+            "reaction_name": "TCA (acetate)"
+        }, 
+        {
+            "id": "_106457", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_846260"
+            ], 
+            "reaction_name": "Acetaldehyde outflow"
+        }, 
+        {
+            "id": "_106454", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_846212"
+            ], 
+            "reaction_name": "Pyruvate outflow"
+        }, 
+        {
+            "id": "_106444", 
+            "modifiers": [
+                "_845803"
+            ], 
+            "products": [
+                "_845791"
+            ], 
+            "reactants": [
+                "_845767", 
+                "_845779"
+            ], 
+            "reaction_name": "ADH"
+        }, 
+        {
+            "compartment": "_106421", 
+            "id": "_106541", 
+            "species_name": "Glucose(feed)"
+        }, 
+        {
+            "compartment": "_106421", 
+            "id": "_106427", 
+            "species_name": "Acetate"
+        }, 
+        {
+            "id": "_106447", 
+            "modifiers": [
+                "_845959", 
+                "_845947"
+            ], 
+            "products": [
+                "_845923", 
+                "_845911", 
+                "_845935"
+            ], 
+            "reactants": [
+                "_845899"
+            ], 
+            "reaction_name": "BM growth (acetate)"
+        }, 
+        {
+            "compartment": "_106421", 
+            "id": "_106426", 
+            "species_name": "Pyruvate"
+        }, 
+        {
+            "id": "_106446", 
+            "modifiers": [
+                "_845875"
+            ], 
+            "products": [
+                "_845863", 
+                "_845851", 
+                "_845839"
+            ], 
+            "reactants": [
+                "_845827"
+            ], 
+            "reaction_name": "BM growth (gluc)"
+        }, 
+        {
+            "compartment": "_106421", 
+            "id": "_106429", 
+            "species_name": "EtOH"
+        }, 
+        {
+            "id": "_106439", 
+            "modifiers": [
+                "_845537", 
+                "_845525"
+            ], 
+            "products": [
+                "_845513", 
+                "_845501"
+            ], 
+            "reactants": [
+                "_845489"
+            ], 
+            "reaction_name": "TCA (pyruvate)"
+        }, 
+        {
+            "id": "_106459", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_846308"
+            ], 
+            "reaction_name": "active BM outflow"
+        }, 
+        {
+            "id": "_106449", 
+            "modifiers": [
+                "_846067", 
+                "_846079", 
+                "_846091"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_846055"
+            ], 
+            "reaction_name": "active BM degradation"
+        }, 
+        {
+            "compartment": "_106421", 
+            "id": "_106428", 
+            "species_name": "Acetaldehyde"
+        }, 
+        {
+            "id": "_106438", 
+            "modifiers": [
+                "_845465", 
+                "_845453"
+            ], 
+            "products": [
+                "_845428", 
+                "_845440"
+            ], 
+            "reactants": [
+                "_845416"
+            ], 
+            "reaction_name": "glycolysis"
+        }, 
+        {
+            "id": "_106458", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_846284"
+            ], 
+            "reaction_name": "EtOH outflow"
+        }, 
+        {
+            "id": "_106448", 
+            "modifiers": [
+                "_846007", 
+                "_846031", 
+                "_846019"
+            ], 
+            "products": [
+                "_845995"
+            ], 
+            "reactants": [
+                "_845983"
+            ], 
+            "reaction_name": "Acdh production"
+        }, 
+        {
+            "compartment": "_106421", 
+            "id": "_106436", 
+            "species_name": "Red. Equ. (NADH)"
+        }, 
+        {
+            "id": "_106462", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_846356"
+            ], 
+            "reaction_name": "AcDH BM outflow"
+        }, 
+        {
+            "compartment": "_106421", 
+            "id": "_106434", 
+            "species_name": "CO2"
+        }, 
+        {
+            "compartment": "_106421", 
+            "id": "_106424", 
+            "species_name": "Glucose"
+        }
+    ]
+}

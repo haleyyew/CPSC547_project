@@ -1,1 +1,263 @@
-{"nodes": [{"compartment": "metaid_0000034", "species_name": "Extracellular Calcium", "id": "metaid_0000035"}, {"reaction_name": "Ca independent IP3 degradation", "reactants": ["_178674"], "modifiers": [], "products": [], "id": "metaid_0000051"}, {"reaction_name": "Agonist stimulated production of IP3", "reactants": [], "modifiers": [], "products": ["_178611"], "id": "metaid_0000049"}, {"reaction_name": "Calcium transport to internal store", "reactants": ["_178455"], "modifiers": [], "products": ["_178467"], "id": "metaid_0000045"}, {"compartment": "metaid_0000032", "species_name": "IP3", "id": "metaid_0000038"}, {"reaction_name": "Ca-dependant IP3 degradation", "reactants": ["_178636"], "modifiers": [], "products": [], "id": "metaid_0000050"}, {"reaction_name": "Calcium efflux", "reactants": ["_178575"], "modifiers": [], "products": ["_178587"], "id": "metaid_0000048"}, {"reaction_name": "Calcium Influx", "reactants": ["_178418"], "modifiers": [], "products": ["_178430"], "id": "metaid_0000044"}, {"reaction_name": "Phosphatase activity", "reactants": ["_178734"], "modifiers": [], "products": [], "id": "metaid_0000053"}, {"compartment": "metaid_0000032", "species_name": "Glycogen Phosphorylase", "id": "metaid_0000043"}, {"reaction_name": "Calcium leak", "reactants": ["_178539"], "modifiers": [], "products": ["_178551"], "id": "metaid_0000047"}, {"reaction_name": "Phosphorylase kinase activity", "reactants": [], "modifiers": [], "products": ["_178698"], "id": "metaid_0000052"}, {"compartment": "metaid_0000033", "species_name": "Intravesicular Calcium", "id": "metaid_0000042"}, {"compartment": "metaid_0000032", "species_name": "Cytosolic Calcium", "id": "metaid_0000036"}, {"reaction_name": "Calcium transport to cytosol", "reactants": ["_178491"], "modifiers": [], "products": ["_178503"], "id": "metaid_0000046"}], "links": [{"source": "metaid_0000038", "role": "reactant", "id": "_178674", "value": "1.0", "target": "metaid_0000051"}, {"source": "metaid_0000049", "role": "product", "id": "_178611", "value": "1.0", "target": "metaid_0000038"}, {"source": "metaid_0000045", "role": "product", "id": "_178467", "value": "1.0", "target": "metaid_0000042"}, {"source": "metaid_0000036", "role": "reactant", "id": "_178455", "value": "1.0", "target": "metaid_0000045"}, {"source": "metaid_0000038", "role": "reactant", "id": "_178636", "value": "1.0", "target": "metaid_0000050"}, {"source": "metaid_0000048", "role": "product", "id": "_178587", "value": "1.0", "target": "metaid_0000035"}, {"source": "metaid_0000036", "role": "reactant", "id": "_178575", "value": "1.0", "target": "metaid_0000048"}, {"source": "metaid_0000044", "role": "product", "id": "_178430", "value": "1.0", "target": "metaid_0000036"}, {"source": "metaid_0000035", "role": "reactant", "id": "_178418", "value": "1.0", "target": "metaid_0000044"}, {"source": "metaid_0000043", "role": "reactant", "id": "_178734", "value": "1.0", "target": "metaid_0000053"}, {"source": "metaid_0000047", "role": "product", "id": "_178551", "value": "1.0", "target": "metaid_0000036"}, {"source": "metaid_0000042", "role": "reactant", "id": "_178539", "value": "1.0", "target": "metaid_0000047"}, {"source": "metaid_0000052", "role": "product", "id": "_178698", "value": "1.0", "target": "metaid_0000043"}, {"source": "metaid_0000046", "role": "product", "id": "_178503", "value": "1.0", "target": "metaid_0000036"}, {"source": "metaid_0000042", "role": "reactant", "id": "_178491", "value": "1.0", "target": "metaid_0000046"}]}
+{
+    "links": [
+        {
+            "id": "_178674", 
+            "role": "reactant", 
+            "source": "metaid_0000038", 
+            "target": "metaid_0000051", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_178611", 
+            "role": "product", 
+            "source": "metaid_0000049", 
+            "target": "metaid_0000038", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_178467", 
+            "role": "product", 
+            "source": "metaid_0000045", 
+            "target": "metaid_0000042", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_178455", 
+            "role": "reactant", 
+            "source": "metaid_0000036", 
+            "target": "metaid_0000045", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_178636", 
+            "role": "reactant", 
+            "source": "metaid_0000038", 
+            "target": "metaid_0000050", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_178649", 
+            "role": "modifier", 
+            "source": "metaid_0000036", 
+            "target": "metaid_0000050", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_178587", 
+            "role": "product", 
+            "source": "metaid_0000048", 
+            "target": "metaid_0000035", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_178575", 
+            "role": "reactant", 
+            "source": "metaid_0000036", 
+            "target": "metaid_0000048", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_178430", 
+            "role": "product", 
+            "source": "metaid_0000044", 
+            "target": "metaid_0000036", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_178418", 
+            "role": "reactant", 
+            "source": "metaid_0000035", 
+            "target": "metaid_0000044", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_178734", 
+            "role": "reactant", 
+            "source": "metaid_0000043", 
+            "target": "metaid_0000053", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_178551", 
+            "role": "product", 
+            "source": "metaid_0000047", 
+            "target": "metaid_0000036", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_178539", 
+            "role": "reactant", 
+            "source": "metaid_0000042", 
+            "target": "metaid_0000047", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_178698", 
+            "role": "product", 
+            "source": "metaid_0000052", 
+            "target": "metaid_0000043", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_178710", 
+            "role": "modifier", 
+            "source": "metaid_0000036", 
+            "target": "metaid_0000052", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_178503", 
+            "role": "product", 
+            "source": "metaid_0000046", 
+            "target": "metaid_0000036", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_178491", 
+            "role": "reactant", 
+            "source": "metaid_0000042", 
+            "target": "metaid_0000046", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_178515", 
+            "role": "modifier", 
+            "source": "metaid_0000038", 
+            "target": "metaid_0000046", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "metaid_0000034", 
+            "id": "metaid_0000035", 
+            "species_name": "Extracellular Calcium"
+        }, 
+        {
+            "id": "metaid_0000051", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_178674"
+            ], 
+            "reaction_name": "Ca independent IP3 degradation"
+        }, 
+        {
+            "id": "metaid_0000049", 
+            "modifiers": [], 
+            "products": [
+                "_178611"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Agonist stimulated production of IP3"
+        }, 
+        {
+            "id": "metaid_0000045", 
+            "modifiers": [], 
+            "products": [
+                "_178467"
+            ], 
+            "reactants": [
+                "_178455"
+            ], 
+            "reaction_name": "Calcium transport to internal store"
+        }, 
+        {
+            "compartment": "metaid_0000032", 
+            "id": "metaid_0000038", 
+            "species_name": "IP3"
+        }, 
+        {
+            "id": "metaid_0000050", 
+            "modifiers": [
+                "_178649"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_178636"
+            ], 
+            "reaction_name": "Ca-dependant IP3 degradation"
+        }, 
+        {
+            "id": "metaid_0000048", 
+            "modifiers": [], 
+            "products": [
+                "_178587"
+            ], 
+            "reactants": [
+                "_178575"
+            ], 
+            "reaction_name": "Calcium efflux"
+        }, 
+        {
+            "id": "metaid_0000044", 
+            "modifiers": [], 
+            "products": [
+                "_178430"
+            ], 
+            "reactants": [
+                "_178418"
+            ], 
+            "reaction_name": "Calcium Influx"
+        }, 
+        {
+            "id": "metaid_0000053", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_178734"
+            ], 
+            "reaction_name": "Phosphatase activity"
+        }, 
+        {
+            "compartment": "metaid_0000032", 
+            "id": "metaid_0000043", 
+            "species_name": "Glycogen Phosphorylase"
+        }, 
+        {
+            "id": "metaid_0000047", 
+            "modifiers": [], 
+            "products": [
+                "_178551"
+            ], 
+            "reactants": [
+                "_178539"
+            ], 
+            "reaction_name": "Calcium leak"
+        }, 
+        {
+            "id": "metaid_0000052", 
+            "modifiers": [
+                "_178710"
+            ], 
+            "products": [
+                "_178698"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Phosphorylase kinase activity"
+        }, 
+        {
+            "compartment": "metaid_0000033", 
+            "id": "metaid_0000042", 
+            "species_name": "Intravesicular Calcium"
+        }, 
+        {
+            "compartment": "metaid_0000032", 
+            "id": "metaid_0000036", 
+            "species_name": "Cytosolic Calcium"
+        }, 
+        {
+            "id": "metaid_0000046", 
+            "modifiers": [
+                "_178515"
+            ], 
+            "products": [
+                "_178503"
+            ], 
+            "reactants": [
+                "_178491"
+            ], 
+            "reaction_name": "Calcium transport to cytosol"
+        }
+    ]
+}

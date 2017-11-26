@@ -1,1 +1,737 @@
-{"nodes": [{"compartment": "_100268", "species_name": "MKK", "id": "_100304"}, {"reaction_name": "7", "reactants": ["_100781"], "modifiers": [], "products": ["_100794"], "id": "COPASI4"}, {"reaction_name": "3", "reactants": ["_100508"], "modifiers": [], "products": ["_100521"], "id": "COPASI3"}, {"reaction_name": "4", "reactants": ["_100651"], "modifiers": [], "products": ["_100664"], "id": "_100638"}, {"compartment": "_100268", "species_name": "MKKK", "id": "_100280"}, {"reaction_name": "1", "reactants": ["_100417"], "modifiers": [], "products": ["_100430"], "id": "COPASI2"}, {"reaction_name": "9", "reactants": ["_101206"], "modifiers": [], "products": ["_101218"], "id": "COPASI9"}, {"compartment": "_100268", "species_name": "P1", "id": "_100378"}, {"compartment": "_100268", "species_name": "MKKK_P", "id": "_100292"}, {"compartment": "_100268", "species_name": "M", "id": "_100340"}, {"reaction_name": "6", "reactants": ["_101121"], "modifiers": [], "products": ["_101133"], "id": "COPASI8"}, {"compartment": "_100268", "species_name": "M_P", "id": "_100352"}, {"reaction_name": "10", "reactants": ["_101302"], "modifiers": [], "products": ["_101314"], "id": "COPASI10"}, {"compartment": "_100268", "species_name": "MKK_PP", "id": "_100328"}, {"compartment": "_100268", "species_name": "P2", "id": "_100391"}, {"compartment": "_100268", "species_name": "P3", "id": "_100404"}, {"reaction_name": "5", "reactants": ["_101035"], "modifiers": [], "products": ["_101047"], "id": "COPASI7"}, {"compartment": "_100268", "species_name": "M_PP", "id": "_100365"}, {"reaction_name": "2", "reactants": ["_100961"], "modifiers": [], "products": ["_100973"], "id": "COPASI6"}, {"compartment": "_100268", "species_name": "MKK_P", "id": "_100316"}, {"reaction_name": "8", "reactants": ["_100872"], "modifiers": [], "products": ["_100885"], "id": "COPASI5"}], "links": [{"source": "COPASI4", "role": "product", "id": "_100794", "value": "1.0", "target": "_100352"}, {"source": "_100340", "role": "reactant", "id": "_100781", "value": "1.0", "target": "COPASI4"}, {"source": "COPASI3", "role": "product", "id": "_100521", "value": "1.0", "target": "_100316"}, {"source": "_100304", "role": "reactant", "id": "_100508", "value": "1.0", "target": "COPASI3"}, {"source": "_100638", "role": "product", "id": "_100664", "value": "1.0", "target": "_100328"}, {"source": "_100316", "role": "reactant", "id": "_100651", "value": "1.0", "target": "_100638"}, {"source": "COPASI2", "role": "product", "id": "_100430", "value": "1.0", "target": "_100292"}, {"source": "_100280", "role": "reactant", "id": "_100417", "value": "1.0", "target": "COPASI2"}, {"source": "COPASI9", "role": "product", "id": "_101218", "value": "1.0", "target": "_100352"}, {"source": "_100365", "role": "reactant", "id": "_101206", "value": "1.0", "target": "COPASI9"}, {"source": "COPASI8", "role": "product", "id": "_101133", "value": "1.0", "target": "_100304"}, {"source": "_100316", "role": "reactant", "id": "_101121", "value": "1.0", "target": "COPASI8"}, {"source": "COPASI10", "role": "product", "id": "_101314", "value": "1.0", "target": "_100340"}, {"source": "_100352", "role": "reactant", "id": "_101302", "value": "1.0", "target": "COPASI10"}, {"source": "COPASI7", "role": "product", "id": "_101047", "value": "1.0", "target": "_100316"}, {"source": "_100328", "role": "reactant", "id": "_101035", "value": "1.0", "target": "COPASI7"}, {"source": "COPASI6", "role": "product", "id": "_100973", "value": "1.0", "target": "_100280"}, {"source": "_100292", "role": "reactant", "id": "_100961", "value": "1.0", "target": "COPASI6"}, {"source": "COPASI5", "role": "product", "id": "_100885", "value": "1.0", "target": "_100365"}, {"source": "_100352", "role": "reactant", "id": "_100872", "value": "1.0", "target": "COPASI5"}]}
+{
+    "links": [
+        {
+            "id": "_100794", 
+            "role": "product", 
+            "source": "COPASI4", 
+            "target": "_100352", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_100781", 
+            "role": "reactant", 
+            "source": "_100340", 
+            "target": "COPASI4", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_069421", 
+            "role": "modifier", 
+            "source": "_100340", 
+            "target": "COPASI4", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069409", 
+            "role": "modifier", 
+            "source": "_100328", 
+            "target": "COPASI4", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069433", 
+            "role": "modifier", 
+            "source": "_100352", 
+            "target": "COPASI4", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_100807", 
+            "role": "modifier", 
+            "source": "_100328", 
+            "target": "COPASI4", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_100820", 
+            "role": "modifier", 
+            "source": "_100352", 
+            "target": "COPASI4", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_100521", 
+            "role": "product", 
+            "source": "COPASI3", 
+            "target": "_100316", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_100508", 
+            "role": "reactant", 
+            "source": "_100304", 
+            "target": "COPASI3", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_100534", 
+            "role": "modifier", 
+            "source": "_100292", 
+            "target": "COPASI3", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069313", 
+            "role": "modifier", 
+            "source": "_100292", 
+            "target": "COPASI3", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069349", 
+            "role": "modifier", 
+            "source": "_100365", 
+            "target": "COPASI3", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069337", 
+            "role": "modifier", 
+            "source": "_100316", 
+            "target": "COPASI3", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_100560", 
+            "role": "modifier", 
+            "source": "_100365", 
+            "target": "COPASI3", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069325", 
+            "role": "modifier", 
+            "source": "_100304", 
+            "target": "COPASI3", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_100547", 
+            "role": "modifier", 
+            "source": "_100316", 
+            "target": "COPASI3", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_100664", 
+            "role": "product", 
+            "source": "_100638", 
+            "target": "_100328", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_100651", 
+            "role": "reactant", 
+            "source": "_100316", 
+            "target": "_100638", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_069397", 
+            "role": "modifier", 
+            "source": "_100365", 
+            "target": "_100638", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_100703", 
+            "role": "modifier", 
+            "source": "_100365", 
+            "target": "_100638", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069385", 
+            "role": "modifier", 
+            "source": "_100316", 
+            "target": "_100638", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_100677", 
+            "role": "modifier", 
+            "source": "_100292", 
+            "target": "_100638", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069373", 
+            "role": "modifier", 
+            "source": "_100304", 
+            "target": "_100638", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_100690", 
+            "role": "modifier", 
+            "source": "_100304", 
+            "target": "_100638", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069361", 
+            "role": "modifier", 
+            "source": "_100292", 
+            "target": "_100638", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_100430", 
+            "role": "product", 
+            "source": "COPASI2", 
+            "target": "_100292", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_100417", 
+            "role": "reactant", 
+            "source": "_100280", 
+            "target": "COPASI2", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_100443", 
+            "role": "modifier", 
+            "source": "_100365", 
+            "target": "COPASI2", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069289", 
+            "role": "modifier", 
+            "source": "_100280", 
+            "target": "COPASI2", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069301", 
+            "role": "modifier", 
+            "source": "_100365", 
+            "target": "COPASI2", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_101218", 
+            "role": "product", 
+            "source": "COPASI9", 
+            "target": "_100352", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_101206", 
+            "role": "reactant", 
+            "source": "_100365", 
+            "target": "COPASI9", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_101242", 
+            "role": "modifier", 
+            "source": "_100352", 
+            "target": "COPASI9", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069590", 
+            "role": "modifier", 
+            "source": "_100352", 
+            "target": "COPASI9", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_101254", 
+            "role": "modifier", 
+            "source": "_100340", 
+            "target": "COPASI9", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069602", 
+            "role": "modifier", 
+            "source": "_100365", 
+            "target": "COPASI9", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069577", 
+            "role": "modifier", 
+            "source": "_100404", 
+            "target": "COPASI9", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_101230", 
+            "role": "modifier", 
+            "source": "_100404", 
+            "target": "COPASI9", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_101133", 
+            "role": "product", 
+            "source": "COPASI8", 
+            "target": "_100304", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_101121", 
+            "role": "reactant", 
+            "source": "_100316", 
+            "target": "COPASI8", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_069565", 
+            "role": "modifier", 
+            "source": "_100391", 
+            "target": "COPASI8", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_101145", 
+            "role": "modifier", 
+            "source": "_100391", 
+            "target": "COPASI8", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069541", 
+            "role": "modifier", 
+            "source": "_100316", 
+            "target": "COPASI8", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069553", 
+            "role": "modifier", 
+            "source": "_100328", 
+            "target": "COPASI8", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_101157", 
+            "role": "modifier", 
+            "source": "_100328", 
+            "target": "COPASI8", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_101314", 
+            "role": "product", 
+            "source": "COPASI10", 
+            "target": "_100340", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_101302", 
+            "role": "reactant", 
+            "source": "_100352", 
+            "target": "COPASI10", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_101350", 
+            "role": "modifier", 
+            "source": "_100340", 
+            "target": "COPASI10", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069614", 
+            "role": "modifier", 
+            "source": "_100404", 
+            "target": "COPASI10", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069638", 
+            "role": "modifier", 
+            "source": "_100365", 
+            "target": "COPASI10", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_101326", 
+            "role": "modifier", 
+            "source": "_100404", 
+            "target": "COPASI10", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_101338", 
+            "role": "modifier", 
+            "source": "_100365", 
+            "target": "COPASI10", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069626", 
+            "role": "modifier", 
+            "source": "_100352", 
+            "target": "COPASI10", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_101047", 
+            "role": "product", 
+            "source": "COPASI7", 
+            "target": "_100316", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_101035", 
+            "role": "reactant", 
+            "source": "_100328", 
+            "target": "COPASI7", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_069517", 
+            "role": "modifier", 
+            "source": "_100328", 
+            "target": "COPASI7", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_101059", 
+            "role": "modifier", 
+            "source": "_100391", 
+            "target": "COPASI7", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069529", 
+            "role": "modifier", 
+            "source": "_100391", 
+            "target": "COPASI7", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069505", 
+            "role": "modifier", 
+            "source": "_100316", 
+            "target": "COPASI7", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_101071", 
+            "role": "modifier", 
+            "source": "_100316", 
+            "target": "COPASI7", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_100973", 
+            "role": "product", 
+            "source": "COPASI6", 
+            "target": "_100280", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_100961", 
+            "role": "reactant", 
+            "source": "_100292", 
+            "target": "COPASI6", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_069481", 
+            "role": "modifier", 
+            "source": "_100292", 
+            "target": "COPASI6", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069493", 
+            "role": "modifier", 
+            "source": "_100378", 
+            "target": "COPASI6", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_100985", 
+            "role": "modifier", 
+            "source": "_100378", 
+            "target": "COPASI6", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_100885", 
+            "role": "product", 
+            "source": "COPASI5", 
+            "target": "_100365", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_100872", 
+            "role": "reactant", 
+            "source": "_100352", 
+            "target": "COPASI5", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_100898", 
+            "role": "modifier", 
+            "source": "_100328", 
+            "target": "COPASI5", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069469", 
+            "role": "modifier", 
+            "source": "_100352", 
+            "target": "COPASI5", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069457", 
+            "role": "modifier", 
+            "source": "_100340", 
+            "target": "COPASI5", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_069445", 
+            "role": "modifier", 
+            "source": "_100328", 
+            "target": "COPASI5", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_100910", 
+            "role": "modifier", 
+            "source": "_100340", 
+            "target": "COPASI5", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "_100268", 
+            "id": "_100304", 
+            "species_name": "MKK"
+        }, 
+        {
+            "id": "COPASI4", 
+            "modifiers": [
+                "_069421", 
+                "_069409", 
+                "_069433", 
+                "_100807", 
+                "_100820"
+            ], 
+            "products": [
+                "_100794"
+            ], 
+            "reactants": [
+                "_100781"
+            ], 
+            "reaction_name": "7"
+        }, 
+        {
+            "id": "COPASI3", 
+            "modifiers": [
+                "_100534", 
+                "_069313", 
+                "_069349", 
+                "_069337", 
+                "_100560", 
+                "_069325", 
+                "_100547"
+            ], 
+            "products": [
+                "_100521"
+            ], 
+            "reactants": [
+                "_100508"
+            ], 
+            "reaction_name": "3"
+        }, 
+        {
+            "id": "_100638", 
+            "modifiers": [
+                "_069397", 
+                "_100703", 
+                "_069385", 
+                "_100677", 
+                "_069373", 
+                "_100690", 
+                "_069361"
+            ], 
+            "products": [
+                "_100664"
+            ], 
+            "reactants": [
+                "_100651"
+            ], 
+            "reaction_name": "4"
+        }, 
+        {
+            "compartment": "_100268", 
+            "id": "_100280", 
+            "species_name": "MKKK"
+        }, 
+        {
+            "id": "COPASI2", 
+            "modifiers": [
+                "_100443", 
+                "_069289", 
+                "_069301"
+            ], 
+            "products": [
+                "_100430"
+            ], 
+            "reactants": [
+                "_100417"
+            ], 
+            "reaction_name": "1"
+        }, 
+        {
+            "id": "COPASI9", 
+            "modifiers": [
+                "_101242", 
+                "_069590", 
+                "_101254", 
+                "_069602", 
+                "_069577", 
+                "_101230"
+            ], 
+            "products": [
+                "_101218"
+            ], 
+            "reactants": [
+                "_101206"
+            ], 
+            "reaction_name": "9"
+        }, 
+        {
+            "compartment": "_100268", 
+            "id": "_100378", 
+            "species_name": "P1"
+        }, 
+        {
+            "compartment": "_100268", 
+            "id": "_100292", 
+            "species_name": "MKKK_P"
+        }, 
+        {
+            "compartment": "_100268", 
+            "id": "_100340", 
+            "species_name": "M"
+        }, 
+        {
+            "id": "COPASI8", 
+            "modifiers": [
+                "_069565", 
+                "_101145", 
+                "_069541", 
+                "_069553", 
+                "_101157"
+            ], 
+            "products": [
+                "_101133"
+            ], 
+            "reactants": [
+                "_101121"
+            ], 
+            "reaction_name": "6"
+        }, 
+        {
+            "compartment": "_100268", 
+            "id": "_100352", 
+            "species_name": "M_P"
+        }, 
+        {
+            "id": "COPASI10", 
+            "modifiers": [
+                "_101350", 
+                "_069614", 
+                "_069638", 
+                "_101326", 
+                "_101338", 
+                "_069626"
+            ], 
+            "products": [
+                "_101314"
+            ], 
+            "reactants": [
+                "_101302"
+            ], 
+            "reaction_name": "10"
+        }, 
+        {
+            "compartment": "_100268", 
+            "id": "_100328", 
+            "species_name": "MKK_PP"
+        }, 
+        {
+            "compartment": "_100268", 
+            "id": "_100391", 
+            "species_name": "P2"
+        }, 
+        {
+            "compartment": "_100268", 
+            "id": "_100404", 
+            "species_name": "P3"
+        }, 
+        {
+            "id": "COPASI7", 
+            "modifiers": [
+                "_069517", 
+                "_101059", 
+                "_069529", 
+                "_069505", 
+                "_101071"
+            ], 
+            "products": [
+                "_101047"
+            ], 
+            "reactants": [
+                "_101035"
+            ], 
+            "reaction_name": "5"
+        }, 
+        {
+            "compartment": "_100268", 
+            "id": "_100365", 
+            "species_name": "M_PP"
+        }, 
+        {
+            "id": "COPASI6", 
+            "modifiers": [
+                "_069481", 
+                "_069493", 
+                "_100985"
+            ], 
+            "products": [
+                "_100973"
+            ], 
+            "reactants": [
+                "_100961"
+            ], 
+            "reaction_name": "2"
+        }, 
+        {
+            "compartment": "_100268", 
+            "id": "_100316", 
+            "species_name": "MKK_P"
+        }, 
+        {
+            "id": "COPASI5", 
+            "modifiers": [
+                "_100898", 
+                "_069469", 
+                "_069457", 
+                "_069445", 
+                "_100910"
+            ], 
+            "products": [
+                "_100885"
+            ], 
+            "reactants": [
+                "_100872"
+            ], 
+            "reaction_name": "8"
+        }
+    ]
+}

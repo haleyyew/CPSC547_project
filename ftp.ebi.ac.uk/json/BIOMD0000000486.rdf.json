@@ -1,1 +1,84 @@
-{"nodes": [{"reaction_name": "", "reactants": ["_137a5812_6ccc_40f0_ba57_edd6d5724081"], "modifiers": [], "products": ["a3248223_b4f9_4d09_b6b9_bd706b413ff7"], "id": "dbda92b6_fc3d_4347_a64e_5bb475d32e36"}, {"reaction_name": "", "reactants": ["dc655e26_6452_4df0_a534_7af37d8b70e0"], "modifiers": [], "products": ["f035e3c6_c2b6_446f_875b_fcd30f224a24"], "id": "_6b21dd41_912a_4a54_a7fb_3d83f709dde9"}, {"compartment": "_8b67143e_6423_4200_b513_b71068420604", "species_name": "A", "id": "c1596e14_d9db_4ad1_a9df_5e7f6e59ac27"}, {"compartment": "_8b67143e_6423_4200_b513_b71068420604", "species_name": "B", "id": "de909fc4_4564_43fc_bfee_b26fd064cde4"}], "links": [{"source": "dbda92b6_fc3d_4347_a64e_5bb475d32e36", "role": "product", "id": "a3248223_b4f9_4d09_b6b9_bd706b413ff7", "value": "1.0", "target": "de909fc4_4564_43fc_bfee_b26fd064cde4"}, {"source": "c1596e14_d9db_4ad1_a9df_5e7f6e59ac27", "role": "reactant", "id": "_137a5812_6ccc_40f0_ba57_edd6d5724081", "value": "1.0", "target": "dbda92b6_fc3d_4347_a64e_5bb475d32e36"}, {"source": "_6b21dd41_912a_4a54_a7fb_3d83f709dde9", "role": "product", "id": "f035e3c6_c2b6_446f_875b_fcd30f224a24", "value": "1.0", "target": "c1596e14_d9db_4ad1_a9df_5e7f6e59ac27"}, {"source": "de909fc4_4564_43fc_bfee_b26fd064cde4", "role": "reactant", "id": "dc655e26_6452_4df0_a534_7af37d8b70e0", "value": "1.0", "target": "_6b21dd41_912a_4a54_a7fb_3d83f709dde9"}]}
+{
+    "links": [
+        {
+            "id": "a3248223_b4f9_4d09_b6b9_bd706b413ff7", 
+            "role": "product", 
+            "source": "dbda92b6_fc3d_4347_a64e_5bb475d32e36", 
+            "target": "de909fc4_4564_43fc_bfee_b26fd064cde4", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_137a5812_6ccc_40f0_ba57_edd6d5724081", 
+            "role": "reactant", 
+            "source": "c1596e14_d9db_4ad1_a9df_5e7f6e59ac27", 
+            "target": "dbda92b6_fc3d_4347_a64e_5bb475d32e36", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "a1cda884_51f6_4cac_9c1e_df503e3bca77", 
+            "role": "modifier", 
+            "source": "c1596e14_d9db_4ad1_a9df_5e7f6e59ac27", 
+            "target": "dbda92b6_fc3d_4347_a64e_5bb475d32e36", 
+            "value": 0.0
+        }, 
+        {
+            "id": "f035e3c6_c2b6_446f_875b_fcd30f224a24", 
+            "role": "product", 
+            "source": "_6b21dd41_912a_4a54_a7fb_3d83f709dde9", 
+            "target": "c1596e14_d9db_4ad1_a9df_5e7f6e59ac27", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "dc655e26_6452_4df0_a534_7af37d8b70e0", 
+            "role": "reactant", 
+            "source": "de909fc4_4564_43fc_bfee_b26fd064cde4", 
+            "target": "_6b21dd41_912a_4a54_a7fb_3d83f709dde9", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_0681df81_04fb_4ea9_9c4a_072dd19df7f9", 
+            "role": "modifier", 
+            "source": "de909fc4_4564_43fc_bfee_b26fd064cde4", 
+            "target": "_6b21dd41_912a_4a54_a7fb_3d83f709dde9", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "dbda92b6_fc3d_4347_a64e_5bb475d32e36", 
+            "modifiers": [
+                "a1cda884_51f6_4cac_9c1e_df503e3bca77"
+            ], 
+            "products": [
+                "a3248223_b4f9_4d09_b6b9_bd706b413ff7"
+            ], 
+            "reactants": [
+                "_137a5812_6ccc_40f0_ba57_edd6d5724081"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "_6b21dd41_912a_4a54_a7fb_3d83f709dde9", 
+            "modifiers": [
+                "_0681df81_04fb_4ea9_9c4a_072dd19df7f9"
+            ], 
+            "products": [
+                "f035e3c6_c2b6_446f_875b_fcd30f224a24"
+            ], 
+            "reactants": [
+                "dc655e26_6452_4df0_a534_7af37d8b70e0"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "_8b67143e_6423_4200_b513_b71068420604", 
+            "id": "c1596e14_d9db_4ad1_a9df_5e7f6e59ac27", 
+            "species_name": "A"
+        }, 
+        {
+            "compartment": "_8b67143e_6423_4200_b513_b71068420604", 
+            "id": "de909fc4_4564_43fc_bfee_b26fd064cde4", 
+            "species_name": "B"
+        }
+    ]
+}

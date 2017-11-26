@@ -1,1 +1,48 @@
-{"nodes": [{"compartment": "metaid_0000003", "species_name": "cytosolic free ca concentration", "id": "metaid_0000006"}, {"reaction_name": "ER Ca2+ concentration", "reactants": [], "modifiers": [], "products": ["_026718"], "id": "metaid_0000094"}, {"reaction_name": "cytosolic free Ca2+ concentration", "reactants": [], "modifiers": [], "products": ["_026694"], "id": "metaid_0000093"}, {"compartment": "metaid_0000003", "species_name": "ER ca concentration", "id": "metaid_0000007"}], "links": [{"source": "metaid_0000094", "role": "product", "id": "_026718", "value": "1.0", "target": "metaid_0000007"}, {"source": "metaid_0000093", "role": "product", "id": "_026694", "value": "1.0", "target": "metaid_0000006"}]}
+{
+    "links": [
+        {
+            "id": "_026718", 
+            "role": "product", 
+            "source": "metaid_0000094", 
+            "target": "metaid_0000007", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_026694", 
+            "role": "product", 
+            "source": "metaid_0000093", 
+            "target": "metaid_0000006", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000006", 
+            "species_name": "cytosolic free ca concentration"
+        }, 
+        {
+            "id": "metaid_0000094", 
+            "modifiers": [], 
+            "products": [
+                "_026718"
+            ], 
+            "reactants": [], 
+            "reaction_name": "ER Ca2+ concentration"
+        }, 
+        {
+            "id": "metaid_0000093", 
+            "modifiers": [], 
+            "products": [
+                "_026694"
+            ], 
+            "reactants": [], 
+            "reaction_name": "cytosolic free Ca2+ concentration"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000007", 
+            "species_name": "ER ca concentration"
+        }
+    ]
+}

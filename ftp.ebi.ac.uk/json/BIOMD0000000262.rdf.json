@@ -1,1 +1,358 @@
-{"nodes": [{"compartment": "_989931", "species_name": "pAkt_S6", "id": "_989941"}, {"compartment": "_989931", "species_name": "S6", "id": "_989940"}, {"compartment": "_989931", "species_name": "pEGFR_Akt", "id": "_989935"}, {"reaction_name": "pAkt+S6", "reactants": ["_0550ac17-ca90-4233-ba0f-969c03c27cfc", "_39f014f8-0a69-4038-80ed-a97be1a0dc3a"], "modifiers": [], "products": ["_3872b947-7682-44c9-87b7-2a435aa0d07b"], "id": "_989954"}, {"reaction_name": "EGF+EGFR", "reactants": ["_591b6439-44d3-4d36-8e4a-76408412a0fb", "_6aa31ec2-afc1-4856-984f-686407e94d2f"], "modifiers": [], "products": ["_74174690-7dbf-419d-b64a-ba9e5a0bcc37"], "id": "_989948"}, {"compartment": "_989931", "species_name": "pEGFR", "id": "_989934"}, {"reaction_name": "S6_phosphorylation", "reactants": ["f6ff05f4-83f4-4fad-96e4-cd667339232f"], "modifiers": [], "products": ["_65467e98-e173-4c76-9c80-07b6556a7d22", "_4d3de783-2001-48c2-90e9-fc58ad0886f6"], "id": "_989957"}, {"compartment": "_989931", "species_name": "EGF_EGFR", "id": "_989946"}, {"compartment": "_989931", "species_name": "Akt", "id": "_989936"}, {"reaction_name": "pS6_dephospho", "reactants": ["b9277453-6582-4302-b3bd-2ad841e2695c"], "modifiers": [], "products": ["a2b7c47d-3bc1-4f66-bc78-516e8ee6d5d9"], "id": "_989959"}, {"compartment": "_989931", "species_name": "pro_EGFR", "id": "_989945"}, {"reaction_name": "pAkt_dephospho", "reactants": ["_7c9f273a-070c-4ff6-b82c-c5219a519e26"], "modifiers": [], "products": ["e40307eb-afa4-4dce-81c0-7bb9fab466a7"], "id": "_989958"}, {"reaction_name": "EGFR_degradation", "reactants": ["_4e105482-5ce1-4742-abfb-9eb537b256fd"], "modifiers": [], "products": [], "id": "_989964"}, {"reaction_name": "EGFR_synthesis", "reactants": ["af68d179-6762-4f41-b18f-5e725c54e4f5"], "modifiers": [], "products": ["_5913e4a6-fce3-4a63-9c89-8ec96820d432"], "id": "_989962"}, {"reaction_name": "EGFR_phosphorylation", "reactants": ["c424f63c-183e-4d92-9d78-7770f78ce021"], "modifiers": [], "products": ["aa5e11dc-d390-47d2-9069-3c2b79f38ed4"], "id": "_989963"}, {"compartment": "_989931", "species_name": "EGFR", "id": "_989933"}, {"reaction_name": "pEGFR_degradation", "reactants": ["_94943fa7-5855-481a-9ab3-1bb8c7988cca"], "modifiers": [], "products": [], "id": "_989953"}, {"reaction_name": "pEGFR+Akt", "reactants": ["c54f9745-3952-465f-abe3-4fa2f8c87446", "db605183-dbef-4738-a52d-7e25559eaf20"], "modifiers": [], "products": ["_83f0e046-d114-45ff-bff0-40dacf70d51a"], "id": "_989951"}, {"compartment": "_989931", "species_name": "pAkt", "id": "_989939"}, {"compartment": "_989931", "species_name": "EGF", "id": "_989932"}, {"compartment": "_989931", "species_name": "pS6", "id": "_989942"}, {"reaction_name": "Akt_phosphorylation", "reactants": ["e3ebd36c-5a01-43b8-867e-ca346b5f51b3"], "modifiers": [], "products": ["_85e560bd-3169-4f00-a5b8-43e3a001ec57", "_362e88c2-583a-4c23-aade-ea19cc5d1fdc"], "id": "_989952"}], "links": [{"source": "_989954", "role": "product", "id": "_3872b947-7682-44c9-87b7-2a435aa0d07b", "value": "1.0", "target": "_989941"}, {"source": "_989940", "role": "reactant", "id": "_0550ac17-ca90-4233-ba0f-969c03c27cfc", "value": "1.0", "target": "_989954"}, {"source": "_989939", "role": "reactant", "id": "_39f014f8-0a69-4038-80ed-a97be1a0dc3a", "value": "1.0", "target": "_989954"}, {"source": "_989948", "role": "product", "id": "_74174690-7dbf-419d-b64a-ba9e5a0bcc37", "value": "1.0", "target": "_989946"}, {"source": "_989932", "role": "reactant", "id": "_591b6439-44d3-4d36-8e4a-76408412a0fb", "value": "1.0", "target": "_989948"}, {"source": "_989933", "role": "reactant", "id": "_6aa31ec2-afc1-4856-984f-686407e94d2f", "value": "1.0", "target": "_989948"}, {"source": "_989957", "role": "product", "id": "_65467e98-e173-4c76-9c80-07b6556a7d22", "value": "1.0", "target": "_989942"}, {"source": "_989957", "role": "product", "id": "_4d3de783-2001-48c2-90e9-fc58ad0886f6", "value": "1.0", "target": "_989939"}, {"source": "_989941", "role": "reactant", "id": "f6ff05f4-83f4-4fad-96e4-cd667339232f", "value": "1.0", "target": "_989957"}, {"source": "_989959", "role": "product", "id": "a2b7c47d-3bc1-4f66-bc78-516e8ee6d5d9", "value": "1.0", "target": "_989940"}, {"source": "_989942", "role": "reactant", "id": "b9277453-6582-4302-b3bd-2ad841e2695c", "value": "1.0", "target": "_989959"}, {"source": "_989958", "role": "product", "id": "e40307eb-afa4-4dce-81c0-7bb9fab466a7", "value": "1.0", "target": "_989936"}, {"source": "_989939", "role": "reactant", "id": "_7c9f273a-070c-4ff6-b82c-c5219a519e26", "value": "1.0", "target": "_989958"}, {"source": "_989933", "role": "reactant", "id": "_4e105482-5ce1-4742-abfb-9eb537b256fd", "value": "1.0", "target": "_989964"}, {"source": "_989962", "role": "product", "id": "_5913e4a6-fce3-4a63-9c89-8ec96820d432", "value": "1.0", "target": "_989933"}, {"source": "_989945", "role": "reactant", "id": "af68d179-6762-4f41-b18f-5e725c54e4f5", "value": "1.0", "target": "_989962"}, {"source": "_989963", "role": "product", "id": "aa5e11dc-d390-47d2-9069-3c2b79f38ed4", "value": "1.0", "target": "_989934"}, {"source": "_989946", "role": "reactant", "id": "c424f63c-183e-4d92-9d78-7770f78ce021", "value": "1.0", "target": "_989963"}, {"source": "_989934", "role": "reactant", "id": "_94943fa7-5855-481a-9ab3-1bb8c7988cca", "value": "1.0", "target": "_989953"}, {"source": "_989951", "role": "product", "id": "_83f0e046-d114-45ff-bff0-40dacf70d51a", "value": "1.0", "target": "_989935"}, {"source": "_989936", "role": "reactant", "id": "c54f9745-3952-465f-abe3-4fa2f8c87446", "value": "1.0", "target": "_989951"}, {"source": "_989934", "role": "reactant", "id": "db605183-dbef-4738-a52d-7e25559eaf20", "value": "1.0", "target": "_989951"}, {"source": "_989952", "role": "product", "id": "_85e560bd-3169-4f00-a5b8-43e3a001ec57", "value": "1.0", "target": "_989934"}, {"source": "_989952", "role": "product", "id": "_362e88c2-583a-4c23-aade-ea19cc5d1fdc", "value": "1.0", "target": "_989939"}, {"source": "_989935", "role": "reactant", "id": "e3ebd36c-5a01-43b8-867e-ca346b5f51b3", "value": "1.0", "target": "_989952"}]}
+{
+    "links": [
+        {
+            "id": "_3872b947-7682-44c9-87b7-2a435aa0d07b", 
+            "role": "product", 
+            "source": "_989954", 
+            "target": "_989941", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_0550ac17-ca90-4233-ba0f-969c03c27cfc", 
+            "role": "reactant", 
+            "source": "_989940", 
+            "target": "_989954", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_39f014f8-0a69-4038-80ed-a97be1a0dc3a", 
+            "role": "reactant", 
+            "source": "_989939", 
+            "target": "_989954", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_74174690-7dbf-419d-b64a-ba9e5a0bcc37", 
+            "role": "product", 
+            "source": "_989948", 
+            "target": "_989946", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_591b6439-44d3-4d36-8e4a-76408412a0fb", 
+            "role": "reactant", 
+            "source": "_989932", 
+            "target": "_989948", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_6aa31ec2-afc1-4856-984f-686407e94d2f", 
+            "role": "reactant", 
+            "source": "_989933", 
+            "target": "_989948", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_65467e98-e173-4c76-9c80-07b6556a7d22", 
+            "role": "product", 
+            "source": "_989957", 
+            "target": "_989942", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_4d3de783-2001-48c2-90e9-fc58ad0886f6", 
+            "role": "product", 
+            "source": "_989957", 
+            "target": "_989939", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "f6ff05f4-83f4-4fad-96e4-cd667339232f", 
+            "role": "reactant", 
+            "source": "_989941", 
+            "target": "_989957", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "a2b7c47d-3bc1-4f66-bc78-516e8ee6d5d9", 
+            "role": "product", 
+            "source": "_989959", 
+            "target": "_989940", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "b9277453-6582-4302-b3bd-2ad841e2695c", 
+            "role": "reactant", 
+            "source": "_989942", 
+            "target": "_989959", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "e40307eb-afa4-4dce-81c0-7bb9fab466a7", 
+            "role": "product", 
+            "source": "_989958", 
+            "target": "_989936", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_7c9f273a-070c-4ff6-b82c-c5219a519e26", 
+            "role": "reactant", 
+            "source": "_989939", 
+            "target": "_989958", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_4e105482-5ce1-4742-abfb-9eb537b256fd", 
+            "role": "reactant", 
+            "source": "_989933", 
+            "target": "_989964", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_5913e4a6-fce3-4a63-9c89-8ec96820d432", 
+            "role": "product", 
+            "source": "_989962", 
+            "target": "_989933", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "af68d179-6762-4f41-b18f-5e725c54e4f5", 
+            "role": "reactant", 
+            "source": "_989945", 
+            "target": "_989962", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "aa5e11dc-d390-47d2-9069-3c2b79f38ed4", 
+            "role": "product", 
+            "source": "_989963", 
+            "target": "_989934", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "c424f63c-183e-4d92-9d78-7770f78ce021", 
+            "role": "reactant", 
+            "source": "_989946", 
+            "target": "_989963", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_94943fa7-5855-481a-9ab3-1bb8c7988cca", 
+            "role": "reactant", 
+            "source": "_989934", 
+            "target": "_989953", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_83f0e046-d114-45ff-bff0-40dacf70d51a", 
+            "role": "product", 
+            "source": "_989951", 
+            "target": "_989935", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "c54f9745-3952-465f-abe3-4fa2f8c87446", 
+            "role": "reactant", 
+            "source": "_989936", 
+            "target": "_989951", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "db605183-dbef-4738-a52d-7e25559eaf20", 
+            "role": "reactant", 
+            "source": "_989934", 
+            "target": "_989951", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_85e560bd-3169-4f00-a5b8-43e3a001ec57", 
+            "role": "product", 
+            "source": "_989952", 
+            "target": "_989934", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_362e88c2-583a-4c23-aade-ea19cc5d1fdc", 
+            "role": "product", 
+            "source": "_989952", 
+            "target": "_989939", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "e3ebd36c-5a01-43b8-867e-ca346b5f51b3", 
+            "role": "reactant", 
+            "source": "_989935", 
+            "target": "_989952", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "_989931", 
+            "id": "_989941", 
+            "species_name": "pAkt_S6"
+        }, 
+        {
+            "compartment": "_989931", 
+            "id": "_989940", 
+            "species_name": "S6"
+        }, 
+        {
+            "compartment": "_989931", 
+            "id": "_989935", 
+            "species_name": "pEGFR_Akt"
+        }, 
+        {
+            "id": "_989954", 
+            "modifiers": [], 
+            "products": [
+                "_3872b947-7682-44c9-87b7-2a435aa0d07b"
+            ], 
+            "reactants": [
+                "_0550ac17-ca90-4233-ba0f-969c03c27cfc", 
+                "_39f014f8-0a69-4038-80ed-a97be1a0dc3a"
+            ], 
+            "reaction_name": "pAkt+S6"
+        }, 
+        {
+            "id": "_989948", 
+            "modifiers": [], 
+            "products": [
+                "_74174690-7dbf-419d-b64a-ba9e5a0bcc37"
+            ], 
+            "reactants": [
+                "_591b6439-44d3-4d36-8e4a-76408412a0fb", 
+                "_6aa31ec2-afc1-4856-984f-686407e94d2f"
+            ], 
+            "reaction_name": "EGF+EGFR"
+        }, 
+        {
+            "compartment": "_989931", 
+            "id": "_989934", 
+            "species_name": "pEGFR"
+        }, 
+        {
+            "id": "_989957", 
+            "modifiers": [], 
+            "products": [
+                "_65467e98-e173-4c76-9c80-07b6556a7d22", 
+                "_4d3de783-2001-48c2-90e9-fc58ad0886f6"
+            ], 
+            "reactants": [
+                "f6ff05f4-83f4-4fad-96e4-cd667339232f"
+            ], 
+            "reaction_name": "S6_phosphorylation"
+        }, 
+        {
+            "compartment": "_989931", 
+            "id": "_989946", 
+            "species_name": "EGF_EGFR"
+        }, 
+        {
+            "compartment": "_989931", 
+            "id": "_989936", 
+            "species_name": "Akt"
+        }, 
+        {
+            "id": "_989959", 
+            "modifiers": [], 
+            "products": [
+                "a2b7c47d-3bc1-4f66-bc78-516e8ee6d5d9"
+            ], 
+            "reactants": [
+                "b9277453-6582-4302-b3bd-2ad841e2695c"
+            ], 
+            "reaction_name": "pS6_dephospho"
+        }, 
+        {
+            "compartment": "_989931", 
+            "id": "_989945", 
+            "species_name": "pro_EGFR"
+        }, 
+        {
+            "id": "_989958", 
+            "modifiers": [], 
+            "products": [
+                "e40307eb-afa4-4dce-81c0-7bb9fab466a7"
+            ], 
+            "reactants": [
+                "_7c9f273a-070c-4ff6-b82c-c5219a519e26"
+            ], 
+            "reaction_name": "pAkt_dephospho"
+        }, 
+        {
+            "id": "_989964", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_4e105482-5ce1-4742-abfb-9eb537b256fd"
+            ], 
+            "reaction_name": "EGFR_degradation"
+        }, 
+        {
+            "id": "_989962", 
+            "modifiers": [], 
+            "products": [
+                "_5913e4a6-fce3-4a63-9c89-8ec96820d432"
+            ], 
+            "reactants": [
+                "af68d179-6762-4f41-b18f-5e725c54e4f5"
+            ], 
+            "reaction_name": "EGFR_synthesis"
+        }, 
+        {
+            "id": "_989963", 
+            "modifiers": [], 
+            "products": [
+                "aa5e11dc-d390-47d2-9069-3c2b79f38ed4"
+            ], 
+            "reactants": [
+                "c424f63c-183e-4d92-9d78-7770f78ce021"
+            ], 
+            "reaction_name": "EGFR_phosphorylation"
+        }, 
+        {
+            "compartment": "_989931", 
+            "id": "_989933", 
+            "species_name": "EGFR"
+        }, 
+        {
+            "id": "_989953", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_94943fa7-5855-481a-9ab3-1bb8c7988cca"
+            ], 
+            "reaction_name": "pEGFR_degradation"
+        }, 
+        {
+            "id": "_989951", 
+            "modifiers": [], 
+            "products": [
+                "_83f0e046-d114-45ff-bff0-40dacf70d51a"
+            ], 
+            "reactants": [
+                "c54f9745-3952-465f-abe3-4fa2f8c87446", 
+                "db605183-dbef-4738-a52d-7e25559eaf20"
+            ], 
+            "reaction_name": "pEGFR+Akt"
+        }, 
+        {
+            "compartment": "_989931", 
+            "id": "_989939", 
+            "species_name": "pAkt"
+        }, 
+        {
+            "compartment": "_989931", 
+            "id": "_989932", 
+            "species_name": "EGF"
+        }, 
+        {
+            "compartment": "_989931", 
+            "id": "_989942", 
+            "species_name": "pS6"
+        }, 
+        {
+            "id": "_989952", 
+            "modifiers": [], 
+            "products": [
+                "_85e560bd-3169-4f00-a5b8-43e3a001ec57", 
+                "_362e88c2-583a-4c23-aade-ea19cc5d1fdc"
+            ], 
+            "reactants": [
+                "e3ebd36c-5a01-43b8-867e-ca346b5f51b3"
+            ], 
+            "reaction_name": "Akt_phosphorylation"
+        }
+    ]
+}

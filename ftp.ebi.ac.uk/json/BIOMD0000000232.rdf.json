@@ -1,1 +1,510 @@
-{"nodes": [{"compartment": "metaid_mitochondrion", "species_name": "pyruvate", "id": "metaid_Pyr"}, {"compartment": "metaid_cytoplasm", "species_name": "H+", "id": "metaid_He"}, {"reaction_name": "v8", "reactants": ["_095864"], "modifiers": [], "products": [], "id": "_304718"}, {"reaction_name": "v5", "reactants": ["_095696", "_095684", "_095708"], "modifiers": [], "products": ["_095744", "_095720", "_095732"], "id": "_304709"}, {"compartment": "metaid_mitochondrion", "species_name": "alpha-ketoglutarate", "id": "metaid_KG"}, {"compartment": "metaid_mitochondrion", "species_name": "H+", "id": "metaid_H"}, {"compartment": "metaid_mitochondrion", "species_name": "water", "id": "metaid_H2O"}, {"reaction_name": "v6", "reactants": ["_095768"], "modifiers": [], "products": ["_095780"], "id": "_304712"}, {"compartment": "metaid_mitochondrion", "species_name": "oxygen", "id": "metaid_O2"}, {"compartment": "metaid_mitochondrion", "species_name": "ATP", "id": "metaid_ATP"}, {"reaction_name": "v4", "reactants": ["_095637", "_095625"], "modifiers": [], "products": ["_095660", "_095648"], "id": "_304706"}, {"compartment": "metaid_mitochondrion", "species_name": "NADH", "id": "metaid_NADH"}, {"compartment": "metaid_mitochondrion", "species_name": "NAD(+)", "id": "metaid_NAD"}, {"reaction_name": "vATP", "reactants": ["_095973", "_095997", "_095985"], "modifiers": [], "products": ["_096009", "_096033", "_096021"], "id": "_304724"}, {"compartment": "metaid_mitochondrion", "species_name": "ADP", "id": "metaid_ADP"}, {"reaction_name": "vANT", "reactants": ["_096058"], "modifiers": [], "products": ["_096071"], "id": "_304727"}, {"compartment": "metaid_mitochondrion", "species_name": "phosphate", "id": "metaid_iP"}, {"reaction_name": "v2", "reactants": ["_095529", "_095517"], "modifiers": [], "products": ["_095553", "_095541"], "id": "_304704"}, {"compartment": "metaid_mitochondrion", "species_name": "acetyl-CoA", "id": "metaid_AcCoA"}, {"reaction_name": "v7", "reactants": ["_095816", "_095804"], "modifiers": [], "products": ["_095840", "_095828"], "id": "_304715"}, {"reaction_name": "v3", "reactants": ["_095577", "_095589"], "modifiers": [], "products": ["_095601"], "id": "_304705"}, {"compartment": "metaid_mitochondrion", "species_name": "citrate", "id": "metaid_Cit"}, {"reaction_name": "vresp", "reactants": ["_095913", "_095901", "_095888"], "modifiers": [], "products": ["_095949", "_095925", "_095937"], "id": "_304721"}, {"compartment": "metaid_mitochondrion", "species_name": "oxaloacetate", "id": "metaid_OAA"}, {"reaction_name": "vleak", "reactants": ["_096095"], "modifiers": [], "products": ["_096107"], "id": "_304730"}, {"reaction_name": "v1", "reactants": [], "modifiers": [], "products": ["_095493"], "id": "_304703"}], "links": [{"source": "metaid_OAA", "role": "reactant", "id": "_095864", "value": "1.0", "target": "_304718"}, {"source": "_304709", "role": "product", "id": "_095744", "value": "2.0", "target": "metaid_NADH"}, {"source": "_304709", "role": "product", "id": "_095720", "value": "1.0", "target": "metaid_OAA"}, {"source": "_304709", "role": "product", "id": "_095732", "value": "1.0", "target": "metaid_ATP"}, {"source": "metaid_ADP", "role": "reactant", "id": "_095696", "value": "1.0", "target": "_304709"}, {"source": "metaid_KG", "role": "reactant", "id": "_095684", "value": "1.0", "target": "_304709"}, {"source": "metaid_NAD", "role": "reactant", "id": "_095708", "value": "2.0", "target": "_304709"}, {"source": "_304712", "role": "product", "id": "_095780", "value": "1.0", "target": "metaid_KG"}, {"source": "metaid_OAA", "role": "reactant", "id": "_095768", "value": "1.0", "target": "_304712"}, {"source": "_304706", "role": "product", "id": "_095660", "value": "1.0", "target": "metaid_NADH"}, {"source": "_304706", "role": "product", "id": "_095648", "value": "1.0", "target": "metaid_KG"}, {"source": "metaid_NAD", "role": "reactant", "id": "_095637", "value": "1.0", "target": "_304706"}, {"source": "metaid_Cit", "role": "reactant", "id": "_095625", "value": "1.0", "target": "_304706"}, {"source": "_304724", "role": "product", "id": "_096009", "value": "1.0", "target": "metaid_ATP"}, {"source": "_304724", "role": "product", "id": "_096033", "value": "3.0", "target": "metaid_H"}, {"source": "_304724", "role": "product", "id": "_096021", "value": "1.0", "target": "metaid_H2O"}, {"source": "metaid_ADP", "role": "reactant", "id": "_095973", "value": "1.0", "target": "_304724"}, {"source": "metaid_He", "role": "reactant", "id": "_095997", "value": "3.0", "target": "_304724"}, {"source": "metaid_iP", "role": "reactant", "id": "_095985", "value": "1.0", "target": "_304724"}, {"source": "_304727", "role": "product", "id": "_096071", "value": "1.0", "target": "metaid_ADP"}, {"source": "metaid_ATP", "role": "reactant", "id": "_096058", "value": "1.0", "target": "_304727"}, {"source": "_304704", "role": "product", "id": "_095553", "value": "1.0", "target": "metaid_NADH"}, {"source": "_304704", "role": "product", "id": "_095541", "value": "1.0", "target": "metaid_AcCoA"}, {"source": "metaid_NAD", "role": "reactant", "id": "_095529", "value": "1.0", "target": "_304704"}, {"source": "metaid_Pyr", "role": "reactant", "id": "_095517", "value": "1.0", "target": "_304704"}, {"source": "_304715", "role": "product", "id": "_095840", "value": "1.0", "target": "metaid_ADP"}, {"source": "_304715", "role": "product", "id": "_095828", "value": "1.0", "target": "metaid_OAA"}, {"source": "metaid_ATP", "role": "reactant", "id": "_095816", "value": "1.0", "target": "_304715"}, {"source": "metaid_Pyr", "role": "reactant", "id": "_095804", "value": "1.0", "target": "_304715"}, {"source": "_304705", "role": "product", "id": "_095601", "value": "1.0", "target": "metaid_Cit"}, {"source": "metaid_OAA", "role": "reactant", "id": "_095577", "value": "1.0", "target": "_304705"}, {"source": "metaid_AcCoA", "role": "reactant", "id": "_095589", "value": "1.0", "target": "_304705"}, {"source": "_304721", "role": "product", "id": "_095949", "value": "10.0", "target": "metaid_He"}, {"source": "_304721", "role": "product", "id": "_095925", "value": "1.0", "target": "metaid_NAD"}, {"source": "_304721", "role": "product", "id": "_095937", "value": "1.0", "target": "metaid_H2O"}, {"source": "metaid_H", "role": "reactant", "id": "_095913", "value": "11.0", "target": "_304721"}, {"source": "metaid_O2", "role": "reactant", "id": "_095901", "value": "0.5", "target": "_304721"}, {"source": "metaid_NADH", "role": "reactant", "id": "_095888", "value": "1.0", "target": "_304721"}, {"source": "_304730", "role": "product", "id": "_096107", "value": "1.0", "target": "metaid_H"}, {"source": "metaid_He", "role": "reactant", "id": "_096095", "value": "1.0", "target": "_304730"}, {"source": "_304703", "role": "product", "id": "_095493", "value": "1.0", "target": "metaid_Pyr"}]}
+{
+    "links": [
+        {
+            "id": "_095864", 
+            "role": "reactant", 
+            "source": "metaid_OAA", 
+            "target": "_304718", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095744", 
+            "role": "product", 
+            "source": "_304709", 
+            "target": "metaid_NADH", 
+            "value": "2.0"
+        }, 
+        {
+            "id": "_095720", 
+            "role": "product", 
+            "source": "_304709", 
+            "target": "metaid_OAA", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095732", 
+            "role": "product", 
+            "source": "_304709", 
+            "target": "metaid_ATP", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095696", 
+            "role": "reactant", 
+            "source": "metaid_ADP", 
+            "target": "_304709", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095684", 
+            "role": "reactant", 
+            "source": "metaid_KG", 
+            "target": "_304709", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095708", 
+            "role": "reactant", 
+            "source": "metaid_NAD", 
+            "target": "_304709", 
+            "value": "2.0"
+        }, 
+        {
+            "id": "_095780", 
+            "role": "product", 
+            "source": "_304712", 
+            "target": "metaid_KG", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095768", 
+            "role": "reactant", 
+            "source": "metaid_OAA", 
+            "target": "_304712", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095660", 
+            "role": "product", 
+            "source": "_304706", 
+            "target": "metaid_NADH", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095648", 
+            "role": "product", 
+            "source": "_304706", 
+            "target": "metaid_KG", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095637", 
+            "role": "reactant", 
+            "source": "metaid_NAD", 
+            "target": "_304706", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095625", 
+            "role": "reactant", 
+            "source": "metaid_Cit", 
+            "target": "_304706", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_096009", 
+            "role": "product", 
+            "source": "_304724", 
+            "target": "metaid_ATP", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_096033", 
+            "role": "product", 
+            "source": "_304724", 
+            "target": "metaid_H", 
+            "value": "3.0"
+        }, 
+        {
+            "id": "_096021", 
+            "role": "product", 
+            "source": "_304724", 
+            "target": "metaid_H2O", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095973", 
+            "role": "reactant", 
+            "source": "metaid_ADP", 
+            "target": "_304724", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095997", 
+            "role": "reactant", 
+            "source": "metaid_He", 
+            "target": "_304724", 
+            "value": "3.0"
+        }, 
+        {
+            "id": "_095985", 
+            "role": "reactant", 
+            "source": "metaid_iP", 
+            "target": "_304724", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_096071", 
+            "role": "product", 
+            "source": "_304727", 
+            "target": "metaid_ADP", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_096058", 
+            "role": "reactant", 
+            "source": "metaid_ATP", 
+            "target": "_304727", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095553", 
+            "role": "product", 
+            "source": "_304704", 
+            "target": "metaid_NADH", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095541", 
+            "role": "product", 
+            "source": "_304704", 
+            "target": "metaid_AcCoA", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095529", 
+            "role": "reactant", 
+            "source": "metaid_NAD", 
+            "target": "_304704", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095517", 
+            "role": "reactant", 
+            "source": "metaid_Pyr", 
+            "target": "_304704", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095840", 
+            "role": "product", 
+            "source": "_304715", 
+            "target": "metaid_ADP", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095828", 
+            "role": "product", 
+            "source": "_304715", 
+            "target": "metaid_OAA", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095816", 
+            "role": "reactant", 
+            "source": "metaid_ATP", 
+            "target": "_304715", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095804", 
+            "role": "reactant", 
+            "source": "metaid_Pyr", 
+            "target": "_304715", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095601", 
+            "role": "product", 
+            "source": "_304705", 
+            "target": "metaid_Cit", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095577", 
+            "role": "reactant", 
+            "source": "metaid_OAA", 
+            "target": "_304705", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095589", 
+            "role": "reactant", 
+            "source": "metaid_AcCoA", 
+            "target": "_304705", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095949", 
+            "role": "product", 
+            "source": "_304721", 
+            "target": "metaid_He", 
+            "value": "10.0"
+        }, 
+        {
+            "id": "_095925", 
+            "role": "product", 
+            "source": "_304721", 
+            "target": "metaid_NAD", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095937", 
+            "role": "product", 
+            "source": "_304721", 
+            "target": "metaid_H2O", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095913", 
+            "role": "reactant", 
+            "source": "metaid_H", 
+            "target": "_304721", 
+            "value": "11.0"
+        }, 
+        {
+            "id": "_095901", 
+            "role": "reactant", 
+            "source": "metaid_O2", 
+            "target": "_304721", 
+            "value": "0.5"
+        }, 
+        {
+            "id": "_095888", 
+            "role": "reactant", 
+            "source": "metaid_NADH", 
+            "target": "_304721", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_096107", 
+            "role": "product", 
+            "source": "_304730", 
+            "target": "metaid_H", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_096095", 
+            "role": "reactant", 
+            "source": "metaid_He", 
+            "target": "_304730", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_095493", 
+            "role": "product", 
+            "source": "_304703", 
+            "target": "metaid_Pyr", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "metaid_mitochondrion", 
+            "id": "metaid_Pyr", 
+            "species_name": "pyruvate"
+        }, 
+        {
+            "compartment": "metaid_cytoplasm", 
+            "id": "metaid_He", 
+            "species_name": "H+"
+        }, 
+        {
+            "id": "_304718", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_095864"
+            ], 
+            "reaction_name": "v8"
+        }, 
+        {
+            "id": "_304709", 
+            "modifiers": [], 
+            "products": [
+                "_095744", 
+                "_095720", 
+                "_095732"
+            ], 
+            "reactants": [
+                "_095696", 
+                "_095684", 
+                "_095708"
+            ], 
+            "reaction_name": "v5"
+        }, 
+        {
+            "compartment": "metaid_mitochondrion", 
+            "id": "metaid_KG", 
+            "species_name": "alpha-ketoglutarate"
+        }, 
+        {
+            "compartment": "metaid_mitochondrion", 
+            "id": "metaid_H", 
+            "species_name": "H+"
+        }, 
+        {
+            "compartment": "metaid_mitochondrion", 
+            "id": "metaid_H2O", 
+            "species_name": "water"
+        }, 
+        {
+            "id": "_304712", 
+            "modifiers": [], 
+            "products": [
+                "_095780"
+            ], 
+            "reactants": [
+                "_095768"
+            ], 
+            "reaction_name": "v6"
+        }, 
+        {
+            "compartment": "metaid_mitochondrion", 
+            "id": "metaid_O2", 
+            "species_name": "oxygen"
+        }, 
+        {
+            "compartment": "metaid_mitochondrion", 
+            "id": "metaid_ATP", 
+            "species_name": "ATP"
+        }, 
+        {
+            "id": "_304706", 
+            "modifiers": [], 
+            "products": [
+                "_095660", 
+                "_095648"
+            ], 
+            "reactants": [
+                "_095637", 
+                "_095625"
+            ], 
+            "reaction_name": "v4"
+        }, 
+        {
+            "compartment": "metaid_mitochondrion", 
+            "id": "metaid_NADH", 
+            "species_name": "NADH"
+        }, 
+        {
+            "compartment": "metaid_mitochondrion", 
+            "id": "metaid_NAD", 
+            "species_name": "NAD(+)"
+        }, 
+        {
+            "id": "_304724", 
+            "modifiers": [], 
+            "products": [
+                "_096009", 
+                "_096033", 
+                "_096021"
+            ], 
+            "reactants": [
+                "_095973", 
+                "_095997", 
+                "_095985"
+            ], 
+            "reaction_name": "vATP"
+        }, 
+        {
+            "compartment": "metaid_mitochondrion", 
+            "id": "metaid_ADP", 
+            "species_name": "ADP"
+        }, 
+        {
+            "id": "_304727", 
+            "modifiers": [], 
+            "products": [
+                "_096071"
+            ], 
+            "reactants": [
+                "_096058"
+            ], 
+            "reaction_name": "vANT"
+        }, 
+        {
+            "compartment": "metaid_mitochondrion", 
+            "id": "metaid_iP", 
+            "species_name": "phosphate"
+        }, 
+        {
+            "id": "_304704", 
+            "modifiers": [], 
+            "products": [
+                "_095553", 
+                "_095541"
+            ], 
+            "reactants": [
+                "_095529", 
+                "_095517"
+            ], 
+            "reaction_name": "v2"
+        }, 
+        {
+            "compartment": "metaid_mitochondrion", 
+            "id": "metaid_AcCoA", 
+            "species_name": "acetyl-CoA"
+        }, 
+        {
+            "id": "_304715", 
+            "modifiers": [], 
+            "products": [
+                "_095840", 
+                "_095828"
+            ], 
+            "reactants": [
+                "_095816", 
+                "_095804"
+            ], 
+            "reaction_name": "v7"
+        }, 
+        {
+            "id": "_304705", 
+            "modifiers": [], 
+            "products": [
+                "_095601"
+            ], 
+            "reactants": [
+                "_095577", 
+                "_095589"
+            ], 
+            "reaction_name": "v3"
+        }, 
+        {
+            "compartment": "metaid_mitochondrion", 
+            "id": "metaid_Cit", 
+            "species_name": "citrate"
+        }, 
+        {
+            "id": "_304721", 
+            "modifiers": [], 
+            "products": [
+                "_095949", 
+                "_095925", 
+                "_095937"
+            ], 
+            "reactants": [
+                "_095913", 
+                "_095901", 
+                "_095888"
+            ], 
+            "reaction_name": "vresp"
+        }, 
+        {
+            "compartment": "metaid_mitochondrion", 
+            "id": "metaid_OAA", 
+            "species_name": "oxaloacetate"
+        }, 
+        {
+            "id": "_304730", 
+            "modifiers": [], 
+            "products": [
+                "_096107"
+            ], 
+            "reactants": [
+                "_096095"
+            ], 
+            "reaction_name": "vleak"
+        }, 
+        {
+            "id": "_304703", 
+            "modifiers": [], 
+            "products": [
+                "_095493"
+            ], 
+            "reactants": [], 
+            "reaction_name": "v1"
+        }
+    ]
+}

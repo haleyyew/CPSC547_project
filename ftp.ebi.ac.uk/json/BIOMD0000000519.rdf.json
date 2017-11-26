@@ -1,1 +1,212 @@
-{"nodes": [{"compartment": "f18302c2-7f65-4b20-8b97-33a2940bb9e1", "species_name": "N1", "id": "f0789719-bb2d-47de-859c-75f9a2f90569"}, {"reaction_name": "N0 death", "reactants": ["_1d4b9af8-0cd8-4655-ba8c-347954e593b4"], "modifiers": [], "products": [], "id": "_6e4e6f9d-4a0a-43fc-a3b5-1672783a1c5c"}, {"compartment": "f18302c2-7f65-4b20-8b97-33a2940bb9e1", "species_name": "N2", "id": "c6a88560-6564-48d6-a598-9122b6709222"}, {"reaction_name": "N1 renewal", "reactants": ["b6d564f9-e158-4ba5-8af7-01a5d4378cd8"], "modifiers": [], "products": ["_7327d736-9833-44c4-b1f5-bd6383254673"], "id": "_60bb6676-3d21-40a0-9a05-8e2ede7a3d96"}, {"reaction_name": "N1 differentiation", "reactants": ["_1b47c797-d61d-469c-abed-0b5f7cf5c15a"], "modifiers": [], "products": ["_03ee2b5b-1185-4e8d-b5c2-13c953bca0d6", "e61e0bb2-18e3-4135-a2d8-e747667b6353"], "id": "ce0493ab-398e-4596-ace6-df5a5af1d5fd"}, {"reaction_name": "N1 death", "reactants": ["_43b57ec7-c8a6-44eb-bae8-5d33ca15de46"], "modifiers": [], "products": [], "id": "_92104c60-9c41-4c3f-b895-d4211fb6a1af"}, {"reaction_name": "N0 renewal", "reactants": ["b1dd2999-5068-46bf-a483-a1240f0f43ab"], "modifiers": [], "products": ["_13920a16-9614-43de-bb44-0a33905b90cb"], "id": "_5cea4771-35de-4327-8f43-e5051a60fa73"}, {"reaction_name": "N0 differentiation", "reactants": ["f8f8aeee-7ce2-4dfa-94a7-af0e36c14752"], "modifiers": [], "products": ["e9f80c92-0aef-4e32-8b60-a08aec372402", "_7fcc281d-11ef-4d2f-a22a-cf8aa2420244"], "id": "_25f28fec-be2c-4d2d-9aae-3256fc564c1d"}, {"reaction_name": "N2 death", "reactants": ["a2ba2016-6e10-43bf-90a5-cbb60027f092"], "modifiers": [], "products": [], "id": "_00bcd12a-f0d3-4238-9666-08f32d4949c4"}, {"compartment": "f18302c2-7f65-4b20-8b97-33a2940bb9e1", "species_name": "N0", "id": "_3f28eb19-35d1-4ecc-8976-ef262ce8ce9d"}], "links": [{"source": "_3f28eb19-35d1-4ecc-8976-ef262ce8ce9d", "role": "reactant", "id": "_1d4b9af8-0cd8-4655-ba8c-347954e593b4", "value": "1.0", "target": "_6e4e6f9d-4a0a-43fc-a3b5-1672783a1c5c"}, {"source": "_60bb6676-3d21-40a0-9a05-8e2ede7a3d96", "role": "product", "id": "_7327d736-9833-44c4-b1f5-bd6383254673", "value": "2.0", "target": "f0789719-bb2d-47de-859c-75f9a2f90569"}, {"source": "f0789719-bb2d-47de-859c-75f9a2f90569", "role": "reactant", "id": "b6d564f9-e158-4ba5-8af7-01a5d4378cd8", "value": "1.0", "target": "_60bb6676-3d21-40a0-9a05-8e2ede7a3d96"}, {"source": "ce0493ab-398e-4596-ace6-df5a5af1d5fd", "role": "product", "id": "_03ee2b5b-1185-4e8d-b5c2-13c953bca0d6", "value": "1.0", "target": "c6a88560-6564-48d6-a598-9122b6709222"}, {"source": "ce0493ab-398e-4596-ace6-df5a5af1d5fd", "role": "product", "id": "e61e0bb2-18e3-4135-a2d8-e747667b6353", "value": "1.0", "target": "f0789719-bb2d-47de-859c-75f9a2f90569"}, {"source": "f0789719-bb2d-47de-859c-75f9a2f90569", "role": "reactant", "id": "_1b47c797-d61d-469c-abed-0b5f7cf5c15a", "value": "1.0", "target": "ce0493ab-398e-4596-ace6-df5a5af1d5fd"}, {"source": "f0789719-bb2d-47de-859c-75f9a2f90569", "role": "reactant", "id": "_43b57ec7-c8a6-44eb-bae8-5d33ca15de46", "value": "1.0", "target": "_92104c60-9c41-4c3f-b895-d4211fb6a1af"}, {"source": "_5cea4771-35de-4327-8f43-e5051a60fa73", "role": "product", "id": "_13920a16-9614-43de-bb44-0a33905b90cb", "value": "2.0", "target": "_3f28eb19-35d1-4ecc-8976-ef262ce8ce9d"}, {"source": "_3f28eb19-35d1-4ecc-8976-ef262ce8ce9d", "role": "reactant", "id": "b1dd2999-5068-46bf-a483-a1240f0f43ab", "value": "1.0", "target": "_5cea4771-35de-4327-8f43-e5051a60fa73"}, {"source": "_25f28fec-be2c-4d2d-9aae-3256fc564c1d", "role": "product", "id": "e9f80c92-0aef-4e32-8b60-a08aec372402", "value": "1.0", "target": "f0789719-bb2d-47de-859c-75f9a2f90569"}, {"source": "_25f28fec-be2c-4d2d-9aae-3256fc564c1d", "role": "product", "id": "_7fcc281d-11ef-4d2f-a22a-cf8aa2420244", "value": "1.0", "target": "_3f28eb19-35d1-4ecc-8976-ef262ce8ce9d"}, {"source": "_3f28eb19-35d1-4ecc-8976-ef262ce8ce9d", "role": "reactant", "id": "f8f8aeee-7ce2-4dfa-94a7-af0e36c14752", "value": "1.0", "target": "_25f28fec-be2c-4d2d-9aae-3256fc564c1d"}, {"source": "c6a88560-6564-48d6-a598-9122b6709222", "role": "reactant", "id": "a2ba2016-6e10-43bf-90a5-cbb60027f092", "value": "1.0", "target": "_00bcd12a-f0d3-4238-9666-08f32d4949c4"}]}
+{
+    "links": [
+        {
+            "id": "_1d4b9af8-0cd8-4655-ba8c-347954e593b4", 
+            "role": "reactant", 
+            "source": "_3f28eb19-35d1-4ecc-8976-ef262ce8ce9d", 
+            "target": "_6e4e6f9d-4a0a-43fc-a3b5-1672783a1c5c", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "c3556c0f-4c78-46b3-9fda-7f5f6d9344cc", 
+            "role": "modifier", 
+            "source": "_3f28eb19-35d1-4ecc-8976-ef262ce8ce9d", 
+            "target": "_6e4e6f9d-4a0a-43fc-a3b5-1672783a1c5c", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_7327d736-9833-44c4-b1f5-bd6383254673", 
+            "role": "product", 
+            "source": "_60bb6676-3d21-40a0-9a05-8e2ede7a3d96", 
+            "target": "f0789719-bb2d-47de-859c-75f9a2f90569", 
+            "value": "2.0"
+        }, 
+        {
+            "id": "b6d564f9-e158-4ba5-8af7-01a5d4378cd8", 
+            "role": "reactant", 
+            "source": "f0789719-bb2d-47de-859c-75f9a2f90569", 
+            "target": "_60bb6676-3d21-40a0-9a05-8e2ede7a3d96", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_03ee2b5b-1185-4e8d-b5c2-13c953bca0d6", 
+            "role": "product", 
+            "source": "ce0493ab-398e-4596-ace6-df5a5af1d5fd", 
+            "target": "c6a88560-6564-48d6-a598-9122b6709222", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "e61e0bb2-18e3-4135-a2d8-e747667b6353", 
+            "role": "product", 
+            "source": "ce0493ab-398e-4596-ace6-df5a5af1d5fd", 
+            "target": "f0789719-bb2d-47de-859c-75f9a2f90569", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_1b47c797-d61d-469c-abed-0b5f7cf5c15a", 
+            "role": "reactant", 
+            "source": "f0789719-bb2d-47de-859c-75f9a2f90569", 
+            "target": "ce0493ab-398e-4596-ace6-df5a5af1d5fd", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_43b57ec7-c8a6-44eb-bae8-5d33ca15de46", 
+            "role": "reactant", 
+            "source": "f0789719-bb2d-47de-859c-75f9a2f90569", 
+            "target": "_92104c60-9c41-4c3f-b895-d4211fb6a1af", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_7127f69d-e721-4c36-9b73-a8e0b32bd9b7", 
+            "role": "modifier", 
+            "source": "f0789719-bb2d-47de-859c-75f9a2f90569", 
+            "target": "_92104c60-9c41-4c3f-b895-d4211fb6a1af", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_13920a16-9614-43de-bb44-0a33905b90cb", 
+            "role": "product", 
+            "source": "_5cea4771-35de-4327-8f43-e5051a60fa73", 
+            "target": "_3f28eb19-35d1-4ecc-8976-ef262ce8ce9d", 
+            "value": "2.0"
+        }, 
+        {
+            "id": "b1dd2999-5068-46bf-a483-a1240f0f43ab", 
+            "role": "reactant", 
+            "source": "_3f28eb19-35d1-4ecc-8976-ef262ce8ce9d", 
+            "target": "_5cea4771-35de-4327-8f43-e5051a60fa73", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "e9f80c92-0aef-4e32-8b60-a08aec372402", 
+            "role": "product", 
+            "source": "_25f28fec-be2c-4d2d-9aae-3256fc564c1d", 
+            "target": "f0789719-bb2d-47de-859c-75f9a2f90569", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_7fcc281d-11ef-4d2f-a22a-cf8aa2420244", 
+            "role": "product", 
+            "source": "_25f28fec-be2c-4d2d-9aae-3256fc564c1d", 
+            "target": "_3f28eb19-35d1-4ecc-8976-ef262ce8ce9d", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "f8f8aeee-7ce2-4dfa-94a7-af0e36c14752", 
+            "role": "reactant", 
+            "source": "_3f28eb19-35d1-4ecc-8976-ef262ce8ce9d", 
+            "target": "_25f28fec-be2c-4d2d-9aae-3256fc564c1d", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "a2ba2016-6e10-43bf-90a5-cbb60027f092", 
+            "role": "reactant", 
+            "source": "c6a88560-6564-48d6-a598-9122b6709222", 
+            "target": "_00bcd12a-f0d3-4238-9666-08f32d4949c4", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_2ace2c87-db9e-432f-9352-8f38421104bc", 
+            "role": "modifier", 
+            "source": "c6a88560-6564-48d6-a598-9122b6709222", 
+            "target": "_00bcd12a-f0d3-4238-9666-08f32d4949c4", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "f18302c2-7f65-4b20-8b97-33a2940bb9e1", 
+            "id": "f0789719-bb2d-47de-859c-75f9a2f90569", 
+            "species_name": "N1"
+        }, 
+        {
+            "id": "_6e4e6f9d-4a0a-43fc-a3b5-1672783a1c5c", 
+            "modifiers": [
+                "c3556c0f-4c78-46b3-9fda-7f5f6d9344cc"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_1d4b9af8-0cd8-4655-ba8c-347954e593b4"
+            ], 
+            "reaction_name": "N0 death"
+        }, 
+        {
+            "compartment": "f18302c2-7f65-4b20-8b97-33a2940bb9e1", 
+            "id": "c6a88560-6564-48d6-a598-9122b6709222", 
+            "species_name": "N2"
+        }, 
+        {
+            "id": "_60bb6676-3d21-40a0-9a05-8e2ede7a3d96", 
+            "modifiers": [], 
+            "products": [
+                "_7327d736-9833-44c4-b1f5-bd6383254673"
+            ], 
+            "reactants": [
+                "b6d564f9-e158-4ba5-8af7-01a5d4378cd8"
+            ], 
+            "reaction_name": "N1 renewal"
+        }, 
+        {
+            "id": "ce0493ab-398e-4596-ace6-df5a5af1d5fd", 
+            "modifiers": [], 
+            "products": [
+                "_03ee2b5b-1185-4e8d-b5c2-13c953bca0d6", 
+                "e61e0bb2-18e3-4135-a2d8-e747667b6353"
+            ], 
+            "reactants": [
+                "_1b47c797-d61d-469c-abed-0b5f7cf5c15a"
+            ], 
+            "reaction_name": "N1 differentiation"
+        }, 
+        {
+            "id": "_92104c60-9c41-4c3f-b895-d4211fb6a1af", 
+            "modifiers": [
+                "_7127f69d-e721-4c36-9b73-a8e0b32bd9b7"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_43b57ec7-c8a6-44eb-bae8-5d33ca15de46"
+            ], 
+            "reaction_name": "N1 death"
+        }, 
+        {
+            "id": "_5cea4771-35de-4327-8f43-e5051a60fa73", 
+            "modifiers": [], 
+            "products": [
+                "_13920a16-9614-43de-bb44-0a33905b90cb"
+            ], 
+            "reactants": [
+                "b1dd2999-5068-46bf-a483-a1240f0f43ab"
+            ], 
+            "reaction_name": "N0 renewal"
+        }, 
+        {
+            "id": "_25f28fec-be2c-4d2d-9aae-3256fc564c1d", 
+            "modifiers": [], 
+            "products": [
+                "e9f80c92-0aef-4e32-8b60-a08aec372402", 
+                "_7fcc281d-11ef-4d2f-a22a-cf8aa2420244"
+            ], 
+            "reactants": [
+                "f8f8aeee-7ce2-4dfa-94a7-af0e36c14752"
+            ], 
+            "reaction_name": "N0 differentiation"
+        }, 
+        {
+            "id": "_00bcd12a-f0d3-4238-9666-08f32d4949c4", 
+            "modifiers": [
+                "_2ace2c87-db9e-432f-9352-8f38421104bc"
+            ], 
+            "products": [], 
+            "reactants": [
+                "a2ba2016-6e10-43bf-90a5-cbb60027f092"
+            ], 
+            "reaction_name": "N2 death"
+        }, 
+        {
+            "compartment": "f18302c2-7f65-4b20-8b97-33a2940bb9e1", 
+            "id": "_3f28eb19-35d1-4ecc-8976-ef262ce8ce9d", 
+            "species_name": "N0"
+        }
+    ]
+}

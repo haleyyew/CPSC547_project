@@ -1,1 +1,370 @@
-{"nodes": [{"compartment": "metaid_0000004", "species_name": "ERK-PT", "id": "metaid_0000007"}, {"reaction_name": "phosphorylation of ERK on Tyr", "reactants": ["_051402"], "modifiers": [], "products": ["_051414"], "id": "metaid_0000026"}, {"reaction_name": "dephosphorylation of ERK-PY", "reactants": ["_051813"], "modifiers": [], "products": ["_051825"], "id": "metaid_0000032"}, {"compartment": "metaid_0000004", "species_name": "ERK-PY", "id": "metaid_0000006"}, {"reaction_name": "phosphorylation of ERK-PY on Thr", "reactants": ["_051462"], "modifiers": [], "products": ["_051474"], "id": "metaid_0000027"}, {"reaction_name": "dephosphorylation of ERK-PT", "reactants": ["_051740"], "modifiers": [], "products": ["_051752"], "id": "metaid_0000031"}, {"compartment": "metaid_0000004", "species_name": "ERK", "id": "metaid_0000005"}, {"reaction_name": "dephosphorylation of ERK-PP on Tyr", "reactants": ["_051668"], "modifiers": [], "products": ["_051680"], "id": "metaid_0000030"}, {"compartment": "metaid_0000004", "species_name": "MKP3", "id": "metaid_0000010"}, {"reaction_name": "phosphorylation of ERK on Thr", "reactants": ["_051536"], "modifiers": [], "products": ["_051548"], "id": "metaid_0000028"}, {"compartment": "metaid_0000004", "species_name": "MEK", "id": "metaid_0000009"}, {"reaction_name": "phosphorylation of ERK-PT on Tyr", "reactants": ["_051596"], "modifiers": [], "products": ["_051608"], "id": "metaid_0000029"}, {"compartment": "metaid_0000004", "species_name": "ERK-PP", "id": "metaid_0000008"}], "links": [{"source": "metaid_0000026", "role": "product", "id": "_051414", "value": "1.0", "target": "metaid_0000006"}, {"source": "metaid_0000005", "role": "reactant", "id": "_051402", "value": "1.0", "target": "metaid_0000026"}, {"source": "metaid_0000032", "role": "product", "id": "_051825", "value": "1.0", "target": "metaid_0000005"}, {"source": "metaid_0000006", "role": "reactant", "id": "_051813", "value": "1.0", "target": "metaid_0000032"}, {"source": "metaid_0000027", "role": "product", "id": "_051474", "value": "1.0", "target": "metaid_0000008"}, {"source": "metaid_0000006", "role": "reactant", "id": "_051462", "value": "1.0", "target": "metaid_0000027"}, {"source": "metaid_0000031", "role": "product", "id": "_051752", "value": "1.0", "target": "metaid_0000005"}, {"source": "metaid_0000007", "role": "reactant", "id": "_051740", "value": "1.0", "target": "metaid_0000031"}, {"source": "metaid_0000030", "role": "product", "id": "_051680", "value": "1.0", "target": "metaid_0000007"}, {"source": "metaid_0000008", "role": "reactant", "id": "_051668", "value": "1.0", "target": "metaid_0000030"}, {"source": "metaid_0000028", "role": "product", "id": "_051548", "value": "1.0", "target": "metaid_0000007"}, {"source": "metaid_0000005", "role": "reactant", "id": "_051536", "value": "1.0", "target": "metaid_0000028"}, {"source": "metaid_0000029", "role": "product", "id": "_051608", "value": "1.0", "target": "metaid_0000008"}, {"source": "metaid_0000007", "role": "reactant", "id": "_051596", "value": "1.0", "target": "metaid_0000029"}]}
+{
+    "links": [
+        {
+            "id": "_051414", 
+            "role": "product", 
+            "source": "metaid_0000026", 
+            "target": "metaid_0000006", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_051402", 
+            "role": "reactant", 
+            "source": "metaid_0000005", 
+            "target": "metaid_0000026", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_051438", 
+            "role": "modifier", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000026", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051426", 
+            "role": "modifier", 
+            "source": "metaid_0000009", 
+            "target": "metaid_0000026", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051825", 
+            "role": "product", 
+            "source": "metaid_0000032", 
+            "target": "metaid_0000005", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_051813", 
+            "role": "reactant", 
+            "source": "metaid_0000006", 
+            "target": "metaid_0000032", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_051837", 
+            "role": "modifier", 
+            "source": "metaid_0000010", 
+            "target": "metaid_0000032", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051861", 
+            "role": "modifier", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000032", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051849", 
+            "role": "modifier", 
+            "source": "metaid_0000008", 
+            "target": "metaid_0000032", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051474", 
+            "role": "product", 
+            "source": "metaid_0000027", 
+            "target": "metaid_0000008", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_051462", 
+            "role": "reactant", 
+            "source": "metaid_0000006", 
+            "target": "metaid_0000027", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_051498", 
+            "role": "modifier", 
+            "source": "metaid_0000005", 
+            "target": "metaid_0000027", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051486", 
+            "role": "modifier", 
+            "source": "metaid_0000009", 
+            "target": "metaid_0000027", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051510", 
+            "role": "modifier", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000027", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051752", 
+            "role": "product", 
+            "source": "metaid_0000031", 
+            "target": "metaid_0000005", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_051740", 
+            "role": "reactant", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000031", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_051764", 
+            "role": "modifier", 
+            "source": "metaid_0000010", 
+            "target": "metaid_0000031", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051776", 
+            "role": "modifier", 
+            "source": "metaid_0000008", 
+            "target": "metaid_0000031", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051788", 
+            "role": "modifier", 
+            "source": "metaid_0000006", 
+            "target": "metaid_0000031", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051680", 
+            "role": "product", 
+            "source": "metaid_0000030", 
+            "target": "metaid_0000007", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_051668", 
+            "role": "reactant", 
+            "source": "metaid_0000008", 
+            "target": "metaid_0000030", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_051692", 
+            "role": "modifier", 
+            "source": "metaid_0000010", 
+            "target": "metaid_0000030", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051716", 
+            "role": "modifier", 
+            "source": "metaid_0000005", 
+            "target": "metaid_0000030", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051704", 
+            "role": "modifier", 
+            "source": "metaid_0000006", 
+            "target": "metaid_0000030", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051548", 
+            "role": "product", 
+            "source": "metaid_0000028", 
+            "target": "metaid_0000007", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_051536", 
+            "role": "reactant", 
+            "source": "metaid_0000005", 
+            "target": "metaid_0000028", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_051572", 
+            "role": "modifier", 
+            "source": "metaid_0000006", 
+            "target": "metaid_0000028", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051560", 
+            "role": "modifier", 
+            "source": "metaid_0000009", 
+            "target": "metaid_0000028", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051608", 
+            "role": "product", 
+            "source": "metaid_0000029", 
+            "target": "metaid_0000008", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_051596", 
+            "role": "reactant", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000029", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_051644", 
+            "role": "modifier", 
+            "source": "metaid_0000006", 
+            "target": "metaid_0000029", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051632", 
+            "role": "modifier", 
+            "source": "metaid_0000005", 
+            "target": "metaid_0000029", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_051620", 
+            "role": "modifier", 
+            "source": "metaid_0000009", 
+            "target": "metaid_0000029", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "metaid_0000004", 
+            "id": "metaid_0000007", 
+            "species_name": "ERK-PT"
+        }, 
+        {
+            "id": "metaid_0000026", 
+            "modifiers": [
+                "_051438", 
+                "_051426"
+            ], 
+            "products": [
+                "_051414"
+            ], 
+            "reactants": [
+                "_051402"
+            ], 
+            "reaction_name": "phosphorylation of ERK on Tyr"
+        }, 
+        {
+            "id": "metaid_0000032", 
+            "modifiers": [
+                "_051837", 
+                "_051861", 
+                "_051849"
+            ], 
+            "products": [
+                "_051825"
+            ], 
+            "reactants": [
+                "_051813"
+            ], 
+            "reaction_name": "dephosphorylation of ERK-PY"
+        }, 
+        {
+            "compartment": "metaid_0000004", 
+            "id": "metaid_0000006", 
+            "species_name": "ERK-PY"
+        }, 
+        {
+            "id": "metaid_0000027", 
+            "modifiers": [
+                "_051498", 
+                "_051486", 
+                "_051510"
+            ], 
+            "products": [
+                "_051474"
+            ], 
+            "reactants": [
+                "_051462"
+            ], 
+            "reaction_name": "phosphorylation of ERK-PY on Thr"
+        }, 
+        {
+            "id": "metaid_0000031", 
+            "modifiers": [
+                "_051764", 
+                "_051776", 
+                "_051788"
+            ], 
+            "products": [
+                "_051752"
+            ], 
+            "reactants": [
+                "_051740"
+            ], 
+            "reaction_name": "dephosphorylation of ERK-PT"
+        }, 
+        {
+            "compartment": "metaid_0000004", 
+            "id": "metaid_0000005", 
+            "species_name": "ERK"
+        }, 
+        {
+            "id": "metaid_0000030", 
+            "modifiers": [
+                "_051692", 
+                "_051716", 
+                "_051704"
+            ], 
+            "products": [
+                "_051680"
+            ], 
+            "reactants": [
+                "_051668"
+            ], 
+            "reaction_name": "dephosphorylation of ERK-PP on Tyr"
+        }, 
+        {
+            "compartment": "metaid_0000004", 
+            "id": "metaid_0000010", 
+            "species_name": "MKP3"
+        }, 
+        {
+            "id": "metaid_0000028", 
+            "modifiers": [
+                "_051572", 
+                "_051560"
+            ], 
+            "products": [
+                "_051548"
+            ], 
+            "reactants": [
+                "_051536"
+            ], 
+            "reaction_name": "phosphorylation of ERK on Thr"
+        }, 
+        {
+            "compartment": "metaid_0000004", 
+            "id": "metaid_0000009", 
+            "species_name": "MEK"
+        }, 
+        {
+            "id": "metaid_0000029", 
+            "modifiers": [
+                "_051644", 
+                "_051632", 
+                "_051620"
+            ], 
+            "products": [
+                "_051608"
+            ], 
+            "reactants": [
+                "_051596"
+            ], 
+            "reaction_name": "phosphorylation of ERK-PT on Tyr"
+        }, 
+        {
+            "compartment": "metaid_0000004", 
+            "id": "metaid_0000008", 
+            "species_name": "ERK-PP"
+        }
+    ]
+}

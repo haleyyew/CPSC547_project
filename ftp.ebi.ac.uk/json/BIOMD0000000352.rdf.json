@@ -1,1 +1,341 @@
-{"nodes": [{"reaction_name": "reac_DIIxI", "reactants": ["_484149"], "modifiers": [], "products": ["_484162"], "id": "metaid_0000050"}, {"compartment": "metaid_0000018", "species_name": "mRNA", "id": "metaid_0000023"}, {"compartment": "metaid_0000018", "species_name": "Aux/IAA", "id": "metaid_0000019"}, {"compartment": "metaid_0000018", "species_name": "auxin", "id": "metaid_0000036"}, {"reaction_name": "reac_degrDII", "reactants": ["_484077"], "modifiers": [], "products": [], "id": "metaid_0000048"}, {"reaction_name": "reac_degrI", "reactants": ["_483992"], "modifiers": [], "products": [], "id": "metaid_0000033"}, {"reaction_name": "reac_prodR", "reactants": [], "modifiers": [], "products": ["_484285"], "id": "metaid_0000054"}, {"reaction_name": "reac_degrDIA", "reactants": ["_484053"], "modifiers": [], "products": [], "id": "metaid_0000047"}, {"reaction_name": "reac_degrA", "reactants": ["_484029"], "modifiers": [], "products": [], "id": "metaid_0000034"}, {"compartment": "metaid_0000018", "species_name": "ARF", "id": "metaid_0000020"}, {"reaction_name": "reac_prodA", "reactants": [], "modifiers": [], "products": ["_484261"], "id": "metaid_0000053"}, {"reaction_name": "reac_DIA", "reactants": ["_483908", "_483896"], "modifiers": [], "products": ["_483920"], "id": "metaid_0000031"}, {"reaction_name": "reac_prodI", "reactants": [], "modifiers": [], "products": ["_484223"], "id": "metaid_0000052"}, {"compartment": "metaid_0000018", "species_name": "Aux/IAA:Aux/IAA", "id": "metaid_0000021"}, {"reaction_name": "reac_DIAxA", "reactants": ["_484101"], "modifiers": [], "products": ["_484113"], "id": "metaid_0000049"}, {"compartment": "metaid_0000018", "species_name": "Aux/IAA:ARF", "id": "metaid_0000022"}, {"reaction_name": "reac_DII", "reactants": ["_483943", "_483956"], "modifiers": [], "products": ["_483968"], "id": "metaid_0000032"}, {"reaction_name": "reac_degrR", "reactants": ["_484199"], "modifiers": [], "products": [], "id": "metaid_0000051"}], "links": [{"source": "metaid_0000050", "role": "product", "id": "_484162", "value": "1.0", "target": "metaid_0000019"}, {"source": "metaid_0000021", "role": "reactant", "id": "_484149", "value": "1.0", "target": "metaid_0000050"}, {"source": "metaid_0000021", "role": "reactant", "id": "_484077", "value": "1.0", "target": "metaid_0000048"}, {"source": "metaid_0000019", "role": "reactant", "id": "_483992", "value": "1.0", "target": "metaid_0000033"}, {"source": "metaid_0000054", "role": "product", "id": "_484285", "value": "1.0", "target": "metaid_0000023"}, {"source": "metaid_0000022", "role": "reactant", "id": "_484053", "value": "1.0", "target": "metaid_0000047"}, {"source": "metaid_0000020", "role": "reactant", "id": "_484029", "value": "1.0", "target": "metaid_0000034"}, {"source": "metaid_0000053", "role": "product", "id": "_484261", "value": "1.0", "target": "metaid_0000020"}, {"source": "metaid_0000031", "role": "product", "id": "_483920", "value": "1.0", "target": "metaid_0000022"}, {"source": "metaid_0000019", "role": "reactant", "id": "_483908", "value": "1.0", "target": "metaid_0000031"}, {"source": "metaid_0000020", "role": "reactant", "id": "_483896", "value": "1.0", "target": "metaid_0000031"}, {"source": "metaid_0000052", "role": "product", "id": "_484223", "value": "1.0", "target": "metaid_0000019"}, {"source": "metaid_0000049", "role": "product", "id": "_484113", "value": "1.0", "target": "metaid_0000020"}, {"source": "metaid_0000022", "role": "reactant", "id": "_484101", "value": "1.0", "target": "metaid_0000049"}, {"source": "metaid_0000032", "role": "product", "id": "_483968", "value": "1.0", "target": "metaid_0000021"}, {"source": "metaid_0000019", "role": "reactant", "id": "_483943", "value": "1.0", "target": "metaid_0000032"}, {"source": "metaid_0000019", "role": "reactant", "id": "_483956", "value": "1.0", "target": "metaid_0000032"}, {"source": "metaid_0000023", "role": "reactant", "id": "_484199", "value": "1.0", "target": "metaid_0000051"}]}
+{
+    "links": [
+        {
+            "id": "_484162", 
+            "role": "product", 
+            "source": "metaid_0000050", 
+            "target": "metaid_0000019", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_484149", 
+            "role": "reactant", 
+            "source": "metaid_0000021", 
+            "target": "metaid_0000050", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_484174", 
+            "role": "modifier", 
+            "source": "metaid_0000036", 
+            "target": "metaid_0000050", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_484077", 
+            "role": "reactant", 
+            "source": "metaid_0000021", 
+            "target": "metaid_0000048", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_483992", 
+            "role": "reactant", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000033", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_484004", 
+            "role": "modifier", 
+            "source": "metaid_0000036", 
+            "target": "metaid_0000033", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_484285", 
+            "role": "product", 
+            "source": "metaid_0000054", 
+            "target": "metaid_0000023", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_484310", 
+            "role": "modifier", 
+            "source": "metaid_0000022", 
+            "target": "metaid_0000054", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_484297", 
+            "role": "modifier", 
+            "source": "metaid_0000020", 
+            "target": "metaid_0000054", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_484322", 
+            "role": "modifier", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000054", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_484053", 
+            "role": "reactant", 
+            "source": "metaid_0000022", 
+            "target": "metaid_0000047", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_484029", 
+            "role": "reactant", 
+            "source": "metaid_0000020", 
+            "target": "metaid_0000034", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_484261", 
+            "role": "product", 
+            "source": "metaid_0000053", 
+            "target": "metaid_0000020", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_483920", 
+            "role": "product", 
+            "source": "metaid_0000031", 
+            "target": "metaid_0000022", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_483908", 
+            "role": "reactant", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000031", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_483896", 
+            "role": "reactant", 
+            "source": "metaid_0000020", 
+            "target": "metaid_0000031", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_484223", 
+            "role": "product", 
+            "source": "metaid_0000052", 
+            "target": "metaid_0000019", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_484236", 
+            "role": "modifier", 
+            "source": "metaid_0000023", 
+            "target": "metaid_0000052", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_484113", 
+            "role": "product", 
+            "source": "metaid_0000049", 
+            "target": "metaid_0000020", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_484101", 
+            "role": "reactant", 
+            "source": "metaid_0000022", 
+            "target": "metaid_0000049", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_484125", 
+            "role": "modifier", 
+            "source": "metaid_0000036", 
+            "target": "metaid_0000049", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_483968", 
+            "role": "product", 
+            "source": "metaid_0000032", 
+            "target": "metaid_0000021", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_483943", 
+            "role": "reactant", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000032", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_483956", 
+            "role": "reactant", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000032", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_484199", 
+            "role": "reactant", 
+            "source": "metaid_0000023", 
+            "target": "metaid_0000051", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000050", 
+            "modifiers": [
+                "_484174"
+            ], 
+            "products": [
+                "_484162"
+            ], 
+            "reactants": [
+                "_484149"
+            ], 
+            "reaction_name": "reac_DIIxI"
+        }, 
+        {
+            "compartment": "metaid_0000018", 
+            "id": "metaid_0000023", 
+            "species_name": "mRNA"
+        }, 
+        {
+            "compartment": "metaid_0000018", 
+            "id": "metaid_0000019", 
+            "species_name": "Aux/IAA"
+        }, 
+        {
+            "compartment": "metaid_0000018", 
+            "id": "metaid_0000036", 
+            "species_name": "auxin"
+        }, 
+        {
+            "id": "metaid_0000048", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_484077"
+            ], 
+            "reaction_name": "reac_degrDII"
+        }, 
+        {
+            "id": "metaid_0000033", 
+            "modifiers": [
+                "_484004"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_483992"
+            ], 
+            "reaction_name": "reac_degrI"
+        }, 
+        {
+            "id": "metaid_0000054", 
+            "modifiers": [
+                "_484310", 
+                "_484297", 
+                "_484322"
+            ], 
+            "products": [
+                "_484285"
+            ], 
+            "reactants": [], 
+            "reaction_name": "reac_prodR"
+        }, 
+        {
+            "id": "metaid_0000047", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_484053"
+            ], 
+            "reaction_name": "reac_degrDIA"
+        }, 
+        {
+            "id": "metaid_0000034", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_484029"
+            ], 
+            "reaction_name": "reac_degrA"
+        }, 
+        {
+            "compartment": "metaid_0000018", 
+            "id": "metaid_0000020", 
+            "species_name": "ARF"
+        }, 
+        {
+            "id": "metaid_0000053", 
+            "modifiers": [], 
+            "products": [
+                "_484261"
+            ], 
+            "reactants": [], 
+            "reaction_name": "reac_prodA"
+        }, 
+        {
+            "id": "metaid_0000031", 
+            "modifiers": [], 
+            "products": [
+                "_483920"
+            ], 
+            "reactants": [
+                "_483908", 
+                "_483896"
+            ], 
+            "reaction_name": "reac_DIA"
+        }, 
+        {
+            "id": "metaid_0000052", 
+            "modifiers": [
+                "_484236"
+            ], 
+            "products": [
+                "_484223"
+            ], 
+            "reactants": [], 
+            "reaction_name": "reac_prodI"
+        }, 
+        {
+            "compartment": "metaid_0000018", 
+            "id": "metaid_0000021", 
+            "species_name": "Aux/IAA:Aux/IAA"
+        }, 
+        {
+            "id": "metaid_0000049", 
+            "modifiers": [
+                "_484125"
+            ], 
+            "products": [
+                "_484113"
+            ], 
+            "reactants": [
+                "_484101"
+            ], 
+            "reaction_name": "reac_DIAxA"
+        }, 
+        {
+            "compartment": "metaid_0000018", 
+            "id": "metaid_0000022", 
+            "species_name": "Aux/IAA:ARF"
+        }, 
+        {
+            "id": "metaid_0000032", 
+            "modifiers": [], 
+            "products": [
+                "_483968"
+            ], 
+            "reactants": [
+                "_483943", 
+                "_483956"
+            ], 
+            "reaction_name": "reac_DII"
+        }, 
+        {
+            "id": "metaid_0000051", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_484199"
+            ], 
+            "reaction_name": "reac_degrR"
+        }
+    ]
+}

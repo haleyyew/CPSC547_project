@@ -1,1 +1,69 @@
-{"nodes": [{"reaction_name": "", "reactants": [], "modifiers": [], "products": ["_281108"], "id": "metaid_0000094"}, {"reaction_name": "", "reactants": [], "modifiers": [], "products": ["_281060"], "id": "metaid_0000092"}, {"compartment": "metaid_0000003", "species_name": "ER calcium concentration", "id": "metaid_0000007"}, {"reaction_name": "", "reactants": [], "modifiers": [], "products": ["_281084"], "id": "metaid_0000093"}, {"compartment": "metaid_0000003", "species_name": "cytosolic calcium concentration", "id": "metaid_0000006"}, {"compartment": "metaid_0000003", "species_name": "", "id": "metaid_0000009"}], "links": [{"source": "metaid_0000094", "role": "product", "id": "_281108", "value": "1.0", "target": "metaid_0000009"}, {"source": "metaid_0000092", "role": "product", "id": "_281060", "value": "1.0", "target": "metaid_0000006"}, {"source": "metaid_0000093", "role": "product", "id": "_281084", "value": "1.0", "target": "metaid_0000007"}]}
+{
+    "links": [
+        {
+            "id": "_281108", 
+            "role": "product", 
+            "source": "metaid_0000094", 
+            "target": "metaid_0000009", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_281060", 
+            "role": "product", 
+            "source": "metaid_0000092", 
+            "target": "metaid_0000006", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_281084", 
+            "role": "product", 
+            "source": "metaid_0000093", 
+            "target": "metaid_0000007", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000094", 
+            "modifiers": [], 
+            "products": [
+                "_281108"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "metaid_0000092", 
+            "modifiers": [], 
+            "products": [
+                "_281060"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000007", 
+            "species_name": "ER calcium concentration"
+        }, 
+        {
+            "id": "metaid_0000093", 
+            "modifiers": [], 
+            "products": [
+                "_281084"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000006", 
+            "species_name": "cytosolic calcium concentration"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000009", 
+            "species_name": ""
+        }
+    ]
+}

@@ -1,1 +1,580 @@
-{"nodes": [{"compartment": "_032805", "species_name": "ADP pool", "id": "_032838"}, {"compartment": "_032810", "species_name": "Maltose exporter (MEX)", "id": "MEX"}, {"reaction_name": "Plastidic Glucose transporter", "reactants": ["b7286e83-c22f-49b2-b363-51d5f715e77f"], "modifiers": [], "products": ["e602866f-346f-4d9d-9cb1-42280c111e1a"], "id": "G_transport"}, {"compartment": "_032805", "species_name": "Orthophosphate(HPi) pool", "id": "_032839"}, {"reaction_name": "Maltose exporter", "reactants": ["_0316d385-5ceb-49eb-84ce-8efa7c479a27"], "modifiers": [], "products": ["_08c69982-a200-46f7-8db4-e66aa0ed2de4"], "id": "G2_transport"}, {"compartment": "_032814", "species_name": "Maltopentaose", "id": "_032826"}, {"reaction_name": "Maltose formation from Starch", "reactants": ["ba63a2db-b2c2-45b4-84d1-c6ddadb6fccd"], "modifiers": [], "products": ["c7bdce2e-1c66-4e73-820c-1b57ded9ef0e"], "id": "G2_formation"}, {"compartment": "_032814", "species_name": "Disproportionating enzyme 1(DPE1)", "id": "DPE1"}, {"compartment": "_032805", "species_name": "G6P pool", "id": "_032850"}, {"compartment": "_032814", "species_name": "(D)-Glucose", "id": "_032827"}, {"compartment": "_032805", "species_name": "Disproportionating enzyme 2(DPE2)", "id": "DPE2"}, {"compartment": "_032805", "species_name": "Glucosyl Arabinogalactan (GlcAG)", "id": "_032834"}, {"reaction_name": "Maltopentaose degradation", "reactants": ["aa158649-2340-4400-8fae-b49cd143f436"], "modifiers": [], "products": ["e7752c7c-6395-4b27-9d01-796d64ef8f83", "_99e20e2a-bb05-4be3-b995-ee136a5e4c10"], "id": "G5_degradation"}, {"compartment": "_032805", "species_name": "Glutathione (reduced)", "id": "_032842"}, {"compartment": "_032805", "species_name": "ATP pool", "id": "_032835"}, {"compartment": "_032805", "species_name": "H+", "id": "_032815"}, {"compartment": "_032805", "species_name": "(D)-Glucose-1,6-bisphosphate pool", "id": "_032843"}, {"compartment": "_032814", "species_name": "Isoamylase", "id": "iso_amylase"}, {"reaction_name": "Hexokinase", "reactants": ["ca81f3b6-a226-49fd-9f34-f47a6280289e", "c969e0df-374c-4a74-8fe5-4c501be21c24"], "modifiers": [], "products": ["_5c221602-e940-4597-a70f-a2eb8fd8f636", "_65c348d8-65de-4e56-ba86-dd2b064cd309", "f64b42dc-0982-4d13-bd51-c52b024a2171"], "id": "HK_RXN"}, {"compartment": "_032814", "species_name": "Maltose", "id": "_032822"}, {"compartment": "_032814", "species_name": "Starch", "id": "_032816"}, {"compartment": "_032814", "species_name": "Maltotriose", "id": "_032823"}, {"reaction_name": "DPE2", "reactants": ["_3eb4a6c8-3b0d-4308-9222-effe9bf1eb4b", "_7aea369c-566f-424a-981f-c896fd4e91d5"], "modifiers": [], "products": ["_2ff64462-4c30-4948-801a-fb2f9a6c44a0", "_94677f8e-68f3-4d22-9e16-dba4206a78c3"], "id": "DPE2_RXN"}, {"compartment": "_032810", "species_name": "Glucose transporter (pGlcT)", "id": "pGlcT"}, {"compartment": "_032814", "species_name": "Starch Glucosyl unit", "id": "_032817"}, {"reaction_name": "Cytosolic glucan phosphorylase", "reactants": ["f65f9367-da2e-429c-a8dc-ffc2a8da51e9", "_1f8be01e-d063-4762-bf91-0ad10a5a2048"], "modifiers": [], "products": ["_08bff445-8c02-4cf7-8b87-348e46eeeb79", "_99676203-379b-4291-9fc4-4f1c12f9d913"], "id": "CGP_RXN"}, {"compartment": "_032814", "species_name": "Starch exposed to Beta Amylase due to action of Isoamylase (Starch DB)", "id": "_032818"}, {"compartment": "_032805", "species_name": "Arabinogalactan (AG)", "id": "_032831"}, {"compartment": "_032805", "species_name": "G1P pool", "id": "_032847"}, {"compartment": "_032805", "species_name": "(D)-Glucose", "id": "_032830"}, {"compartment": "_032814", "species_name": "Beta amylase", "id": "beta_amylase"}, {"compartment": "_032805", "species_name": "Maltose", "id": "_032819"}, {"compartment": "_032805", "species_name": "2,3-Bisphosphoglycerate pool", "id": "_032846"}, {"compartment": "_032805", "species_name": "Hexokinase", "id": "CHK"}, {"reaction_name": "DPE1", "reactants": ["_4feb60b4-b2a0-4f4f-ab45-713f61e6c713"], "modifiers": [], "products": ["_3211c894-70f1-42c6-8aea-f4bd6929ad76", "_663ba6d0-5d81-433a-baba-bde697b0ce81"], "id": "DPE1_RXN"}, {"reaction_name": "Maltotriose formation from Starch", "reactants": ["_80bc3984-b440-49dd-9473-2a9c111ac5ba"], "modifiers": [], "products": ["d44ecfd6-14c2-465f-a375-caca62788558"], "id": "G3_formation"}, {"compartment": "_032805", "species_name": "Cytosolic Glucan phosphorylase", "id": "CGP"}], "links": [{"source": "G_transport", "role": "product", "id": "e602866f-346f-4d9d-9cb1-42280c111e1a", "value": "1.0", "target": "_032830"}, {"source": "_032827", "role": "reactant", "id": "b7286e83-c22f-49b2-b363-51d5f715e77f", "value": "1.0", "target": "G_transport"}, {"source": "G2_transport", "role": "product", "id": "_08c69982-a200-46f7-8db4-e66aa0ed2de4", "value": "1.0", "target": "_032819"}, {"source": "_032822", "role": "reactant", "id": "_0316d385-5ceb-49eb-84ce-8efa7c479a27", "value": "1.0", "target": "G2_transport"}, {"source": "G2_formation", "role": "product", "id": "c7bdce2e-1c66-4e73-820c-1b57ded9ef0e", "value": "2923.98", "target": "_032822"}, {"source": "_032817", "role": "reactant", "id": "ba63a2db-b2c2-45b4-84d1-c6ddadb6fccd", "value": "12345.7", "target": "G2_formation"}, {"source": "G5_degradation", "role": "product", "id": "e7752c7c-6395-4b27-9d01-796d64ef8f83", "value": "2923.98", "target": "_032822"}, {"source": "G5_degradation", "role": "product", "id": "_99e20e2a-bb05-4be3-b995-ee136a5e4c10", "value": "1984.13", "target": "_032823"}, {"source": "_032826", "role": "reactant", "id": "aa158649-2340-4400-8fae-b49cd143f436", "value": "1207.73", "target": "G5_degradation"}, {"source": "HK_RXN", "role": "product", "id": "_5c221602-e940-4597-a70f-a2eb8fd8f636", "value": "1.0", "target": "_032838"}, {"source": "HK_RXN", "role": "product", "id": "_65c348d8-65de-4e56-ba86-dd2b064cd309", "value": "1.0", "target": "_032815"}, {"source": "HK_RXN", "role": "product", "id": "f64b42dc-0982-4d13-bd51-c52b024a2171", "value": "1.0", "target": "_032850"}, {"source": "_032835", "role": "reactant", "id": "ca81f3b6-a226-49fd-9f34-f47a6280289e", "value": "1.0", "target": "HK_RXN"}, {"source": "_032830", "role": "reactant", "id": "c969e0df-374c-4a74-8fe5-4c501be21c24", "value": "1.0", "target": "HK_RXN"}, {"source": "DPE2_RXN", "role": "product", "id": "_2ff64462-4c30-4948-801a-fb2f9a6c44a0", "value": "1.0", "target": "_032834"}, {"source": "DPE2_RXN", "role": "product", "id": "_94677f8e-68f3-4d22-9e16-dba4206a78c3", "value": "1.0", "target": "_032830"}, {"source": "_032819", "role": "reactant", "id": "_3eb4a6c8-3b0d-4308-9222-effe9bf1eb4b", "value": "1.0", "target": "DPE2_RXN"}, {"source": "_032831", "role": "reactant", "id": "_7aea369c-566f-424a-981f-c896fd4e91d5", "value": "1.0", "target": "DPE2_RXN"}, {"source": "CGP_RXN", "role": "product", "id": "_08bff445-8c02-4cf7-8b87-348e46eeeb79", "value": "1.0", "target": "_032847"}, {"source": "CGP_RXN", "role": "product", "id": "_99676203-379b-4291-9fc4-4f1c12f9d913", "value": "1.0", "target": "_032831"}, {"source": "_032834", "role": "reactant", "id": "f65f9367-da2e-429c-a8dc-ffc2a8da51e9", "value": "1.0", "target": "CGP_RXN"}, {"source": "_032839", "role": "reactant", "id": "_1f8be01e-d063-4762-bf91-0ad10a5a2048", "value": "1.0", "target": "CGP_RXN"}, {"source": "DPE1_RXN", "role": "product", "id": "_3211c894-70f1-42c6-8aea-f4bd6929ad76", "value": "1.0", "target": "_032827"}, {"source": "DPE1_RXN", "role": "product", "id": "_663ba6d0-5d81-433a-baba-bde697b0ce81", "value": "1.0", "target": "_032826"}, {"source": "_032823", "role": "reactant", "id": "_4feb60b4-b2a0-4f4f-ab45-713f61e6c713", "value": "2.0", "target": "DPE1_RXN"}, {"source": "G3_formation", "role": "product", "id": "d44ecfd6-14c2-465f-a375-caca62788558", "value": "1984.13", "target": "_032823"}, {"source": "_032817", "role": "reactant", "id": "_80bc3984-b440-49dd-9473-2a9c111ac5ba", "value": "18518.5", "target": "G3_formation"}]}
+{
+    "links": [
+        {
+            "id": "e602866f-346f-4d9d-9cb1-42280c111e1a", 
+            "role": "product", 
+            "source": "G_transport", 
+            "target": "_032830", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "b7286e83-c22f-49b2-b363-51d5f715e77f", 
+            "role": "reactant", 
+            "source": "_032827", 
+            "target": "G_transport", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "a8f553d5-df9e-45d0-a42b-6cf3d321e2fa", 
+            "role": "modifier", 
+            "source": "pGlcT", 
+            "target": "G_transport", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_08c69982-a200-46f7-8db4-e66aa0ed2de4", 
+            "role": "product", 
+            "source": "G2_transport", 
+            "target": "_032819", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_0316d385-5ceb-49eb-84ce-8efa7c479a27", 
+            "role": "reactant", 
+            "source": "_032822", 
+            "target": "G2_transport", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_8e6d7c24-523c-4477-9801-a5a84fc7b122", 
+            "role": "modifier", 
+            "source": "MEX", 
+            "target": "G2_transport", 
+            "value": 0.0
+        }, 
+        {
+            "id": "c7bdce2e-1c66-4e73-820c-1b57ded9ef0e", 
+            "role": "product", 
+            "source": "G2_formation", 
+            "target": "_032822", 
+            "value": "2923.98"
+        }, 
+        {
+            "id": "ba63a2db-b2c2-45b4-84d1-c6ddadb6fccd", 
+            "role": "reactant", 
+            "source": "_032817", 
+            "target": "G2_formation", 
+            "value": "12345.7"
+        }, 
+        {
+            "id": "_0a915371-2a3f-4b82-8b9c-c0524c80bdfb", 
+            "role": "modifier", 
+            "source": "beta_amylase", 
+            "target": "G2_formation", 
+            "value": 0.0
+        }, 
+        {
+            "id": "ce44e0f7-9f67-4c8b-93a9-ea9c984048de", 
+            "role": "modifier", 
+            "source": "_032818", 
+            "target": "G2_formation", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_0bbd1f83-b573-4419-a4f3-eb0d9b684016", 
+            "role": "modifier", 
+            "source": "_032816", 
+            "target": "G2_formation", 
+            "value": 0.0
+        }, 
+        {
+            "id": "e7752c7c-6395-4b27-9d01-796d64ef8f83", 
+            "role": "product", 
+            "source": "G5_degradation", 
+            "target": "_032822", 
+            "value": "2923.98"
+        }, 
+        {
+            "id": "_99e20e2a-bb05-4be3-b995-ee136a5e4c10", 
+            "role": "product", 
+            "source": "G5_degradation", 
+            "target": "_032823", 
+            "value": "1984.13"
+        }, 
+        {
+            "id": "aa158649-2340-4400-8fae-b49cd143f436", 
+            "role": "reactant", 
+            "source": "_032826", 
+            "target": "G5_degradation", 
+            "value": "1207.73"
+        }, 
+        {
+            "id": "e8364899-ddd2-4482-9432-3b6c0701fde6", 
+            "role": "modifier", 
+            "source": "beta_amylase", 
+            "target": "G5_degradation", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_5c221602-e940-4597-a70f-a2eb8fd8f636", 
+            "role": "product", 
+            "source": "HK_RXN", 
+            "target": "_032838", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_65c348d8-65de-4e56-ba86-dd2b064cd309", 
+            "role": "product", 
+            "source": "HK_RXN", 
+            "target": "_032815", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "f64b42dc-0982-4d13-bd51-c52b024a2171", 
+            "role": "product", 
+            "source": "HK_RXN", 
+            "target": "_032850", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "ca81f3b6-a226-49fd-9f34-f47a6280289e", 
+            "role": "reactant", 
+            "source": "_032835", 
+            "target": "HK_RXN", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "c969e0df-374c-4a74-8fe5-4c501be21c24", 
+            "role": "reactant", 
+            "source": "_032830", 
+            "target": "HK_RXN", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_6c6a9234-cc4b-4273-aa9e-737e88c6b02b", 
+            "role": "modifier", 
+            "source": "_032843", 
+            "target": "HK_RXN", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_658ab43b-0cdb-435b-8832-23569fbb8984", 
+            "role": "modifier", 
+            "source": "_032842", 
+            "target": "HK_RXN", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_075e2fae-4d6c-4445-9483-92436a115d74", 
+            "role": "modifier", 
+            "source": "_032846", 
+            "target": "HK_RXN", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_07985dca-0cad-4492-88df-1f7e0b80aca3", 
+            "role": "modifier", 
+            "source": "CHK", 
+            "target": "HK_RXN", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_2ff64462-4c30-4948-801a-fb2f9a6c44a0", 
+            "role": "product", 
+            "source": "DPE2_RXN", 
+            "target": "_032834", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_94677f8e-68f3-4d22-9e16-dba4206a78c3", 
+            "role": "product", 
+            "source": "DPE2_RXN", 
+            "target": "_032830", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_3eb4a6c8-3b0d-4308-9222-effe9bf1eb4b", 
+            "role": "reactant", 
+            "source": "_032819", 
+            "target": "DPE2_RXN", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_7aea369c-566f-424a-981f-c896fd4e91d5", 
+            "role": "reactant", 
+            "source": "_032831", 
+            "target": "DPE2_RXN", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "ab2c3544-7636-40f3-b01b-6b363afdc58d", 
+            "role": "modifier", 
+            "source": "DPE2", 
+            "target": "DPE2_RXN", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_08bff445-8c02-4cf7-8b87-348e46eeeb79", 
+            "role": "product", 
+            "source": "CGP_RXN", 
+            "target": "_032847", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_99676203-379b-4291-9fc4-4f1c12f9d913", 
+            "role": "product", 
+            "source": "CGP_RXN", 
+            "target": "_032831", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "f65f9367-da2e-429c-a8dc-ffc2a8da51e9", 
+            "role": "reactant", 
+            "source": "_032834", 
+            "target": "CGP_RXN", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_1f8be01e-d063-4762-bf91-0ad10a5a2048", 
+            "role": "reactant", 
+            "source": "_032839", 
+            "target": "CGP_RXN", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_24814628-125f-4599-9c97-2f72d52d4100", 
+            "role": "modifier", 
+            "source": "CGP", 
+            "target": "CGP_RXN", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_3211c894-70f1-42c6-8aea-f4bd6929ad76", 
+            "role": "product", 
+            "source": "DPE1_RXN", 
+            "target": "_032827", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_663ba6d0-5d81-433a-baba-bde697b0ce81", 
+            "role": "product", 
+            "source": "DPE1_RXN", 
+            "target": "_032826", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_4feb60b4-b2a0-4f4f-ab45-713f61e6c713", 
+            "role": "reactant", 
+            "source": "_032823", 
+            "target": "DPE1_RXN", 
+            "value": "2.0"
+        }, 
+        {
+            "id": "_271747b9-d518-4137-8a20-0833f3ed7ae0", 
+            "role": "modifier", 
+            "source": "DPE1", 
+            "target": "DPE1_RXN", 
+            "value": 0.0
+        }, 
+        {
+            "id": "d44ecfd6-14c2-465f-a375-caca62788558", 
+            "role": "product", 
+            "source": "G3_formation", 
+            "target": "_032823", 
+            "value": "1984.13"
+        }, 
+        {
+            "id": "_80bc3984-b440-49dd-9473-2a9c111ac5ba", 
+            "role": "reactant", 
+            "source": "_032817", 
+            "target": "G3_formation", 
+            "value": "18518.5"
+        }, 
+        {
+            "id": "_0f2414e4-c9a0-400a-b47f-0045fec892f4", 
+            "role": "modifier", 
+            "source": "_032816", 
+            "target": "G3_formation", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_14dc8162-36b2-4d6b-ad33-de81117da115", 
+            "role": "modifier", 
+            "source": "_032818", 
+            "target": "G3_formation", 
+            "value": 0.0
+        }, 
+        {
+            "id": "a94770a1-e5f9-47fd-af77-08ce787eb278", 
+            "role": "modifier", 
+            "source": "beta_amylase", 
+            "target": "G3_formation", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "_032805", 
+            "id": "_032838", 
+            "species_name": "ADP pool"
+        }, 
+        {
+            "compartment": "_032810", 
+            "id": "MEX", 
+            "species_name": "Maltose exporter (MEX)"
+        }, 
+        {
+            "id": "G_transport", 
+            "modifiers": [
+                "a8f553d5-df9e-45d0-a42b-6cf3d321e2fa"
+            ], 
+            "products": [
+                "e602866f-346f-4d9d-9cb1-42280c111e1a"
+            ], 
+            "reactants": [
+                "b7286e83-c22f-49b2-b363-51d5f715e77f"
+            ], 
+            "reaction_name": "Plastidic Glucose transporter"
+        }, 
+        {
+            "compartment": "_032805", 
+            "id": "_032839", 
+            "species_name": "Orthophosphate(HPi) pool"
+        }, 
+        {
+            "id": "G2_transport", 
+            "modifiers": [
+                "_8e6d7c24-523c-4477-9801-a5a84fc7b122"
+            ], 
+            "products": [
+                "_08c69982-a200-46f7-8db4-e66aa0ed2de4"
+            ], 
+            "reactants": [
+                "_0316d385-5ceb-49eb-84ce-8efa7c479a27"
+            ], 
+            "reaction_name": "Maltose exporter"
+        }, 
+        {
+            "compartment": "_032814", 
+            "id": "_032826", 
+            "species_name": "Maltopentaose"
+        }, 
+        {
+            "id": "G2_formation", 
+            "modifiers": [
+                "_0a915371-2a3f-4b82-8b9c-c0524c80bdfb", 
+                "ce44e0f7-9f67-4c8b-93a9-ea9c984048de", 
+                "_0bbd1f83-b573-4419-a4f3-eb0d9b684016"
+            ], 
+            "products": [
+                "c7bdce2e-1c66-4e73-820c-1b57ded9ef0e"
+            ], 
+            "reactants": [
+                "ba63a2db-b2c2-45b4-84d1-c6ddadb6fccd"
+            ], 
+            "reaction_name": "Maltose formation from Starch"
+        }, 
+        {
+            "compartment": "_032814", 
+            "id": "DPE1", 
+            "species_name": "Disproportionating enzyme 1(DPE1)"
+        }, 
+        {
+            "compartment": "_032805", 
+            "id": "_032850", 
+            "species_name": "G6P pool"
+        }, 
+        {
+            "compartment": "_032814", 
+            "id": "_032827", 
+            "species_name": "(D)-Glucose"
+        }, 
+        {
+            "compartment": "_032805", 
+            "id": "DPE2", 
+            "species_name": "Disproportionating enzyme 2(DPE2)"
+        }, 
+        {
+            "compartment": "_032805", 
+            "id": "_032834", 
+            "species_name": "Glucosyl Arabinogalactan (GlcAG)"
+        }, 
+        {
+            "id": "G5_degradation", 
+            "modifiers": [
+                "e8364899-ddd2-4482-9432-3b6c0701fde6"
+            ], 
+            "products": [
+                "e7752c7c-6395-4b27-9d01-796d64ef8f83", 
+                "_99e20e2a-bb05-4be3-b995-ee136a5e4c10"
+            ], 
+            "reactants": [
+                "aa158649-2340-4400-8fae-b49cd143f436"
+            ], 
+            "reaction_name": "Maltopentaose degradation"
+        }, 
+        {
+            "compartment": "_032805", 
+            "id": "_032842", 
+            "species_name": "Glutathione (reduced)"
+        }, 
+        {
+            "compartment": "_032805", 
+            "id": "_032835", 
+            "species_name": "ATP pool"
+        }, 
+        {
+            "compartment": "_032805", 
+            "id": "_032815", 
+            "species_name": "H+"
+        }, 
+        {
+            "compartment": "_032805", 
+            "id": "_032843", 
+            "species_name": "(D)-Glucose-1,6-bisphosphate pool"
+        }, 
+        {
+            "compartment": "_032814", 
+            "id": "iso_amylase", 
+            "species_name": "Isoamylase"
+        }, 
+        {
+            "id": "HK_RXN", 
+            "modifiers": [
+                "_6c6a9234-cc4b-4273-aa9e-737e88c6b02b", 
+                "_658ab43b-0cdb-435b-8832-23569fbb8984", 
+                "_075e2fae-4d6c-4445-9483-92436a115d74", 
+                "_07985dca-0cad-4492-88df-1f7e0b80aca3"
+            ], 
+            "products": [
+                "_5c221602-e940-4597-a70f-a2eb8fd8f636", 
+                "_65c348d8-65de-4e56-ba86-dd2b064cd309", 
+                "f64b42dc-0982-4d13-bd51-c52b024a2171"
+            ], 
+            "reactants": [
+                "ca81f3b6-a226-49fd-9f34-f47a6280289e", 
+                "c969e0df-374c-4a74-8fe5-4c501be21c24"
+            ], 
+            "reaction_name": "Hexokinase"
+        }, 
+        {
+            "compartment": "_032814", 
+            "id": "_032822", 
+            "species_name": "Maltose"
+        }, 
+        {
+            "compartment": "_032814", 
+            "id": "_032816", 
+            "species_name": "Starch"
+        }, 
+        {
+            "compartment": "_032814", 
+            "id": "_032823", 
+            "species_name": "Maltotriose"
+        }, 
+        {
+            "id": "DPE2_RXN", 
+            "modifiers": [
+                "ab2c3544-7636-40f3-b01b-6b363afdc58d"
+            ], 
+            "products": [
+                "_2ff64462-4c30-4948-801a-fb2f9a6c44a0", 
+                "_94677f8e-68f3-4d22-9e16-dba4206a78c3"
+            ], 
+            "reactants": [
+                "_3eb4a6c8-3b0d-4308-9222-effe9bf1eb4b", 
+                "_7aea369c-566f-424a-981f-c896fd4e91d5"
+            ], 
+            "reaction_name": "DPE2"
+        }, 
+        {
+            "compartment": "_032810", 
+            "id": "pGlcT", 
+            "species_name": "Glucose transporter (pGlcT)"
+        }, 
+        {
+            "compartment": "_032814", 
+            "id": "_032817", 
+            "species_name": "Starch Glucosyl unit"
+        }, 
+        {
+            "id": "CGP_RXN", 
+            "modifiers": [
+                "_24814628-125f-4599-9c97-2f72d52d4100"
+            ], 
+            "products": [
+                "_08bff445-8c02-4cf7-8b87-348e46eeeb79", 
+                "_99676203-379b-4291-9fc4-4f1c12f9d913"
+            ], 
+            "reactants": [
+                "f65f9367-da2e-429c-a8dc-ffc2a8da51e9", 
+                "_1f8be01e-d063-4762-bf91-0ad10a5a2048"
+            ], 
+            "reaction_name": "Cytosolic glucan phosphorylase"
+        }, 
+        {
+            "compartment": "_032814", 
+            "id": "_032818", 
+            "species_name": "Starch exposed to Beta Amylase due to action of Isoamylase (Starch DB)"
+        }, 
+        {
+            "compartment": "_032805", 
+            "id": "_032831", 
+            "species_name": "Arabinogalactan (AG)"
+        }, 
+        {
+            "compartment": "_032805", 
+            "id": "_032847", 
+            "species_name": "G1P pool"
+        }, 
+        {
+            "compartment": "_032805", 
+            "id": "_032830", 
+            "species_name": "(D)-Glucose"
+        }, 
+        {
+            "compartment": "_032814", 
+            "id": "beta_amylase", 
+            "species_name": "Beta amylase"
+        }, 
+        {
+            "compartment": "_032805", 
+            "id": "_032819", 
+            "species_name": "Maltose"
+        }, 
+        {
+            "compartment": "_032805", 
+            "id": "_032846", 
+            "species_name": "2,3-Bisphosphoglycerate pool"
+        }, 
+        {
+            "compartment": "_032805", 
+            "id": "CHK", 
+            "species_name": "Hexokinase"
+        }, 
+        {
+            "id": "DPE1_RXN", 
+            "modifiers": [
+                "_271747b9-d518-4137-8a20-0833f3ed7ae0"
+            ], 
+            "products": [
+                "_3211c894-70f1-42c6-8aea-f4bd6929ad76", 
+                "_663ba6d0-5d81-433a-baba-bde697b0ce81"
+            ], 
+            "reactants": [
+                "_4feb60b4-b2a0-4f4f-ab45-713f61e6c713"
+            ], 
+            "reaction_name": "DPE1"
+        }, 
+        {
+            "id": "G3_formation", 
+            "modifiers": [
+                "_0f2414e4-c9a0-400a-b47f-0045fec892f4", 
+                "_14dc8162-36b2-4d6b-ad33-de81117da115", 
+                "a94770a1-e5f9-47fd-af77-08ce787eb278"
+            ], 
+            "products": [
+                "d44ecfd6-14c2-465f-a375-caca62788558"
+            ], 
+            "reactants": [
+                "_80bc3984-b440-49dd-9473-2a9c111ac5ba"
+            ], 
+            "reaction_name": "Maltotriose formation from Starch"
+        }, 
+        {
+            "compartment": "_032805", 
+            "id": "CGP", 
+            "species_name": "Cytosolic Glucan phosphorylase"
+        }
+    ]
+}

@@ -1,1 +1,168 @@
-{"nodes": [{"compartment": "compartment_meta", "species_name": "x", "id": "x_meta"}, {"reaction_name": "v1", "reactants": ["_603066"], "modifiers": [], "products": ["_603078"], "id": "v1_meta"}, {"compartment": "compartment_meta", "species_name": "sigb", "id": "sigb_meta"}, {"reaction_name": "v3", "reactants": ["_603150"], "modifiers": [], "products": ["_603162"], "id": "v3_meta"}, {"compartment": "compartment_meta", "species_name": "lacz", "id": "lacz_meta"}, {"reaction_name": "v2", "reactants": ["_603114"], "modifiers": [], "products": ["_603126"], "id": "v2_meta"}, {"compartment": "compartment_meta", "species_name": "IPTG", "id": "IPTG_meta"}], "links": [{"source": "v1_meta", "role": "product", "id": "_603078", "value": "1.0", "target": "sigb_meta"}, {"source": "IPTG_meta", "role": "reactant", "id": "_603066", "value": "1.0", "target": "v1_meta"}, {"source": "v3_meta", "role": "product", "id": "_603162", "value": "1.0", "target": "x_meta"}, {"source": "sigb_meta", "role": "reactant", "id": "_603150", "value": "1.0", "target": "v3_meta"}, {"source": "v2_meta", "role": "product", "id": "_603126", "value": "1.0", "target": "lacz_meta"}, {"source": "sigb_meta", "role": "reactant", "id": "_603114", "value": "1.0", "target": "v2_meta"}]}
+{
+    "links": [
+        {
+            "id": "_603078", 
+            "role": "product", 
+            "source": "v1_meta", 
+            "target": "sigb_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_603066", 
+            "role": "reactant", 
+            "source": "IPTG_meta", 
+            "target": "v1_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_603090", 
+            "role": "modifier", 
+            "source": "x_meta", 
+            "target": "v1_meta", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_5483bb72_ad4d_4832_998f_8ed531df10a1", 
+            "role": "modifier", 
+            "source": "x_meta", 
+            "target": "v1_meta", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_50f2bc1d_40c7_44dd_91a4_2581ba5decd0", 
+            "role": "modifier", 
+            "source": "sigb_meta", 
+            "target": "v1_meta", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_17364a93_e738_4951_8809_ace295328791", 
+            "role": "modifier", 
+            "source": "IPTG_meta", 
+            "target": "v1_meta", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_603162", 
+            "role": "product", 
+            "source": "v3_meta", 
+            "target": "x_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_603150", 
+            "role": "reactant", 
+            "source": "sigb_meta", 
+            "target": "v3_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "c51733f7_0c17_4511_b9b0_38581c3d529a", 
+            "role": "modifier", 
+            "source": "x_meta", 
+            "target": "v3_meta", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_405564af_3e67_4572_81bf_1e98feccdcb5", 
+            "role": "modifier", 
+            "source": "sigb_meta", 
+            "target": "v3_meta", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_603126", 
+            "role": "product", 
+            "source": "v2_meta", 
+            "target": "lacz_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_603114", 
+            "role": "reactant", 
+            "source": "sigb_meta", 
+            "target": "v2_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_765eb605_23ed_4591_8c4d_fc6c94936d78", 
+            "role": "modifier", 
+            "source": "lacz_meta", 
+            "target": "v2_meta", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_3fec934d_64b4_43e5_808d_76632587795d", 
+            "role": "modifier", 
+            "source": "sigb_meta", 
+            "target": "v2_meta", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "compartment_meta", 
+            "id": "x_meta", 
+            "species_name": "x"
+        }, 
+        {
+            "id": "v1_meta", 
+            "modifiers": [
+                "_603090", 
+                "_5483bb72_ad4d_4832_998f_8ed531df10a1", 
+                "_50f2bc1d_40c7_44dd_91a4_2581ba5decd0", 
+                "_17364a93_e738_4951_8809_ace295328791"
+            ], 
+            "products": [
+                "_603078"
+            ], 
+            "reactants": [
+                "_603066"
+            ], 
+            "reaction_name": "v1"
+        }, 
+        {
+            "compartment": "compartment_meta", 
+            "id": "sigb_meta", 
+            "species_name": "sigb"
+        }, 
+        {
+            "id": "v3_meta", 
+            "modifiers": [
+                "c51733f7_0c17_4511_b9b0_38581c3d529a", 
+                "_405564af_3e67_4572_81bf_1e98feccdcb5"
+            ], 
+            "products": [
+                "_603162"
+            ], 
+            "reactants": [
+                "_603150"
+            ], 
+            "reaction_name": "v3"
+        }, 
+        {
+            "compartment": "compartment_meta", 
+            "id": "lacz_meta", 
+            "species_name": "lacz"
+        }, 
+        {
+            "id": "v2_meta", 
+            "modifiers": [
+                "_765eb605_23ed_4591_8c4d_fc6c94936d78", 
+                "_3fec934d_64b4_43e5_808d_76632587795d"
+            ], 
+            "products": [
+                "_603126"
+            ], 
+            "reactants": [
+                "_603114"
+            ], 
+            "reaction_name": "v2"
+        }, 
+        {
+            "compartment": "compartment_meta", 
+            "id": "IPTG_meta", 
+            "species_name": "IPTG"
+        }
+    ]
+}

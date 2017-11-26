@@ -1,1 +1,391 @@
-{"nodes": [{"compartment": "metaid_cell", "species_name": "glucose", "id": "metaid_glc"}, {"compartment": "metaid_cell", "species_name": "glucose 1-phosphate", "id": "metaid_g1p"}, {"compartment": "metaid_cell", "species_name": "glucose 6-phosphate", "id": "metaid_g6p"}, {"reaction_name": "glucose transport", "reactants": ["_949267"], "modifiers": [], "products": ["_949279"], "id": "_345185"}, {"reaction_name": "T6P phosphatase", "reactants": ["_949424", "_949412"], "modifiers": [], "products": ["_949436", "_949448"], "id": "metaid_tpp"}, {"compartment": "metaid_cell", "species_name": "ADP", "id": "metaid_adp"}, {"reaction_name": "G6P isomerase", "reactants": ["_949243"], "modifiers": [], "products": ["_949255"], "id": "metaid_pgi"}, {"compartment": "metaid_cell", "species_name": "trehalose 6-phosphate", "id": "metaid_t6p"}, {"reaction_name": "trehalase", "reactants": ["_949545", "_949557"], "modifiers": [], "products": ["_949569"], "id": "metaid_nth"}, {"compartment": "metaid_cell", "species_name": "trehalose", "id": "metaid_trh"}, {"reaction_name": "UDP glucose phosphorylase", "reactants": ["_949581", "_949593", "_949605"], "modifiers": [], "products": ["_949629", "_949617"], "id": "metaid_ugp"}, {"compartment": "metaid_cell", "species_name": "diphosphate", "id": "metaid_ppi"}, {"compartment": "metaid_cell", "species_name": "H+", "id": "metaid_h"}, {"compartment": "metaid_cell", "species_name": "UDP glucose", "id": "metaid_udg"}, {"reaction_name": "hexokinase", "reactants": ["_949304", "_949292"], "modifiers": [], "products": ["_949316", "_949340", "_949328"], "id": "metaid_hxk"}, {"compartment": "metaid_cell", "species_name": "water", "id": "metaid_h2o"}, {"compartment": "metaid_cell", "species_name": "phosphate", "id": "metaid_pho"}, {"compartment": "metaid_cell", "species_name": "fructose 6-phosphate", "id": "metaid_f6p"}, {"compartment": "metaid_cell", "species_name": "UDP", "id": "metaid_udp"}, {"reaction_name": "phosphoglucomutase", "reactants": ["_949376"], "modifiers": [], "products": ["_949388"], "id": "metaid_pgm"}, {"reaction_name": "T6P synthase", "reactants": ["_949472", "_949484"], "modifiers": [], "products": ["_949521", "_949496", "_949508"], "id": "metaid_tps"}, {"compartment": "metaid_medium", "species_name": "glucose", "id": "metaid_glx"}, {"compartment": "metaid_cell", "species_name": "ATP", "id": "metaid_atp"}, {"compartment": "metaid_cell", "species_name": "UTP", "id": "metaid_utp"}], "links": [{"source": "_345185", "role": "product", "id": "_949279", "value": "1.0", "target": "metaid_glc"}, {"source": "metaid_glx", "role": "reactant", "id": "_949267", "value": "1.0", "target": "_345185"}, {"source": "metaid_tpp", "role": "product", "id": "_949436", "value": "1.0", "target": "metaid_trh"}, {"source": "metaid_tpp", "role": "product", "id": "_949448", "value": "1.0", "target": "metaid_pho"}, {"source": "metaid_h2o", "role": "reactant", "id": "_949424", "value": "1.0", "target": "metaid_tpp"}, {"source": "metaid_t6p", "role": "reactant", "id": "_949412", "value": "1.0", "target": "metaid_tpp"}, {"source": "metaid_pgi", "role": "product", "id": "_949255", "value": "1.0", "target": "metaid_f6p"}, {"source": "metaid_g6p", "role": "reactant", "id": "_949243", "value": "1.0", "target": "metaid_pgi"}, {"source": "metaid_nth", "role": "product", "id": "_949569", "value": "2.0", "target": "metaid_glc"}, {"source": "metaid_trh", "role": "reactant", "id": "_949545", "value": "1.0", "target": "metaid_nth"}, {"source": "metaid_h2o", "role": "reactant", "id": "_949557", "value": "1.0", "target": "metaid_nth"}, {"source": "metaid_ugp", "role": "product", "id": "_949629", "value": "1.0", "target": "metaid_ppi"}, {"source": "metaid_ugp", "role": "product", "id": "_949617", "value": "1.0", "target": "metaid_udg"}, {"source": "metaid_g1p", "role": "reactant", "id": "_949581", "value": "1.0", "target": "metaid_ugp"}, {"source": "metaid_utp", "role": "reactant", "id": "_949593", "value": "1.0", "target": "metaid_ugp"}, {"source": "metaid_h", "role": "reactant", "id": "_949605", "value": "1.0", "target": "metaid_ugp"}, {"source": "metaid_hxk", "role": "product", "id": "_949316", "value": "1.0", "target": "metaid_g6p"}, {"source": "metaid_hxk", "role": "product", "id": "_949340", "value": "1.0", "target": "metaid_h"}, {"source": "metaid_hxk", "role": "product", "id": "_949328", "value": "1.0", "target": "metaid_adp"}, {"source": "metaid_atp", "role": "reactant", "id": "_949304", "value": "1.0", "target": "metaid_hxk"}, {"source": "metaid_glc", "role": "reactant", "id": "_949292", "value": "1.0", "target": "metaid_hxk"}, {"source": "metaid_pgm", "role": "product", "id": "_949388", "value": "1.0", "target": "metaid_g1p"}, {"source": "metaid_g6p", "role": "reactant", "id": "_949376", "value": "1.0", "target": "metaid_pgm"}, {"source": "metaid_tps", "role": "product", "id": "_949521", "value": "1.0", "target": "metaid_h"}, {"source": "metaid_tps", "role": "product", "id": "_949496", "value": "1.0", "target": "metaid_t6p"}, {"source": "metaid_tps", "role": "product", "id": "_949508", "value": "1.0", "target": "metaid_udp"}, {"source": "metaid_g6p", "role": "reactant", "id": "_949472", "value": "1.0", "target": "metaid_tps"}, {"source": "metaid_udg", "role": "reactant", "id": "_949484", "value": "1.0", "target": "metaid_tps"}]}
+{
+    "links": [
+        {
+            "id": "_949279", 
+            "role": "product", 
+            "source": "_345185", 
+            "target": "metaid_glc", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949267", 
+            "role": "reactant", 
+            "source": "metaid_glx", 
+            "target": "_345185", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949436", 
+            "role": "product", 
+            "source": "metaid_tpp", 
+            "target": "metaid_trh", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949448", 
+            "role": "product", 
+            "source": "metaid_tpp", 
+            "target": "metaid_pho", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949424", 
+            "role": "reactant", 
+            "source": "metaid_h2o", 
+            "target": "metaid_tpp", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949412", 
+            "role": "reactant", 
+            "source": "metaid_t6p", 
+            "target": "metaid_tpp", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949255", 
+            "role": "product", 
+            "source": "metaid_pgi", 
+            "target": "metaid_f6p", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949243", 
+            "role": "reactant", 
+            "source": "metaid_g6p", 
+            "target": "metaid_pgi", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949569", 
+            "role": "product", 
+            "source": "metaid_nth", 
+            "target": "metaid_glc", 
+            "value": "2.0"
+        }, 
+        {
+            "id": "_949545", 
+            "role": "reactant", 
+            "source": "metaid_trh", 
+            "target": "metaid_nth", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949557", 
+            "role": "reactant", 
+            "source": "metaid_h2o", 
+            "target": "metaid_nth", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949629", 
+            "role": "product", 
+            "source": "metaid_ugp", 
+            "target": "metaid_ppi", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949617", 
+            "role": "product", 
+            "source": "metaid_ugp", 
+            "target": "metaid_udg", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949581", 
+            "role": "reactant", 
+            "source": "metaid_g1p", 
+            "target": "metaid_ugp", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949593", 
+            "role": "reactant", 
+            "source": "metaid_utp", 
+            "target": "metaid_ugp", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949605", 
+            "role": "reactant", 
+            "source": "metaid_h", 
+            "target": "metaid_ugp", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949316", 
+            "role": "product", 
+            "source": "metaid_hxk", 
+            "target": "metaid_g6p", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949340", 
+            "role": "product", 
+            "source": "metaid_hxk", 
+            "target": "metaid_h", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949328", 
+            "role": "product", 
+            "source": "metaid_hxk", 
+            "target": "metaid_adp", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949304", 
+            "role": "reactant", 
+            "source": "metaid_atp", 
+            "target": "metaid_hxk", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949292", 
+            "role": "reactant", 
+            "source": "metaid_glc", 
+            "target": "metaid_hxk", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949352", 
+            "role": "modifier", 
+            "source": "metaid_t6p", 
+            "target": "metaid_hxk", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_949388", 
+            "role": "product", 
+            "source": "metaid_pgm", 
+            "target": "metaid_g1p", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949376", 
+            "role": "reactant", 
+            "source": "metaid_g6p", 
+            "target": "metaid_pgm", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949521", 
+            "role": "product", 
+            "source": "metaid_tps", 
+            "target": "metaid_h", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949496", 
+            "role": "product", 
+            "source": "metaid_tps", 
+            "target": "metaid_t6p", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949508", 
+            "role": "product", 
+            "source": "metaid_tps", 
+            "target": "metaid_udp", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949472", 
+            "role": "reactant", 
+            "source": "metaid_g6p", 
+            "target": "metaid_tps", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_949484", 
+            "role": "reactant", 
+            "source": "metaid_udg", 
+            "target": "metaid_tps", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_glc", 
+            "species_name": "glucose"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_g1p", 
+            "species_name": "glucose 1-phosphate"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_g6p", 
+            "species_name": "glucose 6-phosphate"
+        }, 
+        {
+            "id": "_345185", 
+            "modifiers": [], 
+            "products": [
+                "_949279"
+            ], 
+            "reactants": [
+                "_949267"
+            ], 
+            "reaction_name": "glucose transport"
+        }, 
+        {
+            "id": "metaid_tpp", 
+            "modifiers": [], 
+            "products": [
+                "_949436", 
+                "_949448"
+            ], 
+            "reactants": [
+                "_949424", 
+                "_949412"
+            ], 
+            "reaction_name": "T6P phosphatase"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_adp", 
+            "species_name": "ADP"
+        }, 
+        {
+            "id": "metaid_pgi", 
+            "modifiers": [], 
+            "products": [
+                "_949255"
+            ], 
+            "reactants": [
+                "_949243"
+            ], 
+            "reaction_name": "G6P isomerase"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_t6p", 
+            "species_name": "trehalose 6-phosphate"
+        }, 
+        {
+            "id": "metaid_nth", 
+            "modifiers": [], 
+            "products": [
+                "_949569"
+            ], 
+            "reactants": [
+                "_949545", 
+                "_949557"
+            ], 
+            "reaction_name": "trehalase"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_trh", 
+            "species_name": "trehalose"
+        }, 
+        {
+            "id": "metaid_ugp", 
+            "modifiers": [], 
+            "products": [
+                "_949629", 
+                "_949617"
+            ], 
+            "reactants": [
+                "_949581", 
+                "_949593", 
+                "_949605"
+            ], 
+            "reaction_name": "UDP glucose phosphorylase"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_ppi", 
+            "species_name": "diphosphate"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_h", 
+            "species_name": "H+"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_udg", 
+            "species_name": "UDP glucose"
+        }, 
+        {
+            "id": "metaid_hxk", 
+            "modifiers": [
+                "_949352"
+            ], 
+            "products": [
+                "_949316", 
+                "_949340", 
+                "_949328"
+            ], 
+            "reactants": [
+                "_949304", 
+                "_949292"
+            ], 
+            "reaction_name": "hexokinase"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_h2o", 
+            "species_name": "water"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_pho", 
+            "species_name": "phosphate"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_f6p", 
+            "species_name": "fructose 6-phosphate"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_udp", 
+            "species_name": "UDP"
+        }, 
+        {
+            "id": "metaid_pgm", 
+            "modifiers": [], 
+            "products": [
+                "_949388"
+            ], 
+            "reactants": [
+                "_949376"
+            ], 
+            "reaction_name": "phosphoglucomutase"
+        }, 
+        {
+            "id": "metaid_tps", 
+            "modifiers": [], 
+            "products": [
+                "_949521", 
+                "_949496", 
+                "_949508"
+            ], 
+            "reactants": [
+                "_949472", 
+                "_949484"
+            ], 
+            "reaction_name": "T6P synthase"
+        }, 
+        {
+            "compartment": "metaid_medium", 
+            "id": "metaid_glx", 
+            "species_name": "glucose"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_atp", 
+            "species_name": "ATP"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_utp", 
+            "species_name": "UTP"
+        }
+    ]
+}

@@ -1,1 +1,358 @@
-{"nodes": [{"compartment": "default", "species_name": "A pLux", "id": "s17"}, {"compartment": "default", "species_name": "LasR/AHL", "id": "s42"}, {"reaction_name": "", "reactants": ["CDMT00008"], "modifiers": [], "products": ["CDMT00009"], "id": "re3"}, {"compartment": "default", "species_name": "sa3_degraded", "id": "s3"}, {"reaction_name": "", "reactants": ["CDMT00026"], "modifiers": [], "products": ["CDMT00027"], "id": "re8"}, {"compartment": "default", "species_name": "pLuxR", "id": "s16"}, {"reaction_name": "", "reactants": ["CDMT00020"], "modifiers": [], "products": ["CDMT00021"], "id": "re14"}, {"reaction_name": "", "reactants": ["CDMT00011", "CDMT00012"], "modifiers": [], "products": ["CDMT00013"], "id": "re4"}, {"compartment": "default", "species_name": "LasR", "id": "s19"}, {"compartment": "default", "species_name": "3OC12HSL", "id": "s4"}, {"reaction_name": "", "reactants": ["CDMT00016", "CDMT00015"], "modifiers": [], "products": ["CDMT00017"], "id": "re5"}, {"compartment": "default", "species_name": "sa6_degraded", "id": "s5"}, {"reaction_name": "", "reactants": ["CDMT00004"], "modifiers": [], "products": ["CDMT00005"], "id": "re1"}, {"compartment": "default", "species_name": "Ptet-LasR", "id": "s1"}, {"compartment": "default", "species_name": "GFP", "id": "s45"}, {"reaction_name": "", "reactants": ["CDMT00002"], "modifiers": [], "products": ["CDMT00003"], "id": "re2"}, {"compartment": "default", "species_name": "mRNA(LasR)", "id": "s2"}], "links": [{"source": "re3", "role": "product", "id": "CDMT00009", "value": "1.0", "target": "s3"}, {"source": "s19", "role": "reactant", "id": "CDMT00008", "value": "1.0", "target": "re3"}, {"source": "re8", "role": "product", "id": "CDMT00027", "value": "1.0", "target": "s5"}, {"source": "s4", "role": "reactant", "id": "CDMT00026", "value": "1.0", "target": "re8"}, {"source": "re14", "role": "product", "id": "CDMT00021", "value": "1.0", "target": "s45"}, {"source": "s17", "role": "reactant", "id": "CDMT00020", "value": "1.0", "target": "re14"}, {"source": "re4", "role": "product", "id": "CDMT00013", "value": "1.0", "target": "s42"}, {"source": "s19", "role": "reactant", "id": "CDMT00011", "value": "1.0", "target": "re4"}, {"source": "s4", "role": "reactant", "id": "CDMT00012", "value": "1.0", "target": "re4"}, {"source": "re5", "role": "product", "id": "CDMT00017", "value": "1.0", "target": "s17"}, {"source": "s16", "role": "reactant", "id": "CDMT00016", "value": "1.0", "target": "re5"}, {"source": "s42", "role": "reactant", "id": "CDMT00015", "value": "1.0", "target": "re5"}, {"source": "re1", "role": "product", "id": "CDMT00005", "value": "1.0", "target": "s2"}, {"source": "s1", "role": "reactant", "id": "CDMT00004", "value": "1.0", "target": "re1"}, {"source": "re2", "role": "product", "id": "CDMT00003", "value": "1.0", "target": "s19"}, {"source": "s2", "role": "reactant", "id": "CDMT00002", "value": "1.0", "target": "re2"}]}
+{
+    "links": [
+        {
+            "id": "CDMT00009", 
+            "role": "product", 
+            "source": "re3", 
+            "target": "s3", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00008", 
+            "role": "reactant", 
+            "source": "s19", 
+            "target": "re3", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "df6f5dba_d493_47ef_9fba_be4573b3cc49", 
+            "role": "modifier", 
+            "source": "s19", 
+            "target": "re3", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00027", 
+            "role": "product", 
+            "source": "re8", 
+            "target": "s5", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00026", 
+            "role": "reactant", 
+            "source": "s4", 
+            "target": "re8", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_4f16fcc3_4911_498a_86cf_8e43d18db969", 
+            "role": "modifier", 
+            "source": "s4", 
+            "target": "re8", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00021", 
+            "role": "product", 
+            "source": "re14", 
+            "target": "s45", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00020", 
+            "role": "reactant", 
+            "source": "s17", 
+            "target": "re14", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "a6e417df_86bd_4797_bf3e_88885e73fee9", 
+            "role": "modifier", 
+            "source": "s17", 
+            "target": "re14", 
+            "value": 0.0
+        }, 
+        {
+            "id": "ec2c7385_199f_49aa_ad61_bf31fe2a4ee9", 
+            "role": "modifier", 
+            "source": "s45", 
+            "target": "re14", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00013", 
+            "role": "product", 
+            "source": "re4", 
+            "target": "s42", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00011", 
+            "role": "reactant", 
+            "source": "s19", 
+            "target": "re4", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00012", 
+            "role": "reactant", 
+            "source": "s4", 
+            "target": "re4", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_58dbfa66_2384_4826_bfeb_ed0a50ccfa27", 
+            "role": "modifier", 
+            "source": "s4", 
+            "target": "re4", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_78bb629f_dc44_4a6e_9932_2fd73fb31592", 
+            "role": "modifier", 
+            "source": "s19", 
+            "target": "re4", 
+            "value": 0.0
+        }, 
+        {
+            "id": "b7763ca6_5ab0_439b_a8c5_31ecd26e8767", 
+            "role": "modifier", 
+            "source": "s42", 
+            "target": "re4", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00017", 
+            "role": "product", 
+            "source": "re5", 
+            "target": "s17", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00016", 
+            "role": "reactant", 
+            "source": "s16", 
+            "target": "re5", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00015", 
+            "role": "reactant", 
+            "source": "s42", 
+            "target": "re5", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_140c7294_31a3_4eac_9592_24ad47fa2fb7", 
+            "role": "modifier", 
+            "source": "s17", 
+            "target": "re5", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_922b80cb_56a9_40a4_af3a_3cb061a682c8", 
+            "role": "modifier", 
+            "source": "s16", 
+            "target": "re5", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_75e451c6_dca5_4fac_a4af_bedf1074219a", 
+            "role": "modifier", 
+            "source": "s42", 
+            "target": "re5", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00005", 
+            "role": "product", 
+            "source": "re1", 
+            "target": "s2", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00004", 
+            "role": "reactant", 
+            "source": "s1", 
+            "target": "re1", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "f883333e_ff43_4ba6_b28b_786ad9fa0bf6", 
+            "role": "modifier", 
+            "source": "s1", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_35969983_e99b_456b_9bf4_5e6b0e072038", 
+            "role": "modifier", 
+            "source": "s2", 
+            "target": "re1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00003", 
+            "role": "product", 
+            "source": "re2", 
+            "target": "s19", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00002", 
+            "role": "reactant", 
+            "source": "s2", 
+            "target": "re2", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "f7427192_5177_4a95_9bd5_1e9585d64a52", 
+            "role": "modifier", 
+            "source": "s2", 
+            "target": "re2", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "default", 
+            "id": "s17", 
+            "species_name": "A pLux"
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s42", 
+            "species_name": "LasR/AHL"
+        }, 
+        {
+            "id": "re3", 
+            "modifiers": [
+                "df6f5dba_d493_47ef_9fba_be4573b3cc49"
+            ], 
+            "products": [
+                "CDMT00009"
+            ], 
+            "reactants": [
+                "CDMT00008"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s3", 
+            "species_name": "sa3_degraded"
+        }, 
+        {
+            "id": "re8", 
+            "modifiers": [
+                "_4f16fcc3_4911_498a_86cf_8e43d18db969"
+            ], 
+            "products": [
+                "CDMT00027"
+            ], 
+            "reactants": [
+                "CDMT00026"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s16", 
+            "species_name": "pLuxR"
+        }, 
+        {
+            "id": "re14", 
+            "modifiers": [
+                "a6e417df_86bd_4797_bf3e_88885e73fee9", 
+                "ec2c7385_199f_49aa_ad61_bf31fe2a4ee9"
+            ], 
+            "products": [
+                "CDMT00021"
+            ], 
+            "reactants": [
+                "CDMT00020"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "re4", 
+            "modifiers": [
+                "_58dbfa66_2384_4826_bfeb_ed0a50ccfa27", 
+                "_78bb629f_dc44_4a6e_9932_2fd73fb31592", 
+                "b7763ca6_5ab0_439b_a8c5_31ecd26e8767"
+            ], 
+            "products": [
+                "CDMT00013"
+            ], 
+            "reactants": [
+                "CDMT00011", 
+                "CDMT00012"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s19", 
+            "species_name": "LasR"
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s4", 
+            "species_name": "3OC12HSL"
+        }, 
+        {
+            "id": "re5", 
+            "modifiers": [
+                "_140c7294_31a3_4eac_9592_24ad47fa2fb7", 
+                "_922b80cb_56a9_40a4_af3a_3cb061a682c8", 
+                "_75e451c6_dca5_4fac_a4af_bedf1074219a"
+            ], 
+            "products": [
+                "CDMT00017"
+            ], 
+            "reactants": [
+                "CDMT00016", 
+                "CDMT00015"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s5", 
+            "species_name": "sa6_degraded"
+        }, 
+        {
+            "id": "re1", 
+            "modifiers": [
+                "f883333e_ff43_4ba6_b28b_786ad9fa0bf6", 
+                "_35969983_e99b_456b_9bf4_5e6b0e072038"
+            ], 
+            "products": [
+                "CDMT00005"
+            ], 
+            "reactants": [
+                "CDMT00004"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s1", 
+            "species_name": "Ptet-LasR"
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s45", 
+            "species_name": "GFP"
+        }, 
+        {
+            "id": "re2", 
+            "modifiers": [
+                "f7427192_5177_4a95_9bd5_1e9585d64a52"
+            ], 
+            "products": [
+                "CDMT00003"
+            ], 
+            "reactants": [
+                "CDMT00002"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "default", 
+            "id": "s2", 
+            "species_name": "mRNA(LasR)"
+        }
+    ]
+}

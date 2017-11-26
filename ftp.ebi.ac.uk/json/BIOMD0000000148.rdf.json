@@ -1,1 +1,189 @@
-{"nodes": [{"reaction_name": "Bone formation", "reactants": [], "modifiers": [], "products": ["_3081bded-9e53-4022-bf2b-3f606340fe5e"], "id": "metaid_0000031"}, {"compartment": "metaid_0000003", "species_name": "Osteoclast", "id": "metaid_0000004"}, {"reaction_name": "Bone resorption", "reactants": ["f7872f22-f9a7-4df0-af8f-e6ecc1497ee2"], "modifiers": [], "products": [], "id": "metaid_0000028"}, {"reaction_name": "Osteoclast removal", "reactants": ["c20bdda9-97ee-4afc-9659-9cf183f7de2d"], "modifiers": [], "products": [], "id": "metaid_0000024"}, {"compartment": "metaid_0000003", "species_name": "Osteoblast", "id": "metaid_0000005"}, {"compartment": "metaid_0000003", "species_name": "Cells actively forming bone", "id": "metaid_0000030"}, {"compartment": "metaid_0000003", "species_name": "Cells actively resorbing bone", "id": "metaid_0000029"}, {"reaction_name": "Osteoblast production", "reactants": [], "modifiers": [], "products": ["_87598d3c-b96f-4f7e-bf97-bc954abab5e1"], "id": "metaid_0000025"}, {"compartment": "metaid_0000003", "species_name": "Steady state osteoclast", "id": "metaid_0000006"}, {"reaction_name": "Osteoclast production", "reactants": [], "modifiers": [], "products": ["_29374184-ef4e-40a1-9eaa-0b2535d83a52"], "id": "metaid_0000023"}, {"reaction_name": "Osteoblast removal", "reactants": ["_08ccc8d3-3fed-42c3-a6c9-b2fe7d4e8886"], "modifiers": [], "products": [], "id": "metaid_0000026"}, {"compartment": "metaid_0000003", "species_name": "Steady state osteoblast", "id": "metaid_0000007"}, {"compartment": "metaid_0000003", "species_name": "Bone mass", "id": "metaid_0000027"}], "links": [{"source": "metaid_0000031", "role": "product", "id": "_3081bded-9e53-4022-bf2b-3f606340fe5e", "value": "1.0", "target": "metaid_0000027"}, {"source": "metaid_0000027", "role": "reactant", "id": "f7872f22-f9a7-4df0-af8f-e6ecc1497ee2", "value": "1.0", "target": "metaid_0000028"}, {"source": "metaid_0000004", "role": "reactant", "id": "c20bdda9-97ee-4afc-9659-9cf183f7de2d", "value": "1.0", "target": "metaid_0000024"}, {"source": "metaid_0000025", "role": "product", "id": "_87598d3c-b96f-4f7e-bf97-bc954abab5e1", "value": "1.0", "target": "metaid_0000005"}, {"source": "metaid_0000023", "role": "product", "id": "_29374184-ef4e-40a1-9eaa-0b2535d83a52", "value": "1.0", "target": "metaid_0000004"}, {"source": "metaid_0000005", "role": "reactant", "id": "_08ccc8d3-3fed-42c3-a6c9-b2fe7d4e8886", "value": "1.0", "target": "metaid_0000026"}]}
+{
+    "links": [
+        {
+            "id": "_3081bded-9e53-4022-bf2b-3f606340fe5e", 
+            "role": "product", 
+            "source": "metaid_0000031", 
+            "target": "metaid_0000027", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "ce2be7aa-5b86-4fe7-946f-442a81ff0b77", 
+            "role": "modifier", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000031", 
+            "value": 0.0
+        }, 
+        {
+            "id": "dddebd4d-2fc7-45f7-b5ab-d49683e71c6d", 
+            "role": "modifier", 
+            "source": "metaid_0000005", 
+            "target": "metaid_0000031", 
+            "value": 0.0
+        }, 
+        {
+            "id": "f7872f22-f9a7-4df0-af8f-e6ecc1497ee2", 
+            "role": "reactant", 
+            "source": "metaid_0000027", 
+            "target": "metaid_0000028", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "ded46f08-4fb2-4af4-9f88-25aeb092423a", 
+            "role": "modifier", 
+            "source": "metaid_0000006", 
+            "target": "metaid_0000028", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_7faf5544-d4bf-4022-85ba-2bd7c074aa69", 
+            "role": "modifier", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000028", 
+            "value": 0.0
+        }, 
+        {
+            "id": "c20bdda9-97ee-4afc-9659-9cf183f7de2d", 
+            "role": "reactant", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000024", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_87598d3c-b96f-4f7e-bf97-bc954abab5e1", 
+            "role": "product", 
+            "source": "metaid_0000025", 
+            "target": "metaid_0000005", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_52426869-eceb-4ee5-8a34-a741e339e0a0", 
+            "role": "modifier", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000025", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_29374184-ef4e-40a1-9eaa-0b2535d83a52", 
+            "role": "product", 
+            "source": "metaid_0000023", 
+            "target": "metaid_0000004", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_243c0068-fd50-49ed-ac81-26bc96aeeccd", 
+            "role": "modifier", 
+            "source": "metaid_0000005", 
+            "target": "metaid_0000023", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_08ccc8d3-3fed-42c3-a6c9-b2fe7d4e8886", 
+            "role": "reactant", 
+            "source": "metaid_0000005", 
+            "target": "metaid_0000026", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000031", 
+            "modifiers": [
+                "ce2be7aa-5b86-4fe7-946f-442a81ff0b77", 
+                "dddebd4d-2fc7-45f7-b5ab-d49683e71c6d"
+            ], 
+            "products": [
+                "_3081bded-9e53-4022-bf2b-3f606340fe5e"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Bone formation"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000004", 
+            "species_name": "Osteoclast"
+        }, 
+        {
+            "id": "metaid_0000028", 
+            "modifiers": [
+                "ded46f08-4fb2-4af4-9f88-25aeb092423a", 
+                "_7faf5544-d4bf-4022-85ba-2bd7c074aa69"
+            ], 
+            "products": [], 
+            "reactants": [
+                "f7872f22-f9a7-4df0-af8f-e6ecc1497ee2"
+            ], 
+            "reaction_name": "Bone resorption"
+        }, 
+        {
+            "id": "metaid_0000024", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "c20bdda9-97ee-4afc-9659-9cf183f7de2d"
+            ], 
+            "reaction_name": "Osteoclast removal"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000005", 
+            "species_name": "Osteoblast"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000030", 
+            "species_name": "Cells actively forming bone"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000029", 
+            "species_name": "Cells actively resorbing bone"
+        }, 
+        {
+            "id": "metaid_0000025", 
+            "modifiers": [
+                "_52426869-eceb-4ee5-8a34-a741e339e0a0"
+            ], 
+            "products": [
+                "_87598d3c-b96f-4f7e-bf97-bc954abab5e1"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Osteoblast production"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000006", 
+            "species_name": "Steady state osteoclast"
+        }, 
+        {
+            "id": "metaid_0000023", 
+            "modifiers": [
+                "_243c0068-fd50-49ed-ac81-26bc96aeeccd"
+            ], 
+            "products": [
+                "_29374184-ef4e-40a1-9eaa-0b2535d83a52"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Osteoclast production"
+        }, 
+        {
+            "id": "metaid_0000026", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_08ccc8d3-3fed-42c3-a6c9-b2fe7d4e8886"
+            ], 
+            "reaction_name": "Osteoblast removal"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000007", 
+            "species_name": "Steady state osteoblast"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000027", 
+            "species_name": "Bone mass"
+        }
+    ]
+}

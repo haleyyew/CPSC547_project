@@ -1,1 +1,136 @@
-{"nodes": [{"compartment": "d9de481b-91a5-461a-9abb-79caf658a7f4", "species_name": "a", "id": "COPASI1"}, {"reaction_name": "Decrease in the extracellular concentration of beta-amyloid", "reactants": ["_238acffa-933e-4f4f-8b26-7bce500870ff"], "modifiers": [], "products": [], "id": "COPASI11"}, {"compartment": "d9de481b-91a5-461a-9abb-79caf658a7f4", "species_name": "aRel", "id": "COPASI3"}, {"reaction_name": "Abeta formation from APP", "reactants": [], "modifiers": [], "products": ["_9e78743c-27f6-4fa0-8c73-6e246b765c4a"], "id": "COPASI9"}, {"compartment": "d9de481b-91a5-461a-9abb-79caf658a7f4", "species_name": "b", "id": "COPASI2"}, {"reaction_name": "Effect of extracellular ACh", "reactants": ["_4176259f-3879-4249-88a8-daa79aac3872"], "modifiers": [], "products": [], "id": "COPASI10"}, {"reaction_name": "Loss of intracellular choline", "reactants": ["_09a75dfe-7ca4-4279-b4a9-5d9d64bca4d2"], "modifiers": [], "products": [], "id": "COPASI8"}], "links": [{"source": "COPASI2", "role": "reactant", "id": "_238acffa-933e-4f4f-8b26-7bce500870ff", "value": "1.0", "target": "COPASI11"}, {"source": "COPASI9", "role": "product", "id": "_9e78743c-27f6-4fa0-8c73-6e246b765c4a", "value": "1.0", "target": "COPASI2"}, {"source": "COPASI2", "role": "reactant", "id": "_4176259f-3879-4249-88a8-daa79aac3872", "value": "1.0", "target": "COPASI10"}, {"source": "COPASI1", "role": "reactant", "id": "_09a75dfe-7ca4-4279-b4a9-5d9d64bca4d2", "value": "1.0", "target": "COPASI8"}]}
+{
+    "links": [
+        {
+            "id": "_238acffa-933e-4f4f-8b26-7bce500870ff", 
+            "role": "reactant", 
+            "source": "COPASI2", 
+            "target": "COPASI11", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_29a072b8-b1bc-4fc6-861d-7fb38b321343", 
+            "role": "modifier", 
+            "source": "COPASI2", 
+            "target": "COPASI11", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_9e78743c-27f6-4fa0-8c73-6e246b765c4a", 
+            "role": "product", 
+            "source": "COPASI9", 
+            "target": "COPASI2", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_4176259f-3879-4249-88a8-daa79aac3872", 
+            "role": "reactant", 
+            "source": "COPASI2", 
+            "target": "COPASI10", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "b3ceaf24-2ac8-4f16-bc4a-79d3cef0b1a0", 
+            "role": "modifier", 
+            "source": "COPASI1", 
+            "target": "COPASI10", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_0e4d45c7-f6f5-411f-a674-cd649e34e469", 
+            "role": "modifier", 
+            "source": "COPASI1", 
+            "target": "COPASI10", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_09a75dfe-7ca4-4279-b4a9-5d9d64bca4d2", 
+            "role": "reactant", 
+            "source": "COPASI1", 
+            "target": "COPASI8", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "a0b317fd-99a2-46fb-8716-9874ed1421c2", 
+            "role": "modifier", 
+            "source": "COPASI2", 
+            "target": "COPASI8", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_9c022283-0cdf-4905-850d-0b7f2b4ff07f", 
+            "role": "modifier", 
+            "source": "COPASI1", 
+            "target": "COPASI8", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_8afe9f16-c900-4147-b87d-e7fb8a396261", 
+            "role": "modifier", 
+            "source": "COPASI2", 
+            "target": "COPASI8", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "d9de481b-91a5-461a-9abb-79caf658a7f4", 
+            "id": "COPASI1", 
+            "species_name": "a"
+        }, 
+        {
+            "id": "COPASI11", 
+            "modifiers": [
+                "_29a072b8-b1bc-4fc6-861d-7fb38b321343"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_238acffa-933e-4f4f-8b26-7bce500870ff"
+            ], 
+            "reaction_name": "Decrease in the extracellular concentration of beta-amyloid"
+        }, 
+        {
+            "compartment": "d9de481b-91a5-461a-9abb-79caf658a7f4", 
+            "id": "COPASI3", 
+            "species_name": "aRel"
+        }, 
+        {
+            "id": "COPASI9", 
+            "modifiers": [], 
+            "products": [
+                "_9e78743c-27f6-4fa0-8c73-6e246b765c4a"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Abeta formation from APP"
+        }, 
+        {
+            "compartment": "d9de481b-91a5-461a-9abb-79caf658a7f4", 
+            "id": "COPASI2", 
+            "species_name": "b"
+        }, 
+        {
+            "id": "COPASI10", 
+            "modifiers": [
+                "b3ceaf24-2ac8-4f16-bc4a-79d3cef0b1a0", 
+                "_0e4d45c7-f6f5-411f-a674-cd649e34e469"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_4176259f-3879-4249-88a8-daa79aac3872"
+            ], 
+            "reaction_name": "Effect of extracellular ACh"
+        }, 
+        {
+            "id": "COPASI8", 
+            "modifiers": [
+                "a0b317fd-99a2-46fb-8716-9874ed1421c2", 
+                "_9c022283-0cdf-4905-850d-0b7f2b4ff07f", 
+                "_8afe9f16-c900-4147-b87d-e7fb8a396261"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_09a75dfe-7ca4-4279-b4a9-5d9d64bca4d2"
+            ], 
+            "reaction_name": "Loss of intracellular choline"
+        }
+    ]
+}

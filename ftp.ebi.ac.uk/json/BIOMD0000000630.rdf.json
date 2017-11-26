@@ -1,1 +1,500 @@
-{"nodes": [{"reaction_name": "cleavage of plasminogen", "reactants": ["_7fe73b08-661b-4850-adbe-552c16951d95", "b62c5533-89fc-4055-8557-2b7917b1ce4f"], "modifiers": [], "products": ["e27b0110-a9e1-414b-b12f-63fd75fa8401", "df0f1e88-58fc-4504-b705-10019853ff5b"], "id": "COPASI11"}, {"reaction_name": "catalytic reaction of x-plasmin", "reactants": ["_2b12f2b2-bdf6-4153-ac85-f0bafca6faae"], "modifiers": [], "products": ["_5c743318-741c-491f-90a4-a02a9bb78921"], "id": "COPASI19"}, {"reaction_name": "synthesis of x", "reactants": [], "modifiers": [], "products": ["_60cd3334-646c-4fc6-b6ed-e21ba81445a2"], "id": "COPASI24"}, {"compartment": "COPASI1", "species_name": "plasminogen", "id": "COPASI2"}, {"reaction_name": "reversible plasmin bonding x", "reactants": ["_11fb02b3-c9d7-4a5e-89fa-8922f53a8f70", "_054f01a0-e8a0-4dbf-938a-3002e2d81256"], "modifiers": [], "products": ["fd42efa9-a726-4b7d-bcd6-c009ece43234"], "id": "COPASI18"}, {"reaction_name": "synthesis of plasminogen", "reactants": [], "modifiers": [], "products": ["_3424db36-b8b0-477b-8dcf-36c65b4d67ad"], "id": "COPASI23"}, {"reaction_name": "activation of plasmin", "reactants": ["_9e5b7e88-4029-4678-93e7-e0deedf9f8bc", "_48706a62-9867-44f6-86c6-745688a812cc"], "modifiers": [], "products": ["ad34ea96-a028-4f49-b7fb-0b983133f079", "aaaf68c2-a157-45d5-aef9-11ce36bbed87"], "id": "COPASI13"}, {"compartment": "COPASI1", "species_name": "plasmin", "id": "COPASI3"}, {"reaction_name": "activation of urokinase-type plasminogen activator", "reactants": ["a571c3ec-82c9-4070-8492-8bb7cc60d8ec", "_38118bf4-0d03-4306-986f-8b2dd7e6c45b"], "modifiers": [], "products": ["d4f89fe7-20ed-437a-99c3-06980b37488c", "_59bb0b0d-05a6-4233-92d7-64a2d1606fcd"], "id": "COPASI12"}, {"compartment": "COPASI1", "species_name": "single intact chain urokinase-type plasminogen activator", "id": "COPASI4"}, {"reaction_name": "synthesis of single intact chain urokinase-type plasminogen activator", "reactants": [], "modifiers": [], "products": ["_0f0d085e-1317-49c8-8b2f-6cebfbf9abf4"], "id": "COPASI22"}, {"reaction_name": "degradation of plasminogen", "reactants": ["ca87982c-cd5c-4d44-8317-a1b637e4e607"], "modifiers": [], "products": [], "id": "COPASI15"}, {"compartment": "COPASI1", "species_name": "two-chain urokinase-type plasminogen activator", "id": "COPASI5"}, {"reaction_name": "degradation of single intact chain urokinase-type plasminogen activator", "reactants": ["_6c70a054-7abf-4d67-aba2-110ba772f374"], "modifiers": [], "products": [], "id": "COPASI14"}, {"compartment": "COPASI1", "species_name": "x", "id": "COPASI6"}, {"reaction_name": "degradation of two-chain urokinase type plasminogen activator", "reactants": ["d8ceea30-d592-4c14-b815-ad0646876494"], "modifiers": [], "products": [], "id": "COPASI17"}, {"compartment": "COPASI1", "species_name": "x-plasmin", "id": "COPASI7"}, {"reaction_name": "degradation of x", "reactants": ["bc997c30-3a87-45ac-95d9-5a9500b7d195"], "modifiers": [], "products": [], "id": "COPASI20"}, {"reaction_name": "degradation of plasmin", "reactants": ["_8ab5b650-ecfd-481c-9184-4892cd26448f"], "modifiers": [], "products": [], "id": "COPASI16"}, {"reaction_name": "degradation of x-plasmin", "reactants": ["_294e4510-441f-45b8-b52d-80e895c1ec49"], "modifiers": [], "products": [], "id": "COPASI21"}], "links": [{"source": "COPASI11", "role": "product", "id": "e27b0110-a9e1-414b-b12f-63fd75fa8401", "value": "1.0", "target": "COPASI4"}, {"source": "COPASI11", "role": "product", "id": "df0f1e88-58fc-4504-b705-10019853ff5b", "value": "1.0", "target": "COPASI3"}, {"source": "COPASI2", "role": "reactant", "id": "_7fe73b08-661b-4850-adbe-552c16951d95", "value": "1.0", "target": "COPASI11"}, {"source": "COPASI4", "role": "reactant", "id": "b62c5533-89fc-4055-8557-2b7917b1ce4f", "value": "1.0", "target": "COPASI11"}, {"source": "COPASI19", "role": "product", "id": "_5c743318-741c-491f-90a4-a02a9bb78921", "value": "1.0", "target": "COPASI3"}, {"source": "COPASI7", "role": "reactant", "id": "_2b12f2b2-bdf6-4153-ac85-f0bafca6faae", "value": "1.0", "target": "COPASI19"}, {"source": "COPASI24", "role": "product", "id": "_60cd3334-646c-4fc6-b6ed-e21ba81445a2", "value": "1.0", "target": "COPASI6"}, {"source": "COPASI18", "role": "product", "id": "fd42efa9-a726-4b7d-bcd6-c009ece43234", "value": "1.0", "target": "COPASI7"}, {"source": "COPASI3", "role": "reactant", "id": "_11fb02b3-c9d7-4a5e-89fa-8922f53a8f70", "value": "1.0", "target": "COPASI18"}, {"source": "COPASI6", "role": "reactant", "id": "_054f01a0-e8a0-4dbf-938a-3002e2d81256", "value": "1.0", "target": "COPASI18"}, {"source": "COPASI23", "role": "product", "id": "_3424db36-b8b0-477b-8dcf-36c65b4d67ad", "value": "1.0", "target": "COPASI2"}, {"source": "COPASI13", "role": "product", "id": "ad34ea96-a028-4f49-b7fb-0b983133f079", "value": "1.0", "target": "COPASI5"}, {"source": "COPASI13", "role": "product", "id": "aaaf68c2-a157-45d5-aef9-11ce36bbed87", "value": "1.0", "target": "COPASI3"}, {"source": "COPASI5", "role": "reactant", "id": "_9e5b7e88-4029-4678-93e7-e0deedf9f8bc", "value": "1.0", "target": "COPASI13"}, {"source": "COPASI2", "role": "reactant", "id": "_48706a62-9867-44f6-86c6-745688a812cc", "value": "1.0", "target": "COPASI13"}, {"source": "COPASI12", "role": "product", "id": "d4f89fe7-20ed-437a-99c3-06980b37488c", "value": "1.0", "target": "COPASI5"}, {"source": "COPASI12", "role": "product", "id": "_59bb0b0d-05a6-4233-92d7-64a2d1606fcd", "value": "1.0", "target": "COPASI3"}, {"source": "COPASI4", "role": "reactant", "id": "a571c3ec-82c9-4070-8492-8bb7cc60d8ec", "value": "1.0", "target": "COPASI12"}, {"source": "COPASI3", "role": "reactant", "id": "_38118bf4-0d03-4306-986f-8b2dd7e6c45b", "value": "1.0", "target": "COPASI12"}, {"source": "COPASI22", "role": "product", "id": "_0f0d085e-1317-49c8-8b2f-6cebfbf9abf4", "value": "1.0", "target": "COPASI4"}, {"source": "COPASI2", "role": "reactant", "id": "ca87982c-cd5c-4d44-8317-a1b637e4e607", "value": "1.0", "target": "COPASI15"}, {"source": "COPASI4", "role": "reactant", "id": "_6c70a054-7abf-4d67-aba2-110ba772f374", "value": "1.0", "target": "COPASI14"}, {"source": "COPASI5", "role": "reactant", "id": "d8ceea30-d592-4c14-b815-ad0646876494", "value": "1.0", "target": "COPASI17"}, {"source": "COPASI6", "role": "reactant", "id": "bc997c30-3a87-45ac-95d9-5a9500b7d195", "value": "1.0", "target": "COPASI20"}, {"source": "COPASI3", "role": "reactant", "id": "_8ab5b650-ecfd-481c-9184-4892cd26448f", "value": "1.0", "target": "COPASI16"}, {"source": "COPASI7", "role": "reactant", "id": "_294e4510-441f-45b8-b52d-80e895c1ec49", "value": "1.0", "target": "COPASI21"}]}
+{
+    "links": [
+        {
+            "id": "e27b0110-a9e1-414b-b12f-63fd75fa8401", 
+            "role": "product", 
+            "source": "COPASI11", 
+            "target": "COPASI4", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "df0f1e88-58fc-4504-b705-10019853ff5b", 
+            "role": "product", 
+            "source": "COPASI11", 
+            "target": "COPASI3", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_7fe73b08-661b-4850-adbe-552c16951d95", 
+            "role": "reactant", 
+            "source": "COPASI2", 
+            "target": "COPASI11", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "b62c5533-89fc-4055-8557-2b7917b1ce4f", 
+            "role": "reactant", 
+            "source": "COPASI4", 
+            "target": "COPASI11", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "d00430e7-d87f-48dd-a849-f98d9107593c", 
+            "role": "modifier", 
+            "source": "COPASI4", 
+            "target": "COPASI11", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_164df6c0-1a8b-4ab0-aa7f-1e1d2fa1b6d7", 
+            "role": "modifier", 
+            "source": "COPASI2", 
+            "target": "COPASI11", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_5c743318-741c-491f-90a4-a02a9bb78921", 
+            "role": "product", 
+            "source": "COPASI19", 
+            "target": "COPASI3", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_2b12f2b2-bdf6-4153-ac85-f0bafca6faae", 
+            "role": "reactant", 
+            "source": "COPASI7", 
+            "target": "COPASI19", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "ec0d0ce7-4b74-415f-80ac-f10ee33d5749", 
+            "role": "modifier", 
+            "source": "COPASI7", 
+            "target": "COPASI19", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_60cd3334-646c-4fc6-b6ed-e21ba81445a2", 
+            "role": "product", 
+            "source": "COPASI24", 
+            "target": "COPASI6", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "fd42efa9-a726-4b7d-bcd6-c009ece43234", 
+            "role": "product", 
+            "source": "COPASI18", 
+            "target": "COPASI7", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_11fb02b3-c9d7-4a5e-89fa-8922f53a8f70", 
+            "role": "reactant", 
+            "source": "COPASI3", 
+            "target": "COPASI18", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_054f01a0-e8a0-4dbf-938a-3002e2d81256", 
+            "role": "reactant", 
+            "source": "COPASI6", 
+            "target": "COPASI18", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "e3f75a10-612d-4c3b-a4dd-c3344ded053c", 
+            "role": "modifier", 
+            "source": "COPASI6", 
+            "target": "COPASI18", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_4ec896c3-573e-4549-b374-761029dcc116", 
+            "role": "modifier", 
+            "source": "COPASI7", 
+            "target": "COPASI18", 
+            "value": 0.0
+        }, 
+        {
+            "id": "c6dd4bb5-5c73-4539-99af-0b4bba8f7f53", 
+            "role": "modifier", 
+            "source": "COPASI3", 
+            "target": "COPASI18", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_3424db36-b8b0-477b-8dcf-36c65b4d67ad", 
+            "role": "product", 
+            "source": "COPASI23", 
+            "target": "COPASI2", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "ad34ea96-a028-4f49-b7fb-0b983133f079", 
+            "role": "product", 
+            "source": "COPASI13", 
+            "target": "COPASI5", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "aaaf68c2-a157-45d5-aef9-11ce36bbed87", 
+            "role": "product", 
+            "source": "COPASI13", 
+            "target": "COPASI3", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_9e5b7e88-4029-4678-93e7-e0deedf9f8bc", 
+            "role": "reactant", 
+            "source": "COPASI5", 
+            "target": "COPASI13", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_48706a62-9867-44f6-86c6-745688a812cc", 
+            "role": "reactant", 
+            "source": "COPASI2", 
+            "target": "COPASI13", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "ba1e3d0d-7973-48b3-a7f4-d8fc424a7e9b", 
+            "role": "modifier", 
+            "source": "COPASI2", 
+            "target": "COPASI13", 
+            "value": 0.0
+        }, 
+        {
+            "id": "f2b7564c-cadb-47b6-826d-d3e4db723b22", 
+            "role": "modifier", 
+            "source": "COPASI5", 
+            "target": "COPASI13", 
+            "value": 0.0
+        }, 
+        {
+            "id": "d4f89fe7-20ed-437a-99c3-06980b37488c", 
+            "role": "product", 
+            "source": "COPASI12", 
+            "target": "COPASI5", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_59bb0b0d-05a6-4233-92d7-64a2d1606fcd", 
+            "role": "product", 
+            "source": "COPASI12", 
+            "target": "COPASI3", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "a571c3ec-82c9-4070-8492-8bb7cc60d8ec", 
+            "role": "reactant", 
+            "source": "COPASI4", 
+            "target": "COPASI12", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_38118bf4-0d03-4306-986f-8b2dd7e6c45b", 
+            "role": "reactant", 
+            "source": "COPASI3", 
+            "target": "COPASI12", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_80b397e0-6932-4690-90b1-8298fcc34a55", 
+            "role": "modifier", 
+            "source": "COPASI4", 
+            "target": "COPASI12", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_7188ec53-1329-4577-8f3a-932fac69007c", 
+            "role": "modifier", 
+            "source": "COPASI3", 
+            "target": "COPASI12", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_0f0d085e-1317-49c8-8b2f-6cebfbf9abf4", 
+            "role": "product", 
+            "source": "COPASI22", 
+            "target": "COPASI4", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "ca87982c-cd5c-4d44-8317-a1b637e4e607", 
+            "role": "reactant", 
+            "source": "COPASI2", 
+            "target": "COPASI15", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_1d962dc3-f77d-406f-93d5-7dcbc745393b", 
+            "role": "modifier", 
+            "source": "COPASI2", 
+            "target": "COPASI15", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_6c70a054-7abf-4d67-aba2-110ba772f374", 
+            "role": "reactant", 
+            "source": "COPASI4", 
+            "target": "COPASI14", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "e649fa44-290e-4524-92e9-be3d30cac0e7", 
+            "role": "modifier", 
+            "source": "COPASI4", 
+            "target": "COPASI14", 
+            "value": 0.0
+        }, 
+        {
+            "id": "d8ceea30-d592-4c14-b815-ad0646876494", 
+            "role": "reactant", 
+            "source": "COPASI5", 
+            "target": "COPASI17", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_1b01976a-4184-464a-8cc2-09c3ea216a59", 
+            "role": "modifier", 
+            "source": "COPASI5", 
+            "target": "COPASI17", 
+            "value": 0.0
+        }, 
+        {
+            "id": "bc997c30-3a87-45ac-95d9-5a9500b7d195", 
+            "role": "reactant", 
+            "source": "COPASI6", 
+            "target": "COPASI20", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_2ee9fd21-9fbf-49ac-8ac6-8c3730f7f402", 
+            "role": "modifier", 
+            "source": "COPASI6", 
+            "target": "COPASI20", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_8ab5b650-ecfd-481c-9184-4892cd26448f", 
+            "role": "reactant", 
+            "source": "COPASI3", 
+            "target": "COPASI16", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_26653782-e806-490f-88f7-9f06297c8eb9", 
+            "role": "modifier", 
+            "source": "COPASI3", 
+            "target": "COPASI16", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_294e4510-441f-45b8-b52d-80e895c1ec49", 
+            "role": "reactant", 
+            "source": "COPASI7", 
+            "target": "COPASI21", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "de101e53-b5a6-4c6a-97c9-b6a205b4e4e7", 
+            "role": "modifier", 
+            "source": "COPASI7", 
+            "target": "COPASI21", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "COPASI11", 
+            "modifiers": [
+                "d00430e7-d87f-48dd-a849-f98d9107593c", 
+                "_164df6c0-1a8b-4ab0-aa7f-1e1d2fa1b6d7"
+            ], 
+            "products": [
+                "e27b0110-a9e1-414b-b12f-63fd75fa8401", 
+                "df0f1e88-58fc-4504-b705-10019853ff5b"
+            ], 
+            "reactants": [
+                "_7fe73b08-661b-4850-adbe-552c16951d95", 
+                "b62c5533-89fc-4055-8557-2b7917b1ce4f"
+            ], 
+            "reaction_name": "cleavage of plasminogen"
+        }, 
+        {
+            "id": "COPASI19", 
+            "modifiers": [
+                "ec0d0ce7-4b74-415f-80ac-f10ee33d5749"
+            ], 
+            "products": [
+                "_5c743318-741c-491f-90a4-a02a9bb78921"
+            ], 
+            "reactants": [
+                "_2b12f2b2-bdf6-4153-ac85-f0bafca6faae"
+            ], 
+            "reaction_name": "catalytic reaction of x-plasmin"
+        }, 
+        {
+            "id": "COPASI24", 
+            "modifiers": [], 
+            "products": [
+                "_60cd3334-646c-4fc6-b6ed-e21ba81445a2"
+            ], 
+            "reactants": [], 
+            "reaction_name": "synthesis of x"
+        }, 
+        {
+            "compartment": "COPASI1", 
+            "id": "COPASI2", 
+            "species_name": "plasminogen"
+        }, 
+        {
+            "id": "COPASI18", 
+            "modifiers": [
+                "e3f75a10-612d-4c3b-a4dd-c3344ded053c", 
+                "_4ec896c3-573e-4549-b374-761029dcc116", 
+                "c6dd4bb5-5c73-4539-99af-0b4bba8f7f53"
+            ], 
+            "products": [
+                "fd42efa9-a726-4b7d-bcd6-c009ece43234"
+            ], 
+            "reactants": [
+                "_11fb02b3-c9d7-4a5e-89fa-8922f53a8f70", 
+                "_054f01a0-e8a0-4dbf-938a-3002e2d81256"
+            ], 
+            "reaction_name": "reversible plasmin bonding x"
+        }, 
+        {
+            "id": "COPASI23", 
+            "modifiers": [], 
+            "products": [
+                "_3424db36-b8b0-477b-8dcf-36c65b4d67ad"
+            ], 
+            "reactants": [], 
+            "reaction_name": "synthesis of plasminogen"
+        }, 
+        {
+            "id": "COPASI13", 
+            "modifiers": [
+                "ba1e3d0d-7973-48b3-a7f4-d8fc424a7e9b", 
+                "f2b7564c-cadb-47b6-826d-d3e4db723b22"
+            ], 
+            "products": [
+                "ad34ea96-a028-4f49-b7fb-0b983133f079", 
+                "aaaf68c2-a157-45d5-aef9-11ce36bbed87"
+            ], 
+            "reactants": [
+                "_9e5b7e88-4029-4678-93e7-e0deedf9f8bc", 
+                "_48706a62-9867-44f6-86c6-745688a812cc"
+            ], 
+            "reaction_name": "activation of plasmin"
+        }, 
+        {
+            "compartment": "COPASI1", 
+            "id": "COPASI3", 
+            "species_name": "plasmin"
+        }, 
+        {
+            "id": "COPASI12", 
+            "modifiers": [
+                "_80b397e0-6932-4690-90b1-8298fcc34a55", 
+                "_7188ec53-1329-4577-8f3a-932fac69007c"
+            ], 
+            "products": [
+                "d4f89fe7-20ed-437a-99c3-06980b37488c", 
+                "_59bb0b0d-05a6-4233-92d7-64a2d1606fcd"
+            ], 
+            "reactants": [
+                "a571c3ec-82c9-4070-8492-8bb7cc60d8ec", 
+                "_38118bf4-0d03-4306-986f-8b2dd7e6c45b"
+            ], 
+            "reaction_name": "activation of urokinase-type plasminogen activator"
+        }, 
+        {
+            "compartment": "COPASI1", 
+            "id": "COPASI4", 
+            "species_name": "single intact chain urokinase-type plasminogen activator"
+        }, 
+        {
+            "id": "COPASI22", 
+            "modifiers": [], 
+            "products": [
+                "_0f0d085e-1317-49c8-8b2f-6cebfbf9abf4"
+            ], 
+            "reactants": [], 
+            "reaction_name": "synthesis of single intact chain urokinase-type plasminogen activator"
+        }, 
+        {
+            "id": "COPASI15", 
+            "modifiers": [
+                "_1d962dc3-f77d-406f-93d5-7dcbc745393b"
+            ], 
+            "products": [], 
+            "reactants": [
+                "ca87982c-cd5c-4d44-8317-a1b637e4e607"
+            ], 
+            "reaction_name": "degradation of plasminogen"
+        }, 
+        {
+            "compartment": "COPASI1", 
+            "id": "COPASI5", 
+            "species_name": "two-chain urokinase-type plasminogen activator"
+        }, 
+        {
+            "id": "COPASI14", 
+            "modifiers": [
+                "e649fa44-290e-4524-92e9-be3d30cac0e7"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_6c70a054-7abf-4d67-aba2-110ba772f374"
+            ], 
+            "reaction_name": "degradation of single intact chain urokinase-type plasminogen activator"
+        }, 
+        {
+            "compartment": "COPASI1", 
+            "id": "COPASI6", 
+            "species_name": "x"
+        }, 
+        {
+            "id": "COPASI17", 
+            "modifiers": [
+                "_1b01976a-4184-464a-8cc2-09c3ea216a59"
+            ], 
+            "products": [], 
+            "reactants": [
+                "d8ceea30-d592-4c14-b815-ad0646876494"
+            ], 
+            "reaction_name": "degradation of two-chain urokinase type plasminogen activator"
+        }, 
+        {
+            "compartment": "COPASI1", 
+            "id": "COPASI7", 
+            "species_name": "x-plasmin"
+        }, 
+        {
+            "id": "COPASI20", 
+            "modifiers": [
+                "_2ee9fd21-9fbf-49ac-8ac6-8c3730f7f402"
+            ], 
+            "products": [], 
+            "reactants": [
+                "bc997c30-3a87-45ac-95d9-5a9500b7d195"
+            ], 
+            "reaction_name": "degradation of x"
+        }, 
+        {
+            "id": "COPASI16", 
+            "modifiers": [
+                "_26653782-e806-490f-88f7-9f06297c8eb9"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_8ab5b650-ecfd-481c-9184-4892cd26448f"
+            ], 
+            "reaction_name": "degradation of plasmin"
+        }, 
+        {
+            "id": "COPASI21", 
+            "modifiers": [
+                "de101e53-b5a6-4c6a-97c9-b6a205b4e4e7"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_294e4510-441f-45b8-b52d-80e895c1ec49"
+            ], 
+            "reaction_name": "degradation of x-plasmin"
+        }
+    ]
+}

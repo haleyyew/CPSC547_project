@@ -1,1 +1,326 @@
-{"nodes": [{"reaction_name": "PLC: Receptor and Ca2+ regulated IP3 production", "reactants": [], "modifiers": [], "products": ["_512098"], "id": "_982796"}, {"compartment": "_982767", "species_name": "IP3", "id": "_982783"}, {"compartment": "_982778", "species_name": "CaM", "id": "_982795"}, {"reaction_name": "IP3R: IP3 and Ca2+ regulated Ca2+ channel,  plus leak", "reactants": ["_512170"], "modifiers": [], "products": ["_512183"], "id": "_982804"}, {"reaction_name": "MitoToCytosol", "reactants": ["_512413"], "modifiers": [], "products": ["_512425"], "id": "_982819"}, {"compartment": "_982767", "species_name": "CaI", "id": "_982779"}, {"reaction_name": "PMCA:  Pumps Ca2+ across PM out of cell", "reactants": ["_512353"], "modifiers": [], "products": [], "id": "_982816"}, {"reaction_name": "Inhibition of IP3R (mechanism not well understood)", "reactants": [], "modifiers": [], "products": ["_512255"], "id": "_982811"}, {"reaction_name": "UniporterFromCytosol", "reactants": ["_512377"], "modifiers": [], "products": ["_512389"], "id": "_982817"}, {"reaction_name": "ERtoMito", "reactants": ["_512449"], "modifiers": [], "products": ["_512462"], "id": "_982820"}, {"compartment": "_982767", "species_name": "g", "id": "_982787"}, {"compartment": "_982774", "species_name": "CaS", "id": "_982791"}, {"reaction_name": "SERCA: Pumps Ca2+ into ER Ca2+ stores", "reactants": ["_512134"], "modifiers": [], "products": ["_512146"], "id": "_982800"}, {"reaction_name": "IP3 phosphatase:  Degradation of IP3", "reactants": ["_512231"], "modifiers": [], "products": [], "id": "_982807"}, {"compartment": "_982773", "species_name": "CaO", "id": "_982790"}, {"reaction_name": "Regulation of Orai by STIM, plus leak", "reactants": [], "modifiers": [], "products": ["_512317"], "id": "_982815"}, {"reaction_name": "Recovery of IP3R from Ca2+ iinhibition when Ca2+ drops", "reactants": ["_512292"], "modifiers": [], "products": [], "id": "_982812"}], "links": [{"source": "_982796", "role": "product", "id": "_512098", "value": "1.0", "target": "_982783"}, {"source": "_982804", "role": "product", "id": "_512183", "value": "1.0", "target": "_982779"}, {"source": "_982791", "role": "reactant", "id": "_512170", "value": "1.0", "target": "_982804"}, {"source": "_982819", "role": "product", "id": "_512425", "value": "1.0", "target": "_982779"}, {"source": "_982795", "role": "reactant", "id": "_512413", "value": "1.0", "target": "_982819"}, {"source": "_982779", "role": "reactant", "id": "_512353", "value": "1.0", "target": "_982816"}, {"source": "_982811", "role": "product", "id": "_512255", "value": "1.0", "target": "_982787"}, {"source": "_982817", "role": "product", "id": "_512389", "value": "1.0", "target": "_982795"}, {"source": "_982779", "role": "reactant", "id": "_512377", "value": "1.0", "target": "_982817"}, {"source": "_982820", "role": "product", "id": "_512462", "value": "1.0", "target": "_982795"}, {"source": "_982791", "role": "reactant", "id": "_512449", "value": "1.0", "target": "_982820"}, {"source": "_982800", "role": "product", "id": "_512146", "value": "1.0", "target": "_982791"}, {"source": "_982779", "role": "reactant", "id": "_512134", "value": "1.0", "target": "_982800"}, {"source": "_982783", "role": "reactant", "id": "_512231", "value": "1.0", "target": "_982807"}, {"source": "_982815", "role": "product", "id": "_512317", "value": "1.0", "target": "_982779"}, {"source": "_982787", "role": "reactant", "id": "_512292", "value": "1.0", "target": "_982812"}]}
+{
+    "links": [
+        {
+            "id": "_512098", 
+            "role": "product", 
+            "source": "_982796", 
+            "target": "_982783", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_512110", 
+            "role": "modifier", 
+            "source": "_982779", 
+            "target": "_982796", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_512183", 
+            "role": "product", 
+            "source": "_982804", 
+            "target": "_982779", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_512170", 
+            "role": "reactant", 
+            "source": "_982791", 
+            "target": "_982804", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_512195", 
+            "role": "modifier", 
+            "source": "_982787", 
+            "target": "_982804", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_512207", 
+            "role": "modifier", 
+            "source": "_982783", 
+            "target": "_982804", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_512425", 
+            "role": "product", 
+            "source": "_982819", 
+            "target": "_982779", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_512413", 
+            "role": "reactant", 
+            "source": "_982795", 
+            "target": "_982819", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_512353", 
+            "role": "reactant", 
+            "source": "_982779", 
+            "target": "_982816", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_512255", 
+            "role": "product", 
+            "source": "_982811", 
+            "target": "_982787", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_512267", 
+            "role": "modifier", 
+            "source": "_982779", 
+            "target": "_982811", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_512389", 
+            "role": "product", 
+            "source": "_982817", 
+            "target": "_982795", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_512377", 
+            "role": "reactant", 
+            "source": "_982779", 
+            "target": "_982817", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_512462", 
+            "role": "product", 
+            "source": "_982820", 
+            "target": "_982795", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_512449", 
+            "role": "reactant", 
+            "source": "_982791", 
+            "target": "_982820", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_512498", 
+            "role": "modifier", 
+            "source": "_982783", 
+            "target": "_982820", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_512474", 
+            "role": "modifier", 
+            "source": "_982779", 
+            "target": "_982820", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_512486", 
+            "role": "modifier", 
+            "source": "_982787", 
+            "target": "_982820", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_512146", 
+            "role": "product", 
+            "source": "_982800", 
+            "target": "_982791", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_512134", 
+            "role": "reactant", 
+            "source": "_982779", 
+            "target": "_982800", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_512231", 
+            "role": "reactant", 
+            "source": "_982783", 
+            "target": "_982807", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_512317", 
+            "role": "product", 
+            "source": "_982815", 
+            "target": "_982779", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_512329", 
+            "role": "modifier", 
+            "source": "_982791", 
+            "target": "_982815", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_512292", 
+            "role": "reactant", 
+            "source": "_982787", 
+            "target": "_982812", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "_982796", 
+            "modifiers": [
+                "_512110"
+            ], 
+            "products": [
+                "_512098"
+            ], 
+            "reactants": [], 
+            "reaction_name": "PLC: Receptor and Ca2+ regulated IP3 production"
+        }, 
+        {
+            "compartment": "_982767", 
+            "id": "_982783", 
+            "species_name": "IP3"
+        }, 
+        {
+            "compartment": "_982778", 
+            "id": "_982795", 
+            "species_name": "CaM"
+        }, 
+        {
+            "id": "_982804", 
+            "modifiers": [
+                "_512195", 
+                "_512207"
+            ], 
+            "products": [
+                "_512183"
+            ], 
+            "reactants": [
+                "_512170"
+            ], 
+            "reaction_name": "IP3R: IP3 and Ca2+ regulated Ca2+ channel,  plus leak"
+        }, 
+        {
+            "id": "_982819", 
+            "modifiers": [], 
+            "products": [
+                "_512425"
+            ], 
+            "reactants": [
+                "_512413"
+            ], 
+            "reaction_name": "MitoToCytosol"
+        }, 
+        {
+            "compartment": "_982767", 
+            "id": "_982779", 
+            "species_name": "CaI"
+        }, 
+        {
+            "id": "_982816", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_512353"
+            ], 
+            "reaction_name": "PMCA:  Pumps Ca2+ across PM out of cell"
+        }, 
+        {
+            "id": "_982811", 
+            "modifiers": [
+                "_512267"
+            ], 
+            "products": [
+                "_512255"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Inhibition of IP3R (mechanism not well understood)"
+        }, 
+        {
+            "id": "_982817", 
+            "modifiers": [], 
+            "products": [
+                "_512389"
+            ], 
+            "reactants": [
+                "_512377"
+            ], 
+            "reaction_name": "UniporterFromCytosol"
+        }, 
+        {
+            "id": "_982820", 
+            "modifiers": [
+                "_512498", 
+                "_512474", 
+                "_512486"
+            ], 
+            "products": [
+                "_512462"
+            ], 
+            "reactants": [
+                "_512449"
+            ], 
+            "reaction_name": "ERtoMito"
+        }, 
+        {
+            "compartment": "_982767", 
+            "id": "_982787", 
+            "species_name": "g"
+        }, 
+        {
+            "compartment": "_982774", 
+            "id": "_982791", 
+            "species_name": "CaS"
+        }, 
+        {
+            "id": "_982800", 
+            "modifiers": [], 
+            "products": [
+                "_512146"
+            ], 
+            "reactants": [
+                "_512134"
+            ], 
+            "reaction_name": "SERCA: Pumps Ca2+ into ER Ca2+ stores"
+        }, 
+        {
+            "id": "_982807", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_512231"
+            ], 
+            "reaction_name": "IP3 phosphatase:  Degradation of IP3"
+        }, 
+        {
+            "compartment": "_982773", 
+            "id": "_982790", 
+            "species_name": "CaO"
+        }, 
+        {
+            "id": "_982815", 
+            "modifiers": [
+                "_512329"
+            ], 
+            "products": [
+                "_512317"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Regulation of Orai by STIM, plus leak"
+        }, 
+        {
+            "id": "_982812", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_512292"
+            ], 
+            "reaction_name": "Recovery of IP3R from Ca2+ iinhibition when Ca2+ drops"
+        }
+    ]
+}

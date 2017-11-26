@@ -1,1 +1,231 @@
-{"nodes": [{"compartment": "meta_cell", "species_name": "3-phosphoglycerate", "id": "meta_p3g"}, {"compartment": "meta_cell", "species_name": "serB", "id": "meta_serB"}, {"reaction_name": "phosphoglycerate dehydrogenase", "reactants": ["_8047280e_34af_42d0_a5d0_429a5caf6a44"], "modifiers": [], "products": ["a7f59278_2428_41e9_9385_56b8fc06d66f"], "id": "meta_PDH"}, {"reaction_name": "phosphoserine aminotransferase", "reactants": ["d5385c25_870f_47a1_a2d5_b299926b076b"], "modifiers": [], "products": ["_8d117dbd_51f7_4e1d_80c3_024b6d137f03"], "id": "meta_PSA"}, {"compartment": "meta_cell", "species_name": "serine", "id": "meta_ser"}, {"compartment": "meta_cell", "species_name": "serC", "id": "meta_serC"}, {"compartment": "meta_cell", "species_name": "phosphohydroxypyruvate", "id": "meta_php"}, {"compartment": "meta_cell", "species_name": "serA", "id": "meta_serA"}, {"compartment": "meta_cell", "species_name": "phosphoserine", "id": "meta_pser"}, {"reaction_name": "phosphoserine phosphatase", "reactants": ["_27dd1b2e_08d3_4e4d_ba73_f18bc60e1e48"], "modifiers": [], "products": ["_5669a643_fa2f_4bb3_a21f_a79492198c73"], "id": "meta_PSP"}], "links": [{"source": "meta_PDH", "role": "product", "id": "a7f59278_2428_41e9_9385_56b8fc06d66f", "value": "1.0", "target": "meta_php"}, {"source": "meta_p3g", "role": "reactant", "id": "_8047280e_34af_42d0_a5d0_429a5caf6a44", "value": "1.0", "target": "meta_PDH"}, {"source": "meta_PSA", "role": "product", "id": "_8d117dbd_51f7_4e1d_80c3_024b6d137f03", "value": "1.0", "target": "meta_pser"}, {"source": "meta_php", "role": "reactant", "id": "d5385c25_870f_47a1_a2d5_b299926b076b", "value": "1.0", "target": "meta_PSA"}, {"source": "meta_PSP", "role": "product", "id": "_5669a643_fa2f_4bb3_a21f_a79492198c73", "value": "1.0", "target": "meta_ser"}, {"source": "meta_pser", "role": "reactant", "id": "_27dd1b2e_08d3_4e4d_ba73_f18bc60e1e48", "value": "1.0", "target": "meta_PSP"}]}
+{
+    "links": [
+        {
+            "id": "a7f59278_2428_41e9_9385_56b8fc06d66f", 
+            "role": "product", 
+            "source": "meta_PDH", 
+            "target": "meta_php", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_8047280e_34af_42d0_a5d0_429a5caf6a44", 
+            "role": "reactant", 
+            "source": "meta_p3g", 
+            "target": "meta_PDH", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "ce43318b_3f42_420f_8cf5_817ceac5f48a", 
+            "role": "modifier", 
+            "source": "meta_ser", 
+            "target": "meta_PDH", 
+            "value": 0.0
+        }, 
+        {
+            "id": "accb811c_e928_4bed_aa23_3497bbd294b1", 
+            "role": "modifier", 
+            "source": "meta_ser", 
+            "target": "meta_PDH", 
+            "value": 0.0
+        }, 
+        {
+            "id": "a2f2c068_f9da_4a86_a0ed_9d5a56cc2c91", 
+            "role": "modifier", 
+            "source": "meta_php", 
+            "target": "meta_PDH", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_7b1a9ea1_0add_4e52_be5f_b363407a7f39", 
+            "role": "modifier", 
+            "source": "meta_serA", 
+            "target": "meta_PDH", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_0160bcf1_9466_4322_8177_7a02aa4c7525", 
+            "role": "modifier", 
+            "source": "meta_p3g", 
+            "target": "meta_PDH", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_6948e0aa_d585_4d1d_9e3a_7476e8a090a5", 
+            "role": "modifier", 
+            "source": "meta_serA", 
+            "target": "meta_PDH", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_8d117dbd_51f7_4e1d_80c3_024b6d137f03", 
+            "role": "product", 
+            "source": "meta_PSA", 
+            "target": "meta_pser", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "d5385c25_870f_47a1_a2d5_b299926b076b", 
+            "role": "reactant", 
+            "source": "meta_php", 
+            "target": "meta_PSA", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "e16a904a_d04e_446f_97da_b8919b45f543", 
+            "role": "modifier", 
+            "source": "meta_serC", 
+            "target": "meta_PSA", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_747fcbff_8641_47e4_9611_a8fb021c9400", 
+            "role": "modifier", 
+            "source": "meta_serC", 
+            "target": "meta_PSA", 
+            "value": 0.0
+        }, 
+        {
+            "id": "afa7b12f_e75a_4041_8726_26d6f9ae358d", 
+            "role": "modifier", 
+            "source": "meta_pser", 
+            "target": "meta_PSA", 
+            "value": 0.0
+        }, 
+        {
+            "id": "f77f86c5_333e_4435_85c5_1a7e946e4172", 
+            "role": "modifier", 
+            "source": "meta_php", 
+            "target": "meta_PSA", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_5669a643_fa2f_4bb3_a21f_a79492198c73", 
+            "role": "product", 
+            "source": "meta_PSP", 
+            "target": "meta_ser", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_27dd1b2e_08d3_4e4d_ba73_f18bc60e1e48", 
+            "role": "reactant", 
+            "source": "meta_pser", 
+            "target": "meta_PSP", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "f510ccca_b727_4df0_9e8a_e9a5ac4e551c", 
+            "role": "modifier", 
+            "source": "meta_serB", 
+            "target": "meta_PSP", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_79fecfd2_ccc9_4bf5_b472_dfaa336b6cce", 
+            "role": "modifier", 
+            "source": "meta_ser", 
+            "target": "meta_PSP", 
+            "value": 0.0
+        }, 
+        {
+            "id": "d43147a2_31c8_4e06_af90_d20bd84234e3", 
+            "role": "modifier", 
+            "source": "meta_serB", 
+            "target": "meta_PSP", 
+            "value": 0.0
+        }, 
+        {
+            "id": "a1448481_d003_4d94_bff3_f7c89b8739ae", 
+            "role": "modifier", 
+            "source": "meta_pser", 
+            "target": "meta_PSP", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "meta_cell", 
+            "id": "meta_p3g", 
+            "species_name": "3-phosphoglycerate"
+        }, 
+        {
+            "compartment": "meta_cell", 
+            "id": "meta_serB", 
+            "species_name": "serB"
+        }, 
+        {
+            "id": "meta_PDH", 
+            "modifiers": [
+                "ce43318b_3f42_420f_8cf5_817ceac5f48a", 
+                "accb811c_e928_4bed_aa23_3497bbd294b1", 
+                "a2f2c068_f9da_4a86_a0ed_9d5a56cc2c91", 
+                "_7b1a9ea1_0add_4e52_be5f_b363407a7f39", 
+                "_0160bcf1_9466_4322_8177_7a02aa4c7525", 
+                "_6948e0aa_d585_4d1d_9e3a_7476e8a090a5"
+            ], 
+            "products": [
+                "a7f59278_2428_41e9_9385_56b8fc06d66f"
+            ], 
+            "reactants": [
+                "_8047280e_34af_42d0_a5d0_429a5caf6a44"
+            ], 
+            "reaction_name": "phosphoglycerate dehydrogenase"
+        }, 
+        {
+            "id": "meta_PSA", 
+            "modifiers": [
+                "e16a904a_d04e_446f_97da_b8919b45f543", 
+                "_747fcbff_8641_47e4_9611_a8fb021c9400", 
+                "afa7b12f_e75a_4041_8726_26d6f9ae358d", 
+                "f77f86c5_333e_4435_85c5_1a7e946e4172"
+            ], 
+            "products": [
+                "_8d117dbd_51f7_4e1d_80c3_024b6d137f03"
+            ], 
+            "reactants": [
+                "d5385c25_870f_47a1_a2d5_b299926b076b"
+            ], 
+            "reaction_name": "phosphoserine aminotransferase"
+        }, 
+        {
+            "compartment": "meta_cell", 
+            "id": "meta_ser", 
+            "species_name": "serine"
+        }, 
+        {
+            "compartment": "meta_cell", 
+            "id": "meta_serC", 
+            "species_name": "serC"
+        }, 
+        {
+            "compartment": "meta_cell", 
+            "id": "meta_php", 
+            "species_name": "phosphohydroxypyruvate"
+        }, 
+        {
+            "compartment": "meta_cell", 
+            "id": "meta_serA", 
+            "species_name": "serA"
+        }, 
+        {
+            "compartment": "meta_cell", 
+            "id": "meta_pser", 
+            "species_name": "phosphoserine"
+        }, 
+        {
+            "id": "meta_PSP", 
+            "modifiers": [
+                "f510ccca_b727_4df0_9e8a_e9a5ac4e551c", 
+                "_79fecfd2_ccc9_4bf5_b472_dfaa336b6cce", 
+                "d43147a2_31c8_4e06_af90_d20bd84234e3", 
+                "a1448481_d003_4d94_bff3_f7c89b8739ae"
+            ], 
+            "products": [
+                "_5669a643_fa2f_4bb3_a21f_a79492198c73"
+            ], 
+            "reactants": [
+                "_27dd1b2e_08d3_4e4d_ba73_f18bc60e1e48"
+            ], 
+            "reaction_name": "phosphoserine phosphatase"
+        }
+    ]
+}

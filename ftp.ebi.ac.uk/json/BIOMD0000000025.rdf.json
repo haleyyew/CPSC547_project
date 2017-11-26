@@ -1,1 +1,144 @@
-{"nodes": [{"reaction_name": "dClk production", "reactants": ["_4005bcfa-fc1b-4a75-afd4-a48cc6984ec2"], "modifiers": [], "products": ["be052cee-8260-4fb9-9fca-ece9fff90e7e"], "id": "metaid_0000012"}, {"compartment": "metaid_0000005", "species_name": "", "id": "metaid_0000007"}, {"reaction_name": "Per degradation", "reactants": ["_3bed8a40-f0b3-4030-a625-c9d036eaad3f"], "modifiers": [], "products": ["ea3c0e6c-7202-4f7b-85bb-9093a747e1a1"], "id": "metaid_0000013"}, {"reaction_name": "Per production", "reactants": ["f8c9319f-6146-4e8a-840a-59b3a506900e"], "modifiers": [], "products": ["f5c55844-1992-47c7-b756-37ff927ae500"], "id": "metaid_0000011"}, {"compartment": "metaid_0000005", "species_name": "", "id": "metaid_0000008"}, {"reaction_name": "dClk degradation", "reactants": ["c09c654c-25e6-4ad8-af08-eb1c7bf634e5"], "modifiers": [], "products": ["_5ef976f4-bec8-4683-b9a0-675efb56535a"], "id": "metaid_0000014"}, {"compartment": "metaid_0000005", "species_name": "free dClk", "id": "metaid_0000010"}, {"compartment": "metaid_0000005", "species_name": "", "id": "metaid_0000009"}], "links": [{"source": "metaid_0000012", "role": "product", "id": "be052cee-8260-4fb9-9fca-ece9fff90e7e", "value": "1.0", "target": "metaid_0000009"}, {"source": "metaid_0000007", "role": "reactant", "id": "_4005bcfa-fc1b-4a75-afd4-a48cc6984ec2", "value": "1.0", "target": "metaid_0000012"}, {"source": "metaid_0000013", "role": "product", "id": "ea3c0e6c-7202-4f7b-85bb-9093a747e1a1", "value": "1.0", "target": "metaid_0000007"}, {"source": "metaid_0000008", "role": "reactant", "id": "_3bed8a40-f0b3-4030-a625-c9d036eaad3f", "value": "1.0", "target": "metaid_0000013"}, {"source": "metaid_0000011", "role": "product", "id": "f5c55844-1992-47c7-b756-37ff927ae500", "value": "1.0", "target": "metaid_0000008"}, {"source": "metaid_0000007", "role": "reactant", "id": "f8c9319f-6146-4e8a-840a-59b3a506900e", "value": "1.0", "target": "metaid_0000011"}, {"source": "metaid_0000014", "role": "product", "id": "_5ef976f4-bec8-4683-b9a0-675efb56535a", "value": "1.0", "target": "metaid_0000007"}, {"source": "metaid_0000009", "role": "reactant", "id": "c09c654c-25e6-4ad8-af08-eb1c7bf634e5", "value": "1.0", "target": "metaid_0000014"}]}
+{
+    "links": [
+        {
+            "id": "be052cee-8260-4fb9-9fca-ece9fff90e7e", 
+            "role": "product", 
+            "source": "metaid_0000012", 
+            "target": "metaid_0000009", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_4005bcfa-fc1b-4a75-afd4-a48cc6984ec2", 
+            "role": "reactant", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000012", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_8a9e0995-500b-4ebb-a1b8-e8d3ee934fe6", 
+            "role": "modifier", 
+            "source": "metaid_0000010", 
+            "target": "metaid_0000012", 
+            "value": 0.0
+        }, 
+        {
+            "id": "ea3c0e6c-7202-4f7b-85bb-9093a747e1a1", 
+            "role": "product", 
+            "source": "metaid_0000013", 
+            "target": "metaid_0000007", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_3bed8a40-f0b3-4030-a625-c9d036eaad3f", 
+            "role": "reactant", 
+            "source": "metaid_0000008", 
+            "target": "metaid_0000013", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "f5c55844-1992-47c7-b756-37ff927ae500", 
+            "role": "product", 
+            "source": "metaid_0000011", 
+            "target": "metaid_0000008", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "f8c9319f-6146-4e8a-840a-59b3a506900e", 
+            "role": "reactant", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000011", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_1361fa9d-f228-4dc1-97ee-facbbaf5b269", 
+            "role": "modifier", 
+            "source": "metaid_0000010", 
+            "target": "metaid_0000011", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_5ef976f4-bec8-4683-b9a0-675efb56535a", 
+            "role": "product", 
+            "source": "metaid_0000014", 
+            "target": "metaid_0000007", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "c09c654c-25e6-4ad8-af08-eb1c7bf634e5", 
+            "role": "reactant", 
+            "source": "metaid_0000009", 
+            "target": "metaid_0000014", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000012", 
+            "modifiers": [
+                "_8a9e0995-500b-4ebb-a1b8-e8d3ee934fe6"
+            ], 
+            "products": [
+                "be052cee-8260-4fb9-9fca-ece9fff90e7e"
+            ], 
+            "reactants": [
+                "_4005bcfa-fc1b-4a75-afd4-a48cc6984ec2"
+            ], 
+            "reaction_name": "dClk production"
+        }, 
+        {
+            "compartment": "metaid_0000005", 
+            "id": "metaid_0000007", 
+            "species_name": ""
+        }, 
+        {
+            "id": "metaid_0000013", 
+            "modifiers": [], 
+            "products": [
+                "ea3c0e6c-7202-4f7b-85bb-9093a747e1a1"
+            ], 
+            "reactants": [
+                "_3bed8a40-f0b3-4030-a625-c9d036eaad3f"
+            ], 
+            "reaction_name": "Per degradation"
+        }, 
+        {
+            "id": "metaid_0000011", 
+            "modifiers": [
+                "_1361fa9d-f228-4dc1-97ee-facbbaf5b269"
+            ], 
+            "products": [
+                "f5c55844-1992-47c7-b756-37ff927ae500"
+            ], 
+            "reactants": [
+                "f8c9319f-6146-4e8a-840a-59b3a506900e"
+            ], 
+            "reaction_name": "Per production"
+        }, 
+        {
+            "compartment": "metaid_0000005", 
+            "id": "metaid_0000008", 
+            "species_name": ""
+        }, 
+        {
+            "id": "metaid_0000014", 
+            "modifiers": [], 
+            "products": [
+                "_5ef976f4-bec8-4683-b9a0-675efb56535a"
+            ], 
+            "reactants": [
+                "c09c654c-25e6-4ad8-af08-eb1c7bf634e5"
+            ], 
+            "reaction_name": "dClk degradation"
+        }, 
+        {
+            "compartment": "metaid_0000005", 
+            "id": "metaid_0000010", 
+            "species_name": "free dClk"
+        }, 
+        {
+            "compartment": "metaid_0000005", 
+            "id": "metaid_0000009", 
+            "species_name": ""
+        }
+    ]
+}

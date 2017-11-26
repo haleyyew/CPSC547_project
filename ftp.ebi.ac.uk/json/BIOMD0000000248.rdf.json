@@ -1,1 +1,225 @@
-{"nodes": [{"compartment": "metaid_0000078", "species_name": "Cr", "id": "metaid_0000024"}, {"reaction_name": "DiffusionTransport", "reactants": ["_9731a997-c1dc-4e38-bc64-7a7fe02db00c"], "modifiers": [], "products": ["_4b0866ae-f685-46a7-aae6-5eb964f37207"], "id": "metaid_0000057"}, {"compartment": "metaid_0000078", "species_name": "CFtis", "id": "metaid_0000041"}, {"reaction_name": "OxidativePhosphorylation", "reactants": ["_77b7edfa-3de4-4bcc-9987-015f82589cbd", "c7859809-ca07-4b6f-951d-ea249fee507d"], "modifiers": [], "products": ["d5f66cfb-abcb-4ed5-b61e-52b7ee579562"], "id": "metaid_0000025"}, {"reaction_name": "ConvectionTransport", "reactants": [], "modifiers": [], "products": ["_5352e630-50b1-45c8-8cbd-c119d49bc07c"], "id": "metaid_0000056"}, {"reaction_name": "ATPase", "reactants": ["_66fbd79e-96f3-454b-81a0-13273964dbc8"], "modifiers": [], "products": ["_9358b1eb-7a2a-4b42-b639-97d6d9d02fbf"], "id": "metaid_0000022"}, {"compartment": "metaid_0000078", "species_name": "ADP", "id": "metaid_0000023"}, {"compartment": "metaid_0000038", "species_name": "CTcap", "id": "metaid_0000064"}, {"reaction_name": "CreatineKinase", "reactants": ["_19b967df-df3d-487d-ba87-f338d730c0d6", "_461d6efd-58dc-4a14-af72-94ae354e5900"], "modifiers": [], "products": ["_02683f56-d191-440d-aee0-32509340d599", "_79969ca5-0f92-4054-9c6a-bde5e3fe9100"], "id": "metaid_0000084"}, {"compartment": "metaid_0000078", "species_name": "CTtis", "id": "metaid_0000071"}, {"compartment": "metaid_0000078", "species_name": "PCr", "id": "metaid_0000009"}, {"compartment": "metaid_0000038", "species_name": "CFcap", "id": "metaid_0000040"}, {"compartment": "metaid_0000078", "species_name": "ATP", "id": "metaid_0000008"}, {"compartment": "metaid_0000078", "species_name": "Pi", "id": "metaid_0000028"}], "links": [{"source": "metaid_0000057", "role": "product", "id": "_4b0866ae-f685-46a7-aae6-5eb964f37207", "value": "1.0", "target": "metaid_0000071"}, {"source": "metaid_0000064", "role": "reactant", "id": "_9731a997-c1dc-4e38-bc64-7a7fe02db00c", "value": "1.0", "target": "metaid_0000057"}, {"source": "metaid_0000025", "role": "product", "id": "d5f66cfb-abcb-4ed5-b61e-52b7ee579562", "value": "6.0", "target": "metaid_0000008"}, {"source": "metaid_0000071", "role": "reactant", "id": "_77b7edfa-3de4-4bcc-9987-015f82589cbd", "value": "1.0", "target": "metaid_0000025"}, {"source": "metaid_0000023", "role": "reactant", "id": "c7859809-ca07-4b6f-951d-ea249fee507d", "value": "6.0", "target": "metaid_0000025"}, {"source": "metaid_0000056", "role": "product", "id": "_5352e630-50b1-45c8-8cbd-c119d49bc07c", "value": "1.0", "target": "metaid_0000064"}, {"source": "metaid_0000022", "role": "product", "id": "_9358b1eb-7a2a-4b42-b639-97d6d9d02fbf", "value": "1.0", "target": "metaid_0000023"}, {"source": "metaid_0000008", "role": "reactant", "id": "_66fbd79e-96f3-454b-81a0-13273964dbc8", "value": "1.0", "target": "metaid_0000022"}, {"source": "metaid_0000084", "role": "product", "id": "_02683f56-d191-440d-aee0-32509340d599", "value": "1.0", "target": "metaid_0000024"}, {"source": "metaid_0000084", "role": "product", "id": "_79969ca5-0f92-4054-9c6a-bde5e3fe9100", "value": "1.0", "target": "metaid_0000008"}, {"source": "metaid_0000009", "role": "reactant", "id": "_19b967df-df3d-487d-ba87-f338d730c0d6", "value": "1.0", "target": "metaid_0000084"}, {"source": "metaid_0000023", "role": "reactant", "id": "_461d6efd-58dc-4a14-af72-94ae354e5900", "value": "1.0", "target": "metaid_0000084"}]}
+{
+    "links": [
+        {
+            "id": "_4b0866ae-f685-46a7-aae6-5eb964f37207", 
+            "role": "product", 
+            "source": "metaid_0000057", 
+            "target": "metaid_0000071", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_9731a997-c1dc-4e38-bc64-7a7fe02db00c", 
+            "role": "reactant", 
+            "source": "metaid_0000064", 
+            "target": "metaid_0000057", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "c697843d-4ba6-4daf-b43e-7d386ccd84d9", 
+            "role": "modifier", 
+            "source": "metaid_0000041", 
+            "target": "metaid_0000057", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_26b68cfd-60fc-4865-873f-e5e4d4029cde", 
+            "role": "modifier", 
+            "source": "metaid_0000040", 
+            "target": "metaid_0000057", 
+            "value": 0.0
+        }, 
+        {
+            "id": "d5f66cfb-abcb-4ed5-b61e-52b7ee579562", 
+            "role": "product", 
+            "source": "metaid_0000025", 
+            "target": "metaid_0000008", 
+            "value": "6.0"
+        }, 
+        {
+            "id": "_77b7edfa-3de4-4bcc-9987-015f82589cbd", 
+            "role": "reactant", 
+            "source": "metaid_0000071", 
+            "target": "metaid_0000025", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "c7859809-ca07-4b6f-951d-ea249fee507d", 
+            "role": "reactant", 
+            "source": "metaid_0000023", 
+            "target": "metaid_0000025", 
+            "value": "6.0"
+        }, 
+        {
+            "id": "_692325e3-e126-4ffe-a2f7-e1aba5af249b", 
+            "role": "modifier", 
+            "source": "metaid_0000028", 
+            "target": "metaid_0000025", 
+            "value": 0.0
+        }, 
+        {
+            "id": "b4e335a8-d510-4662-aef4-cfbe2094fe56", 
+            "role": "modifier", 
+            "source": "metaid_0000041", 
+            "target": "metaid_0000025", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_5352e630-50b1-45c8-8cbd-c119d49bc07c", 
+            "role": "product", 
+            "source": "metaid_0000056", 
+            "target": "metaid_0000064", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_9358b1eb-7a2a-4b42-b639-97d6d9d02fbf", 
+            "role": "product", 
+            "source": "metaid_0000022", 
+            "target": "metaid_0000023", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_66fbd79e-96f3-454b-81a0-13273964dbc8", 
+            "role": "reactant", 
+            "source": "metaid_0000008", 
+            "target": "metaid_0000022", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_02683f56-d191-440d-aee0-32509340d599", 
+            "role": "product", 
+            "source": "metaid_0000084", 
+            "target": "metaid_0000024", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_79969ca5-0f92-4054-9c6a-bde5e3fe9100", 
+            "role": "product", 
+            "source": "metaid_0000084", 
+            "target": "metaid_0000008", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_19b967df-df3d-487d-ba87-f338d730c0d6", 
+            "role": "reactant", 
+            "source": "metaid_0000009", 
+            "target": "metaid_0000084", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_461d6efd-58dc-4a14-af72-94ae354e5900", 
+            "role": "reactant", 
+            "source": "metaid_0000023", 
+            "target": "metaid_0000084", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "metaid_0000078", 
+            "id": "metaid_0000024", 
+            "species_name": "Cr"
+        }, 
+        {
+            "id": "metaid_0000057", 
+            "modifiers": [
+                "c697843d-4ba6-4daf-b43e-7d386ccd84d9", 
+                "_26b68cfd-60fc-4865-873f-e5e4d4029cde"
+            ], 
+            "products": [
+                "_4b0866ae-f685-46a7-aae6-5eb964f37207"
+            ], 
+            "reactants": [
+                "_9731a997-c1dc-4e38-bc64-7a7fe02db00c"
+            ], 
+            "reaction_name": "DiffusionTransport"
+        }, 
+        {
+            "compartment": "metaid_0000078", 
+            "id": "metaid_0000041", 
+            "species_name": "CFtis"
+        }, 
+        {
+            "id": "metaid_0000025", 
+            "modifiers": [
+                "_692325e3-e126-4ffe-a2f7-e1aba5af249b", 
+                "b4e335a8-d510-4662-aef4-cfbe2094fe56"
+            ], 
+            "products": [
+                "d5f66cfb-abcb-4ed5-b61e-52b7ee579562"
+            ], 
+            "reactants": [
+                "_77b7edfa-3de4-4bcc-9987-015f82589cbd", 
+                "c7859809-ca07-4b6f-951d-ea249fee507d"
+            ], 
+            "reaction_name": "OxidativePhosphorylation"
+        }, 
+        {
+            "id": "metaid_0000056", 
+            "modifiers": [], 
+            "products": [
+                "_5352e630-50b1-45c8-8cbd-c119d49bc07c"
+            ], 
+            "reactants": [], 
+            "reaction_name": "ConvectionTransport"
+        }, 
+        {
+            "id": "metaid_0000022", 
+            "modifiers": [], 
+            "products": [
+                "_9358b1eb-7a2a-4b42-b639-97d6d9d02fbf"
+            ], 
+            "reactants": [
+                "_66fbd79e-96f3-454b-81a0-13273964dbc8"
+            ], 
+            "reaction_name": "ATPase"
+        }, 
+        {
+            "compartment": "metaid_0000078", 
+            "id": "metaid_0000023", 
+            "species_name": "ADP"
+        }, 
+        {
+            "compartment": "metaid_0000038", 
+            "id": "metaid_0000064", 
+            "species_name": "CTcap"
+        }, 
+        {
+            "id": "metaid_0000084", 
+            "modifiers": [], 
+            "products": [
+                "_02683f56-d191-440d-aee0-32509340d599", 
+                "_79969ca5-0f92-4054-9c6a-bde5e3fe9100"
+            ], 
+            "reactants": [
+                "_19b967df-df3d-487d-ba87-f338d730c0d6", 
+                "_461d6efd-58dc-4a14-af72-94ae354e5900"
+            ], 
+            "reaction_name": "CreatineKinase"
+        }, 
+        {
+            "compartment": "metaid_0000078", 
+            "id": "metaid_0000071", 
+            "species_name": "CTtis"
+        }, 
+        {
+            "compartment": "metaid_0000078", 
+            "id": "metaid_0000009", 
+            "species_name": "PCr"
+        }, 
+        {
+            "compartment": "metaid_0000038", 
+            "id": "metaid_0000040", 
+            "species_name": "CFcap"
+        }, 
+        {
+            "compartment": "metaid_0000078", 
+            "id": "metaid_0000008", 
+            "species_name": "ATP"
+        }, 
+        {
+            "compartment": "metaid_0000078", 
+            "id": "metaid_0000028", 
+            "species_name": "Pi"
+        }
+    ]
+}

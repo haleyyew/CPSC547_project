@@ -1,1 +1,123 @@
-{"nodes": [{"reaction_name": "Ca flux into the cell", "reactants": [], "modifiers": [], "products": ["_236369"], "id": "metaid_0000015"}, {"compartment": "metaid_0000018", "species_name": "Ca_Cyt", "id": "metaid_0000005"}, {"reaction_name": "InsP3 channel", "reactants": ["_236465"], "modifiers": [], "products": ["_236477"], "id": "metaid_0000022"}, {"reaction_name": "Ca pumped ouside the cell", "reactants": ["_236501"], "modifiers": [], "products": [], "id": "metaid_0000023"}, {"compartment": "metaid_0000019", "species_name": "Ca_ER", "id": "metaid_0000004"}, {"reaction_name": "Ca translocation from ER to Cytosol", "reactants": ["_236393"], "modifiers": [], "products": ["_236405"], "id": "metaid_0000016"}, {"reaction_name": "Ca transport from Cytosol to ER", "reactants": ["_236429"], "modifiers": [], "products": ["_236441"], "id": "metaid_0000021"}], "links": [{"source": "metaid_0000015", "role": "product", "id": "_236369", "value": "1.0", "target": "metaid_0000005"}, {"source": "metaid_0000022", "role": "product", "id": "_236477", "value": "1.0", "target": "metaid_0000005"}, {"source": "metaid_0000004", "role": "reactant", "id": "_236465", "value": "1.0", "target": "metaid_0000022"}, {"source": "metaid_0000005", "role": "reactant", "id": "_236501", "value": "1.0", "target": "metaid_0000023"}, {"source": "metaid_0000016", "role": "product", "id": "_236405", "value": "1.0", "target": "metaid_0000005"}, {"source": "metaid_0000004", "role": "reactant", "id": "_236393", "value": "1.0", "target": "metaid_0000016"}, {"source": "metaid_0000021", "role": "product", "id": "_236441", "value": "1.0", "target": "metaid_0000004"}, {"source": "metaid_0000005", "role": "reactant", "id": "_236429", "value": "1.0", "target": "metaid_0000021"}]}
+{
+    "links": [
+        {
+            "id": "_236369", 
+            "role": "product", 
+            "source": "metaid_0000015", 
+            "target": "metaid_0000005", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_236477", 
+            "role": "product", 
+            "source": "metaid_0000022", 
+            "target": "metaid_0000005", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_236465", 
+            "role": "reactant", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000022", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_236501", 
+            "role": "reactant", 
+            "source": "metaid_0000005", 
+            "target": "metaid_0000023", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_236405", 
+            "role": "product", 
+            "source": "metaid_0000016", 
+            "target": "metaid_0000005", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_236393", 
+            "role": "reactant", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000016", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_236441", 
+            "role": "product", 
+            "source": "metaid_0000021", 
+            "target": "metaid_0000004", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_236429", 
+            "role": "reactant", 
+            "source": "metaid_0000005", 
+            "target": "metaid_0000021", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000015", 
+            "modifiers": [], 
+            "products": [
+                "_236369"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Ca flux into the cell"
+        }, 
+        {
+            "compartment": "metaid_0000018", 
+            "id": "metaid_0000005", 
+            "species_name": "Ca_Cyt"
+        }, 
+        {
+            "id": "metaid_0000022", 
+            "modifiers": [], 
+            "products": [
+                "_236477"
+            ], 
+            "reactants": [
+                "_236465"
+            ], 
+            "reaction_name": "InsP3 channel"
+        }, 
+        {
+            "id": "metaid_0000023", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_236501"
+            ], 
+            "reaction_name": "Ca pumped ouside the cell"
+        }, 
+        {
+            "compartment": "metaid_0000019", 
+            "id": "metaid_0000004", 
+            "species_name": "Ca_ER"
+        }, 
+        {
+            "id": "metaid_0000016", 
+            "modifiers": [], 
+            "products": [
+                "_236405"
+            ], 
+            "reactants": [
+                "_236393"
+            ], 
+            "reaction_name": "Ca translocation from ER to Cytosol"
+        }, 
+        {
+            "id": "metaid_0000021", 
+            "modifiers": [], 
+            "products": [
+                "_236441"
+            ], 
+            "reactants": [
+                "_236429"
+            ], 
+            "reaction_name": "Ca transport from Cytosol to ER"
+        }
+    ]
+}

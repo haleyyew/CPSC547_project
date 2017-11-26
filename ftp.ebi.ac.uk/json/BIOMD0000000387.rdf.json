@@ -1,1 +1,200 @@
-{"nodes": [{"reaction_name": "NADPH production", "reactants": ["_035689"], "modifiers": [], "products": ["_035701"], "id": "metaid_0000044"}, {"compartment": "metaid_0000025", "species_name": "O2", "id": "metaid_0000030"}, {"compartment": "metaid_0000025", "species_name": "PGA", "id": "metaid_0000027"}, {"reaction_name": "PGA production - v_c", "reactants": ["_035519", "_035495", "_035507"], "modifiers": [], "products": ["_035531"], "id": "metaid_0000041"}, {"compartment": "metaid_0000025", "species_name": "NADP", "id": "metaid_0000031"}, {"compartment": "metaid_0000025", "species_name": "RuBP", "id": "metaid_0000026"}, {"compartment": "metaid_0000025", "species_name": "starch", "id": "metaid_0000032"}, {"reaction_name": "PGA production - v_o", "reactants": ["_035592", "_035568", "_035580"], "modifiers": [], "products": ["_035604"], "id": "metaid_0000042"}, {"compartment": "metaid_0000025", "species_name": "CO2", "id": "metaid_0000029"}, {"reaction_name": "PGA consumption", "reactants": ["_035640"], "modifiers": [], "products": ["_035652"], "id": "metaid_0000043"}, {"compartment": "metaid_0000025", "species_name": "NADPH", "id": "metaid_0000028"}], "links": [{"source": "metaid_0000044", "role": "product", "id": "_035701", "value": "1.0", "target": "metaid_0000028"}, {"source": "metaid_0000031", "role": "reactant", "id": "_035689", "value": "1.0", "target": "metaid_0000044"}, {"source": "metaid_0000041", "role": "product", "id": "_035531", "value": "2.0", "target": "metaid_0000027"}, {"source": "metaid_0000028", "role": "reactant", "id": "_035519", "value": "2.0", "target": "metaid_0000041"}, {"source": "metaid_0000026", "role": "reactant", "id": "_035495", "value": "1.0", "target": "metaid_0000041"}, {"source": "metaid_0000029", "role": "reactant", "id": "_035507", "value": "1.0", "target": "metaid_0000041"}, {"source": "metaid_0000042", "role": "product", "id": "_035604", "value": "1.5", "target": "metaid_0000027"}, {"source": "metaid_0000028", "role": "reactant", "id": "_035592", "value": "2.0", "target": "metaid_0000042"}, {"source": "metaid_0000026", "role": "reactant", "id": "_035568", "value": "1.0", "target": "metaid_0000042"}, {"source": "metaid_0000030", "role": "reactant", "id": "_035580", "value": "1.0", "target": "metaid_0000042"}, {"source": "metaid_0000043", "role": "product", "id": "_035652", "value": "1.0", "target": "metaid_0000026"}, {"source": "metaid_0000027", "role": "reactant", "id": "_035640", "value": "1.0", "target": "metaid_0000043"}]}
+{
+    "links": [
+        {
+            "id": "_035701", 
+            "role": "product", 
+            "source": "metaid_0000044", 
+            "target": "metaid_0000028", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_035689", 
+            "role": "reactant", 
+            "source": "metaid_0000031", 
+            "target": "metaid_0000044", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_035531", 
+            "role": "product", 
+            "source": "metaid_0000041", 
+            "target": "metaid_0000027", 
+            "value": "2.0"
+        }, 
+        {
+            "id": "_035519", 
+            "role": "reactant", 
+            "source": "metaid_0000028", 
+            "target": "metaid_0000041", 
+            "value": "2.0"
+        }, 
+        {
+            "id": "_035495", 
+            "role": "reactant", 
+            "source": "metaid_0000026", 
+            "target": "metaid_0000041", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_035507", 
+            "role": "reactant", 
+            "source": "metaid_0000029", 
+            "target": "metaid_0000041", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_035543", 
+            "role": "modifier", 
+            "source": "metaid_0000030", 
+            "target": "metaid_0000041", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_035604", 
+            "role": "product", 
+            "source": "metaid_0000042", 
+            "target": "metaid_0000027", 
+            "value": "1.5"
+        }, 
+        {
+            "id": "_035592", 
+            "role": "reactant", 
+            "source": "metaid_0000028", 
+            "target": "metaid_0000042", 
+            "value": "2.0"
+        }, 
+        {
+            "id": "_035568", 
+            "role": "reactant", 
+            "source": "metaid_0000026", 
+            "target": "metaid_0000042", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_035580", 
+            "role": "reactant", 
+            "source": "metaid_0000030", 
+            "target": "metaid_0000042", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_035616", 
+            "role": "modifier", 
+            "source": "metaid_0000029", 
+            "target": "metaid_0000042", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_035652", 
+            "role": "product", 
+            "source": "metaid_0000043", 
+            "target": "metaid_0000026", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_035640", 
+            "role": "reactant", 
+            "source": "metaid_0000027", 
+            "target": "metaid_0000043", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_035664", 
+            "role": "modifier", 
+            "source": "metaid_0000028", 
+            "target": "metaid_0000043", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000044", 
+            "modifiers": [], 
+            "products": [
+                "_035701"
+            ], 
+            "reactants": [
+                "_035689"
+            ], 
+            "reaction_name": "NADPH production"
+        }, 
+        {
+            "compartment": "metaid_0000025", 
+            "id": "metaid_0000030", 
+            "species_name": "O2"
+        }, 
+        {
+            "compartment": "metaid_0000025", 
+            "id": "metaid_0000027", 
+            "species_name": "PGA"
+        }, 
+        {
+            "id": "metaid_0000041", 
+            "modifiers": [
+                "_035543"
+            ], 
+            "products": [
+                "_035531"
+            ], 
+            "reactants": [
+                "_035519", 
+                "_035495", 
+                "_035507"
+            ], 
+            "reaction_name": "PGA production - v_c"
+        }, 
+        {
+            "compartment": "metaid_0000025", 
+            "id": "metaid_0000031", 
+            "species_name": "NADP"
+        }, 
+        {
+            "compartment": "metaid_0000025", 
+            "id": "metaid_0000026", 
+            "species_name": "RuBP"
+        }, 
+        {
+            "compartment": "metaid_0000025", 
+            "id": "metaid_0000032", 
+            "species_name": "starch"
+        }, 
+        {
+            "id": "metaid_0000042", 
+            "modifiers": [
+                "_035616"
+            ], 
+            "products": [
+                "_035604"
+            ], 
+            "reactants": [
+                "_035592", 
+                "_035568", 
+                "_035580"
+            ], 
+            "reaction_name": "PGA production - v_o"
+        }, 
+        {
+            "compartment": "metaid_0000025", 
+            "id": "metaid_0000029", 
+            "species_name": "CO2"
+        }, 
+        {
+            "id": "metaid_0000043", 
+            "modifiers": [
+                "_035664"
+            ], 
+            "products": [
+                "_035652"
+            ], 
+            "reactants": [
+                "_035640"
+            ], 
+            "reaction_name": "PGA consumption"
+        }, 
+        {
+            "compartment": "metaid_0000025", 
+            "id": "metaid_0000028", 
+            "species_name": "NADPH"
+        }
+    ]
+}

@@ -1,1 +1,301 @@
-{"nodes": [{"reaction_name": "default degradation of cyclin", "reactants": ["_712610"], "modifiers": [], "products": ["_712622"], "id": "_000016"}, {"reaction_name": "cdc2k dephosphorylation", "reactants": ["_712454"], "modifiers": [], "products": ["_712466"], "id": "_000012"}, {"compartment": "_000002", "species_name": "p-cyclin_cdc2", "id": "_000006"}, {"compartment": "_000002", "species_name": "", "id": "_000003"}, {"compartment": "_000002", "species_name": "total_cyclin", "id": "metaid_0000020"}, {"reaction_name": "cdc2 kinase triggered degration of cyclin", "reactants": ["_712646"], "modifiers": [], "products": ["_712658"], "id": "_000017"}, {"reaction_name": "cyclin cdc2k-p association", "reactants": ["_712490", "_712502"], "modifiers": [], "products": ["_712514"], "id": "_000013"}, {"compartment": "_000002", "species_name": "p-cyclin_cdc2-p", "id": "_000007"}, {"reaction_name": "deactivation of cdc2 kinase", "reactants": ["_712538"], "modifiers": [], "products": ["_712550"], "id": "_000014"}, {"compartment": "_000002", "species_name": "cdc2k", "id": "_000004"}, {"reaction_name": "activation of cdc2 kinase", "reactants": ["_712682"], "modifiers": [], "products": ["_712694"], "id": "_000018"}, {"compartment": "_000002", "species_name": "cyclin", "id": "_000008"}, {"reaction_name": "cyclin_cdc2k dissociation", "reactants": ["_712369"], "modifiers": [], "products": ["_712394", "_712382"], "id": "_000010"}, {"reaction_name": "cyclin biosynthesis", "reactants": ["_712574"], "modifiers": [], "products": ["_712586"], "id": "_000015"}, {"compartment": "_000002", "species_name": "total_cdc2", "id": "metaid_0000022"}, {"compartment": "_000002", "species_name": "cdc2k-P", "id": "_000005"}, {"compartment": "_000002", "species_name": "p-cyclin", "id": "_000009"}, {"reaction_name": "cdc2k phosphorylation", "reactants": ["_712418"], "modifiers": [], "products": ["_712430"], "id": "_000011"}], "links": [{"source": "_000016", "role": "product", "id": "_712622", "value": "1.0", "target": "_000003"}, {"source": "_000008", "role": "reactant", "id": "_712610", "value": "1.0", "target": "_000016"}, {"source": "_000012", "role": "product", "id": "_712466", "value": "1.0", "target": "_000004"}, {"source": "_000005", "role": "reactant", "id": "_712454", "value": "1.0", "target": "_000012"}, {"source": "_000017", "role": "product", "id": "_712658", "value": "1.0", "target": "_000003"}, {"source": "_000009", "role": "reactant", "id": "_712646", "value": "1.0", "target": "_000017"}, {"source": "_000013", "role": "product", "id": "_712514", "value": "1.0", "target": "_000007"}, {"source": "_000005", "role": "reactant", "id": "_712490", "value": "1.0", "target": "_000013"}, {"source": "_000008", "role": "reactant", "id": "_712502", "value": "1.0", "target": "_000013"}, {"source": "_000014", "role": "product", "id": "_712550", "value": "1.0", "target": "_000007"}, {"source": "_000006", "role": "reactant", "id": "_712538", "value": "1.0", "target": "_000014"}, {"source": "_000018", "role": "product", "id": "_712694", "value": "1.0", "target": "_000006"}, {"source": "_000007", "role": "reactant", "id": "_712682", "value": "1.0", "target": "_000018"}, {"source": "_000010", "role": "product", "id": "_712394", "value": "1.0", "target": "_000009"}, {"source": "_000010", "role": "product", "id": "_712382", "value": "1.0", "target": "_000004"}, {"source": "_000006", "role": "reactant", "id": "_712369", "value": "1.0", "target": "_000010"}, {"source": "_000015", "role": "product", "id": "_712586", "value": "1.0", "target": "_000008"}, {"source": "_000003", "role": "reactant", "id": "_712574", "value": "1.0", "target": "_000015"}, {"source": "_000011", "role": "product", "id": "_712430", "value": "1.0", "target": "_000005"}, {"source": "_000004", "role": "reactant", "id": "_712418", "value": "1.0", "target": "_000011"}]}
+{
+    "links": [
+        {
+            "id": "_712622", 
+            "role": "product", 
+            "source": "_000016", 
+            "target": "_000003", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712610", 
+            "role": "reactant", 
+            "source": "_000008", 
+            "target": "_000016", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712466", 
+            "role": "product", 
+            "source": "_000012", 
+            "target": "_000004", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712454", 
+            "role": "reactant", 
+            "source": "_000005", 
+            "target": "_000012", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712658", 
+            "role": "product", 
+            "source": "_000017", 
+            "target": "_000003", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712646", 
+            "role": "reactant", 
+            "source": "_000009", 
+            "target": "_000017", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712514", 
+            "role": "product", 
+            "source": "_000013", 
+            "target": "_000007", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712490", 
+            "role": "reactant", 
+            "source": "_000005", 
+            "target": "_000013", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712502", 
+            "role": "reactant", 
+            "source": "_000008", 
+            "target": "_000013", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712550", 
+            "role": "product", 
+            "source": "_000014", 
+            "target": "_000007", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712538", 
+            "role": "reactant", 
+            "source": "_000006", 
+            "target": "_000014", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712694", 
+            "role": "product", 
+            "source": "_000018", 
+            "target": "_000006", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712682", 
+            "role": "reactant", 
+            "source": "_000007", 
+            "target": "_000018", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712706", 
+            "role": "modifier", 
+            "source": "metaid_0000022", 
+            "target": "_000018", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_712394", 
+            "role": "product", 
+            "source": "_000010", 
+            "target": "_000009", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712382", 
+            "role": "product", 
+            "source": "_000010", 
+            "target": "_000004", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712369", 
+            "role": "reactant", 
+            "source": "_000006", 
+            "target": "_000010", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712586", 
+            "role": "product", 
+            "source": "_000015", 
+            "target": "_000008", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712574", 
+            "role": "reactant", 
+            "source": "_000003", 
+            "target": "_000015", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712430", 
+            "role": "product", 
+            "source": "_000011", 
+            "target": "_000005", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_712418", 
+            "role": "reactant", 
+            "source": "_000004", 
+            "target": "_000011", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "_000016", 
+            "modifiers": [], 
+            "products": [
+                "_712622"
+            ], 
+            "reactants": [
+                "_712610"
+            ], 
+            "reaction_name": "default degradation of cyclin"
+        }, 
+        {
+            "id": "_000012", 
+            "modifiers": [], 
+            "products": [
+                "_712466"
+            ], 
+            "reactants": [
+                "_712454"
+            ], 
+            "reaction_name": "cdc2k dephosphorylation"
+        }, 
+        {
+            "compartment": "_000002", 
+            "id": "_000006", 
+            "species_name": "p-cyclin_cdc2"
+        }, 
+        {
+            "compartment": "_000002", 
+            "id": "_000003", 
+            "species_name": ""
+        }, 
+        {
+            "compartment": "_000002", 
+            "id": "metaid_0000020", 
+            "species_name": "total_cyclin"
+        }, 
+        {
+            "id": "_000017", 
+            "modifiers": [], 
+            "products": [
+                "_712658"
+            ], 
+            "reactants": [
+                "_712646"
+            ], 
+            "reaction_name": "cdc2 kinase triggered degration of cyclin"
+        }, 
+        {
+            "id": "_000013", 
+            "modifiers": [], 
+            "products": [
+                "_712514"
+            ], 
+            "reactants": [
+                "_712490", 
+                "_712502"
+            ], 
+            "reaction_name": "cyclin cdc2k-p association"
+        }, 
+        {
+            "compartment": "_000002", 
+            "id": "_000007", 
+            "species_name": "p-cyclin_cdc2-p"
+        }, 
+        {
+            "id": "_000014", 
+            "modifiers": [], 
+            "products": [
+                "_712550"
+            ], 
+            "reactants": [
+                "_712538"
+            ], 
+            "reaction_name": "deactivation of cdc2 kinase"
+        }, 
+        {
+            "compartment": "_000002", 
+            "id": "_000004", 
+            "species_name": "cdc2k"
+        }, 
+        {
+            "id": "_000018", 
+            "modifiers": [
+                "_712706"
+            ], 
+            "products": [
+                "_712694"
+            ], 
+            "reactants": [
+                "_712682"
+            ], 
+            "reaction_name": "activation of cdc2 kinase"
+        }, 
+        {
+            "compartment": "_000002", 
+            "id": "_000008", 
+            "species_name": "cyclin"
+        }, 
+        {
+            "id": "_000010", 
+            "modifiers": [], 
+            "products": [
+                "_712394", 
+                "_712382"
+            ], 
+            "reactants": [
+                "_712369"
+            ], 
+            "reaction_name": "cyclin_cdc2k dissociation"
+        }, 
+        {
+            "id": "_000015", 
+            "modifiers": [], 
+            "products": [
+                "_712586"
+            ], 
+            "reactants": [
+                "_712574"
+            ], 
+            "reaction_name": "cyclin biosynthesis"
+        }, 
+        {
+            "compartment": "_000002", 
+            "id": "metaid_0000022", 
+            "species_name": "total_cdc2"
+        }, 
+        {
+            "compartment": "_000002", 
+            "id": "_000005", 
+            "species_name": "cdc2k-P"
+        }, 
+        {
+            "compartment": "_000002", 
+            "id": "_000009", 
+            "species_name": "p-cyclin"
+        }, 
+        {
+            "id": "_000011", 
+            "modifiers": [], 
+            "products": [
+                "_712430"
+            ], 
+            "reactants": [
+                "_712418"
+            ], 
+            "reaction_name": "cdc2k phosphorylation"
+        }
+    ]
+}

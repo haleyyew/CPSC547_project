@@ -1,1 +1,139 @@
-{"nodes": [{"compartment": "metaid_0000003", "species_name": "alpha", "id": "metaid_0000005"}, {"compartment": "metaid_0000003", "species_name": "gamma", "id": "metaid_0000007"}, {"reaction_name": "v3", "reactants": ["_520072"], "modifiers": [], "products": ["_520084"], "id": "metaid_0000168"}, {"reaction_name": "v1", "reactants": ["_519988"], "modifiers": [], "products": ["_520000"], "id": "metaid_0000166"}, {"compartment": "metaid_0000003", "species_name": "beta", "id": "metaid_0000006"}, {"reaction_name": "v4", "reactants": ["_520121"], "modifiers": [], "products": ["_520133"], "id": "metaid_0000169"}, {"reaction_name": "v2", "reactants": ["_520024"], "modifiers": [], "products": ["_520036"], "id": "metaid_0000167"}], "links": [{"source": "metaid_0000168", "role": "product", "id": "_520084", "value": "1.0", "target": "metaid_0000007"}, {"source": "metaid_0000006", "role": "reactant", "id": "_520072", "value": "1.0", "target": "metaid_0000168"}, {"source": "metaid_0000166", "role": "product", "id": "_520000", "value": "1.0", "target": "metaid_0000006"}, {"source": "metaid_0000005", "role": "reactant", "id": "_519988", "value": "1.0", "target": "metaid_0000166"}, {"source": "metaid_0000169", "role": "product", "id": "_520133", "value": "1.0", "target": "metaid_0000006"}, {"source": "metaid_0000007", "role": "reactant", "id": "_520121", "value": "1.0", "target": "metaid_0000169"}, {"source": "metaid_0000167", "role": "product", "id": "_520036", "value": "1.0", "target": "metaid_0000005"}, {"source": "metaid_0000006", "role": "reactant", "id": "_520024", "value": "1.0", "target": "metaid_0000167"}]}
+{
+    "links": [
+        {
+            "id": "_520084", 
+            "role": "product", 
+            "source": "metaid_0000168", 
+            "target": "metaid_0000007", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_520072", 
+            "role": "reactant", 
+            "source": "metaid_0000006", 
+            "target": "metaid_0000168", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_520096", 
+            "role": "modifier", 
+            "source": "metaid_0000005", 
+            "target": "metaid_0000168", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_520000", 
+            "role": "product", 
+            "source": "metaid_0000166", 
+            "target": "metaid_0000006", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_519988", 
+            "role": "reactant", 
+            "source": "metaid_0000005", 
+            "target": "metaid_0000166", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_520133", 
+            "role": "product", 
+            "source": "metaid_0000169", 
+            "target": "metaid_0000006", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_520121", 
+            "role": "reactant", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000169", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_520036", 
+            "role": "product", 
+            "source": "metaid_0000167", 
+            "target": "metaid_0000005", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_520024", 
+            "role": "reactant", 
+            "source": "metaid_0000006", 
+            "target": "metaid_0000167", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_520048", 
+            "role": "modifier", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000167", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000005", 
+            "species_name": "alpha"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000007", 
+            "species_name": "gamma"
+        }, 
+        {
+            "id": "metaid_0000168", 
+            "modifiers": [
+                "_520096"
+            ], 
+            "products": [
+                "_520084"
+            ], 
+            "reactants": [
+                "_520072"
+            ], 
+            "reaction_name": "v3"
+        }, 
+        {
+            "id": "metaid_0000166", 
+            "modifiers": [], 
+            "products": [
+                "_520000"
+            ], 
+            "reactants": [
+                "_519988"
+            ], 
+            "reaction_name": "v1"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000006", 
+            "species_name": "beta"
+        }, 
+        {
+            "id": "metaid_0000169", 
+            "modifiers": [], 
+            "products": [
+                "_520133"
+            ], 
+            "reactants": [
+                "_520121"
+            ], 
+            "reaction_name": "v4"
+        }, 
+        {
+            "id": "metaid_0000167", 
+            "modifiers": [
+                "_520048"
+            ], 
+            "products": [
+                "_520036"
+            ], 
+            "reactants": [
+                "_520024"
+            ], 
+            "reaction_name": "v2"
+        }
+    ]
+}

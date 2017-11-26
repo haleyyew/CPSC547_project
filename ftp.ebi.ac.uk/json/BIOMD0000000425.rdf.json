@@ -1,1 +1,102 @@
-{"nodes": [{"reaction_name": "reaction_1", "reactants": [], "modifiers": [], "products": ["_177130"], "id": "metaid_0000005"}, {"reaction_name": "reaction_2", "reactants": [], "modifiers": [], "products": ["_177204"], "id": "metaid_0000007"}, {"reaction_name": "reaction_4", "reactants": ["_177241"], "modifiers": [], "products": [], "id": "metaid_0000008"}, {"reaction_name": "reaction_3", "reactants": ["_177167"], "modifiers": [], "products": [], "id": "metaid_0000006"}, {"compartment": "metaid_0000003", "species_name": "ribosome concentration", "id": "metaid_0000004"}], "links": [{"source": "metaid_0000005", "role": "product", "id": "_177130", "value": "1.0", "target": "metaid_0000004"}, {"source": "metaid_0000007", "role": "product", "id": "_177204", "value": "1.0", "target": "metaid_0000004"}, {"source": "metaid_0000004", "role": "reactant", "id": "_177241", "value": "1.0", "target": "metaid_0000008"}, {"source": "metaid_0000004", "role": "reactant", "id": "_177167", "value": "1.0", "target": "metaid_0000006"}]}
+{
+    "links": [
+        {
+            "id": "_177130", 
+            "role": "product", 
+            "source": "metaid_0000005", 
+            "target": "metaid_0000004", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_177204", 
+            "role": "product", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000004", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_432648", 
+            "role": "modifier", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000007", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_177241", 
+            "role": "reactant", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000008", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_432660", 
+            "role": "modifier", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000008", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_177167", 
+            "role": "reactant", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000006", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_432636", 
+            "role": "modifier", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000006", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000005", 
+            "modifiers": [], 
+            "products": [
+                "_177130"
+            ], 
+            "reactants": [], 
+            "reaction_name": "reaction_1"
+        }, 
+        {
+            "id": "metaid_0000007", 
+            "modifiers": [
+                "_432648"
+            ], 
+            "products": [
+                "_177204"
+            ], 
+            "reactants": [], 
+            "reaction_name": "reaction_2"
+        }, 
+        {
+            "id": "metaid_0000008", 
+            "modifiers": [
+                "_432660"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_177241"
+            ], 
+            "reaction_name": "reaction_4"
+        }, 
+        {
+            "id": "metaid_0000006", 
+            "modifiers": [
+                "_432636"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_177167"
+            ], 
+            "reaction_name": "reaction_3"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000004", 
+            "species_name": "ribosome concentration"
+        }
+    ]
+}

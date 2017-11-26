@@ -1,1 +1,341 @@
-{"nodes": [{"reaction_name": "dephosphorylation of MAPK-P", "reactants": ["_653547"], "modifiers": [], "products": ["_653559"], "id": "_584815"}, {"reaction_name": "phosphorylation of MAPK", "reactants": ["_653414"], "modifiers": [], "products": ["_653426"], "id": "_584755"}, {"compartment": "_584463", "species_name": "Mek1-P", "id": "_584535"}, {"reaction_name": "phosphorylation of MAPK-P", "reactants": ["_653463"], "modifiers": [], "products": ["_653475"], "id": "_584775"}, {"compartment": "_584463", "species_name": "Mos-P", "id": "_584495"}, {"reaction_name": "dephosphorylation of MAPKK-PP", "reactants": ["_653341"], "modifiers": [], "products": ["_653353"], "id": "_584715"}, {"compartment": "_584463", "species_name": "Mek1-PP", "id": "_584555"}, {"compartment": "_584463", "species_name": "Erk2-PP", "id": "_584615"}, {"reaction_name": "MAPKKK activation", "reactants": ["_653161"], "modifiers": [], "products": ["_653173"], "id": "_584635"}, {"reaction_name": "dephosphorylation of MAPKK-P", "reactants": ["_653377"], "modifiers": [], "products": ["_653389"], "id": "_584735"}, {"reaction_name": "phosphorylation of MAPKK-P", "reactants": ["_653293"], "modifiers": [], "products": ["_653305"], "id": "_584695"}, {"compartment": "_584463", "species_name": "Erk2-P", "id": "_584595"}, {"reaction_name": "phosphorylation of MAPKK", "reactants": ["_653245"], "modifiers": [], "products": ["_653257"], "id": "_584675"}, {"reaction_name": "MAPKKK inactivation", "reactants": ["_653209"], "modifiers": [], "products": ["_653221"], "id": "_584655"}, {"compartment": "_584463", "species_name": "Erk2", "id": "_584575"}, {"compartment": "_584463", "species_name": "Mek1", "id": "_584515"}, {"compartment": "_584463", "species_name": "Mos", "id": "_584475"}, {"reaction_name": "dephosphorylation of MAPK-PP", "reactants": ["_653511"], "modifiers": [], "products": ["_653523"], "id": "_584795"}], "links": [{"source": "_584815", "role": "product", "id": "_653559", "value": "1.0", "target": "_584575"}, {"source": "_584595", "role": "reactant", "id": "_653547", "value": "1.0", "target": "_584815"}, {"source": "_584755", "role": "product", "id": "_653426", "value": "1.0", "target": "_584595"}, {"source": "_584575", "role": "reactant", "id": "_653414", "value": "1.0", "target": "_584755"}, {"source": "_584775", "role": "product", "id": "_653475", "value": "1.0", "target": "_584615"}, {"source": "_584595", "role": "reactant", "id": "_653463", "value": "1.0", "target": "_584775"}, {"source": "_584715", "role": "product", "id": "_653353", "value": "1.0", "target": "_584535"}, {"source": "_584555", "role": "reactant", "id": "_653341", "value": "1.0", "target": "_584715"}, {"source": "_584635", "role": "product", "id": "_653173", "value": "1.0", "target": "_584495"}, {"source": "_584475", "role": "reactant", "id": "_653161", "value": "1.0", "target": "_584635"}, {"source": "_584735", "role": "product", "id": "_653389", "value": "1.0", "target": "_584515"}, {"source": "_584535", "role": "reactant", "id": "_653377", "value": "1.0", "target": "_584735"}, {"source": "_584695", "role": "product", "id": "_653305", "value": "1.0", "target": "_584555"}, {"source": "_584535", "role": "reactant", "id": "_653293", "value": "1.0", "target": "_584695"}, {"source": "_584675", "role": "product", "id": "_653257", "value": "1.0", "target": "_584535"}, {"source": "_584515", "role": "reactant", "id": "_653245", "value": "1.0", "target": "_584675"}, {"source": "_584655", "role": "product", "id": "_653221", "value": "1.0", "target": "_584475"}, {"source": "_584495", "role": "reactant", "id": "_653209", "value": "1.0", "target": "_584655"}, {"source": "_584795", "role": "product", "id": "_653523", "value": "1.0", "target": "_584595"}, {"source": "_584615", "role": "reactant", "id": "_653511", "value": "1.0", "target": "_584795"}]}
+{
+    "links": [
+        {
+            "id": "_653559", 
+            "role": "product", 
+            "source": "_584815", 
+            "target": "_584575", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653547", 
+            "role": "reactant", 
+            "source": "_584595", 
+            "target": "_584815", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653426", 
+            "role": "product", 
+            "source": "_584755", 
+            "target": "_584595", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653414", 
+            "role": "reactant", 
+            "source": "_584575", 
+            "target": "_584755", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653438", 
+            "role": "modifier", 
+            "source": "_584555", 
+            "target": "_584755", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_653475", 
+            "role": "product", 
+            "source": "_584775", 
+            "target": "_584615", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653463", 
+            "role": "reactant", 
+            "source": "_584595", 
+            "target": "_584775", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653487", 
+            "role": "modifier", 
+            "source": "_584555", 
+            "target": "_584775", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_653353", 
+            "role": "product", 
+            "source": "_584715", 
+            "target": "_584535", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653341", 
+            "role": "reactant", 
+            "source": "_584555", 
+            "target": "_584715", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653173", 
+            "role": "product", 
+            "source": "_584635", 
+            "target": "_584495", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653161", 
+            "role": "reactant", 
+            "source": "_584475", 
+            "target": "_584635", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653185", 
+            "role": "modifier", 
+            "source": "_584615", 
+            "target": "_584635", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_653389", 
+            "role": "product", 
+            "source": "_584735", 
+            "target": "_584515", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653377", 
+            "role": "reactant", 
+            "source": "_584535", 
+            "target": "_584735", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653305", 
+            "role": "product", 
+            "source": "_584695", 
+            "target": "_584555", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653293", 
+            "role": "reactant", 
+            "source": "_584535", 
+            "target": "_584695", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653317", 
+            "role": "modifier", 
+            "source": "_584495", 
+            "target": "_584695", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_653257", 
+            "role": "product", 
+            "source": "_584675", 
+            "target": "_584535", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653245", 
+            "role": "reactant", 
+            "source": "_584515", 
+            "target": "_584675", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653269", 
+            "role": "modifier", 
+            "source": "_584495", 
+            "target": "_584675", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_653221", 
+            "role": "product", 
+            "source": "_584655", 
+            "target": "_584475", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653209", 
+            "role": "reactant", 
+            "source": "_584495", 
+            "target": "_584655", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653523", 
+            "role": "product", 
+            "source": "_584795", 
+            "target": "_584595", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_653511", 
+            "role": "reactant", 
+            "source": "_584615", 
+            "target": "_584795", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "_584815", 
+            "modifiers": [], 
+            "products": [
+                "_653559"
+            ], 
+            "reactants": [
+                "_653547"
+            ], 
+            "reaction_name": "dephosphorylation of MAPK-P"
+        }, 
+        {
+            "id": "_584755", 
+            "modifiers": [
+                "_653438"
+            ], 
+            "products": [
+                "_653426"
+            ], 
+            "reactants": [
+                "_653414"
+            ], 
+            "reaction_name": "phosphorylation of MAPK"
+        }, 
+        {
+            "compartment": "_584463", 
+            "id": "_584535", 
+            "species_name": "Mek1-P"
+        }, 
+        {
+            "id": "_584775", 
+            "modifiers": [
+                "_653487"
+            ], 
+            "products": [
+                "_653475"
+            ], 
+            "reactants": [
+                "_653463"
+            ], 
+            "reaction_name": "phosphorylation of MAPK-P"
+        }, 
+        {
+            "compartment": "_584463", 
+            "id": "_584495", 
+            "species_name": "Mos-P"
+        }, 
+        {
+            "id": "_584715", 
+            "modifiers": [], 
+            "products": [
+                "_653353"
+            ], 
+            "reactants": [
+                "_653341"
+            ], 
+            "reaction_name": "dephosphorylation of MAPKK-PP"
+        }, 
+        {
+            "compartment": "_584463", 
+            "id": "_584555", 
+            "species_name": "Mek1-PP"
+        }, 
+        {
+            "compartment": "_584463", 
+            "id": "_584615", 
+            "species_name": "Erk2-PP"
+        }, 
+        {
+            "id": "_584635", 
+            "modifiers": [
+                "_653185"
+            ], 
+            "products": [
+                "_653173"
+            ], 
+            "reactants": [
+                "_653161"
+            ], 
+            "reaction_name": "MAPKKK activation"
+        }, 
+        {
+            "id": "_584735", 
+            "modifiers": [], 
+            "products": [
+                "_653389"
+            ], 
+            "reactants": [
+                "_653377"
+            ], 
+            "reaction_name": "dephosphorylation of MAPKK-P"
+        }, 
+        {
+            "id": "_584695", 
+            "modifiers": [
+                "_653317"
+            ], 
+            "products": [
+                "_653305"
+            ], 
+            "reactants": [
+                "_653293"
+            ], 
+            "reaction_name": "phosphorylation of MAPKK-P"
+        }, 
+        {
+            "compartment": "_584463", 
+            "id": "_584595", 
+            "species_name": "Erk2-P"
+        }, 
+        {
+            "id": "_584675", 
+            "modifiers": [
+                "_653269"
+            ], 
+            "products": [
+                "_653257"
+            ], 
+            "reactants": [
+                "_653245"
+            ], 
+            "reaction_name": "phosphorylation of MAPKK"
+        }, 
+        {
+            "id": "_584655", 
+            "modifiers": [], 
+            "products": [
+                "_653221"
+            ], 
+            "reactants": [
+                "_653209"
+            ], 
+            "reaction_name": "MAPKKK inactivation"
+        }, 
+        {
+            "compartment": "_584463", 
+            "id": "_584575", 
+            "species_name": "Erk2"
+        }, 
+        {
+            "compartment": "_584463", 
+            "id": "_584515", 
+            "species_name": "Mek1"
+        }, 
+        {
+            "compartment": "_584463", 
+            "id": "_584475", 
+            "species_name": "Mos"
+        }, 
+        {
+            "id": "_584795", 
+            "modifiers": [], 
+            "products": [
+                "_653523"
+            ], 
+            "reactants": [
+                "_653511"
+            ], 
+            "reaction_name": "dephosphorylation of MAPK-PP"
+        }
+    ]
+}

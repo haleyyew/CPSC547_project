@@ -1,1 +1,265 @@
-{"nodes": [{"compartment": "cell_meta", "species_name": "", "id": "C_meta"}, {"compartment": "cell_meta", "species_name": "", "id": "A_meta"}, {"compartment": "cell_meta", "species_name": "", "id": "L_meta"}, {"compartment": "cell_meta", "species_name": "", "id": "R_meta"}, {"reaction_name": "", "reactants": ["_769908"], "modifiers": [], "products": ["_769920", "_769932"], "id": "I_activation_meta"}, {"reaction_name": "", "reactants": [], "modifiers": [], "products": ["_769728"], "id": "R_expression_meta"}, {"reaction_name": "", "reactants": ["_770041"], "modifiers": [], "products": [], "id": "I_degradation_meta"}, {"reaction_name": "", "reactants": ["_769764"], "modifiers": [], "products": [], "id": "R_degradation_meta"}, {"compartment": "cell_meta", "species_name": "", "id": "X_meta"}, {"reaction_name": "", "reactants": ["_769836"], "modifiers": [], "products": [], "id": "C_degradation_meta"}, {"reaction_name": "", "reactants": ["_769956"], "modifiers": [], "products": [], "id": "X_degradation_meta"}, {"compartment": "cell_meta", "species_name": "", "id": "I_meta"}, {"reaction_name": "", "reactants": ["_769981"], "modifiers": [], "products": [], "id": "A_degradation_meta"}, {"reaction_name": "", "reactants": [], "modifiers": [], "products": ["_770005"], "id": "I_expression_meta"}, {"reaction_name": "", "reactants": ["_769872", "_769860"], "modifiers": [], "products": ["_769884"], "id": "C_I_binding_meta"}, {"reaction_name": "", "reactants": ["_769788", "_769800"], "modifiers": [], "products": ["_769812"], "id": "R_L_binding_meta"}], "links": [{"source": "I_activation_meta", "role": "product", "id": "_769920", "value": "1.0", "target": "C_meta"}, {"source": "I_activation_meta", "role": "product", "id": "_769932", "value": "1.0", "target": "A_meta"}, {"source": "X_meta", "role": "reactant", "id": "_769908", "value": "1.0", "target": "I_activation_meta"}, {"source": "R_expression_meta", "role": "product", "id": "_769728", "value": "1.0", "target": "R_meta"}, {"source": "I_meta", "role": "reactant", "id": "_770041", "value": "1.0", "target": "I_degradation_meta"}, {"source": "R_meta", "role": "reactant", "id": "_769764", "value": "1.0", "target": "R_degradation_meta"}, {"source": "C_meta", "role": "reactant", "id": "_769836", "value": "1.0", "target": "C_degradation_meta"}, {"source": "X_meta", "role": "reactant", "id": "_769956", "value": "1.0", "target": "X_degradation_meta"}, {"source": "A_meta", "role": "reactant", "id": "_769981", "value": "1.0", "target": "A_degradation_meta"}, {"source": "I_expression_meta", "role": "product", "id": "_770005", "value": "1.0", "target": "I_meta"}, {"source": "C_I_binding_meta", "role": "product", "id": "_769884", "value": "1.0", "target": "X_meta"}, {"source": "I_meta", "role": "reactant", "id": "_769872", "value": "1.0", "target": "C_I_binding_meta"}, {"source": "C_meta", "role": "reactant", "id": "_769860", "value": "1.0", "target": "C_I_binding_meta"}, {"source": "R_L_binding_meta", "role": "product", "id": "_769812", "value": "1.0", "target": "C_meta"}, {"source": "R_meta", "role": "reactant", "id": "_769788", "value": "1.0", "target": "R_L_binding_meta"}, {"source": "L_meta", "role": "reactant", "id": "_769800", "value": "1.0", "target": "R_L_binding_meta"}]}
+{
+    "links": [
+        {
+            "id": "_769920", 
+            "role": "product", 
+            "source": "I_activation_meta", 
+            "target": "C_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_769932", 
+            "role": "product", 
+            "source": "I_activation_meta", 
+            "target": "A_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_769908", 
+            "role": "reactant", 
+            "source": "X_meta", 
+            "target": "I_activation_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_769728", 
+            "role": "product", 
+            "source": "R_expression_meta", 
+            "target": "R_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_769740", 
+            "role": "modifier", 
+            "source": "A_meta", 
+            "target": "R_expression_meta", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_770041", 
+            "role": "reactant", 
+            "source": "I_meta", 
+            "target": "I_degradation_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_769764", 
+            "role": "reactant", 
+            "source": "R_meta", 
+            "target": "R_degradation_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_769836", 
+            "role": "reactant", 
+            "source": "C_meta", 
+            "target": "C_degradation_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_769956", 
+            "role": "reactant", 
+            "source": "X_meta", 
+            "target": "X_degradation_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_769981", 
+            "role": "reactant", 
+            "source": "A_meta", 
+            "target": "A_degradation_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_770005", 
+            "role": "product", 
+            "source": "I_expression_meta", 
+            "target": "I_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_770017", 
+            "role": "modifier", 
+            "source": "A_meta", 
+            "target": "I_expression_meta", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_769884", 
+            "role": "product", 
+            "source": "C_I_binding_meta", 
+            "target": "X_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_769872", 
+            "role": "reactant", 
+            "source": "I_meta", 
+            "target": "C_I_binding_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_769860", 
+            "role": "reactant", 
+            "source": "C_meta", 
+            "target": "C_I_binding_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_769812", 
+            "role": "product", 
+            "source": "R_L_binding_meta", 
+            "target": "C_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_769788", 
+            "role": "reactant", 
+            "source": "R_meta", 
+            "target": "R_L_binding_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_769800", 
+            "role": "reactant", 
+            "source": "L_meta", 
+            "target": "R_L_binding_meta", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "cell_meta", 
+            "id": "C_meta", 
+            "species_name": ""
+        }, 
+        {
+            "compartment": "cell_meta", 
+            "id": "A_meta", 
+            "species_name": ""
+        }, 
+        {
+            "compartment": "cell_meta", 
+            "id": "L_meta", 
+            "species_name": ""
+        }, 
+        {
+            "compartment": "cell_meta", 
+            "id": "R_meta", 
+            "species_name": ""
+        }, 
+        {
+            "id": "I_activation_meta", 
+            "modifiers": [], 
+            "products": [
+                "_769920", 
+                "_769932"
+            ], 
+            "reactants": [
+                "_769908"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "R_expression_meta", 
+            "modifiers": [
+                "_769740"
+            ], 
+            "products": [
+                "_769728"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "I_degradation_meta", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_770041"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "R_degradation_meta", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_769764"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "cell_meta", 
+            "id": "X_meta", 
+            "species_name": ""
+        }, 
+        {
+            "id": "C_degradation_meta", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_769836"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "X_degradation_meta", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_769956"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "cell_meta", 
+            "id": "I_meta", 
+            "species_name": ""
+        }, 
+        {
+            "id": "A_degradation_meta", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_769981"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "I_expression_meta", 
+            "modifiers": [
+                "_770017"
+            ], 
+            "products": [
+                "_770005"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "C_I_binding_meta", 
+            "modifiers": [], 
+            "products": [
+                "_769884"
+            ], 
+            "reactants": [
+                "_769872", 
+                "_769860"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "R_L_binding_meta", 
+            "modifiers": [], 
+            "products": [
+                "_769812"
+            ], 
+            "reactants": [
+                "_769788", 
+                "_769800"
+            ], 
+            "reaction_name": ""
+        }
+    ]
+}

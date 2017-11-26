@@ -1,1 +1,282 @@
-{"nodes": [{"reaction_name": "degradation of LacI transcripts", "reactants": ["_420973"], "modifiers": [], "products": [], "id": "_905823"}, {"reaction_name": "transcription of CI", "reactants": [], "modifiers": [], "products": ["_421304"], "id": "_906042"}, {"reaction_name": "degradation of LacI", "reactants": ["_421160"], "modifiers": [], "products": [], "id": "_905943"}, {"reaction_name": "translation of CI", "reactants": [], "modifiers": [], "products": ["_421124"], "id": "_905923"}, {"reaction_name": "transcription of TetR", "reactants": [], "modifiers": [], "products": ["_421268"], "id": "_906022"}, {"compartment": "_000002", "species_name": "LacI mRNA", "id": "_905769"}, {"reaction_name": "transcription of LacI", "reactants": [], "modifiers": [], "products": ["_421232"], "id": "_906002"}, {"compartment": "_000002", "species_name": "TetR mRNA", "id": "_905781"}, {"reaction_name": "translation of TetR", "reactants": [], "modifiers": [], "products": ["_421088"], "id": "_905903"}, {"compartment": "_000002", "species_name": "cI mRNA", "id": "_905802"}, {"compartment": "_000002", "species_name": "LacI protein", "id": "PX"}, {"compartment": "_000002", "species_name": "cI protein", "id": "PZ"}, {"reaction_name": "degradation of TetR", "reactants": ["_421184"], "modifiers": [], "products": [], "id": "_905962"}, {"reaction_name": "degradation of CI", "reactants": ["_421208"], "modifiers": [], "products": [], "id": "_905982"}, {"reaction_name": "translation of LacI", "reactants": [], "modifiers": [], "products": ["_421051"], "id": "_905882"}, {"compartment": "_000002", "species_name": "TetR protein", "id": "PY"}, {"reaction_name": "degradation of TetR transcripts", "reactants": ["_420999"], "modifiers": [], "products": [], "id": "_905842"}, {"reaction_name": "degradation of CI transcripts", "reactants": ["_421025"], "modifiers": [], "products": [], "id": "_905862"}], "links": [{"source": "_905769", "role": "reactant", "id": "_420973", "value": "1.0", "target": "_905823"}, {"source": "_906042", "role": "product", "id": "_421304", "value": "1.0", "target": "_905802"}, {"source": "PX", "role": "reactant", "id": "_421160", "value": "1.0", "target": "_905943"}, {"source": "_905923", "role": "product", "id": "_421124", "value": "1.0", "target": "PZ"}, {"source": "_906022", "role": "product", "id": "_421268", "value": "1.0", "target": "_905781"}, {"source": "_906002", "role": "product", "id": "_421232", "value": "1.0", "target": "_905769"}, {"source": "_905903", "role": "product", "id": "_421088", "value": "1.0", "target": "PY"}, {"source": "PY", "role": "reactant", "id": "_421184", "value": "1.0", "target": "_905962"}, {"source": "PZ", "role": "reactant", "id": "_421208", "value": "1.0", "target": "_905982"}, {"source": "_905882", "role": "product", "id": "_421051", "value": "1.0", "target": "PX"}, {"source": "_905781", "role": "reactant", "id": "_420999", "value": "1.0", "target": "_905842"}, {"source": "_905802", "role": "reactant", "id": "_421025", "value": "1.0", "target": "_905862"}]}
+{
+    "links": [
+        {
+            "id": "_420973", 
+            "role": "reactant", 
+            "source": "_905769", 
+            "target": "_905823", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_421304", 
+            "role": "product", 
+            "source": "_906042", 
+            "target": "_905802", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_421317", 
+            "role": "modifier", 
+            "source": "PY", 
+            "target": "_906042", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_421160", 
+            "role": "reactant", 
+            "source": "PX", 
+            "target": "_905943", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_421124", 
+            "role": "product", 
+            "source": "_905923", 
+            "target": "PZ", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_421136", 
+            "role": "modifier", 
+            "source": "_905802", 
+            "target": "_905923", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_421268", 
+            "role": "product", 
+            "source": "_906022", 
+            "target": "_905781", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_421280", 
+            "role": "modifier", 
+            "source": "PX", 
+            "target": "_906022", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_421232", 
+            "role": "product", 
+            "source": "_906002", 
+            "target": "_905769", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_421244", 
+            "role": "modifier", 
+            "source": "PZ", 
+            "target": "_906002", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_421088", 
+            "role": "product", 
+            "source": "_905903", 
+            "target": "PY", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_421100", 
+            "role": "modifier", 
+            "source": "_905781", 
+            "target": "_905903", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_421184", 
+            "role": "reactant", 
+            "source": "PY", 
+            "target": "_905962", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_421208", 
+            "role": "reactant", 
+            "source": "PZ", 
+            "target": "_905982", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_421051", 
+            "role": "product", 
+            "source": "_905882", 
+            "target": "PX", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_421064", 
+            "role": "modifier", 
+            "source": "_905769", 
+            "target": "_905882", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_420999", 
+            "role": "reactant", 
+            "source": "_905781", 
+            "target": "_905842", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_421025", 
+            "role": "reactant", 
+            "source": "_905802", 
+            "target": "_905862", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "_905823", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_420973"
+            ], 
+            "reaction_name": "degradation of LacI transcripts"
+        }, 
+        {
+            "id": "_906042", 
+            "modifiers": [
+                "_421317"
+            ], 
+            "products": [
+                "_421304"
+            ], 
+            "reactants": [], 
+            "reaction_name": "transcription of CI"
+        }, 
+        {
+            "id": "_905943", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_421160"
+            ], 
+            "reaction_name": "degradation of LacI"
+        }, 
+        {
+            "id": "_905923", 
+            "modifiers": [
+                "_421136"
+            ], 
+            "products": [
+                "_421124"
+            ], 
+            "reactants": [], 
+            "reaction_name": "translation of CI"
+        }, 
+        {
+            "id": "_906022", 
+            "modifiers": [
+                "_421280"
+            ], 
+            "products": [
+                "_421268"
+            ], 
+            "reactants": [], 
+            "reaction_name": "transcription of TetR"
+        }, 
+        {
+            "compartment": "_000002", 
+            "id": "_905769", 
+            "species_name": "LacI mRNA"
+        }, 
+        {
+            "id": "_906002", 
+            "modifiers": [
+                "_421244"
+            ], 
+            "products": [
+                "_421232"
+            ], 
+            "reactants": [], 
+            "reaction_name": "transcription of LacI"
+        }, 
+        {
+            "compartment": "_000002", 
+            "id": "_905781", 
+            "species_name": "TetR mRNA"
+        }, 
+        {
+            "id": "_905903", 
+            "modifiers": [
+                "_421100"
+            ], 
+            "products": [
+                "_421088"
+            ], 
+            "reactants": [], 
+            "reaction_name": "translation of TetR"
+        }, 
+        {
+            "compartment": "_000002", 
+            "id": "_905802", 
+            "species_name": "cI mRNA"
+        }, 
+        {
+            "compartment": "_000002", 
+            "id": "PX", 
+            "species_name": "LacI protein"
+        }, 
+        {
+            "compartment": "_000002", 
+            "id": "PZ", 
+            "species_name": "cI protein"
+        }, 
+        {
+            "id": "_905962", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_421184"
+            ], 
+            "reaction_name": "degradation of TetR"
+        }, 
+        {
+            "id": "_905982", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_421208"
+            ], 
+            "reaction_name": "degradation of CI"
+        }, 
+        {
+            "id": "_905882", 
+            "modifiers": [
+                "_421064"
+            ], 
+            "products": [
+                "_421051"
+            ], 
+            "reactants": [], 
+            "reaction_name": "translation of LacI"
+        }, 
+        {
+            "compartment": "_000002", 
+            "id": "PY", 
+            "species_name": "TetR protein"
+        }, 
+        {
+            "id": "_905842", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_420999"
+            ], 
+            "reaction_name": "degradation of TetR transcripts"
+        }, 
+        {
+            "id": "_905862", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_421025"
+            ], 
+            "reaction_name": "degradation of CI transcripts"
+        }
+    ]
+}

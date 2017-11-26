@@ -1,1 +1,135 @@
-{"nodes": [{"reaction_name": "L_Dopa absorption from gut", "reactants": ["_954374"], "modifiers": [], "products": ["_954386"], "id": "_274093"}, {"reaction_name": "L-Dopa clearance via COMT", "reactants": ["_954458"], "modifiers": [], "products": ["_954470"], "id": "_274097"}, {"compartment": "_274089", "species_name": "C_3-OMD", "id": "_274092"}, {"compartment": "_274088", "species_name": "", "id": "_274091"}, {"reaction_name": "L-Dopa clearance via AADC ", "reactants": ["_954434"], "modifiers": [], "products": [], "id": "_274095"}, {"reaction_name": "3-OMD clearance", "reactants": ["_954518"], "modifiers": [], "products": [], "id": "_274099"}, {"compartment": "_274086", "species_name": "", "id": "_274090"}, {"reaction_name": "hepatic and blood L-Dopa clearance", "reactants": ["_954410"], "modifiers": [], "products": [], "id": "_274094"}, {"reaction_name": "rest clearance of L-Dopa", "reactants": ["_954494"], "modifiers": [], "products": [], "id": "_274098"}], "links": [{"source": "_274093", "role": "product", "id": "_954386", "value": "1.0", "target": "_274091"}, {"source": "_274090", "role": "reactant", "id": "_954374", "value": "1.0", "target": "_274093"}, {"source": "_274097", "role": "product", "id": "_954470", "value": "1.0", "target": "_274092"}, {"source": "_274091", "role": "reactant", "id": "_954458", "value": "1.0", "target": "_274097"}, {"source": "_274091", "role": "reactant", "id": "_954434", "value": "1.0", "target": "_274095"}, {"source": "_274092", "role": "reactant", "id": "_954518", "value": "1.0", "target": "_274099"}, {"source": "_274090", "role": "reactant", "id": "_954410", "value": "1.0", "target": "_274094"}, {"source": "_274091", "role": "reactant", "id": "_954494", "value": "1.0", "target": "_274098"}]}
+{
+    "links": [
+        {
+            "id": "_954386", 
+            "role": "product", 
+            "source": "_274093", 
+            "target": "_274091", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_954374", 
+            "role": "reactant", 
+            "source": "_274090", 
+            "target": "_274093", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_954470", 
+            "role": "product", 
+            "source": "_274097", 
+            "target": "_274092", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_954458", 
+            "role": "reactant", 
+            "source": "_274091", 
+            "target": "_274097", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_954434", 
+            "role": "reactant", 
+            "source": "_274091", 
+            "target": "_274095", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_954518", 
+            "role": "reactant", 
+            "source": "_274092", 
+            "target": "_274099", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_954410", 
+            "role": "reactant", 
+            "source": "_274090", 
+            "target": "_274094", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_954494", 
+            "role": "reactant", 
+            "source": "_274091", 
+            "target": "_274098", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "_274093", 
+            "modifiers": [], 
+            "products": [
+                "_954386"
+            ], 
+            "reactants": [
+                "_954374"
+            ], 
+            "reaction_name": "L_Dopa absorption from gut"
+        }, 
+        {
+            "id": "_274097", 
+            "modifiers": [], 
+            "products": [
+                "_954470"
+            ], 
+            "reactants": [
+                "_954458"
+            ], 
+            "reaction_name": "L-Dopa clearance via COMT"
+        }, 
+        {
+            "compartment": "_274089", 
+            "id": "_274092", 
+            "species_name": "C_3-OMD"
+        }, 
+        {
+            "compartment": "_274088", 
+            "id": "_274091", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_274095", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_954434"
+            ], 
+            "reaction_name": "L-Dopa clearance via AADC "
+        }, 
+        {
+            "id": "_274099", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_954518"
+            ], 
+            "reaction_name": "3-OMD clearance"
+        }, 
+        {
+            "compartment": "_274086", 
+            "id": "_274090", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_274094", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_954410"
+            ], 
+            "reaction_name": "hepatic and blood L-Dopa clearance"
+        }, 
+        {
+            "id": "_274098", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_954494"
+            ], 
+            "reaction_name": "rest clearance of L-Dopa"
+        }
+    ]
+}

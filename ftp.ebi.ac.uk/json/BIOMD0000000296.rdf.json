@@ -1,1 +1,295 @@
-{"nodes": [{"compartment": "_071270", "species_name": "", "id": "_071277"}, {"compartment": "_071270", "species_name": "", "id": "_566102"}, {"compartment": "_071270", "species_name": "", "id": "_071283"}, {"reaction_name": "predator growth", "reactants": ["_9a34788d-b07d-4711-bf2b-84ea1c2d70e1"], "modifiers": [], "products": ["d22cc8fc-56b9-49d9-953c-615bd6c2cd27"], "id": "_071297"}, {"compartment": "_071270", "species_name": "", "id": "_071273"}, {"reaction_name": "3OC12HSL removal", "reactants": ["a0b952e1-b042-4898-a17d-f3a68fa3c8eb"], "modifiers": [], "products": ["_1a5fcc24-11fc-483e-8473-c9739a5396bf"], "id": "_071307"}, {"reaction_name": "prey death", "reactants": ["_266c138d-6c67-4960-91ff-181db2a5edfd"], "modifiers": [], "products": ["_518eb1c3-9d9e-43bc-9803-338afb38f803"], "id": "_071303"}, {"compartment": "_071270", "species_name": "", "id": "_071281"}, {"compartment": "_071270", "species_name": "", "id": "_071279"}, {"reaction_name": "predator death", "reactants": ["deac2e27-d099-4e65-80d1-ce6c42e0f4a8"], "modifiers": [], "products": ["_4d8b5508-70c7-489d-bf3c-f66a044759d0"], "id": "_071299"}, {"compartment": "_071270", "species_name": "", "id": "_071275"}, {"reaction_name": "3OC6HSL synthesis", "reactants": ["a2880825-22d3-47d5-a3be-1eaeed5ce06c"], "modifiers": [], "products": ["db0aef0e-8690-4daf-b013-48898725762f"], "id": "_071309"}, {"reaction_name": "prey growth", "reactants": ["_6a657ae6-45ef-4fdf-b4ac-f2eda2402a90"], "modifiers": [], "products": ["_591476c7-67a0-4dfc-90d6-68abed82e26d"], "id": "_071301"}, {"reaction_name": "3OC12HSL synthesis", "reactants": ["_4e8f7380-cf0d-4924-8c68-cf9a88c40db6"], "modifiers": [], "products": ["b3f9ccc3-27e6-4a95-aed7-4f6af06d7853"], "id": "_071305"}, {"reaction_name": "3OC6HSL removal", "reactants": ["_2028d19e-dffb-4f16-b6ff-a695131e6856"], "modifiers": [], "products": ["_0dd756f0-d925-4f1d-b480-ebbda0c1566d"], "id": "_071311"}], "links": [{"source": "_071297", "role": "product", "id": "d22cc8fc-56b9-49d9-953c-615bd6c2cd27", "value": "1.0", "target": "_071273"}, {"source": "_071283", "role": "reactant", "id": "_9a34788d-b07d-4711-bf2b-84ea1c2d70e1", "value": "1.0", "target": "_071297"}, {"source": "_071307", "role": "product", "id": "_1a5fcc24-11fc-483e-8473-c9739a5396bf", "value": "1.0", "target": "_071281"}, {"source": "_071277", "role": "reactant", "id": "a0b952e1-b042-4898-a17d-f3a68fa3c8eb", "value": "1.0", "target": "_071307"}, {"source": "_071303", "role": "product", "id": "_518eb1c3-9d9e-43bc-9803-338afb38f803", "value": "1.0", "target": "_071281"}, {"source": "_071275", "role": "reactant", "id": "_266c138d-6c67-4960-91ff-181db2a5edfd", "value": "1.0", "target": "_071303"}, {"source": "_071299", "role": "product", "id": "_4d8b5508-70c7-489d-bf3c-f66a044759d0", "value": "1.0", "target": "_071281"}, {"source": "_071273", "role": "reactant", "id": "deac2e27-d099-4e65-80d1-ce6c42e0f4a8", "value": "1.0", "target": "_071299"}, {"source": "_071309", "role": "product", "id": "db0aef0e-8690-4daf-b013-48898725762f", "value": "1.0", "target": "_071279"}, {"source": "_071283", "role": "reactant", "id": "a2880825-22d3-47d5-a3be-1eaeed5ce06c", "value": "1.0", "target": "_071309"}, {"source": "_071301", "role": "product", "id": "_591476c7-67a0-4dfc-90d6-68abed82e26d", "value": "1.0", "target": "_071275"}, {"source": "_071283", "role": "reactant", "id": "_6a657ae6-45ef-4fdf-b4ac-f2eda2402a90", "value": "1.0", "target": "_071301"}, {"source": "_071305", "role": "product", "id": "b3f9ccc3-27e6-4a95-aed7-4f6af06d7853", "value": "1.0", "target": "_071277"}, {"source": "_071283", "role": "reactant", "id": "_4e8f7380-cf0d-4924-8c68-cf9a88c40db6", "value": "1.0", "target": "_071305"}, {"source": "_071311", "role": "product", "id": "_0dd756f0-d925-4f1d-b480-ebbda0c1566d", "value": "1.0", "target": "_071281"}, {"source": "_071279", "role": "reactant", "id": "_2028d19e-dffb-4f16-b6ff-a695131e6856", "value": "1.0", "target": "_071311"}]}
+{
+    "links": [
+        {
+            "id": "d22cc8fc-56b9-49d9-953c-615bd6c2cd27", 
+            "role": "product", 
+            "source": "_071297", 
+            "target": "_071273", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_9a34788d-b07d-4711-bf2b-84ea1c2d70e1", 
+            "role": "reactant", 
+            "source": "_071283", 
+            "target": "_071297", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_45b59138-d4ec-44a5-83c2-d5e74a327430", 
+            "role": "modifier", 
+            "source": "_071275", 
+            "target": "_071297", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_1a5fcc24-11fc-483e-8473-c9739a5396bf", 
+            "role": "product", 
+            "source": "_071307", 
+            "target": "_071281", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "a0b952e1-b042-4898-a17d-f3a68fa3c8eb", 
+            "role": "reactant", 
+            "source": "_071277", 
+            "target": "_071307", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_518eb1c3-9d9e-43bc-9803-338afb38f803", 
+            "role": "product", 
+            "source": "_071303", 
+            "target": "_071281", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_266c138d-6c67-4960-91ff-181db2a5edfd", 
+            "role": "reactant", 
+            "source": "_071275", 
+            "target": "_071303", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "b1cab0a9-3d3e-4714-b3b7-ae3d3ee0f134", 
+            "role": "modifier", 
+            "source": "_071277", 
+            "target": "_071303", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_4d8b5508-70c7-489d-bf3c-f66a044759d0", 
+            "role": "product", 
+            "source": "_071299", 
+            "target": "_071281", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "deac2e27-d099-4e65-80d1-ce6c42e0f4a8", 
+            "role": "reactant", 
+            "source": "_071273", 
+            "target": "_071299", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "ac3125e5-c698-49ad-9457-618293e75d84", 
+            "role": "modifier", 
+            "source": "_071279", 
+            "target": "_071299", 
+            "value": 0.0
+        }, 
+        {
+            "id": "db0aef0e-8690-4daf-b013-48898725762f", 
+            "role": "product", 
+            "source": "_071309", 
+            "target": "_071279", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "a2880825-22d3-47d5-a3be-1eaeed5ce06c", 
+            "role": "reactant", 
+            "source": "_071283", 
+            "target": "_071309", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_6a135f9b-e89e-4df1-8cef-ced80ec837ba", 
+            "role": "modifier", 
+            "source": "_071275", 
+            "target": "_071309", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_591476c7-67a0-4dfc-90d6-68abed82e26d", 
+            "role": "product", 
+            "source": "_071301", 
+            "target": "_071275", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_6a657ae6-45ef-4fdf-b4ac-f2eda2402a90", 
+            "role": "reactant", 
+            "source": "_071283", 
+            "target": "_071301", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "ca61b489-5495-4290-a8c5-44e57b910f8f", 
+            "role": "modifier", 
+            "source": "_071273", 
+            "target": "_071301", 
+            "value": 0.0
+        }, 
+        {
+            "id": "b3f9ccc3-27e6-4a95-aed7-4f6af06d7853", 
+            "role": "product", 
+            "source": "_071305", 
+            "target": "_071277", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_4e8f7380-cf0d-4924-8c68-cf9a88c40db6", 
+            "role": "reactant", 
+            "source": "_071283", 
+            "target": "_071305", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_73f4822c-ab8b-40af-b2b0-dd4c765886b5", 
+            "role": "modifier", 
+            "source": "_071273", 
+            "target": "_071305", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_0dd756f0-d925-4f1d-b480-ebbda0c1566d", 
+            "role": "product", 
+            "source": "_071311", 
+            "target": "_071281", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_2028d19e-dffb-4f16-b6ff-a695131e6856", 
+            "role": "reactant", 
+            "source": "_071279", 
+            "target": "_071311", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "_071270", 
+            "id": "_071277", 
+            "species_name": ""
+        }, 
+        {
+            "compartment": "_071270", 
+            "id": "_566102", 
+            "species_name": ""
+        }, 
+        {
+            "compartment": "_071270", 
+            "id": "_071283", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_071297", 
+            "modifiers": [
+                "_45b59138-d4ec-44a5-83c2-d5e74a327430"
+            ], 
+            "products": [
+                "d22cc8fc-56b9-49d9-953c-615bd6c2cd27"
+            ], 
+            "reactants": [
+                "_9a34788d-b07d-4711-bf2b-84ea1c2d70e1"
+            ], 
+            "reaction_name": "predator growth"
+        }, 
+        {
+            "compartment": "_071270", 
+            "id": "_071273", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_071307", 
+            "modifiers": [], 
+            "products": [
+                "_1a5fcc24-11fc-483e-8473-c9739a5396bf"
+            ], 
+            "reactants": [
+                "a0b952e1-b042-4898-a17d-f3a68fa3c8eb"
+            ], 
+            "reaction_name": "3OC12HSL removal"
+        }, 
+        {
+            "id": "_071303", 
+            "modifiers": [
+                "b1cab0a9-3d3e-4714-b3b7-ae3d3ee0f134"
+            ], 
+            "products": [
+                "_518eb1c3-9d9e-43bc-9803-338afb38f803"
+            ], 
+            "reactants": [
+                "_266c138d-6c67-4960-91ff-181db2a5edfd"
+            ], 
+            "reaction_name": "prey death"
+        }, 
+        {
+            "compartment": "_071270", 
+            "id": "_071281", 
+            "species_name": ""
+        }, 
+        {
+            "compartment": "_071270", 
+            "id": "_071279", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_071299", 
+            "modifiers": [
+                "ac3125e5-c698-49ad-9457-618293e75d84"
+            ], 
+            "products": [
+                "_4d8b5508-70c7-489d-bf3c-f66a044759d0"
+            ], 
+            "reactants": [
+                "deac2e27-d099-4e65-80d1-ce6c42e0f4a8"
+            ], 
+            "reaction_name": "predator death"
+        }, 
+        {
+            "compartment": "_071270", 
+            "id": "_071275", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_071309", 
+            "modifiers": [
+                "_6a135f9b-e89e-4df1-8cef-ced80ec837ba"
+            ], 
+            "products": [
+                "db0aef0e-8690-4daf-b013-48898725762f"
+            ], 
+            "reactants": [
+                "a2880825-22d3-47d5-a3be-1eaeed5ce06c"
+            ], 
+            "reaction_name": "3OC6HSL synthesis"
+        }, 
+        {
+            "id": "_071301", 
+            "modifiers": [
+                "ca61b489-5495-4290-a8c5-44e57b910f8f"
+            ], 
+            "products": [
+                "_591476c7-67a0-4dfc-90d6-68abed82e26d"
+            ], 
+            "reactants": [
+                "_6a657ae6-45ef-4fdf-b4ac-f2eda2402a90"
+            ], 
+            "reaction_name": "prey growth"
+        }, 
+        {
+            "id": "_071305", 
+            "modifiers": [
+                "_73f4822c-ab8b-40af-b2b0-dd4c765886b5"
+            ], 
+            "products": [
+                "b3f9ccc3-27e6-4a95-aed7-4f6af06d7853"
+            ], 
+            "reactants": [
+                "_4e8f7380-cf0d-4924-8c68-cf9a88c40db6"
+            ], 
+            "reaction_name": "3OC12HSL synthesis"
+        }, 
+        {
+            "id": "_071311", 
+            "modifiers": [], 
+            "products": [
+                "_0dd756f0-d925-4f1d-b480-ebbda0c1566d"
+            ], 
+            "reactants": [
+                "_2028d19e-dffb-4f16-b6ff-a695131e6856"
+            ], 
+            "reaction_name": "3OC6HSL removal"
+        }
+    ]
+}

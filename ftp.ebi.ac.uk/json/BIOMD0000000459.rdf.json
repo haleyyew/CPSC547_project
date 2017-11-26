@@ -1,1 +1,168 @@
-{"nodes": [{"reaction_name": "v1", "reactants": ["_631230"], "modifiers": [], "products": ["_631243"], "id": "v1_meta"}, {"reaction_name": "v2", "reactants": ["_631269"], "modifiers": [], "products": ["_631282"], "id": "v2_meta"}, {"compartment": "compartment_meta", "species_name": "IPTG", "id": "IPTG_meta"}, {"compartment": "compartment_meta", "species_name": "sigb", "id": "sigb_meta"}, {"compartment": "compartment_meta", "species_name": "x", "id": "x_meta"}, {"reaction_name": "v3", "reactants": ["_631321"], "modifiers": [], "products": ["_631334"], "id": "v3_meta"}, {"compartment": "compartment_meta", "species_name": "lacz", "id": "lacz_meta"}], "links": [{"source": "v1_meta", "role": "product", "id": "_631243", "value": "1.0", "target": "sigb_meta"}, {"source": "IPTG_meta", "role": "reactant", "id": "_631230", "value": "1.0", "target": "v1_meta"}, {"source": "v2_meta", "role": "product", "id": "_631282", "value": "1.0", "target": "lacz_meta"}, {"source": "sigb_meta", "role": "reactant", "id": "_631269", "value": "1.0", "target": "v2_meta"}, {"source": "v3_meta", "role": "product", "id": "_631334", "value": "1.0", "target": "x_meta"}, {"source": "sigb_meta", "role": "reactant", "id": "_631321", "value": "1.0", "target": "v3_meta"}]}
+{
+    "links": [
+        {
+            "id": "_631243", 
+            "role": "product", 
+            "source": "v1_meta", 
+            "target": "sigb_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_631230", 
+            "role": "reactant", 
+            "source": "IPTG_meta", 
+            "target": "v1_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "aae446d7_59c8_42fc_8a76_4724a2bce1ba", 
+            "role": "modifier", 
+            "source": "sigb_meta", 
+            "target": "v1_meta", 
+            "value": 0.0
+        }, 
+        {
+            "id": "e73f5694_b51d_445c_ab57_39e9596785c2", 
+            "role": "modifier", 
+            "source": "IPTG_meta", 
+            "target": "v1_meta", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_631282", 
+            "role": "product", 
+            "source": "v2_meta", 
+            "target": "lacz_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_631269", 
+            "role": "reactant", 
+            "source": "sigb_meta", 
+            "target": "v2_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_631295", 
+            "role": "modifier", 
+            "source": "x_meta", 
+            "target": "v2_meta", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_3c0c1e37_7c47_4436_a2c6_3e45dedf16aa", 
+            "role": "modifier", 
+            "source": "lacz_meta", 
+            "target": "v2_meta", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_9803118b_138a_409d_b8be_ed70b236cd51", 
+            "role": "modifier", 
+            "source": "x_meta", 
+            "target": "v2_meta", 
+            "value": 0.0
+        }, 
+        {
+            "id": "cf2cc6a3_b0cd_47c8_90c8_4a9f00a1764c", 
+            "role": "modifier", 
+            "source": "sigb_meta", 
+            "target": "v2_meta", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_631334", 
+            "role": "product", 
+            "source": "v3_meta", 
+            "target": "x_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_631321", 
+            "role": "reactant", 
+            "source": "sigb_meta", 
+            "target": "v3_meta", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "b337f7e4_1cca_42c8_996f_f517842108e1", 
+            "role": "modifier", 
+            "source": "sigb_meta", 
+            "target": "v3_meta", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_30895277_5776_4a6f_a18e_399acf160dd8", 
+            "role": "modifier", 
+            "source": "x_meta", 
+            "target": "v3_meta", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "v1_meta", 
+            "modifiers": [
+                "aae446d7_59c8_42fc_8a76_4724a2bce1ba", 
+                "e73f5694_b51d_445c_ab57_39e9596785c2"
+            ], 
+            "products": [
+                "_631243"
+            ], 
+            "reactants": [
+                "_631230"
+            ], 
+            "reaction_name": "v1"
+        }, 
+        {
+            "id": "v2_meta", 
+            "modifiers": [
+                "_631295", 
+                "_3c0c1e37_7c47_4436_a2c6_3e45dedf16aa", 
+                "_9803118b_138a_409d_b8be_ed70b236cd51", 
+                "cf2cc6a3_b0cd_47c8_90c8_4a9f00a1764c"
+            ], 
+            "products": [
+                "_631282"
+            ], 
+            "reactants": [
+                "_631269"
+            ], 
+            "reaction_name": "v2"
+        }, 
+        {
+            "compartment": "compartment_meta", 
+            "id": "IPTG_meta", 
+            "species_name": "IPTG"
+        }, 
+        {
+            "compartment": "compartment_meta", 
+            "id": "sigb_meta", 
+            "species_name": "sigb"
+        }, 
+        {
+            "compartment": "compartment_meta", 
+            "id": "x_meta", 
+            "species_name": "x"
+        }, 
+        {
+            "id": "v3_meta", 
+            "modifiers": [
+                "b337f7e4_1cca_42c8_996f_f517842108e1", 
+                "_30895277_5776_4a6f_a18e_399acf160dd8"
+            ], 
+            "products": [
+                "_631334"
+            ], 
+            "reactants": [
+                "_631321"
+            ], 
+            "reaction_name": "v3"
+        }, 
+        {
+            "compartment": "compartment_meta", 
+            "id": "lacz_meta", 
+            "species_name": "lacz"
+        }
+    ]
+}

@@ -1,1 +1,168 @@
-{"nodes": [{"compartment": "metaid_0000035", "species_name": "cdk2", "id": "metaid_0000041"}, {"reaction_name": "cdk2 mediated cyclinB synthesis", "reactants": [], "modifiers": [], "products": ["_312734"], "id": "metaid_0000047"}, {"reaction_name": "cyclinE synthesis", "reactants": [], "modifiers": [], "products": ["_312830"], "id": "metaid_0000054"}, {"compartment": "metaid_0000035", "species_name": "Ubiquitin ligase 2", "id": "metaid_0000042"}, {"compartment": "metaid_0000035", "species_name": "cyclinB", "id": "metaid_0000037"}, {"reaction_name": "cyclinE degradation", "reactants": ["_312902"], "modifiers": [], "products": [], "id": "metaid_0000056"}, {"compartment": "metaid_0000035", "species_name": "cdk1", "id": "metaid_0000038"}, {"reaction_name": "Ubiquitin ligase mediated cyclinE degradation", "reactants": ["_312866"], "modifiers": [], "products": [], "id": "metaid_0000055"}, {"reaction_name": "Ubiquitin ligase mediated cyclinB degradation", "reactants": ["_312770"], "modifiers": [], "products": [], "id": "metaid_0000048"}, {"reaction_name": "cyclinB degradation", "reactants": ["_312806"], "modifiers": [], "products": [], "id": "metaid_0000049"}, {"compartment": "metaid_0000035", "species_name": "ubiquitin ligase", "id": "metaid_0000039"}, {"compartment": "metaid_0000035", "species_name": "cyclinE", "id": "metaid_0000040"}], "links": [{"source": "metaid_0000047", "role": "product", "id": "_312734", "value": "1.0", "target": "metaid_0000037"}, {"source": "metaid_0000054", "role": "product", "id": "_312830", "value": "1.0", "target": "metaid_0000040"}, {"source": "metaid_0000040", "role": "reactant", "id": "_312902", "value": "1.0", "target": "metaid_0000056"}, {"source": "metaid_0000040", "role": "reactant", "id": "_312866", "value": "1.0", "target": "metaid_0000055"}, {"source": "metaid_0000037", "role": "reactant", "id": "_312770", "value": "1.0", "target": "metaid_0000048"}, {"source": "metaid_0000037", "role": "reactant", "id": "_312806", "value": "1.0", "target": "metaid_0000049"}]}
+{
+    "links": [
+        {
+            "id": "_312734", 
+            "role": "product", 
+            "source": "metaid_0000047", 
+            "target": "metaid_0000037", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_312746", 
+            "role": "modifier", 
+            "source": "metaid_0000041", 
+            "target": "metaid_0000047", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_312830", 
+            "role": "product", 
+            "source": "metaid_0000054", 
+            "target": "metaid_0000040", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_312842", 
+            "role": "modifier", 
+            "source": "metaid_0000038", 
+            "target": "metaid_0000054", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_312902", 
+            "role": "reactant", 
+            "source": "metaid_0000040", 
+            "target": "metaid_0000056", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_312866", 
+            "role": "reactant", 
+            "source": "metaid_0000040", 
+            "target": "metaid_0000055", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_312878", 
+            "role": "modifier", 
+            "source": "metaid_0000042", 
+            "target": "metaid_0000055", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_312770", 
+            "role": "reactant", 
+            "source": "metaid_0000037", 
+            "target": "metaid_0000048", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_312782", 
+            "role": "modifier", 
+            "source": "metaid_0000039", 
+            "target": "metaid_0000048", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_312806", 
+            "role": "reactant", 
+            "source": "metaid_0000037", 
+            "target": "metaid_0000049", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "metaid_0000035", 
+            "id": "metaid_0000041", 
+            "species_name": "cdk2"
+        }, 
+        {
+            "id": "metaid_0000047", 
+            "modifiers": [
+                "_312746"
+            ], 
+            "products": [
+                "_312734"
+            ], 
+            "reactants": [], 
+            "reaction_name": "cdk2 mediated cyclinB synthesis"
+        }, 
+        {
+            "id": "metaid_0000054", 
+            "modifiers": [
+                "_312842"
+            ], 
+            "products": [
+                "_312830"
+            ], 
+            "reactants": [], 
+            "reaction_name": "cyclinE synthesis"
+        }, 
+        {
+            "compartment": "metaid_0000035", 
+            "id": "metaid_0000042", 
+            "species_name": "Ubiquitin ligase 2"
+        }, 
+        {
+            "compartment": "metaid_0000035", 
+            "id": "metaid_0000037", 
+            "species_name": "cyclinB"
+        }, 
+        {
+            "id": "metaid_0000056", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_312902"
+            ], 
+            "reaction_name": "cyclinE degradation"
+        }, 
+        {
+            "compartment": "metaid_0000035", 
+            "id": "metaid_0000038", 
+            "species_name": "cdk1"
+        }, 
+        {
+            "id": "metaid_0000055", 
+            "modifiers": [
+                "_312878"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_312866"
+            ], 
+            "reaction_name": "Ubiquitin ligase mediated cyclinE degradation"
+        }, 
+        {
+            "id": "metaid_0000048", 
+            "modifiers": [
+                "_312782"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_312770"
+            ], 
+            "reaction_name": "Ubiquitin ligase mediated cyclinB degradation"
+        }, 
+        {
+            "id": "metaid_0000049", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_312806"
+            ], 
+            "reaction_name": "cyclinB degradation"
+        }, 
+        {
+            "compartment": "metaid_0000035", 
+            "id": "metaid_0000039", 
+            "species_name": "ubiquitin ligase"
+        }, 
+        {
+            "compartment": "metaid_0000035", 
+            "id": "metaid_0000040", 
+            "species_name": "cyclinE"
+        }
+    ]
+}

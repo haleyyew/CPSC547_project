@@ -1,1 +1,138 @@
-{"nodes": [{"reaction_name": "", "reactants": ["_334116"], "modifiers": [], "products": ["_334141", "_334128"], "id": "metaid_0000025"}, {"compartment": "metaid_0000014", "species_name": "Cdc20:C-Mad2", "id": "metaid_0000019"}, {"compartment": "metaid_0000014", "species_name": "Mad1:C-Mad2", "id": "metaid_0000015"}, {"compartment": "metaid_0000014", "species_name": "O-Mad2", "id": "metaid_0000016"}, {"reaction_name": "", "reactants": ["_334006", "_334018"], "modifiers": [], "products": ["_334030"], "id": "metaid_0000023"}, {"compartment": "metaid_0000014", "species_name": "Mad1:C-Mad2:O-Mad2*", "id": "metaid_0000017"}, {"reaction_name": "", "reactants": ["_334067", "_334055"], "modifiers": [], "products": ["_334092", "_334080"], "id": "metaid_0000024"}, {"compartment": "metaid_0000014", "species_name": "Cdc20", "id": "metaid_0000018"}], "links": [{"source": "metaid_0000025", "role": "product", "id": "_334141", "value": "1.0", "target": "metaid_0000016"}, {"source": "metaid_0000025", "role": "product", "id": "_334128", "value": "1.0", "target": "metaid_0000018"}, {"source": "metaid_0000019", "role": "reactant", "id": "_334116", "value": "1.0", "target": "metaid_0000025"}, {"source": "metaid_0000023", "role": "product", "id": "_334030", "value": "1.0", "target": "metaid_0000017"}, {"source": "metaid_0000015", "role": "reactant", "id": "_334006", "value": "1.0", "target": "metaid_0000023"}, {"source": "metaid_0000016", "role": "reactant", "id": "_334018", "value": "1.0", "target": "metaid_0000023"}, {"source": "metaid_0000024", "role": "product", "id": "_334092", "value": "1.0", "target": "metaid_0000019"}, {"source": "metaid_0000024", "role": "product", "id": "_334080", "value": "1.0", "target": "metaid_0000015"}, {"source": "metaid_0000018", "role": "reactant", "id": "_334067", "value": "1.0", "target": "metaid_0000024"}, {"source": "metaid_0000017", "role": "reactant", "id": "_334055", "value": "1.0", "target": "metaid_0000024"}]}
+{
+    "links": [
+        {
+            "id": "_334141", 
+            "role": "product", 
+            "source": "metaid_0000025", 
+            "target": "metaid_0000016", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_334128", 
+            "role": "product", 
+            "source": "metaid_0000025", 
+            "target": "metaid_0000018", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_334116", 
+            "role": "reactant", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000025", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_334030", 
+            "role": "product", 
+            "source": "metaid_0000023", 
+            "target": "metaid_0000017", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_334006", 
+            "role": "reactant", 
+            "source": "metaid_0000015", 
+            "target": "metaid_0000023", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_334018", 
+            "role": "reactant", 
+            "source": "metaid_0000016", 
+            "target": "metaid_0000023", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_334092", 
+            "role": "product", 
+            "source": "metaid_0000024", 
+            "target": "metaid_0000019", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_334080", 
+            "role": "product", 
+            "source": "metaid_0000024", 
+            "target": "metaid_0000015", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_334067", 
+            "role": "reactant", 
+            "source": "metaid_0000018", 
+            "target": "metaid_0000024", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_334055", 
+            "role": "reactant", 
+            "source": "metaid_0000017", 
+            "target": "metaid_0000024", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000025", 
+            "modifiers": [], 
+            "products": [
+                "_334141", 
+                "_334128"
+            ], 
+            "reactants": [
+                "_334116"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "metaid_0000014", 
+            "id": "metaid_0000019", 
+            "species_name": "Cdc20:C-Mad2"
+        }, 
+        {
+            "compartment": "metaid_0000014", 
+            "id": "metaid_0000015", 
+            "species_name": "Mad1:C-Mad2"
+        }, 
+        {
+            "compartment": "metaid_0000014", 
+            "id": "metaid_0000016", 
+            "species_name": "O-Mad2"
+        }, 
+        {
+            "id": "metaid_0000023", 
+            "modifiers": [], 
+            "products": [
+                "_334030"
+            ], 
+            "reactants": [
+                "_334006", 
+                "_334018"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "metaid_0000014", 
+            "id": "metaid_0000017", 
+            "species_name": "Mad1:C-Mad2:O-Mad2*"
+        }, 
+        {
+            "id": "metaid_0000024", 
+            "modifiers": [], 
+            "products": [
+                "_334092", 
+                "_334080"
+            ], 
+            "reactants": [
+                "_334067", 
+                "_334055"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "metaid_0000014", 
+            "id": "metaid_0000018", 
+            "species_name": "Cdc20"
+        }
+    ]
+}

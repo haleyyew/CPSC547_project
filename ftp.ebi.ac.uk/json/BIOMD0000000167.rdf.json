@@ -1,1 +1,252 @@
-{"nodes": [{"reaction_name": "stat_import", "reactants": ["_109598"], "modifiers": [], "products": ["_109610"], "id": "metaid_0000033"}, {"reaction_name": "statDephosphorylation", "reactants": ["_109257"], "modifiers": [], "products": ["_109269"], "id": "metaid_0000028"}, {"compartment": "metaid_0000016", "species_name": "statKinase_sol", "id": "metaid_0000020"}, {"compartment": "metaid_0000015", "species_name": "Pstat_nuc", "id": "metaid_0000024"}, {"compartment": "metaid_0000016", "species_name": "species_test", "id": "metaid_0000034"}, {"reaction_name": "stat_export", "reactants": ["_109538"], "modifiers": [], "products": ["_109550"], "id": "metaid_0000032"}, {"reaction_name": "statPhosphorylation", "reactants": ["_109331"], "modifiers": [], "products": ["_109356", "_109344"], "id": "metaid_0000029"}, {"compartment": "metaid_0000016", "species_name": "PstatDimer_sol", "id": "metaid_0000021"}, {"compartment": "metaid_0000015", "species_name": "statPhosphatase_nuc", "id": "metaid_0000025"}, {"reaction_name": "PstatDimer_ import", "reactants": ["_109477"], "modifiers": [], "products": ["_109489"], "id": "metaid_0000031"}, {"compartment": "metaid_0000016", "species_name": "Pstat_sol", "id": "metaid_0000019"}, {"compartment": "metaid_0000015", "species_name": "PstatDimer_nuc", "id": "metaid_0000022"}, {"reaction_name": "PstatDimerisationNuc", "reactants": ["_109416"], "modifiers": [], "products": ["_109428"], "id": "metaid_0000030"}, {"reaction_name": "PstatDimerisation", "reactants": ["_109194"], "modifiers": [], "products": ["_109208"], "id": "metaid_0000027"}, {"compartment": "metaid_0000015", "species_name": "stat_nuc", "id": "metaid_0000023"}, {"compartment": "metaid_0000016", "species_name": "stat_sol", "id": "metaid_0000018"}], "links": [{"source": "metaid_0000033", "role": "product", "id": "_109610", "value": "1.0", "target": "metaid_0000023"}, {"source": "metaid_0000018", "role": "reactant", "id": "_109598", "value": "1.0", "target": "metaid_0000033"}, {"source": "metaid_0000028", "role": "product", "id": "_109269", "value": "1.0", "target": "metaid_0000023"}, {"source": "metaid_0000024", "role": "reactant", "id": "_109257", "value": "1.0", "target": "metaid_0000028"}, {"source": "metaid_0000032", "role": "product", "id": "_109550", "value": "1.0", "target": "metaid_0000023"}, {"source": "metaid_0000018", "role": "reactant", "id": "_109538", "value": "1.0", "target": "metaid_0000032"}, {"source": "metaid_0000029", "role": "product", "id": "_109356", "value": "1.0", "target": "metaid_0000034"}, {"source": "metaid_0000029", "role": "product", "id": "_109344", "value": "1.0", "target": "metaid_0000019"}, {"source": "metaid_0000018", "role": "reactant", "id": "_109331", "value": "1.0", "target": "metaid_0000029"}, {"source": "metaid_0000031", "role": "product", "id": "_109489", "value": "1.0", "target": "metaid_0000022"}, {"source": "metaid_0000021", "role": "reactant", "id": "_109477", "value": "1.0", "target": "metaid_0000031"}, {"source": "metaid_0000030", "role": "product", "id": "_109428", "value": "1.0", "target": "metaid_0000022"}, {"source": "metaid_0000024", "role": "reactant", "id": "_109416", "value": "2.0", "target": "metaid_0000030"}, {"source": "metaid_0000027", "role": "product", "id": "_109208", "value": "1.0", "target": "metaid_0000021"}, {"source": "metaid_0000019", "role": "reactant", "id": "_109194", "value": "2.0", "target": "metaid_0000027"}]}
+{
+    "links": [
+        {
+            "id": "_109610", 
+            "role": "product", 
+            "source": "metaid_0000033", 
+            "target": "metaid_0000023", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109598", 
+            "role": "reactant", 
+            "source": "metaid_0000018", 
+            "target": "metaid_0000033", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109269", 
+            "role": "product", 
+            "source": "metaid_0000028", 
+            "target": "metaid_0000023", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109257", 
+            "role": "reactant", 
+            "source": "metaid_0000024", 
+            "target": "metaid_0000028", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109282", 
+            "role": "modifier", 
+            "source": "metaid_0000025", 
+            "target": "metaid_0000028", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_109550", 
+            "role": "product", 
+            "source": "metaid_0000032", 
+            "target": "metaid_0000023", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109538", 
+            "role": "reactant", 
+            "source": "metaid_0000018", 
+            "target": "metaid_0000032", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109356", 
+            "role": "product", 
+            "source": "metaid_0000029", 
+            "target": "metaid_0000034", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109344", 
+            "role": "product", 
+            "source": "metaid_0000029", 
+            "target": "metaid_0000019", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109331", 
+            "role": "reactant", 
+            "source": "metaid_0000018", 
+            "target": "metaid_0000029", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109368", 
+            "role": "modifier", 
+            "source": "metaid_0000020", 
+            "target": "metaid_0000029", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_109489", 
+            "role": "product", 
+            "source": "metaid_0000031", 
+            "target": "metaid_0000022", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109477", 
+            "role": "reactant", 
+            "source": "metaid_0000021", 
+            "target": "metaid_0000031", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109428", 
+            "role": "product", 
+            "source": "metaid_0000030", 
+            "target": "metaid_0000022", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109416", 
+            "role": "reactant", 
+            "source": "metaid_0000024", 
+            "target": "metaid_0000030", 
+            "value": "2.0"
+        }, 
+        {
+            "id": "_109208", 
+            "role": "product", 
+            "source": "metaid_0000027", 
+            "target": "metaid_0000021", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109194", 
+            "role": "reactant", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000027", 
+            "value": "2.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000033", 
+            "modifiers": [], 
+            "products": [
+                "_109610"
+            ], 
+            "reactants": [
+                "_109598"
+            ], 
+            "reaction_name": "stat_import"
+        }, 
+        {
+            "id": "metaid_0000028", 
+            "modifiers": [
+                "_109282"
+            ], 
+            "products": [
+                "_109269"
+            ], 
+            "reactants": [
+                "_109257"
+            ], 
+            "reaction_name": "statDephosphorylation"
+        }, 
+        {
+            "compartment": "metaid_0000016", 
+            "id": "metaid_0000020", 
+            "species_name": "statKinase_sol"
+        }, 
+        {
+            "compartment": "metaid_0000015", 
+            "id": "metaid_0000024", 
+            "species_name": "Pstat_nuc"
+        }, 
+        {
+            "compartment": "metaid_0000016", 
+            "id": "metaid_0000034", 
+            "species_name": "species_test"
+        }, 
+        {
+            "id": "metaid_0000032", 
+            "modifiers": [], 
+            "products": [
+                "_109550"
+            ], 
+            "reactants": [
+                "_109538"
+            ], 
+            "reaction_name": "stat_export"
+        }, 
+        {
+            "id": "metaid_0000029", 
+            "modifiers": [
+                "_109368"
+            ], 
+            "products": [
+                "_109356", 
+                "_109344"
+            ], 
+            "reactants": [
+                "_109331"
+            ], 
+            "reaction_name": "statPhosphorylation"
+        }, 
+        {
+            "compartment": "metaid_0000016", 
+            "id": "metaid_0000021", 
+            "species_name": "PstatDimer_sol"
+        }, 
+        {
+            "compartment": "metaid_0000015", 
+            "id": "metaid_0000025", 
+            "species_name": "statPhosphatase_nuc"
+        }, 
+        {
+            "id": "metaid_0000031", 
+            "modifiers": [], 
+            "products": [
+                "_109489"
+            ], 
+            "reactants": [
+                "_109477"
+            ], 
+            "reaction_name": "PstatDimer_ import"
+        }, 
+        {
+            "compartment": "metaid_0000016", 
+            "id": "metaid_0000019", 
+            "species_name": "Pstat_sol"
+        }, 
+        {
+            "compartment": "metaid_0000015", 
+            "id": "metaid_0000022", 
+            "species_name": "PstatDimer_nuc"
+        }, 
+        {
+            "id": "metaid_0000030", 
+            "modifiers": [], 
+            "products": [
+                "_109428"
+            ], 
+            "reactants": [
+                "_109416"
+            ], 
+            "reaction_name": "PstatDimerisationNuc"
+        }, 
+        {
+            "id": "metaid_0000027", 
+            "modifiers": [], 
+            "products": [
+                "_109208"
+            ], 
+            "reactants": [
+                "_109194"
+            ], 
+            "reaction_name": "PstatDimerisation"
+        }, 
+        {
+            "compartment": "metaid_0000015", 
+            "id": "metaid_0000023", 
+            "species_name": "stat_nuc"
+        }, 
+        {
+            "compartment": "metaid_0000016", 
+            "id": "metaid_0000018", 
+            "species_name": "stat_sol"
+        }
+    ]
+}

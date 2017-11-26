@@ -1,1 +1,192 @@
-{"nodes": [{"reaction_name": "Calcium_Influx", "reactants": [], "modifiers": [], "products": ["cf908c55-ad20-4d85-ac46-c8353806ce12"], "id": "metaid_0000020"}, {"compartment": "metaid_0000004", "species_name": "Calcium in store", "id": "metaid_0000006"}, {"reaction_name": "Leakage from cytoplasm", "reactants": ["_677575e4-7830-4750-baea-c8496cdc3b1d"], "modifiers": [], "products": [], "id": "metaid_0000025"}, {"reaction_name": "Calcium Influx by stimulation", "reactants": [], "modifiers": [], "products": ["_6c9dca5e-8b56-4100-964f-fed399bf1a8d"], "id": "metaid_0000021"}, {"compartment": "metaid_0000003", "species_name": "Calcium in cytoplasm", "id": "metaid_0000007"}, {"reaction_name": "Calcium Leakage", "reactants": ["e8660c7b-7b3c-4ce5-b952-07ca0b76ea22"], "modifiers": [], "products": ["fe244b34-571c-4020-89aa-3183faf2230d"], "id": "metaid_0000024"}, {"reaction_name": "TF Synthesis", "reactants": [], "modifiers": [], "products": ["_99a59b4c-5377-4d1f-963c-85aa7590032d"], "id": "metaid_0000017"}, {"reaction_name": "TF degradation", "reactants": ["_9724606e-cb56-42a9-9546-330c763f3837"], "modifiers": [], "products": [], "id": "metaid_0000018"}, {"reaction_name": "Calcium influx to cytoplasm", "reactants": ["e5a00c0f-64e3-4709-afd2-f94f153b3dc0"], "modifiers": [], "products": ["_9bd1977f-ab8e-4d80-9a6d-4f5957e9a8ea"], "id": "metaid_0000023"}, {"reaction_name": "TF_synthesis_basal", "reactants": [], "modifiers": [], "products": ["f3d0091f-9317-4272-beb6-fda46d0dbde0"], "id": "metaid_0000019"}, {"compartment": "metaid_0000003", "species_name": "TF_A", "id": "metaid_0000005"}, {"reaction_name": "Calcium Influx", "reactants": ["d5faacc3-5d62-47be-9302-5b58b239bec6"], "modifiers": [], "products": ["_819aae99-c7b2-4b20-82a8-a3a2d5687283"], "id": "metaid_0000022"}], "links": [{"source": "metaid_0000020", "role": "product", "id": "cf908c55-ad20-4d85-ac46-c8353806ce12", "value": "1.0", "target": "metaid_0000007"}, {"source": "metaid_0000007", "role": "reactant", "id": "_677575e4-7830-4750-baea-c8496cdc3b1d", "value": "1.0", "target": "metaid_0000025"}, {"source": "metaid_0000021", "role": "product", "id": "_6c9dca5e-8b56-4100-964f-fed399bf1a8d", "value": "1.0", "target": "metaid_0000007"}, {"source": "metaid_0000024", "role": "product", "id": "fe244b34-571c-4020-89aa-3183faf2230d", "value": "1.0", "target": "metaid_0000007"}, {"source": "metaid_0000006", "role": "reactant", "id": "e8660c7b-7b3c-4ce5-b952-07ca0b76ea22", "value": "1.0", "target": "metaid_0000024"}, {"source": "metaid_0000017", "role": "product", "id": "_99a59b4c-5377-4d1f-963c-85aa7590032d", "value": "1.0", "target": "metaid_0000005"}, {"source": "metaid_0000005", "role": "reactant", "id": "_9724606e-cb56-42a9-9546-330c763f3837", "value": "1.0", "target": "metaid_0000018"}, {"source": "metaid_0000023", "role": "product", "id": "_9bd1977f-ab8e-4d80-9a6d-4f5957e9a8ea", "value": "1.0", "target": "metaid_0000007"}, {"source": "metaid_0000006", "role": "reactant", "id": "e5a00c0f-64e3-4709-afd2-f94f153b3dc0", "value": "1.0", "target": "metaid_0000023"}, {"source": "metaid_0000019", "role": "product", "id": "f3d0091f-9317-4272-beb6-fda46d0dbde0", "value": "1.0", "target": "metaid_0000005"}, {"source": "metaid_0000022", "role": "product", "id": "_819aae99-c7b2-4b20-82a8-a3a2d5687283", "value": "1.0", "target": "metaid_0000006"}, {"source": "metaid_0000007", "role": "reactant", "id": "d5faacc3-5d62-47be-9302-5b58b239bec6", "value": "1.0", "target": "metaid_0000022"}]}
+{
+    "links": [
+        {
+            "id": "cf908c55-ad20-4d85-ac46-c8353806ce12", 
+            "role": "product", 
+            "source": "metaid_0000020", 
+            "target": "metaid_0000007", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_677575e4-7830-4750-baea-c8496cdc3b1d", 
+            "role": "reactant", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000025", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_6c9dca5e-8b56-4100-964f-fed399bf1a8d", 
+            "role": "product", 
+            "source": "metaid_0000021", 
+            "target": "metaid_0000007", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "fe244b34-571c-4020-89aa-3183faf2230d", 
+            "role": "product", 
+            "source": "metaid_0000024", 
+            "target": "metaid_0000007", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "e8660c7b-7b3c-4ce5-b952-07ca0b76ea22", 
+            "role": "reactant", 
+            "source": "metaid_0000006", 
+            "target": "metaid_0000024", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_99a59b4c-5377-4d1f-963c-85aa7590032d", 
+            "role": "product", 
+            "source": "metaid_0000017", 
+            "target": "metaid_0000005", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_9724606e-cb56-42a9-9546-330c763f3837", 
+            "role": "reactant", 
+            "source": "metaid_0000005", 
+            "target": "metaid_0000018", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_9bd1977f-ab8e-4d80-9a6d-4f5957e9a8ea", 
+            "role": "product", 
+            "source": "metaid_0000023", 
+            "target": "metaid_0000007", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "e5a00c0f-64e3-4709-afd2-f94f153b3dc0", 
+            "role": "reactant", 
+            "source": "metaid_0000006", 
+            "target": "metaid_0000023", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "f3d0091f-9317-4272-beb6-fda46d0dbde0", 
+            "role": "product", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000005", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_819aae99-c7b2-4b20-82a8-a3a2d5687283", 
+            "role": "product", 
+            "source": "metaid_0000022", 
+            "target": "metaid_0000006", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "d5faacc3-5d62-47be-9302-5b58b239bec6", 
+            "role": "reactant", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000022", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000020", 
+            "modifiers": [], 
+            "products": [
+                "cf908c55-ad20-4d85-ac46-c8353806ce12"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Calcium_Influx"
+        }, 
+        {
+            "compartment": "metaid_0000004", 
+            "id": "metaid_0000006", 
+            "species_name": "Calcium in store"
+        }, 
+        {
+            "id": "metaid_0000025", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_677575e4-7830-4750-baea-c8496cdc3b1d"
+            ], 
+            "reaction_name": "Leakage from cytoplasm"
+        }, 
+        {
+            "id": "metaid_0000021", 
+            "modifiers": [], 
+            "products": [
+                "_6c9dca5e-8b56-4100-964f-fed399bf1a8d"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Calcium Influx by stimulation"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000007", 
+            "species_name": "Calcium in cytoplasm"
+        }, 
+        {
+            "id": "metaid_0000024", 
+            "modifiers": [], 
+            "products": [
+                "fe244b34-571c-4020-89aa-3183faf2230d"
+            ], 
+            "reactants": [
+                "e8660c7b-7b3c-4ce5-b952-07ca0b76ea22"
+            ], 
+            "reaction_name": "Calcium Leakage"
+        }, 
+        {
+            "id": "metaid_0000017", 
+            "modifiers": [], 
+            "products": [
+                "_99a59b4c-5377-4d1f-963c-85aa7590032d"
+            ], 
+            "reactants": [], 
+            "reaction_name": "TF Synthesis"
+        }, 
+        {
+            "id": "metaid_0000018", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_9724606e-cb56-42a9-9546-330c763f3837"
+            ], 
+            "reaction_name": "TF degradation"
+        }, 
+        {
+            "id": "metaid_0000023", 
+            "modifiers": [], 
+            "products": [
+                "_9bd1977f-ab8e-4d80-9a6d-4f5957e9a8ea"
+            ], 
+            "reactants": [
+                "e5a00c0f-64e3-4709-afd2-f94f153b3dc0"
+            ], 
+            "reaction_name": "Calcium influx to cytoplasm"
+        }, 
+        {
+            "id": "metaid_0000019", 
+            "modifiers": [], 
+            "products": [
+                "f3d0091f-9317-4272-beb6-fda46d0dbde0"
+            ], 
+            "reactants": [], 
+            "reaction_name": "TF_synthesis_basal"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000005", 
+            "species_name": "TF_A"
+        }, 
+        {
+            "id": "metaid_0000022", 
+            "modifiers": [], 
+            "products": [
+                "_819aae99-c7b2-4b20-82a8-a3a2d5687283"
+            ], 
+            "reactants": [
+                "d5faacc3-5d62-47be-9302-5b58b239bec6"
+            ], 
+            "reaction_name": "Calcium Influx"
+        }
+    ]
+}

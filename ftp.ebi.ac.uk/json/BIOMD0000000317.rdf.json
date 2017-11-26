@@ -1,1 +1,149 @@
-{"nodes": [{"reaction_name": "", "reactants": [], "modifiers": [], "products": ["bb30a015-882f-4be4-8fd8-94868c278b81"], "id": "_513750"}, {"compartment": "meta_cell", "species_name": "", "id": "_513744"}, {"reaction_name": "", "reactants": [], "modifiers": [], "products": ["_5d48d22c-f038-4148-a02c-3238cfaa925b"], "id": "_513748"}, {"reaction_name": "", "reactants": ["dec21401-e137-4bd0-ba9e-8b83ade82811"], "modifiers": [], "products": [], "id": "_513754"}, {"compartment": "meta_cell", "species_name": "", "id": "_513743"}, {"compartment": "meta_cell", "species_name": "", "id": "_513747"}, {"reaction_name": "", "reactants": [], "modifiers": [], "products": ["_6d97a919-91f6-4845-97ef-40e3ee369a8a"], "id": "_513753"}, {"reaction_name": "", "reactants": ["_710947ae-2f73-4275-ac38-dd9cc50eea44"], "modifiers": [], "products": [], "id": "_513752"}, {"reaction_name": "", "reactants": ["bfd7608c-2821-4d03-bd76-1fc216a15609"], "modifiers": [], "products": [], "id": "_513749"}, {"compartment": "meta_cell", "species_name": "", "id": "_513746"}], "links": [{"source": "_513750", "role": "product", "id": "bb30a015-882f-4be4-8fd8-94868c278b81", "value": "1.0", "target": "_513746"}, {"source": "_513748", "role": "product", "id": "_5d48d22c-f038-4148-a02c-3238cfaa925b", "value": "1.0", "target": "_513744"}, {"source": "_513747", "role": "reactant", "id": "dec21401-e137-4bd0-ba9e-8b83ade82811", "value": "1.0", "target": "_513754"}, {"source": "_513753", "role": "product", "id": "_6d97a919-91f6-4845-97ef-40e3ee369a8a", "value": "1.0", "target": "_513747"}, {"source": "_513746", "role": "reactant", "id": "_710947ae-2f73-4275-ac38-dd9cc50eea44", "value": "1.0", "target": "_513752"}, {"source": "_513744", "role": "reactant", "id": "bfd7608c-2821-4d03-bd76-1fc216a15609", "value": "1.0", "target": "_513749"}]}
+{
+    "links": [
+        {
+            "id": "bb30a015-882f-4be4-8fd8-94868c278b81", 
+            "role": "product", 
+            "source": "_513750", 
+            "target": "_513746", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "fa482902-c97d-4fb9-b8c0-764ffcaa9753", 
+            "role": "modifier", 
+            "source": "_513743", 
+            "target": "_513750", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_5d48d22c-f038-4148-a02c-3238cfaa925b", 
+            "role": "product", 
+            "source": "_513748", 
+            "target": "_513744", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "bd699179-b854-42f8-a79e-805834fbe856", 
+            "role": "modifier", 
+            "source": "_513743", 
+            "target": "_513748", 
+            "value": 0.0
+        }, 
+        {
+            "id": "dec21401-e137-4bd0-ba9e-8b83ade82811", 
+            "role": "reactant", 
+            "source": "_513747", 
+            "target": "_513754", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_6d97a919-91f6-4845-97ef-40e3ee369a8a", 
+            "role": "product", 
+            "source": "_513753", 
+            "target": "_513747", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_7c58fbd4-6c34-480d-ae07-b90bb5a82216", 
+            "role": "modifier", 
+            "source": "_513743", 
+            "target": "_513753", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_710947ae-2f73-4275-ac38-dd9cc50eea44", 
+            "role": "reactant", 
+            "source": "_513746", 
+            "target": "_513752", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "bfd7608c-2821-4d03-bd76-1fc216a15609", 
+            "role": "reactant", 
+            "source": "_513744", 
+            "target": "_513749", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "_513750", 
+            "modifiers": [
+                "fa482902-c97d-4fb9-b8c0-764ffcaa9753"
+            ], 
+            "products": [
+                "bb30a015-882f-4be4-8fd8-94868c278b81"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "meta_cell", 
+            "id": "_513744", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_513748", 
+            "modifiers": [
+                "bd699179-b854-42f8-a79e-805834fbe856"
+            ], 
+            "products": [
+                "_5d48d22c-f038-4148-a02c-3238cfaa925b"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "_513754", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "dec21401-e137-4bd0-ba9e-8b83ade82811"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "meta_cell", 
+            "id": "_513743", 
+            "species_name": ""
+        }, 
+        {
+            "compartment": "meta_cell", 
+            "id": "_513747", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_513753", 
+            "modifiers": [
+                "_7c58fbd4-6c34-480d-ae07-b90bb5a82216"
+            ], 
+            "products": [
+                "_6d97a919-91f6-4845-97ef-40e3ee369a8a"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "_513752", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_710947ae-2f73-4275-ac38-dd9cc50eea44"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "_513749", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "bfd7608c-2821-4d03-bd76-1fc216a15609"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "meta_cell", 
+            "id": "_513746", 
+            "species_name": ""
+        }
+    ]
+}

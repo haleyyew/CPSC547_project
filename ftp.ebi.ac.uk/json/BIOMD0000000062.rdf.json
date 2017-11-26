@@ -1,1 +1,132 @@
-{"nodes": [{"compartment": "metaid_0000007", "species_name": "Anthranilate synthase", "id": "metaid_0000008"}, {"reaction_name": "Enzyme dilution due to cell growth", "reactants": ["_457c2881-c3e7-4c3a-8a7c-cdf4b71ff07f"], "modifiers": [], "products": [], "id": "metaid_0000014"}, {"compartment": "metaid_0000007", "species_name": "Total tryptophan", "id": "metaid_0000010"}, {"reaction_name": "Tryptophan dilution due to cell growth", "reactants": ["d33c4ee6-7387-4de6-b239-451c9e68b934"], "modifiers": [], "products": [], "id": "metaid_0000020"}, {"compartment": "metaid_0000007", "species_name": "Synthesized tryptophan", "id": "metaid_0000009"}, {"reaction_name": "Tryptophan consumption for protein synthesis", "reactants": ["_72f2d329-f5f9-4271-b5e3-a2c9b549f3b7"], "modifiers": [], "products": [], "id": "metaid_0000019"}, {"compartment": "metaid_0000007", "species_name": "exog. Trp", "id": "metaid_0000025"}, {"reaction_name": "Tryptophan synthesis", "reactants": [], "modifiers": [], "products": ["d2e301c8-64cb-4aa3-9918-479fb173b423"], "id": "metaid_0000015"}, {"reaction_name": "Anthranilate synthase synthesis", "reactants": [], "modifiers": [], "products": ["_3da8c0c8-a244-4254-85bc-94d079529ae2"], "id": "metaid_0000013"}], "links": [{"source": "metaid_0000008", "role": "reactant", "id": "_457c2881-c3e7-4c3a-8a7c-cdf4b71ff07f", "value": "1.0", "target": "metaid_0000014"}, {"source": "metaid_0000009", "role": "reactant", "id": "d33c4ee6-7387-4de6-b239-451c9e68b934", "value": "1.0", "target": "metaid_0000020"}, {"source": "metaid_0000009", "role": "reactant", "id": "_72f2d329-f5f9-4271-b5e3-a2c9b549f3b7", "value": "1.0", "target": "metaid_0000019"}, {"source": "metaid_0000015", "role": "product", "id": "d2e301c8-64cb-4aa3-9918-479fb173b423", "value": "1.0", "target": "metaid_0000009"}, {"source": "metaid_0000013", "role": "product", "id": "_3da8c0c8-a244-4254-85bc-94d079529ae2", "value": "1.0", "target": "metaid_0000008"}]}
+{
+    "links": [
+        {
+            "id": "_457c2881-c3e7-4c3a-8a7c-cdf4b71ff07f", 
+            "role": "reactant", 
+            "source": "metaid_0000008", 
+            "target": "metaid_0000014", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "d33c4ee6-7387-4de6-b239-451c9e68b934", 
+            "role": "reactant", 
+            "source": "metaid_0000009", 
+            "target": "metaid_0000020", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_72f2d329-f5f9-4271-b5e3-a2c9b549f3b7", 
+            "role": "reactant", 
+            "source": "metaid_0000009", 
+            "target": "metaid_0000019", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "d2e301c8-64cb-4aa3-9918-479fb173b423", 
+            "role": "product", 
+            "source": "metaid_0000015", 
+            "target": "metaid_0000009", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_02300043-03d4-42aa-87e4-695fe075822a", 
+            "role": "modifier", 
+            "source": "metaid_0000010", 
+            "target": "metaid_0000015", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_40ccd4b7-3702-42ec-9c1f-202ee9d4002e", 
+            "role": "modifier", 
+            "source": "metaid_0000008", 
+            "target": "metaid_0000015", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_3da8c0c8-a244-4254-85bc-94d079529ae2", 
+            "role": "product", 
+            "source": "metaid_0000013", 
+            "target": "metaid_0000008", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "ea666073-f1fa-49f3-a047-6a8686bab900", 
+            "role": "modifier", 
+            "source": "metaid_0000010", 
+            "target": "metaid_0000013", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "metaid_0000007", 
+            "id": "metaid_0000008", 
+            "species_name": "Anthranilate synthase"
+        }, 
+        {
+            "id": "metaid_0000014", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_457c2881-c3e7-4c3a-8a7c-cdf4b71ff07f"
+            ], 
+            "reaction_name": "Enzyme dilution due to cell growth"
+        }, 
+        {
+            "compartment": "metaid_0000007", 
+            "id": "metaid_0000010", 
+            "species_name": "Total tryptophan"
+        }, 
+        {
+            "id": "metaid_0000020", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "d33c4ee6-7387-4de6-b239-451c9e68b934"
+            ], 
+            "reaction_name": "Tryptophan dilution due to cell growth"
+        }, 
+        {
+            "compartment": "metaid_0000007", 
+            "id": "metaid_0000009", 
+            "species_name": "Synthesized tryptophan"
+        }, 
+        {
+            "id": "metaid_0000019", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_72f2d329-f5f9-4271-b5e3-a2c9b549f3b7"
+            ], 
+            "reaction_name": "Tryptophan consumption for protein synthesis"
+        }, 
+        {
+            "compartment": "metaid_0000007", 
+            "id": "metaid_0000025", 
+            "species_name": "exog. Trp"
+        }, 
+        {
+            "id": "metaid_0000015", 
+            "modifiers": [
+                "_02300043-03d4-42aa-87e4-695fe075822a", 
+                "_40ccd4b7-3702-42ec-9c1f-202ee9d4002e"
+            ], 
+            "products": [
+                "d2e301c8-64cb-4aa3-9918-479fb173b423"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Tryptophan synthesis"
+        }, 
+        {
+            "id": "metaid_0000013", 
+            "modifiers": [
+                "ea666073-f1fa-49f3-a047-6a8686bab900"
+            ], 
+            "products": [
+                "_3da8c0c8-a244-4254-85bc-94d079529ae2"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Anthranilate synthase synthesis"
+        }
+    ]
+}

@@ -1,1 +1,139 @@
-{"nodes": [{"reaction_name": "ATP driven pumping into cytosol", "reactants": ["d906616e-84f8-4176-9ee1-820a54e2f9a1"], "modifiers": [], "products": ["b1b4e20e-28f0-4d6a-8be7-54b681904657"], "id": "metaid_0000023"}, {"compartment": "metaid_0000016", "species_name": "", "id": "metaid_0000018"}, {"reaction_name": "Ca leak", "reactants": ["a4edd980-5bf9-40b4-b5f8-4ec6b4543f57"], "modifiers": [], "products": ["_6bad1f1b-178e-4ee1-8a39-757452b5b93c"], "id": "metaid_0000024"}, {"reaction_name": "Ca influx", "reactants": [], "modifiers": [], "products": ["e609dea7-c94f-47ed-8dcb-4c481df86646"], "id": "metaid_0000020"}, {"reaction_name": "Ca efflux", "reactants": ["_8fd801b7-4549-46b1-8349-f0caeae55771"], "modifiers": [], "products": [], "id": "metaid_0000025"}, {"compartment": "metaid_0000030", "species_name": "", "id": "metaid_0000019"}, {"reaction_name": "InsP3 dependent Ca influx", "reactants": [], "modifiers": [], "products": ["_72298131-bc67-44ff-99d3-b9b0c5d2b1b3"], "id": "metaid_0000021"}, {"reaction_name": "ATP driven Ca pumping into store", "reactants": ["af3e2e15-2528-4f65-bd8d-8c8c0d38b28c"], "modifiers": [], "products": ["_041b63ed-fd20-49b3-930b-070127be137b"], "id": "metaid_0000022"}], "links": [{"source": "metaid_0000023", "role": "product", "id": "b1b4e20e-28f0-4d6a-8be7-54b681904657", "value": "1.0", "target": "metaid_0000018"}, {"source": "metaid_0000019", "role": "reactant", "id": "d906616e-84f8-4176-9ee1-820a54e2f9a1", "value": "1.0", "target": "metaid_0000023"}, {"source": "metaid_0000024", "role": "product", "id": "_6bad1f1b-178e-4ee1-8a39-757452b5b93c", "value": "1.0", "target": "metaid_0000018"}, {"source": "metaid_0000019", "role": "reactant", "id": "a4edd980-5bf9-40b4-b5f8-4ec6b4543f57", "value": "1.0", "target": "metaid_0000024"}, {"source": "metaid_0000020", "role": "product", "id": "e609dea7-c94f-47ed-8dcb-4c481df86646", "value": "1.0", "target": "metaid_0000018"}, {"source": "metaid_0000018", "role": "reactant", "id": "_8fd801b7-4549-46b1-8349-f0caeae55771", "value": "1.0", "target": "metaid_0000025"}, {"source": "metaid_0000021", "role": "product", "id": "_72298131-bc67-44ff-99d3-b9b0c5d2b1b3", "value": "1.0", "target": "metaid_0000018"}, {"source": "metaid_0000022", "role": "product", "id": "_041b63ed-fd20-49b3-930b-070127be137b", "value": "1.0", "target": "metaid_0000019"}, {"source": "metaid_0000018", "role": "reactant", "id": "af3e2e15-2528-4f65-bd8d-8c8c0d38b28c", "value": "1.0", "target": "metaid_0000022"}]}
+{
+    "links": [
+        {
+            "id": "b1b4e20e-28f0-4d6a-8be7-54b681904657", 
+            "role": "product", 
+            "source": "metaid_0000023", 
+            "target": "metaid_0000018", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "d906616e-84f8-4176-9ee1-820a54e2f9a1", 
+            "role": "reactant", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000023", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_6bad1f1b-178e-4ee1-8a39-757452b5b93c", 
+            "role": "product", 
+            "source": "metaid_0000024", 
+            "target": "metaid_0000018", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "a4edd980-5bf9-40b4-b5f8-4ec6b4543f57", 
+            "role": "reactant", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000024", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "e609dea7-c94f-47ed-8dcb-4c481df86646", 
+            "role": "product", 
+            "source": "metaid_0000020", 
+            "target": "metaid_0000018", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_8fd801b7-4549-46b1-8349-f0caeae55771", 
+            "role": "reactant", 
+            "source": "metaid_0000018", 
+            "target": "metaid_0000025", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_72298131-bc67-44ff-99d3-b9b0c5d2b1b3", 
+            "role": "product", 
+            "source": "metaid_0000021", 
+            "target": "metaid_0000018", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_041b63ed-fd20-49b3-930b-070127be137b", 
+            "role": "product", 
+            "source": "metaid_0000022", 
+            "target": "metaid_0000019", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "af3e2e15-2528-4f65-bd8d-8c8c0d38b28c", 
+            "role": "reactant", 
+            "source": "metaid_0000018", 
+            "target": "metaid_0000022", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000023", 
+            "modifiers": [], 
+            "products": [
+                "b1b4e20e-28f0-4d6a-8be7-54b681904657"
+            ], 
+            "reactants": [
+                "d906616e-84f8-4176-9ee1-820a54e2f9a1"
+            ], 
+            "reaction_name": "ATP driven pumping into cytosol"
+        }, 
+        {
+            "compartment": "metaid_0000016", 
+            "id": "metaid_0000018", 
+            "species_name": ""
+        }, 
+        {
+            "id": "metaid_0000024", 
+            "modifiers": [], 
+            "products": [
+                "_6bad1f1b-178e-4ee1-8a39-757452b5b93c"
+            ], 
+            "reactants": [
+                "a4edd980-5bf9-40b4-b5f8-4ec6b4543f57"
+            ], 
+            "reaction_name": "Ca leak"
+        }, 
+        {
+            "id": "metaid_0000020", 
+            "modifiers": [], 
+            "products": [
+                "e609dea7-c94f-47ed-8dcb-4c481df86646"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Ca influx"
+        }, 
+        {
+            "id": "metaid_0000025", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_8fd801b7-4549-46b1-8349-f0caeae55771"
+            ], 
+            "reaction_name": "Ca efflux"
+        }, 
+        {
+            "compartment": "metaid_0000030", 
+            "id": "metaid_0000019", 
+            "species_name": ""
+        }, 
+        {
+            "id": "metaid_0000021", 
+            "modifiers": [], 
+            "products": [
+                "_72298131-bc67-44ff-99d3-b9b0c5d2b1b3"
+            ], 
+            "reactants": [], 
+            "reaction_name": "InsP3 dependent Ca influx"
+        }, 
+        {
+            "id": "metaid_0000022", 
+            "modifiers": [], 
+            "products": [
+                "_041b63ed-fd20-49b3-930b-070127be137b"
+            ], 
+            "reactants": [
+                "af3e2e15-2528-4f65-bd8d-8c8c0d38b28c"
+            ], 
+            "reaction_name": "ATP driven Ca pumping into store"
+        }
+    ]
+}

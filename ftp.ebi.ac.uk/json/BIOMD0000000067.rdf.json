@@ -1,1 +1,344 @@
-{"nodes": [{"reaction_name": "Glycolytic flux", "reactants": [], "modifiers": [], "products": ["_811706"], "id": "metaid_0000033"}, {"compartment": "metaid_0000024", "species_name": "protonated acetate", "id": "metaid_0000028"}, {"compartment": "metaid_0000024", "species_name": "acetate export", "id": "metaid_0000032"}, {"compartment": "metaid_0000024", "species_name": "lac repressor", "id": "metaid_0000029"}, {"reaction_name": "Pta degradation", "reactants": ["_812116"], "modifiers": [], "products": [], "id": "metaid_0000045"}, {"reaction_name": "Intercellular transport of Acetate", "reactants": ["_811754"], "modifiers": [], "products": ["_811766"], "id": "metaid_0000035"}, {"reaction_name": "Acs degradation", "reactants": ["_812091"], "modifiers": [], "products": [], "id": "metaid_0000044"}, {"reaction_name": "Flux to TCA cycle", "reactants": ["_811730"], "modifiers": [], "products": [], "id": "metaid_0000034"}, {"reaction_name": "Acetate kinase", "reactants": ["_811839"], "modifiers": [], "products": ["_811851"], "id": "metaid_0000037"}, {"reaction_name": "Phosphate acetyl transferase synthase", "reactants": [], "modifiers": [], "products": ["_812031"], "id": "metaid_0000042"}, {"reaction_name": "Phosphate acetyl transferase flux", "reactants": ["_811790"], "modifiers": [], "products": ["_811802"], "id": "metaid_0000036"}, {"compartment": "metaid_0000024", "species_name": "Acetyl-CoA", "id": "metaid_0000025"}, {"reaction_name": "LacI degradation", "reactants": ["_812067"], "modifiers": [], "products": [], "id": "metaid_0000043"}, {"reaction_name": "Acid-base equilibrium", "reactants": ["_811923"], "modifiers": [], "products": ["_811935"], "id": "metaid_0000039"}, {"reaction_name": "LacI synthesis", "reactants": [], "modifiers": [], "products": ["_811959"], "id": "metaid_0000040"}, {"compartment": "metaid_0000024", "species_name": "Acetyl phosphate", "id": "metaid_0000026"}, {"compartment": "metaid_0000024", "species_name": "Acetyl-CoA synthase", "id": "metaid_0000030"}, {"reaction_name": "Acetyl-CoA synthase flux", "reactants": ["_811875"], "modifiers": [], "products": ["_811887"], "id": "metaid_0000038"}, {"compartment": "metaid_0000024", "species_name": "Acetate", "id": "metaid_0000027"}, {"reaction_name": "Acetyl-CoA synthase synthesis", "reactants": [], "modifiers": [], "products": ["_811995"], "id": "metaid_0000041"}, {"compartment": "metaid_0000024", "species_name": "Phosphate acetyl transferase", "id": "metaid_0000031"}], "links": [{"source": "metaid_0000033", "role": "product", "id": "_811706", "value": "1.0", "target": "metaid_0000025"}, {"source": "metaid_0000031", "role": "reactant", "id": "_812116", "value": "1.0", "target": "metaid_0000045"}, {"source": "metaid_0000035", "role": "product", "id": "_811766", "value": "1.0", "target": "metaid_0000032"}, {"source": "metaid_0000028", "role": "reactant", "id": "_811754", "value": "1.0", "target": "metaid_0000035"}, {"source": "metaid_0000030", "role": "reactant", "id": "_812091", "value": "1.0", "target": "metaid_0000044"}, {"source": "metaid_0000025", "role": "reactant", "id": "_811730", "value": "1.0", "target": "metaid_0000034"}, {"source": "metaid_0000037", "role": "product", "id": "_811851", "value": "1.0", "target": "metaid_0000027"}, {"source": "metaid_0000026", "role": "reactant", "id": "_811839", "value": "1.0", "target": "metaid_0000037"}, {"source": "metaid_0000042", "role": "product", "id": "_812031", "value": "1.0", "target": "metaid_0000031"}, {"source": "metaid_0000036", "role": "product", "id": "_811802", "value": "1.0", "target": "metaid_0000026"}, {"source": "metaid_0000025", "role": "reactant", "id": "_811790", "value": "1.0", "target": "metaid_0000036"}, {"source": "metaid_0000029", "role": "reactant", "id": "_812067", "value": "1.0", "target": "metaid_0000043"}, {"source": "metaid_0000039", "role": "product", "id": "_811935", "value": "1.0", "target": "metaid_0000028"}, {"source": "metaid_0000027", "role": "reactant", "id": "_811923", "value": "1.0", "target": "metaid_0000039"}, {"source": "metaid_0000040", "role": "product", "id": "_811959", "value": "1.0", "target": "metaid_0000029"}, {"source": "metaid_0000038", "role": "product", "id": "_811887", "value": "1.0", "target": "metaid_0000025"}, {"source": "metaid_0000027", "role": "reactant", "id": "_811875", "value": "1.0", "target": "metaid_0000038"}, {"source": "metaid_0000041", "role": "product", "id": "_811995", "value": "1.0", "target": "metaid_0000030"}]}
+{
+    "links": [
+        {
+            "id": "_811706", 
+            "role": "product", 
+            "source": "metaid_0000033", 
+            "target": "metaid_0000025", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_812116", 
+            "role": "reactant", 
+            "source": "metaid_0000031", 
+            "target": "metaid_0000045", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_811766", 
+            "role": "product", 
+            "source": "metaid_0000035", 
+            "target": "metaid_0000032", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_811754", 
+            "role": "reactant", 
+            "source": "metaid_0000028", 
+            "target": "metaid_0000035", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_812091", 
+            "role": "reactant", 
+            "source": "metaid_0000030", 
+            "target": "metaid_0000044", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_811730", 
+            "role": "reactant", 
+            "source": "metaid_0000025", 
+            "target": "metaid_0000034", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_811851", 
+            "role": "product", 
+            "source": "metaid_0000037", 
+            "target": "metaid_0000027", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_811839", 
+            "role": "reactant", 
+            "source": "metaid_0000026", 
+            "target": "metaid_0000037", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_812031", 
+            "role": "product", 
+            "source": "metaid_0000042", 
+            "target": "metaid_0000031", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_812043", 
+            "role": "modifier", 
+            "source": "metaid_0000029", 
+            "target": "metaid_0000042", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_811802", 
+            "role": "product", 
+            "source": "metaid_0000036", 
+            "target": "metaid_0000026", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_811790", 
+            "role": "reactant", 
+            "source": "metaid_0000025", 
+            "target": "metaid_0000036", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_811814", 
+            "role": "modifier", 
+            "source": "metaid_0000031", 
+            "target": "metaid_0000036", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_812067", 
+            "role": "reactant", 
+            "source": "metaid_0000029", 
+            "target": "metaid_0000043", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_811935", 
+            "role": "product", 
+            "source": "metaid_0000039", 
+            "target": "metaid_0000028", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_811923", 
+            "role": "reactant", 
+            "source": "metaid_0000027", 
+            "target": "metaid_0000039", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_811959", 
+            "role": "product", 
+            "source": "metaid_0000040", 
+            "target": "metaid_0000029", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_811971", 
+            "role": "modifier", 
+            "source": "metaid_0000026", 
+            "target": "metaid_0000040", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_811887", 
+            "role": "product", 
+            "source": "metaid_0000038", 
+            "target": "metaid_0000025", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_811875", 
+            "role": "reactant", 
+            "source": "metaid_0000027", 
+            "target": "metaid_0000038", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_811899", 
+            "role": "modifier", 
+            "source": "metaid_0000030", 
+            "target": "metaid_0000038", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_811995", 
+            "role": "product", 
+            "source": "metaid_0000041", 
+            "target": "metaid_0000030", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_812007", 
+            "role": "modifier", 
+            "source": "metaid_0000026", 
+            "target": "metaid_0000041", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000033", 
+            "modifiers": [], 
+            "products": [
+                "_811706"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Glycolytic flux"
+        }, 
+        {
+            "compartment": "metaid_0000024", 
+            "id": "metaid_0000028", 
+            "species_name": "protonated acetate"
+        }, 
+        {
+            "compartment": "metaid_0000024", 
+            "id": "metaid_0000032", 
+            "species_name": "acetate export"
+        }, 
+        {
+            "compartment": "metaid_0000024", 
+            "id": "metaid_0000029", 
+            "species_name": "lac repressor"
+        }, 
+        {
+            "id": "metaid_0000045", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_812116"
+            ], 
+            "reaction_name": "Pta degradation"
+        }, 
+        {
+            "id": "metaid_0000035", 
+            "modifiers": [], 
+            "products": [
+                "_811766"
+            ], 
+            "reactants": [
+                "_811754"
+            ], 
+            "reaction_name": "Intercellular transport of Acetate"
+        }, 
+        {
+            "id": "metaid_0000044", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_812091"
+            ], 
+            "reaction_name": "Acs degradation"
+        }, 
+        {
+            "id": "metaid_0000034", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_811730"
+            ], 
+            "reaction_name": "Flux to TCA cycle"
+        }, 
+        {
+            "id": "metaid_0000037", 
+            "modifiers": [], 
+            "products": [
+                "_811851"
+            ], 
+            "reactants": [
+                "_811839"
+            ], 
+            "reaction_name": "Acetate kinase"
+        }, 
+        {
+            "id": "metaid_0000042", 
+            "modifiers": [
+                "_812043"
+            ], 
+            "products": [
+                "_812031"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Phosphate acetyl transferase synthase"
+        }, 
+        {
+            "id": "metaid_0000036", 
+            "modifiers": [
+                "_811814"
+            ], 
+            "products": [
+                "_811802"
+            ], 
+            "reactants": [
+                "_811790"
+            ], 
+            "reaction_name": "Phosphate acetyl transferase flux"
+        }, 
+        {
+            "compartment": "metaid_0000024", 
+            "id": "metaid_0000025", 
+            "species_name": "Acetyl-CoA"
+        }, 
+        {
+            "id": "metaid_0000043", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_812067"
+            ], 
+            "reaction_name": "LacI degradation"
+        }, 
+        {
+            "id": "metaid_0000039", 
+            "modifiers": [], 
+            "products": [
+                "_811935"
+            ], 
+            "reactants": [
+                "_811923"
+            ], 
+            "reaction_name": "Acid-base equilibrium"
+        }, 
+        {
+            "id": "metaid_0000040", 
+            "modifiers": [
+                "_811971"
+            ], 
+            "products": [
+                "_811959"
+            ], 
+            "reactants": [], 
+            "reaction_name": "LacI synthesis"
+        }, 
+        {
+            "compartment": "metaid_0000024", 
+            "id": "metaid_0000026", 
+            "species_name": "Acetyl phosphate"
+        }, 
+        {
+            "compartment": "metaid_0000024", 
+            "id": "metaid_0000030", 
+            "species_name": "Acetyl-CoA synthase"
+        }, 
+        {
+            "id": "metaid_0000038", 
+            "modifiers": [
+                "_811899"
+            ], 
+            "products": [
+                "_811887"
+            ], 
+            "reactants": [
+                "_811875"
+            ], 
+            "reaction_name": "Acetyl-CoA synthase flux"
+        }, 
+        {
+            "compartment": "metaid_0000024", 
+            "id": "metaid_0000027", 
+            "species_name": "Acetate"
+        }, 
+        {
+            "id": "metaid_0000041", 
+            "modifiers": [
+                "_812007"
+            ], 
+            "products": [
+                "_811995"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Acetyl-CoA synthase synthesis"
+        }, 
+        {
+            "compartment": "metaid_0000024", 
+            "id": "metaid_0000031", 
+            "species_name": "Phosphate acetyl transferase"
+        }
+    ]
+}

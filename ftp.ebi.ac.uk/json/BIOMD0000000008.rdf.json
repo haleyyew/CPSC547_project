@@ -1,1 +1,300 @@
-{"nodes": [{"reaction_name": "degradation of cyclin inhibitor", "reactants": ["_655742"], "modifiers": [], "products": [], "id": "_203047"}, {"reaction_name": "cdc2 kinase triggered degration of cyclin", "reactants": ["_655393"], "modifiers": [], "products": [], "id": "_203006"}, {"compartment": "_202836", "species_name": "protease", "id": "_202906"}, {"reaction_name": "creation of cyclin inhibitor", "reactants": [], "modifiers": [], "products": ["_655718"], "id": "_203027"}, {"compartment": "_202836", "species_name": "cyclin", "id": "_202866"}, {"reaction_name": "deactivation of cdc2 kinase", "reactants": ["_655477"], "modifiers": [], "products": [], "id": "_203187"}, {"reaction_name": "degradation of inhibited cyclin", "reactants": ["_655682"], "modifiers": [], "products": ["_655694"], "id": "_203107"}, {"reaction_name": "reaction9", "reactants": ["_655598"], "modifiers": [], "products": ["_655622", "_655610"], "id": "_203087"}, {"reaction_name": "activation of cyclin protease", "reactants": [], "modifiers": [], "products": ["_655501"], "id": "_203167"}, {"reaction_name": "activation of cdc2 kinase", "reactants": [], "modifiers": [], "products": ["_655453"], "id": "_203147"}, {"reaction_name": "creation of cyclin", "reactants": [], "modifiers": [], "products": ["_655368"], "id": "_202966"}, {"compartment": "_202836", "species_name": "cyclin inhibitor", "id": "_202926"}, {"compartment": "_202836", "species_name": "cdc2k", "id": "_202886"}, {"reaction_name": "desinhibition of cyclin", "reactants": ["_655646"], "modifiers": [], "products": ["_655658"], "id": "_203126"}, {"reaction_name": "deactivation of cyclin protease", "reactants": ["_655525"], "modifiers": [], "products": [], "id": "_203207"}, {"compartment": "_202836", "species_name": "complex inhibitor-cyclin", "id": "_202946"}, {"reaction_name": "reaction8", "reactants": ["_655561", "_655549"], "modifiers": [], "products": ["_655574"], "id": "_663209"}, {"reaction_name": "default degradation of cyclin", "reactants": ["_655429"], "modifiers": [], "products": [], "id": "_202986"}], "links": [{"source": "_202926", "role": "reactant", "id": "_655742", "value": "1.0", "target": "_203047"}, {"source": "_202866", "role": "reactant", "id": "_655393", "value": "1.0", "target": "_203006"}, {"source": "_203027", "role": "product", "id": "_655718", "value": "1.0", "target": "_202926"}, {"source": "_202886", "role": "reactant", "id": "_655477", "value": "1.0", "target": "_203187"}, {"source": "_203107", "role": "product", "id": "_655694", "value": "1.0", "target": "_202926"}, {"source": "_202946", "role": "reactant", "id": "_655682", "value": "1.0", "target": "_203107"}, {"source": "_203087", "role": "product", "id": "_655622", "value": "1.0", "target": "_202926"}, {"source": "_203087", "role": "product", "id": "_655610", "value": "1.0", "target": "_202866"}, {"source": "_202946", "role": "reactant", "id": "_655598", "value": "1.0", "target": "_203087"}, {"source": "_203167", "role": "product", "id": "_655501", "value": "1.0", "target": "_202906"}, {"source": "_203147", "role": "product", "id": "_655453", "value": "1.0", "target": "_202886"}, {"source": "_202966", "role": "product", "id": "_655368", "value": "1.0", "target": "_202866"}, {"source": "_203126", "role": "product", "id": "_655658", "value": "1.0", "target": "_202866"}, {"source": "_202946", "role": "reactant", "id": "_655646", "value": "1.0", "target": "_203126"}, {"source": "_202906", "role": "reactant", "id": "_655525", "value": "1.0", "target": "_203207"}, {"source": "_663209", "role": "product", "id": "_655574", "value": "1.0", "target": "_202946"}, {"source": "_202926", "role": "reactant", "id": "_655561", "value": "1.0", "target": "_663209"}, {"source": "_202866", "role": "reactant", "id": "_655549", "value": "1.0", "target": "_663209"}, {"source": "_202866", "role": "reactant", "id": "_655429", "value": "1.0", "target": "_202986"}]}
+{
+    "links": [
+        {
+            "id": "_655742", 
+            "role": "reactant", 
+            "source": "_202926", 
+            "target": "_203047", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655393", 
+            "role": "reactant", 
+            "source": "_202866", 
+            "target": "_203006", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655405", 
+            "role": "modifier", 
+            "source": "_202906", 
+            "target": "_203006", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_655718", 
+            "role": "product", 
+            "source": "_203027", 
+            "target": "_202926", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655477", 
+            "role": "reactant", 
+            "source": "_202886", 
+            "target": "_203187", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655694", 
+            "role": "product", 
+            "source": "_203107", 
+            "target": "_202926", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655682", 
+            "role": "reactant", 
+            "source": "_202946", 
+            "target": "_203107", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655622", 
+            "role": "product", 
+            "source": "_203087", 
+            "target": "_202926", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655610", 
+            "role": "product", 
+            "source": "_203087", 
+            "target": "_202866", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655598", 
+            "role": "reactant", 
+            "source": "_202946", 
+            "target": "_203087", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655501", 
+            "role": "product", 
+            "source": "_203167", 
+            "target": "_202906", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655453", 
+            "role": "product", 
+            "source": "_203147", 
+            "target": "_202886", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655368", 
+            "role": "product", 
+            "source": "_202966", 
+            "target": "_202866", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655658", 
+            "role": "product", 
+            "source": "_203126", 
+            "target": "_202866", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655646", 
+            "role": "reactant", 
+            "source": "_202946", 
+            "target": "_203126", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655525", 
+            "role": "reactant", 
+            "source": "_202906", 
+            "target": "_203207", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655574", 
+            "role": "product", 
+            "source": "_663209", 
+            "target": "_202946", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655561", 
+            "role": "reactant", 
+            "source": "_202926", 
+            "target": "_663209", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655549", 
+            "role": "reactant", 
+            "source": "_202866", 
+            "target": "_663209", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_655429", 
+            "role": "reactant", 
+            "source": "_202866", 
+            "target": "_202986", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "_203047", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_655742"
+            ], 
+            "reaction_name": "degradation of cyclin inhibitor"
+        }, 
+        {
+            "id": "_203006", 
+            "modifiers": [
+                "_655405"
+            ], 
+            "products": [], 
+            "reactants": [
+                "_655393"
+            ], 
+            "reaction_name": "cdc2 kinase triggered degration of cyclin"
+        }, 
+        {
+            "compartment": "_202836", 
+            "id": "_202906", 
+            "species_name": "protease"
+        }, 
+        {
+            "id": "_203027", 
+            "modifiers": [], 
+            "products": [
+                "_655718"
+            ], 
+            "reactants": [], 
+            "reaction_name": "creation of cyclin inhibitor"
+        }, 
+        {
+            "compartment": "_202836", 
+            "id": "_202866", 
+            "species_name": "cyclin"
+        }, 
+        {
+            "id": "_203187", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_655477"
+            ], 
+            "reaction_name": "deactivation of cdc2 kinase"
+        }, 
+        {
+            "id": "_203107", 
+            "modifiers": [], 
+            "products": [
+                "_655694"
+            ], 
+            "reactants": [
+                "_655682"
+            ], 
+            "reaction_name": "degradation of inhibited cyclin"
+        }, 
+        {
+            "id": "_203087", 
+            "modifiers": [], 
+            "products": [
+                "_655622", 
+                "_655610"
+            ], 
+            "reactants": [
+                "_655598"
+            ], 
+            "reaction_name": "reaction9"
+        }, 
+        {
+            "id": "_203167", 
+            "modifiers": [], 
+            "products": [
+                "_655501"
+            ], 
+            "reactants": [], 
+            "reaction_name": "activation of cyclin protease"
+        }, 
+        {
+            "id": "_203147", 
+            "modifiers": [], 
+            "products": [
+                "_655453"
+            ], 
+            "reactants": [], 
+            "reaction_name": "activation of cdc2 kinase"
+        }, 
+        {
+            "id": "_202966", 
+            "modifiers": [], 
+            "products": [
+                "_655368"
+            ], 
+            "reactants": [], 
+            "reaction_name": "creation of cyclin"
+        }, 
+        {
+            "compartment": "_202836", 
+            "id": "_202926", 
+            "species_name": "cyclin inhibitor"
+        }, 
+        {
+            "compartment": "_202836", 
+            "id": "_202886", 
+            "species_name": "cdc2k"
+        }, 
+        {
+            "id": "_203126", 
+            "modifiers": [], 
+            "products": [
+                "_655658"
+            ], 
+            "reactants": [
+                "_655646"
+            ], 
+            "reaction_name": "desinhibition of cyclin"
+        }, 
+        {
+            "id": "_203207", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_655525"
+            ], 
+            "reaction_name": "deactivation of cyclin protease"
+        }, 
+        {
+            "compartment": "_202836", 
+            "id": "_202946", 
+            "species_name": "complex inhibitor-cyclin"
+        }, 
+        {
+            "id": "_663209", 
+            "modifiers": [], 
+            "products": [
+                "_655574"
+            ], 
+            "reactants": [
+                "_655561", 
+                "_655549"
+            ], 
+            "reaction_name": "reaction8"
+        }, 
+        {
+            "id": "_202986", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_655429"
+            ], 
+            "reaction_name": "default degradation of cyclin"
+        }
+    ]
+}

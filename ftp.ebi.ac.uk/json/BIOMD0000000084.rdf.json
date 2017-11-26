@@ -1,1 +1,273 @@
-{"nodes": [{"compartment": "metaid_0000003", "species_name": "", "id": "metaid_0000007"}, {"reaction_name": "Receptor activation", "reactants": ["_105135"], "modifiers": [], "products": ["_105147"], "id": "metaid_0000013"}, {"reaction_name": "Kinase-2 inactivation", "reactants": ["_105403"], "modifiers": [], "products": ["_105415"], "id": "metaid_0000017"}, {"reaction_name": "Receptor inactivation", "reactants": ["_105075"], "modifiers": [], "products": ["_105087"], "id": "metaid_0000012"}, {"compartment": "metaid_0000003", "species_name": "", "id": "metaid_0000006"}, {"reaction_name": "Kinase-2 activation", "reactants": ["_105329"], "modifiers": [], "products": ["_105342"], "id": "metaid_0000016"}, {"compartment": "metaid_0000003", "species_name": "", "id": "metaid_0000005"}, {"reaction_name": "Kinase-3 inactivation", "reactants": ["_105536"], "modifiers": [], "products": ["_105548"], "id": "metaid_0000019"}, {"reaction_name": "Kinase-1 inactivation", "reactants": ["_105268"], "modifiers": [], "products": ["_105280"], "id": "metaid_0000015"}, {"compartment": "metaid_0000003", "species_name": "", "id": "metaid_0000009"}, {"compartment": "metaid_0000003", "species_name": "", "id": "metaid_0000011"}, {"reaction_name": "Kinase-1 activation", "reactants": ["_105195"], "modifiers": [], "products": ["_105208"], "id": "metaid_0000014"}, {"reaction_name": "Kinase-3 activation", "reactants": ["_105464"], "modifiers": [], "products": ["_105476"], "id": "metaid_0000018"}, {"compartment": "metaid_0000003", "species_name": "", "id": "metaid_0000004"}, {"compartment": "metaid_0000003", "species_name": "", "id": "metaid_0000008"}, {"compartment": "metaid_0000003", "species_name": "", "id": "metaid_0000010"}], "links": [{"source": "metaid_0000013", "role": "product", "id": "_105147", "value": "1.0", "target": "metaid_0000004"}, {"source": "metaid_0000005", "role": "reactant", "id": "_105135", "value": "1.0", "target": "metaid_0000013"}, {"source": "metaid_0000017", "role": "product", "id": "_105415", "value": "1.0", "target": "metaid_0000008"}, {"source": "metaid_0000009", "role": "reactant", "id": "_105403", "value": "1.0", "target": "metaid_0000017"}, {"source": "metaid_0000012", "role": "product", "id": "_105087", "value": "1.0", "target": "metaid_0000005"}, {"source": "metaid_0000004", "role": "reactant", "id": "_105075", "value": "1.0", "target": "metaid_0000012"}, {"source": "metaid_0000016", "role": "product", "id": "_105342", "value": "1.0", "target": "metaid_0000009"}, {"source": "metaid_0000008", "role": "reactant", "id": "_105329", "value": "1.0", "target": "metaid_0000016"}, {"source": "metaid_0000019", "role": "product", "id": "_105548", "value": "1.0", "target": "metaid_0000010"}, {"source": "metaid_0000011", "role": "reactant", "id": "_105536", "value": "1.0", "target": "metaid_0000019"}, {"source": "metaid_0000015", "role": "product", "id": "_105280", "value": "1.0", "target": "metaid_0000006"}, {"source": "metaid_0000007", "role": "reactant", "id": "_105268", "value": "1.0", "target": "metaid_0000015"}, {"source": "metaid_0000014", "role": "product", "id": "_105208", "value": "1.0", "target": "metaid_0000007"}, {"source": "metaid_0000006", "role": "reactant", "id": "_105195", "value": "1.0", "target": "metaid_0000014"}, {"source": "metaid_0000018", "role": "product", "id": "_105476", "value": "1.0", "target": "metaid_0000011"}, {"source": "metaid_0000010", "role": "reactant", "id": "_105464", "value": "1.0", "target": "metaid_0000018"}]}
+{
+    "links": [
+        {
+            "id": "_105147", 
+            "role": "product", 
+            "source": "metaid_0000013", 
+            "target": "metaid_0000004", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_105135", 
+            "role": "reactant", 
+            "source": "metaid_0000005", 
+            "target": "metaid_0000013", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_105415", 
+            "role": "product", 
+            "source": "metaid_0000017", 
+            "target": "metaid_0000008", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_105403", 
+            "role": "reactant", 
+            "source": "metaid_0000009", 
+            "target": "metaid_0000017", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_105087", 
+            "role": "product", 
+            "source": "metaid_0000012", 
+            "target": "metaid_0000005", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_105075", 
+            "role": "reactant", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000012", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_105342", 
+            "role": "product", 
+            "source": "metaid_0000016", 
+            "target": "metaid_0000009", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_105329", 
+            "role": "reactant", 
+            "source": "metaid_0000008", 
+            "target": "metaid_0000016", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_105354", 
+            "role": "modifier", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000016", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_105548", 
+            "role": "product", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000010", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_105536", 
+            "role": "reactant", 
+            "source": "metaid_0000011", 
+            "target": "metaid_0000019", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_105280", 
+            "role": "product", 
+            "source": "metaid_0000015", 
+            "target": "metaid_0000006", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_105268", 
+            "role": "reactant", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000015", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_105208", 
+            "role": "product", 
+            "source": "metaid_0000014", 
+            "target": "metaid_0000007", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_105195", 
+            "role": "reactant", 
+            "source": "metaid_0000006", 
+            "target": "metaid_0000014", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_105220", 
+            "role": "modifier", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000014", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_105476", 
+            "role": "product", 
+            "source": "metaid_0000018", 
+            "target": "metaid_0000011", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_105464", 
+            "role": "reactant", 
+            "source": "metaid_0000010", 
+            "target": "metaid_0000018", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_105488", 
+            "role": "modifier", 
+            "source": "metaid_0000009", 
+            "target": "metaid_0000018", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000007", 
+            "species_name": ""
+        }, 
+        {
+            "id": "metaid_0000013", 
+            "modifiers": [], 
+            "products": [
+                "_105147"
+            ], 
+            "reactants": [
+                "_105135"
+            ], 
+            "reaction_name": "Receptor activation"
+        }, 
+        {
+            "id": "metaid_0000017", 
+            "modifiers": [], 
+            "products": [
+                "_105415"
+            ], 
+            "reactants": [
+                "_105403"
+            ], 
+            "reaction_name": "Kinase-2 inactivation"
+        }, 
+        {
+            "id": "metaid_0000012", 
+            "modifiers": [], 
+            "products": [
+                "_105087"
+            ], 
+            "reactants": [
+                "_105075"
+            ], 
+            "reaction_name": "Receptor inactivation"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000006", 
+            "species_name": ""
+        }, 
+        {
+            "id": "metaid_0000016", 
+            "modifiers": [
+                "_105354"
+            ], 
+            "products": [
+                "_105342"
+            ], 
+            "reactants": [
+                "_105329"
+            ], 
+            "reaction_name": "Kinase-2 activation"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000005", 
+            "species_name": ""
+        }, 
+        {
+            "id": "metaid_0000019", 
+            "modifiers": [], 
+            "products": [
+                "_105548"
+            ], 
+            "reactants": [
+                "_105536"
+            ], 
+            "reaction_name": "Kinase-3 inactivation"
+        }, 
+        {
+            "id": "metaid_0000015", 
+            "modifiers": [], 
+            "products": [
+                "_105280"
+            ], 
+            "reactants": [
+                "_105268"
+            ], 
+            "reaction_name": "Kinase-1 inactivation"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000009", 
+            "species_name": ""
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000011", 
+            "species_name": ""
+        }, 
+        {
+            "id": "metaid_0000014", 
+            "modifiers": [
+                "_105220"
+            ], 
+            "products": [
+                "_105208"
+            ], 
+            "reactants": [
+                "_105195"
+            ], 
+            "reaction_name": "Kinase-1 activation"
+        }, 
+        {
+            "id": "metaid_0000018", 
+            "modifiers": [
+                "_105488"
+            ], 
+            "products": [
+                "_105476"
+            ], 
+            "reactants": [
+                "_105464"
+            ], 
+            "reaction_name": "Kinase-3 activation"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000004", 
+            "species_name": ""
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000008", 
+            "species_name": ""
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000010", 
+            "species_name": ""
+        }
+    ]
+}

@@ -1,1 +1,161 @@
-{"nodes": [{"reaction_name": "Receptor-Inactivated state 1 transition", "reactants": ["_213704"], "modifiers": [], "products": ["_213716"], "id": "metaid_0000042"}, {"compartment": "metaid_0000026", "species_name": "Inactivated State 1", "id": "metaid_0000029"}, {"compartment": "metaid_0000026", "species_name": "Shut State", "id": "metaid_0000030"}, {"reaction_name": "Receptor-Open state transition", "reactants": ["_213656"], "modifiers": [], "products": ["_213668"], "id": "metaid_0000041"}, {"compartment": "metaid_0000026", "species_name": "Activated State", "id": "metaid_0000031"}, {"reaction_name": "Activated-Inactivated state 2 transition", "reactants": ["_213848"], "modifiers": [], "products": ["_213860"], "id": "metaid_0000045"}, {"reaction_name": "Open-Activated state transition", "reactants": ["_213812"], "modifiers": [], "products": ["_213824"], "id": "metaid_0000044"}, {"compartment": "metaid_0000026", "species_name": "Open State", "id": "metaid_0000028"}, {"compartment": "metaid_0000026", "species_name": "Inactivated State 2", "id": "metaid_0000032"}, {"reaction_name": "Open-Shut state transition", "reactants": ["_213764"], "modifiers": [], "products": ["_213776"], "id": "metaid_0000043"}, {"compartment": "metaid_0000026", "species_name": "Receptor", "id": "metaid_0000027"}], "links": [{"source": "metaid_0000042", "role": "product", "id": "_213716", "value": "1.0", "target": "metaid_0000029"}, {"source": "metaid_0000027", "role": "reactant", "id": "_213704", "value": "1.0", "target": "metaid_0000042"}, {"source": "metaid_0000041", "role": "product", "id": "_213668", "value": "1.0", "target": "metaid_0000028"}, {"source": "metaid_0000027", "role": "reactant", "id": "_213656", "value": "1.0", "target": "metaid_0000041"}, {"source": "metaid_0000045", "role": "product", "id": "_213860", "value": "1.0", "target": "metaid_0000032"}, {"source": "metaid_0000031", "role": "reactant", "id": "_213848", "value": "1.0", "target": "metaid_0000045"}, {"source": "metaid_0000044", "role": "product", "id": "_213824", "value": "1.0", "target": "metaid_0000031"}, {"source": "metaid_0000028", "role": "reactant", "id": "_213812", "value": "1.0", "target": "metaid_0000044"}, {"source": "metaid_0000043", "role": "product", "id": "_213776", "value": "1.0", "target": "metaid_0000030"}, {"source": "metaid_0000028", "role": "reactant", "id": "_213764", "value": "1.0", "target": "metaid_0000043"}]}
+{
+    "links": [
+        {
+            "id": "_213716", 
+            "role": "product", 
+            "source": "metaid_0000042", 
+            "target": "metaid_0000029", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_213704", 
+            "role": "reactant", 
+            "source": "metaid_0000027", 
+            "target": "metaid_0000042", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_213668", 
+            "role": "product", 
+            "source": "metaid_0000041", 
+            "target": "metaid_0000028", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_213656", 
+            "role": "reactant", 
+            "source": "metaid_0000027", 
+            "target": "metaid_0000041", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_213860", 
+            "role": "product", 
+            "source": "metaid_0000045", 
+            "target": "metaid_0000032", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_213848", 
+            "role": "reactant", 
+            "source": "metaid_0000031", 
+            "target": "metaid_0000045", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_213824", 
+            "role": "product", 
+            "source": "metaid_0000044", 
+            "target": "metaid_0000031", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_213812", 
+            "role": "reactant", 
+            "source": "metaid_0000028", 
+            "target": "metaid_0000044", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_213776", 
+            "role": "product", 
+            "source": "metaid_0000043", 
+            "target": "metaid_0000030", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_213764", 
+            "role": "reactant", 
+            "source": "metaid_0000028", 
+            "target": "metaid_0000043", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000042", 
+            "modifiers": [], 
+            "products": [
+                "_213716"
+            ], 
+            "reactants": [
+                "_213704"
+            ], 
+            "reaction_name": "Receptor-Inactivated state 1 transition"
+        }, 
+        {
+            "compartment": "metaid_0000026", 
+            "id": "metaid_0000029", 
+            "species_name": "Inactivated State 1"
+        }, 
+        {
+            "compartment": "metaid_0000026", 
+            "id": "metaid_0000030", 
+            "species_name": "Shut State"
+        }, 
+        {
+            "id": "metaid_0000041", 
+            "modifiers": [], 
+            "products": [
+                "_213668"
+            ], 
+            "reactants": [
+                "_213656"
+            ], 
+            "reaction_name": "Receptor-Open state transition"
+        }, 
+        {
+            "compartment": "metaid_0000026", 
+            "id": "metaid_0000031", 
+            "species_name": "Activated State"
+        }, 
+        {
+            "id": "metaid_0000045", 
+            "modifiers": [], 
+            "products": [
+                "_213860"
+            ], 
+            "reactants": [
+                "_213848"
+            ], 
+            "reaction_name": "Activated-Inactivated state 2 transition"
+        }, 
+        {
+            "id": "metaid_0000044", 
+            "modifiers": [], 
+            "products": [
+                "_213824"
+            ], 
+            "reactants": [
+                "_213812"
+            ], 
+            "reaction_name": "Open-Activated state transition"
+        }, 
+        {
+            "compartment": "metaid_0000026", 
+            "id": "metaid_0000028", 
+            "species_name": "Open State"
+        }, 
+        {
+            "compartment": "metaid_0000026", 
+            "id": "metaid_0000032", 
+            "species_name": "Inactivated State 2"
+        }, 
+        {
+            "id": "metaid_0000043", 
+            "modifiers": [], 
+            "products": [
+                "_213776"
+            ], 
+            "reactants": [
+                "_213764"
+            ], 
+            "reaction_name": "Open-Shut state transition"
+        }, 
+        {
+            "compartment": "metaid_0000026", 
+            "id": "metaid_0000027", 
+            "species_name": "Receptor"
+        }
+    ]
+}

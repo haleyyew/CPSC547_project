@@ -1,1 +1,229 @@
-{"nodes": [{"reaction_name": "ATPase pump mediated Ca efflux Cell2", "reactants": ["_915773"], "modifiers": [], "products": [], "id": "metaid_0000039"}, {"reaction_name": "IP3R independent Ca release Cell1", "reactants": [], "modifiers": [], "products": ["_915617"], "id": "metaid_0000035"}, {"compartment": "metaid_0000019", "species_name": "Calcium ion Cell1", "id": "metaid_0000021"}, {"reaction_name": "Diffusion of Ca between cells", "reactants": ["_915917"], "modifiers": [], "products": ["_915929"], "id": "metaid_0000043"}, {"reaction_name": "IP3R independent Ca release Cell2", "reactants": [], "modifiers": [], "products": ["_915821"], "id": "metaid_0000040"}, {"reaction_name": "Inactivated to Shut state transition Cell1", "reactants": [], "modifiers": [], "products": ["_915653"], "id": "metaid_0000036"}, {"compartment": "metaid_0000019", "species_name": "Receptor fraction Cell1", "id": "metaid_0000022"}, {"reaction_name": "IP3R mediated Ca release Cell1", "reactants": [], "modifiers": [], "products": ["_915508"], "id": "metaid_0000033"}, {"reaction_name": "Open to Inactivated state transition Cell1", "reactants": ["_915677"], "modifiers": [], "products": [], "id": "metaid_0000037"}, {"reaction_name": "Inactivated to Shut state transition Cell2", "reactants": [], "modifiers": [], "products": ["_915857"], "id": "metaid_0000041"}, {"compartment": "metaid_0000019", "species_name": "Calcium ion Cell2", "id": "metaid_0000023"}, {"reaction_name": "ATPase pump mediated Ca efflux Cell1", "reactants": ["_915568"], "modifiers": [], "products": [], "id": "metaid_0000034"}, {"reaction_name": "IP3R mediated Ca release Cell2", "reactants": [], "modifiers": [], "products": ["_915713"], "id": "metaid_0000038"}, {"compartment": "metaid_0000019", "species_name": "Receptor fraction Cell2", "id": "metaid_0000024"}, {"reaction_name": "Open to Inactivated state transition Cell2", "reactants": ["_915881"], "modifiers": [], "products": [], "id": "metaid_0000042"}], "links": [{"source": "metaid_0000023", "role": "reactant", "id": "_915773", "value": "1.0", "target": "metaid_0000039"}, {"source": "metaid_0000035", "role": "product", "id": "_915617", "value": "1.0", "target": "metaid_0000021"}, {"source": "metaid_0000043", "role": "product", "id": "_915929", "value": "1.0", "target": "metaid_0000021"}, {"source": "metaid_0000023", "role": "reactant", "id": "_915917", "value": "1.0", "target": "metaid_0000043"}, {"source": "metaid_0000040", "role": "product", "id": "_915821", "value": "1.0", "target": "metaid_0000023"}, {"source": "metaid_0000036", "role": "product", "id": "_915653", "value": "1.0", "target": "metaid_0000022"}, {"source": "metaid_0000033", "role": "product", "id": "_915508", "value": "1.0", "target": "metaid_0000021"}, {"source": "metaid_0000022", "role": "reactant", "id": "_915677", "value": "1.0", "target": "metaid_0000037"}, {"source": "metaid_0000041", "role": "product", "id": "_915857", "value": "1.0", "target": "metaid_0000024"}, {"source": "metaid_0000021", "role": "reactant", "id": "_915568", "value": "1.0", "target": "metaid_0000034"}, {"source": "metaid_0000038", "role": "product", "id": "_915713", "value": "1.0", "target": "metaid_0000023"}, {"source": "metaid_0000024", "role": "reactant", "id": "_915881", "value": "1.0", "target": "metaid_0000042"}]}
+{
+    "links": [
+        {
+            "id": "_915773", 
+            "role": "reactant", 
+            "source": "metaid_0000023", 
+            "target": "metaid_0000039", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_915617", 
+            "role": "product", 
+            "source": "metaid_0000035", 
+            "target": "metaid_0000021", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_915929", 
+            "role": "product", 
+            "source": "metaid_0000043", 
+            "target": "metaid_0000021", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_915917", 
+            "role": "reactant", 
+            "source": "metaid_0000023", 
+            "target": "metaid_0000043", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_915821", 
+            "role": "product", 
+            "source": "metaid_0000040", 
+            "target": "metaid_0000023", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_915653", 
+            "role": "product", 
+            "source": "metaid_0000036", 
+            "target": "metaid_0000022", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_915508", 
+            "role": "product", 
+            "source": "metaid_0000033", 
+            "target": "metaid_0000021", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_915520", 
+            "role": "modifier", 
+            "source": "metaid_0000022", 
+            "target": "metaid_0000033", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_915677", 
+            "role": "reactant", 
+            "source": "metaid_0000022", 
+            "target": "metaid_0000037", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_915857", 
+            "role": "product", 
+            "source": "metaid_0000041", 
+            "target": "metaid_0000024", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_915568", 
+            "role": "reactant", 
+            "source": "metaid_0000021", 
+            "target": "metaid_0000034", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_915713", 
+            "role": "product", 
+            "source": "metaid_0000038", 
+            "target": "metaid_0000023", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_915725", 
+            "role": "modifier", 
+            "source": "metaid_0000024", 
+            "target": "metaid_0000038", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_915881", 
+            "role": "reactant", 
+            "source": "metaid_0000024", 
+            "target": "metaid_0000042", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000039", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_915773"
+            ], 
+            "reaction_name": "ATPase pump mediated Ca efflux Cell2"
+        }, 
+        {
+            "id": "metaid_0000035", 
+            "modifiers": [], 
+            "products": [
+                "_915617"
+            ], 
+            "reactants": [], 
+            "reaction_name": "IP3R independent Ca release Cell1"
+        }, 
+        {
+            "compartment": "metaid_0000019", 
+            "id": "metaid_0000021", 
+            "species_name": "Calcium ion Cell1"
+        }, 
+        {
+            "id": "metaid_0000043", 
+            "modifiers": [], 
+            "products": [
+                "_915929"
+            ], 
+            "reactants": [
+                "_915917"
+            ], 
+            "reaction_name": "Diffusion of Ca between cells"
+        }, 
+        {
+            "id": "metaid_0000040", 
+            "modifiers": [], 
+            "products": [
+                "_915821"
+            ], 
+            "reactants": [], 
+            "reaction_name": "IP3R independent Ca release Cell2"
+        }, 
+        {
+            "id": "metaid_0000036", 
+            "modifiers": [], 
+            "products": [
+                "_915653"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Inactivated to Shut state transition Cell1"
+        }, 
+        {
+            "compartment": "metaid_0000019", 
+            "id": "metaid_0000022", 
+            "species_name": "Receptor fraction Cell1"
+        }, 
+        {
+            "id": "metaid_0000033", 
+            "modifiers": [
+                "_915520"
+            ], 
+            "products": [
+                "_915508"
+            ], 
+            "reactants": [], 
+            "reaction_name": "IP3R mediated Ca release Cell1"
+        }, 
+        {
+            "id": "metaid_0000037", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_915677"
+            ], 
+            "reaction_name": "Open to Inactivated state transition Cell1"
+        }, 
+        {
+            "id": "metaid_0000041", 
+            "modifiers": [], 
+            "products": [
+                "_915857"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Inactivated to Shut state transition Cell2"
+        }, 
+        {
+            "compartment": "metaid_0000019", 
+            "id": "metaid_0000023", 
+            "species_name": "Calcium ion Cell2"
+        }, 
+        {
+            "id": "metaid_0000034", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_915568"
+            ], 
+            "reaction_name": "ATPase pump mediated Ca efflux Cell1"
+        }, 
+        {
+            "id": "metaid_0000038", 
+            "modifiers": [
+                "_915725"
+            ], 
+            "products": [
+                "_915713"
+            ], 
+            "reactants": [], 
+            "reaction_name": "IP3R mediated Ca release Cell2"
+        }, 
+        {
+            "compartment": "metaid_0000019", 
+            "id": "metaid_0000024", 
+            "species_name": "Receptor fraction Cell2"
+        }, 
+        {
+            "id": "metaid_0000042", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_915881"
+            ], 
+            "reaction_name": "Open to Inactivated state transition Cell2"
+        }
+    ]
+}

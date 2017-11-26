@@ -1,1 +1,100 @@
-{"nodes": [{"reaction_name": "Nucleation", "reactants": ["e2a634d9-f71b-4029-ba87-8cb2ac05ca62"], "modifiers": [], "products": ["_248956ee-3e9a-4c85-b318-70b833ccdfd3"], "id": "COPASI6"}, {"compartment": "_938a261f-ed9b-4717-8741-a097f59b8133", "species_name": "A", "id": "COPASI2"}, {"reaction_name": "Growth", "reactants": ["_24327de2-3237-4f34-be40-c24070fd2bec", "a19de65c-cb60-4409-b531-9f767f096798"], "modifiers": [], "products": ["bbff984b-eab0-4f44-94da-5f1f870db454"], "id": "COPASI7"}, {"compartment": "_938a261f-ed9b-4717-8741-a097f59b8133", "species_name": "B", "id": "COPASI1"}], "links": [{"source": "COPASI6", "role": "product", "id": "_248956ee-3e9a-4c85-b318-70b833ccdfd3", "value": "1.0", "target": "COPASI1"}, {"source": "COPASI2", "role": "reactant", "id": "e2a634d9-f71b-4029-ba87-8cb2ac05ca62", "value": "1.0", "target": "COPASI6"}, {"source": "COPASI7", "role": "product", "id": "bbff984b-eab0-4f44-94da-5f1f870db454", "value": "2.0", "target": "COPASI1"}, {"source": "COPASI1", "role": "reactant", "id": "_24327de2-3237-4f34-be40-c24070fd2bec", "value": "1.0", "target": "COPASI7"}, {"source": "COPASI2", "role": "reactant", "id": "a19de65c-cb60-4409-b531-9f767f096798", "value": "1.0", "target": "COPASI7"}]}
+{
+    "links": [
+        {
+            "id": "_248956ee-3e9a-4c85-b318-70b833ccdfd3", 
+            "role": "product", 
+            "source": "COPASI6", 
+            "target": "COPASI1", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "e2a634d9-f71b-4029-ba87-8cb2ac05ca62", 
+            "role": "reactant", 
+            "source": "COPASI2", 
+            "target": "COPASI6", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "f89d5762-49f1-4ea0-9221-7d961760430e", 
+            "role": "modifier", 
+            "source": "COPASI2", 
+            "target": "COPASI6", 
+            "value": 0.0
+        }, 
+        {
+            "id": "bbff984b-eab0-4f44-94da-5f1f870db454", 
+            "role": "product", 
+            "source": "COPASI7", 
+            "target": "COPASI1", 
+            "value": "2.0"
+        }, 
+        {
+            "id": "_24327de2-3237-4f34-be40-c24070fd2bec", 
+            "role": "reactant", 
+            "source": "COPASI1", 
+            "target": "COPASI7", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "a19de65c-cb60-4409-b531-9f767f096798", 
+            "role": "reactant", 
+            "source": "COPASI2", 
+            "target": "COPASI7", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_83cc4084-94c4-489f-b59a-8fd6a0e148cf", 
+            "role": "modifier", 
+            "source": "COPASI2", 
+            "target": "COPASI7", 
+            "value": 0.0
+        }, 
+        {
+            "id": "cf9e43b2-848a-437b-a973-82be4c391396", 
+            "role": "modifier", 
+            "source": "COPASI1", 
+            "target": "COPASI7", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "COPASI6", 
+            "modifiers": [
+                "f89d5762-49f1-4ea0-9221-7d961760430e"
+            ], 
+            "products": [
+                "_248956ee-3e9a-4c85-b318-70b833ccdfd3"
+            ], 
+            "reactants": [
+                "e2a634d9-f71b-4029-ba87-8cb2ac05ca62"
+            ], 
+            "reaction_name": "Nucleation"
+        }, 
+        {
+            "compartment": "_938a261f-ed9b-4717-8741-a097f59b8133", 
+            "id": "COPASI2", 
+            "species_name": "A"
+        }, 
+        {
+            "id": "COPASI7", 
+            "modifiers": [
+                "_83cc4084-94c4-489f-b59a-8fd6a0e148cf", 
+                "cf9e43b2-848a-437b-a973-82be4c391396"
+            ], 
+            "products": [
+                "bbff984b-eab0-4f44-94da-5f1f870db454"
+            ], 
+            "reactants": [
+                "_24327de2-3237-4f34-be40-c24070fd2bec", 
+                "a19de65c-cb60-4409-b531-9f767f096798"
+            ], 
+            "reaction_name": "Growth"
+        }, 
+        {
+            "compartment": "_938a261f-ed9b-4717-8741-a097f59b8133", 
+            "id": "COPASI1", 
+            "species_name": "B"
+        }
+    ]
+}

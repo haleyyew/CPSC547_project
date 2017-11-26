@@ -1,1 +1,169 @@
-{"nodes": [{"compartment": "metaid_cell", "species_name": "fructose 1,6-bisphosphate", "id": "metaid_Fru16P2"}, {"compartment": "metaid_cell", "species_name": "ADP", "id": "metaid_ADP"}, {"reaction_name": "hexokinase", "reactants": ["_048537", "_048549"], "modifiers": [], "products": ["_048561"], "id": "_892546"}, {"compartment": "metaid_cell", "species_name": "glucose", "id": "metaid_Glc"}, {"compartment": "metaid_cell", "species_name": "ATP", "id": "metaid_ATP"}, {"reaction_name": "phosphofructokinase", "reactants": ["_048597", "_048609"], "modifiers": [], "products": ["_048621"], "id": "_892547"}, {"compartment": "metaid_cell", "species_name": "trehalose 6-phosphate", "id": "metaid_Tre6P"}, {"compartment": "metaid_cell", "species_name": "hexose monophosphate", "id": "metaid_HMP"}, {"reaction_name": "lower", "reactants": ["_048645", "_048658"], "modifiers": [], "products": ["_048670"], "id": "_892548"}, {"reaction_name": "ATPase", "reactants": ["_048694"], "modifiers": [], "products": ["_048706"], "id": "_892549"}], "links": [{"source": "_892546", "role": "product", "id": "_048561", "value": "1.0", "target": "metaid_HMP"}, {"source": "metaid_Glc", "role": "reactant", "id": "_048537", "value": "1.0", "target": "_892546"}, {"source": "metaid_ATP", "role": "reactant", "id": "_048549", "value": "1.0", "target": "_892546"}, {"source": "_892547", "role": "product", "id": "_048621", "value": "1.0", "target": "metaid_Fru16P2"}, {"source": "metaid_HMP", "role": "reactant", "id": "_048597", "value": "1.0", "target": "_892547"}, {"source": "metaid_ATP", "role": "reactant", "id": "_048609", "value": "1.0", "target": "_892547"}, {"source": "_892548", "role": "product", "id": "_048670", "value": "4.0", "target": "metaid_ATP"}, {"source": "metaid_Fru16P2", "role": "reactant", "id": "_048645", "value": "1.0", "target": "_892548"}, {"source": "metaid_ADP", "role": "reactant", "id": "_048658", "value": "4.0", "target": "_892548"}, {"source": "_892549", "role": "product", "id": "_048706", "value": "1.0", "target": "metaid_ADP"}, {"source": "metaid_ATP", "role": "reactant", "id": "_048694", "value": "1.0", "target": "_892549"}]}
+{
+    "links": [
+        {
+            "id": "_048561", 
+            "role": "product", 
+            "source": "_892546", 
+            "target": "metaid_HMP", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_048537", 
+            "role": "reactant", 
+            "source": "metaid_Glc", 
+            "target": "_892546", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_048549", 
+            "role": "reactant", 
+            "source": "metaid_ATP", 
+            "target": "_892546", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_048573", 
+            "role": "modifier", 
+            "source": "metaid_Tre6P", 
+            "target": "_892546", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_048621", 
+            "role": "product", 
+            "source": "_892547", 
+            "target": "metaid_Fru16P2", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_048597", 
+            "role": "reactant", 
+            "source": "metaid_HMP", 
+            "target": "_892547", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_048609", 
+            "role": "reactant", 
+            "source": "metaid_ATP", 
+            "target": "_892547", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_048670", 
+            "role": "product", 
+            "source": "_892548", 
+            "target": "metaid_ATP", 
+            "value": "4.0"
+        }, 
+        {
+            "id": "_048645", 
+            "role": "reactant", 
+            "source": "metaid_Fru16P2", 
+            "target": "_892548", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_048658", 
+            "role": "reactant", 
+            "source": "metaid_ADP", 
+            "target": "_892548", 
+            "value": "4.0"
+        }, 
+        {
+            "id": "_048706", 
+            "role": "product", 
+            "source": "_892549", 
+            "target": "metaid_ADP", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_048694", 
+            "role": "reactant", 
+            "source": "metaid_ATP", 
+            "target": "_892549", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_Fru16P2", 
+            "species_name": "fructose 1,6-bisphosphate"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_ADP", 
+            "species_name": "ADP"
+        }, 
+        {
+            "id": "_892546", 
+            "modifiers": [
+                "_048573"
+            ], 
+            "products": [
+                "_048561"
+            ], 
+            "reactants": [
+                "_048537", 
+                "_048549"
+            ], 
+            "reaction_name": "hexokinase"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_Glc", 
+            "species_name": "glucose"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_ATP", 
+            "species_name": "ATP"
+        }, 
+        {
+            "id": "_892547", 
+            "modifiers": [], 
+            "products": [
+                "_048621"
+            ], 
+            "reactants": [
+                "_048597", 
+                "_048609"
+            ], 
+            "reaction_name": "phosphofructokinase"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_Tre6P", 
+            "species_name": "trehalose 6-phosphate"
+        }, 
+        {
+            "compartment": "metaid_cell", 
+            "id": "metaid_HMP", 
+            "species_name": "hexose monophosphate"
+        }, 
+        {
+            "id": "_892548", 
+            "modifiers": [], 
+            "products": [
+                "_048670"
+            ], 
+            "reactants": [
+                "_048645", 
+                "_048658"
+            ], 
+            "reaction_name": "lower"
+        }, 
+        {
+            "id": "_892549", 
+            "modifiers": [], 
+            "products": [
+                "_048706"
+            ], 
+            "reactants": [
+                "_048694"
+            ], 
+            "reaction_name": "ATPase"
+        }
+    ]
+}

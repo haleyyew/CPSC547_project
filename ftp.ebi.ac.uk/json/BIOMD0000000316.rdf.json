@@ -1,1 +1,111 @@
-{"nodes": [{"compartment": "meta_cell", "species_name": "", "id": "_480930"}, {"reaction_name": "", "reactants": [], "modifiers": [], "products": ["_660750"], "id": "_480933"}, {"compartment": "meta_cell", "species_name": "", "id": "_480927"}, {"reaction_name": "", "reactants": ["_660798"], "modifiers": [], "products": [], "id": "_480936"}, {"compartment": "meta_cell", "species_name": "", "id": "_480926"}, {"reaction_name": "", "reactants": ["_660726"], "modifiers": [], "products": [], "id": "_480932"}, {"reaction_name": "", "reactants": [], "modifiers": [], "products": ["_660690"], "id": "_480931"}], "links": [{"source": "_480933", "role": "product", "id": "_660750", "value": "1.0", "target": "_480930"}, {"source": "_480930", "role": "reactant", "id": "_660798", "value": "1.0", "target": "_480936"}, {"source": "_480927", "role": "reactant", "id": "_660726", "value": "1.0", "target": "_480932"}, {"source": "_480931", "role": "product", "id": "_660690", "value": "1.0", "target": "_480927"}]}
+{
+    "links": [
+        {
+            "id": "_660750", 
+            "role": "product", 
+            "source": "_480933", 
+            "target": "_480930", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_660762", 
+            "role": "modifier", 
+            "source": "_480926", 
+            "target": "_480933", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_660774", 
+            "role": "modifier", 
+            "source": "_480927", 
+            "target": "_480933", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_660798", 
+            "role": "reactant", 
+            "source": "_480930", 
+            "target": "_480936", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_660726", 
+            "role": "reactant", 
+            "source": "_480927", 
+            "target": "_480932", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_660690", 
+            "role": "product", 
+            "source": "_480931", 
+            "target": "_480927", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_660702", 
+            "role": "modifier", 
+            "source": "_480926", 
+            "target": "_480931", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "meta_cell", 
+            "id": "_480930", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_480933", 
+            "modifiers": [
+                "_660762", 
+                "_660774"
+            ], 
+            "products": [
+                "_660750"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "meta_cell", 
+            "id": "_480927", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_480936", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_660798"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "meta_cell", 
+            "id": "_480926", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_480932", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_660726"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "_480931", 
+            "modifiers": [
+                "_660702"
+            ], 
+            "products": [
+                "_660690"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }
+    ]
+}

@@ -1,1 +1,174 @@
-{"nodes": [{"reaction_name": "Ca efflux", "reactants": ["_156398"], "modifiers": [], "products": [], "id": "metaid_0000025"}, {"compartment": "metaid_0000016", "species_name": "Phosphorylated protein", "id": "metaid_0000037"}, {"reaction_name": "InsP3 dependent Ca influx", "reactants": [], "modifiers": [], "products": ["_156264"], "id": "metaid_0000021"}, {"compartment": "metaid_0000030", "species_name": "", "id": "metaid_0000019"}, {"reaction_name": "ATP driven pumping of Ca into store", "reactants": ["_156289"], "modifiers": [], "products": ["_156302"], "id": "metaid_0000022"}, {"compartment": "metaid_0000016", "species_name": "", "id": "metaid_0000018"}, {"reaction_name": "ATP driven pumping into cytosol", "reactants": ["_156326"], "modifiers": [], "products": ["_156338"], "id": "metaid_0000023"}, {"compartment": "metaid_0000016", "species_name": "Total Protein", "id": "metaid_0000036"}, {"reaction_name": "Calcium influx", "reactants": [], "modifiers": [], "products": ["_156240"], "id": "metaid_0000020"}, {"reaction_name": "Protein Phosphorylation", "reactants": [], "modifiers": [], "products": ["_156422"], "id": "metaid_0000046"}, {"reaction_name": "Calcium leak", "reactants": ["_156362"], "modifiers": [], "products": ["_156374"], "id": "metaid_0000024"}], "links": [{"source": "metaid_0000018", "role": "reactant", "id": "_156398", "value": "1.0", "target": "metaid_0000025"}, {"source": "metaid_0000021", "role": "product", "id": "_156264", "value": "1.0", "target": "metaid_0000018"}, {"source": "metaid_0000022", "role": "product", "id": "_156302", "value": "1.0", "target": "metaid_0000019"}, {"source": "metaid_0000018", "role": "reactant", "id": "_156289", "value": "1.0", "target": "metaid_0000022"}, {"source": "metaid_0000023", "role": "product", "id": "_156338", "value": "1.0", "target": "metaid_0000018"}, {"source": "metaid_0000019", "role": "reactant", "id": "_156326", "value": "1.0", "target": "metaid_0000023"}, {"source": "metaid_0000020", "role": "product", "id": "_156240", "value": "1.0", "target": "metaid_0000018"}, {"source": "metaid_0000046", "role": "product", "id": "_156422", "value": "1.0", "target": "metaid_0000037"}, {"source": "metaid_0000024", "role": "product", "id": "_156374", "value": "1.0", "target": "metaid_0000018"}, {"source": "metaid_0000019", "role": "reactant", "id": "_156362", "value": "1.0", "target": "metaid_0000024"}]}
+{
+    "links": [
+        {
+            "id": "_156398", 
+            "role": "reactant", 
+            "source": "metaid_0000018", 
+            "target": "metaid_0000025", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_156264", 
+            "role": "product", 
+            "source": "metaid_0000021", 
+            "target": "metaid_0000018", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_156302", 
+            "role": "product", 
+            "source": "metaid_0000022", 
+            "target": "metaid_0000019", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_156289", 
+            "role": "reactant", 
+            "source": "metaid_0000018", 
+            "target": "metaid_0000022", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_156338", 
+            "role": "product", 
+            "source": "metaid_0000023", 
+            "target": "metaid_0000018", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_156326", 
+            "role": "reactant", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000023", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_156240", 
+            "role": "product", 
+            "source": "metaid_0000020", 
+            "target": "metaid_0000018", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_156422", 
+            "role": "product", 
+            "source": "metaid_0000046", 
+            "target": "metaid_0000037", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_156434", 
+            "role": "modifier", 
+            "source": "metaid_0000036", 
+            "target": "metaid_0000046", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_156374", 
+            "role": "product", 
+            "source": "metaid_0000024", 
+            "target": "metaid_0000018", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_156362", 
+            "role": "reactant", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000024", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000025", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_156398"
+            ], 
+            "reaction_name": "Ca efflux"
+        }, 
+        {
+            "compartment": "metaid_0000016", 
+            "id": "metaid_0000037", 
+            "species_name": "Phosphorylated protein"
+        }, 
+        {
+            "id": "metaid_0000021", 
+            "modifiers": [], 
+            "products": [
+                "_156264"
+            ], 
+            "reactants": [], 
+            "reaction_name": "InsP3 dependent Ca influx"
+        }, 
+        {
+            "compartment": "metaid_0000030", 
+            "id": "metaid_0000019", 
+            "species_name": ""
+        }, 
+        {
+            "id": "metaid_0000022", 
+            "modifiers": [], 
+            "products": [
+                "_156302"
+            ], 
+            "reactants": [
+                "_156289"
+            ], 
+            "reaction_name": "ATP driven pumping of Ca into store"
+        }, 
+        {
+            "compartment": "metaid_0000016", 
+            "id": "metaid_0000018", 
+            "species_name": ""
+        }, 
+        {
+            "id": "metaid_0000023", 
+            "modifiers": [], 
+            "products": [
+                "_156338"
+            ], 
+            "reactants": [
+                "_156326"
+            ], 
+            "reaction_name": "ATP driven pumping into cytosol"
+        }, 
+        {
+            "compartment": "metaid_0000016", 
+            "id": "metaid_0000036", 
+            "species_name": "Total Protein"
+        }, 
+        {
+            "id": "metaid_0000020", 
+            "modifiers": [], 
+            "products": [
+                "_156240"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Calcium influx"
+        }, 
+        {
+            "id": "metaid_0000046", 
+            "modifiers": [
+                "_156434"
+            ], 
+            "products": [
+                "_156422"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Protein Phosphorylation"
+        }, 
+        {
+            "id": "metaid_0000024", 
+            "modifiers": [], 
+            "products": [
+                "_156374"
+            ], 
+            "reactants": [
+                "_156362"
+            ], 
+            "reaction_name": "Calcium leak"
+        }
+    ]
+}

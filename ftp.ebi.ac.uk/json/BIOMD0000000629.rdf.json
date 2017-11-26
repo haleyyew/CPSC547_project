@@ -1,1 +1,97 @@
-{"nodes": [{"compartment": "COPASI1", "species_name": "Ligand-Receptor-CoActivator", "id": "COPASI6"}, {"compartment": "COPASI1", "species_name": "Ligand", "id": "COPASI2"}, {"compartment": "COPASI1", "species_name": "Receptor", "id": "COPASI4"}, {"reaction_name": "Ligand-Receptor-CoActivator complex formation", "reactants": ["_5092d589-4005-4188-a606-c7f14aabd1bc", "a0149aa1-e1ef-49e8-b192-8e1f50dc8697"], "modifiers": [], "products": ["edea5fce-1588-41fe-9a38-8a5bca581559"], "id": "COPASI8"}, {"reaction_name": "Ligand-Receptor complex formation", "reactants": ["_5ab2fb22-a74f-4ad6-8d03-ebb5c7395d83", "_7b9688f8-6a99-4fed-8c91-3e66409e7dc3"], "modifiers": [], "products": ["_4c261be4-4b20-47ee-94a0-e5b3cf4a8dc0"], "id": "COPASI7"}, {"compartment": "COPASI1", "species_name": "CoActivator", "id": "COPASI5"}, {"compartment": "COPASI1", "species_name": "Ligand-Receptor", "id": "COPASI3"}], "links": [{"source": "COPASI8", "role": "product", "id": "edea5fce-1588-41fe-9a38-8a5bca581559", "value": "1.0", "target": "COPASI6"}, {"source": "COPASI3", "role": "reactant", "id": "_5092d589-4005-4188-a606-c7f14aabd1bc", "value": "1.0", "target": "COPASI8"}, {"source": "COPASI5", "role": "reactant", "id": "a0149aa1-e1ef-49e8-b192-8e1f50dc8697", "value": "1.0", "target": "COPASI8"}, {"source": "COPASI7", "role": "product", "id": "_4c261be4-4b20-47ee-94a0-e5b3cf4a8dc0", "value": "1.0", "target": "COPASI3"}, {"source": "COPASI2", "role": "reactant", "id": "_5ab2fb22-a74f-4ad6-8d03-ebb5c7395d83", "value": "1.0", "target": "COPASI7"}, {"source": "COPASI4", "role": "reactant", "id": "_7b9688f8-6a99-4fed-8c91-3e66409e7dc3", "value": "1.0", "target": "COPASI7"}]}
+{
+    "links": [
+        {
+            "id": "edea5fce-1588-41fe-9a38-8a5bca581559", 
+            "role": "product", 
+            "source": "COPASI8", 
+            "target": "COPASI6", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_5092d589-4005-4188-a606-c7f14aabd1bc", 
+            "role": "reactant", 
+            "source": "COPASI3", 
+            "target": "COPASI8", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "a0149aa1-e1ef-49e8-b192-8e1f50dc8697", 
+            "role": "reactant", 
+            "source": "COPASI5", 
+            "target": "COPASI8", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_4c261be4-4b20-47ee-94a0-e5b3cf4a8dc0", 
+            "role": "product", 
+            "source": "COPASI7", 
+            "target": "COPASI3", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_5ab2fb22-a74f-4ad6-8d03-ebb5c7395d83", 
+            "role": "reactant", 
+            "source": "COPASI2", 
+            "target": "COPASI7", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_7b9688f8-6a99-4fed-8c91-3e66409e7dc3", 
+            "role": "reactant", 
+            "source": "COPASI4", 
+            "target": "COPASI7", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "COPASI1", 
+            "id": "COPASI6", 
+            "species_name": "Ligand-Receptor-CoActivator"
+        }, 
+        {
+            "compartment": "COPASI1", 
+            "id": "COPASI2", 
+            "species_name": "Ligand"
+        }, 
+        {
+            "compartment": "COPASI1", 
+            "id": "COPASI4", 
+            "species_name": "Receptor"
+        }, 
+        {
+            "id": "COPASI8", 
+            "modifiers": [], 
+            "products": [
+                "edea5fce-1588-41fe-9a38-8a5bca581559"
+            ], 
+            "reactants": [
+                "_5092d589-4005-4188-a606-c7f14aabd1bc", 
+                "a0149aa1-e1ef-49e8-b192-8e1f50dc8697"
+            ], 
+            "reaction_name": "Ligand-Receptor-CoActivator complex formation"
+        }, 
+        {
+            "id": "COPASI7", 
+            "modifiers": [], 
+            "products": [
+                "_4c261be4-4b20-47ee-94a0-e5b3cf4a8dc0"
+            ], 
+            "reactants": [
+                "_5ab2fb22-a74f-4ad6-8d03-ebb5c7395d83", 
+                "_7b9688f8-6a99-4fed-8c91-3e66409e7dc3"
+            ], 
+            "reaction_name": "Ligand-Receptor complex formation"
+        }, 
+        {
+            "compartment": "COPASI1", 
+            "id": "COPASI5", 
+            "species_name": "CoActivator"
+        }, 
+        {
+            "compartment": "COPASI1", 
+            "id": "COPASI3", 
+            "species_name": "Ligand-Receptor"
+        }
+    ]
+}

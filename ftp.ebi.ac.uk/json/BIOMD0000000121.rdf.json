@@ -1,1 +1,161 @@
-{"nodes": [{"reaction_name": "c1-i transition", "reactants": ["_119424"], "modifiers": [], "products": ["_119436"], "id": "metaid_0000045"}, {"compartment": "metaid_0000003", "species_name": "ClosedState_2", "id": "metaid_0000005"}, {"reaction_name": "c3-c2 transition", "reactants": ["_119279"], "modifiers": [], "products": ["_119292"], "id": "metaid_0000041"}, {"compartment": "metaid_0000003", "species_name": "InactivationState", "id": "metaid_0000008"}, {"compartment": "metaid_0000003", "species_name": "cardiac delayed rectifier current", "id": "metaid_0000048"}, {"reaction_name": "o-i transition", "reactants": ["_119388"], "modifiers": [], "products": ["_119400"], "id": "metaid_0000044"}, {"compartment": "metaid_0000003", "species_name": "ClosedState_3", "id": "metaid_0000004"}, {"reaction_name": "c1-o transition", "reactants": ["_119352"], "modifiers": [], "products": ["_119364"], "id": "metaid_0000043"}, {"compartment": "metaid_0000003", "species_name": "OpenState", "id": "metaid_0000007"}, {"reaction_name": "c2-c1 transition", "reactants": ["_119316"], "modifiers": [], "products": ["_119328"], "id": "metaid_0000042"}, {"compartment": "metaid_0000003", "species_name": "ClosedState_1", "id": "metaid_0000006"}], "links": [{"source": "metaid_0000045", "role": "product", "id": "_119436", "value": "1.0", "target": "metaid_0000008"}, {"source": "metaid_0000006", "role": "reactant", "id": "_119424", "value": "1.0", "target": "metaid_0000045"}, {"source": "metaid_0000041", "role": "product", "id": "_119292", "value": "1.0", "target": "metaid_0000005"}, {"source": "metaid_0000004", "role": "reactant", "id": "_119279", "value": "1.0", "target": "metaid_0000041"}, {"source": "metaid_0000044", "role": "product", "id": "_119400", "value": "1.0", "target": "metaid_0000008"}, {"source": "metaid_0000007", "role": "reactant", "id": "_119388", "value": "1.0", "target": "metaid_0000044"}, {"source": "metaid_0000043", "role": "product", "id": "_119364", "value": "1.0", "target": "metaid_0000007"}, {"source": "metaid_0000006", "role": "reactant", "id": "_119352", "value": "1.0", "target": "metaid_0000043"}, {"source": "metaid_0000042", "role": "product", "id": "_119328", "value": "1.0", "target": "metaid_0000006"}, {"source": "metaid_0000005", "role": "reactant", "id": "_119316", "value": "1.0", "target": "metaid_0000042"}]}
+{
+    "links": [
+        {
+            "id": "_119436", 
+            "role": "product", 
+            "source": "metaid_0000045", 
+            "target": "metaid_0000008", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_119424", 
+            "role": "reactant", 
+            "source": "metaid_0000006", 
+            "target": "metaid_0000045", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_119292", 
+            "role": "product", 
+            "source": "metaid_0000041", 
+            "target": "metaid_0000005", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_119279", 
+            "role": "reactant", 
+            "source": "metaid_0000004", 
+            "target": "metaid_0000041", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_119400", 
+            "role": "product", 
+            "source": "metaid_0000044", 
+            "target": "metaid_0000008", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_119388", 
+            "role": "reactant", 
+            "source": "metaid_0000007", 
+            "target": "metaid_0000044", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_119364", 
+            "role": "product", 
+            "source": "metaid_0000043", 
+            "target": "metaid_0000007", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_119352", 
+            "role": "reactant", 
+            "source": "metaid_0000006", 
+            "target": "metaid_0000043", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_119328", 
+            "role": "product", 
+            "source": "metaid_0000042", 
+            "target": "metaid_0000006", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_119316", 
+            "role": "reactant", 
+            "source": "metaid_0000005", 
+            "target": "metaid_0000042", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000045", 
+            "modifiers": [], 
+            "products": [
+                "_119436"
+            ], 
+            "reactants": [
+                "_119424"
+            ], 
+            "reaction_name": "c1-i transition"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000005", 
+            "species_name": "ClosedState_2"
+        }, 
+        {
+            "id": "metaid_0000041", 
+            "modifiers": [], 
+            "products": [
+                "_119292"
+            ], 
+            "reactants": [
+                "_119279"
+            ], 
+            "reaction_name": "c3-c2 transition"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000008", 
+            "species_name": "InactivationState"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000048", 
+            "species_name": "cardiac delayed rectifier current"
+        }, 
+        {
+            "id": "metaid_0000044", 
+            "modifiers": [], 
+            "products": [
+                "_119400"
+            ], 
+            "reactants": [
+                "_119388"
+            ], 
+            "reaction_name": "o-i transition"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000004", 
+            "species_name": "ClosedState_3"
+        }, 
+        {
+            "id": "metaid_0000043", 
+            "modifiers": [], 
+            "products": [
+                "_119364"
+            ], 
+            "reactants": [
+                "_119352"
+            ], 
+            "reaction_name": "c1-o transition"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000007", 
+            "species_name": "OpenState"
+        }, 
+        {
+            "id": "metaid_0000042", 
+            "modifiers": [], 
+            "products": [
+                "_119328"
+            ], 
+            "reactants": [
+                "_119316"
+            ], 
+            "reaction_name": "c2-c1 transition"
+        }, 
+        {
+            "compartment": "metaid_0000003", 
+            "id": "metaid_0000006", 
+            "species_name": "ClosedState_1"
+        }
+    ]
+}

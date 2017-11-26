@@ -1,1 +1,100 @@
-{"nodes": [{"compartment": "_3dc20fc0-7af7-4695-89ef-4e0a4551c49a", "species_name": "A", "id": "COPASI2"}, {"reaction_name": "Nucleation", "reactants": ["_600cc281-ab91-43fa-a7f7-a5e7b59b67c6"], "modifiers": [], "products": ["_0341b081-4dc6-4120-af86-17db74dac4c0"], "id": "COPASI7"}, {"compartment": "_3dc20fc0-7af7-4695-89ef-4e0a4551c49a", "species_name": "B", "id": "COPASI1"}, {"reaction_name": "Growth", "reactants": ["_1445a9b3-d762-4a67-b5ae-25047f6b9188", "_225354e9-9822-4558-ac8b-8566d6702825"], "modifiers": [], "products": ["_77323360-646d-4581-a232-90e34b3747bc"], "id": "COPASI8"}], "links": [{"source": "COPASI7", "role": "product", "id": "_0341b081-4dc6-4120-af86-17db74dac4c0", "value": "1.0", "target": "COPASI1"}, {"source": "COPASI2", "role": "reactant", "id": "_600cc281-ab91-43fa-a7f7-a5e7b59b67c6", "value": "1.0", "target": "COPASI7"}, {"source": "COPASI8", "role": "product", "id": "_77323360-646d-4581-a232-90e34b3747bc", "value": "2.0", "target": "COPASI1"}, {"source": "COPASI2", "role": "reactant", "id": "_1445a9b3-d762-4a67-b5ae-25047f6b9188", "value": "1.0", "target": "COPASI8"}, {"source": "COPASI1", "role": "reactant", "id": "_225354e9-9822-4558-ac8b-8566d6702825", "value": "1.0", "target": "COPASI8"}]}
+{
+    "links": [
+        {
+            "id": "_0341b081-4dc6-4120-af86-17db74dac4c0", 
+            "role": "product", 
+            "source": "COPASI7", 
+            "target": "COPASI1", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_600cc281-ab91-43fa-a7f7-a5e7b59b67c6", 
+            "role": "reactant", 
+            "source": "COPASI2", 
+            "target": "COPASI7", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_8de0125b-24a1-4ce4-804d-99cea5e8aff1", 
+            "role": "modifier", 
+            "source": "COPASI2", 
+            "target": "COPASI7", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_77323360-646d-4581-a232-90e34b3747bc", 
+            "role": "product", 
+            "source": "COPASI8", 
+            "target": "COPASI1", 
+            "value": "2.0"
+        }, 
+        {
+            "id": "_1445a9b3-d762-4a67-b5ae-25047f6b9188", 
+            "role": "reactant", 
+            "source": "COPASI2", 
+            "target": "COPASI8", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_225354e9-9822-4558-ac8b-8566d6702825", 
+            "role": "reactant", 
+            "source": "COPASI1", 
+            "target": "COPASI8", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "e2caa7b7-7172-458b-8334-c3d7ef50c89c", 
+            "role": "modifier", 
+            "source": "COPASI1", 
+            "target": "COPASI8", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_2f440931-9fa0-486e-b6a7-480a5a1c7187", 
+            "role": "modifier", 
+            "source": "COPASI2", 
+            "target": "COPASI8", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "_3dc20fc0-7af7-4695-89ef-4e0a4551c49a", 
+            "id": "COPASI2", 
+            "species_name": "A"
+        }, 
+        {
+            "id": "COPASI7", 
+            "modifiers": [
+                "_8de0125b-24a1-4ce4-804d-99cea5e8aff1"
+            ], 
+            "products": [
+                "_0341b081-4dc6-4120-af86-17db74dac4c0"
+            ], 
+            "reactants": [
+                "_600cc281-ab91-43fa-a7f7-a5e7b59b67c6"
+            ], 
+            "reaction_name": "Nucleation"
+        }, 
+        {
+            "compartment": "_3dc20fc0-7af7-4695-89ef-4e0a4551c49a", 
+            "id": "COPASI1", 
+            "species_name": "B"
+        }, 
+        {
+            "id": "COPASI8", 
+            "modifiers": [
+                "e2caa7b7-7172-458b-8334-c3d7ef50c89c", 
+                "_2f440931-9fa0-486e-b6a7-480a5a1c7187"
+            ], 
+            "products": [
+                "_77323360-646d-4581-a232-90e34b3747bc"
+            ], 
+            "reactants": [
+                "_1445a9b3-d762-4a67-b5ae-25047f6b9188", 
+                "_225354e9-9822-4558-ac8b-8566d6702825"
+            ], 
+            "reaction_name": "Growth"
+        }
+    ]
+}

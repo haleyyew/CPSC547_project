@@ -1,1 +1,487 @@
-{"nodes": [{"reaction_name": "J12", "reactants": ["CDMT00046"], "modifiers": [], "products": ["CDMT00047"], "id": "J12"}, {"reaction_name": "J2", "reactants": ["CDMT00005"], "modifiers": [], "products": ["CDMT00006"], "id": "J2"}, {"reaction_name": "J9", "reactants": ["CDMT00034"], "modifiers": [], "products": ["CDMT00035"], "id": "J9"}, {"compartment": "compartment", "species_name": "IRF7m", "id": "IRF7m"}, {"reaction_name": "J11", "reactants": ["CDMT00042"], "modifiers": [], "products": ["CDMT00043"], "id": "J11"}, {"reaction_name": "J1", "reactants": ["CDMT00001"], "modifiers": [], "products": ["CDMT00002"], "id": "J1"}, {"compartment": "compartment", "species_name": "IFNb_mRNA", "id": "IFNb_mRNA"}, {"compartment": "compartment", "species_name": "STATP2n", "id": "STATP2n"}, {"reaction_name": "J10", "reactants": ["CDMT00038"], "modifiers": [], "products": ["CDMT00039"], "id": "J10"}, {"reaction_name": "J7", "reactants": ["CDMT00026"], "modifiers": [], "products": ["CDMT00027"], "id": "J7"}, {"compartment": "compartment", "species_name": "STATm", "id": "STATm"}, {"compartment": "compartment", "species_name": "TNFam", "id": "TNFam"}, {"compartment": "c2", "species_name": "IFNa_env", "id": "IFNa_env"}, {"reaction_name": "J8", "reactants": ["CDMT00030"], "modifiers": [], "products": ["CDMT00031"], "id": "J8"}, {"reaction_name": "J6", "reactants": ["CDMT00022"], "modifiers": [], "products": ["CDMT00023"], "id": "J6"}, {"compartment": "c2", "species_name": "TNFenv", "id": "TNFenv"}, {"compartment": "compartment", "species_name": "w", "id": "w"}, {"compartment": "compartment", "species_name": "STAT", "id": "STAT"}, {"reaction_name": "J5", "reactants": ["CDMT00017"], "modifiers": [], "products": ["CDMT00018"], "id": "J5"}, {"compartment": "compartment", "species_name": "SOCS1m", "id": "SOCS1m"}, {"compartment": "compartment", "species_name": "IFNa_mRNA", "id": "IFNa_mRNA"}, {"reaction_name": "J4", "reactants": ["CDMT00013"], "modifiers": [], "products": ["CDMT00014"], "id": "J4"}, {"compartment": "compartment", "species_name": "IRF7Pn", "id": "IRF7Pn"}, {"reaction_name": "J3", "reactants": ["CDMT00009"], "modifiers": [], "products": ["CDMT00010"], "id": "J3"}, {"compartment": "c2", "species_name": "IFNb_env", "id": "IFNb_env"}], "links": [{"source": "J12", "role": "product", "id": "CDMT00047", "value": "1.0", "target": "STAT"}, {"source": "w", "role": "reactant", "id": "CDMT00046", "value": "1.0", "target": "J12"}, {"source": "J2", "role": "product", "id": "CDMT00006", "value": "1.0", "target": "IFNb_env"}, {"source": "w", "role": "reactant", "id": "CDMT00005", "value": "1.0", "target": "J2"}, {"source": "J9", "role": "product", "id": "CDMT00035", "value": "1.0", "target": "TNFam"}, {"source": "w", "role": "reactant", "id": "CDMT00034", "value": "1.0", "target": "J9"}, {"source": "J11", "role": "product", "id": "CDMT00043", "value": "1.0", "target": "STATm"}, {"source": "w", "role": "reactant", "id": "CDMT00042", "value": "1.0", "target": "J11"}, {"source": "J1", "role": "product", "id": "CDMT00002", "value": "1.0", "target": "IFNb_mRNA"}, {"source": "w", "role": "reactant", "id": "CDMT00001", "value": "1.0", "target": "J1"}, {"source": "J10", "role": "product", "id": "CDMT00039", "value": "1.0", "target": "TNFenv"}, {"source": "w", "role": "reactant", "id": "CDMT00038", "value": "1.0", "target": "J10"}, {"source": "J7", "role": "product", "id": "CDMT00027", "value": "1.0", "target": "IFNa_mRNA"}, {"source": "w", "role": "reactant", "id": "CDMT00026", "value": "1.0", "target": "J7"}, {"source": "J8", "role": "product", "id": "CDMT00031", "value": "1.0", "target": "IFNa_env"}, {"source": "w", "role": "reactant", "id": "CDMT00030", "value": "1.0", "target": "J8"}, {"source": "J6", "role": "product", "id": "CDMT00023", "value": "1.0", "target": "IRF7Pn"}, {"source": "w", "role": "reactant", "id": "CDMT00022", "value": "1.0", "target": "J6"}, {"source": "J5", "role": "product", "id": "CDMT00018", "value": "1.0", "target": "IRF7m"}, {"source": "w", "role": "reactant", "id": "CDMT00017", "value": "1.0", "target": "J5"}, {"source": "J4", "role": "product", "id": "CDMT00014", "value": "1.0", "target": "SOCS1m"}, {"source": "w", "role": "reactant", "id": "CDMT00013", "value": "1.0", "target": "J4"}, {"source": "J3", "role": "product", "id": "CDMT00010", "value": "1.0", "target": "STATP2n"}, {"source": "w", "role": "reactant", "id": "CDMT00009", "value": "1.0", "target": "J3"}]}
+{
+    "links": [
+        {
+            "id": "CDMT00047", 
+            "role": "product", 
+            "source": "J12", 
+            "target": "STAT", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00046", 
+            "role": "reactant", 
+            "source": "w", 
+            "target": "J12", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00048", 
+            "role": "modifier", 
+            "source": "STATm", 
+            "target": "J12", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00006", 
+            "role": "product", 
+            "source": "J2", 
+            "target": "IFNb_env", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00005", 
+            "role": "reactant", 
+            "source": "w", 
+            "target": "J2", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00007", 
+            "role": "modifier", 
+            "source": "IFNb_mRNA", 
+            "target": "J2", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00035", 
+            "role": "product", 
+            "source": "J9", 
+            "target": "TNFam", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00034", 
+            "role": "reactant", 
+            "source": "w", 
+            "target": "J9", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00036", 
+            "role": "modifier", 
+            "source": "TNFenv", 
+            "target": "J9", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00043", 
+            "role": "product", 
+            "source": "J11", 
+            "target": "STATm", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00042", 
+            "role": "reactant", 
+            "source": "w", 
+            "target": "J11", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00044", 
+            "role": "modifier", 
+            "source": "STATP2n", 
+            "target": "J11", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00002", 
+            "role": "product", 
+            "source": "J1", 
+            "target": "IFNb_mRNA", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00001", 
+            "role": "reactant", 
+            "source": "w", 
+            "target": "J1", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00003", 
+            "role": "modifier", 
+            "source": "IRF7Pn", 
+            "target": "J1", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00039", 
+            "role": "product", 
+            "source": "J10", 
+            "target": "TNFenv", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00038", 
+            "role": "reactant", 
+            "source": "w", 
+            "target": "J10", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00040", 
+            "role": "modifier", 
+            "source": "TNFam", 
+            "target": "J10", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00027", 
+            "role": "product", 
+            "source": "J7", 
+            "target": "IFNa_mRNA", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00026", 
+            "role": "reactant", 
+            "source": "w", 
+            "target": "J7", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00028", 
+            "role": "modifier", 
+            "source": "IRF7Pn", 
+            "target": "J7", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00031", 
+            "role": "product", 
+            "source": "J8", 
+            "target": "IFNa_env", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00030", 
+            "role": "reactant", 
+            "source": "w", 
+            "target": "J8", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00032", 
+            "role": "modifier", 
+            "source": "IFNa_mRNA", 
+            "target": "J8", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00023", 
+            "role": "product", 
+            "source": "J6", 
+            "target": "IRF7Pn", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00022", 
+            "role": "reactant", 
+            "source": "w", 
+            "target": "J6", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00024", 
+            "role": "modifier", 
+            "source": "IRF7m", 
+            "target": "J6", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00018", 
+            "role": "product", 
+            "source": "J5", 
+            "target": "IRF7m", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00017", 
+            "role": "reactant", 
+            "source": "w", 
+            "target": "J5", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00020", 
+            "role": "modifier", 
+            "source": "IRF7Pn", 
+            "target": "J5", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00019", 
+            "role": "modifier", 
+            "source": "STATP2n", 
+            "target": "J5", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00014", 
+            "role": "product", 
+            "source": "J4", 
+            "target": "SOCS1m", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00013", 
+            "role": "reactant", 
+            "source": "w", 
+            "target": "J4", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00015", 
+            "role": "modifier", 
+            "source": "STATP2n", 
+            "target": "J4", 
+            "value": 0.0
+        }, 
+        {
+            "id": "CDMT00010", 
+            "role": "product", 
+            "source": "J3", 
+            "target": "STATP2n", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00009", 
+            "role": "reactant", 
+            "source": "w", 
+            "target": "J3", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "CDMT00011", 
+            "role": "modifier", 
+            "source": "STAT", 
+            "target": "J3", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "J12", 
+            "modifiers": [
+                "CDMT00048"
+            ], 
+            "products": [
+                "CDMT00047"
+            ], 
+            "reactants": [
+                "CDMT00046"
+            ], 
+            "reaction_name": "J12"
+        }, 
+        {
+            "id": "J2", 
+            "modifiers": [
+                "CDMT00007"
+            ], 
+            "products": [
+                "CDMT00006"
+            ], 
+            "reactants": [
+                "CDMT00005"
+            ], 
+            "reaction_name": "J2"
+        }, 
+        {
+            "id": "J9", 
+            "modifiers": [
+                "CDMT00036"
+            ], 
+            "products": [
+                "CDMT00035"
+            ], 
+            "reactants": [
+                "CDMT00034"
+            ], 
+            "reaction_name": "J9"
+        }, 
+        {
+            "compartment": "compartment", 
+            "id": "IRF7m", 
+            "species_name": "IRF7m"
+        }, 
+        {
+            "id": "J11", 
+            "modifiers": [
+                "CDMT00044"
+            ], 
+            "products": [
+                "CDMT00043"
+            ], 
+            "reactants": [
+                "CDMT00042"
+            ], 
+            "reaction_name": "J11"
+        }, 
+        {
+            "id": "J1", 
+            "modifiers": [
+                "CDMT00003"
+            ], 
+            "products": [
+                "CDMT00002"
+            ], 
+            "reactants": [
+                "CDMT00001"
+            ], 
+            "reaction_name": "J1"
+        }, 
+        {
+            "compartment": "compartment", 
+            "id": "IFNb_mRNA", 
+            "species_name": "IFNb_mRNA"
+        }, 
+        {
+            "compartment": "compartment", 
+            "id": "STATP2n", 
+            "species_name": "STATP2n"
+        }, 
+        {
+            "id": "J10", 
+            "modifiers": [
+                "CDMT00040"
+            ], 
+            "products": [
+                "CDMT00039"
+            ], 
+            "reactants": [
+                "CDMT00038"
+            ], 
+            "reaction_name": "J10"
+        }, 
+        {
+            "id": "J7", 
+            "modifiers": [
+                "CDMT00028"
+            ], 
+            "products": [
+                "CDMT00027"
+            ], 
+            "reactants": [
+                "CDMT00026"
+            ], 
+            "reaction_name": "J7"
+        }, 
+        {
+            "compartment": "compartment", 
+            "id": "STATm", 
+            "species_name": "STATm"
+        }, 
+        {
+            "compartment": "compartment", 
+            "id": "TNFam", 
+            "species_name": "TNFam"
+        }, 
+        {
+            "compartment": "c2", 
+            "id": "IFNa_env", 
+            "species_name": "IFNa_env"
+        }, 
+        {
+            "id": "J8", 
+            "modifiers": [
+                "CDMT00032"
+            ], 
+            "products": [
+                "CDMT00031"
+            ], 
+            "reactants": [
+                "CDMT00030"
+            ], 
+            "reaction_name": "J8"
+        }, 
+        {
+            "id": "J6", 
+            "modifiers": [
+                "CDMT00024"
+            ], 
+            "products": [
+                "CDMT00023"
+            ], 
+            "reactants": [
+                "CDMT00022"
+            ], 
+            "reaction_name": "J6"
+        }, 
+        {
+            "compartment": "c2", 
+            "id": "TNFenv", 
+            "species_name": "TNFenv"
+        }, 
+        {
+            "compartment": "compartment", 
+            "id": "w", 
+            "species_name": "w"
+        }, 
+        {
+            "compartment": "compartment", 
+            "id": "STAT", 
+            "species_name": "STAT"
+        }, 
+        {
+            "id": "J5", 
+            "modifiers": [
+                "CDMT00020", 
+                "CDMT00019"
+            ], 
+            "products": [
+                "CDMT00018"
+            ], 
+            "reactants": [
+                "CDMT00017"
+            ], 
+            "reaction_name": "J5"
+        }, 
+        {
+            "compartment": "compartment", 
+            "id": "SOCS1m", 
+            "species_name": "SOCS1m"
+        }, 
+        {
+            "compartment": "compartment", 
+            "id": "IFNa_mRNA", 
+            "species_name": "IFNa_mRNA"
+        }, 
+        {
+            "id": "J4", 
+            "modifiers": [
+                "CDMT00015"
+            ], 
+            "products": [
+                "CDMT00014"
+            ], 
+            "reactants": [
+                "CDMT00013"
+            ], 
+            "reaction_name": "J4"
+        }, 
+        {
+            "compartment": "compartment", 
+            "id": "IRF7Pn", 
+            "species_name": "IRF7Pn"
+        }, 
+        {
+            "id": "J3", 
+            "modifiers": [
+                "CDMT00011"
+            ], 
+            "products": [
+                "CDMT00010"
+            ], 
+            "reactants": [
+                "CDMT00009"
+            ], 
+            "reaction_name": "J3"
+        }, 
+        {
+            "compartment": "c2", 
+            "id": "IFNb_env", 
+            "species_name": "IFNb_env"
+        }
+    ]
+}

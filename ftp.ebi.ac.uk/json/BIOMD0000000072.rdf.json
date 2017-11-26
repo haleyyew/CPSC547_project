@@ -1,1 +1,222 @@
-{"nodes": [{"reaction_name": "Receptor-Ligand Degradation", "reactants": ["_687039"], "modifiers": [], "products": [], "id": "_954514"}, {"compartment": "_954261", "species_name": "G-alpha-GTP", "id": "_954374"}, {"compartment": "_954261", "species_name": "Receptor-Ligand", "id": "_954394"}, {"reaction_name": "Ligand-Receptor Association", "reactants": ["_686763", "_686775"], "modifiers": [], "products": ["_686787"], "id": "_954414"}, {"compartment": "_954261", "species_name": "Inactive heterotrimeric G-protein", "id": "_954314"}, {"compartment": "_954261", "species_name": "Receptor", "id": "_954294"}, {"compartment": "_954261", "species_name": "G-alpha-GDP", "id": "_954354"}, {"reaction_name": "Receptor Degradation", "reactants": ["_686871"], "modifiers": [], "products": [], "id": "_954454"}, {"reaction_name": "G-protein Activation", "reactants": ["_686967"], "modifiers": [], "products": ["_686991", "_686979"], "id": "_954494"}, {"reaction_name": "Heterotrimeric G-Protein Formation", "reactants": ["_686907", "_686919"], "modifiers": [], "products": ["_686931"], "id": "_954474"}, {"reaction_name": "G-protein Inactivation ", "reactants": ["_687075"], "modifiers": [], "products": ["_687088"], "id": "_954534"}, {"compartment": "_954261", "species_name": "Ligand", "id": "_954274"}, {"compartment": "_954261", "species_name": "Free levels of G-beta-gamma", "id": "_954334"}, {"reaction_name": "Receptor Synthesis", "reactants": [], "modifiers": [], "products": ["_686835"], "id": "_954434"}], "links": [{"source": "_954394", "role": "reactant", "id": "_687039", "value": "1.0", "target": "_954514"}, {"source": "_954414", "role": "product", "id": "_686787", "value": "1.0", "target": "_954394"}, {"source": "_954274", "role": "reactant", "id": "_686763", "value": "1.0", "target": "_954414"}, {"source": "_954294", "role": "reactant", "id": "_686775", "value": "1.0", "target": "_954414"}, {"source": "_954294", "role": "reactant", "id": "_686871", "value": "1.0", "target": "_954454"}, {"source": "_954494", "role": "product", "id": "_686991", "value": "1.0", "target": "_954334"}, {"source": "_954494", "role": "product", "id": "_686979", "value": "1.0", "target": "_954374"}, {"source": "_954314", "role": "reactant", "id": "_686967", "value": "1.0", "target": "_954494"}, {"source": "_954474", "role": "product", "id": "_686931", "value": "1.0", "target": "_954314"}, {"source": "_954354", "role": "reactant", "id": "_686907", "value": "1.0", "target": "_954474"}, {"source": "_954334", "role": "reactant", "id": "_686919", "value": "1.0", "target": "_954474"}, {"source": "_954534", "role": "product", "id": "_687088", "value": "1.0", "target": "_954354"}, {"source": "_954374", "role": "reactant", "id": "_687075", "value": "1.0", "target": "_954534"}, {"source": "_954434", "role": "product", "id": "_686835", "value": "1.0", "target": "_954294"}]}
+{
+    "links": [
+        {
+            "id": "_687039", 
+            "role": "reactant", 
+            "source": "_954394", 
+            "target": "_954514", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_686787", 
+            "role": "product", 
+            "source": "_954414", 
+            "target": "_954394", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_686763", 
+            "role": "reactant", 
+            "source": "_954274", 
+            "target": "_954414", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_686775", 
+            "role": "reactant", 
+            "source": "_954294", 
+            "target": "_954414", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_686871", 
+            "role": "reactant", 
+            "source": "_954294", 
+            "target": "_954454", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_686991", 
+            "role": "product", 
+            "source": "_954494", 
+            "target": "_954334", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_686979", 
+            "role": "product", 
+            "source": "_954494", 
+            "target": "_954374", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_686967", 
+            "role": "reactant", 
+            "source": "_954314", 
+            "target": "_954494", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_687003", 
+            "role": "modifier", 
+            "source": "_954394", 
+            "target": "_954494", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_686931", 
+            "role": "product", 
+            "source": "_954474", 
+            "target": "_954314", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_686907", 
+            "role": "reactant", 
+            "source": "_954354", 
+            "target": "_954474", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_686919", 
+            "role": "reactant", 
+            "source": "_954334", 
+            "target": "_954474", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_687088", 
+            "role": "product", 
+            "source": "_954534", 
+            "target": "_954354", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_687075", 
+            "role": "reactant", 
+            "source": "_954374", 
+            "target": "_954534", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_686835", 
+            "role": "product", 
+            "source": "_954434", 
+            "target": "_954294", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "_954514", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_687039"
+            ], 
+            "reaction_name": "Receptor-Ligand Degradation"
+        }, 
+        {
+            "compartment": "_954261", 
+            "id": "_954374", 
+            "species_name": "G-alpha-GTP"
+        }, 
+        {
+            "compartment": "_954261", 
+            "id": "_954394", 
+            "species_name": "Receptor-Ligand"
+        }, 
+        {
+            "id": "_954414", 
+            "modifiers": [], 
+            "products": [
+                "_686787"
+            ], 
+            "reactants": [
+                "_686763", 
+                "_686775"
+            ], 
+            "reaction_name": "Ligand-Receptor Association"
+        }, 
+        {
+            "compartment": "_954261", 
+            "id": "_954314", 
+            "species_name": "Inactive heterotrimeric G-protein"
+        }, 
+        {
+            "compartment": "_954261", 
+            "id": "_954294", 
+            "species_name": "Receptor"
+        }, 
+        {
+            "compartment": "_954261", 
+            "id": "_954354", 
+            "species_name": "G-alpha-GDP"
+        }, 
+        {
+            "id": "_954454", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_686871"
+            ], 
+            "reaction_name": "Receptor Degradation"
+        }, 
+        {
+            "id": "_954494", 
+            "modifiers": [
+                "_687003"
+            ], 
+            "products": [
+                "_686991", 
+                "_686979"
+            ], 
+            "reactants": [
+                "_686967"
+            ], 
+            "reaction_name": "G-protein Activation"
+        }, 
+        {
+            "id": "_954474", 
+            "modifiers": [], 
+            "products": [
+                "_686931"
+            ], 
+            "reactants": [
+                "_686907", 
+                "_686919"
+            ], 
+            "reaction_name": "Heterotrimeric G-Protein Formation"
+        }, 
+        {
+            "id": "_954534", 
+            "modifiers": [], 
+            "products": [
+                "_687088"
+            ], 
+            "reactants": [
+                "_687075"
+            ], 
+            "reaction_name": "G-protein Inactivation "
+        }, 
+        {
+            "compartment": "_954261", 
+            "id": "_954274", 
+            "species_name": "Ligand"
+        }, 
+        {
+            "compartment": "_954261", 
+            "id": "_954334", 
+            "species_name": "Free levels of G-beta-gamma"
+        }, 
+        {
+            "id": "_954434", 
+            "modifiers": [], 
+            "products": [
+                "_686835"
+            ], 
+            "reactants": [], 
+            "reaction_name": "Receptor Synthesis"
+        }
+    ]
+}

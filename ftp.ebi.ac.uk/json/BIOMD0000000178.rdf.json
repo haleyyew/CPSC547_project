@@ -1,1 +1,136 @@
-{"nodes": [{"compartment": "metaid_0000005", "species_name": "tot_free_BoNT/A", "id": "metaid_0000004"}, {"compartment": "metaid_0000007", "species_name": "lytic_BoNT/A", "id": "metaid_0000012"}, {"compartment": "metaid_0000005", "species_name": "bound_BoNT/A", "id": "metaid_0000010"}, {"reaction_name": "", "reactants": ["b33b4fd4-e9ee-44bd-b12f-0190717b20f1"], "modifiers": [], "products": ["c0fa54a3-dd67-4ee9-a779-65f3e75f986a"], "id": "metaid_0000016"}, {"reaction_name": "", "reactants": ["b655fa6b-c722-4496-a545-0e865eb7f578"], "modifiers": [], "products": ["_128dcde9-e46a-43f3-9f79-46e8eebcdc2a"], "id": "metaid_0000018"}, {"compartment": "metaid_0000005", "species_name": "bulk_BoNT/A", "id": "metaid_0000008"}, {"compartment": "metaid_0000006", "species_name": "transloc_BoNT/A", "id": "metaid_0000011"}, {"reaction_name": "", "reactants": ["_9c61b07d-4fc5-4513-a765-dae8aec78079"], "modifiers": [], "products": ["c22bcfc5-8ecd-4362-9370-97c0740a6222"], "id": "metaid_0000015"}, {"reaction_name": "", "reactants": ["df56dba1-82a7-4813-91a6-43e2420a4206"], "modifiers": [], "products": ["_085174bb-fb85-4247-b0ae-405bbecd90d1"], "id": "metaid_0000017"}, {"compartment": "metaid_0000005", "species_name": "free_BoNT/A", "id": "metaid_0000009"}], "links": [{"source": "metaid_0000016", "role": "product", "id": "c0fa54a3-dd67-4ee9-a779-65f3e75f986a", "value": "1.0", "target": "metaid_0000012"}, {"source": "metaid_0000011", "role": "reactant", "id": "b33b4fd4-e9ee-44bd-b12f-0190717b20f1", "value": "1.0", "target": "metaid_0000016"}, {"source": "metaid_0000018", "role": "product", "id": "_128dcde9-e46a-43f3-9f79-46e8eebcdc2a", "value": "1.0", "target": "metaid_0000009"}, {"source": "metaid_0000008", "role": "reactant", "id": "b655fa6b-c722-4496-a545-0e865eb7f578", "value": "1.0", "target": "metaid_0000018"}, {"source": "metaid_0000015", "role": "product", "id": "c22bcfc5-8ecd-4362-9370-97c0740a6222", "value": "1.0", "target": "metaid_0000011"}, {"source": "metaid_0000010", "role": "reactant", "id": "_9c61b07d-4fc5-4513-a765-dae8aec78079", "value": "1.0", "target": "metaid_0000015"}, {"source": "metaid_0000017", "role": "product", "id": "_085174bb-fb85-4247-b0ae-405bbecd90d1", "value": "1.0", "target": "metaid_0000010"}, {"source": "metaid_0000009", "role": "reactant", "id": "df56dba1-82a7-4813-91a6-43e2420a4206", "value": "1.0", "target": "metaid_0000017"}]}
+{
+    "links": [
+        {
+            "id": "c0fa54a3-dd67-4ee9-a779-65f3e75f986a", 
+            "role": "product", 
+            "source": "metaid_0000016", 
+            "target": "metaid_0000012", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "b33b4fd4-e9ee-44bd-b12f-0190717b20f1", 
+            "role": "reactant", 
+            "source": "metaid_0000011", 
+            "target": "metaid_0000016", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_128dcde9-e46a-43f3-9f79-46e8eebcdc2a", 
+            "role": "product", 
+            "source": "metaid_0000018", 
+            "target": "metaid_0000009", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "b655fa6b-c722-4496-a545-0e865eb7f578", 
+            "role": "reactant", 
+            "source": "metaid_0000008", 
+            "target": "metaid_0000018", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "c22bcfc5-8ecd-4362-9370-97c0740a6222", 
+            "role": "product", 
+            "source": "metaid_0000015", 
+            "target": "metaid_0000011", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_9c61b07d-4fc5-4513-a765-dae8aec78079", 
+            "role": "reactant", 
+            "source": "metaid_0000010", 
+            "target": "metaid_0000015", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_085174bb-fb85-4247-b0ae-405bbecd90d1", 
+            "role": "product", 
+            "source": "metaid_0000017", 
+            "target": "metaid_0000010", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "df56dba1-82a7-4813-91a6-43e2420a4206", 
+            "role": "reactant", 
+            "source": "metaid_0000009", 
+            "target": "metaid_0000017", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "compartment": "metaid_0000005", 
+            "id": "metaid_0000004", 
+            "species_name": "tot_free_BoNT/A"
+        }, 
+        {
+            "compartment": "metaid_0000007", 
+            "id": "metaid_0000012", 
+            "species_name": "lytic_BoNT/A"
+        }, 
+        {
+            "compartment": "metaid_0000005", 
+            "id": "metaid_0000010", 
+            "species_name": "bound_BoNT/A"
+        }, 
+        {
+            "id": "metaid_0000016", 
+            "modifiers": [], 
+            "products": [
+                "c0fa54a3-dd67-4ee9-a779-65f3e75f986a"
+            ], 
+            "reactants": [
+                "b33b4fd4-e9ee-44bd-b12f-0190717b20f1"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "metaid_0000018", 
+            "modifiers": [], 
+            "products": [
+                "_128dcde9-e46a-43f3-9f79-46e8eebcdc2a"
+            ], 
+            "reactants": [
+                "b655fa6b-c722-4496-a545-0e865eb7f578"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "metaid_0000005", 
+            "id": "metaid_0000008", 
+            "species_name": "bulk_BoNT/A"
+        }, 
+        {
+            "compartment": "metaid_0000006", 
+            "id": "metaid_0000011", 
+            "species_name": "transloc_BoNT/A"
+        }, 
+        {
+            "id": "metaid_0000015", 
+            "modifiers": [], 
+            "products": [
+                "c22bcfc5-8ecd-4362-9370-97c0740a6222"
+            ], 
+            "reactants": [
+                "_9c61b07d-4fc5-4513-a765-dae8aec78079"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "metaid_0000017", 
+            "modifiers": [], 
+            "products": [
+                "_085174bb-fb85-4247-b0ae-405bbecd90d1"
+            ], 
+            "reactants": [
+                "df56dba1-82a7-4813-91a6-43e2420a4206"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "metaid_0000005", 
+            "id": "metaid_0000009", 
+            "species_name": "free_BoNT/A"
+        }
+    ]
+}

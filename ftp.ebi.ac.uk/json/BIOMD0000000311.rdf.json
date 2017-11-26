@@ -1,1 +1,151 @@
-{"nodes": [{"reaction_name": "", "reactants": [], "modifiers": [], "products": ["_91bff20f-884f-4f2a-bfae-82155ffab720"], "id": "_518165"}, {"reaction_name": "", "reactants": ["b7997323-fc7b-4a9a-9619-3748ba0b38ad"], "modifiers": [], "products": ["_13ef7771-1175-486c-95f7-8dca20989a0b"], "id": "_518169"}, {"compartment": "_518157", "species_name": "", "id": "_518161"}, {"reaction_name": "", "reactants": [], "modifiers": [], "products": ["_3a95450d-2598-4fa7-86dd-5c4296b79528"], "id": "_518164"}, {"compartment": "_518157", "species_name": "", "id": "_518159"}, {"reaction_name": "", "reactants": ["c2617d96-a0c8-49f1-9814-2ffd90095dd0"], "modifiers": [], "products": [], "id": "_518167"}, {"compartment": "_518157", "species_name": "", "id": "_518163"}, {"reaction_name": "", "reactants": ["_8cd09601-6557-43f2-87db-97577075260b"], "modifiers": [], "products": ["_1d608398-e9c3-4877-b6a7-ea06f7fd1409"], "id": "_518168"}, {"compartment": "_518157", "species_name": "", "id": "_518162"}], "links": [{"source": "_518165", "role": "product", "id": "_91bff20f-884f-4f2a-bfae-82155ffab720", "value": "1.0", "target": "_518159"}, {"source": "_518169", "role": "product", "id": "_13ef7771-1175-486c-95f7-8dca20989a0b", "value": "1.0", "target": "_518163"}, {"source": "_518162", "role": "reactant", "id": "b7997323-fc7b-4a9a-9619-3748ba0b38ad", "value": "1.0", "target": "_518169"}, {"source": "_518164", "role": "product", "id": "_3a95450d-2598-4fa7-86dd-5c4296b79528", "value": "1.0", "target": "_518159"}, {"source": "_518159", "role": "reactant", "id": "c2617d96-a0c8-49f1-9814-2ffd90095dd0", "value": "1.0", "target": "_518167"}, {"source": "_518168", "role": "product", "id": "_1d608398-e9c3-4877-b6a7-ea06f7fd1409", "value": "1.0", "target": "_518162"}, {"source": "_518163", "role": "reactant", "id": "_8cd09601-6557-43f2-87db-97577075260b", "value": "1.0", "target": "_518168"}]}
+{
+    "links": [
+        {
+            "id": "_91bff20f-884f-4f2a-bfae-82155ffab720", 
+            "role": "product", 
+            "source": "_518165", 
+            "target": "_518159", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_72fc9eab-51bb-4a5e-97e5-3be1711e3951", 
+            "role": "modifier", 
+            "source": "_518161", 
+            "target": "_518165", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_13ef7771-1175-486c-95f7-8dca20989a0b", 
+            "role": "product", 
+            "source": "_518169", 
+            "target": "_518163", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "b7997323-fc7b-4a9a-9619-3748ba0b38ad", 
+            "role": "reactant", 
+            "source": "_518162", 
+            "target": "_518169", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_3a95450d-2598-4fa7-86dd-5c4296b79528", 
+            "role": "product", 
+            "source": "_518164", 
+            "target": "_518159", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_6fd40fbc-ef17-4971-b75e-a8a34ca4009a", 
+            "role": "modifier", 
+            "source": "_518162", 
+            "target": "_518164", 
+            "value": 0.0
+        }, 
+        {
+            "id": "c2617d96-a0c8-49f1-9814-2ffd90095dd0", 
+            "role": "reactant", 
+            "source": "_518159", 
+            "target": "_518167", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_1d608398-e9c3-4877-b6a7-ea06f7fd1409", 
+            "role": "product", 
+            "source": "_518168", 
+            "target": "_518162", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_8cd09601-6557-43f2-87db-97577075260b", 
+            "role": "reactant", 
+            "source": "_518163", 
+            "target": "_518168", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_17c3c713-9cc3-4773-9443-fe12961c243f", 
+            "role": "modifier", 
+            "source": "_518159", 
+            "target": "_518168", 
+            "value": 0.0
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "_518165", 
+            "modifiers": [
+                "_72fc9eab-51bb-4a5e-97e5-3be1711e3951"
+            ], 
+            "products": [
+                "_91bff20f-884f-4f2a-bfae-82155ffab720"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }, 
+        {
+            "id": "_518169", 
+            "modifiers": [], 
+            "products": [
+                "_13ef7771-1175-486c-95f7-8dca20989a0b"
+            ], 
+            "reactants": [
+                "b7997323-fc7b-4a9a-9619-3748ba0b38ad"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "_518157", 
+            "id": "_518161", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_518164", 
+            "modifiers": [
+                "_6fd40fbc-ef17-4971-b75e-a8a34ca4009a"
+            ], 
+            "products": [
+                "_3a95450d-2598-4fa7-86dd-5c4296b79528"
+            ], 
+            "reactants": [], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "_518157", 
+            "id": "_518159", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_518167", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "c2617d96-a0c8-49f1-9814-2ffd90095dd0"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "_518157", 
+            "id": "_518163", 
+            "species_name": ""
+        }, 
+        {
+            "id": "_518168", 
+            "modifiers": [
+                "_17c3c713-9cc3-4773-9443-fe12961c243f"
+            ], 
+            "products": [
+                "_1d608398-e9c3-4877-b6a7-ea06f7fd1409"
+            ], 
+            "reactants": [
+                "_8cd09601-6557-43f2-87db-97577075260b"
+            ], 
+            "reaction_name": ""
+        }, 
+        {
+            "compartment": "_518157", 
+            "id": "_518162", 
+            "species_name": ""
+        }
+    ]
+}

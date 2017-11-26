@@ -1,1 +1,178 @@
-{"nodes": [{"reaction_name": "PLC", "reactants": [], "modifiers": [], "products": ["_109696"], "id": "metaid_0000027"}, {"reaction_name": "Calcium export from cell", "reactants": ["_109552"], "modifiers": [], "products": [], "id": "metaid_0000023"}, {"reaction_name": "Leak flux", "reactants": ["_109660"], "modifiers": [], "products": ["_109672"], "id": "metaid_0000026"}, {"reaction_name": "vin", "reactants": [], "modifiers": [], "products": ["_109528"], "id": "metaid_0000022"}, {"compartment": "metaid_0000017", "species_name": "Cytoplasmic Calcium", "id": "metaid_0000019"}, {"reaction_name": "serca", "reactants": ["_109624"], "modifiers": [], "products": ["_109636"], "id": "metaid_0000025"}, {"compartment": "metaid_0000017", "species_name": "IP3", "id": "metaid_0000021"}, {"reaction_name": "CICR", "reactants": ["_109576"], "modifiers": [], "products": ["_109588"], "id": "metaid_0000024"}, {"reaction_name": "IP3 degradation", "reactants": ["_109732"], "modifiers": [], "products": [], "id": "metaid_0000028"}, {"compartment": "metaid_0000033", "species_name": "Calcium in ER", "id": "metaid_0000020"}], "links": [{"source": "metaid_0000027", "role": "product", "id": "_109696", "value": "1.0", "target": "metaid_0000021"}, {"source": "metaid_0000019", "role": "reactant", "id": "_109552", "value": "1.0", "target": "metaid_0000023"}, {"source": "metaid_0000026", "role": "product", "id": "_109672", "value": "1.0", "target": "metaid_0000019"}, {"source": "metaid_0000020", "role": "reactant", "id": "_109660", "value": "1.0", "target": "metaid_0000026"}, {"source": "metaid_0000022", "role": "product", "id": "_109528", "value": "1.0", "target": "metaid_0000019"}, {"source": "metaid_0000025", "role": "product", "id": "_109636", "value": "1.0", "target": "metaid_0000020"}, {"source": "metaid_0000019", "role": "reactant", "id": "_109624", "value": "1.0", "target": "metaid_0000025"}, {"source": "metaid_0000024", "role": "product", "id": "_109588", "value": "1.0", "target": "metaid_0000019"}, {"source": "metaid_0000020", "role": "reactant", "id": "_109576", "value": "1.0", "target": "metaid_0000024"}, {"source": "metaid_0000021", "role": "reactant", "id": "_109732", "value": "1.0", "target": "metaid_0000028"}]}
+{
+    "links": [
+        {
+            "id": "_109696", 
+            "role": "product", 
+            "source": "metaid_0000027", 
+            "target": "metaid_0000021", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109708", 
+            "role": "modifier", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000027", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_109552", 
+            "role": "reactant", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000023", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109672", 
+            "role": "product", 
+            "source": "metaid_0000026", 
+            "target": "metaid_0000019", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109660", 
+            "role": "reactant", 
+            "source": "metaid_0000020", 
+            "target": "metaid_0000026", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109528", 
+            "role": "product", 
+            "source": "metaid_0000022", 
+            "target": "metaid_0000019", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109636", 
+            "role": "product", 
+            "source": "metaid_0000025", 
+            "target": "metaid_0000020", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109624", 
+            "role": "reactant", 
+            "source": "metaid_0000019", 
+            "target": "metaid_0000025", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109588", 
+            "role": "product", 
+            "source": "metaid_0000024", 
+            "target": "metaid_0000019", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109576", 
+            "role": "reactant", 
+            "source": "metaid_0000020", 
+            "target": "metaid_0000024", 
+            "value": "1.0"
+        }, 
+        {
+            "id": "_109600", 
+            "role": "modifier", 
+            "source": "metaid_0000021", 
+            "target": "metaid_0000024", 
+            "value": 0.0
+        }, 
+        {
+            "id": "_109732", 
+            "role": "reactant", 
+            "source": "metaid_0000021", 
+            "target": "metaid_0000028", 
+            "value": "1.0"
+        }
+    ], 
+    "nodes": [
+        {
+            "id": "metaid_0000027", 
+            "modifiers": [
+                "_109708"
+            ], 
+            "products": [
+                "_109696"
+            ], 
+            "reactants": [], 
+            "reaction_name": "PLC"
+        }, 
+        {
+            "id": "metaid_0000023", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_109552"
+            ], 
+            "reaction_name": "Calcium export from cell"
+        }, 
+        {
+            "id": "metaid_0000026", 
+            "modifiers": [], 
+            "products": [
+                "_109672"
+            ], 
+            "reactants": [
+                "_109660"
+            ], 
+            "reaction_name": "Leak flux"
+        }, 
+        {
+            "id": "metaid_0000022", 
+            "modifiers": [], 
+            "products": [
+                "_109528"
+            ], 
+            "reactants": [], 
+            "reaction_name": "vin"
+        }, 
+        {
+            "compartment": "metaid_0000017", 
+            "id": "metaid_0000019", 
+            "species_name": "Cytoplasmic Calcium"
+        }, 
+        {
+            "id": "metaid_0000025", 
+            "modifiers": [], 
+            "products": [
+                "_109636"
+            ], 
+            "reactants": [
+                "_109624"
+            ], 
+            "reaction_name": "serca"
+        }, 
+        {
+            "compartment": "metaid_0000017", 
+            "id": "metaid_0000021", 
+            "species_name": "IP3"
+        }, 
+        {
+            "id": "metaid_0000024", 
+            "modifiers": [
+                "_109600"
+            ], 
+            "products": [
+                "_109588"
+            ], 
+            "reactants": [
+                "_109576"
+            ], 
+            "reaction_name": "CICR"
+        }, 
+        {
+            "id": "metaid_0000028", 
+            "modifiers": [], 
+            "products": [], 
+            "reactants": [
+                "_109732"
+            ], 
+            "reaction_name": "IP3 degradation"
+        }, 
+        {
+            "compartment": "metaid_0000033", 
+            "id": "metaid_0000020", 
+            "species_name": "Calcium in ER"
+        }
+    ]
+}
