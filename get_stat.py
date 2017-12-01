@@ -17,19 +17,19 @@ class NameToIdMap:
 
 	def add_species(self, species_name, species_id, filename):
 		if species_name in self.name_to_id_sp:
-			self.name_to_id_sp[species_name].append({species_id:filename})
+			self.name_to_id_sp[species_name][filename]=species_id
 			self.multiple_sp_cnt += 1
 		else:
-			self.name_to_id_sp[species_name] = []
-			self.name_to_id_sp[species_name].append({species_id:filename})
+			self.name_to_id_sp[species_name] = {}
+			self.name_to_id_sp[species_name][filename]=species_id
 		
 	def add_reaction(self, reaction_name, reaction_id, filename):
 		if reaction_name in self.name_to_id_rxn:
-			self.name_to_id_rxn[reaction_name].append({reaction_id:filename})
+			self.name_to_id_rxn[reaction_name][filename]= reaction_id
 			self.multiple_rxn_cnt += 1
 		else:
-			self.name_to_id_rxn[reaction_name] = []
-			self.name_to_id_rxn[reaction_name].append({reaction_id:filename})
+			self.name_to_id_rxn[reaction_name] = {}
+			self.name_to_id_rxn[reaction_name][filename]= reaction_id
 
 
 parent_dir = os.getcwd() + '/ftp.ebi.ac.uk/json/'

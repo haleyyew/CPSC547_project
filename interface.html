@@ -9,9 +9,9 @@ $(document).ready(function(){
 
 			//var obj = JSON.parse(data)
 			
-			var counter = 0
+			//var counter = 0
 			
-			var div = document.getElementById("species");	
+			var div = document.getElementById("mult_id_");	
 			//div.innerHTML += "<ul>"
 			
 			var keys = Object.keys(data)
@@ -65,13 +65,74 @@ $(document).ready(function(){
 
 		});
     });
+    
+    $("#search_name").click(function(){
+		$.getJSON("multiple_name_sp.json", function(data) {
+			
+			var loc = window.location.pathname;
+			var dir = loc.substring(0, loc.lastIndexOf('/')) + '/ftp.ebi.ac.uk/json/';
+			
+			var div = document.getElementById("search_name_");
+			
+			var name = data["GTP"]
+			var keys = Object.keys(name)
+			
+			var arrayLength = keys.length;
+			div.innerHTML += "GTP :" + arrayLength + "<br>"
+				
+			for (var i = 0; i < arrayLength; i++) {
+				var model = keys[i]
+				var id = name[model]
+				
+				div.innerHTML += " :" + model + " " + id + "<br>"
+				
+				model = "BIOMD" + model
+				var file = dir + model
+				
+				//div.innerHTML += file + "<br>"
+				
+				parseModel(file, id)
+				
+			}
+		});
+    });
+    
+    function parseModel(file, id) {
+		$.getJSON(file, function(data) {
+			
+			var div = document.getElementById("search_name_");
+			div.innerHTML += file + "<br>"
+			
+			var nodes = data["nodes"]
+			
+			for (var i = 0; i < nodes.length; i++) {
+				node = nodes[i]
+				if(node.hasOwnProperty('species_name')){
+					
+					
+					var n = id.localeCompare(node["id"])
+					
+					if (n == 0){
+						div.innerHTML += " :" + node["id"] + "<br>"
+					}
+				}				
+			}
+
+			
+		});		
+	}
+			    
 });
+
+
+
+			
 </script>
 </head>
 <body>
 
-<div id="species" ></div>
-
+<div id="mult_id_" ></div>
+<div id="search_name_" ></div>
 
 <p id="mult_id">Multiple Id</p>
 <p id="search_name">Search Name</p>
