@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#mult_id").click(function(){
+		$.getJSON("multiple_id_test.json", function(data) {         
+
+			//var obj = JSON.parse(data)
+			
+			var counter = 0
+			
+			var div = document.getElementById("species");	
+			//div.innerHTML += "<ul>"
+			
+			var keys = Object.keys(data)
+			
+			var arrayLength = keys.length;
+			for (var i = 0; i < arrayLength; i++) {
+				var model_id = keys[i]
+				div.innerHTML += " " + model_id
+				
+				model = data[model_id]
+				//div.innerHTML += " " + Object.keys(model).length
+				
+
+				var reactions = model['multiple_rxn']
+				//div.innerHTML += " :: " + reactions
+				
+				var reaction_keys = Object.keys(reactions)
+				var reaction_keysLength = reaction_keys.length
+				div.innerHTML += " " + reaction_keysLength
+
+
+				if (reaction_keysLength > 0) {
+					for (var j = 0; j < reaction_keysLength; j++) {
+						var reaction_id = reaction_keys[j]
+						div.innerHTML += " :" + reaction_id + " " + reactions[reaction_id] + "<br>"
+					}
+				}
+
+								/**
+				var species = data[model_id]["multiple_sp"]
+				var species_keys = Object.keys(species)
+				var species_keysLength = species_keys.length
+				**/
+
+			}
+			
+
+			
+			/**
+			$.each( obj["multiple_sp"], function( key, val ) {
+				div.innerHTML += data
+				
+				div.innerHTML += "<li id='" + key + "'>" + key + " val: " + val + "</li>";
+				counter = counter + 1
+			});
+			**/
+
+			//div.innerHTML += "</ul>"
+			
+			//div.innerHTML += counter
+
+		});
+    });
+});
+</script>
+</head>
+<body>
+
+<div id="species" ></div>
+
+
+<p id="mult_id">Multiple Id</p>
+<p id="search_name">Search Name</p>
+
+</body>
+</html>
