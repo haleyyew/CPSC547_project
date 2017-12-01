@@ -72,6 +72,10 @@ $(document).ready(function(){
 			var loc = window.location.pathname;
 			var dir = loc.substring(0, loc.lastIndexOf('/')) + '/ftp.ebi.ac.uk/json/';
 			
+			var parent_dir = loc.substring(0, loc.lastIndexOf('/'))
+			var multiple_name = parent_dir + "/multiple_name_sp.json"
+			var multiple_id = parent_dir + "/stat.json"
+			
 			var div = document.getElementById("search_name_");
 			
 			var name = data["GTP"]
@@ -80,6 +84,7 @@ $(document).ready(function(){
 			var arrayLength = keys.length;
 			div.innerHTML += "GTP :" + arrayLength + "<br>"
 				
+			var listOfPaths = new Array()
 			for (var i = 0; i < arrayLength; i++) {
 				var model = keys[i]
 				var id = name[model]
@@ -91,36 +96,172 @@ $(document).ready(function(){
 				
 				//div.innerHTML += file + "<br>"
 				
-				parseModel(file, id)
+				var path = searchModel(file, id, 2, multiple_name, multiple_id);
+				listOfPaths.push(path)
 				
 			}
+			
+			return listOfPaths
 		});
     });
     
-    function parseModel(file, id) {
-		$.getJSON(file, function(data) {
+    
+    function searchModel(file, id, depth, multiple_name, multiple_id) {
+		
+		var modelJson, multiple_nameLookup, multiple_idLookup;
+		var div = document.getElementById("search_name_");
+		div.innerHTML += file + "<br>"
+		div.innerHTML += multiple_name + "<br>"
+		div.innerHTML += multiple_id + "<br>"
+		
+		$.when(
+			$.getJSON(file, function(data) {
+				modelJson = data;
+			}),
+			$.getJSON(multiple_name, function(data) {	
+				multiple_nameLookup = data;
+			}),
 			
-			var div = document.getElementById("search_name_");
-			div.innerHTML += file + "<br>"
+			$.getJSON(multiple_id, function(data) {	
+				multiple_idLookup = data;
+			})
+		).then(function() {
+
 			
-			var nodes = data["nodes"]
-			
+			var nodes = modelJson["nodes"]
+			var links = modelJson["links"]
+			var path = new Array()
 			for (var i = 0; i < nodes.length; i++) {
 				node = nodes[i]
 				if(node.hasOwnProperty('species_name')){
-					
 					
 					var n = id.localeCompare(node["id"])
 					
 					if (n == 0){
 						div.innerHTML += " :" + node["id"] + "<br>"
+						var model_id = file.split("BIOMD")[1];
+						model_id = model_id.split(".rdf")[0];
+						
+						path = traverseGraphDown(nodes, links, node, model_id, depth, multiple_nameLookup, multiple_idLookup)
+						div.innerHTML += "\\\\\\\\\\\     " + id + " "+model_id +" "+ path.length  + "<br>"
+						console.log(path);
 					}
 				}				
 			}
 
-			
-		});		
+			return path
+
+		});
 	}
+	
+	function traverseGraphDown(nodes, links, startNode, model_id, depth, multiple_nameLookup, multiple_idLookup){
+		var path = [];
+		
+		var currentDepth = 0
+		var numNodesToNextLevel = 1
+		var numNextLevelNodes = 0
+		
+		var loc = window.location.pathname;
+		var dir = loc.substring(0, loc.lastIndexOf('/'))
+
+		
+		var mult_name_keys = Object.keys(multiple_nameLookup)
+		var mult_id_keys = Object.keys(multiple_idLookup)
+		var div = document.getElementById("join_models_");
+			
+		var recurDepthStr = "==="
+		var queue = [];
+		
+		queue.push(startNode);
+		path.push(startNode);
+		
+		while (queue.length > 0){
+			var node = queue.shift();
+			numNodesToNextLevel = numNodesToNextLevel - 1;
+						
+			if (currentDepth >= depth){break;}
+			
+			if(node.hasOwnProperty('species_name')){
+
+				div.innerHTML += " ::" + mult_name_keys.length + " " + mult_id_keys.length + " " + node['species_name'] + " " + model_id + "<br>"
+				
+				for (var k = 0; k < links.length; k++) {
+					var specRef = links[k];
+					
+					var n = node['id'].localeCompare(specRef['source']);
+					
+					if (n == 0){
+						div.innerHTML += "::     "+recurDepthStr + specRef['id'] + " " + specRef['target']  + "<br>"
+						path.push(specRef);
+						
+						for (var i = 0; i < nodes.length; i++) {
+							var childNodeRxn = nodes[i];
+								
+							n = childNodeRxn['id'].localeCompare(specRef['target']);
+							
+							if (n == 0){
+								div.innerHTML += "::     "+recurDepthStr + childNodeRxn['id'] + "<br>"
+								queue.push(childNodeRxn);
+								path.push(childNodeRxn);
+								numNextLevelNodes = numNextLevelNodes + 1;
+							}
+						}
+					}
+					
+
+				}
+			}
+			if(node.hasOwnProperty('reaction_name')){
+				div.innerHTML += " :::" +  node['reaction_name']  + "<br>"
+				
+				var productLinks = node['products'];
+				var productMap = productLinks.reduce(function(map, obj) {
+					map[obj] = obj;
+					return map;
+				}, {});
+				
+				//console.log(productMap);
+				
+				for (var j = 0; j < links.length; j++) {
+					var specRef = links[j];
+
+					if (specRef['id'] in productMap){
+						div.innerHTML += ":::     "+recurDepthStr + specRef['id'] + " " + specRef['target']  + "<br>"
+						path.push(specRef);
+						
+						for (var x = 0; x < nodes.length; x++) {
+							var childNodeSp = nodes[x];
+								
+							n = childNodeSp['id'].localeCompare(specRef['target']);
+							
+							if (n == 0){
+								div.innerHTML += ":::     "+recurDepthStr + childNodeSp['id'] + "<br>"
+								queue.push(childNodeSp);
+								path.push(childNodeSp);
+								numNextLevelNodes = numNextLevelNodes + 1;
+							}
+						}
+					}
+				}
+			}			
+			
+			if (numNodesToNextLevel == 0){
+				currentDepth = currentDepth + 1;
+				recurDepthStr += "="
+				numNodesToNextLevel = numNextLevelNodes;
+				numNextLevelNodes = 0;
+			}
+		}
+		
+		div.innerHTML += "]]]]]]]]]]]]]]]]]]]]]]]]]"+ model_id +" "+currentDepth+ "<br>"
+
+		return path;
+
+		
+	}
+	
+	function traverseGraphUp(){}
+
 			    
 });
 
@@ -133,9 +274,12 @@ $(document).ready(function(){
 
 <div id="mult_id_" ></div>
 <div id="search_name_" ></div>
+----------
+<div id="join_models_" ></div>
 
 <p id="mult_id">Multiple Id</p>
 <p id="search_name">Search Name</p>
+
 
 </body>
 </html>
