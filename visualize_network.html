@@ -28,7 +28,7 @@ var simulation = d3.forceSimulation()
 d3.select("input[type=range]")
     .on("input", inputted);
 
-d3.json("BIOMD0000000001.json", function(error, graph) {
+d3.json("output.json", function(error, graph) {
   if (error) throw error;
 
   simulation

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -99,6 +100,10 @@ $(document).ready(function(){
 				var path = searchModel(file, id, 2, multiple_name, multiple_id);
 				listOfPaths.push(path)
 				
+				//var out = JSON.stringify(path);
+				//console.log(out);		
+				
+				
 			}
 			
 			return listOfPaths
@@ -107,6 +112,8 @@ $(document).ready(function(){
     
     
     function searchModel(file, id, depth, multiple_name, multiple_id) {
+		
+		var path;
 		
 		var modelJson, multiple_nameLookup, multiple_idLookup;
 		var div = document.getElementById("search_name_");
@@ -144,7 +151,10 @@ $(document).ready(function(){
 						
 						path = traverseGraphDown(nodes, links, node, model_id, depth, multiple_nameLookup, multiple_idLookup)
 						div.innerHTML += "\\\\\\\\\\\     " + id + " "+model_id +" "+ path.length  + "<br>"
-						console.log(path);
+						//console.log(path);
+						
+						var out = JSON.stringify(path);
+						document.getElementById("demo").innerHTML += out + "<br> <br>"; 		
 					}
 				}				
 			}
@@ -155,7 +165,7 @@ $(document).ready(function(){
 	}
 	
 	function traverseGraphDown(nodes, links, startNode, model_id, depth, multiple_nameLookup, multiple_idLookup){
-		var path = [];
+		var path = {};
 		
 		var currentDepth = 0
 		var numNodesToNextLevel = 1
@@ -173,7 +183,10 @@ $(document).ready(function(){
 		var queue = [];
 		
 		queue.push(startNode);
-		path.push(startNode);
+		path['nodes'] = [];
+		path['links'] = [];
+		startNode['group'] = 1
+		path['nodes'].push(startNode);
 		
 		while (queue.length > 0){
 			var node = queue.shift();
@@ -192,7 +205,7 @@ $(document).ready(function(){
 					
 					if (n == 0){
 						div.innerHTML += "::     "+recurDepthStr + specRef['id'] + " " + specRef['target']  + "<br>"
-						path.push(specRef);
+						path['links'].push(specRef);
 						
 						for (var i = 0; i < nodes.length; i++) {
 							var childNodeRxn = nodes[i];
@@ -202,7 +215,8 @@ $(document).ready(function(){
 							if (n == 0){
 								div.innerHTML += "::     "+recurDepthStr + childNodeRxn['id'] + "<br>"
 								queue.push(childNodeRxn);
-								path.push(childNodeRxn);
+								childNodeRxn['group'] = 1
+								path['nodes'].push(childNodeRxn);
 								numNextLevelNodes = numNextLevelNodes + 1;
 							}
 						}
@@ -227,7 +241,7 @@ $(document).ready(function(){
 
 					if (specRef['id'] in productMap){
 						div.innerHTML += ":::     "+recurDepthStr + specRef['id'] + " " + specRef['target']  + "<br>"
-						path.push(specRef);
+						path['links'].push(specRef);
 						
 						for (var x = 0; x < nodes.length; x++) {
 							var childNodeSp = nodes[x];
@@ -237,7 +251,8 @@ $(document).ready(function(){
 							if (n == 0){
 								div.innerHTML += ":::     "+recurDepthStr + childNodeSp['id'] + "<br>"
 								queue.push(childNodeSp);
-								path.push(childNodeSp);
+								childNodeSp['group'] = 1
+								path['nodes'].push(childNodeSp);
 								numNextLevelNodes = numNextLevelNodes + 1;
 							}
 						}
@@ -276,6 +291,8 @@ $(document).ready(function(){
 <div id="search_name_" ></div>
 ----------
 <div id="join_models_" ></div>
+----------
+<div id="demo" ></div>
 
 <p id="mult_id">Multiple Id</p>
 <p id="search_name">Search Name</p>
