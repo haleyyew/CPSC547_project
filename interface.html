@@ -4,71 +4,63 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
+	
+var listOfPaths = [];	
+var numPaths = 0;
+	
 $(document).ready(function(){
     $("#mult_id").click(function(){
 		$.getJSON("multiple_id_test.json", function(data) {         
-
-			//var obj = JSON.parse(data)
-			
-			//var counter = 0
 			
 			var div = document.getElementById("mult_id_");	
-			//div.innerHTML += "<ul>"
-			
+
 			var keys = Object.keys(data)
 			
 			var arrayLength = keys.length;
 			for (var i = 0; i < arrayLength; i++) {
 				var model_id = keys[i]
-				div.innerHTML += " " + model_id
+				//div.innerHTML += " " + model_id
 				
 				model = data[model_id]
-				//div.innerHTML += " " + Object.keys(model).length
-				
 
 				var reactions = model['multiple_rxn']
-				//div.innerHTML += " :: " + reactions
 				
 				var reaction_keys = Object.keys(reactions)
 				var reaction_keysLength = reaction_keys.length
-				div.innerHTML += " " + reaction_keysLength
-
+				//div.innerHTML += " " + reaction_keysLength
 
 				if (reaction_keysLength > 0) {
 					for (var j = 0; j < reaction_keysLength; j++) {
 						var reaction_id = reaction_keys[j]
-						div.innerHTML += " :" + reaction_id + " " + reactions[reaction_id] + "<br>"
+						//div.innerHTML += " :" + reaction_id + " " + reactions[reaction_id] + "<br>"
 					}
 				}
-
-								/**
-				var species = data[model_id]["multiple_sp"]
-				var species_keys = Object.keys(species)
-				var species_keysLength = species_keys.length
-				**/
-
 			}
-			
-
-			
-			/**
-			$.each( obj["multiple_sp"], function( key, val ) {
-				div.innerHTML += data
-				
-				div.innerHTML += "<li id='" + key + "'>" + key + " val: " + val + "</li>";
-				counter = counter + 1
-			});
-			**/
-
-			//div.innerHTML += "</ul>"
-			
-			//div.innerHTML += counter
 
 		});
     });
     
+    $("#check_result").click(function(){
+		
+		if (listOfPaths.length != numPaths) {
+			alert("Processing not finished yet");
+		}
+		
+		console.log("check_result listOfPaths.length " + listOfPaths.length);
+				
+		for (var i = 0; i < listOfPaths.length; i++) {
+			var path = listOfPaths[i];
+			var out = JSON.stringify(path);
+			document.getElementById("demo").innerHTML += out + "<br> <br>"; 
+
+		}
+	});
+	
+	    
     $("#search_name").click(function(){
 		$.getJSON("multiple_name_sp.json", function(data) {
+			
+			numPaths = 0;
 			
 			var loc = window.location.pathname;
 			var dir = loc.substring(0, loc.lastIndexOf('/')) + '/ftp.ebi.ac.uk/json/';
@@ -79,34 +71,28 @@ $(document).ready(function(){
 			
 			var div = document.getElementById("search_name_");
 			
-			var name = data["GTP"]
+			var search_name = document.getElementById("search_species_name").value;
+			
+			var name = data[search_name]
 			var keys = Object.keys(name)
 			
 			var arrayLength = keys.length;
-			div.innerHTML += "GTP :" + arrayLength + "<br>"
-				
-			var listOfPaths = new Array()
+			//div.innerHTML += "GTP :" + arrayLength + "<br>"
+
 			for (var i = 0; i < arrayLength; i++) {
 				var model = keys[i]
 				var id = name[model]
 				
-				div.innerHTML += " :" + model + " " + id + "<br>"
+				//div.innerHTML += " :" + model + " " + id + "<br>"
 				
 				model = "BIOMD" + model
 				var file = dir + model
 				
-				//div.innerHTML += file + "<br>"
-				
 				var path = searchModel(file, id, 2, multiple_name, multiple_id);
-				listOfPaths.push(path)
-				
-				//var out = JSON.stringify(path);
-				//console.log(out);		
-				
-				
+
 			}
 			
-			return listOfPaths
+			numPaths = arrayLength;
 		});
     });
     
@@ -117,9 +103,9 @@ $(document).ready(function(){
 		
 		var modelJson, multiple_nameLookup, multiple_idLookup;
 		var div = document.getElementById("search_name_");
-		div.innerHTML += file + "<br>"
-		div.innerHTML += multiple_name + "<br>"
-		div.innerHTML += multiple_id + "<br>"
+		//div.innerHTML += file + "<br>"
+		//div.innerHTML += multiple_name + "<br>"
+		//div.innerHTML += multiple_id + "<br>"
 		
 		$.when(
 			$.getJSON(file, function(data) {
@@ -145,21 +131,19 @@ $(document).ready(function(){
 					var n = id.localeCompare(node["id"])
 					
 					if (n == 0){
-						div.innerHTML += " :" + node["id"] + "<br>"
+						//div.innerHTML += " :" + node["id"] + "<br>"
 						var model_id = file.split("BIOMD")[1];
 						model_id = model_id.split(".rdf")[0];
 						
 						path = traverseGraphDown(nodes, links, node, model_id, depth, multiple_nameLookup, multiple_idLookup)
-						div.innerHTML += "\\\\\\\\\\\     " + id + " "+model_id +" "+ path.length  + "<br>"
-						//console.log(path);
-						
-						var out = JSON.stringify(path);
-						document.getElementById("demo").innerHTML += out + "<br> <br>"; 		
+						//div.innerHTML += " " + id + " "+model_id +" "+ path.length  + "<br>"
+						listOfPaths.push(path);
+
 					}
 				}				
 			}
-
-			return path
+			
+			div.innerHTML += "Added path for name=" + id + " model="+model_id +" to results. Processed " + listOfPaths.length + " out of " + numPaths +"<br>";
 
 		});
 	}
@@ -183,10 +167,13 @@ $(document).ready(function(){
 		var queue = [];
 		
 		queue.push(startNode);
+		nodeIds = {}
 		path['nodes'] = [];
 		path['links'] = [];
 		startNode['group'] = 1
+		
 		path['nodes'].push(startNode);
+		nodeIds[startNode['id']] = startNode['id'];
 		
 		while (queue.length > 0){
 			var node = queue.shift();
@@ -196,15 +183,14 @@ $(document).ready(function(){
 			
 			if(node.hasOwnProperty('species_name')){
 
-				div.innerHTML += " ::" + mult_name_keys.length + " " + mult_id_keys.length + " " + node['species_name'] + " " + model_id + "<br>"
+				//div.innerHTML += " ::" + mult_name_keys.length + " " + mult_id_keys.length + " " + node['species_name'] + " " + model_id + "<br>"
 				
 				for (var k = 0; k < links.length; k++) {
 					var specRef = links[k];
-					
 					var n = node['id'].localeCompare(specRef['source']);
 					
 					if (n == 0){
-						div.innerHTML += "::     "+recurDepthStr + specRef['id'] + " " + specRef['target']  + "<br>"
+						//div.innerHTML += "::     "+recurDepthStr + specRef['id'] + " " + specRef['target']  + "<br>"
 						path['links'].push(specRef);
 						
 						for (var i = 0; i < nodes.length; i++) {
@@ -213,20 +199,25 @@ $(document).ready(function(){
 							n = childNodeRxn['id'].localeCompare(specRef['target']);
 							
 							if (n == 0){
-								div.innerHTML += "::     "+recurDepthStr + childNodeRxn['id'] + "<br>"
+								//div.innerHTML += "::     "+recurDepthStr + childNodeRxn['id'] + "<br>"
 								queue.push(childNodeRxn);
 								childNodeRxn['group'] = 1
-								path['nodes'].push(childNodeRxn);
+								
+								if (childNodeRxn['id'] in nodeIds){
+									//console.log(childNodeRxn['id']);
+								} else {
+									path['nodes'].push(childNodeRxn);
+									nodeIds[childNodeRxn['id']] = childNodeRxn['id'];
+								}
+																
 								numNextLevelNodes = numNextLevelNodes + 1;
 							}
 						}
 					}
-					
-
 				}
 			}
 			if(node.hasOwnProperty('reaction_name')){
-				div.innerHTML += " :::" +  node['reaction_name']  + "<br>"
+				//div.innerHTML += " :::" +  node['reaction_name']  + "<br>"
 				
 				var productLinks = node['products'];
 				var productMap = productLinks.reduce(function(map, obj) {
@@ -234,13 +225,11 @@ $(document).ready(function(){
 					return map;
 				}, {});
 				
-				//console.log(productMap);
-				
 				for (var j = 0; j < links.length; j++) {
 					var specRef = links[j];
 
 					if (specRef['id'] in productMap){
-						div.innerHTML += ":::     "+recurDepthStr + specRef['id'] + " " + specRef['target']  + "<br>"
+						//div.innerHTML += ":::     "+recurDepthStr + specRef['id'] + " " + specRef['target']  + "<br>"
 						path['links'].push(specRef);
 						
 						for (var x = 0; x < nodes.length; x++) {
@@ -249,10 +238,16 @@ $(document).ready(function(){
 							n = childNodeSp['id'].localeCompare(specRef['target']);
 							
 							if (n == 0){
-								div.innerHTML += ":::     "+recurDepthStr + childNodeSp['id'] + "<br>"
+								//div.innerHTML += ":::     "+recurDepthStr + childNodeSp['id'] + "<br>"
 								queue.push(childNodeSp);
 								childNodeSp['group'] = 1
-								path['nodes'].push(childNodeSp);
+								
+								if (childNodeSp['id'] in nodeIds){
+								} else {
+									path['nodes'].push(childNodeSp);
+									nodeIds[childNodeSp['id']] = childNodeSp['id'];
+								}
+								
 								numNextLevelNodes = numNextLevelNodes + 1;
 							}
 						}
@@ -268,35 +263,35 @@ $(document).ready(function(){
 			}
 		}
 		
-		div.innerHTML += "]]]]]]]]]]]]]]]]]]]]]]]]]"+ model_id +" "+currentDepth+ "<br>"
-
+		//div.innerHTML += " "+ model_id +" "+currentDepth+ "<br>"
 		return path;
 
-		
 	}
 	
 	function traverseGraphUp(){}
-
-			    
+	    
 });
 
 
-
-			
 </script>
 </head>
 <body>
 
-<div id="mult_id_" ></div>
+<!-- <div id="mult_id_" ></div> -->
 <div id="search_name_" ></div>
 ----------
 <div id="join_models_" ></div>
 ----------
 <div id="demo" ></div>
 
-<p id="mult_id">Multiple Id</p>
-<p id="search_name">Search Name</p>
+<!-- <p id="mult_id">Multiple Id</p> -->
+<!-- <p id="search_name">Search Name</p> -->
+<!-- <p id="check_result">Check</p> -->
 
+<input type="search" id="search_species_name">
+<button id="search_name">Search Species Name</button>
+
+<button id="check_result">Print Output</button>
 
 </body>
 </html>
