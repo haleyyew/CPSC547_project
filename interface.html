@@ -10,6 +10,7 @@
 
         var listOfPaths = [];
         var numPaths = 0;
+        var currentSpeciesSearch = "";
 
         $(document).ready(function () {
             $("#mult_id").click(function () {
@@ -65,8 +66,8 @@
                 $.getJSON("multiple_name_sp.json", function (data) {
 					
 					listOfPaths = []
-
                     numPaths = 0;
+                    currentSpeciesSearch = $('#search_species_name').val();
 
                     var loc = window.location.pathname;
                     var dir = loc.substring(0, loc.lastIndexOf('/')) + '/ftp.ebi.ac.uk/json/';
@@ -415,6 +416,166 @@
                 return path;
             }
 
+            $("#combine_models").click(function () {
+
+                if (listOfPaths.length != numPaths) {
+                    alert("Processing not finished yet");
+                    return;
+                }
+
+				var combinedModel = {};
+				combinedModel['nodes'] = [];
+				combinedModel['links'] = [];
+
+				//var speciesLookup = {};
+				//var specRefLookup = {};
+				
+				var joiningSpecies = {};
+				joiningSpecies['id'] = "joined_" + currentSpeciesSearch;
+				joiningSpecies['reaction_name'] = currentSpeciesSearch;
+				joiningSpecies['listOfJoiningSpecies'] = [];
+				
+				combinedModel['nodes'].push(joiningSpecies);
+				
+				var total_n = 0;
+				var total_l = 0;
+				
+				var comb_n = 0;
+				var comb_l = 0;
+				
+				comb_n += 1;
+				
+                for (var i = 0; i < listOfPaths.length; i++) {
+                    var path = listOfPaths[i];
+					//console.log(path['id']);					
+					
+					var model_id = path['id'].split("BIOMD")[1];
+                    model_id = model_id.split(".rdf")[0];
+
+					var nodes = path['nodes'];
+					var links = path['links'];
+					
+					total_n += nodes.length;
+					total_l += links.length;
+					
+					var joinedSpeciesId = "";
+					
+                    for (var j = 0; j < nodes.length; j++) {
+						var node = nodes[j];
+						
+						node['id']  = model_id+"_"+node['id'] ;
+						
+						if (node.hasOwnProperty('species_name')){
+							var n = node['species_name'].localeCompare(currentSpeciesSearch);
+							if (n == 0){
+								joinedSpeciesId = node['id'];
+								console.log(joinedSpeciesId);
+								
+								node['model'] = model_id;
+
+								node['joined'] = 1;
+								
+								joiningSpecies['listOfJoiningSpecies'].push(node);
+								
+								//speciesLookup[node['name']] = joiningSpecies['id'];
+								
+								
+							} else {
+								node['model'] = model_id;
+
+								combinedModel['nodes'].push(node);
+								
+								comb_n += 1;
+							}
+						} else {
+							node['model'] = model_id;
+
+							combinedModel['nodes'].push(node);	
+							
+							comb_n += 1;						
+						}
+					}
+					
+					
+					for (var k = 0; k < links.length; k++) {
+						var specRef = links[k];
+						
+						
+						specRef['source'] =model_id+"_"+specRef['source'];
+						specRef['target'] =model_id+"_"+specRef['target'];
+						
+						if ((specRef['source'].slice(0,10)).localeCompare(specRef['source'].slice(11,21)) == 0){
+							specRef['source'] = specRef['source'].slice(11);
+
+							//console.log(specRef['source']);
+						}
+						
+						if ((specRef['target'].slice(0,10)).localeCompare(specRef['target'].slice(11,21)) == 0){
+							specRef['target'] = specRef['target'].slice(11);
+							
+							//console.log(specRef['target']);
+						}						
+						
+						var n = joinedSpeciesId.localeCompare(specRef['source']);
+						var m = joinedSpeciesId.localeCompare(specRef['target']);
+						
+
+						
+
+						
+
+						
+												
+						if (n == 0 && m == 0){
+							specRef['source'] = joiningSpecies['id'];
+							specRef['target'] = joiningSpecies['id'];
+							
+							//console.log("case 1");
+						} 
+						else if (m == 0) {
+							specRef['target'] = joiningSpecies['id'];
+							
+							
+							//console.log("case 2");
+							//console.log(specRef['source']);
+							
+						}
+						else if (n == 0) {
+							specRef['source'] = joiningSpecies['id'];
+							
+							
+							//console.log("case 3");
+							//console.log(specRef['target']);
+						} else {
+							//specRef['source'] = specRef['source'];
+							//specRef['target'] = specRef['target'];
+							
+							if ("0000000080_metaid_0000011".localeCompare(specRef['source']) == 0){
+								console.log("_");
+								console.log(joinedSpeciesId);
+								console.log(specRef['source']);
+								console.log(specRef['target']);
+							}
+
+						}
+						
+						combinedModel['links'].push(specRef);
+						
+						comb_l += 1;
+					}
+                }
+                
+                var out = JSON.stringify(combinedModel);
+                document.getElementById("demo").innerHTML += out + "<br> <br>";
+                
+                console.log(total_n);
+                console.log(total_l);
+                console.log(comb_n);
+                console.log(comb_l);
+                console.log(joiningSpecies['listOfJoiningSpecies'].length);
+                
+            });
+
 
         <!--Codes for Visualization-->
         <!--count of the elements in the object-->
@@ -566,7 +727,9 @@
 <input type="search" id="search_depth">
 <button id="search_name">Search Species Name</button>
 <button id="check_result">Print Output</button>
-<button id="show_graph">Show Graph</button>
+<button id="show_graph">Show Graph</button> <br>
+
+<button id="combine_models">Combine Models</button>
 
 </body>
 </html>
