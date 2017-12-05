@@ -72,9 +72,18 @@ $(document).ready(function(){
 			var div = document.getElementById("search_name_");
 			
 			var search_name = document.getElementById("search_species_name").value;
+			var search_up_or_down = document.getElementById("search_up_or_down").value;
+			var search_depth = document.getElementById("search_depth").value;
+
+			if ($('#search_species_name').val() == '' || $('#search_up_or_down').val() == '' || $('#search_depth').val() == ''){
+				console.log("empty");
+				return;
+			} 
 			
-			var name = data[search_name]
-			var keys = Object.keys(name)
+			var name = data[search_name];
+			var search_depth = parseInt(search_depth);
+						
+			var keys = Object.keys(name);
 			
 			var arrayLength = keys.length;
 			//div.innerHTML += "GTP :" + arrayLength + "<br>"
@@ -88,7 +97,7 @@ $(document).ready(function(){
 				model = "BIOMD" + model
 				var file = dir + model
 				
-				var path = searchModel(file, id, 2, multiple_name, multiple_id);
+				var path = searchSpecies(file, id, search_depth, multiple_name, multiple_id, search_up_or_down);
 
 			}
 			
@@ -97,7 +106,7 @@ $(document).ready(function(){
     });
     
     
-    function searchModel(file, id, depth, multiple_name, multiple_id) {
+    function searchSpecies(file, id, depth, multiple_name, multiple_id, search_up_or_down) {
 		
 		var path;
 		
@@ -120,7 +129,6 @@ $(document).ready(function(){
 			})
 		).then(function() {
 
-			
 			var nodes = modelJson["nodes"]
 			var links = modelJson["links"]
 			var path = new Array()
@@ -135,8 +143,18 @@ $(document).ready(function(){
 						var model_id = file.split("BIOMD")[1];
 						model_id = model_id.split(".rdf")[0];
 						
-						path = traverseGraphDown(nodes, links, node, model_id, depth, multiple_nameLookup, multiple_idLookup)
+						var n = search_up_or_down.localeCompare("down");
+												
+						if (n == 0){
+							path = traverseGraphDown(nodes, links, node, model_id, depth, multiple_nameLookup, multiple_idLookup)
+							console.log("up");
+						} else {
+							path = traverseGraphUp(nodes, links, node, model_id, depth, multiple_nameLookup, multiple_idLookup)
+							console.log("down");
+						}
+						
 						//div.innerHTML += " " + id + " "+model_id +" "+ path.length  + "<br>"
+						path["id"] = file
 						listOfPaths.push(path);
 
 					}
@@ -268,7 +286,124 @@ $(document).ready(function(){
 
 	}
 	
-	function traverseGraphUp(){}
+	function traverseGraphUp(nodes, links, startNode, model_id, depth, multiple_nameLookup, multiple_idLookup){
+		var path = {};
+		
+		var currentDepth = 0
+		var numNodesToNextLevel = 1
+		var numNextLevelNodes = 0
+		
+		var loc = window.location.pathname;
+		var dir = loc.substring(0, loc.lastIndexOf('/'))
+
+		
+		var mult_name_keys = Object.keys(multiple_nameLookup)
+		var mult_id_keys = Object.keys(multiple_idLookup)
+		var div = document.getElementById("join_models_");
+			
+		var recurDepthStr = "==="
+		var queue = [];
+		
+		queue.push(startNode);
+		nodeIds = {}
+		path['nodes'] = [];
+		path['links'] = [];
+		startNode['group'] = 1
+		
+		path['nodes'].push(startNode);
+		nodeIds[startNode['id']] = startNode['id'];
+		
+		while (queue.length > 0){
+			var node = queue.shift();
+			numNodesToNextLevel = numNodesToNextLevel - 1;
+						
+			if (currentDepth >= depth){break;}
+			
+			if(node.hasOwnProperty('species_name')){
+
+				//div.innerHTML += " ::" + mult_name_keys.length + " " + mult_id_keys.length + " " + node['species_name'] + " " + model_id + "<br>"
+				
+				for (var k = 0; k < links.length; k++) {
+					var specRef = links[k];
+					var n = node['id'].localeCompare(specRef['target']);
+					
+					if (n == 0){
+						//div.innerHTML += "::     "+recurDepthStr + specRef['id'] + " " + specRef['target']  + "<br>"
+						path['links'].push(specRef);
+						
+						for (var i = 0; i < nodes.length; i++) {
+							var childNodeRxn = nodes[i];
+								
+							n = childNodeRxn['id'].localeCompare(specRef['source']);
+							
+							if (n == 0){
+								//div.innerHTML += "::     "+recurDepthStr + childNodeRxn['id'] + "<br>"
+								queue.push(childNodeRxn);
+								childNodeRxn['group'] = 1
+								
+								if (childNodeRxn['id'] in nodeIds){
+									//console.log(childNodeRxn['id']);
+								} else {
+									path['nodes'].push(childNodeRxn);
+									nodeIds[childNodeRxn['id']] = childNodeRxn['id'];
+								}
+																
+								numNextLevelNodes = numNextLevelNodes + 1;
+							}
+						}
+					}
+				}
+			}
+			if(node.hasOwnProperty('reaction_name')){
+				//div.innerHTML += " :::" +  node['reaction_name']  + "<br>"
+				
+				var productLinks = node['reactants'];
+				var productMap = productLinks.reduce(function(map, obj) {
+					map[obj] = obj;
+					return map;
+				}, {});
+				
+				for (var j = 0; j < links.length; j++) {
+					var specRef = links[j];
+
+					if (specRef['id'] in productMap){
+						//div.innerHTML += ":::     "+recurDepthStr + specRef['id'] + " " + specRef['target']  + "<br>"
+						path['links'].push(specRef);
+						
+						for (var x = 0; x < nodes.length; x++) {
+							var childNodeSp = nodes[x];
+								
+							n = childNodeSp['id'].localeCompare(specRef['source']);
+							
+							if (n == 0){
+								//div.innerHTML += ":::     "+recurDepthStr + childNodeSp['id'] + "<br>"
+								queue.push(childNodeSp);
+								childNodeSp['group'] = 1
+								
+								if (childNodeSp['id'] in nodeIds){
+								} else {
+									path['nodes'].push(childNodeSp);
+									nodeIds[childNodeSp['id']] = childNodeSp['id'];
+								}
+								
+								numNextLevelNodes = numNextLevelNodes + 1;
+							}
+						}
+					}
+				}
+			}			
+			
+			if (numNodesToNextLevel == 0){
+				currentDepth = currentDepth + 1;
+				recurDepthStr += "="
+				numNodesToNextLevel = numNextLevelNodes;
+				numNextLevelNodes = 0;
+			}
+		}
+		
+		//div.innerHTML += " "+ model_id +" "+currentDepth+ "<br>"
+		return path;	
+	}
 	    
 });
 
@@ -288,8 +423,11 @@ $(document).ready(function(){
 <!-- <p id="search_name">Search Name</p> -->
 <!-- <p id="check_result">Check</p> -->
 
-<input type="search" id="search_species_name">
+<input type="search" id="search_species_name"> 
+<input type="search" id="search_up_or_down"> 
+<input type="search" id="search_depth">
 <button id="search_name">Search Species Name</button>
+
 
 <button id="check_result">Print Output</button>
 
