@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,16 +7,118 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
     </script>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel='stylesheet' href='d3v4-selectable-zoomable-force-directed-graph.css'>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+        </script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    
+  
+ 
+    <style>
+        body{
 
+        }
+        .navbar {
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 0;
+            background-color: black;
+            border: 0;
+            font-size: 11px;
+            letter-spacing: 4px;
+            opacity: 0.9;
+        }
+        .navbar-default{
+            border-color: transparent;
+        }
+        .navbar-brand{
+            color: white;
+            font-size: 25px;
+        }
+        .btn-primary{
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+        }
+        .input-group-btn{
+            width:5%;
+        }
+        .navbar-form{
+            padding-top: 10px;
+        }
+        .mysidebar{
+            height: 0;
+            padding-bottom: 100%;
+            border-left-color: #868e96;
+            border-left-style: solid;
+            background-color: #F5F5F5;
+        }
+        .sidebar-title{
+            color: #007bff;
+            text-align: center;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+        .result-table{
+            height: 250px;
+            overflow: auto;
+            margin-bottom: 20px;
+        }
+        #network_visualization{
+            width: 100%;
+            height: 500px;
+            margin:auto;
+        }
+        </style> 
+    
 </head>
-<body>
-<!-- <div id="mult_id_" ></div> -->
-<div id="search_name_"></div>
-----------
-<div id="join_models_"></div>
-----------
-<div id="demo"></div>
-----------
+<body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="50">
+	
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#homePage">BioReact</a>
+        </div>
+        <!--<div class="col-sm-3 col-md-3 pull-right">
+            <form class="navbar-form navbar-left" role="search">
+                <div class="input-group">
+                   <input type="text" id="search" class="form-control" placeholder="Species or reaction name">
+                   <div class="input-group-btn">
+                      <button class="btn btn-primary" type="submit" id="searchButton">Go</button>
+                   </div>
+                </div>
+            </form>
+        </div>-->
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row">
+                <div id="network_visualization" class="vis-genral">
+                  <svg>
+
+                  </svg>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mysidebar">
+            <div><p class="sidebar-title">Search Result</p></div>
+            <div><input type="button" id="showResult" value="Show Result" onclick="createListFromJson()"></div>
+            <div id="result-list">
+
+            </div>
+        </div>
+    </div>
+</div>	
+	
+
 
 <!-- <p id="mult_id">Multiple Id</p> -->
 <!-- <p id="search_name">Search Name</p> -->
@@ -29,12 +131,86 @@
 <button id="search_name">Search Species Name</button>
 <button id="check_result">Print Output</button>
 <button id="generate_file">Generate File</button>
+
+<!-- <div id="mult_id_" ></div> -->
+<div id="search_name_"></div>
+----------
+<div id="join_models_"></div>
+----------
+<div id="demo"></div>
+----------
+
 </body>
+
+<script src="js/d3v4-brush-lite.js"></script>
+<script src="js/d3v4-selectable-force-directed-graph.js"></script>
+
+
+<script>
+	
+	function visualizeNetwork(graph) {
+		var svg = d3.select('#network_visualization');
+
+//		d3.json('data-sample.json', function(error, graph) {
+//			if (!error) {
+//				console.log('graph', graph);
+				createV4SelectableForceDirectedGraph(svg, graph);
+//			} else {
+//				console.error(error);
+//			}
+//		});		
+	}
+	
+
+    //load without json file
+    //var graph= JSON.parse(localStorage.dataForVis);
+    //createV4SelectableForceDirectedGraph(svg, graph);
+
+</script>
+
+    <script>
+        function createListFromJson() {
+            var sideBar_data="";
+            var node_data=[];
+            var element = [];
+            //load data to side bar
+//            $.getJSON("data-sample.json", function(data) {
+
+
+
+				data = listOfPaths[0];
+
+
+                console.log(data); // this will show the info it in firebug console
+                node_data=data["nodes"];
+                for(i=0;i<countProperties(node_data);i++){
+                    sideBar_data=node_data[i].id;
+                    element[i]=document.createElement("input");
+                    element[i].type="button";
+                    element[i].onclick = function () {
+                        //define the interaction here
+
+                    };
+                    element[i].value=sideBar_data;
+                    element[i].id=sideBar_data;
+                    element[i].class="sideBar_button";
+                    //append the element to the side bar
+                    var result_display=document.getElementById("result-list");
+                    result_display.appendChild(element[i])
+                }
+//            });
+        }
+        function countProperties(obj) {
+            return Object.keys(obj).length;
+        }
+    </script>  
 
 <script>
 
     var listOfPaths = [];
     var numPaths = 0;
+    
+    var currentModel = -1;
 
     $(document).ready(function () {
         $("#mult_id").click(function () {
@@ -90,7 +266,7 @@
 
         $("#search_name").click(function () {
             $.getJSON("multiple_name_sp.json", function (data) {
-
+				
                 listOfPaths = []
 
                 numPaths = 0;
@@ -460,7 +636,7 @@
         }
 
         //Input the useful data into a json file
-        $("generate_file").click(function generateData(listOfPaths){
+        $("#generate_file").click(function (){
 
             if (listOfPaths.length != numPaths) {
                 alert("Processing not finished yet");
@@ -478,30 +654,39 @@
             };
 
             <!--parse the searching result-->
-            for (i = 0; i < countProperties(listOfPaths); i++) {
-                var path_filter = listOfPaths[i];
+//            for (i = 0; i < countProperties(listOfPaths); i++) {
+
+
+
+
+
+
+
+                var path_filter = listOfPaths[0];
                 var nodes_filter = path_filter.nodes;
                 var links_filter = path_filter.links;
 
                 // define objects for node and link respectively
                 //initialize with some self-defined value
                 //In object we must assign a value for each variable
-                var nodeObject={
-                    id:"default",
-                    type:"species",
-                    name:"GTP",
-                    group:"1"
-                };
-                var linkObject={
-                    source:"testSource",
-                    target:"testTarget",
-                    value:"1"
-                };
+                
+                
+
 
                 console.log(nodes_filter.length);
                 console.log(links_filter.length);
 
                 for (m = 0; m < countProperties(nodes_filter); m++) {
+					
+					var nodeObject={
+						id:"default",
+						type:"species",
+						name:"GTP",
+						group:"1"
+					};
+				
+					
+					
                     var node_filter = nodes_filter[m];
                     var id_filter = node_filter.id;
                     var group_filter = node_filter.group;
@@ -523,6 +708,13 @@
                     nodeArray.push(nodeObject);
                 }
                 for (n = 0; n < countProperties(links_filter); n++) {
+					
+					var linkObject={
+						source:"testSource",
+						target:"testTarget",
+						value:"1"
+					};	
+					
                     var link_filter = links_filter[n];
                     var source_filter = link_filter['source'];
                     var target_filter = link_filter['target'];
@@ -534,7 +726,7 @@
                     //put the obeject into the array
                     linkArray.push(linkObject);
                 }
-            }
+ //           }
             console.log(jsonObject);
             //save the data to the local storage
             localStorage.dataForVis = JSON.stringify(jsonObject);
@@ -554,7 +746,26 @@
 //            console.log("File has been created");
 //        });
 
+
+			visualizeNetwork(jsonObject);
+
+
         });
+
+		function download(filename, text) {
+			var pom = document.createElement('a');
+			pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+			pom.setAttribute('download', filename);
+
+			if (document.createEvent) {
+				var event = document.createEvent('MouseEvents');
+				event.initEvent('click', true, true);
+				pom.dispatchEvent(event);
+			}
+			else {
+				pom.click();
+			}
+		}
 
         //download the file
         function saveText(text, filename){
