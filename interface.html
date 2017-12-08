@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel='stylesheet' href='d3v4-selectable-zoomable-force-directed-graph.css'>
+    <link rel="stylesheet" href="interface_style.css">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
@@ -19,61 +20,7 @@
     
   
  
-    <style>
-        body{
 
-        }
-        .navbar {
-            font-family: Montserrat, sans-serif;
-            margin-bottom: 0;
-            background-color: black;
-            border: 0;
-            font-size: 11px;
-            letter-spacing: 4px;
-            opacity: 0.9;
-        }
-        .navbar-default{
-            border-color: transparent;
-        }
-        .navbar-brand{
-            color: white;
-            font-size: 25px;
-        }
-        .btn-primary{
-            font-size: 15px;
-            font-weight: bold;
-            color: white;
-        }
-        .input-group-btn{
-            width:5%;
-        }
-        .navbar-form{
-            padding-top: 10px;
-        }
-        .mysidebar{
-            height: 0;
-            padding-bottom: 100%;
-            border-left-color: #868e96;
-            border-left-style: solid;
-            background-color: #F5F5F5;
-        }
-        .sidebar-title{
-            color: #007bff;
-            text-align: center;
-            font-weight: bold;
-            padding-top: 20px;
-        }
-        .result-table{
-            height: 250px;
-            overflow: auto;
-            margin-bottom: 20px;
-        }
-        #network_visualization{
-            width: 100%;
-            height: 500px;
-            margin:auto;
-        }
-        </style> 
     
 </head>
 <body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -83,16 +30,22 @@
         <div class="navbar-header">
             <a class="navbar-brand" href="#homePage">BioReact</a>
         </div>
-        <!--<div class="col-sm-3 col-md-3 pull-right">
-            <form class="navbar-form navbar-left" role="search">
-                <div class="input-group">
-                   <input type="text" id="search" class="form-control" placeholder="Species or reaction name">
-                   <div class="input-group-btn">
-                      <button class="btn btn-primary" type="submit" id="searchButton">Go</button>
-                   </div>
-                </div>
-            </form>
-        </div>-->
+        <div class="col-sm-3 col-md-3 pull-right">
+<input type="search" id="search_species_name" placeholder="GTP">
+<input type="search" id="search_up_or_down" placeholder="down">
+<input type="search" id="search_depth" placeholder="2">
+<!--<input type="button" id="start" value="Start" onclick="location='Main.html'">-->
+<button id="search_name">Search Species Name</button>
+<button id="check_result">Print Output</button>
+
+<form id="modelForm">
+  <select id="selectModelNumber">
+  </select>
+  <button id="generate_file" >Visualize Network</button>
+</form>
+
+
+        </div>
     </div>
 </nav>
 
@@ -110,7 +63,7 @@
         </div>
         <div class="col-md-3 mysidebar">
             <div><p class="sidebar-title">Search Result</p></div>
-            <div><input type="button" id="showResult" value="Show Result" onclick="createListFromJson()"></div>
+<!--            <div><input type="button" id="showResult" value="Show Result" onclick="createListFromJson()"></div> -->
             <div id="result-list">
 
             </div>
@@ -124,13 +77,7 @@
 <!-- <p id="search_name">Search Name</p> -->
 <!-- <p id="check_result">Check</p> -->
 
-<input type="search" id="search_species_name" placeholder="GTP">
-<input type="search" id="search_up_or_down" placeholder="down">
-<input type="search" id="search_depth" placeholder="2">
-<input type="button" id="start" value="Start" onclick="location='Main.html'">
-<button id="search_name">Search Species Name</button>
-<button id="check_result">Print Output</button>
-<button id="generate_file">Generate File</button>
+
 
 <!-- <div id="mult_id_" ></div> -->
 <div id="search_name_"></div>
@@ -148,7 +95,7 @@
 
 <script>
 	
-	function visualizeNetwork(graph) {
+	function visualizeNetwork(graph, modelIndex) {
 		var svg = d3.select('#network_visualization');
 
 //		d3.json('data-sample.json', function(error, graph) {
@@ -159,6 +106,8 @@
 //				console.error(error);
 //			}
 //		});		
+
+		createListFromJson(modelIndex);
 	}
 	
 
@@ -169,7 +118,7 @@
 </script>
 
     <script>
-        function createListFromJson() {
+        function createListFromJson(modelIndex) {
             var sideBar_data="";
             var node_data=[];
             var element = [];
@@ -178,7 +127,7 @@
 
 
 
-				data = listOfPaths[0];
+				data = listOfPaths[modelIndex];
 
 
                 console.log(data); // this will show the info it in firebug console
@@ -210,8 +159,8 @@
     var listOfPaths = [];
     var numPaths = 0;
     
-    var currentModel = -1;
-
+    var pathIndex = {}
+    
     $(document).ready(function () {
         $("#mult_id").click(function () {
             $.getJSON("multiple_id_test.json", function (data) {
@@ -268,8 +217,11 @@
             $.getJSON("multiple_name_sp.json", function (data) {
 				
                 listOfPaths = []
-
                 numPaths = 0;
+                pathIndex = {}
+                
+                $('#selectModelNumber').empty();
+                
 
                 var loc = window.location.pathname;
                 var dir = loc.substring(0, loc.lastIndexOf('/')) + '/ftp.ebi.ac.uk/json/';
@@ -302,11 +254,15 @@
                     var id = name[model];
 
                     //div.innerHTML += " :" + model + " " + id + "<br>"
+                    var modelId = model.split(".")[0];
+                    pathIndex[modelId] = i;
+                    console.log(modelId);
 
                     model = "BIOMD" + model;
                     var file = dir + model;
 
                     var path = searchSpecies(file, id, search_depth, multiple_name, multiple_id, search_up_or_down);
+
 
                 }
 
@@ -324,6 +280,8 @@
             //div.innerHTML += file + "<br>"
             //div.innerHTML += multiple_name + "<br>"
             //div.innerHTML += multiple_id + "<br>"
+            
+            var model_id;
 
             $.when(
                 $.getJSON(file, function (data) {
@@ -349,7 +307,7 @@
 
                         if (n == 0) {
                             //div.innerHTML += " :" + node["id"] + "<br>"
-                            var model_id = file.split("BIOMD")[1];
+                            model_id = file.split("BIOMD")[1];
                             model_id = model_id.split(".rdf")[0];
 
                             var n = search_up_or_down.localeCompare("down");
@@ -371,6 +329,15 @@
                 }
 
                 div.innerHTML += "Added path for name=" + id + " model=" + model_id + " to results. Processed " + listOfPaths.length + " out of " + numPaths + "<br>";
+                
+                var select = document.getElementById("selectModelNumber"); 
+
+					var opt = model_id;
+					var el = document.createElement("option");
+					el.textContent = opt;
+					el.value = opt;
+					select.appendChild(el);
+
 
             });
         }
@@ -621,16 +588,6 @@
 
         <!--Codes for Visualization-->
         <!--count of the elements in the object-->
-//        function countProperties(obj) {
-//            var count = 0;
-//
-//            for (var prop in obj) {
-//                if (obj.hasOwnProperty(prop))
-//                    ++count;
-//            }
-//
-//            return count;
-//        }
         function countProperties(obj) {
             return Object.keys(obj).length;
         }
@@ -658,11 +615,14 @@
 
 
 
+			var e = document.getElementById("selectModelNumber");
+			var modelId = e.options[e.selectedIndex].value;
 
+			console.log(modelId);
+			var modelIndex = pathIndex[modelId];
+			console.log(modelIndex);
 
-
-
-                var path_filter = listOfPaths[0];
+                var path_filter = listOfPaths[modelIndex];
                 var nodes_filter = path_filter.nodes;
                 var links_filter = path_filter.links;
 
@@ -747,7 +707,7 @@
 //        });
 
 
-			visualizeNetwork(jsonObject);
+			visualizeNetwork(jsonObject, modelIndex);
 
 
         });
