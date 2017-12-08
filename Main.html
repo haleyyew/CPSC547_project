@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel='stylesheet' href='d3v4-selectable-zoomable-force-directed-graph.css'>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+        </script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script>
+        var sideBar_data="";
+        var node_data=[];
+        var element = [];
+        //load data to side bar
+        $.getJSON("data-sample.json", function(data) {
+            console.log(data); // this will show the info it in firebug console
+            node_data=data["nodes"];
+            for(i=0;i<countProperties(node_data);i++){
+                sideBar_data=node_data[i].id+node_data.group;
+                element[i]=document.createElement("input");
+                element[i].type="button";
+                element[i].onclick = function () {
+                    //define the interaction here
+
+                };
+                element[i].value=sideBar_data;
+                element[i].class="sideBar_button";
+                //append the element to the side bar
+                var result_display=document.getElementById("result-list");
+                result_display.appendChild(element[i])
+            }
+        });
+        function countProperties(obj) {
+            return Object.keys(obj).length;
+        }
+    </script>
+    <style>
+        body{
+
+        }
+        .navbar {
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 0;
+            background-color: black;
+            border: 0;
+            font-size: 11px;
+            letter-spacing: 4px;
+            opacity: 0.9;
+        }
+        .navbar-default{
+            border-color: transparent;
+        }
+        .navbar-brand{
+            color: white;
+            font-size: 25px;
+        }
+        .btn-primary{
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+        }
+        .input-group-btn{
+            width:5%;
+        }
+        .navbar-form{
+            padding-top: 10px;
+        }
+        .mysidebar{
+            height: 0;
+            padding-bottom: 100%;
+            border-left-color: #868e96;
+            border-left-style: solid;
+            background-color: #F5F5F5;
+        }
+        .sidebar-title{
+            color: #007bff;
+            text-align: center;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+        .result-table{
+            height: 250px;
+            overflow: auto;
+            margin-bottom: 20px;
+        }
+        #network_visualization{
+            width: 100%;
+            height: 500px;
+            margin:auto;
+        }
+        </style>
+</head>
+
+<body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#homePage">BioReact</a>
+        </div>
+        <!--<div class="col-sm-3 col-md-3 pull-right">
+            <form class="navbar-form navbar-left" role="search">
+                <div class="input-group">
+                   <input type="text" id="search" class="form-control" placeholder="Species or reaction name">
+                   <div class="input-group-btn">
+                      <button class="btn btn-primary" type="submit" id="searchButton">Go</button>
+                   </div>
+                </div>
+            </form>
+        </div>-->
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row">
+                <div id="network_visualization" class="vis-genral">
+                  <svg>
+
+                  </svg>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mysidebar">
+            <div><p class="sidebar-title">Search Result</p></div>
+            <div class="result-list">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="js/d3v4-brush-lite.js"></script>
+<script src="js/d3v4-selectable-force-directed-graph.js"></script>
+<script>
+    var svg = d3.select('#network_visualization');
+
+    d3.json('data-sample.json', function(error, graph) {
+        if (!error) {
+            console.log('graph', graph);
+            createV4SelectableForceDirectedGraph(svg, graph);
+        } else {
+            console.error(error);
+        }
+    });
+    //load without json file
+    //var graph= JSON.parse(localStorage.dataForVis);
+    //createV4SelectableForceDirectedGraph(svg, graph);
+
+</script>
+</html>
