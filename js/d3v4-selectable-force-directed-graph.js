@@ -291,12 +291,16 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
     // Add a tip box triggered by click action(Zixiao 12.6)
     var intro;
+    var previous_ID;
     svg.on('click',function(){
         if (intro) intro.remove();
-
+        //clean the background color of the button on the right side
+        var button_previous=document.getElementById(previous_ID);
+        button_previous.style.background="white";
     });
 
     node.on('click',function(d){
+        //Output a tag
         d3v4.event.stopPropagation();
         //Clear the existing intro
         if (intro) intro.remove();
@@ -333,7 +337,13 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
         var bbox = intro.node().getBBox();
         rect.attr("width", bbox.width + 5)
-            .attr("height", bbox.height + 5)
+            .attr("height", bbox.height + 5);
+
+        //highlight a button
+        var button_to_highlight= document.getElementById(d.id);
+        button_to_highlight.style.background="#ff1b2f";
+        previous_ID=d.id;
     });
+
     return graph;
-};
+}

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
     </script>
@@ -12,13 +13,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel='stylesheet' href='d3v4-selectable-zoomable-force-directed-graph.css'>
     <link rel="stylesheet" href="interface_style.css">
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
-        </script>
+    
+
+        
+        
     <script src="https://d3js.org/d3.v4.js"></script>
     
-  
+<script src="js/d3v4-brush-lite.js"></script>
+<script src="js/d3v4-selectable-force-directed-graph.js"></script>  
  
 
     
@@ -31,19 +33,20 @@
             <a class="navbar-brand" href="#homePage">BioReact</a>
         </div>
         <div class="col-sm-3 col-md-3 pull-right">
-<input type="search" id="search_species_name" placeholder="GTP">
-<input type="search" id="search_up_or_down" placeholder="down">
-<input type="search" id="search_depth" placeholder="2">
+<input type="search" id="search_species_name" placeholder="GTP" value="GTP">
+<input type="search" id="search_up_or_down" placeholder="down" value="down">
+<input type="search" id="search_depth" placeholder="2" value="2">
 <!--<input type="button" id="start" value="Start" onclick="location='Main.html'">-->
 <button id="search_name">Search Species Name</button>
 <button id="check_result">Print Output</button>
+<button id="combine_models">Combine Models</button>
 
 <form id="modelForm">
   <select id="selectModelNumber">
   </select>
-  <button id="generate_file" >Visualize Network</button>
+ 
 </form>
-
+ <button id="generate_file" >Visualize Network</button>
 
         </div>
     </div>
@@ -72,14 +75,6 @@
 </div>	
 	
 
-
-<!-- <p id="mult_id">Multiple Id</p> -->
-<!-- <p id="search_name">Search Name</p> -->
-<!-- <p id="check_result">Check</p> -->
-
-
-
-<!-- <div id="mult_id_" ></div> -->
 <div id="search_name_"></div>
 ----------
 <div id="join_models_"></div>
@@ -89,11 +84,24 @@
 
 </body>
 
-<script src="js/d3v4-brush-lite.js"></script>
-<script src="js/d3v4-selectable-force-directed-graph.js"></script>
+
 
 
 <script>
+	
+    var listOfPaths = [];
+    var numPaths = 0;
+    
+    var pathIndex = {}
+    
+    var currentSpeciesSearch = "";	
+
+
+
+
+    
+    $(document).ready(function () {
+		
 	
 	function visualizeNetwork(graph, modelIndex) {
 		var svg = d3.select('#network_visualization');
@@ -108,6 +116,10 @@
 //		});		
 
 		createListFromJson(modelIndex);
+		
+		console.log(listOfPaths.length);
+		console.log(numPaths);
+		console.log(Object.keys(pathIndex));
 	}
 	
 
@@ -115,9 +127,7 @@
     //var graph= JSON.parse(localStorage.dataForVis);
     //createV4SelectableForceDirectedGraph(svg, graph);
 
-</script>
 
-    <script>
         function createListFromJson(modelIndex) {
             var sideBar_data="";
             var node_data=[];
@@ -152,45 +162,183 @@
         function countProperties(obj) {
             return Object.keys(obj).length;
         }
-    </script>  
+        		
+            $("#combine_models").click(function () {
 
-<script>
-
-    var listOfPaths = [];
-    var numPaths = 0;
-    
-    var pathIndex = {}
-    
-    $(document).ready(function () {
-        $("#mult_id").click(function () {
-            $.getJSON("multiple_id_test.json", function (data) {
-                var div = document.getElementById("mult_id_");
-
-                var keys = Object.keys(data)
-
-                var arrayLength = keys.length;
-                for (var i = 0; i < arrayLength; i++) {
-                    var model_id = keys[i]
-                    //div.innerHTML += " " + model_id
-
-                    model = data[model_id]
-
-                    var reactions = model['multiple_rxn']
-
-                    var reaction_keys = Object.keys(reactions)
-                    var reaction_keysLength = reaction_keys.length
-                    //div.innerHTML += " " + reaction_keysLength
-
-                    if (reaction_keysLength > 0) {
-                        for (var j = 0; j < reaction_keysLength; j++) {
-                            var reaction_id = reaction_keys[j]
-                            //div.innerHTML += " :" + reaction_id + " " + reactions[reaction_id] + "<br>"
-                        }
-                    }
+                if (listOfPaths.length != numPaths) {
+                    alert("Processing not finished yet");
+                    return;
                 }
 
+				var combinedModel = {};
+				combinedModel['nodes'] = [];
+				combinedModel['links'] = [];
+
+				//var speciesLookup = {};
+				//var specRefLookup = {};
+				
+				var joiningSpecies = {};
+				joiningSpecies['id'] = "joined_" + currentSpeciesSearch;
+				joiningSpecies['reaction_name'] = currentSpeciesSearch;
+				joiningSpecies['listOfJoiningSpecies'] = [];
+				
+				combinedModel['nodes'].push(joiningSpecies);
+				
+				var total_n = 0;
+				var total_l = 0;
+				
+				var comb_n = 0;
+				var comb_l = 0;
+				
+				comb_n += 1;
+				
+                for (var i = 0; i < listOfPaths.length; i++) {
+                    var path = listOfPaths[i];
+					//console.log(path['id']);					
+					
+					var model_id = path['id'].split("BIOMD")[1];
+                    model_id = model_id.split(".rdf")[0];
+
+					var nodes = path['nodes'];
+					var links = path['links'];
+					
+					total_n += nodes.length;
+					total_l += links.length;
+					
+					var joinedSpeciesId = "";
+					
+                    for (var j = 0; j < nodes.length; j++) {
+						var node = nodes[j];
+						
+						var new_node = {}
+						new_node['id']  = model_id+"_"+node['id'] ;
+						
+						if (node.hasOwnProperty('species_name')){
+							var n = node['species_name'].localeCompare(currentSpeciesSearch);
+							if (n == 0){
+								joinedSpeciesId = node['id'];
+								console.log(joinedSpeciesId);
+								
+								new_node['model'] = model_id;
+
+								new_node['joined'] = 1;
+								
+								joiningSpecies['listOfJoiningSpecies'].push(new_node);
+								
+								//speciesLookup[node['name']] = joiningSpecies['id'];
+								
+								
+							} else {
+								new_node['model'] = model_id;
+
+								combinedModel['nodes'].push(new_node);
+								
+								comb_n += 1;
+							}
+						} else {
+							new_node['model'] = model_id;
+
+							combinedModel['nodes'].push(new_node);	
+							
+							comb_n += 1;						
+						}
+					}
+					
+					
+					for (var k = 0; k < links.length; k++) {
+						var specRef = links[k];
+						
+						var new_specRef = {}
+						
+						new_specRef['source'] =model_id+"_"+specRef['source'];
+						new_specRef['target'] =model_id+"_"+specRef['target'];
+						new_specRef['value'] = specRef['value'];
+						
+						if ((new_specRef['source'].slice(0,10)).localeCompare(new_specRef['source'].slice(11,21)) == 0){
+							new_specRef['source'] = new_specRef['source'].slice(11);
+
+							//console.log(specRef['source']);
+						}
+						
+						if ((new_specRef['target'].slice(0,10)).localeCompare(new_specRef['target'].slice(11,21)) == 0){
+							new_specRef['target'] = new_specRef['target'].slice(11);
+							
+							//console.log(specRef['target']);
+						}						
+						
+						var n = joinedSpeciesId.localeCompare(specRef['source']);
+						var m = joinedSpeciesId.localeCompare(specRef['target']);
+						
+												
+						if (n == 0 && m == 0){
+							new_specRef['source'] = joiningSpecies['id'];
+							new_specRef['target'] = joiningSpecies['id'];
+							
+							//console.log("case 1");
+						} 
+						else if (m == 0) {
+							new_specRef['target'] = joiningSpecies['id'];
+							new_specRef['source'] = new_specRef['source'];
+							
+							//console.log("case 2");
+							//console.log(specRef['source']);
+							
+						}
+						else if (n == 0) {
+							new_specRef['source'] = joiningSpecies['id'];
+							new_specRef['target'] = new_specRef['target'];
+							
+							//console.log("case 3");
+							//console.log(specRef['target']);
+						} else {
+							new_specRef['source'] = new_specRef['source'];
+							new_specRef['target'] = new_specRef['target'];
+							
+							if ("0000000080_metaid_0000011".localeCompare(specRef['source']) == 0){
+								console.log("_");
+								console.log(joinedSpeciesId);
+								console.log(specRef['source']);
+								console.log(specRef['target']);
+							}
+
+						}
+						
+						combinedModel['links'].push(new_specRef);
+						
+						comb_l += 1;
+					}
+                }
+                
+                var out = JSON.stringify(combinedModel);
+                document.getElementById("demo").innerHTML += out + "<br> <br>";
+                
+                console.log(total_n);
+                console.log(total_l);
+                console.log(comb_n);
+                console.log(comb_l);
+                console.log(joiningSpecies['listOfJoiningSpecies'].length);
+                
+                
+                listOfPaths.push(combinedModel);
+                
+                    var select = document.getElementById("selectModelNumber"); 
+
+					var opt = "combined model";
+					var el = document.createElement("option");
+					el.textContent = opt;
+					el.value = opt;
+					select.appendChild(el);
+					
+					pathIndex["combined model"] = listOfPaths.length - 1;
+					
+					console.log(listOfPaths.length - 1);
+					numPaths += 1;
+					
+					console.log(listOfPaths.length);
+					console.log(numPaths);
+					console.log(Object.keys(pathIndex));
+                
             });
-        });
 
         $("#check_result").click(function () {
 
@@ -221,7 +369,7 @@
                 pathIndex = {}
                 
                 $('#selectModelNumber').empty();
-                
+                currentSpeciesSearch = $('#search_species_name').val();
 
                 var loc = window.location.pathname;
                 var dir = loc.substring(0, loc.lastIndexOf('/')) + '/ftp.ebi.ac.uk/json/';
@@ -600,7 +748,6 @@
                 return;
         }
 
-            for (var i = 0; i < listOfPaths.length; i++) {}
 
             <!--Create a new object-->
             var nodeArray = new Array();
@@ -629,10 +776,7 @@
                 // define objects for node and link respectively
                 //initialize with some self-defined value
                 //In object we must assign a value for each variable
-                
-                
-
-
+    
                 console.log(nodes_filter.length);
                 console.log(links_filter.length);
 
@@ -645,8 +789,7 @@
 						group:"1"
 					};
 				
-					
-					
+			
                     var node_filter = nodes_filter[m];
                     var id_filter = node_filter.id;
                     var group_filter = node_filter.group;
@@ -706,6 +849,9 @@
 //            console.log("File has been created");
 //        });
 
+		console.log(listOfPaths.length);
+		console.log(numPaths);
+		console.log(Object.keys(pathIndex));
 
 			visualizeNetwork(jsonObject, modelIndex);
 
