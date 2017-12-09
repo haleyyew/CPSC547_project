@@ -134,6 +134,8 @@
     //createV4SelectableForceDirectedGraph(svg, graph);
 
 
+
+
         function createListFromJson(modelIndex) {
             var sideBar_data="";
             var node_data=[];
@@ -154,13 +156,24 @@
                     sideBar_data=node_data[i].id;
                     sideBar_content="#"+i+" "+"id: "+sideBar_data+" "+"group:"+node_data[i].group;
                     element[i]=document.createElement("input");
-//                    element[i].type="button";
+                    element[i].type="button";
                     element[i].onclick = function () {
                         //define the interaction here
 
+			  console.log("#b-" + this.id);
+			  d3.select("#b-" + this.id).attr("r",10);
+
+
                     };
+                    
+
+
+
                     element[i].value=sideBar_content;
                     element[i].id=sideBar_data;
+                    
+                    //console.log("sideBar_data "+sideBar_data);
+                    
                     element[i].type="button";
                     element[i].style="width:100%; font-size: 14px";
                     //append the element to the side bar
@@ -901,6 +914,7 @@
             a.setAttribute('download', filename);
             a.click()
         }
+
 
     });
 </script>
