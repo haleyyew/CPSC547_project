@@ -33,20 +33,26 @@
             <a class="navbar-brand" href="#homePage">BioReact</a>
         </div>
         <div class="col-sm-3 col-md-3 pull-right">
-<input type="search" id="search_species_name" placeholder="GTP" value="GTP">
-<input type="search" id="search_up_or_down" placeholder="down" value="down">
-<input type="search" id="search_depth" placeholder="2" value="2">
+            <div class="input-group">
+<input type="search" id="search_species_name" placeholder="GTP" value="GTP" class="navbar_input" style="margin-right: 2px">
+<input type="search" id="search_up_or_down" placeholder="down" value="down" class="navbar_input" style="width:80px;margin-right: 2px">
+<input type="search" id="search_depth" placeholder="2" value="2" class="navbar_input" style="width:40px;margin-right: 2px">
 <!--<input type="button" id="start" value="Start" onclick="location='Main.html'">-->
+            </div>
+
 <button id="search_name">Search Species Name</button>
 <button id="check_result">Print Output</button>
 <button id="combine_models">Combine Models</button>
+            <form id="modelForm">
+                <select id="selectModelNumber">
+                </select>
 
-<form id="modelForm">
-  <select id="selectModelNumber">
-  </select>
- 
-</form>
- <button id="generate_file" >Visualize Network</button>
+            </form>
+            <button id="generate_file" >Visualize Network</button>
+
+            </div>
+
+
 
         </div>
     </div>
@@ -67,7 +73,7 @@
         <div class="col-md-3 mysidebar">
             <div><p class="sidebar-title">Search Result</p></div>
 <!--            <div><input type="button" id="showResult" value="Show Result" onclick="createListFromJson()"></div> -->
-            <div id="result-list">
+            <div id="result-list" style="  display: flex; flex-flow: column wrap; align-items: center;">
 
             </div>
         </div>
@@ -92,7 +98,7 @@
     var listOfPaths = [];
     var numPaths = 0;
     
-    var pathIndex = {}
+    var pathIndex = {};
     
     var currentSpeciesSearch = "";	
 
@@ -132,6 +138,8 @@
             var sideBar_data="";
             var node_data=[];
             var element = [];
+            var result_display=document.getElementById("result-list");
+            result_display.innerHTML="";
             //load data to side bar
 //            $.getJSON("data-sample.json", function(data) {
 
@@ -144,17 +152,18 @@
                 node_data=data["nodes"];
                 for(i=0;i<countProperties(node_data);i++){
                     sideBar_data=node_data[i].id;
+                    sideBar_content="#"+i+" "+"id: "+sideBar_data+" "+"group:"+node_data[i].group;
                     element[i]=document.createElement("input");
-                    element[i].type="button";
+//                    element[i].type="button";
                     element[i].onclick = function () {
                         //define the interaction here
 
                     };
-                    element[i].value=sideBar_data;
+                    element[i].value=sideBar_content;
                     element[i].id=sideBar_data;
-                    element[i].class="sideBar_button";
+                    element[i].type="button";
+                    element[i].style="width:100%; font-size: 14px";
                     //append the element to the side bar
-                    var result_display=document.getElementById("result-list");
                     result_display.appendChild(element[i])
                 }
 //            });
@@ -220,8 +229,10 @@
 								console.log(joinedSpeciesId);
 								
 								new_node['model'] = model_id;
-
+								
 								new_node['joined'] = 1;
+								new_node['species_name'] = node['species_name'];
+								new_node['group'] = i;
 								
 								joiningSpecies['listOfJoiningSpecies'].push(new_node);
 								
@@ -230,15 +241,22 @@
 								
 							} else {
 								new_node['model'] = model_id;
-
+								new_node['species_name'] = node['species_name'];
+								new_node['group'] = i;
+								
 								combinedModel['nodes'].push(new_node);
+								
 								
 								comb_n += 1;
 							}
 						} else {
 							new_node['model'] = model_id;
+							new_node['reaction_name'] = node['reaction_name'];
+							new_node['group'] = i;
+														
 
 							combinedModel['nodes'].push(new_node);	
+
 							
 							comb_n += 1;						
 						}
@@ -743,6 +761,9 @@
         //Input the useful data into a json file
         $("#generate_file").click(function (){
 
+            //clear the remaining result in the side bar
+            var side
+
             if (listOfPaths.length != numPaths) {
                 alert("Processing not finished yet");
                 return;
@@ -882,7 +903,5 @@
         }
 
     });
-    //测试的时候，返回处理没有完成，可能数据处理部分存在问题
-    //生成数据测试等待解决
 </script>
 </html>
