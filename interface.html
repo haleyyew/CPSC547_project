@@ -6,6 +6,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    
+    <script src="js/d3v4.js"></script>
+	<script src="js/cola.min.js"></script>
+    
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
     </script>
     
@@ -20,7 +24,8 @@
     <script src="https://d3js.org/d3.v4.js"></script>
     
 <script src="js/d3v4-brush-lite.js"></script>
-<script src="js/d3v4-selectable-force-directed-graph.js"></script>  
+<script src="js/d3v4-selectable-force-directed-graph.js"></script> 
+<script src="js/cola-downwardedges.js"></script>   
  
 
     
@@ -46,8 +51,15 @@
             <form id="modelForm">
                 <select id="selectModelNumber">
                 </select>
-
+                <select id="selectNetworkStyle">
+					<option value="force">Force Directed</option>
+					<option value="downward">Downward Edges</option>
+                </select>
             </form>
+
+
+
+
             <button id="generate_file" >Visualize Network</button>
 
             </div>
@@ -112,10 +124,23 @@
 	function visualizeNetwork(graph, modelIndex) {
 		var svg = d3.select('#network_visualization');
 
+			var s = document.getElementById("selectNetworkStyle");
+			var style = s.options[s.selectedIndex].value;
+			
+			var n = style.localeCompare("force");
+			if (n == 0) {
+				createV4SelectableForceDirectedGraph(svg, graph);
+			}
+			
+			var m = style.localeCompare("downward");
+			if (m == 0) {
+				createCoLaDownwardedges(svg, graph);
+			}
+
 //		d3.json('data-sample.json', function(error, graph) {
 //			if (!error) {
 //				console.log('graph', graph);
-				createV4SelectableForceDirectedGraph(svg, graph);
+				
 //			} else {
 //				console.error(error);
 //			}
@@ -771,8 +796,15 @@
             return Object.keys(obj).length;
         }
 
+
+
         //Input the useful data into a json file
         $("#generate_file").click(function (){
+			
+			var e = document.getElementById("selectModelNumber");
+			var modelId = e.options[e.selectedIndex].value;
+			var modelIndex = pathIndex[modelId];
+
 
             //clear the remaining result in the side bar
             var side
@@ -796,11 +828,10 @@
 
 
 
-			var e = document.getElementById("selectModelNumber");
-			var modelId = e.options[e.selectedIndex].value;
+
 
 			console.log(modelId);
-			var modelIndex = pathIndex[modelId];
+
 			console.log(modelIndex);
 
                 var path_filter = listOfPaths[modelIndex];
@@ -886,8 +917,13 @@
 		console.log(listOfPaths.length);
 		console.log(numPaths);
 		console.log(Object.keys(pathIndex));
+			
 
+			
+			//console.log("###generate_file### " + style)
+			
 			visualizeNetwork(jsonObject, modelIndex);
+						
 
 
         });

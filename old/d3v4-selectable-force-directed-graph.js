@@ -70,9 +70,6 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
          .data(graph.nodes)
          .enter().append("circle")
          .attr("r", 5)
-         
-			.attr("id", function(d, i) { console.log("gDraw.append "+"b-" + d.id); return "b-" + d.id; })
-			
          .attr("fill", function(d) {
              if ('color' in d)
                  return d.color;
@@ -294,17 +291,12 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
     // Add a tip box triggered by click action(Zixiao 12.6)
     var intro;
-    var previous_ID
-    //="id";
     svg.on('click',function(){
         if (intro) intro.remove();
-        //clean the background color of the button on the right side
-        var button_previous=document.getElementById(previous_ID);
-        button_previous.style.background="white";
+
     });
 
     node.on('click',function(d){
-        //Output a tag
         d3v4.event.stopPropagation();
         //Clear the existing intro
         if (intro) intro.remove();
@@ -319,14 +311,12 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         intro.append("text")
             .text("ID: " + d.id)
             .attr("dy", "1em")
-            .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("x", 5);
 
         intro.append("text")
             .text("Group: " + d.group)
             .attr("dy", "2em")
-            .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("x", 5);
 
         var con = graph.links
             .filter(function(d1){
@@ -336,35 +326,14 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
                 return d1.target.id;
             });
 
-        // intro.append("text")
-        //     .text("Connected to: " + con.join(","))
-        //     .attr("dy", "3em")
-        //     .attr("x", 5)
-        //     .attr("font-size","14px");
-
         intro.append("text")
-            .text("Type: " + d.type)
+            .text("Connected to: " + con.join(","))
             .attr("dy", "3em")
-            .attr("x", 5)
-            .attr("font-size","14px");
-
-        intro.append("text")
-            .text("Name: " + d.name)
-            .attr("dy", "4em")
-            .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("x", 5);
 
         var bbox = intro.node().getBBox();
         rect.attr("width", bbox.width + 5)
-            .attr("height", bbox.height + 5);
-        //highlight a button
-        var button_to_highlight= document.getElementById(d.id);
-        button_to_highlight.style.background="#007bff";
-        previous_ID=d.id;
-        
-        
-        console.log(d.id)
+            .attr("height", bbox.height + 5)
     });
-
     return graph;
-}
+};
