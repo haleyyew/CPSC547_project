@@ -51,7 +51,24 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         nodes[graph.nodes[i].id] = graph.nodes[i];
         graph.nodes[i].weight = 1.01;
     }
-
+    var speciesNode = graph.nodes.filter(function (d, i) {
+        return d.type==="species";
+    });
+    var reactionsNode = graph.nodes.filter(function (d,i) {
+        return d.type==="reactions";
+    });
+    svg.append("svg:defs")
+        .append("svg:marker")
+        .attr("id", "arrow")
+        .attr("viewBox", "0 0 10 10")
+        .attr("refX", 27)
+        .attr("refY", 5)
+        .attr("markerUnits", "userSpaceOnUse")
+        .attr("markerWidth", 8)
+        .attr("markerHeight", 6)
+        .attr("orient", "auto")
+        .append("svg:path")
+        .attr("d", "M 0 0 L 10 5 L 0 10 z");
     // the brush needs to go before the nodes so that it doesn't
     // get called when the mouse is over a node
     var gBrushHolder = gDraw.append('g');
@@ -62,14 +79,18 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .selectAll("line")
         .data(graph.links)
         .enter().append("line")
+        .attr("marker-end","url(\#arrow)")
         .attr("stroke", function(d) { if (d.color == 1) { console.log("COLOR " + d.source + " " +d.value + " " +d.color); return "red";} else{return "blue";} })	//Haoran
-        .attr("stroke-width", function(d) { return Math.sqrt(d.value); });			
+        .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
 
-    var node = gDraw.append("g")
+    var species_node = gDraw.append("g")
          .attr("class", "node")
          .selectAll("circle")
-         .data(graph.nodes)
+         .data(speciesNode)
          .enter().append("circle")
+         .filter(function (d, i) {
+            return d.type!=="reactions"
+         })
          .attr("r", 5)
          
 			.attr("id", function(d, i) { console.log("gDraw.append "+"b-" + d.id); return "b-" + d.id; })
@@ -84,45 +105,31 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
          .on("start", dragstarted)
          .on("drag", dragged)
          .on("end", dragended));
-    //attempt to change the shape of the node
-    // var node = gDraw.append("g")
-    //     .data(data.nodes)
-    //     .selectAll("g.node")
-    //     //change the shape by using class (rec for reaction, circle for species)
-    //     .attr("class", function (d) {
-    //         if(d.type == "reactions"){
-    //             return "reactions"
-    //         }else{
-    //             return "circle"
-    //         }
-    //     })
-    //      .attr("fill", function(d) {
-    //          if ('color' in d)
-    //              return d.color;
-    //          else
-    //              return color(d.group);
-    //      })
-    //      .call(d3v4.drag()
-    //      .on("start", dragstarted)
-    //      .on("drag", dragged)
-    //      .on("end", dragended));
-    //
-    // gDraw.selectAll(".reactions").append("rect")
-    //     .attr("width", 10)
-    //     .attr("height", 10)
-    //     .attr("class",function (d) {
-    //         return "node type"+d.type
-    //
-    //     });
-    //
-    // gDraw.selectAll(".circle").append("circle")
-    //     .attr("r", 5)
-    //     .attr("class",function (d) {
-    //         return "node type"+d.type
-    //
-    //     });
 
 
+    var reactions_node = gDraw.append("g")
+        .attr("class", "node")
+        .selectAll("rect")
+        .data(reactionsNode)
+        .enter().append("rect")
+        .filter(function (d, i) {
+            return d.type==="reactions"
+        })
+        .attr("width", 8)
+        .attr("height", 8)
+
+        .attr("id", function(d, i) { console.log("gDraw.append "+"b-" + d.id); return "b-" + d.id; })
+
+        .attr("fill", function(d) {
+            if ('color' in d)
+                return d.color;
+            else
+                return color(d.group);
+        })
+        .call(d3v4.drag()
+            .on("start", dragstarted)
+            .on("drag", dragged)
+            .on("end", dragended));
 
     // add titles for mouseover blurbs
     //this function deleted
@@ -158,8 +165,10 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             .attr("x2", function(d) { return d.target.x; })
             .attr("y2", function(d) { return d.target.y; });
 
-        node.attr("cx", function(d) { return d.x; })
+        species_node.attr("cx", function(d) { return d.x; })
             .attr("cy", function(d) { return d.y; });
+        reactions_node.attr("x", function(d) { return d.x-4; })
+            .attr("y", function(d) { return d.y-4; });
     }
 
     var brushMode = false;
@@ -175,17 +184,29 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         // don't remove the brush on keyup in the middle of a selection
         brushing = true;
 
-        node.each(function(d) { 
+        species_node.each(function(d) {
             d.previouslySelected = shiftKey && d.selected; 
         });
+
+        reactions_node.each(function(d) {
+            d.previouslySelected = shiftKey && d.selected;
+        });
+
+
+
     }
 
     rect.on('click', function() {
-        node.each(function(d) {
+        species_node.each(function(d) {
             d.selected = false;
             d.previouslySelected = false;
         });
-        node.classed("selected", false);
+        reactions_node.each(function(d) {
+            d.selected = false;
+            d.previouslySelected = false;
+        });
+        species_node.classed("selected", false);
+        reactions_node.classed("selected", false);
     });
 
     function brushed() {
@@ -194,10 +215,16 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
         var extent = d3v4.event.selection;
 
-        node.classed("selected", function(d) {
+        species_node.classed("selected", function(d) {
             return d.selected = d.previouslySelected ^
             (extent[0][0] <= d.x && d.x < extent[1][0]
              && extent[0][1] <= d.y && d.y < extent[1][1]);
+        });
+
+        reactions_node.classed("selected", function(d) {
+            return d.selected = d.previouslySelected ^
+                (extent[0][0] <= d.x && d.x < extent[1][0]
+                    && extent[0][1] <= d.y && d.y < extent[1][1]);
         });
     }
 
@@ -259,24 +286,36 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
         if (!d.selected && !shiftKey) {
             // if this node isn't selected, then we have to unselect every other node
-            node.classed("selected", function(p) { return p.selected =  p.previouslySelected = false; });
+            species_node.classed("selected", function(p) { return p.selected =  p.previouslySelected = false; });
+            reactions_node.classed("selected", function(p) { return p.selected =  p.previouslySelected = false; });
         }
 
         d3v4.select(this).classed("selected", function(p) { d.previouslySelected = d.selected; return d.selected = true; });
 
-        node.filter(function(d) { return d.selected; })
+        species_node.filter(function(d) { return d.selected; })
         .each(function(d) { //d.fixed |= 2; 
           d.fx = d.x;
           d.fy = d.y;
-        })
+        });
+
+        reactions_node.filter(function(d) { return d.selected; })
+            .each(function(d) { //d.fixed |= 2;
+                d.fx = d.x;
+                d.fy = d.y;
+            })
 
     }
 
     function dragged(d) {
       //d.fx = d3v4.event.x;
       //d.fy = d3v4.event.y;
-            node.filter(function(d) { return d.selected; })
+            species_node.filter(function(d) { return d.selected; })
             .each(function(d) { 
+                d.fx += d3v4.event.dx;
+                d.fy += d3v4.event.dy;
+            });
+        reactions_node.filter(function(d) { return d.selected; })
+            .each(function(d) {
                 d.fx += d3v4.event.dx;
                 d.fy += d3v4.event.dy;
             })
@@ -286,16 +325,21 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
       if (!d3v4.event.active) simulation.alphaTarget(0);
       d.fx = null;
       d.fy = null;
-        node.filter(function(d) { return d.selected; })
+        species_node.filter(function(d) { return d.selected; })
         .each(function(d) { //d.fixed &= ~6; 
             d.fx = null;
             d.fy = null;
-        })
+        });
+        reactions_node.filter(function(d) { return d.selected; })
+            .each(function(d) { //d.fixed &= ~6;
+                d.fx = null;
+                d.fy = null;
+            })
     }
 
     // Add a tip box triggered by click action(Zixiao 12.6)
     var intro;
-    var previous_ID
+    var previous_ID;
     //="id";
     svg.on('click',function(){
         if (intro) intro.remove();
@@ -304,7 +348,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         button_previous.style.background="white";
     });
 
-    node.on('click',function(d){
+    species_node.on('click',function(d){
         //Output a tag
         d3v4.event.stopPropagation();
         //Clear the existing intro
@@ -337,12 +381,6 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
                 return d1.target.id;
             });
 
-        // intro.append("text")
-        //     .text("Connected to: " + con.join(","))
-        //     .attr("dy", "3em")
-        //     .attr("x", 5)
-        //     .attr("font-size","14px");
-
         intro.append("text")
             .text("Type: " + d.type)
             .attr("dy", "3em")
@@ -363,9 +401,64 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         button_to_highlight.style.background="#007bff";
         previous_ID=d.id;
         
-        //Haoran
-        button_to_highlight.name = "highlighted";
         
+        console.log(d.id)
+    });
+
+    reactions_node.on('click',function(d){
+        //Output a tag
+        d3v4.event.stopPropagation();
+        //Clear the existing intro
+        if (intro) intro.remove();
+
+        intro  = gDraw.append("g")
+            .attr("transform", "translate(" + d.x  + "," + d.y + ")");
+
+        var rect = intro.append("rect")
+            .style("fill", "white")
+            .style("stroke", "steelblue");
+
+        intro.append("text")
+            .text("ID: " + d.id)
+            .attr("dy", "1em")
+            .attr("x", 5)
+            .attr("font-size","14px");
+
+        intro.append("text")
+            .text("Group: " + d.group)
+            .attr("dy", "2em")
+            .attr("x", 5)
+            .attr("font-size","14px");
+
+        var con = graph.links
+            .filter(function(d1){
+                return d1.source.id === d.id;
+            })
+            .map(function(d1){
+                return d1.target.id;
+            });
+
+        intro.append("text")
+            .text("Type: " + d.type)
+            .attr("dy", "3em")
+            .attr("x", 5)
+            .attr("font-size","14px");
+
+        intro.append("text")
+            .text("Name: " + d.name)
+            .attr("dy", "4em")
+            .attr("x", 5)
+            .attr("font-size","14px");
+
+        var bbox = intro.node().getBBox();
+        rect.attr("width", bbox.width + 5)
+            .attr("height", bbox.height + 5);
+        //highlight a button
+        var button_to_highlight= document.getElementById(d.id);
+        button_to_highlight.style.background="#007bff";
+        previous_ID=d.id;
+
+
         console.log(d.id)
     });
 

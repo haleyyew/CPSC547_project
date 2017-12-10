@@ -28,7 +28,8 @@
 <script src="js/cola-downwardedges.js"></script>   
 <script src="js/d3v4-barchart.js"></script>    <!--Haoran-->
  
-<script src="dijkstra.js"></script>     <!--Haoran-->
+<script src="dijkstra.js"></script>     <!--Haoran--> 
+
     
 </head>
 <body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -58,16 +59,11 @@
                 </select>
             </form>
 
-
 <!--Haoran-->
 <button id="shortest_path" value="Show shortest path" ></button>
 
 
             <button id="generate_file" >Visualize Network</button>
-
-
-
-
 
             </div>
 
@@ -93,7 +89,7 @@
                   <svg>
                   </svg>					
 				</div>
-				
+				                
             </div>
         </div>
         <div class="col-md-3 mysidebar">
@@ -132,15 +128,13 @@
 	var shortestPathQuery = [];
 	var shortestPathAnswer = [];
 
+
     
     $(document).ready(function () {
 		
-			
+	
 	function visualizeNetwork(graph, modelIndex) {
 		var svg = d3.select('#network_visualization');
-
-		shortestPathQuery = [];
-		shortestPathAnswer = [];
 
 			var s = document.getElementById("selectNetworkStyle");
 			var style = s.options[s.selectedIndex].value;
@@ -164,7 +158,6 @@
 //			}
 //		});		
 
-
 		//Haoran
 		var chart = computeChartStats();
 		var model_count_keys = Object.keys(chart);
@@ -183,7 +176,6 @@
 		}
 		console.log(new_chart);
 		createV4BarChart(svg, new_chart);
-		
 
 		createListFromJson(modelIndex);
 		
@@ -235,7 +227,6 @@
 		var current_model = -2;
 		var prev_model = -1;
 
-
         function createListFromJson(modelIndex) {
             var sideBar_data="";
             var node_data=[];
@@ -245,7 +236,7 @@
             //Haoran
             prev_model = current_model;
             current_model = modelIndex;
-            if (prev_model == current_model){return;}
+            if (prev_model == current_model){return;}            
             
             
             result_display.innerHTML="";
@@ -268,8 +259,10 @@
                         //define the interaction here
 
 			  console.log("#b-" + this.id);
-			  d3.select("#b-" + this.id).attr("r",10);
-			  
+			  d3.select("#b-" + this.id).attr("r",8);
+			  d3.select("#b-" + this.id).attr("width",16);
+
+
 			  //Haoran
 			  // link highlight from  button to barchart
 
@@ -298,8 +291,8 @@
         function countProperties(obj) {
             return Object.keys(obj).length;
         }
-
-
+        		
+        		
 	//Haoran
 	function changeShortestPathQ(){
 		var s = document.getElementById("shortest_path");
@@ -317,7 +310,8 @@
 		$("#shortest_path").html(s.value);
 
 	}
-
+	
+	
 	//Haoran
 	$("#shortest_path").click(function () {
 		
@@ -397,8 +391,7 @@
 		
 				console.log(shortestPathAnswer);	
 		
-	});
-
+	});	        		
         		
             $("#combine_models").click(function () {
 
@@ -416,7 +409,7 @@
 				
 				var joiningSpecies = {};
 				joiningSpecies['id'] = "joined_" + currentSpeciesSearch;
-				joiningSpecies['reaction_name'] = currentSpeciesSearch;
+				joiningSpecies['species_name'] = currentSpeciesSearch;
 				joiningSpecies['listOfJoiningSpecies'] = [];
 				
 				combinedModel['nodes'].push(joiningSpecies);
@@ -664,6 +657,7 @@
             });
         });
 
+
 		//Haoran
 		var multiple_nameLookup;
 
@@ -671,7 +665,7 @@
 
             var path;
 
-            var modelJson, multiple_idLookup;				//Haoran
+            var modelJson, multiple_idLookup;
             var div = document.getElementById("search_name_");
             //div.innerHTML += file + "<br>"
             //div.innerHTML += multiple_name + "<br>"
@@ -1099,7 +1093,7 @@
                     if (link_filter["id"] in link_index){
 						linkObject['color'] = 1;
 						console.log("=====PREPROCESS=====");
-					}
+					}                    
                     
                     
                     //put the obeject into the array
@@ -1132,7 +1126,6 @@
 
 			
 			//console.log("###generate_file### " + style)
-				
 			
 			visualizeNetwork(jsonObject, modelIndex);
 						
