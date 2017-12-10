@@ -62,7 +62,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .selectAll("line")
         .data(graph.links)
         .enter().append("line")
-        .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+        .attr("stroke-width", function(d) { return Math.sqrt(d.value); })
+        .style("stroke", function(d) {return color(d.color);});			//Haoran
 
     var node = gDraw.append("g")
          .attr("class", "node")
@@ -362,6 +363,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         button_to_highlight.style.background="#007bff";
         previous_ID=d.id;
         
+        //Haoran
+        button_to_highlight.name = "highlighted";
         
         console.log(d.id)
     });
