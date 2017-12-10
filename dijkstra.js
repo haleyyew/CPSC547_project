@@ -12,6 +12,8 @@
  */
 
 function shortestPath(edges, numVertices, startVertex) {
+	console.log(startVertex);
+	
   var done = new Array(numVertices);
   done[startVertex] = true;
   var pathLengths = new Array(numVertices);
@@ -35,6 +37,7 @@ function shortestPath(edges, numVertices, startVertex) {
     done[closest] = true;
     for (var j = 0; j < numVertices; j++) {
       if (!done[j]) {
+		  console.log(closest);
         var possiblyCloserDistance = pathLengths[closest] + edges[closest][j];
         if (possiblyCloserDistance < pathLengths[j]) {
           pathLengths[j] = possiblyCloserDistance;

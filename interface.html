@@ -231,6 +231,9 @@
     //createV4SelectableForceDirectedGraph(svg, graph);
 
 
+		//Haoran
+		var current_model = -2;
+		var prev_model = -1;
 
 
         function createListFromJson(modelIndex) {
@@ -238,6 +241,13 @@
             var node_data=[];
             var element = [];
             var result_display=document.getElementById("result-list");
+            
+            //Haoran
+            prev_model = current_model;
+            current_model = modelIndex;
+            if (prev_model == current_model){return;}
+            
+            
             result_display.innerHTML="";
             //load data to side bar
 //            $.getJSON("data-sample.json", function(data) {
@@ -343,6 +353,7 @@
 		
 		var link_id_map = {};
 		
+		console.log(links.length);
 		for (var k = 0; k < links.length; k++){
 			var link = links[k];
 			var row = node_index[link["source"]];
@@ -358,8 +369,14 @@
 		}
 		
 		console.log(e);
+		console.log(node_index);
 		
-		var shortestPathInfo = shortestPath(e, nodes.length, node_index[shortestPathQuery[shortestPathQuery.length - 2]]);
+		var shortestPathInfo;
+		try {
+			var shortestPathInfo = shortestPath(e, nodes.length, node_index[shortestPathQuery[shortestPathQuery.length - 2]]);
+		} catch (err){
+			alert("Not possible");
+		}
 
 		var pathFromTo = constructPath(shortestPathInfo, node_index[shortestPathQuery[shortestPathQuery.length - 1]]);
 
