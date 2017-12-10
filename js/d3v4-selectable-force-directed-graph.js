@@ -62,8 +62,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .selectAll("line")
         .data(graph.links)
         .enter().append("line")
-        .attr("stroke-width", function(d) { return Math.sqrt(d.value); })
-        .style("stroke", function(d) {return color(d.color);});			//Haoran
+        .attr("stroke", function(d) { if (d.color == 1) { console.log("COLOR " + d.source + " " +d.value + " " +d.color); return "red";} else{return "blue";} })	//Haoran
+        .attr("stroke-width", function(d) { return Math.sqrt(d.value); });			
 
     var node = gDraw.append("g")
          .attr("class", "node")

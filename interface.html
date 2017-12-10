@@ -26,8 +26,9 @@
 <script src="js/d3v4-brush-lite.js"></script>
 <script src="js/d3v4-selectable-force-directed-graph.js"></script> 
 <script src="js/cola-downwardedges.js"></script>   
+<script src="js/d3v4-barchart.js"></script>    <!--Haoran-->
  
-<script src="dijkstra.js"></script> 
+<script src="dijkstra.js"></script>     <!--Haoran-->
     
 </head>
 <body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -86,6 +87,13 @@
                   </svg>
 
                 </div>
+                
+                <!--Haoran-->
+                <div id="barchart">
+                  <svg>
+                  </svg>					
+				</div>
+				
             </div>
         </div>
         <div class="col-md-3 mysidebar">
@@ -156,6 +164,27 @@
 //			}
 //		});		
 
+
+		//Haoran
+		var chart = computeChartStats();
+		var model_count_keys = Object.keys(chart);
+		for (var i = 0; i < model_count_keys.length; i++){
+			model_count_keys[i] = parseInt(model_count_keys[i]);
+		}
+		model_count_keys.sort(function(a, b) { return a - b });
+		var new_chart = {};
+		new_chart["keys"] = [];
+		new_chart["values"] = [];
+		for (var j = 0; j < model_count_keys.length; j++){
+			var key = model_count_keys[j];
+			var model_count_value = chart[key];
+			new_chart["keys"].push(key);
+			new_chart["values"].push(model_count_value);
+		}
+		console.log(new_chart);
+		createV4BarChart(svg, new_chart);
+		
+
 		createListFromJson(modelIndex);
 		
 		console.log(listOfPaths.length);
@@ -163,6 +192,39 @@
 		console.log(Object.keys(pathIndex));
 	}
 	
+
+	//Haoran
+	function computeChartStats(){
+		var chart = {};
+
+		var e = document.getElementById("selectModelNumber");
+		var modelId = e.options[e.selectedIndex].value;
+		var modelIndex = pathIndex[modelId];		
+		var model = listOfPaths[modelIndex];
+		
+		var nodes = model["nodes"];
+		
+		for (var j = 0; j < nodes.length; j++){
+			var node = nodes[j];
+            if (node.hasOwnProperty('species_name')) {
+				var name = node['species_name'];
+								
+				var numOfModels = Object.keys(multiple_nameLookup[name]).length;
+				numOfModels = numOfModels;
+				
+				if (numOfModels in chart){
+					chart[numOfModels].push(node["id"]);
+
+				} else {
+					chart[numOfModels] = [];
+					chart[numOfModels].push(node["id"]);
+
+				}
+			}
+		}
+
+		return chart;
+	}
 
     //load without json file
     //var graph= JSON.parse(localStorage.dataForVis);
@@ -197,6 +259,9 @@
 
 			  console.log("#b-" + this.id);
 			  d3.select("#b-" + this.id).attr("r",10);
+			  
+			  //Haoran
+			  // link highlight from  button to barchart
 
 
 			//Haoran
@@ -582,12 +647,14 @@
             });
         });
 
+		//Haoran
+		var multiple_nameLookup;
 
         function searchSpecies(file, id, depth, multiple_name, multiple_id, search_up_or_down) {
 
             var path;
 
-            var modelJson, multiple_nameLookup, multiple_idLookup;
+            var modelJson, multiple_idLookup;				//Haoran
             var div = document.getElementById("search_name_");
             //div.innerHTML += file + "<br>"
             //div.innerHTML += multiple_name + "<br>"
@@ -1001,13 +1068,15 @@
                     linkObject.value = value_filter;
                     
                     //Haoran
+                    if (parseFloat(linkObject.value) <= 0){linkObject.value = "1.0";}
+                    
+                    //Haoran
                     var link_index = {}
 					for (var j = 0; j < shortestPathAnswer.length; j++){
 						var link_id = shortestPathAnswer[j];
 						link_index[link_id] = 1;
 						
 					}	
-					
 					console.log(link_index);
                     linkObject['color'] = 0;
                     if (link_filter["id"] in link_index){
@@ -1015,11 +1084,12 @@
 						console.log("=====PREPROCESS=====");
 					}
                     
+                    
                     //put the obeject into the array
                     linkArray.push(linkObject);
                 }
  //           }
-            console.log("=====PREPROCESS===== "+jsonObject);
+            console.log(jsonObject);
             //save the data to the local storage
             localStorage.dataForVis = JSON.stringify(jsonObject);
             //readout data
