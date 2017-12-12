@@ -64,6 +64,7 @@
 
 
             <button id="generate_file" >Visualize Network</button>
+            <!--<button id="clear">Clear All</button>-->
 
             </div>
 
@@ -89,26 +90,23 @@
                   <svg>
                   </svg>					
 				</div>
+                <div id="search_name_" style="min-height:150px;overflow-y:auto;max-height:300px;"></div>
+                <div id="join_models_" style="min-height:250px;overflow-y:auto;max-height:500px;"></div>
+
+                <div id="demo" style="min-height:250px;overflow-y:auto;max-height:300px;"></div>
 				                
             </div>
         </div>
         <div class="col-md-3 mysidebar">
-            <div><p class="sidebar-title">Search Result</p></div>
+            <div><p class="sidebar-title" style="color: #000000;font-weight: bold;">Search Result</p></div>
 <!--            <div><input type="button" id="showResult" value="Show Result" onclick="createListFromJson()"></div> -->
-            <div id="result-list" style="  display: flex; flex-flow: column wrap; align-items: center;">
+            <div id="result-list" style="display: flex; flex-flow: column wrap; align-items: center;">
 
             </div>
         </div>
     </div>
 </div>	
-	
 
-<div id="search_name_"></div>
-----------
-<div id="join_models_"></div>
-----------
-<div id="demo"></div>
-----------
 
 </body>
 
@@ -252,7 +250,8 @@
                 node_data=data["nodes"];
                 for(i=0;i<countProperties(node_data);i++){
                     sideBar_data=node_data[i].id;
-                    sideBar_content="#"+i+" "+"id: "+sideBar_data+" "+"group:"+node_data[i].group;
+                    sideBar_content=i+"."+"id: "+sideBar_data;
+                    //sideBar_content=i+"."+"Name: "+sideBar_data;
                     element[i]=document.createElement("input");
                     element[i].type="button";
                     element[i].onclick = function () {
@@ -260,12 +259,14 @@
 
 			  console.log("#b-" + this.id);
 			  d3.select("#b-" + this.id).attr("r",8);
-			  d3.select("#b-" + this.id).attr("width",16);
+			  d3.select("#b-" + this.id).attr("width",15)
+                  .attr("height",15);
 
 
-			  //Haoran
+			  //Zixiao
 			  // link highlight from  button to barchart
-
+                        var btn_clicked = document.getElementById(this.id);
+                        btn_clicked.style.background="#66CCFF";
 
 			//Haoran
 			shortestPathQuery.push(this.id);
@@ -275,14 +276,14 @@
                     
 
 
-
+                    //zzx
                     element[i].value=sideBar_content;
                     element[i].id=sideBar_data;
                     
                     //console.log("sideBar_data "+sideBar_data);
                     
                     element[i].type="button";
-                    element[i].style="width:100%; font-size: 14px";
+                    element[i].style="width:100%; font-size: 12px;";
                     //append the element to the side bar
                     result_display.appendChild(element[i])
                 }
@@ -983,9 +984,20 @@
         }
 
 
-
+//        $('#clear').click(function () {
+//
+//        })
         //Input the useful data into a json file
+        //pseudo acheivement
         $("#generate_file").click(function (){
+            //zixiao
+//            var btnName = document.getElementById("generate_file");
+//            if(btnName.text==="Visualize Network"){
+//                btnName.text="Reset";
+//            }else if(btnName.text==="Reset"){btnName.text="Visualize Network";}
+
+            // reload the graph, double click
+            //createListFromJson();
 			
 			var e = document.getElementById("selectModelNumber");
 			var modelId = e.options[e.selectedIndex].value;

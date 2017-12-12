@@ -80,7 +80,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .data(graph.links)
         .enter().append("line")
         .attr("marker-end","url(\#arrow)")
-        .attr("stroke", function(d) { if (d.color == 1) { console.log("COLOR " + d.source + " " +d.value + " " +d.color); return "red";} else{return "blue";} })	//Haoran
+       // .attr("stroke", function(d) { if (d.color == 1) { console.log("COLOR " + d.source + " " +d.value + " " +d.color); return "red";} else{return "blue";} })	//Haoran
         .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
 
     var species_node = gDraw.append("g")
@@ -345,10 +345,15 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         if (intro) intro.remove();
         //clean the background color of the button on the right side
         var button_previous=document.getElementById(previous_ID);
-        button_previous.style.background="white";
+        button_previous.style.background="#FFFFCC";
+        d3.select("#"+"b-"+previous_ID).attr("r",4);
+        d3.select("#"+"b-"+previous_ID).attr("width",8)
+            .attr("height",8);
     });
 
     species_node.on('click',function(d){
+        //
+        d3.select(this).attr("r", 8);
         //Output a tag
         d3v4.event.stopPropagation();
         //Clear the existing intro
@@ -398,14 +403,14 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             .attr("height", bbox.height + 5);
         //highlight a button
         var button_to_highlight= document.getElementById(d.id);
-        button_to_highlight.style.background="#007bff";
+        button_to_highlight.style.background="#66CCFF";
         previous_ID=d.id;
-        
-        
         console.log(d.id)
     });
 
     reactions_node.on('click',function(d){
+        d3.select(this).attr("width",15)
+        .attr("height", 15);
         //Output a tag
         d3v4.event.stopPropagation();
         //Clear the existing intro
@@ -455,7 +460,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             .attr("height", bbox.height + 5);
         //highlight a button
         var button_to_highlight= document.getElementById(d.id);
-        button_to_highlight.style.background="#007bff";
+        button_to_highlight.style.background="#66CCFF";
         previous_ID=d.id;
 
 
