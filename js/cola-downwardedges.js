@@ -197,13 +197,13 @@ function createCoLaDownwardedges(svg, graph) {
             .text("ID: " + d.id)
             .attr("dy", "1em")
             .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("font-size","12px");
 
         intro.append("text")
             .text("Group: " + d.group)
             .attr("dy", "2em")
             .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("font-size","12px");
 
         var con = graph.links
             .filter(function(d1){
@@ -217,13 +217,13 @@ function createCoLaDownwardedges(svg, graph) {
             .text("Type: " + d.type)
             .attr("dy", "3em")
             .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("font-size","12px");
 
         intro.append("text")
             .text("Name: " + d.name)
             .attr("dy", "4em")
             .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("font-size","12px");
 
         var bbox = intro.node().getBBox();
         rect.attr("width", bbox.width + 5)
@@ -254,13 +254,13 @@ function createCoLaDownwardedges(svg, graph) {
             .text("ID: " + d.id)
             .attr("dy", "1em")
             .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("font-size","12px");
 
         intro.append("text")
             .text("Group: " + d.group)
             .attr("dy", "2em")
             .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("font-size","12px");
 
         var con = graph.links
             .filter(function(d1){
@@ -274,13 +274,13 @@ function createCoLaDownwardedges(svg, graph) {
             .text("Type: " + d.type)
             .attr("dy", "3em")
             .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("font-size","12px");
 
         intro.append("text")
             .text("Name: " + d.name)
             .attr("dy", "4em")
             .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("font-size","12px");
 
         var bbox = intro.node().getBBox();
         rect.attr("width", bbox.width + 5)

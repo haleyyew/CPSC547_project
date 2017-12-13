@@ -34,7 +34,7 @@ function createV4BarChart(svg, chart){
 						for (var i = 0; i < d.length; i++){
 							var id = d[i];
 							var button_to_highlight= document.getElementById(id);
-							button_to_highlight.style.background="#FF0000";
+							button_to_highlight.style.background="#FF6600";
 							this.id = 1;
 						}
 					} else {

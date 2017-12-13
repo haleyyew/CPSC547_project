@@ -80,7 +80,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .data(graph.links)
         .enter().append("line")
         .attr("marker-end","url(\#arrow)")
-       // .attr("stroke", function(d) { if (d.color == 1) { console.log("COLOR " + d.source + " " +d.value + " " +d.color); return "red";} else{return "blue";} })	//Haoran
+        .attr("stroke", function(d) { if (d.color == 1) { console.log("COLOR " + d.source + " " +d.value + " " +d.color); return "red";} else{return "grey";} })	//Haoran
         .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
 
     var species_node = gDraw.append("g")
@@ -370,13 +370,13 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             .text("ID: " + d.id)
             .attr("dy", "1em")
             .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("font-size","12px");
 
         intro.append("text")
             .text("Group: " + d.group)
             .attr("dy", "2em")
             .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("font-size","12px");
 
         var con = graph.links
             .filter(function(d1){
@@ -390,13 +390,13 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             .text("Type: " + d.type)
             .attr("dy", "3em")
             .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("font-size","12px");
 
         intro.append("text")
             .text("Name: " + d.name)
             .attr("dy", "4em")
             .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("font-size","12px");
 
         var bbox = intro.node().getBBox();
         rect.attr("width", bbox.width + 5)
@@ -427,13 +427,13 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             .text("ID: " + d.id)
             .attr("dy", "1em")
             .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("font-size","12px");
 
         intro.append("text")
             .text("Group: " + d.group)
             .attr("dy", "2em")
             .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("font-size","12px");
 
         var con = graph.links
             .filter(function(d1){
@@ -447,13 +447,13 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             .text("Type: " + d.type)
             .attr("dy", "3em")
             .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("font-size","12px");
 
         intro.append("text")
             .text("Name: " + d.name)
             .attr("dy", "4em")
             .attr("x", 5)
-            .attr("font-size","14px");
+            .attr("font-size","12px");
 
         var bbox = intro.node().getBBox();
         rect.attr("width", bbox.width + 5)

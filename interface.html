@@ -48,7 +48,7 @@
             </div>
 
 <button id="search_name">Search Species Name</button>
-<button id="check_result">Print Output</button>
+<!--<button id="check_result">Print Output</button>-->
 <button id="combine_models">Combine Models</button>
             <form id="modelForm">
                 <select id="selectModelNumber">
@@ -245,18 +245,34 @@
 
 				data = listOfPaths[modelIndex];
 
+  
+
+  
 
                 console.log(data); // this will show the info it in firebug console
                 node_data=data["nodes"];
                 for(i=0;i<countProperties(node_data);i++){
                     sideBar_data=node_data[i].id;
-                    sideBar_content=i+"."+"id: "+sideBar_data;
+                    if(node_data[i].hasOwnProperty('species_name')){
+
+                        var name_filter=node_data[i]["species_name"];
+                    }else if(node_data[i].hasOwnProperty('reaction_name')){
+
+                        name_filter=node_data[i]["reaction_name"];
+                    }                     
+                    
+                    
+                    sideBar_content=i+"."+"id: "+sideBar_data + "  " + name_filter;
                     //sideBar_content=i+"."+"Name: "+sideBar_data;
                     element[i]=document.createElement("input");
                     element[i].type="button";
                     element[i].onclick = function () {
                         //define the interaction here
 
+
+			  console.log("================");
+			  
+			  
 			  console.log("#b-" + this.id);
 			  d3.select("#b-" + this.id).attr("r",8);
 			  d3.select("#b-" + this.id).attr("width",15)
@@ -270,6 +286,9 @@
 
 			//Haoran
 			shortestPathQuery.push(this.id);
+			
+
+			console.log(shortestPathQuery)
 			changeShortestPathQ();
 
                     };
@@ -303,7 +322,7 @@
 			console.log(s.value);		
 		} 
 		else if (shortestPathQuery.length > 1){
-			s.value = "Show shortest path from " + shortestPathQuery[shortestPathQuery.length - 2] + " to " + shortestPathQuery[shortestPathQuery.length - 1];
+			s.value = "Show path from " + shortestPathQuery[shortestPathQuery.length - 2] + " to " + shortestPathQuery[shortestPathQuery.length - 1];
 			console.log(s.value);	
 		}
 		
@@ -390,7 +409,8 @@
 			shortestPathAnswer.push(path_link);
 		}
 		
-				console.log(shortestPathAnswer);	
+				console.log(shortestPathAnswer);
+				alert("Path exists");	
 		
 	});	        		
         		
@@ -667,7 +687,7 @@
             var path;
 
             var modelJson, multiple_idLookup;
-            var div = document.getElementById("search_name_");
+            var div = document.getElementById("demo");
             //div.innerHTML += file + "<br>"
             //div.innerHTML += multiple_name + "<br>"
             //div.innerHTML += multiple_id + "<br>"
@@ -1056,15 +1076,17 @@
                     var node_filter = nodes_filter[m];
                     var id_filter = node_filter.id;
                     var group_filter = node_filter.group;
-                    var name_filter="name";
+					var name_filter;
                     var type_filter="type";
                     //Here judge whether the node is species or reaction
                     if(node_filter.hasOwnProperty('species_name')){
                         name_filter = node_filter['species_name'];
                         type_filter = "species";
+                        name_filter=node_filter["species_name"];
                     }else if(node_filter.hasOwnProperty('reaction_name')){
                         name_filter = node_filter['reaction_name'];
                         type_filter ="reactions";
+                        name_filter=node_filter["reaction_name"];
                     }else{name_filter = "null"; type_filter="unknown"}
                     nodeObject.id = id_filter;
                     nodeObject.group = group_filter;
@@ -1112,6 +1134,8 @@
                     linkArray.push(linkObject);
                 }
  //           }
+ 
+
             console.log(jsonObject);
             //save the data to the local storage
             localStorage.dataForVis = JSON.stringify(jsonObject);
