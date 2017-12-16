@@ -4,36 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    
+
     <script src="js/d3v4.js"></script>
-	<script src="js/cola.min.js"></script>
-    
+    <script src="js/cola.min.js"></script>
+
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
     </script>
-    
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel='stylesheet' href='d3v4-selectable-zoomable-force-directed-graph.css'>
     <link rel="stylesheet" href="interface_style.css">
-    
 
-        
-        
+
     <script src="https://d3js.org/d3.v4.js"></script>
-    
-<script src="js/d3v4-brush-lite.js"></script>
-<script src="js/d3v4-selectable-force-directed-graph.js"></script> 
-<script src="js/cola-downwardedges.js"></script>   
-<script src="js/d3v4-barchart.js"></script>    <!--Haoran-->
- 
-<script src="dijkstra.js"></script>     <!--Haoran--> 
 
-    
+    <script src="js/d3v4-brush-lite.js"></script>
+    <script src="js/d3v4-selectable-force-directed-graph.js"></script>
+    <script src="js/cola-downwardedges.js"></script>
+    <script src="js/d3v4-barchart.js"></script>
+
+    <script src="js/dijkstra.js"></script>
+
+
 </head>
 <body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="50">
-	
+
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -41,36 +39,32 @@
         </div>
         <div class="col-sm-3 col-md-3 pull-right">
             <div class="input-group">
-<input type="search" id="search_species_name" placeholder="GTP" value="GTP" class="navbar_input" style="margin-right: 2px">
-<input type="search" id="search_up_or_down" placeholder="down" value="down" class="navbar_input" style="width:80px;margin-right: 2px">
-<input type="search" id="search_depth" placeholder="2" value="2" class="navbar_input" style="width:40px;margin-right: 2px">
-<!--<input type="button" id="start" value="Start" onclick="location='Main.html'">-->
+                <input type="search" id="search_species_name" placeholder="GTP" value="GTP" class="navbar_input"
+                       style="margin-right: 2px">
+                <input type="search" id="search_up_or_down" placeholder="down" value="down" class="navbar_input"
+                       style="width:80px;margin-right: 2px">
+                <input type="search" id="search_depth" placeholder="2" value="2" class="navbar_input"
+                       style="width:40px;margin-right: 2px">
             </div>
 
-<button id="search_name">Search Species Name</button>
-<!--<button id="check_result">Print Output</button>-->
-<button id="combine_models">Combine Models</button>
+            <button id="search_name">Search Species Name</button>
+            <button id="combine_models">Combine Models</button>
             <form id="modelForm">
                 <select id="selectModelNumber">
                 </select>
                 <select id="selectNetworkStyle">
-					<option value="force">Force Directed</option>
-					<option value="downward">Downward Edges</option>
+                    <option value="force">Force Directed</option>
+                    <option value="downward">Downward Edges</option>
                 </select>
             </form>
 
-<!--Haoran-->
-<button id="shortest_path" value="Show shortest path" ></button>
-
-
-            <button id="generate_file" >Visualize Network</button>
-            <!--<button id="clear">Clear All</button>-->
-
-            </div>
-
-
+            <button id="shortest_path" value="Show shortest path"></button>
+            <button id="generate_file">Visualize Network</button>
 
         </div>
+
+
+    </div>
     </div>
 </nav>
 
@@ -79,526 +73,435 @@
         <div class="col-md-9">
             <div class="row">
                 <div id="network_visualization" class="vis-genral">
-                  <svg>
+                    <svg>
 
-                  </svg>
+                    </svg>
 
                 </div>
-                
-                <!--Haoran-->
+
                 <div id="barchart">
-                  <svg>
-                  </svg>					
-				</div>
+                    <svg>
+                    </svg>
+                </div>
                 <div id="search_name_" style="min-height:150px;overflow-y:auto;max-height:300px;"></div>
                 <div id="join_models_" style="min-height:250px;overflow-y:auto;max-height:500px;"></div>
 
                 <div id="demo" style="min-height:250px;overflow-y:auto;max-height:300px;"></div>
-				                
+
             </div>
         </div>
         <div class="col-md-3 mysidebar">
             <div><p class="sidebar-title" style="color: #000000;font-weight: bold;">Search Result</p></div>
-<!--            <div><input type="button" id="showResult" value="Show Result" onclick="createListFromJson()"></div> -->
             <div id="result-list" style="display: flex; flex-flow: column wrap; align-items: center;">
 
             </div>
         </div>
     </div>
-</div>	
+</div>
 
 
 </body>
 
 
-
-
 <script>
-	
+
     var listOfPaths = [];
     var numPaths = 0;
-    
+
     var pathIndex = {};
-    
-    var currentSpeciesSearch = "";	
 
-	//Haoran
-	var shortestPathQuery = [];
-	var shortestPathAnswer = [];
+    var currentSpeciesSearch = "";
+
+    var shortestPathQuery = [];
+    var shortestPathAnswer = [];
 
 
-    
     $(document).ready(function () {
-		
-	
-	function visualizeNetwork(graph, modelIndex) {
-		var svg = d3.select('#network_visualization');
-
-			var s = document.getElementById("selectNetworkStyle");
-			var style = s.options[s.selectedIndex].value;
-			
-			var n = style.localeCompare("force");
-			if (n == 0) {
-				createV4SelectableForceDirectedGraph(svg, graph);
-			}
-			
-			var m = style.localeCompare("downward");
-			if (m == 0) {
-				createCoLaDownwardedges(svg, graph);
-			}
-
-//		d3.json('data-sample.json', function(error, graph) {
-//			if (!error) {
-//				console.log('graph', graph);
-				
-//			} else {
-//				console.error(error);
-//			}
-//		});		
-
-		//Haoran
-		var chart = computeChartStats();
-		var model_count_keys = Object.keys(chart);
-		for (var i = 0; i < model_count_keys.length; i++){
-			model_count_keys[i] = parseInt(model_count_keys[i]);
-		}
-		model_count_keys.sort(function(a, b) { return a - b });
-		var new_chart = {};
-		new_chart["keys"] = [];
-		new_chart["values"] = [];
-		for (var j = 0; j < model_count_keys.length; j++){
-			var key = model_count_keys[j];
-			var model_count_value = chart[key];
-			new_chart["keys"].push(key);
-			new_chart["values"].push(model_count_value);
-		}
-		console.log(new_chart);
-		createV4BarChart(svg, new_chart);
-
-		createListFromJson(modelIndex);
-		
-		console.log(listOfPaths.length);
-		console.log(numPaths);
-		console.log(Object.keys(pathIndex));
-	}
-	
-
-	//Haoran
-	function computeChartStats(){
-		var chart = {};
-
-		var e = document.getElementById("selectModelNumber");
-		var modelId = e.options[e.selectedIndex].value;
-		var modelIndex = pathIndex[modelId];		
-		var model = listOfPaths[modelIndex];
-		
-		var nodes = model["nodes"];
-		
-		for (var j = 0; j < nodes.length; j++){
-			var node = nodes[j];
-            if (node.hasOwnProperty('species_name')) {
-				var name = node['species_name'];
-								
-				var numOfModels = Object.keys(multiple_nameLookup[name]).length;
-				numOfModels = numOfModels;
-				
-				if (numOfModels in chart){
-					chart[numOfModels].push(node["id"]);
-
-				} else {
-					chart[numOfModels] = [];
-					chart[numOfModels].push(node["id"]);
-
-				}
-			}
-		}
-
-		return chart;
-	}
-
-    //load without json file
-    //var graph= JSON.parse(localStorage.dataForVis);
-    //createV4SelectableForceDirectedGraph(svg, graph);
 
 
-		//Haoran
-		var current_model = -2;
-		var prev_model = -1;
+        function visualizeNetwork(graph, modelIndex) {
+            var svg = d3.select('#network_visualization');
+
+            var s = document.getElementById("selectNetworkStyle");
+            var style = s.options[s.selectedIndex].value;
+
+            var n = style.localeCompare("force");
+            if (n == 0) {
+                createV4SelectableForceDirectedGraph(svg, graph);
+            }
+
+            var m = style.localeCompare("downward");
+            if (m == 0) {
+                createCoLaDownwardedges(svg, graph);
+            }
+
+            var chart = computeChartStats();
+            var model_count_keys = Object.keys(chart);
+            for (var i = 0; i < model_count_keys.length; i++) {
+                model_count_keys[i] = parseInt(model_count_keys[i]);
+            }
+            model_count_keys.sort(function (a, b) {
+                return a - b
+            });
+            var new_chart = {};
+            new_chart["keys"] = [];
+            new_chart["values"] = [];
+            for (var j = 0; j < model_count_keys.length; j++) {
+                var key = model_count_keys[j];
+                var model_count_value = chart[key];
+                new_chart["keys"].push(key);
+                new_chart["values"].push(model_count_value);
+            }
+            createV4BarChart(svg, new_chart);
+
+            createListFromJson(modelIndex);
+
+        }
+
+
+        function computeChartStats() {
+            var chart = {};
+
+            var e = document.getElementById("selectModelNumber");
+            var modelId = e.options[e.selectedIndex].value;
+            var modelIndex = pathIndex[modelId];
+            var model = listOfPaths[modelIndex];
+
+            var nodes = model["nodes"];
+
+            for (var j = 0; j < nodes.length; j++) {
+                var node = nodes[j];
+                if (node.hasOwnProperty('species_name')) {
+                    var name = node['species_name'];
+
+                    var numOfModels = Object.keys(multiple_nameLookup[name]).length;
+                    numOfModels = numOfModels;
+
+                    if (numOfModels in chart) {
+                        chart[numOfModels].push(node["id"]);
+
+                    } else {
+                        chart[numOfModels] = [];
+                        chart[numOfModels].push(node["id"]);
+
+                    }
+                }
+            }
+
+            return chart;
+        }
+
+        var current_model = -2;
+        var prev_model = -1;
 
         function createListFromJson(modelIndex) {
-            var sideBar_data="";
-            var node_data=[];
+            var sideBar_data = "";
+            var node_data = [];
             var element = [];
-            var result_display=document.getElementById("result-list");
-            
+            var result_display = document.getElementById("result-list");
+
             //Haoran
             prev_model = current_model;
             current_model = modelIndex;
-            if (prev_model == current_model){return;}            
-            
-            
-            result_display.innerHTML="";
-            //load data to side bar
-//            $.getJSON("data-sample.json", function(data) {
+            if (prev_model == current_model) {
+                return;
+            }
 
 
+            result_display.innerHTML = "";
 
-				data = listOfPaths[modelIndex];
-
-  
-
-  
-
-                console.log(data); // this will show the info it in firebug console
-                node_data=data["nodes"];
-                for(i=0;i<countProperties(node_data);i++){
-                    sideBar_data=node_data[i].id;
-                    if(node_data[i].hasOwnProperty('species_name')){
-
-                        var name_filter=node_data[i]["species_name"];
-                    }else if(node_data[i].hasOwnProperty('reaction_name')){
-
-                        name_filter=node_data[i]["reaction_name"];
-                    }                     
-                    
-                    
-                    sideBar_content=i+"."+"id: "+sideBar_data + "  " + name_filter;
-                    //sideBar_content=i+"."+"Name: "+sideBar_data;
-                    element[i]=document.createElement("input");
-                    element[i].type="button";
-                    element[i].onclick = function () {
-                        //define the interaction here
+            data = listOfPaths[modelIndex];
 
 
-			  console.log("================");
-			  
-			  
-			  console.log("#b-" + this.id);
-			  d3.select("#b-" + this.id).attr("r",8);
-			  d3.select("#b-" + this.id).attr("width",15)
-                  .attr("height",15);
+            node_data = data["nodes"];
+            for (i = 0; i < countProperties(node_data); i++) {
+                sideBar_data = node_data[i].id;
+                if (node_data[i].hasOwnProperty('species_name')) {
 
+                    var name_filter = node_data[i]["species_name"];
+                } else if (node_data[i].hasOwnProperty('reaction_name')) {
 
-			  //Zixiao
-			  // link highlight from  button to barchart
-                        var btn_clicked = document.getElementById(this.id);
-                        btn_clicked.style.background="#66CCFF";
-
-			//Haoran
-			shortestPathQuery.push(this.id);
-			
-
-			console.log(shortestPathQuery)
-			changeShortestPathQ();
-
-                    };
-                    
-
-
-                    //zzx
-                    element[i].value=sideBar_content;
-                    element[i].id=sideBar_data;
-                    
-                    //console.log("sideBar_data "+sideBar_data);
-                    
-                    element[i].type="button";
-                    element[i].style="width:100%; font-size: 12px;";
-                    //append the element to the side bar
-                    result_display.appendChild(element[i])
+                    name_filter = node_data[i]["reaction_name"];
                 }
-//            });
+
+
+                sideBar_content = i + "." + "id: " + sideBar_data + "  " + name_filter;
+                element[i] = document.createElement("input");
+                element[i].type = "button";
+                element[i].onclick = function () {
+
+                    d3.select("#b-" + this.id).attr("r", 8);
+                    d3.select("#b-" + this.id).attr("width", 15)
+                        .attr("height", 15);
+
+                    var btn_clicked = document.getElementById(this.id);
+                    btn_clicked.style.background = "#66CCFF";
+
+                    shortestPathQuery.push(this.id);
+
+                    changeShortestPathQ();
+
+                };
+
+                element[i].value = sideBar_content;
+                element[i].id = sideBar_data;
+
+                element[i].type = "button";
+                element[i].style = "width:100%; font-size: 12px;";
+                //append the element to the side bar
+                result_display.appendChild(element[i])
+            }
         }
+
         function countProperties(obj) {
             return Object.keys(obj).length;
         }
-        		
-        		
-	//Haoran
-	function changeShortestPathQ(){
-		var s = document.getElementById("shortest_path");
-		
-		if (shortestPathQuery.length == 1){
-			s.value = "Show shortest path from " + shortestPathQuery[0] + " to ?";	
-			console.log(s.value);		
-		} 
-		else if (shortestPathQuery.length > 1){
-			s.value = "Show path from " + shortestPathQuery[shortestPathQuery.length - 2] + " to " + shortestPathQuery[shortestPathQuery.length - 1];
-			console.log(s.value);	
-		}
-		
-		$("#shortest_path").prop('value', s.value);
-		$("#shortest_path").html(s.value);
 
-	}
-	
-	
-	//Haoran
-	$("#shortest_path").click(function () {
-		
-		shortestPathAnswer = [];
-		
-		var e = document.getElementById("selectModelNumber");
-		var modelId = e.options[e.selectedIndex].value;
-		var modelIndex = pathIndex[modelId];		
-		var model = listOfPaths[modelIndex];
-		
-		var nodes = model["nodes"];
-		var links = model["links"];		
-		
-		var _ = Infinity;
-		
-		var node_index = {};
-	
-		var e = new Array(nodes.length);
-		for (var i = 0; i < e.length; i++) {
-			var row = new Array(e.length);
-			for (var k = 0; k < e.length; k++){
-				row[k] = _;
-			}
-			
-			e[i] = row;
-		}	
-	
-		for (var j = 0; j < nodes.length; j++){
-			var node = nodes[j];
-			node_index[node["id"]] = j;
-			
-		}		
-		
-		var link_id_map = {};
-		
-		console.log(links.length);
-		for (var k = 0; k < links.length; k++){
-			var link = links[k];
-			var row = node_index[link["source"]];
-			var col = node_index[link["target"]];
-			
-			if (parseFloat(link["value"]) > 0.0){
-				e[row][col] = parseFloat(link["value"]);
-			} else {
-				e[row][col] = 1.0;
-			}
-			
-			link_id_map[String(row) + "_" + String(col)] = link["id"];
-		}
-		
-		console.log(e);
-		console.log(node_index);
-		
-		var shortestPathInfo;
-		try {
-			var shortestPathInfo = shortestPath(e, nodes.length, node_index[shortestPathQuery[shortestPathQuery.length - 2]]);
-		} catch (err){
-			alert("Not possible");
-		}
 
-		var pathFromTo = constructPath(shortestPathInfo, node_index[shortestPathQuery[shortestPathQuery.length - 1]]);
+        function changeShortestPathQ() {
+            var s = document.getElementById("shortest_path");
 
-		console.log(pathFromTo);		
-		
-		if (pathFromTo.length == 0){
-			alert("Not possible");
-			return;
-		}
-		
-		var first_link = link_id_map[String(node_index[shortestPathQuery[shortestPathQuery.length - 2]]) + "_" + String(pathFromTo[0])]
-		shortestPathAnswer.push(first_link);
-		
-		for (var j = 1; j < pathFromTo.length; j++){
-			var path_link = link_id_map[String(pathFromTo[j-1]) + "_" + String(pathFromTo[j])]
-			shortestPathAnswer.push(path_link);
-		}
-		
-				console.log(shortestPathAnswer);
-				alert("Path exists");	
-		
-	});	        		
-        		
-            $("#combine_models").click(function () {
+            if (shortestPathQuery.length == 1) {
+                s.value = "Show shortest path from " + shortestPathQuery[0] + " to ?";
+                console.log(s.value);
+            }
+            else if (shortestPathQuery.length > 1) {
+                s.value = "Show path from " + shortestPathQuery[shortestPathQuery.length - 2] + " to " + shortestPathQuery[shortestPathQuery.length - 1];
+                console.log(s.value);
+            }
 
-                if (listOfPaths.length != numPaths) {
-                    alert("Processing not finished yet");
-                    return;
+            $("#shortest_path").prop('value', s.value);
+            $("#shortest_path").html(s.value);
+
+        }
+
+
+        $("#shortest_path").click(function () {
+
+            shortestPathAnswer = [];
+
+            var e = document.getElementById("selectModelNumber");
+            var modelId = e.options[e.selectedIndex].value;
+            var modelIndex = pathIndex[modelId];
+            var model = listOfPaths[modelIndex];
+
+            var nodes = model["nodes"];
+            var links = model["links"];
+
+            var _ = Infinity;
+
+            var node_index = {};
+
+            var e = new Array(nodes.length);
+            for (var i = 0; i < e.length; i++) {
+                var row = new Array(e.length);
+                for (var k = 0; k < e.length; k++) {
+                    row[k] = _;
                 }
 
-				var combinedModel = {};
-				combinedModel['nodes'] = [];
-				combinedModel['links'] = [];
+                e[i] = row;
+            }
 
-				//var speciesLookup = {};
-				//var specRefLookup = {};
-				
-				var joiningSpecies = {};
-				joiningSpecies['id'] = "joined_" + currentSpeciesSearch;
-				joiningSpecies['species_name'] = currentSpeciesSearch;
-				joiningSpecies['listOfJoiningSpecies'] = [];
-				
-				combinedModel['nodes'].push(joiningSpecies);
-				
-				var total_n = 0;
-				var total_l = 0;
-				
-				var comb_n = 0;
-				var comb_l = 0;
-				
-				comb_n += 1;
-				
-                for (var i = 0; i < listOfPaths.length; i++) {
-                    var path = listOfPaths[i];
-					//console.log(path['id']);					
-					
-					var model_id = path['id'].split("BIOMD")[1];
-                    model_id = model_id.split(".rdf")[0];
+            for (var j = 0; j < nodes.length; j++) {
+                var node = nodes[j];
+                node_index[node["id"]] = j;
 
-					var nodes = path['nodes'];
-					var links = path['links'];
-					
-					total_n += nodes.length;
-					total_l += links.length;
-					
-					var joinedSpeciesId = "";
-					
-                    for (var j = 0; j < nodes.length; j++) {
-						var node = nodes[j];
-						
-						var new_node = {}
-						new_node['id']  = model_id+"_"+node['id'] ;
-						
-						if (node.hasOwnProperty('species_name')){
-							var n = node['species_name'].localeCompare(currentSpeciesSearch);
-							if (n == 0){
-								joinedSpeciesId = node['id'];
-								console.log(joinedSpeciesId);
-								
-								new_node['model'] = model_id;
-								
-								new_node['joined'] = 1;
-								new_node['species_name'] = node['species_name'];
-								new_node['group'] = i;
-								
-								joiningSpecies['listOfJoiningSpecies'].push(new_node);
-								
-								//speciesLookup[node['name']] = joiningSpecies['id'];
-								
-								
-							} else {
-								new_node['model'] = model_id;
-								new_node['species_name'] = node['species_name'];
-								new_node['group'] = i;
-								
-								combinedModel['nodes'].push(new_node);
-								
-								
-								comb_n += 1;
-							}
-						} else {
-							new_node['model'] = model_id;
-							new_node['reaction_name'] = node['reaction_name'];
-							new_node['group'] = i;
-														
+            }
 
-							combinedModel['nodes'].push(new_node);	
+            var link_id_map = {};
 
-							
-							comb_n += 1;						
-						}
-					}
-					
-					
-					for (var k = 0; k < links.length; k++) {
-						var specRef = links[k];
-						
-						var new_specRef = {}
-						
-						new_specRef['source'] =model_id+"_"+specRef['source'];
-						new_specRef['target'] =model_id+"_"+specRef['target'];
-						new_specRef['value'] = specRef['value'];
-						
-						if ((new_specRef['source'].slice(0,10)).localeCompare(new_specRef['source'].slice(11,21)) == 0){
-							new_specRef['source'] = new_specRef['source'].slice(11);
+            for (var k = 0; k < links.length; k++) {
+                var link = links[k];
+                var row = node_index[link["source"]];
+                var col = node_index[link["target"]];
 
-							//console.log(specRef['source']);
-						}
-						
-						if ((new_specRef['target'].slice(0,10)).localeCompare(new_specRef['target'].slice(11,21)) == 0){
-							new_specRef['target'] = new_specRef['target'].slice(11);
-							
-							//console.log(specRef['target']);
-						}						
-						
-						var n = joinedSpeciesId.localeCompare(specRef['source']);
-						var m = joinedSpeciesId.localeCompare(specRef['target']);
-						
-												
-						if (n == 0 && m == 0){
-							new_specRef['source'] = joiningSpecies['id'];
-							new_specRef['target'] = joiningSpecies['id'];
-							
-							//console.log("case 1");
-						} 
-						else if (m == 0) {
-							new_specRef['target'] = joiningSpecies['id'];
-							new_specRef['source'] = new_specRef['source'];
-							
-							//console.log("case 2");
-							//console.log(specRef['source']);
-							
-						}
-						else if (n == 0) {
-							new_specRef['source'] = joiningSpecies['id'];
-							new_specRef['target'] = new_specRef['target'];
-							
-							//console.log("case 3");
-							//console.log(specRef['target']);
-						} else {
-							new_specRef['source'] = new_specRef['source'];
-							new_specRef['target'] = new_specRef['target'];
-							
-							if ("0000000080_metaid_0000011".localeCompare(specRef['source']) == 0){
-								console.log("_");
-								console.log(joinedSpeciesId);
-								console.log(specRef['source']);
-								console.log(specRef['target']);
-							}
-
-						}
-						
-						combinedModel['links'].push(new_specRef);
-						
-						comb_l += 1;
-					}
+                if (parseFloat(link["value"]) > 0.0) {
+                    e[row][col] = parseFloat(link["value"]);
+                } else {
+                    e[row][col] = 1.0;
                 }
-                
-                var out = JSON.stringify(combinedModel);
-                document.getElementById("demo").innerHTML += out + "<br> <br>";
-                
-                console.log(total_n);
-                console.log(total_l);
-                console.log(comb_n);
-                console.log(comb_l);
-                console.log(joiningSpecies['listOfJoiningSpecies'].length);
-                
-                
-                listOfPaths.push(combinedModel);
-                
-                    var select = document.getElementById("selectModelNumber"); 
 
-					var opt = "combined model";
-					var el = document.createElement("option");
-					el.textContent = opt;
-					el.value = opt;
-					select.appendChild(el);
-					
-					pathIndex["combined model"] = listOfPaths.length - 1;
-					
-					console.log(listOfPaths.length - 1);
-					numPaths += 1;
-					
-					console.log(listOfPaths.length);
-					console.log(numPaths);
-					console.log(Object.keys(pathIndex));
-                
-            });
+                link_id_map[String(row) + "_" + String(col)] = link["id"];
+            }
+
+            var shortestPathInfo;
+            try {
+                var shortestPathInfo = shortestPath(e, nodes.length, node_index[shortestPathQuery[shortestPathQuery.length - 2]]);
+            } catch (err) {
+                alert("Not possible");
+            }
+
+            var pathFromTo = constructPath(shortestPathInfo, node_index[shortestPathQuery[shortestPathQuery.length - 1]]);
+
+            if (pathFromTo.length == 0) {
+                alert("Not possible");
+                return;
+            }
+
+            var first_link = link_id_map[String(node_index[shortestPathQuery[shortestPathQuery.length - 2]]) + "_" + String(pathFromTo[0])]
+            shortestPathAnswer.push(first_link);
+
+            for (var j = 1; j < pathFromTo.length; j++) {
+                var path_link = link_id_map[String(pathFromTo[j - 1]) + "_" + String(pathFromTo[j])]
+                shortestPathAnswer.push(path_link);
+            }
+
+            alert("Path exists");
+
+        });
+
+        $("#combine_models").click(function () {
+
+            if (listOfPaths.length != numPaths) {
+                alert("Processing not finished yet");
+                return;
+            }
+
+            var combinedModel = {};
+            combinedModel['nodes'] = [];
+            combinedModel['links'] = [];
+
+            var joiningSpecies = {};
+            joiningSpecies['id'] = "joined_" + currentSpeciesSearch;
+            joiningSpecies['species_name'] = currentSpeciesSearch;
+            joiningSpecies['listOfJoiningSpecies'] = [];
+
+            combinedModel['nodes'].push(joiningSpecies);
+
+            var total_n = 0;
+            var total_l = 0;
+
+            var comb_n = 0;
+            var comb_l = 0;
+
+            comb_n += 1;
+
+            for (var i = 0; i < listOfPaths.length; i++) {
+                var path = listOfPaths[i];
+
+                var model_id = path['id'].split("BIOMD")[1];
+                model_id = model_id.split(".rdf")[0];
+
+                var nodes = path['nodes'];
+                var links = path['links'];
+
+                total_n += nodes.length;
+                total_l += links.length;
+
+                var joinedSpeciesId = "";
+
+                for (var j = 0; j < nodes.length; j++) {
+                    var node = nodes[j];
+
+                    var new_node = {}
+                    new_node['id'] = model_id + "_" + node['id'];
+
+                    if (node.hasOwnProperty('species_name')) {
+                        var n = node['species_name'].localeCompare(currentSpeciesSearch);
+                        if (n == 0) {
+                            joinedSpeciesId = node['id'];
+                            console.log(joinedSpeciesId);
+
+                            new_node['model'] = model_id;
+
+                            new_node['joined'] = 1;
+                            new_node['species_name'] = node['species_name'];
+                            new_node['group'] = i;
+
+                            joiningSpecies['listOfJoiningSpecies'].push(new_node);
+
+
+                        } else {
+                            new_node['model'] = model_id;
+                            new_node['species_name'] = node['species_name'];
+                            new_node['group'] = i;
+
+                            combinedModel['nodes'].push(new_node);
+
+
+                            comb_n += 1;
+                        }
+                    } else {
+                        new_node['model'] = model_id;
+                        new_node['reaction_name'] = node['reaction_name'];
+                        new_node['group'] = i;
+
+
+                        combinedModel['nodes'].push(new_node);
+
+
+                        comb_n += 1;
+                    }
+                }
+
+
+                for (var k = 0; k < links.length; k++) {
+                    var specRef = links[k];
+
+                    var new_specRef = {}
+
+                    new_specRef['source'] = model_id + "_" + specRef['source'];
+                    new_specRef['target'] = model_id + "_" + specRef['target'];
+                    new_specRef['value'] = specRef['value'];
+
+                    if ((new_specRef['source'].slice(0, 10)).localeCompare(new_specRef['source'].slice(11, 21)) == 0) {
+                        new_specRef['source'] = new_specRef['source'].slice(11);
+
+                    }
+
+                    if ((new_specRef['target'].slice(0, 10)).localeCompare(new_specRef['target'].slice(11, 21)) == 0) {
+                        new_specRef['target'] = new_specRef['target'].slice(11);
+
+                    }
+
+                    var n = joinedSpeciesId.localeCompare(specRef['source']);
+                    var m = joinedSpeciesId.localeCompare(specRef['target']);
+
+
+                    if (n == 0 && m == 0) {
+                        new_specRef['source'] = joiningSpecies['id'];
+                        new_specRef['target'] = joiningSpecies['id'];
+
+                    }
+                    else if (m == 0) {
+                        new_specRef['target'] = joiningSpecies['id'];
+                        new_specRef['source'] = new_specRef['source'];
+
+                    }
+                    else if (n == 0) {
+                        new_specRef['source'] = joiningSpecies['id'];
+                        new_specRef['target'] = new_specRef['target'];
+
+                    } else {
+                        new_specRef['source'] = new_specRef['source'];
+                        new_specRef['target'] = new_specRef['target'];
+
+                    }
+
+                    combinedModel['links'].push(new_specRef);
+
+                    comb_l += 1;
+                }
+            }
+
+            var out = JSON.stringify(combinedModel);
+            document.getElementById("demo").innerHTML += out + "<br> <br>";
+
+            listOfPaths.push(combinedModel);
+
+            var select = document.getElementById("selectModelNumber");
+
+            var opt = "combined model";
+            var el = document.createElement("option");
+            el.textContent = opt;
+            el.value = opt;
+            select.appendChild(el);
+
+            pathIndex["combined model"] = listOfPaths.length - 1;
+
+            numPaths += 1;
+
+        });
 
         $("#check_result").click(function () {
 
@@ -607,7 +510,6 @@
                 return;
             }
 
-            console.log("check_result listOfPaths.length " + listOfPaths.length);
 
             for (var i = 0; i < listOfPaths.length; i++) {
                 var path = listOfPaths[i];
@@ -616,18 +518,16 @@
 
             }
 
-            //generate data over here
-            //generateData(listOfPaths);
         });
 
 
         $("#search_name").click(function () {
             $.getJSON("multiple_name_sp.json", function (data) {
-				
+
                 listOfPaths = []
                 numPaths = 0;
                 pathIndex = {}
-                
+
                 $('#selectModelNumber').empty();
                 currentSpeciesSearch = $('#search_species_name').val();
 
@@ -645,7 +545,6 @@
                 var search_depth = document.getElementById("search_depth").value;
 
                 if ($('#search_species_name').val() == '' || $('#search_up_or_down').val() == '' || $('#search_depth').val() == '') {
-                    console.log("empty");
                     return;
                 }
 
@@ -655,20 +554,14 @@
                 var keys = Object.keys(name);
 
                 var arrayLength = keys.length;
-                //div.innerHTML += "GTP :" + arrayLength + "<br>"
 
                 for (var i = 0; i < arrayLength; i++) {
                     var model = keys[i];
                     var id = name[model];
-
-                    //div.innerHTML += " :" + model + " " + id + "<br>"
                     var modelId = model.split(".")[0];
                     pathIndex[modelId] = i;
-                    console.log(modelId);
-
                     model = "BIOMD" + model;
                     var file = dir + model;
-
                     var path = searchSpecies(file, id, search_depth, multiple_name, multiple_id, search_up_or_down);
 
 
@@ -678,9 +571,7 @@
             });
         });
 
-
-		//Haoran
-		var multiple_nameLookup;
+        var multiple_nameLookup;
 
         function searchSpecies(file, id, depth, multiple_name, multiple_id, search_up_or_down) {
 
@@ -688,10 +579,6 @@
 
             var modelJson, multiple_idLookup;
             var div = document.getElementById("demo");
-            //div.innerHTML += file + "<br>"
-            //div.innerHTML += multiple_name + "<br>"
-            //div.innerHTML += multiple_id + "<br>"
-            
             var model_id;
 
             $.when(
@@ -717,7 +604,6 @@
                         var n = id.localeCompare(node["id"]);
 
                         if (n == 0) {
-                            //div.innerHTML += " :" + node["id"] + "<br>"
                             model_id = file.split("BIOMD")[1];
                             model_id = model_id.split(".rdf")[0];
 
@@ -725,13 +611,10 @@
 
                             if (n == 0) {
                                 path = traverseGraphDown(nodes, links, node, model_id, depth, multiple_nameLookup, multiple_idLookup)
-                                console.log("up");
                             } else {
                                 path = traverseGraphUp(nodes, links, node, model_id, depth, multiple_nameLookup, multiple_idLookup)
-                                console.log("down");
                             }
 
-                            //div.innerHTML += " " + id + " "+model_id +" "+ path.length  + "<br>"
                             path["id"] = file;
                             listOfPaths.push(path);
 
@@ -740,14 +623,14 @@
                 }
 
                 div.innerHTML += "Added path for name=" + id + " model=" + model_id + " to results. Processed " + listOfPaths.length + " out of " + numPaths + "<br>";
-                
-                var select = document.getElementById("selectModelNumber"); 
 
-					var opt = model_id;
-					var el = document.createElement("option");
-					el.textContent = opt;
-					el.value = opt;
-					select.appendChild(el);
+                var select = document.getElementById("selectModelNumber");
+
+                var opt = model_id;
+                var el = document.createElement("option");
+                el.textContent = opt;
+                el.value = opt;
+                select.appendChild(el);
 
 
             });
@@ -790,14 +673,11 @@
 
                 if (node.hasOwnProperty('species_name')) {
 
-                    //div.innerHTML += " ::" + mult_name_keys.length + " " + mult_id_keys.length + " " + node['species_name'] + " " + model_id + "<br>"
-
                     for (var k = 0; k < links.length; k++) {
                         var specRef = links[k];
                         var n = node['id'].localeCompare(specRef['source']);
 
                         if (n == 0) {
-                            //div.innerHTML += "::     "+recurDepthStr + specRef['id'] + " " + specRef['target']  + "<br>"
                             path['links'].push(specRef);
 
                             for (var i = 0; i < nodes.length; i++) {
@@ -806,12 +686,11 @@
                                 n = childNodeRxn['id'].localeCompare(specRef['target']);
 
                                 if (n == 0) {
-                                    //div.innerHTML += "::     "+recurDepthStr + childNodeRxn['id'] + "<br>"
                                     queue.push(childNodeRxn);
                                     childNodeRxn['group'] = 1;
 
                                     if (childNodeRxn['id'] in nodeIds) {
-                                        //console.log(childNodeRxn['id']);
+
                                     } else {
                                         path['nodes'].push(childNodeRxn);
                                         nodeIds[childNodeRxn['id']] = childNodeRxn['id'];
@@ -824,7 +703,6 @@
                     }
                 }
                 if (node.hasOwnProperty('reaction_name')) {
-                    //div.innerHTML += " :::" +  node['reaction_name']  + "<br>"
 
                     var productLinks = node['products'];
                     var productMap = productLinks.reduce(function (map, obj) {
@@ -836,7 +714,6 @@
                         var specRef = links[j];
 
                         if (specRef['id'] in productMap) {
-                            //div.innerHTML += ":::     "+recurDepthStr + specRef['id'] + " " + specRef['target']  + "<br>"
                             path['links'].push(specRef);
 
                             for (var x = 0; x < nodes.length; x++) {
@@ -845,7 +722,6 @@
                                 n = childNodeSp['id'].localeCompare(specRef['target']);
 
                                 if (n == 0) {
-                                    //div.innerHTML += ":::     "+recurDepthStr + childNodeSp['id'] + "<br>"
                                     queue.push(childNodeSp);
                                     childNodeSp['group'] = 1;
 
@@ -870,7 +746,6 @@
                 }
             }
 
-            //div.innerHTML += " "+ model_id +" "+currentDepth+ "<br>"
             return path;
 
         }
@@ -912,14 +787,11 @@
 
                 if (node.hasOwnProperty('species_name')) {
 
-                    //div.innerHTML += " ::" + mult_name_keys.length + " " + mult_id_keys.length + " " + node['species_name'] + " " + model_id + "<br>"
-
                     for (var k = 0; k < links.length; k++) {
                         var specRef = links[k];
                         var n = node['id'].localeCompare(specRef['target']);
 
                         if (n == 0) {
-                            //div.innerHTML += "::     "+recurDepthStr + specRef['id'] + " " + specRef['target']  + "<br>"
                             path['links'].push(specRef);
 
                             for (var i = 0; i < nodes.length; i++) {
@@ -928,12 +800,11 @@
                                 n = childNodeRxn['id'].localeCompare(specRef['source']);
 
                                 if (n == 0) {
-                                    //div.innerHTML += "::     "+recurDepthStr + childNodeRxn['id'] + "<br>"
                                     queue.push(childNodeRxn);
                                     childNodeRxn['group'] = 1
 
                                     if (childNodeRxn['id'] in nodeIds) {
-                                        //console.log(childNodeRxn['id']);
+
                                     } else {
                                         path['nodes'].push(childNodeRxn);
                                         nodeIds[childNodeRxn['id']] = childNodeRxn['id'];
@@ -946,7 +817,6 @@
                     }
                 }
                 if (node.hasOwnProperty('reaction_name')) {
-                    //div.innerHTML += " :::" +  node['reaction_name']  + "<br>"
 
                     var productLinks = node['reactants'];
                     var productMap = productLinks.reduce(function (map, obj) {
@@ -958,7 +828,6 @@
                         var specRef = links[j];
 
                         if (specRef['id'] in productMap) {
-                            //div.innerHTML += ":::     "+recurDepthStr + specRef['id'] + " " + specRef['target']  + "<br>"
                             path['links'].push(specRef);
 
                             for (var x = 0; x < nodes.length; x++) {
@@ -967,7 +836,6 @@
                                 n = childNodeSp['id'].localeCompare(specRef['source']);
 
                                 if (n == 0) {
-                                    //div.innerHTML += ":::     "+recurDepthStr + childNodeSp['id'] + "<br>"
                                     queue.push(childNodeSp);
                                     childNodeSp['group'] = 1
 
@@ -992,37 +860,27 @@
                 }
             }
 
-            //div.innerHTML += " "+ model_id +" "+currentDepth+ "<br>"
             return path;
         }
 
 
         <!--Codes for Visualization-->
+
         <!--count of the elements in the object-->
         function countProperties(obj) {
             return Object.keys(obj).length;
         }
 
 
-//        $('#clear').click(function () {
-//
-//        })
         //Input the useful data into a json file
         //pseudo acheivement
-        $("#generate_file").click(function (){
-            //zixiao
-//            var btnName = document.getElementById("generate_file");
-//            if(btnName.text==="Visualize Network"){
-//                btnName.text="Reset";
-//            }else if(btnName.text==="Reset"){btnName.text="Visualize Network";}
-
+        $("#generate_file").click(function () {
             // reload the graph, double click
             //createListFromJson();
-			
-			var e = document.getElementById("selectModelNumber");
-			var modelId = e.options[e.selectedIndex].value;
-			var modelIndex = pathIndex[modelId];
 
+            var e = document.getElementById("selectModelNumber");
+            var modelId = e.options[e.selectedIndex].value;
+            var modelIndex = pathIndex[modelId];
 
             //clear the remaining result in the side bar
             var side
@@ -1030,164 +888,128 @@
             if (listOfPaths.length != numPaths) {
                 alert("Processing not finished yet");
                 return;
-        }
+            }
 
 
             <!--Create a new object-->
             var nodeArray = new Array();
             var linkArray = new Array();
-            var jsonObject={
-                nodes:nodeArray,
-                links:linkArray
+            var jsonObject = {
+                nodes: nodeArray,
+                links: linkArray
             };
 
             <!--parse the searching result-->
-//            for (i = 0; i < countProperties(listOfPaths); i++) {
+
+            var path_filter = listOfPaths[modelIndex];
+            var nodes_filter = path_filter.nodes;
+            var links_filter = path_filter.links;
+
+            // define objects for node and link respectively
+            //initialize with some self-defined value
+            //In object we must assign a value for each variable
 
 
+            for (m = 0; m < countProperties(nodes_filter); m++) {
+
+                var nodeObject = {
+                    id: "default",
+                    type: "species",
+                    name: "GTP",
+                    group: "1"
+                };
 
 
-
-			console.log(modelId);
-
-			console.log(modelIndex);
-
-                var path_filter = listOfPaths[modelIndex];
-                var nodes_filter = path_filter.nodes;
-                var links_filter = path_filter.links;
-
-                // define objects for node and link respectively
-                //initialize with some self-defined value
-                //In object we must assign a value for each variable
-    
-                console.log(nodes_filter.length);
-                console.log(links_filter.length);
-
-                for (m = 0; m < countProperties(nodes_filter); m++) {
-					
-					var nodeObject={
-						id:"default",
-						type:"species",
-						name:"GTP",
-						group:"1"
-					};
-				
-			
-                    var node_filter = nodes_filter[m];
-                    var id_filter = node_filter.id;
-                    var group_filter = node_filter.group;
-					var name_filter;
-                    var type_filter="type";
-                    //Here judge whether the node is species or reaction
-                    if(node_filter.hasOwnProperty('species_name')){
-                        name_filter = node_filter['species_name'];
-                        type_filter = "species";
-                        name_filter=node_filter["species_name"];
-                    }else if(node_filter.hasOwnProperty('reaction_name')){
-                        name_filter = node_filter['reaction_name'];
-                        type_filter ="reactions";
-                        name_filter=node_filter["reaction_name"];
-                    }else{name_filter = "null"; type_filter="unknown"}
-                    nodeObject.id = id_filter;
-                    nodeObject.group = group_filter;
-                    nodeObject.type = type_filter;
-                    nodeObject.name = name_filter;
-                    //put the object into the array
-                    nodeArray.push(nodeObject);
+                var node_filter = nodes_filter[m];
+                var id_filter = node_filter.id;
+                var group_filter = node_filter.group;
+                var name_filter;
+                var type_filter = "type";
+                //Here judge whether the node is species or reaction
+                if (node_filter.hasOwnProperty('species_name')) {
+                    name_filter = node_filter['species_name'];
+                    type_filter = "species";
+                    name_filter = node_filter["species_name"];
+                } else if (node_filter.hasOwnProperty('reaction_name')) {
+                    name_filter = node_filter['reaction_name'];
+                    type_filter = "reactions";
+                    name_filter = node_filter["reaction_name"];
+                } else {
+                    name_filter = "null";
+                    type_filter = "unknown"
                 }
-                for (n = 0; n < countProperties(links_filter); n++) {
-					
-					var linkObject={
-						source:"testSource",
-						target:"testTarget",
-						value:"1"
-					};	
-					
-                    var link_filter = links_filter[n];
-                    var source_filter = link_filter['source'];
-                    var target_filter = link_filter['target'];
-                    var value_filter = link_filter['value'];
-                    linkObject.source= source_filter;
-                    linkObject.target= target_filter;
-                    //there is a problem that the value of some(ok to add 1 to the value?)
-                    linkObject.value = value_filter;
-                    
-                    //Haoran
-                    if (parseFloat(linkObject.value) <= 0){linkObject.value = "1.0";}
-                    
-                    //Haoran
-                    var link_index = {}
-					for (var j = 0; j < shortestPathAnswer.length; j++){
-						var link_id = shortestPathAnswer[j];
-						link_index[link_id] = 1;
-						
-					}	
-					console.log(link_index);
-                    linkObject['color'] = 0;
-                    if (link_filter["id"] in link_index){
-						linkObject['color'] = 1;
-						console.log("=====PREPROCESS=====");
-					}                    
-                    
-                    
-                    //put the obeject into the array
-                    linkArray.push(linkObject);
-                }
- //           }
- 
+                nodeObject.id = id_filter;
+                nodeObject.group = group_filter;
+                nodeObject.type = type_filter;
+                nodeObject.name = name_filter;
+                //put the object into the array
+                nodeArray.push(nodeObject);
+            }
+            for (n = 0; n < countProperties(links_filter); n++) {
 
-            console.log(jsonObject);
+                var linkObject = {
+                    source: "testSource",
+                    target: "testTarget",
+                    value: "1"
+                };
+
+                var link_filter = links_filter[n];
+                var source_filter = link_filter['source'];
+                var target_filter = link_filter['target'];
+                var value_filter = link_filter['value'];
+                linkObject.source = source_filter;
+                linkObject.target = target_filter;
+                linkObject.value = value_filter;
+
+                if (parseFloat(linkObject.value) <= 0) {
+                    linkObject.value = "1.0";
+                }
+
+                var link_index = {}
+                for (var j = 0; j < shortestPathAnswer.length; j++) {
+                    var link_id = shortestPathAnswer[j];
+                    link_index[link_id] = 1;
+
+                }
+                linkObject['color'] = 0;
+                if (link_filter["id"] in link_index) {
+                    linkObject['color'] = 1;
+                }
+
+
+                //put the object into the array
+                linkArray.push(linkObject);
+            }
+
             //save the data to the local storage
             localStorage.dataForVis = JSON.stringify(jsonObject);
             //readout data
             var obj = JSON.parse(localStorage.dataForVis);
-            console.log(obj);
-//            //download the obj
-//            saveText( JSON.stringify(jsonObject), "filtered_data.json" );
-            //put the jsonObject to a jason file
-            //using node.js
-//            var fs=require("fs");
-//            fs.writeFile("./.json", JSON.stringify(jsonObject), (err) => {
-//                if (err) {
-//                    console.error(err);
-//                    return;
-//                };
-//            console.log("File has been created");
-//        });
 
-		console.log(listOfPaths.length);
-		console.log(numPaths);
-		console.log(Object.keys(pathIndex));
-			
-
-			
-			//console.log("###generate_file### " + style)
-			
-			visualizeNetwork(jsonObject, modelIndex);
-						
+            visualizeNetwork(jsonObject, modelIndex);
 
 
         });
 
-		function download(filename, text) {
-			var pom = document.createElement('a');
-			pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-			pom.setAttribute('download', filename);
+        function download(filename, text) {
+            var pom = document.createElement('a');
+            pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+            pom.setAttribute('download', filename);
 
-			if (document.createEvent) {
-				var event = document.createEvent('MouseEvents');
-				event.initEvent('click', true, true);
-				pom.dispatchEvent(event);
-			}
-			else {
-				pom.click();
-			}
-		}
+            if (document.createEvent) {
+                var event = document.createEvent('MouseEvents');
+                event.initEvent('click', true, true);
+                pom.dispatchEvent(event);
+            }
+            else {
+                pom.click();
+            }
+        }
 
         //download the file
-        function saveText(text, filename){
+        function saveText(text, filename) {
             var a = document.createElement('a');
-            a.setAttribute('href', 'data:text/plain;charset=utf-u,'+encodeURIComponent(text));
+            a.setAttribute('href', 'data:text/plain;charset=utf-u,' + encodeURIComponent(text));
             a.setAttribute('download', filename);
             a.click()
         }
